@@ -1659,34 +1659,6 @@ body.layout-single-column  {
 
 
 
-/* 🖱️ Interaction modals
-   --------------------- */
-.layout-single-column .interaction-modal {
-    background-color: var(--color-content-bg);
-}
-.layout-single-column .interaction-modal,
-.layout-single-column .interaction-modal__lead h3 {
-    color: var(--color-content-fg);
-}
-.layout-single-column .interaction-modal__lead p,
-.layout-single-column .interaction-modal__choices__choice p {
-    color: var(--color-fg);
-}
-.layout-single-column .interaction-modal .button,
-.layout-single-column .interaction-modal .button.tertiary {
-    padding: 10px 18px;
-}
-.layout-single-column .copypaste input {
-    border-color: var(--color-accent);
-    background-color: var(--color-content-bg);
-    color: var(--color-content-fg);
-}
-.layout-single-column .interaction-modal .copypaste button {
-    padding: 7px 18px;
-}
-
-
-
 /* ⏺️ UI components : buttons, toggles, ...
    ---------------------------------------- */
 .layout-single-column .button,
@@ -1835,6 +1807,36 @@ body.layout-single-column  {
     color: var(--color-accent);
 }
 
+
+
+/* 🖱️ Interaction modals
+   --------------------- */
+.layout-single-column .interaction-modal {
+    background-color: var(--color-content-bg);
+}
+.layout-single-column .interaction-modal,
+.layout-single-column .interaction-modal__lead h3 {
+    color: var(--color-content-fg);
+}
+.layout-single-column .interaction-modal__lead p,
+.layout-single-column .interaction-modal__choices__choice p {
+    color: var(--color-fg);
+}
+.layout-single-column .interaction-modal .button,
+.layout-single-column .interaction-modal .button.button-tertiary {
+    padding: 10px 18px;
+}
+.layout-single-column .interaction-modal .button.button-tertiary:hover {
+    background-color: var(--color-content-secondary-separator);
+}
+.layout-single-column .copypaste input {
+    border-color: var(--color-accent);
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
+}
+.layout-single-column .interaction-modal .copypaste button {
+    padding: 7px 18px;
+}
 
 
 
