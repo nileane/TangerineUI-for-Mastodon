@@ -1774,11 +1774,7 @@ body.layout-single-column  {
     color: var(--color-fg);
 }
 .layout-single-column .link-footer p {
-    opacity: .3;
-    transition: opacity .3s;
-}
-.layout-single-column .link-footer:hover p {
-    opacity: 1;
+    opacity: .5;
 }
 
 /* Server banner */
