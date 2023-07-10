@@ -815,6 +815,13 @@ body.layout-single-column  {
     border: none;
 }
 
+.layout-single-column article > .account {
+    padding: 16px;
+}
+.layout-single-column article:last-child > .account {
+    border-radius: 0 0 7px 7px;
+}
+
 
 
 /* ⏺️ Column headers
@@ -944,6 +951,9 @@ body.layout-single-column  {
         margin-bottom: 0;
         border-radius: 0;
         height: 55px;
+    }
+    .layout-single-column .columns-area--mobile {
+        border-radius: 7px;
     }
     .layout-single-column .column-header, 
     .layout-single-column .column-back-button,
@@ -1675,6 +1685,8 @@ body.layout-single-column  {
     padding: 7px 18px;
 }
 
+
+
 /* ⏺️ UI components : buttons, toggles, ...
    ---------------------------------------- */
 .layout-single-column .button,
@@ -1760,7 +1772,13 @@ body.layout-single-column  {
 .layout-single-column .react-toggle--checked .react-toggle-thumb {
     border-color: var(--color-accent);
 }
-
+.layout-single-column .dropdown-menu,
+.layout-single-column .dropdown-menu__item a,
+.layout-single-column .dropdown-menu__arrow:before {
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
+    border: 0;
+}
 .layout-single-column .dropdown-menu__item a:active,
 .layout-single-column .dropdown-menu__item a:focus,
 .layout-single-column .dropdown-menu__item a:hover,
@@ -1770,6 +1788,9 @@ body.layout-single-column  {
     background: var(--color-accent);
     color: var(--color-accent-fg);
     outline: 0;
+}
+.layout-single-column .dropdown-menu__separator {
+    border-color: var(--color-content-secondary-separator);
 }
 
 .layout-single-column .privacy-dropdown.active .privacy-dropdown__value.active,
@@ -1898,6 +1919,7 @@ body.layout-single-column  {
     color: var(--color-fg);
     opacity: .5;
 }
+
 
 
 /* 📜 About page
