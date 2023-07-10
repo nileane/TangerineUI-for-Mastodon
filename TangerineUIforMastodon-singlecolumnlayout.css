@@ -522,6 +522,7 @@ body.layout-single-column  {
     border-bottom: 0;
 }
 .layout-single-column .status__wrapper {
+    transition: background .3s, box-shadow .3s;
     box-shadow:
         inset 72px 0 var(--color-content-bg), 
         0 -2px var(--color-content-secondary-bg) inset;
@@ -727,19 +728,33 @@ body.layout-single-column  {
 }
 
 /* ⏺️ Posts when in focus */
-.layout-single-column .scrollable .status__wrapper.focusable:focus,
-.layout-single-column .scrollable .detailed-status__wrapper.focusable:focus,
+.layout-single-column .status__wrapper.focusable:focus,
+.layout-single-column .detailed-status__wrapper.focusable:focus,
 .layout-single-column .focusable:focus .detailed-status,
 .layout-single-column .focusable:focus .detailed-status__action-bar,
-.layout-single-column .scrollable .status__wrapper.focusable:focus .detailed-status, 
-.layout-single-column .scrollable .focusable:focus .detailed-status__action-bar {
+.layout-single-column .status__wrapper.focusable:focus .detailed-status, 
+.layout-single-column .focusable:focus .detailed-status__action-bar,
+.layout-single-column .status__wrapper:has(.status__content:hover) {
     outline: 0;
     background: var(--color-content-bg-focus);
 }
-.layout-single-column .scrollable .status__wrapper.focusable:focus {
+.layout-single-column .status__wrapper.focusable:focus,
+.layout-single-column .status__wrapper:has(.status__content:hover) {
     box-shadow:
         inset 72px 0 var(--color-content-bg-focus), 
-        0 -1px var(--color-content-secondary-bg) inset;
+        0 -2px var(--color-content-secondary-bg) inset;
+}
+.layout-single-column .status__wrapper.focusable:has(.status--first-in-thread .status__content):focus {
+    box-shadow:
+        0 -3px var(--color-bg),
+        inset 72px 0 var(--color-content-bg-focus), 
+        0 -2px var(--color-content-secondary-bg) inset;
+}
+.layout-single-column .status__wrapper:has(.status--first-in-thread .status__content:hover) {
+    box-shadow:
+        0 -3px var(--color-bg),
+        inset 72px 0 var(--color-content-bg-focus), 
+        0 -2px var(--color-content-secondary-bg) inset;
 }
 
 /* 👁️ Post detailed view */
