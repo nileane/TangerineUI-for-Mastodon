@@ -1324,7 +1324,8 @@ body.layout-single-column  {
 }
 
 
-/* Explore Tab */
+/* Explore Tab
+   ----------- */
 .layout-single-column .account__section-headline + .scrollable article:first-child .status__wrapper {
     border-radius: 7px 7px 0 0;
 }
@@ -1334,6 +1335,8 @@ body.layout-single-column  {
 .layout-single-column .icon-button.active .fa.fa-star + .icon-button__counter .animated-number {
     color: #ca8f04;
 }
+
+/* #️⃣ Trending hashtags */
 .layout-single-column .explore__links {
     background-color: var(--color-content-bg);
     border-radius: 7px;
@@ -1379,6 +1382,27 @@ body.layout-single-column  {
     border-radius: 50%;
     box-shadow: 0 0 0 3px var(--color-content-bg);
 }
+
+/* 📰 Trending stories */
+.layout-single-column .story {
+    background-color: var(--color-content-bg);
+}
+.layout-single-column .story:not(:last-child) {
+    border-bottom: 2px solid var(--color-content-secondary-separator);
+}
+.layout-single-column .story,
+.layout-single-column .story__details__title {
+    color: var(--color-content-fg);
+}
+.layout-single-column .story:hover {
+    background-color: var(--color-accent-bg);
+}
+.layout-single-column .story__details__publisher,
+.layout-single-column .story__details__shared {
+    color: var(--color-fg);
+}
+
+/* 🔍 Search results */
 .layout-single-column .explore__search-results {
     background-color: var(--color-content-bg);
     border-radius: 7px;
@@ -1420,6 +1444,7 @@ body.layout-single-column  {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
 }
+
 @media screen and (max-width:1174px) {
     .layout-single-column .search {
         margin-bottom: 0;
