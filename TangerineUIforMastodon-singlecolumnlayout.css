@@ -1585,6 +1585,7 @@ body.layout-single-column  {
     box-shadow: 0 5px var(--color-content-bg);
     border-radius: 7px 7px 0 0;
     border: 0;
+    margin: 0;
 }
 .layout-single-column .dismissable-banner__message,
 .layout-single-column .dismissable-banner__action .icon-button {
