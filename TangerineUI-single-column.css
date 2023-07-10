@@ -156,35 +156,31 @@
     }
 }
 
-
-
 body.layout-single-column  {
     background-color: var(--color-bg);
     color: var(--color-fg);
     font-family: ui-rounded, "mastodon-font-sans-serif", sans-serif;
 }
 
-
-
 /* 🖱️ Scrollbars */
-::-webkit-scrollbar-track {
+:root:has(.layout-single-column) *::-webkit-scrollbar-track {
     background-color: var(--color-bg);
     padding: 2px;
 }
-::-webkit-scrollbar-thumb {
+:root:has(.layout-single-column) *::-webkit-scrollbar-thumb {
     background-color: var(--color-accent);
     border-radius: 50px;
     opacity: .3;
 }
-::-webkit-scrollbar-track:hover {
+:root:has(.layout-single-column) *::-webkit-scrollbar-track:hover {
     background-color: var(--color-bg);
 }
-::-webkit-scrollbar-thumb:hover {
+:root:has(.layout-single-column) *::-webkit-scrollbar-thumb:hover {
     background-color: var(--color-accent);
     opacity: .7;
 }
 @media screen and (max-width:1174px) {
-    ::-webkit-scrollbar {
+    :root:has(.layout-single-column) *::-webkit-scrollbar {
         display: none;
     }
 }
