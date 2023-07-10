@@ -460,6 +460,7 @@ body.layout-single-column  {
 .layout-single-column .reply-indicator,
 .layout-single-column .compose-form .compose-form__warning {
     background-color: var(--color-accent-bg);
+    box-shadow: none;
     margin: 0;
     border-radius: 0;
     border: 0;
@@ -715,15 +716,24 @@ body.layout-single-column  {
     }
 }
 
-/* 📊 Poll charts */
-.layout-single-column .poll__chart {
+/* 📊 Polls */
+.layout-single-column .poll__chart,
+.layout-single-column .muted .poll__chart.leading {
     background: var(--color-accent);
     opacity: .4;
     height: 12px;
     border-radius: 10px;
 }
-.layout-single-column .poll__chart.leading {
+.layout-single-column .poll__chart.leading,
+.layout-single-column .muted .poll__chart.leading {
     opacity: 1;
+}
+.layout-single-column .poll__footer {
+    color: var(--color-content-fg);
+}
+.layout-single-column .poll__link {
+    color: var(--color-accent);
+    text-decoration: none;
 }
 
 /* ⏺️ Posts when in focus */
@@ -1595,6 +1605,7 @@ body.layout-single-column  {
 }
 .layout-single-column .notification .status.muted {
     opacity: .5;
+    transition: opacity .5s;
 }
 
 
