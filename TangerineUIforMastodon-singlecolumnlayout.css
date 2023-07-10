@@ -83,6 +83,7 @@
     --icon-hashtag-active: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23282C37" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hash"%3E%3Cline x1="4" y1="9" x2="20" y2="9"%3E%3C/line%3E%3Cline x1="4" y1="15" x2="20" y2="15"%3E%3C/line%3E%3Cline x1="10" y1="3" x2="8" y2="21"%3E%3C/line%3E%3Cline x1="16" y1="3" x2="14" y2="21"%3E%3C/line%3E%3C/svg%3E');
     --icon-star: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="%23282C37" stroke-width="5.5" viewBox="0 0 68 68"%3E%3Cpath d="M31.4 3.8c-.7.4-2.5 5-4.1 10.2l-2.9 9.5-9.9.5c-5.5.3-10.6.9-11.3 1.3-.6.5-1.2 1.9-1.2 3.3 0 2 1.5 3.4 8 7.5 4.4 2.8 8 5.5 8 6s-1.3 4.5-3 9.1c-3.6 9.7-3.7 11.4-.9 12.8 2.7 1.5 3.5 1.1 12.4-5.6l7.5-5.6 8.2 6.1c8.4 6.3 11.2 7.1 13.2 3.9.8-1.4.3-3.9-2.2-11-1.8-5.1-3.2-9.6-3.2-9.9 0-.4 3.6-3 8-5.8 6.5-4.1 8-5.5 8-7.5 0-1.4-.6-2.8-1.2-3.3-.7-.4-5.8-1-11.3-1.3l-9.9-.5-2.9-9.5C37.8 4.6 36.9 3 34 3c-.8 0-2 .4-2.6.8z"/%3E%3C/svg%3E%0A');
     --icon-star-hover: url('data:image/svg+xml, %3Csvg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="%23ffac33" stroke-width="5.5" viewBox="0 0 68 68"%3E%3Cpath d="M31.4 3.8c-.7.4-2.5 5-4.1 10.2l-2.9 9.5-9.9.5c-5.5.3-10.6.9-11.3 1.3-.6.5-1.2 1.9-1.2 3.3 0 2 1.5 3.4 8 7.5 4.4 2.8 8 5.5 8 6s-1.3 4.5-3 9.1c-3.6 9.7-3.7 11.4-.9 12.8 2.7 1.5 3.5 1.1 12.4-5.6l7.5-5.6 8.2 6.1c8.4 6.3 11.2 7.1 13.2 3.9.8-1.4.3-3.9-2.2-11-1.8-5.1-3.2-9.6-3.2-9.9 0-.4 3.6-3 8-5.8 6.5-4.1 8-5.5 8-7.5 0-1.4-.6-2.8-1.2-3.3-.7-.4-5.8-1-11.3-1.3l-9.9-.5-2.9-9.5C37.8 4.6 36.9 3 34 3c-.8 0-2 .4-2.6.8z"/%3E%3C/svg%3E%0A');
+    --icon-star-active: '\f005';
     --icon-search: url("data:image/svg+xml;charset=utf-8, %3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23535C76' aria-hidden='true' viewBox='0 0 24 24'%3E%3Cpath d='M10.25 3.75a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zm-8.5 6.5a8.5 8.5 0 1 1 15.176 5.262l4.781 4.781-1.414 1.414-4.781-4.781A8.5 8.5 0 0 1 1.75 10.25z'/%3E%3C/svg%3E");
 }
 @media (prefers-color-scheme: dark) {
@@ -290,11 +291,12 @@ body.layout-single-column  {
 .layout-single-column i.fa-star:before {
     background-image: var(--icon-star);
     text-align: center;
-    line-height: 29px;
+    line-height: 34px;
 }
 .layout-single-column button.icon-button.active i.fa-star:before,
 .layout-single-column .notification i.fa-star:before {
-    background-image: var(--icon-star-hover);
+    background-image: none;
+    content: var(--icon-star-active);
 }
 .layout-single-column .detailed-status__link i.fa.fa-star:before {
     content: " ";
@@ -490,6 +492,14 @@ body.layout-single-column  {
 .layout-single-column .display-name {
     color: var(--color-content-fg);
 }
+.layout-single-column .compose-form .compose-form__modifiers .compose-form__upload .icon-button {
+    color: #ffffff;
+}
+.compose-form .compose-form__modifiers .compose-form__upload .icon-button:active,
+.compose-form .compose-form__modifiers .compose-form__upload .icon-button:focus,
+.compose-form .compose-form__modifiers .compose-form__upload .icon-button:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
 @media screen and (max-width:1174px) {
     .layout-single-column .compose-form {
         padding: 0 10px 10px;
@@ -638,7 +648,10 @@ body.layout-single-column  {
 .layout-single-column .detailed-status__action-bar i.fa-bookmark:before,
 .layout-single-column .detailed-status__action-bar i.fa-share-alt:before {
     height: 32px;
-    top: 8px;
+}
+.layout-single-column .icon-button.star-icon.active,
+.layout-single-column .notification__favourite-icon-wrapper .star-icon {
+    color: #ffb609;
 }
 .layout-single-column .status__prepend {
     font-weight: bold;
@@ -1629,6 +1642,12 @@ body.layout-single-column  {
     width: 56px;
     text-align: right;
 }
+.layout-single-column .notification__favourite-icon-wrapper i.fa-star {
+    font-size: 15px;
+}
+.layout-single-column .notification__favourite-icon-wrapper i.fa-star:before {
+    line-height: 24px;
+}
 .layout-single-column .notification .status__wrapper {
     padding-top: 0;
 }
@@ -1649,9 +1668,6 @@ body.layout-single-column  {
 }
 .layout-single-column .explore__search-results .account {
     padding-top: 16px;
-}
-.layout-single-column .notification__message .fa {
-    color: var(--color-accent);
 }
 .layout-single-column .notification .status.muted {
     opacity: .5;
