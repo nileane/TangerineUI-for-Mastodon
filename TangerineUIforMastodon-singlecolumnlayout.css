@@ -27,7 +27,6 @@
 
     --logo: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' class='mastodon-logo' viewBox='0 0 216.414 232.01'%3E%3Cdefs xmlns='http://www.w3.org/2000/svg'%3E%3ClinearGradient xmlns='http://www.w3.org/2000/svg' id='a' x2='0%25' y2='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0%25' stop-color='%23f76a02'/%3E%3Cstop offset='100%25' stop-color='%23f76a02'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath xmlns='http://www.w3.org/2000/svg' fill='url(%23a)' d='M211.807 139.088c-3.18 16.366-28.492 34.277-57.562 37.748-15.159 1.809-30.084 3.471-45.999 2.741-26.027-1.192-46.565-6.212-46.565-6.212 0 2.534.156 4.946.469 7.202 3.384 25.687 25.47 27.225 46.391 27.943 21.116.723 39.919-5.206 39.919-5.206l.867 19.09s-14.77 7.931-41.08 9.39c-14.51.797-32.525-.365-53.507-5.919C9.232 213.82 1.406 165.311.209 116.091c-.365-14.613-.14-28.393-.14-39.918 0-50.33 32.976-65.083 32.976-65.083C49.672 3.454 78.204.242 107.865 0h.729c29.66.242 58.21 3.454 74.837 11.09 0 0 32.975 14.752 32.975 65.082 0 0 .414 37.134-4.599 62.916'/%3E%3Cpath fill='%23fff' d='M177.51 80.077v60.941h-24.144v-59.15c0-12.469-5.246-18.797-15.74-18.797-11.602 0-17.417 7.507-17.417 22.352V117.8H96.207V85.423c0-14.845-5.816-22.352-17.418-22.352-10.494 0-15.74 6.328-15.74 18.797v59.15H38.905V80.077c0-12.455 3.171-22.352 9.541-29.675 6.569-7.322 15.171-11.076 25.85-11.076 12.355 0 21.711 4.748 27.898 14.247l6.013 10.082 6.015-10.082c6.185-9.498 15.542-14.247 27.898-14.247 10.677 0 19.28 3.753 25.85 11.076 6.369 7.322 9.54 17.22 9.54 29.675'/%3E%3C/svg%3E");
 
-     /* Icons */
     --icon-follow-hashtag: url('data:image/svg+xml, %3Csvg version="1.0" xmlns="http://www.w3.org/2000/svg" width="18px" height="auto" viewBox="0 0 462 439"%3E%3Cpath fill="%23282C37" d="M139 11.7c-3.5 2.5-6.2 5.4-7.7 8.3-2.5 4.8-2.5 5.2-7.8 52.5-1.4 12.6-3.5 31.4-4.7 41.7l-2.1 18.7-48.6.3-48.6.3-5 3.1C7.2 141.1 3 148.4 3 156.7c0 4.4.6 7.6 2 10.2 2.7 5.4 10.1 11.6 15.5 13 2.9.7 19.2 1.1 47.8 1.1 40.9 0 43.5.1 43.1 1.7-.4 1.9-8.4 73.2-8.4 75.2 0 .8-11.4 1.1-41 1.1H20.9l-4.8 2.5C7.5 265.8 3 273 3 282.5s4.5 16.7 13.1 21l4.8 2.5H97.6l-5.3 46.7c-2.9 25.8-5.4 50.3-5.5 54.5-.1 7 .2 8.2 2.8 12.5 1.7 2.7 5.1 6.2 7.8 8 4.5 3.1 5.4 3.3 13 3.3 8.9 0 10.2-.5 16.8-6.8 4.8-4.6 6.3-9.3 8.2-26.7.9-7.7 2.7-23.9 4-36 1.4-12.1 3.3-29.5 4.3-38.8l1.7-16.7H214.7l.5-8.3c.7-9.8 1.4-11.5 8.2-18.5 8.6-9 7-8.7 41.4-9l30.2-.3V259h-9.5c-9.4 0-9.5 0-9.1-2.3.3-1.2 1.5-10.8 2.6-21.2 1.2-10.5 3-26.5 4.1-35.7 1-9.2 1.9-17.2 1.9-17.8 0-.7 12.3-1 38.5-1 23.5 0 40.3-.4 43.4-1.1 6.1-1.3 13.5-7.4 16.2-13.4 5.2-11.4.2-24.9-11.5-30.9l-4.9-2.6H290.4l5.3-46.8c5.3-47.1 6.1-59 4.3-63.6-1.4-3.7-7.9-10.5-12.1-12.7C285.2 8.6 282 8 277.2 8c-6.2 0-7.5.4-11.8 3.2-9.2 6.2-10.1 8.6-12.9 31.8-3.4 28.9-7.2 63.4-8.7 77.7l-1.2 12.3h-77.8l.6-4.3c.3-2.3.8-7.1 1.1-10.7.6-6.1 2.5-23.4 7.6-68 1.2-10.8 1.9-21.1 1.6-23.1-1.1-5.5-6.2-12.6-11.4-15.9-4.2-2.7-5.6-3-12.3-3-7.2 0-8 .2-13 3.7zm97.5 174.5c-.4 2.9-1.5 12.9-2.5 22.3-1.1 9.3-2.7 24.5-3.7 33.7l-1.7 16.8H150.9l.6-6.3c.3-3.4 1.7-15.7 3-27.2 1.3-11.6 2.9-26.3 3.6-32.8l1.2-11.7H237l-.5 5.2z"/%3E%3Cpath fill="%23282C37" d="M317.2 207c-1.8 1.1-4.1 3.4-5.2 5.2-1.9 3.1-2 5.1-2 38V285h-34.7c-33 0-35 .1-38.1 2-6.7 4.1-7.2 6-7.2 30s.5 25.9 7.2 30c3.1 1.9 5.1 2 38.1 2H310v34.7c0 33 .1 35 2 38.1 4.1 6.7 6 7.2 30 7.2s25.9-.5 30-7.2c1.9-3.1 2-5.1 2-38.1V349h34.8c32.9 0 34.9-.1 38-2 6.7-4.1 7.2-6 7.2-30s-.5-25.9-7.2-30c-3.1-1.9-5.1-2-38-2H374v-34.8c0-32.9-.1-34.9-2-38-4.1-6.7-6-7.2-30-7.2-19.7 0-21.8.2-24.8 2z"/%3E%3Cpath fill="%23282C37" d="M217.2 359.7c-5 43.2-5.5 50-4.2 54.7 1.5 5.4 7.5 12.7 12.4 15 5.2 2.4 17.1 2.2 21.6-.5 8.9-5.3 12.3-11.7 13.4-25.4.9-10.2 3.5-33.2 4.2-36.6l.5-2.7-15.3-.4c-10.1-.2-16.1-.8-17.8-1.7-1.4-.7-5-3.8-8.1-6.8l-5.6-5.4-1.1 9.8z"/%3E%3C/svg%3E');
     --icon-unfollow-hashtag: url('data:image/svg+xml, %3Csvg version="1.0" xmlns="http://www.w3.org/2000/svg" width="18px" height="auto" viewBox="0 0 462 439"%3E%3Cpath fill="%2300ba7c" d="M139 11.7c-3.5 2.5-6.2 5.4-7.7 8.3-2.5 4.8-2.5 5.2-7.8 52.5-1.4 12.6-3.5 31.4-4.7 41.7l-2.1 18.7-48.6.3-48.6.3-5 3.1C7.2 141.1 3 148.4 3 156.7c0 4.4.6 7.6 2 10.2 2.7 5.4 10.1 11.6 15.5 13 2.9.7 19.2 1.1 47.8 1.1 40.9 0 43.5.1 43.1 1.7-.4 1.9-8.4 73.2-8.4 75.2 0 .8-11.4 1.1-41 1.1H20.9l-4.8 2.5C7.5 265.8 3 273 3 282.5s4.5 16.7 13.1 21l4.8 2.5H97.6l-5.3 46.7c-2.9 25.8-5.4 50.3-5.5 54.5-.1 7 .2 8.2 2.8 12.5 1.7 2.7 5.1 6.2 7.8 8 4.5 3.1 5.4 3.3 13 3.3 8.9 0 10.2-.5 16.8-6.8 4.8-4.6 6.3-9.3 8.2-26.7.9-7.7 2.7-23.9 4-36 1.4-12.1 3.3-29.5 4.3-38.8l1.7-16.7h38.8c21.3 0 38.8.4 38.8.9 0 1-2.3 21.5-5 45.1-5.9 52.1-6.4 57.6-5 62.4 1.5 5.4 7.5 12.7 12.4 15 5.2 2.4 17.1 2.2 21.6-.5 5-3 8.7-6.7 10.1-10.1 1.2-2.9 1.1-3.1-10.8-15.1-6.7-6.7-12.6-13.2-13.2-14.4-1.5-2.9-1.4-25.8 0-28.6.6-1.2 9.2-10.3 19-20.3 24-24.2 24-20.9.3-44.4-9.6-9.6-18.2-18.7-19-20.2-2-3.8-2-25.8 0-29.6 1.7-3.2 34.2-35.5 37.3-37.1 1.2-.6 4.2-1.1 6.6-1.1 5.2 0 4.6 1.5 6.8-17.3l1.1-9.7h38.4c23.4 0 40.2-.4 43.3-1.1 6.1-1.3 13.5-7.4 16.2-13.4 5.2-11.4.2-24.9-11.5-30.9l-4.9-2.6H290.4l5.3-46.8c5.3-47.1 6.1-59 4.3-63.6-1.4-3.7-7.9-10.5-12.1-12.7C285.2 8.6 282 8 277.2 8c-6.2 0-7.5.4-11.8 3.2-9.2 6.2-10.1 8.6-12.9 31.8-3.4 28.9-7.2 63.4-8.7 77.7l-1.2 12.3h-77.8l.6-4.3c.3-2.3.8-7.1 1.1-10.7.6-6.1 2.5-23.4 7.6-68 1.2-10.8 1.9-21.1 1.6-23.1-1.1-5.5-6.2-12.6-11.4-15.9-4.2-2.7-5.6-3-12.3-3-7.2 0-8 .2-13 3.7zm97.5 174.5c-.4 2.9-1.5 12.9-2.5 22.3-1.1 9.3-2.7 24.5-3.7 33.7l-1.7 16.8H150.9l.6-6.3c.3-3.4 1.7-15.7 3-27.2 1.3-11.6 2.9-26.3 3.6-32.8l1.2-11.7H237l-.5 5.2z"/%3E%3Cpath fill="%2300ba7c" d="M277.5 223.2c-3.1 1.7-28.5 27-30.1 30-1.7 3.2-1.9 12-.3 15.1.6 1.2 11.7 12.9 24.7 25.9l23.7 23.8-23.7 23.7c-13 13.1-24.1 24.8-24.7 26-1.6 3.1-1.4 11.9.3 15.1 1.7 3.2 27.2 28.5 30.3 30.1 2.8 1.4 11.8 1.4 14.6 0 1.2-.6 12.9-11.7 26-24.7l23.7-23.7 23.8 23.7c13 13 24.7 24.1 25.9 24.7 2.8 1.4 11.8 1.4 14.6 0 3.1-1.6 28.6-26.9 30.3-30.1 1.7-3.2 1.9-12 .3-15.1-.6-1.2-11.7-12.9-24.7-26L388.5 318l23.7-23.8c13-13 24.1-24.7 24.7-25.9 1.6-3.1 1.4-11.9-.3-15.1-1.7-3.2-27.2-28.5-30.3-30.1-2.8-1.4-11.8-1.4-14.6 0-1.2.6-12.9 11.7-25.9 24.7L342 271.5l-23.7-23.7c-13.1-13-24.8-24.1-26-24.7-2.8-1.4-12.2-1.4-14.8.1z"/%3E%3C/svg%3E');
     --icon-boost: url("data:image/svg+xml, %0A%3Csvg viewBox='0 0 24 24' color='inherit' width='18' height='18' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='%23282C37' d='M6 4h15a1 1 0 0 1 1 1v7h-2V6H6v3L1 5l5-4v3zm12 16H3a1 1 0 0 1-1-1v-7h2v6h14v-3l5 4l-5 4v-3z'/%3E%3C/svg%3E");
@@ -105,9 +104,7 @@
         --color-accent-bg: #3c2a1f;
         --color-accent-fg: #ffffff;
 
-
         --logo: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' class='mastodon-logo' viewBox='0 0 216.414 232.01'%3E%3Cdefs xmlns='http://www.w3.org/2000/svg'%3E%3ClinearGradient xmlns='http://www.w3.org/2000/svg' id='a' x2='0%25' y2='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0%25' stop-color='%23E68A32'/%3E%3Cstop offset='100%25' stop-color='%23E68A32'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath xmlns='http://www.w3.org/2000/svg' fill='url(%23a)' d='M211.807 139.088c-3.18 16.366-28.492 34.277-57.562 37.748-15.159 1.809-30.084 3.471-45.999 2.741-26.027-1.192-46.565-6.212-46.565-6.212 0 2.534.156 4.946.469 7.202 3.384 25.687 25.47 27.225 46.391 27.943 21.116.723 39.919-5.206 39.919-5.206l.867 19.09s-14.77 7.931-41.08 9.39c-14.51.797-32.525-.365-53.507-5.919C9.232 213.82 1.406 165.311.209 116.091c-.365-14.613-.14-28.393-.14-39.918 0-50.33 32.976-65.083 32.976-65.083C49.672 3.454 78.204.242 107.865 0h.729c29.66.242 58.21 3.454 74.837 11.09 0 0 32.975 14.752 32.975 65.082 0 0 .414 37.134-4.599 62.916'/%3E%3Cpath fill='%23fff' d='M177.51 80.077v60.941h-24.144v-59.15c0-12.469-5.246-18.797-15.74-18.797-11.602 0-17.417 7.507-17.417 22.352V117.8H96.207V85.423c0-14.845-5.816-22.352-17.418-22.352-10.494 0-15.74 6.328-15.74 18.797v59.15H38.905V80.077c0-12.455 3.171-22.352 9.541-29.675 6.569-7.322 15.171-11.076 25.85-11.076 12.355 0 21.711 4.748 27.898 14.247l6.013 10.082 6.015-10.082c6.185-9.498 15.542-14.247 27.898-14.247 10.677 0 19.28 3.753 25.85 11.076 6.369 7.322 9.54 17.22 9.54 29.675'/%3E%3C/svg%3E");
-
 
         --icon-follow-hashtag: url('data:image/svg+xml, %3Csvg version="1.0" xmlns="http://www.w3.org/2000/svg" width="18px" height="auto" viewBox="0 0 462 439"%3E%3Cpath fill="%23ffffff" d="M139 11.7c-3.5 2.5-6.2 5.4-7.7 8.3-2.5 4.8-2.5 5.2-7.8 52.5-1.4 12.6-3.5 31.4-4.7 41.7l-2.1 18.7-48.6.3-48.6.3-5 3.1C7.2 141.1 3 148.4 3 156.7c0 4.4.6 7.6 2 10.2 2.7 5.4 10.1 11.6 15.5 13 2.9.7 19.2 1.1 47.8 1.1 40.9 0 43.5.1 43.1 1.7-.4 1.9-8.4 73.2-8.4 75.2 0 .8-11.4 1.1-41 1.1H20.9l-4.8 2.5C7.5 265.8 3 273 3 282.5s4.5 16.7 13.1 21l4.8 2.5H97.6l-5.3 46.7c-2.9 25.8-5.4 50.3-5.5 54.5-.1 7 .2 8.2 2.8 12.5 1.7 2.7 5.1 6.2 7.8 8 4.5 3.1 5.4 3.3 13 3.3 8.9 0 10.2-.5 16.8-6.8 4.8-4.6 6.3-9.3 8.2-26.7.9-7.7 2.7-23.9 4-36 1.4-12.1 3.3-29.5 4.3-38.8l1.7-16.7H214.7l.5-8.3c.7-9.8 1.4-11.5 8.2-18.5 8.6-9 7-8.7 41.4-9l30.2-.3V259h-9.5c-9.4 0-9.5 0-9.1-2.3.3-1.2 1.5-10.8 2.6-21.2 1.2-10.5 3-26.5 4.1-35.7 1-9.2 1.9-17.2 1.9-17.8 0-.7 12.3-1 38.5-1 23.5 0 40.3-.4 43.4-1.1 6.1-1.3 13.5-7.4 16.2-13.4 5.2-11.4.2-24.9-11.5-30.9l-4.9-2.6H290.4l5.3-46.8c5.3-47.1 6.1-59 4.3-63.6-1.4-3.7-7.9-10.5-12.1-12.7C285.2 8.6 282 8 277.2 8c-6.2 0-7.5.4-11.8 3.2-9.2 6.2-10.1 8.6-12.9 31.8-3.4 28.9-7.2 63.4-8.7 77.7l-1.2 12.3h-77.8l.6-4.3c.3-2.3.8-7.1 1.1-10.7.6-6.1 2.5-23.4 7.6-68 1.2-10.8 1.9-21.1 1.6-23.1-1.1-5.5-6.2-12.6-11.4-15.9-4.2-2.7-5.6-3-12.3-3-7.2 0-8 .2-13 3.7zm97.5 174.5c-.4 2.9-1.5 12.9-2.5 22.3-1.1 9.3-2.7 24.5-3.7 33.7l-1.7 16.8H150.9l.6-6.3c.3-3.4 1.7-15.7 3-27.2 1.3-11.6 2.9-26.3 3.6-32.8l1.2-11.7H237l-.5 5.2z"/%3E%3Cpath fill="%23ffffff" d="M317.2 207c-1.8 1.1-4.1 3.4-5.2 5.2-1.9 3.1-2 5.1-2 38V285h-34.7c-33 0-35 .1-38.1 2-6.7 4.1-7.2 6-7.2 30s.5 25.9 7.2 30c3.1 1.9 5.1 2 38.1 2H310v34.7c0 33 .1 35 2 38.1 4.1 6.7 6 7.2 30 7.2s25.9-.5 30-7.2c1.9-3.1 2-5.1 2-38.1V349h34.8c32.9 0 34.9-.1 38-2 6.7-4.1 7.2-6 7.2-30s-.5-25.9-7.2-30c-3.1-1.9-5.1-2-38-2H374v-34.8c0-32.9-.1-34.9-2-38-4.1-6.7-6-7.2-30-7.2-19.7 0-21.8.2-24.8 2z"/%3E%3Cpath fill="%23ffffff" d="M217.2 359.7c-5 43.2-5.5 50-4.2 54.7 1.5 5.4 7.5 12.7 12.4 15 5.2 2.4 17.1 2.2 21.6-.5 8.9-5.3 12.3-11.7 13.4-25.4.9-10.2 3.5-33.2 4.2-36.6l.5-2.7-15.3-.4c-10.1-.2-16.1-.8-17.8-1.7-1.4-.7-5-3.8-8.1-6.8l-5.6-5.4-1.1 9.8z"/%3E%3C/svg%3E');
         --icon-unfollow-hashtag: url('data:image/svg+xml, %3Csvg version="1.0" xmlns="http://www.w3.org/2000/svg" width="18px" height="auto" viewBox="0 0 462 439"%3E%3Cpath fill="%2300ba7c" d="M139 11.7c-3.5 2.5-6.2 5.4-7.7 8.3-2.5 4.8-2.5 5.2-7.8 52.5-1.4 12.6-3.5 31.4-4.7 41.7l-2.1 18.7-48.6.3-48.6.3-5 3.1C7.2 141.1 3 148.4 3 156.7c0 4.4.6 7.6 2 10.2 2.7 5.4 10.1 11.6 15.5 13 2.9.7 19.2 1.1 47.8 1.1 40.9 0 43.5.1 43.1 1.7-.4 1.9-8.4 73.2-8.4 75.2 0 .8-11.4 1.1-41 1.1H20.9l-4.8 2.5C7.5 265.8 3 273 3 282.5s4.5 16.7 13.1 21l4.8 2.5H97.6l-5.3 46.7c-2.9 25.8-5.4 50.3-5.5 54.5-.1 7 .2 8.2 2.8 12.5 1.7 2.7 5.1 6.2 7.8 8 4.5 3.1 5.4 3.3 13 3.3 8.9 0 10.2-.5 16.8-6.8 4.8-4.6 6.3-9.3 8.2-26.7.9-7.7 2.7-23.9 4-36 1.4-12.1 3.3-29.5 4.3-38.8l1.7-16.7h38.8c21.3 0 38.8.4 38.8.9 0 1-2.3 21.5-5 45.1-5.9 52.1-6.4 57.6-5 62.4 1.5 5.4 7.5 12.7 12.4 15 5.2 2.4 17.1 2.2 21.6-.5 5-3 8.7-6.7 10.1-10.1 1.2-2.9 1.1-3.1-10.8-15.1-6.7-6.7-12.6-13.2-13.2-14.4-1.5-2.9-1.4-25.8 0-28.6.6-1.2 9.2-10.3 19-20.3 24-24.2 24-20.9.3-44.4-9.6-9.6-18.2-18.7-19-20.2-2-3.8-2-25.8 0-29.6 1.7-3.2 34.2-35.5 37.3-37.1 1.2-.6 4.2-1.1 6.6-1.1 5.2 0 4.6 1.5 6.8-17.3l1.1-9.7h38.4c23.4 0 40.2-.4 43.3-1.1 6.1-1.3 13.5-7.4 16.2-13.4 5.2-11.4.2-24.9-11.5-30.9l-4.9-2.6H290.4l5.3-46.8c5.3-47.1 6.1-59 4.3-63.6-1.4-3.7-7.9-10.5-12.1-12.7C285.2 8.6 282 8 277.2 8c-6.2 0-7.5.4-11.8 3.2-9.2 6.2-10.1 8.6-12.9 31.8-3.4 28.9-7.2 63.4-8.7 77.7l-1.2 12.3h-77.8l.6-4.3c.3-2.3.8-7.1 1.1-10.7.6-6.1 2.5-23.4 7.6-68 1.2-10.8 1.9-21.1 1.6-23.1-1.1-5.5-6.2-12.6-11.4-15.9-4.2-2.7-5.6-3-12.3-3-7.2 0-8 .2-13 3.7zm97.5 174.5c-.4 2.9-1.5 12.9-2.5 22.3-1.1 9.3-2.7 24.5-3.7 33.7l-1.7 16.8H150.9l.6-6.3c.3-3.4 1.7-15.7 3-27.2 1.3-11.6 2.9-26.3 3.6-32.8l1.2-11.7H237l-.5 5.2z"/%3E%3Cpath fill="%2300ba7c" d="M277.5 223.2c-3.1 1.7-28.5 27-30.1 30-1.7 3.2-1.9 12-.3 15.1.6 1.2 11.7 12.9 24.7 25.9l23.7 23.8-23.7 23.7c-13 13.1-24.1 24.8-24.7 26-1.6 3.1-1.4 11.9.3 15.1 1.7 3.2 27.2 28.5 30.3 30.1 2.8 1.4 11.8 1.4 14.6 0 1.2-.6 12.9-11.7 26-24.7l23.7-23.7 23.8 23.7c13 13 24.7 24.1 25.9 24.7 2.8 1.4 11.8 1.4 14.6 0 3.1-1.6 28.6-26.9 30.3-30.1 1.7-3.2 1.9-12 .3-15.1-.6-1.2-11.7-12.9-24.7-26L388.5 318l23.7-23.8c13-13 24.1-24.7 24.7-25.9 1.6-3.1 1.4-11.9-.3-15.1-1.7-3.2-27.2-28.5-30.3-30.1-2.8-1.4-11.8-1.4-14.6 0-1.2.6-12.9 11.7-25.9 24.7L342 271.5l-23.7-23.7c-13.1-13-24.8-24.1-26-24.7-2.8-1.4-12.2-1.4-14.8.1z"/%3E%3C/svg%3E');
@@ -168,12 +165,17 @@
     }
 }
 
+
+
 body.layout-single-column  {
     background-color: var(--color-bg);
     color: var(--color-fg);
     font-family: ui-rounded, "mastodon-font-sans-serif", sans-serif;
 }
 
+
+
+/* 🖱️ Scrollbars */
 ::-webkit-scrollbar-track {
     background-color: var(--color-bg);
     padding: 2px;
@@ -196,6 +198,31 @@ body.layout-single-column  {
     }
 }
 
+/* 👋 Hide superfluous UI */
+.layout-single-column .about__header, /* Hide header section on about page */
+.layout-single-column .about__meta, /* Hide meta section on about page */
+.layout-single-column div#mastodon > div > div > div:nth-child(2) > div:nth-child(3) > div > div > div:nth-child(3) > hr,
+.layout-single-column .navigation-panel__legal > hr,
+.layout-single-column .navigation-panel > .column-link:only-of-type, /* Hide Explore tab for logged-out users */
+.layout-single-column .navigation-panel__sign-in-banner + .navigation-panel__legal + .flex-spacer + .getting-started__trends, /* Hide Trending section for logged-out users */
+.layout-single-column .about__footer, /* Hide meta footer */
+.layout-single-column .server-banner__introduction, /* Hide generic mastodon server introduction in sidebar */
+.layout-single-column .search-banner ~ .search, /* Hide search field for logged out users */
+.layout-single-column .ui__header__links .button.button-tertiary,
+.layout-single-column .getting-started__trends h4, /* Hide Trending header in sidebar */
+.layout-single-column .account__header__bio .account__header__fields > dl:first-child /* Hide "Joined" field on profiles */ {
+    display: none;
+}
+
+/* 💨 Loading bar */
+.layout-single-column .loading-bar { 
+    background-color: var(--color-accent);
+}
+
+
+
+/* *️⃣ Icons
+   -------- */
 .layout-single-column i.fa-bookmark:before,
 .layout-single-column i.fa-share-alt:before,
 .layout-single-column i.fa-bookmark:before,
@@ -269,7 +296,6 @@ body.layout-single-column  {
     opacity: .2;
     pointer-events: none;
 }
-
 /* Replace reply icon */
 .layout-single-column i.fa-mail-reply::before,
 .layout-single-column i.fa-reply::before,
@@ -278,7 +304,7 @@ body.layout-single-column  {
   position: relative;
   top: 2px;
 }
-
+/* Convert action bar icons to accent color using filters */
 .layout-single-column .detailed-status__action-bar button.icon-button:not(.active,:hover) {
     filter: brightness(0) saturate(100%) invert(51%) sepia(47%) saturate(996%) hue-rotate(339deg) brightness(95%) contrast(90%);
     transition: none;
@@ -288,26 +314,83 @@ body.layout-single-column  {
         filter: brightness(0) saturate(100%) invert(67%) sepia(40%) saturate(2566%) hue-rotate(340deg) brightness(97%) contrast(86%);
     }
 }
+/* Home icon */
+.layout-single-column .notification__filter-bar .fa-home::before {
+    content: var(--icon-home-notification);
+}
+.layout-single-column .notification__filter-bar .active .fa-home::before {
+    content: var(--icon-home-notification-active);
+}
+.layout-single-column .column-link .fa-home::before {
+    content: var(--icon-home);
+}
+.layout-single-column .column-link.active .fa-home::before {
+    content: var(--icon-home-column-link-active);
+}
+/* Federated icon */
+.layout-single-column .column-link .fa-globe::before {
+    content: var(--icon-globe);
+}
+‡
+.layout-single-column .column-link.active .fa-home::before {
+    content: var(--icon-home-column-link-active);
+}
+/* Explore icon */
+.layout-single-column .column-link .fa-hashtag::before {
+    content: var(--icon-hashtag);
+}
+.layout-single-column .column-link.active .fa-hashtag::before {
+    content: var(--icon-hashtag-active);
+}
+/* Local icon */
+.layout-single-column .column-link .fa-users::before {
+    content: var(--icon-users-column-link);
+}
+.layout-single-column .column-link.active .fa-users::before {
+    content: var(--icon-users-column-link-active);
+}
+/* Notifications icon */
+.layout-single-column .column-link .fa-bell::before {
+    content: var(--icon-bell);
+}
+.layout-single-column .column-link.active .fa-bell::before {
+    content: var(--icon-bell-active);
+}
+/* Direct messages icon */
+.layout-single-column .column-link .fa-at::before {
+    content: var(--icon-direct-messages);
+}
+.layout-single-column .column-link .fa-bookmark::before {
+    content: var(--icon-bookmark-column-link);
+    background-image: none;
+}
+.layout-single-column .column-link.active .fa-bookmark::before {
+    content: var(--icon-bookmark-column-link-active);
+}
+.layout-single-column .column-link .fa-star::before {
+    content: var(--icon-star-column-link);
+    background-image: none;
+}
+.layout-single-column .column-link.active .fa-star::before {
+    content: var(--icon-star-column-link-active);
+}
+.layout-single-column .column-link .fa-list-ul {
+    transform: scale(1);
+    margin-right: 8px;
+    margin-left: 1px;
+}
+.layout-single-column .column-link .fa-list-ul::before {
+    content: var(--icon-list);
+    background-image: none;
+}
+
+
+/* Resetting borders */
 .layout-single-column .column-inline-form, 
 .layout-single-column .column>.scrollable, 
 .layout-single-column .error-column, 
 .layout-single-column .getting-started, 
-.layout-single-column .regeneration-indicator {
-    border: 0;
-}
-.layout-single-column .column-inline-form, 
-.layout-single-column .column>.scrollable, 
-.layout-single-column .error-column, 
-.layout-single-column .getting-started, 
-.layout-single-column .regeneration-indicator {
-    background: transparent;
-}
-
-.layout-single-column .account__avatar img {
-    border-radius: 50%;
-}
-
-
+.layout-single-column .regeneration-indicator,
 .layout-single-column .audio-player, 
 .layout-single-column .compose-form .spoiler-input__input, 
 .layout-single-column .compose-form__autosuggest-wrapper, 
@@ -318,37 +401,21 @@ body.layout-single-column  {
 .layout-single-column .setting-text,
 .layout-single-column .compose-form .compose-form__buttons-wrapper {
     border: 0;
-    border-top: 0;
+}
+.layout-single-column .column-inline-form, 
+.layout-single-column .column>.scrollable, 
+.layout-single-column .error-column, 
+.layout-single-column .getting-started, 
+.layout-single-column .regeneration-indicator {
+    background: transparent;
+}
+.layout-single-column .account__avatar img {
+    border-radius: 50%;
 }
 
 
-/* Compose panel */
-.layout-single-column .search {
-    margin-bottom: 10px;
-}
-.layout-single-column .search__input {
-    border-radius: 7px;
-    background-color: var(--color-accent-bg);
-    color: var(--color-content-fg);
-    border: none;
-}
-.layout-single-column .search__input::placeholder,
-.layout-single-column .compose-form .spoiler-input__input::placeholder {
-    font-weight: 500;
-    color: var(--color-accent);
-}
-.layout-single-column i.fa-search,
-.layout-single-column i.fa.active {
-    opacity: 1;
-    right: 15px;
-}
-.layout-single-column i.fa-search:before {
-    content: " ";
-}
-.layout-single-column i.fa-search.active:before,
-.layout-single-column i.fa-search.column-header__icon:before {
-    content: var(--icon-search);
-}
+/* 📝 Compose panel
+   ---------------- */
 .layout-single-column .compose-form {
     padding: 0 0;
 }
@@ -430,9 +497,11 @@ body.layout-single-column  {
         margin: 10px 10px 0;
     }
 }
-    
 
-/* Toots in the TL */
+
+
+/* 💬 Posts
+   -------- */
 .layout-single-column .reply-indicator__content,
 .layout-single-column .status__content {
     color: var(--color-content-fg);
@@ -450,7 +519,6 @@ body.layout-single-column  {
     padding: 0 10px;
     border-bottom: 0;
 }
-
 .layout-single-column .status__wrapper {
     box-shadow:
         inset 72px 0 var(--color-content-bg), 
@@ -462,8 +530,48 @@ body.layout-single-column  {
     border-radius: 0 0 7px 7px;
     box-shadow: none;
 }
+.layout-single-column .status__wrapper,
+.layout-single-column .detailed-status__wrapper {
+    background-color: var(--color-content-bg);
+    padding: 15px 12px 12px;
+}
+.layout-single-column .status__info {
+    height: 22px;
+    margin-left: -56px;
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 10px;
+    align-items: start;
+}
+.layout-single-column .status__info .status__display-name {
+    overflow: visible;
+    align-items: start;
+    max-width: calc(100% - 4em);
+}
+.layout-single-column .status__info .status__display-name .display-name bdi,
+.layout-single-column .status__info .status__display-name .display-name__account {
+    vertical-align: top;
+}
+.layout-single-column .status__info .status__display-name .display-name__account {
+    display: inline;
+    opacity: .7;
+}
+.layout-single-column .status__relative-time {
+    height: 22px;
+    position: absolute;
+    right: 22px;
+    color: var(--color-content-fg);
+    opacity: .7;
+}
+.layout-single-column .status__avatar {
+    margin-bottom: -10px;
+}
+.layout-single-column .reply-indicator__content, 
+.layout-single-column .status__content {
+    line-height: 19px;
+}
 
-/* Threaded replies */
+/* 👥 Threaded replies */
 .layout-single-column .status__wrapper:has(.status--first-in-thread) {
     box-shadow:
         0 -3px var(--color-bg),
@@ -504,50 +612,7 @@ body.layout-single-column  {
     box-shadow: 0 -3px var(--color-bg) inset;
 }
 
-.layout-single-column .status__wrapper,
-.layout-single-column .detailed-status__wrapper {
-    background-color: var(--color-content-bg);
-    padding: 15px 12px 12px;
-}
-
-.layout-single-column .status__info {
-    height: 22px;
-    margin-left: -56px;
-    padding: 0;
-    margin-bottom: 0;
-    line-height: 10px;
-    align-items: start;
-}
-.layout-single-column .status__info .status__display-name {
-    overflow: visible;
-    align-items: start;
-    max-width: calc(100% - 4em);
-}
-.layout-single-column .status__info .status__display-name .display-name bdi,
-.layout-single-column .status__info .status__display-name .display-name__account {
-    vertical-align: top;
-}
-.layout-single-column .status__info .status__display-name .display-name__account {
-    display: inline;
-    opacity: .7;
-}
-.layout-single-column .status__relative-time {
-    height: 22px;
-    position: absolute;
-    right: 22px;
-    color: var(--color-content-fg);
-    opacity: .7;
-}
-.layout-single-column .status__avatar {
-    margin-bottom: -10px;
-}
-.layout-single-column .reply-indicator__content, 
-.layout-single-column .status__content {
-    line-height: 19px;
-}
-.layout-single-column .detailed-status .status__content {
-    line-height: 24px;
-}
+/* ⭐ Action bar */
 .layout-single-column .status__action-bar {
     justify-content: left;
     opacity: .4;
@@ -649,8 +714,18 @@ body.layout-single-column  {
     }
 }
 
+/* 📊 Poll charts */
+.layout-single-column .poll__chart {
+    background: var(--color-accent);
+    opacity: .4;
+    height: 12px;
+    border-radius: 10px;
+}
+.layout-single-column .poll__chart.leading {
+    opacity: 1;
+}
 
-/* Focused toots */
+/* ⏺️ Posts when in focus */
 .layout-single-column .scrollable .status__wrapper.focusable:focus,
 .layout-single-column .scrollable .detailed-status__wrapper.focusable:focus,
 .layout-single-column .focusable:focus .detailed-status,
@@ -666,7 +741,10 @@ body.layout-single-column  {
         0 -1px var(--color-content-secondary-bg) inset;
 }
 
-/* Detailed toots */
+/* 👁️ Post detailed view */
+.layout-single-column .detailed-status .status__content {
+    line-height: 24px;
+}
 .layout-single-column .detailed-status,
 .layout-single-column .detailed-status__action-bar {
     background-color: var(--color-content-bg);
@@ -700,8 +778,9 @@ body.layout-single-column  {
 }
 
 
-/* Column header
-   ------------- */
+
+/* ⏺️ Column headers
+   ----------------- */
 .layout-single-column .tabs-bar__wrapper {
     border-radius: 0;
     background-color: transparent;
@@ -868,7 +947,8 @@ body.layout-single-column  {
 
 
 
-/* Tab bar */
+/* ⏺️ Horizontal selectors
+   (used to navigate subsections on the Explore, Live Feeds and Account pages) */
 .layout-single-column .account__section-headline,
 .layout-single-column .notification__filter-bar {
     background: var(--color-accent-bg);
@@ -929,8 +1009,10 @@ body.layout-single-column  {
     }
 }
 
-/* Navigation Panel
-   ---------------- */
+
+
+/* 📍 Navigation panel
+   ------------------- */
 .layout-single-column .column-link--transparent {
     color: var(--color-fg);
 }
@@ -1033,75 +1115,6 @@ body.layout-single-column  {
     position: relative;
     top: 1px;
 }
-/* Home icon */
-.layout-single-column .notification__filter-bar .fa-home::before {
-    content: var(--icon-home-notification);
-}
-.layout-single-column .notification__filter-bar .active .fa-home::before {
-    content: var(--icon-home-notification-active);
-}
-.layout-single-column .column-link .fa-home::before {
-    content: var(--icon-home);
-}
-.layout-single-column .column-link.active .fa-home::before {
-    content: var(--icon-home-column-link-active);
-}
-/* Federated icon */
-.layout-single-column .column-link .fa-globe::before {
-    content: var(--icon-globe);
-}
-‡
-.layout-single-column .column-link.active .fa-home::before {
-    content: var(--icon-home-column-link-active);
-}
-/* Explore icon */
-.layout-single-column .column-link .fa-hashtag::before {
-    content: var(--icon-hashtag);
-}
-.layout-single-column .column-link.active .fa-hashtag::before {
-    content: var(--icon-hashtag-active);
-}
-/* Local icon */
-.layout-single-column .column-link .fa-users::before {
-    content: var(--icon-users-column-link);
-}
-.layout-single-column .column-link.active .fa-users::before {
-    content: var(--icon-users-column-link-active);
-}
-/* Notifications icon */
-.layout-single-column .column-link .fa-bell::before {
-    content: var(--icon-bell);
-}
-.layout-single-column .column-link.active .fa-bell::before {
-    content: var(--icon-bell-active);
-}
-/* Direct messages icon */
-.layout-single-column .column-link .fa-at::before {
-    content: var(--icon-direct-messages);
-}
-.layout-single-column .column-link .fa-bookmark::before {
-    content: var(--icon-bookmark-column-link);
-    background-image: none;
-}
-.layout-single-column .column-link.active .fa-bookmark::before {
-    content: var(--icon-bookmark-column-link-active);
-}
-.layout-single-column .column-link .fa-star::before {
-    content: var(--icon-star-column-link);
-    background-image: none;
-}
-.layout-single-column .column-link.active .fa-star::before {
-    content: var(--icon-star-column-link-active);
-}
-.layout-single-column .column-link .fa-list-ul {
-    transform: scale(1);
-    margin-right: 8px;
-    margin-left: 1px;
-}
-.layout-single-column .column-link .fa-list-ul::before {
-    content: var(--icon-list);
-    background-image: none;
-}
 @media screen and (max-width:1174px) {
     .layout-single-column .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
         width: 100vw;
@@ -1189,9 +1202,8 @@ body.layout-single-column  {
 
 
 
-
-/* Profile tweaks
-   -------------- */
+/* 👤 Account view
+   --------------- */
 .layout-single-column .account__header {
     border-radius: 7px;
     margin-bottom: 10px;
@@ -1324,8 +1336,9 @@ body.layout-single-column  {
 }
 
 
-/* Explore Tab
-   ----------- */
+
+/* ✨ Explore tab
+   -------------- */
 .layout-single-column .account__section-headline + .scrollable article:first-child .status__wrapper {
     border-radius: 7px 7px 0 0;
 }
@@ -1337,6 +1350,13 @@ body.layout-single-column  {
 }
 
 /* #️⃣ Trending hashtags */
+.layout-single-column .trends__item__sparkline path:last-child {
+    stroke: var(--color-accent) !important;
+}
+.layout-single-column .trends__item__sparkline path:first-child {
+    fill: var(--color-accent) !important;
+    opacity: 20%;
+}
 .layout-single-column .explore__links {
     background-color: var(--color-content-bg);
     border-radius: 7px;
@@ -1402,7 +1422,33 @@ body.layout-single-column  {
     color: var(--color-fg);
 }
 
-/* 🔍 Search results */
+/* 🔍 Search field and search results */
+.layout-single-column .search {
+    margin-bottom: 10px;
+}
+.layout-single-column .search__input {
+    border-radius: 7px;
+    background-color: var(--color-accent-bg);
+    color: var(--color-content-fg);
+    border: none;
+}
+.layout-single-column .search__input::placeholder,
+.layout-single-column .compose-form .spoiler-input__input::placeholder {
+    font-weight: 500;
+    color: var(--color-accent);
+}
+.layout-single-column i.fa-search,
+.layout-single-column i.fa.active {
+    opacity: 1;
+    right: 15px;
+}
+.layout-single-column i.fa-search:before {
+    content: " ";
+}
+.layout-single-column i.fa-search.active:before,
+.layout-single-column i.fa-search.column-header__icon:before {
+    content: var(--icon-search);
+}
 .layout-single-column .explore__search-results {
     background-color: var(--color-content-bg);
     border-radius: 7px;
@@ -1487,7 +1533,8 @@ body.layout-single-column  {
 
 
 
-/* Notifications tab */
+/* 🔔 Notifications
+   ---------------- */
 .layout-single-column .muted .status__content,
 .layout-single-column .muted .status__content a,
 .layout-single-column .muted .status__content p,
@@ -1551,88 +1598,8 @@ body.layout-single-column  {
 
 
 
-/* Footer */
-.layout-single-column .link-footer p,
-.layout-single-column .link-footer a {
-    color: var(--color-fg);
-}
-.layout-single-column .link-footer p {
-    opacity: .3;
-    transition: opacity .3s;
-}
-.layout-single-column .link-footer:hover p {
-    opacity: 1;
-}
-
-
-
-/* Hiding a bunch of stuff.
-   ------------------------ */
-.layout-single-column .about__header, /* Hide header section on about page */
-.layout-single-column .about__meta, /* Hide meta section on about page */
-.layout-single-column div#mastodon > div > div > div:nth-child(2) > div:nth-child(3) > div > div > div:nth-child(3) > hr,
-.layout-single-column .navigation-panel__legal > hr,
-.layout-single-column .navigation-panel > .column-link:only-of-type, /* Hide Explore tab for logged-out users */
-.layout-single-column .navigation-panel__sign-in-banner + .navigation-panel__legal + .flex-spacer + .getting-started__trends, /* Hide Trending section for logged-out users */
-.layout-single-column .about__footer, /* Hide meta footer */
-.layout-single-column .server-banner__introduction, /* Hide generic mastodon server introduction in sidebar */
-.layout-single-column .search-banner ~ .search, /* Hide search field for logged out users */
-.layout-single-column .ui__header__links .button.button-tertiary,
-.layout-single-column .getting-started__trends h4, /* Hide Trending header in sidebar */
-.layout-single-column .account__header__bio .account__header__fields > dl:first-child /* Hide "Joined" field on profiles */ {
-    display: none;
-}
-
-
-
-.layout-single-column #logo-symbol-wordmark > path:nth-child(1) { /* grayscale Mastodon logo */
-    fill: var(--color-accent);
-    opacity: .4;
-}
-.layout-single-column .loading-bar { /* Loading Bar */
-    background-color: var(--color-accent);
-}
-
-.layout-single-column .react-toggle-track {
-    background-color: var(--color-neutral);
-}
-.layout-single-column .react-toggle.react-toggle--checked .react-toggle-track,
-.layout-single-column .react-toggle.react-toggle--checked:is(:hover,:focus-within):not(.react-toggle--disabled) .react-toggle-track,
-.layout-single-column .react-toggle.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
-    background-color: var(--color-accent);
-}
-.layout-single-column .react-toggle--checked .react-toggle-thumb {
-    border-color: var(--color-accent);
-}
-
-.layout-single-column .poll__chart { /* poll charts */
-    background: var(--color-accent);
-    opacity: .4;
-    height: 12px;
-    border-radius: 10px;
-}
-.layout-single-column .poll__chart.leading {
-    opacity: 1;
-}
-
-
-
-
-
-/* Trending hashtags
-   ----------------- */
-.trends__item__sparkline path:last-child {
-    stroke: var(--color-accent) !important;
-}
-.trends__item__sparkline path:first-child {
-    fill: var(--color-accent) !important;
-    opacity: 20%;
-}
-
-
-
-/* Buttons and links
-   ----------------- */
+/* ⏺️ UI components : buttons, toggles, ...
+   ---------------------------------------- */
 .layout-single-column .button,
 .layout-single-column .account__header__tabs__buttons .icon-button {
     border-radius: 7px;
@@ -1644,6 +1611,7 @@ body.layout-single-column  {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
 }
+.layout-single-column .text-icon-button.active,
 .layout-single-column .button.button-tertiary,
 .layout-single-column .account__header__fields a,
 .layout-single-column .account__header__bio .account__header__fields a,
@@ -1657,23 +1625,21 @@ body.layout-single-column  {
 .layout-single-column .column-header__back-button,
 .layout-single-column .interaction-modal__icon,
 .layout-single-column .status__content a.mention,
-.layout-single-column .status__content__read-more-button {
-    color: var(--color-accent);
-    border-color: var(--color-accent);
-}
+.layout-single-column .status__content__read-more-button,
 .layout-single-column .status__action-bar__dropdown .icon-button.active,
 .layout-single-column .account__relationship .icon-button.active,
 .layout-single-column .account__header__tabs__buttons .icon-button.active {
     color: var(--color-accent);
 }
 .layout-single-column .icon-button,
-.layout-single-column .icon-button.inverted {
+.layout-single-column .icon-button.inverted,
+.layout-single-column .reply-indicator__content .status__content__spoiler-link, 
+.layout-single-column .status__content .status__content__spoiler-link {
     color: var(--color-content-fg);
 }
 .layout-single-column .reply-indicator__content .status__content__spoiler-link, 
 .layout-single-column .status__content .status__content__spoiler-link {
     background-color: var(--color-accent-bg);
-    color: var(--color-content-fg);
 }
 .layout-single-column .account__header__tabs__buttons .icon-button {
     padding: 3px;
@@ -1689,9 +1655,6 @@ body.layout-single-column  {
 .layout-single-column .icon-button:focus, 
 .layout-single-column .icon-button:hover {
     background-color: var(--color-accent-bg);
-}
-.layout-single-column .text-icon-button.active {
-    color: var(--color-accent);
 }
 .layout-single-column .copypaste input {
     border-color: var(--color-accent);
@@ -1711,6 +1674,18 @@ body.layout-single-column  {
 .layout-single-column .button.logo-button:hover {
     background-color: var(--color-accent-focus);
 }
+.layout-single-column .react-toggle-track {
+    background-color: var(--color-neutral);
+}
+.layout-single-column .react-toggle.react-toggle--checked .react-toggle-track,
+.layout-single-column .react-toggle.react-toggle--checked:is(:hover,:focus-within):not(.react-toggle--disabled) .react-toggle-track,
+.layout-single-column .react-toggle.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background-color: var(--color-accent);
+}
+.layout-single-column .react-toggle--checked .react-toggle-thumb {
+    border-color: var(--color-accent);
+}
+
 .layout-single-column .dropdown-menu__item a:active,
 .layout-single-column .dropdown-menu__item a:focus,
 .layout-single-column .dropdown-menu__item a:hover,
@@ -1764,6 +1739,22 @@ body.layout-single-column  {
     color: var(--color-accent);
 }
 
+
+
+
+/* 📄 Meta
+   ------- */
+.layout-single-column .link-footer p,
+.layout-single-column .link-footer a {
+    color: var(--color-fg);
+}
+.layout-single-column .link-footer p {
+    opacity: .3;
+    transition: opacity .3s;
+}
+.layout-single-column .link-footer:hover p {
+    opacity: 1;
+}
 
 /* Server banner */
 .layout-single-column .server-banner__introduction {
@@ -1838,8 +1829,8 @@ body.layout-single-column  {
 }
 
 
-/* Custom About/Home page for nileane.fr
-   ------------------------------------- */
+/* 📜 About page
+   ------------- */
 .layout-single-column .scrollable.about {
     background-color: var(--color-content-bg);
 }
