@@ -14,7 +14,7 @@ To use on your instance, simply copy & paste the contents of [TangerineUI-single
 If you're not an admin, you can still use Tangerine UI using a userstyle browser extension (ie. Stylish).
 
 ### Things to know
-* This is still pretty early, and this is a personal project, so things might not be styled properly in some places. Feel free to message me if you notice anything wonky though :)
+* This is still pretty early, and this is a personal project, so things might not be styled properly in some places. [Feel free to message me](https://nileane.fr/@nileane) if you notice anything wonky though :)
 * **Tangerine UI currently only supports the single column layout**. The advanced view (multiple columns) will not be affected.
 * **Tangerine UI auto-switches from light to dark mode based on your OS preference**, whether you set your Mastodon theme to *Mastodon (Dark)* or *Mastodon (Light*).
 * Check your Mastodon instance version before using. The latest Mastodon release checked to be compatible is indicated in the CSS file header.
