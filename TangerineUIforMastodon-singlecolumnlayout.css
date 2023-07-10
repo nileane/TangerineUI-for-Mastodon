@@ -221,6 +221,36 @@ body.layout-single-column  {
 
 
 
+/* Resetting borders */
+.layout-single-column .column-inline-form, 
+.layout-single-column .column>.scrollable, 
+.layout-single-column .error-column, 
+.layout-single-column .getting-started, 
+.layout-single-column .regeneration-indicator,
+.layout-single-column .audio-player, 
+.layout-single-column .compose-form .spoiler-input__input, 
+.layout-single-column .compose-form__autosuggest-wrapper, 
+.layout-single-column .compose-form__poll-wrapper select, 
+.layout-single-column .poll__option input[type=text], 
+.layout-single-column .report-dialog-modal__textarea, 
+.layout-single-column .search__input, 
+.layout-single-column .setting-text,
+.layout-single-column .compose-form .compose-form__buttons-wrapper {
+    border: 0;
+}
+.layout-single-column .column-inline-form, 
+.layout-single-column .column>.scrollable, 
+.layout-single-column .error-column, 
+.layout-single-column .getting-started, 
+.layout-single-column .regeneration-indicator {
+    background: transparent;
+}
+.layout-single-column .account__avatar img {
+    border-radius: 50%;
+}
+
+
+
 /* *️⃣ Icons
    -------- */
 .layout-single-column i.fa-bookmark:before,
@@ -384,34 +414,6 @@ body.layout-single-column  {
     background-image: none;
 }
 
-
-/* Resetting borders */
-.layout-single-column .column-inline-form, 
-.layout-single-column .column>.scrollable, 
-.layout-single-column .error-column, 
-.layout-single-column .getting-started, 
-.layout-single-column .regeneration-indicator,
-.layout-single-column .audio-player, 
-.layout-single-column .compose-form .spoiler-input__input, 
-.layout-single-column .compose-form__autosuggest-wrapper, 
-.layout-single-column .compose-form__poll-wrapper select, 
-.layout-single-column .poll__option input[type=text], 
-.layout-single-column .report-dialog-modal__textarea, 
-.layout-single-column .search__input, 
-.layout-single-column .setting-text,
-.layout-single-column .compose-form .compose-form__buttons-wrapper {
-    border: 0;
-}
-.layout-single-column .column-inline-form, 
-.layout-single-column .column>.scrollable, 
-.layout-single-column .error-column, 
-.layout-single-column .getting-started, 
-.layout-single-column .regeneration-indicator {
-    background: transparent;
-}
-.layout-single-column .account__avatar img {
-    border-radius: 50%;
-}
 
 
 /* 📝 Compose panel
