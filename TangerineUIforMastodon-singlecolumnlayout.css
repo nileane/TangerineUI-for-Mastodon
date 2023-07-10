@@ -1932,26 +1932,26 @@ body.layout-single-column  {
     display: flex;
     flex-flow: column;
 }
-.about__header {
+.layout-single-column .about__header {
     order: 1;
     margin-bottom: 10px;
 }
-.about__section:nth-child(3) {
+.layout-single-column .about__section:nth-child(3) {
     order: 2;
 }
-.about__meta {
+.layout-single-column .about__meta {
     order: 3;
 }
-.about__section:nth-child(4) {
+.layout-single-column .about__section:nth-child(4) {
     order: 4;
 }
-.about__section:nth-child(5) {
+.layout-single-column .about__section:nth-child(5) {
     order: 5;
 }
-.link-footer {
+.layout-single-column .link-footer {
     order: 6;
 }
-.about__footer {
+.layout-single-column .about__footer {
     order: 7;
 }
 .layout-single-column .about__header h1,
