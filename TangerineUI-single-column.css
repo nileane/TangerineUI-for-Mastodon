@@ -1643,6 +1643,9 @@ body.layout-single-column  {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg-bold);
 }
+.layout-single-column .notification__message .fa {
+    color: var(--color-accent);
+}
 .layout-single-column .notification__favourite-icon-wrapper {
     width: 56px;
     text-align: right;
