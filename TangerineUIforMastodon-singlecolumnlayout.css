@@ -1,5 +1,5 @@
 /*  TangerineUI for Mastodon
-    ------------------------
+
     by @nileane@nileane.fr
     Tangerine UI is a UI revamp for Mastodon's Web interface.
    
@@ -496,7 +496,13 @@ body.layout-single-column  {
     inset-inline-start: -3px;
     width: 3px;
 }
-
+.layout-single-column .status__line.status__line--full.status__line--first {
+    top: 58px;
+    height: calc(100% - 58px);
+}
+.layout-single-column .scrollable > div:has(.status__wrapper .status--in-thread):has(+ div > .detailed-status__wrapper) .status__wrapper {
+    box-shadow: 0 -3px var(--color-bg) inset;
+}
 
 .layout-single-column .status__wrapper,
 .layout-single-column .detailed-status__wrapper {
