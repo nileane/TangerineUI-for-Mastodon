@@ -1,2 +1,1 @@
-# TangerineUI
-Tangerine UI for Mastodon
+# Tangerine UI for Mastodon 🍊
