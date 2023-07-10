@@ -617,12 +617,7 @@ body.layout-single-column  {
 /* ⭐ Action bar */
 .layout-single-column .status__action-bar {
     justify-content: left;
-    opacity: .4;
     margin-top: 8px;
-}
-.layout-single-column .status__wrapper:hover .status__action-bar,
-.layout-single-column .status__wrapper:focus .status__action-bar {
-    opacity: 1;
 }
 .layout-single-column .status__action-bar .status__action-bar__dropdown {
     position: absolute;
@@ -709,11 +704,6 @@ body.layout-single-column  {
 .layout-single-column .status__wrapper--filtered {
     border-bottom: 0;
     padding: 12px;
-}
-@media screen and (max-width:1174px) {
-    .layout-single-column .status__action-bar {
-        opacity: 1;
-    }
 }
 
 /* 📊 Polls */
