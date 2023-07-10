@@ -819,7 +819,8 @@ body.layout-single-column  {
     border: 0;
 }
 .layout-single-column .column-header__button {
-    color: var(--color-content-fg)
+    color: var(--color-content-fg);
+    transition: all .2s;
 }
 .layout-single-column .column-header__wrapper.active:before {
     background: none;
@@ -1060,17 +1061,17 @@ body.layout-single-column  {
     margin-bottom: 10px;
 }
 .layout-single-column .column-link:not(.column-link--logo) {
-    padding: 10px 13px 11px;
+    padding: 10px 20px 11px 13px;
     width: max-content;
     margin-left: 3px;
     font-weight: 500;
+    transition: all .2s;
 }
 .layout-single-column a.column-link--transparent.active,
 .layout-single-column a.column-link--transparent.active:hover {
     background-color: var(--color-content-bg);
     border-radius: 8px;
     color: var(--color-content-fg);
-    padding-right: 20px;
     font-weight: bold;
 }
 .layout-single-column .column-link--transparent:hover {
@@ -1622,6 +1623,7 @@ body.layout-single-column  {
 .layout-single-column .icon-with-badge__badge {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
+    transition: all .2s;
 }
 .layout-single-column .text-icon-button.active,
 .layout-single-column .button.button-tertiary,
