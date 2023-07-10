@@ -972,7 +972,19 @@ body.layout-single-column  {
 .layout-single-column .account__section-headline button, 
 .layout-single-column .notification__filter-bar a, 
 .layout-single-column .notification__filter-bar button {
-    color: var(--color-accent)
+    background-color: var(--color-accent-bg);
+    color: var(--color-accent);
+    box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
+    border-radius: 9px;
+    transition: all .2s;
+}
+.layout-single-column .account__section-headline a:hover, 
+.layout-single-column .account__section-headline button:hover, 
+.layout-single-column .notification__filter-bar a:hover, 
+.layout-single-column .notification__filter-bar button:hover {
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
+    box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
 }
 .layout-single-column .account__section-headline a.active, 
 .layout-single-column .account__section-headline button.active, 
@@ -981,7 +993,6 @@ body.layout-single-column  {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
     box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
-    border-radius: 9px;
 }
 .layout-single-column .account__section-headline a.active:after, 
 .layout-single-column .account__section-headline a.active:before,
