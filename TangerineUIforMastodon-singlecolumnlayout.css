@@ -630,6 +630,11 @@ body.layout-single-column  {
     justify-content: left;
     margin-top: 8px;
 }
+@media (prefers-color-scheme: dark) {
+    .layout-single-column .status__action-bar {
+        opacity: .7;
+    }
+}
 .layout-single-column .status__action-bar .status__action-bar__dropdown {
     position: absolute;
     right: 18px;
