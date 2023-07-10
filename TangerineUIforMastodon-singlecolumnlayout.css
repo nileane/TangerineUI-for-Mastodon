@@ -1995,6 +1995,7 @@ body.layout-single-column  {
 @media screen and (max-width:600px) {
     .layout-single-column .about__meta__divider {
         border-top: 3px solid var(--color-content-secondary-separator);
+        width: 90%;
     }
 }
 .layout-single-column .about__section:nth-child(3) .about__section__body {
