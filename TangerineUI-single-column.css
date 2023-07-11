@@ -888,7 +888,6 @@ body.layout-single-column  {
 /* ⏺️ Column headers
    ----------------- */
 .layout-single-column .tabs-bar__wrapper {
-    border-radius: 0;
     background-color: transparent;
     border-radius: 7px 7px 0 0;
     box-shadow: 
