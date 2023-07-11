@@ -685,11 +685,15 @@ body.layout-single-column  {
         0 1px 4px rgba(0, 0, 0, .08);
 }
 .layout-single-column .status-card__title,
-.layout-single-column .status-card__host {
+.layout-single-column .status-card__host,
+.layout-single-column .status-card__description {
     color: var(--color-content-fg-bold);
 }
-.layout-single-column .status-card__host {
+.layout-single-column .status-card__description {
     opacity: .7;
+}
+.layout-single-column .status-card__host {
+    opacity: .5;
 }
 .layout-single-column a.status-card:hover,
 .layout-single-column a.status-card.compact:hover {
