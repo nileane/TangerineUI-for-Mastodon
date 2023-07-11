@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 0.9.1
+    version: 0.9.2
 
     by @nileane@nileane.fr
     Tangerine UI is a UI revamp for Mastodon's Web interface.
@@ -784,8 +784,7 @@ body.layout-single-column  {
 .layout-single-column .focusable:focus .detailed-status,
 .layout-single-column .focusable:focus .detailed-status__action-bar,
 .layout-single-column .status__wrapper.focusable:focus .detailed-status, 
-.layout-single-column .focusable:focus .detailed-status__action-bar,
-.layout-single-column .status__wrapper:has(.status__content:hover) {
+.layout-single-column .focusable:focus .detailed-status__action-bar {
     outline: 0;
     background: var(--color-content-bg-focus);
 }
@@ -801,6 +800,9 @@ body.layout-single-column  {
         0 -2px var(--color-content-secondary-bg) inset;
 }
 @media screen and (min-width:1175px) { /* Subtle hover effect when you hover over a post content in the timeline. Only on bigger screens. */
+    .layout-single-column .status__wrapper:has(.status__content:hover) {
+        background: var(--color-content-bg-focus);
+    }
     .layout-single-column .status__wrapper:has(.status__content:hover) {
         box-shadow:
             inset 72px 0 var(--color-content-bg-focus), 
