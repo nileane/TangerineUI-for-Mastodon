@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 0.9
+    version: 0.9.1
 
     by @nileane@nileane.fr
     Tangerine UI is a UI revamp for Mastodon's Web interface.
@@ -1514,18 +1514,16 @@ body.layout-single-column  {
     border-radius: 7px;
     overflow: hidden;
 }
-.layout-single-column .explore__links .trends__item {
+.layout-single-column .columns-area__panels__main .trends__item {
     background-color: var(--color-content-bg);
     border-bottom: 2px solid var(--color-content-secondary-bg);
 }
 .layout-single-column .explore__links .trends__item:last-child {
     border-bottom: 0;
 }
-.layout-single-column .trends__item__name {
-    color: var(--color-content-fg);
-}
+.layout-single-column .trends__item__name,
 .layout-single-column .trends__item__name a {
-    color: var(--color-content-fg-bold);
+    color: var(--color-content-fg);
 }
 .getting-started__trends .trends__item__current {
     color: var(--color-fg);
