@@ -1781,6 +1781,7 @@ body.layout-single-column  {
 .layout-single-column .icon-button:focus, 
 .layout-single-column .icon-button:hover {
     background-color: var(--color-accent-bg);
+    color: var(--color-accent);
 }
 .layout-single-column .language-dropdown__dropdown__results__item.active,
 .layout-single-column .language-dropdown__dropdown__results__item.active:hover {
