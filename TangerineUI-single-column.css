@@ -774,8 +774,7 @@ body.layout-single-column  {
     outline: 0;
     background: var(--color-content-bg-focus);
 }
-.layout-single-column .status__wrapper.focusable:focus,
-.layout-single-column .status__wrapper:has(.status__content:hover) {
+.layout-single-column .status__wrapper.focusable:focus {
     box-shadow:
         inset 72px 0 var(--color-content-bg-focus), 
         0 -2px var(--color-content-secondary-bg) inset;
@@ -786,11 +785,18 @@ body.layout-single-column  {
         inset 72px 0 var(--color-content-bg-focus), 
         0 -2px var(--color-content-secondary-bg) inset;
 }
-.layout-single-column .status__wrapper:has(.status--first-in-thread .status__content:hover) {
-    box-shadow:
-        0 -3px var(--color-bg),
-        inset 72px 0 var(--color-content-bg-focus), 
-        0 -2px var(--color-content-secondary-bg) inset;
+@media screen and (min-width:1175px) { /* Subtle hover effect when you hover over a post content in the timeline. Only on bigger screens. */
+    .layout-single-column .status__wrapper:has(.status__content:hover) {
+        box-shadow:
+            inset 72px 0 var(--color-content-bg-focus), 
+            0 -2px var(--color-content-secondary-bg) inset;
+    }
+    .layout-single-column .status__wrapper:has(.status--first-in-thread .status__content:hover) {
+        box-shadow:
+            0 -3px var(--color-bg),
+            inset 72px 0 var(--color-content-bg-focus), 
+            0 -2px var(--color-content-secondary-bg) inset;
+    }
 }
 
 /* 👁️ Post detailed view */
