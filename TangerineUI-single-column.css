@@ -3,7 +3,7 @@
     by @nileane@nileane.fr
     Tangerine UI is a UI revamp for Mastodon's Web interface.
    
-    version: 0.8
+    version: 0.8.1
     Last Mastodon compatibility check: v4.1.4 stable ✅
 */
 
@@ -14,8 +14,9 @@
     --color-secondary-separator: #ede3db;
 
     --color-content-bg: #ffffff;
-    --color-content-fg: #454B5B;
+    --color-content-fg: hsl(224, 14%, 31%);
     --color-content-fg-bold: #000000;
+    --color-content-fg-muted: hsl(224, 14%, 60%);
     --color-content-secondary-bg: #f9f6f4;
     --color-content-secondary-separator: rgba(237, 227, 219, 0.4);
     --color-content-bg-focus: #fffcfa;
@@ -89,8 +90,9 @@
         --color-secondary-separator: #2e2823;
     
         --color-content-bg: #252526;
-        --color-content-fg: #f2f2f2;
+        --color-content-fg: hsl(0, 0%, 95%);
         --color-content-fg-bold: #ffffff;
+        --color-content-fg-muted: hsl(0, 0%, 45%);
         --color-content-secondary-bg: #332f2c;
         --color-content-secondary-separator: rgba(77, 73, 70, 0.4);
         --color-content-bg-focus: #2e2e2e;
@@ -1642,7 +1644,7 @@ body.layout-single-column  {
 .layout-single-column .muted .status__display-name strong,
 .layout-single-column .attachment-list__list a,
 .layout-single-column .attachment-list.compact .fa {
-    color: var(--color-content-fg);
+    color: var(--color-content-fg-muted);
 }
 .layout-single-column .notification.unread::before,
 .layout-single-column .status__wrapper.unread::before {
@@ -1698,10 +1700,6 @@ body.layout-single-column  {
 }
 .layout-single-column .explore__search-results .account {
     padding-top: 16px;
-}
-.layout-single-column .notification .status.muted {
-    opacity: .5;
-    transition: opacity .5s;
 }
 
 
