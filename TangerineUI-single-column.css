@@ -858,9 +858,18 @@ body.layout-single-column  {
     text-decoration: underline;
 }
 .layout-single-column .conversation__unread,
-.layout-single-column .follow_requests-unlocked_explanation,
+.layout-single-column .follow_requests-unlocked_explanation {
+    color: var(--color-accent-fg);
+}
+.layout-single-column .conversation__content__names a strong {
+    font-weight: bold;
+}
 .layout-single-column .conversation__content__names,
-.layout-single-column .conversation__content__names a {
+.layout-single-column .conversation__content__names a,
+.layout-single-column .conversation__content__relative-time,
+.layout-single-column .conversation .attachment-list__list a,
+.layout-single-column .conversation .attachment-list.compact .fa,
+.layout-single-column .conversation .status__content p {
     color: var(--color-content-fg);
 }
 .layout-single-column .conversation {
@@ -868,7 +877,6 @@ body.layout-single-column  {
     border-bottom: 3px solid var(--color-content-secondary-separator);
 }
 .layout-single-column .conversation__content__relative-time {
-    color: var(--color-content-fg);
     opacity: .7;
 }
 
@@ -1647,10 +1655,10 @@ body.layout-single-column  {
 
 /* 🔔 Notifications
    ---------------- */
-.layout-single-column .muted .status__content,
-.layout-single-column .muted .status__content a,
-.layout-single-column .muted .status__content p,
-.layout-single-column .muted .status__display-name strong,
+.layout-single-column .status.muted .status__content,
+.layout-single-column .status.muted .status__content a,
+.layout-single-column .status.muted .status__content p,
+.layout-single-column .status.muted .status__display-name strong,
 .layout-single-column .attachment-list__list a,
 .layout-single-column .attachment-list.compact .fa {
     color: var(--color-content-fg-muted);
