@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 0.9.3
+    version: 0.9.4
 
     by @nileane@nileane.fr
     Tangerine UI is a UI revamp for Mastodon's Web interface.
@@ -461,8 +461,12 @@ body.layout-single-column  {
     padding-left: 20px;
     padding-top: 20px;
 }
-.layout-single-column .compose-panel .autosuggest-textarea__textarea::placeholder {
+.layout-single-column .compose-panel .autosuggest-textarea__textarea::placeholder,
+.layout-single-column .compose-form .autosuggest-account .display-name__html {
     color: var(--color-content-fg);
+}
+.layout-single-column .compose-form .autosuggest-account .display-name__account {
+    color: var(--color-content-fg-muted);
 }
 .layout-single-column .compose-form .autosuggest-textarea__suggestions--visible,
 .layout-single-column .compose-form .autosuggest-textarea__suggestions__item {
@@ -471,7 +475,15 @@ body.layout-single-column  {
 .layout-single-column .compose-form .autosuggest-textarea__suggestions__item.selected,
 .layout-single-column .compose-form .autosuggest-textarea__suggestions__item:active,
 .layout-single-column .compose-form .autosuggest-textarea__suggestions__item:focus,
-.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:hover {
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:hover,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item.selected .autosuggest-account .display-name__account,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:active .autosuggest-account .display-name__account,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:focus .autosuggest-account .display-name__account,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:hover .autosuggest-account .display-name__account,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item.selected .autosuggest-account .display-name__html,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:active .autosuggest-account .display-name__html,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:focus .autosuggest-account .display-name__html,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:hover .autosuggest-account .display-name__html {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
 }
