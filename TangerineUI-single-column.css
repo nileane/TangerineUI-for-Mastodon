@@ -539,16 +539,7 @@ body.layout-single-column  {
     border-bottom: 0;
 }
 .layout-single-column .status__wrapper {
-    transition: background .3s, box-shadow .3s;
-    box-shadow:
-        inset 72px 0 var(--color-content-bg), 
-        0 -2px var(--color-content-secondary-bg) inset;
-}
-.layout-single-column .scrollable > div[role="feed"] > article:last-child div:last-child .status__wrapper,
-.layout-single-column .scrollable > div[role="feed"] > article:last-of-type div:last-child .status__wrapper,
-.layout-single-column .columns-area > div[role="region"] > .scrollable > div:last-child > div:last-child > .status__wrapper {
-    border-radius: 0 0 7px 7px;
-    box-shadow: none;
+    transition: background .3s;
 }
 .layout-single-column .status__wrapper,
 .layout-single-column .detailed-status__wrapper {
@@ -590,13 +581,34 @@ body.layout-single-column  {
 .layout-single-column .status__content {
     line-height: 19px;
 }
+.layout-single-column .scrollable > div[role="feed"] > article:last-child div:last-child .status__wrapper,
+.layout-single-column .scrollable > div:last-child > div:last-child .status__wrapper,
+.layout-single-column .scrollable > div:last-child > .status__wrapper {
+    border-radius: 0 0 7px 7px;
+}
+/* Using ::after to set a non-full-width border between posts */
+.layout-single-column .status__wrapper::before {
+    position: absolute;
+    background-color: var(--color-content-secondary-bg);
+    height: 3px;
+    width: calc(100% - 72px);
+    right: 0;
+    top: -3px;
+    content: "";
+}
+/* Removing border between posts when applicable */
+.layout-single-column .notification .status__wrapper::before,
+.layout-single-column .status__wrapper:has(.status--first-in-thread)::before, 
+.layout-single-column .scrollable > div:first-child > .status__wrapper::before,
+.layout-single-column .scrollable > div:first-child > div:first-child .status__wrapper::before, /* backwards compatibility with 4.1.* */
+.layout-single-column .scrollable > div:has(.detailed-status) + div > .status__wrapper::before,
+.layout-single-column .scrollable > div:has(.detailed-status) + div > div:first-child > .status__wrapper::before /* backwards compatibility with 4.1.* */ {
+    display: none;
+}
 
 /* 👥 Threaded replies */
 .layout-single-column .status__wrapper:has(.status--first-in-thread) {
-    box-shadow:
-        0 -3px var(--color-bg),
-        inset 72px 0 var(--color-content-bg), 
-        0 -2px var(--color-content-secondary-bg) inset;
+    border-top: 3px solid var(--color-bg);
 }
 .layout-single-column .status--first-in-thread {
     border-top: 0;
@@ -628,8 +640,68 @@ body.layout-single-column  {
     top: 58px;
     height: calc(100% - 58px);
 }
-.layout-single-column .scrollable > div:has(.status__wrapper .status--in-thread):has(+ div > .detailed-status__wrapper) .status__wrapper {
-    box-shadow: 0 -3px var(--color-bg) inset;
+
+/* ⏺️ Posts when in focus */
+.layout-single-column .status__wrapper.focusable:focus,
+.layout-single-column .detailed-status__wrapper.focusable:focus,
+.layout-single-column .focusable:focus .detailed-status,
+.layout-single-column .focusable:focus .detailed-status__action-bar,
+.layout-single-column .status__wrapper.focusable:focus .detailed-status, 
+.layout-single-column .focusable:focus .detailed-status__action-bar {
+    outline: 0;
+    background: var(--color-content-bg-focus);
+}
+@media screen and (min-width:1175px) { /* Subtle hover effect when you hover over a post content in the timeline. Only on bigger screens. */
+    .layout-single-column .status__wrapper:has(.status__content:hover) {
+        background: var(--color-content-bg-focus);
+    }
+}
+
+/* 👁️ Post detailed view */
+.layout-single-column .detailed-status .status__content {
+    line-height: 24px;
+}
+.layout-single-column .detailed-status,
+.layout-single-column .detailed-status__action-bar {
+    background-color: var(--color-content-bg);
+    border: 0;
+}
+.detailed-status__display-name strong,
+.detailed-status__display-name .display-name__account {
+    color: var(--color-content-fg-bold);
+}
+.detailed-status__display-name .display-name__account{
+    opacity: .7;
+}
+.layout-single-column .detailed-status__wrapper {
+    border-top: 3px solid var(--color-bg);
+    border-bottom: 3px solid var(--color-bg);
+}
+.layout-single-column .scrollable > div:first-child > .detailed-status__wrapper {
+    border-top: 0;
+}
+.layout-single-column .detailed-status__meta {
+    color: var(--color-fg);
+    opacity: .8;
+}
+.layout-single-column .detailed-status__action-bar {
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0;
+}
+.layout-single-column .animated-number {
+    color: var(--color-content-fg);
+}
+.layout-single-column .scrollable > div:last-child .detailed-status__wrapper:last-child {
+    border-radius: 0 0 7px 7px;
+    border-bottom: 0;
+}
+
+.layout-single-column article > .account {
+    padding: 16px;
+}
+.layout-single-column article:last-child > .account {
+    border-radius: 0 0 7px 7px;
 }
 
 /* ⭐ Action bar */
@@ -776,87 +848,6 @@ body.layout-single-column  {
 .layout-single-column .poll__footer .button.button-secondary:hover {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
-}
-
-/* ⏺️ Posts when in focus */
-.layout-single-column .status__wrapper.focusable:focus,
-.layout-single-column .detailed-status__wrapper.focusable:focus,
-.layout-single-column .focusable:focus .detailed-status,
-.layout-single-column .focusable:focus .detailed-status__action-bar,
-.layout-single-column .status__wrapper.focusable:focus .detailed-status, 
-.layout-single-column .focusable:focus .detailed-status__action-bar {
-    outline: 0;
-    background: var(--color-content-bg-focus);
-}
-.layout-single-column .status__wrapper.focusable:focus {
-    box-shadow:
-        inset 72px 0 var(--color-content-bg-focus), 
-        0 -2px var(--color-content-secondary-bg) inset;
-}
-.layout-single-column .status__wrapper.focusable:has(.status--first-in-thread .status__content):focus {
-    box-shadow:
-        0 -3px var(--color-bg),
-        inset 72px 0 var(--color-content-bg-focus), 
-        0 -2px var(--color-content-secondary-bg) inset;
-}
-@media screen and (min-width:1175px) { /* Subtle hover effect when you hover over a post content in the timeline. Only on bigger screens. */
-    .layout-single-column .status__wrapper:has(.status__content:hover) {
-        background: var(--color-content-bg-focus);
-    }
-    .layout-single-column .status__wrapper:has(.status__content:hover) {
-        box-shadow:
-            inset 72px 0 var(--color-content-bg-focus), 
-            0 -2px var(--color-content-secondary-bg) inset;
-    }
-    .layout-single-column .status__wrapper:has(.status--first-in-thread .status__content:hover) {
-        box-shadow:
-            0 -3px var(--color-bg),
-            inset 72px 0 var(--color-content-bg-focus), 
-            0 -2px var(--color-content-secondary-bg) inset;
-    }
-}
-
-/* 👁️ Post detailed view */
-.layout-single-column .detailed-status .status__content {
-    line-height: 24px;
-}
-.layout-single-column .detailed-status,
-.layout-single-column .detailed-status__action-bar {
-    background-color: var(--color-content-bg);
-    border: 0;
-}
-.detailed-status__display-name strong,
-.detailed-status__display-name .display-name__account {
-    color: var(--color-content-fg-bold);
-}
-.detailed-status__display-name .display-name__account{
-    opacity: .7;
-}
-.layout-single-column .detailed-status__wrapper {
-    border-bottom: 3px solid var(--color-bg);
-}
-.layout-single-column .detailed-status__meta {
-    color: var(--color-fg);
-    opacity: .8;
-}
-.layout-single-column .detailed-status__action-bar {
-    border-top: 0;
-    border-bottom: 0;
-    padding: 0;
-}
-.layout-single-column .animated-number {
-    color: var(--color-content-fg);
-}
-.layout-single-column .scrollable > div:last-child .detailed-status__wrapper:last-child {
-    border-radius: 0 0 7px 7px;
-    border: none;
-}
-
-.layout-single-column article > .account {
-    padding: 16px;
-}
-.layout-single-column article:last-child > .account {
-    border-radius: 0 0 7px 7px;
 }
 
 
