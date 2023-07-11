@@ -1296,6 +1296,7 @@ body.layout-single-column  {
         height: calc(4.2em + env(safe-area-inset-bottom));
         bottom: 0;
         left: 0;
+        z-index: 3;
     }
     .layout-single-column .columns-area__panels__pane--navigational .navigation-panel {
         width: 100vw;
