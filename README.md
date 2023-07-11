@@ -2,9 +2,9 @@
 
 *README still a WIP*
 
-Tangerine UI is a UI redesign I made for Mastodon's Web interface, using only pure CSS.
+Tangerine UI is a redesign of Mastodon's Web interface, using just CSS.
 
-Make your Mastodon Web interface a friendlier place. Tangerine features a soft orange palette, a bubblier look, and a more compact timeline that should be easier on your eyes. Also, Tangerine UI supports both dark and light modes.
+Make your Mastodon Web interface a friendlier place. Tangerine UI features a soft orange palette, a bubblier look, and a more compact timeline that should be easier on your eyes. Also, Tangerine UI supports both dark and light modes.
 
 ## Live demo at [nileane.fr](https://nileane.fr)
 
@@ -21,6 +21,7 @@ If you're not an admin, you can still use Tangerine UI using a userstyle browser
 * **Tangerine UI auto-switches from light to dark mode based on your OS preference**, whether you set your Mastodon theme to *Mastodon (Dark)* or *Mastodon (Light*).
 * Check your Mastodon instance version before using. The latest Mastodon release checked to be compatible is indicated in the CSS file header.
 * Glitch-soc and Hometown instance admins beware: Tangerine UI is currently only meant to be applied to Mastodon's vanilla Dark and Light themes.
+    * If you are a user on a Glitch-soc or Hometown instance using a browser extension, first switch your instance to the Mastodon flavour before applying Tangerine UI.
 * I have not yet adapted Tangerine to Mastodon's *High Contrast* theme setting. Please consider this if one or multiple of your users depend on it.
 
 ## Credits
