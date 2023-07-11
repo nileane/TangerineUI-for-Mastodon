@@ -1128,7 +1128,8 @@ body.layout-single-column  {
 .layout-single-column .notification__filter-bar button {
     background-color: transparent;
 }
-.layout-single-column .account__section-headline a::after {
+.layout-single-column .account__section-headline a::after,
+.layout-single-column .account__section-headline button::after {
     display: block;
     position: absolute;
     content: " ";
@@ -1141,7 +1142,8 @@ body.layout-single-column  {
     border-radius: 50px;
     z-index: 1;
 }
-.layout-single-column .account__section-headline a:last-child::after {
+.layout-single-column .account__section-headline a:last-child::after,
+.layout-single-column .account__section-headline button:last-child::after {
     display: none;
 }
 @media (prefers-color-scheme: dark) {
