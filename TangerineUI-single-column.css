@@ -837,6 +837,9 @@ body.layout-single-column  {
     border-radius: 0 0 7px 7px;
 }
 
+
+
+/* Empty columns */
 .layout-single-column .empty-column-indicator {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
