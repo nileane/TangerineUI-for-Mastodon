@@ -841,24 +841,27 @@ body.layout-single-column  {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
 }
+.layout-single-column .empty-column-indicator a {
+    color: var(--color-accent);
+}
 
 
 
 /* 📤 DMs */
-.layout-single-column .conversation__unread,
 .layout-single-column .follow_requests-unlocked_explanation {
+    background-color: var(--color-accent-bg);
+    color: var(--color-content-fg);
+}
+.layout-single-column .follow_requests-unlocked_explanation a {
+    color: var(--color-accent);
+}
+.layout-single-column .conversation__unread {
     background-color: var(--color-accent);
 }
 .layout-single-column .conversation.conversation--unread {
     background-color: var(--color-content-bg-focus);
 }
-.layout-single-column .empty-column-indicator a, 
-.layout-single-column .follow_requests-unlocked_explanation a {
-    color: var(--color-accent-fg);
-    text-decoration: underline;
-}
-.layout-single-column .conversation__unread,
-.layout-single-column .follow_requests-unlocked_explanation {
+.layout-single-column .conversation__unread {
     color: var(--color-accent-fg);
 }
 .layout-single-column .conversation__content__names a strong {
