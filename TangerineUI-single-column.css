@@ -1088,6 +1088,7 @@ body.layout-single-column  {
     bottom: 8px;
     opacity: .1;
     border-radius: 50px;
+    z-index: 1;
 }
 .layout-single-column .account__section-headline a:last-child::after {
     display: none;
