@@ -1706,8 +1706,8 @@ body.layout-single-column  {
 
 
 
-/* ⏺️ UI components : buttons, toggles, ...
-   ---------------------------------------- */
+/* ⏺️ Other UI components : buttons, toggles, ...
+   ----------------------------------------- */
 .layout-single-column .button,
 .layout-single-column .account__header__tabs__buttons .icon-button {
     border-radius: 7px;
