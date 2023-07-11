@@ -1563,6 +1563,9 @@ body.layout-single-column  {
     font-weight: 500;
     color: var(--color-accent);
 }
+.layout-single-column .search__input:focus {
+    box-shadow: inset 0 0 0 2px var(--color-accent);
+}
 .layout-single-column i.fa-search,
 .layout-single-column i.fa.active {
     opacity: 1;
