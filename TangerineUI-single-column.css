@@ -10,44 +10,44 @@
 
 /* 🎨 Colors */
 :root {
-    --color-bg: hsl(30, 23%, 95%);
-    --color-fg: hsl(226, 14%, 19%);
-    --color-fg-muted: hsl(30, 7%, 55%);
+    --color-bg: #f5f2ef;
+    --color-fg: #2a2d37;
+    --color-fg-muted: #948c84;
     --color-secondary-bg: #f2eae4;
     --color-secondary-separator: #ede3db;
 
     --color-content-bg: #ffffff;
-    --color-content-fg: hsl(224, 14%, 31%);
-    --color-content-fg-bold: hsl(0, 0%, 0%);
-    --color-content-fg-muted: hsl(224, 14%, 60%);
+    --color-content-fg: #444a5a;
+    --color-content-fg-bold: #000000;
+    --color-content-fg-muted: #8b92a7;
     --color-content-secondary-bg: #f9f6f4;
     --color-content-secondary-separator: rgba(237, 227, 219, 0.4);
     --color-content-bg-focus: #fffcfa;
 
-    --color-accent: hsl(25, 98%, 49%);
-    --color-accent-focus: hsl(25, 100%, 64%);
+    --color-accent: #f76902;
+    --color-accent-focus: #ff9447;
     --color-accent-bg: #f6e5dd;
     --color-accent-fg: #ffffff;
 
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-bg: hsl(240, 2%, 10%);
-        --color-fg: hsl(18, 20%, 85%);
-        --color-fg-muted: hsl(18, 8%, 40%);
+        --color-bg: #19191a;
+        --color-fg: #e0d6d1;
+        --color-fg-muted: #6e635e;
         --color-secondary-bg: #211f1d;
         --color-secondary-separator: #2e2823;
     
-        --color-content-bg: hsl(240, 1%, 15%);
-        --color-content-fg: hsl(0, 0%, 95%);
-        --color-content-fg-bold: hsl(0, 0%, 100%);
-        --color-content-fg-muted: hsl(0, 0%, 45%);
+        --color-content-bg: #262627;
+        --color-content-fg: #f2f2f2;
+        --color-content-fg-bold: #ffffff;
+        --color-content-fg-muted: #737373;
         --color-content-secondary-bg: #332f2c;
         --color-content-secondary-separator: rgba(77, 73, 70, 0.4);
         --color-content-bg-focus: #2e2e2e;
     
-        --color-accent: hsl(29, 78%, 55%);
-        --color-accent-focus: hsl(29, 100%, 64%);
+        --color-accent: #e68933;
+        --color-accent-focus: #ffa047;
         --color-accent-bg: #3c2a1f;
         --color-accent-fg: #ffffff;
     }
