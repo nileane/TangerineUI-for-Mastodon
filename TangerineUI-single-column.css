@@ -1757,7 +1757,8 @@ body.layout-single-column  {
 .layout-single-column .status__content__read-more-button,
 .layout-single-column .status__action-bar__dropdown .icon-button.active,
 .layout-single-column .account__relationship .icon-button.active,
-.layout-single-column .account__header__tabs__buttons .icon-button.active {
+.layout-single-column .account__header__tabs__buttons .icon-button.active,
+.layout-single-column .text-btn {
     color: var(--color-accent);
 }
 .layout-single-column .icon-button,
@@ -1801,8 +1802,16 @@ body.layout-single-column  {
 .layout-single-column .button.logo-button:hover {
     background-color: var(--color-accent-focus);
 }
+
+/* Toggles */
+.layout-single-column .setting-toggle__label {
+    vertical-align: top;
+}
 .layout-single-column .react-toggle-track {
-    background-color: var(--color-neutral);
+    background-color: var(--color-content-fg-muted);
+}
+.layout-single-column .react-toggle-thumb {
+    border: 0;
 }
 .layout-single-column .react-toggle.react-toggle--checked .react-toggle-track,
 .layout-single-column .react-toggle.react-toggle--checked:is(:hover,:focus-within):not(.react-toggle--disabled) .react-toggle-track,
