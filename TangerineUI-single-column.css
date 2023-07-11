@@ -951,11 +951,14 @@ body.layout-single-column  {
 }
 .layout-single-column .column-header__collapsible {
     border-bottom: 0;
+    border-radius: 7px;
+}
+.layout-single-column .column-header__collapsible:not(.collapsed) {
+    margin-bottom: 10px;
 }
 .layout-single-column .column-header__collapsible-inner {
     background: var(--color-secondary-bg);
     border: 0;
-    border-radius: 7px;
 }
 .layout-single-column .column-settings__section {
     color: var(--color-content-fg-bold);
