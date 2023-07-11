@@ -242,10 +242,30 @@ body.layout-single-column  {
 .layout-single-column .regeneration-indicator {
     background: transparent;
 }
+
+/* Round avatars */
 .layout-single-column .account__avatar img {
     border-radius: 50%;
 }
 
+/* Rordered layout */
+.layout-single-column .columns-area__panels__pane--navigational {
+    order: 1;
+}
+.layout-single-column .columns-area__panels__main {
+    order: 2;
+}
+.layout-single-column .columns-area__panels__pane--compositional {
+    order: 3;
+}
+.layout-single-column .columns-area--mobile .column {
+    height: auto;
+}
+.layout-single-column .scrollable,
+.layout-single-column .column > .scrollable {
+    border-radius: 7px !important;
+    max-height: max-content;
+}
 
 
 /* *️⃣ Icons
@@ -553,10 +573,6 @@ body.layout-single-column  {
 .layout-single-column .status__display-name strong,
 .layout-single-column .status__info .status__display-name .display-name__account {
     color: var(--color-content-fg);
-}
-.layout-single-column .scrollable {
-    border-radius: 7px;
-    max-height: max-content;
 }
 .layout-single-column .status {
     margin-left: 56px;
@@ -1202,15 +1218,6 @@ body.layout-single-column  {
 .layout-single-column .column-link.column-link--logo svg,
 .layout-single-column .ui__header__logo svg {
     display: none;
-}
-.layout-single-column .columns-area__panels__pane--navigational {
-    order: 1;
-}
-.layout-single-column .columns-area__panels__main {
-    order: 2;
-}
-.layout-single-column .columns-area__panels__pane--compositional {
-    order: 3;
 }
 
 .layout-single-column .navigation-panel__logo {
