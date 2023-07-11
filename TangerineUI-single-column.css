@@ -826,12 +826,17 @@ body.layout-single-column  {
     border-radius: 0 0 7px 7px;
 }
 
+.layout-single-column .empty-column-indicator {
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
+}
+
+
+
 /* 📤 DMs */
 .layout-single-column .conversation__unread,
-.layout-single-column .follow_requests-unlocked_explanation,
-.layout-single-column .empty-column-indicator {
+.layout-single-column .follow_requests-unlocked_explanation {
     background-color: var(--color-accent);
-    color: var(--color-accent-fg);
 }
 .layout-single-column .conversation.conversation--unread {
     background-color: var(--color-content-bg-focus);
@@ -841,13 +846,15 @@ body.layout-single-column  {
     color: var(--color-accent-fg);
     text-decoration: underline;
 }
-.layout-single-column .conversation {
-    background-color: var(--color-content-bg);
-    border-bottom: 3px solid var(--color-content-secondary-separator);
-}
+.layout-single-column .conversation__unread,
+.layout-single-column .follow_requests-unlocked_explanation,
 .layout-single-column .conversation__content__names,
 .layout-single-column .conversation__content__names a {
     color: var(--color-content-fg);
+}
+.layout-single-column .conversation {
+    background-color: var(--color-content-bg);
+    border-bottom: 3px solid var(--color-content-secondary-separator);
 }
 .layout-single-column .conversation__content__relative-time {
     color: var(--color-content-fg);
