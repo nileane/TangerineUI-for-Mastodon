@@ -7,6 +7,9 @@ Tangerine UI is a redesign of Mastodon's Web interface, using just CSS.
 Make your Mastodon Web interface a friendlier place. Tangerine UI features a soft orange palette, a bubblier look, and a more compact timeline that should be easier on your eyes. Also, Tangerine UI supports both dark and light modes.
 
 ## Live demo at [nileane.fr](https://nileane.fr)
+* [See the announcement post](https://nileane.fr/@nileane/110691663040709608) on Mastodon
+
+![Screenshot of my Mastodon profile featuring Tangerine UI](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/3ba6e271-3952-4e80-b974-c152b247b0aa)
 
 ## How to use
 **Tangerine UI is contained in a single CSS file.**  
