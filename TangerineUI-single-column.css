@@ -1866,6 +1866,23 @@ body.layout-single-column  {
 .layout-single-column .react-toggle--checked .react-toggle-thumb {
     border-color: var(--color-accent);
 }
+
+
+/* Radio buttons */
+.layout-single-column .radio-button {
+    color: var(--color-content-fg);
+}
+.layout-single-column .radio-button__input {
+    border-width: 2px;
+    border-color: var(--color-content-fg-muted);
+    background-color: var(--color-content-bg);
+}
+.layout-single-column .radio-button__input.checked {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
+}
+
+
 .layout-single-column .dropdown-menu,
 .layout-single-column .dropdown-menu__item a,
 .layout-single-column .dropdown-menu__arrow:before {
