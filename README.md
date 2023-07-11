@@ -16,7 +16,7 @@ Make your Mastodon Web interface a friendlier place. Tangerine UI features a sof
 
 To use on your instance, simply copy & paste the contents of [TangerineUI-single-colum.css](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-single-column.css) to the **Custom CSS** field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
 
-If you're not an admin, you can still use Tangerine UI using a userstyle browser extension (ie. Stylish).
+If you're not an admin, you can still use Tangerine UI using a userstyle browser extension (ie. [Stylus](https://add0n.com/stylus.html)).
 
 ### Things to know
 * This is still pretty early, and this is a personal project, so things might not be styled properly in some places. [Feel free to message me](https://nileane.fr/@nileane) if you notice anything wonky though :)
