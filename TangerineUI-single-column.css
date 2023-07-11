@@ -532,6 +532,7 @@ body.layout-single-column  {
 }
 .layout-single-column .scrollable {
     border-radius: 7px;
+    max-height: max-content;
 }
 .layout-single-column .status {
     margin-left: 56px;
@@ -580,11 +581,6 @@ body.layout-single-column  {
 .layout-single-column .reply-indicator__content, 
 .layout-single-column .status__content {
     line-height: 19px;
-}
-.layout-single-column .scrollable > div[role="feed"] > article:last-child div:last-child .status__wrapper,
-.layout-single-column .scrollable > div:last-child > div:last-child .status__wrapper,
-.layout-single-column .scrollable > div:last-child > .status__wrapper {
-    border-radius: 0 0 7px 7px;
 }
 /* Using ::after to set a non-full-width border between posts */
 .layout-single-column .status__wrapper::before {
@@ -693,15 +689,11 @@ body.layout-single-column  {
     color: var(--color-content-fg);
 }
 .layout-single-column .scrollable > div:last-child .detailed-status__wrapper:last-child {
-    border-radius: 0 0 7px 7px;
     border-bottom: 0;
 }
 
 .layout-single-column article > .account {
     padding: 16px;
-}
-.layout-single-column article:last-child > .account {
-    border-radius: 0 0 7px 7px;
 }
 
 /* ⭐ Action bar */
@@ -954,9 +946,6 @@ body.layout-single-column  {
     background-color: var(--color-accent-bg);
     color: var(--color-accent);
     border-bottom: 0;
-}
-.layout-single-column .load-gap {
-    border-radius: 7px 7px 0 0;
 }
 .layout-single-column .load-gap:hover,
 .layout-single-column .load-more:hover {
@@ -1707,10 +1696,6 @@ body.layout-single-column  {
     left: 5px;
     z-index: 1;
 }
-.layout-single-column article:first-child .notification__message,
-.layout-single-column article:first-child > div > .status__wrapper:first-child {
-    border-radius: 7px 7px 0 0;
-}
 .layout-single-column .notification__message {
     padding: 12px 12px 0;
     background-color: var(--color-content-bg);
@@ -1787,7 +1772,6 @@ body.layout-single-column  {
     color: var(--color-accent);
 }
 .layout-single-column .columns-area__panels__main article:last-child .column-link {
-    border-radius: 0 0 7px 7px;
     border: 0;
 }
 
