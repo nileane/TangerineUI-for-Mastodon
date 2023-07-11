@@ -619,6 +619,7 @@ body.layout-single-column  {
 /* Removing border between posts when applicable */
 .layout-single-column .notification .status__wrapper::before,
 .layout-single-column .status__wrapper:has(.status--first-in-thread)::before, 
+.layout-single-column .account-timeline__header + article .status__wrapper::before,
 .layout-single-column .scrollable > div:first-child > .status__wrapper::before,
 .layout-single-column .scrollable > div:first-child > div:first-child .status__wrapper::before, /* backwards compatibility with 4.1.* */
 .layout-single-column .scrollable > div:has(.detailed-status) + div > .status__wrapper::before,
