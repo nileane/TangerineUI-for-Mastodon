@@ -24,8 +24,8 @@
     --color-content-secondary-separator: rgba(237, 227, 219, 0.4);
     --color-content-bg-focus: #fffcfa;
 
-    --color-accent: #f76a02;
-    --color-accent-focus: #ff9346;
+    --color-accent: hsl(25, 98%, 49%);
+    --color-accent-focus: hsl(25, 100%, 64%);
     --color-accent-bg: #f6e5dd;
     --color-accent-fg: #ffffff;
 
@@ -46,8 +46,8 @@
         --color-content-secondary-separator: rgba(77, 73, 70, 0.4);
         --color-content-bg-focus: #2e2e2e;
     
-        --color-accent: #E68A32;
-        --color-accent-focus: #ff9346;
+        --color-accent: hsl(29, 78%, 55%);
+        --color-accent-focus: hsl(29, 100%, 64%);
         --color-accent-bg: #3c2a1f;
         --color-accent-fg: #ffffff;
     }
