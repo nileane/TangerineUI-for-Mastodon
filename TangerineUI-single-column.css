@@ -438,6 +438,7 @@ body.layout-single-column  {
 }
 .layout-single-column .compose-form .autosuggest-textarea__suggestions, 
 .layout-single-column .compose-form .autosuggest-textarea__textarea,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item,
 .layout-single-column .compose-form .compose-form__buttons-wrapper,
 .layout-single-column .compose-form__autosuggest-wrapper,
 .layout-single-column .compose-form .compose-form__modifiers {
@@ -462,6 +463,17 @@ body.layout-single-column  {
 }
 .layout-single-column .compose-panel .autosuggest-textarea__textarea::placeholder {
     color: var(--color-content-fg);
+}
+.layout-single-column .compose-form .autosuggest-textarea__suggestions--visible,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item {
+    border-radius: 7px;
+}
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item.selected,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:active,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:focus,
+.layout-single-column .compose-form .autosuggest-textarea__suggestions__item:hover {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
 }
 .layout-single-column .compose-form .compose-form__buttons-wrapper {
     border-radius: 0 0 7px 7px;
