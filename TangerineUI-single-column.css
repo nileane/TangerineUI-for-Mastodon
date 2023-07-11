@@ -427,7 +427,7 @@ body.layout-single-column  {
 /* 📝 Compose panel
    ---------------- */
 .layout-single-column .compose-form {
-    padding: 0 0;
+    padding: 0 0 71px;
 }
 .layout-single-column .navigation-bar {
     border-radius: 7px 7px 0 0;
