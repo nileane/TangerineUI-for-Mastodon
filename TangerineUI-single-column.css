@@ -629,8 +629,11 @@ body.layout-single-column  {
 .layout-single-column .status__content {
     line-height: 19px;
 }
-/* Using ::before to set a non-full-width border between posts */
-.layout-single-column .status::before {
+
+/* 📏 Post dividers */
+/* Using ::before to set a non-full-width border between posts and notifications */
+.layout-single-column .status::before,
+.layout-single-column .notification__message::before {
     position: absolute;
     background-color: var(--color-lines);
     height: 2px;
@@ -640,10 +643,10 @@ body.layout-single-column  {
     content: "";
 }
 /* Removing border between posts when applicable */
-.layout-single-column .notification .status::before,
-.layout-single-column .account-timeline__header + article .status::before,
-.layout-single-column .scrollable > div:first-child > .status::before,
-.layout-single-column .scrollable > div:first-child > div:first-child .status::before /* backwards compatibility with 4.1.* */ {
+.layout-single-column .notification .status::before, /* no dividers on posts _inside_ notifications */
+.layout-single-column .account-timeline__header + article .status::before, /* no divider above first post on profile pages */
+.layout-single-column .scrollable > div:first-child > .status::before, /* no divider above first post in a column thread */
+.layout-single-column .scrollable > div:first-child > div:first-child .status::before /* no divider above first post in a column thread (backwards compatibility with 4.1.*) */ {
     display: none;
 }
 
