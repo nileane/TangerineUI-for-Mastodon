@@ -1503,7 +1503,8 @@ body.layout-single-column  {
 .layout-single-column .account__header__bio .account__header__fields .verified:last-child {
     border-bottom: 0;
 }
-.layout-single-column .account-timeline__header + article .status__wrapper {
+.layout-single-column .account-timeline__header + article .status__wrapper,
+.layout-single-column .account-timeline__header + article .account { /* rounded corners on first post below account header + on first account in followings/followers list */
     border-radius: 7px 7px 0 0;
 }
 
