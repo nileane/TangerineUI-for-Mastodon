@@ -29,6 +29,8 @@
     --color-accent-bg: #f6e5dd;
     --color-accent-fg: #ffffff;
 
+    --color-lines: var(--color-bg);
+
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -50,6 +52,8 @@
         --color-accent-focus: #ffa047;
         --color-accent-bg: #3c2a1f;
         --color-accent-fg: #ffffff;
+
+        --color-lines: var(--color-content-secondary-bg);
     }
 }
 :root {
@@ -211,6 +215,8 @@ body.layout-single-column  {
     display: none;
 }
 
+
+
 /* 💨 Loading bar */
 .layout-single-column .loading-bar { 
     background-color: var(--color-accent);
@@ -259,6 +265,7 @@ body.layout-single-column  {
     order: 3;
 }
 .layout-single-column .columns-area--mobile .column {
+    flex: unset;
     height: auto;
 }
 .layout-single-column .scrollable,
@@ -622,33 +629,36 @@ body.layout-single-column  {
 .layout-single-column .status__content {
     line-height: 19px;
 }
-/* Using ::after to set a non-full-width border between posts */
-.layout-single-column .status__wrapper::before {
+/* Using ::before to set a non-full-width border between posts */
+.layout-single-column .status::before {
     position: absolute;
     background-color: var(--color-content-secondary-bg);
     height: 3px;
     width: calc(100% - 72px);
     right: 0;
-    top: -3px;
+    top: -2px;
     content: "";
 }
 /* Removing border between posts when applicable */
-.layout-single-column .notification .status__wrapper::before,
-.layout-single-column .status__wrapper:has(.status--first-in-thread)::before, 
-.layout-single-column .account-timeline__header + article .status__wrapper::before,
-.layout-single-column .scrollable > div:first-child > .status__wrapper::before,
-.layout-single-column .scrollable > div:first-child > div:first-child .status__wrapper::before, /* backwards compatibility with 4.1.* */
-.layout-single-column .scrollable > div:has(.detailed-status) + div > .status__wrapper::before,
-.layout-single-column .scrollable > div:has(.detailed-status) + div > div:first-child > .status__wrapper::before /* backwards compatibility with 4.1.* */ {
+.layout-single-column .notification .status::before,
+.layout-single-column .account-timeline__header + article .status::before,
+.layout-single-column .scrollable > div:first-child > .status::before,
+.layout-single-column .scrollable > div:first-child > div:first-child .status::before /* backwards compatibility with 4.1.* */ {
     display: none;
 }
 
 /* 👥 Threaded replies */
-.layout-single-column .status__wrapper:has(.status--first-in-thread) {
-    border-top: 3px solid var(--color-bg);
-}
 .layout-single-column .status--first-in-thread {
     border-top: 0;
+}
+.layout-single-column .status--first-in-thread::before {
+    position: absolute;
+    background-color: var(--color-lines);
+    height: 4px;
+    width: 100%;
+    right: 0;
+    top: -3px;
+    content: "";
 }
 .layout-single-column .status--in-thread .attachment-list,
 .layout-single-column .status--in-thread .audio-player,
@@ -661,15 +671,15 @@ body.layout-single-column  {
     margin-left: 0;
 }
 .layout-single-column .status--in-thread .status__line {
-    -webkit-border-start: 3px solid var(--color-content-secondary-bg);
-    border-inline-start: 3px solid var(--color-content-secondary-bg);
+    -webkit-border-start: 4px solid var(--color-lines);
+    border-inline-start: 4px solid var(--color-lines);
     inset-inline-start: 43px;
     position: absolute;
     top: 0;
     width: 0;
 }
 .layout-single-column .status__line--full:before {
-    background: var(--color-content-secondary-bg);
+    background: var(--color-lines);
     inset-inline-start: -3px;
     width: 3px;
 }
@@ -711,8 +721,8 @@ body.layout-single-column  {
     opacity: .7;
 }
 .layout-single-column .detailed-status__wrapper {
-    border-top: 3px solid var(--color-bg);
-    border-bottom: 3px solid var(--color-bg);
+    border-top: 4px solid var(--color-lines);
+    border-bottom: 4px solid var(--color-lines);
 }
 .layout-single-column .scrollable > div:first-child > .detailed-status__wrapper {
     border-top: 0;
@@ -1770,9 +1780,6 @@ body.layout-single-column  {
     border-bottom: 0;
     padding-left: 22px;
     padding-top: 4px;
-    box-shadow:
-        inset 72px 0 var(--color-content-bg), 
-        0 -2px var(--color-content-secondary-bg) inset;
 }
 .layout-single-column .explore__search-results .account {
     padding-top: 16px;
