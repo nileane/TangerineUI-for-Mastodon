@@ -470,6 +470,23 @@ body.layout-single-column  {
     background-image: none;
 }
 
+/* Follow hashtag icon */
+.layout-single-column .column-header__button .column-header__icon.fa-user-plus::before {
+    content: var(--icon-follow-hashtag);
+    position: relative;
+    top: 2px;
+    right: -5px;
+  }
+  
+  /* Unfollow hashtag icon */
+  .layout-single-column .column-header__button .column-header__icon.fa-user-times::before {
+    content: var(--icon-unfollow-hashtag);
+    position: relative;
+    top: 2px;
+    right: -5px
+  }
+  
+
 
 
 /* 📝 Compose panel
