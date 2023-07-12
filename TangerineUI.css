@@ -837,7 +837,7 @@ body.layout-single-column  {
     background-color: var(--color-accent-bg);
 }
 .layout-single-column .status-card__image {
-    background: rgba(249, 191, 164, 0.5);
+    background: var(--color-content-secondary-bg);
 }
 .layout-single-column .status__content p {
     margin-bottom: 12px;
