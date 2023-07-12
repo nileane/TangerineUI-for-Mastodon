@@ -1818,6 +1818,9 @@ body.layout-single-column  {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
 }
+.layout-single-column .list-adder__account {
+    margin-top: 12px;
+}
 .layout-single-column .list-adder .column-inline-form {
     border-radius: 0;
 }
