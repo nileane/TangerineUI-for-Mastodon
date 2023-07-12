@@ -1848,6 +1848,8 @@ body.layout-single-column  {
 .layout-single-column .account__header__fields a,
 .layout-single-column .account__header__bio .account__header__fields a,
 .layout-single-column .reply-indicator__content a.unhandled-link,
+.layout-single-column .status__content a,
+.layout-single-column .status__content a.hashtag,
 .layout-single-column .status__content a.unhandled-link,
 .layout-single-column .column-back-button,
 .layout-single-column .about__section__title,
