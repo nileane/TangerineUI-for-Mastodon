@@ -12,20 +12,20 @@ Make your Mastodon Web interface a friendlier place. Tangerine UI features a sof
 ### 🍊 Tangerine
 Default variant for Tangerine UI, featuring a soft orange palette.
 
-![Safari - 2023-07-12 à 22 49@2x](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/77f49e2a-74c7-4d94-a427-c991289f2383)
-![Code - 2023-07-12 à 22 49@2x](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/6891bfde-c5a2-43a6-8357-76c5f8b0f8d3)
+![a profile page on Mastodon featuring Tangerine UI in light mode](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/77f49e2a-74c7-4d94-a427-c991289f2383)
+![a profile page on Mastodon featuring Tangerine UI in dark mode](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/6891bfde-c5a2-43a6-8357-76c5f8b0f8d3)
 
 ### 🪻 Purple
 For those of you who like Tangerine UI but want to stick to Mastodon's purple palette.
 
-![Code - 2023-07-12 à 22 48@2x](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/f3ab51d2-c94d-4192-a1c8-6d15b0d9025a)
-![Safari - 2023-07-12 à 22 48@2x](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/2322a5ea-6fce-4acc-9e53-92a9bae72e89)
+!a profile page on Mastodon featuring Tangerine UI's purple variant in light mode](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/f3ab51d2-c94d-4192-a1c8-6d15b0d9025a)
+![a profile page on Mastodon featuring Tangerine UI's purple variant in dark mode](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/2322a5ea-6fce-4acc-9e53-92a9bae72e89)
 
 ## How to use
 **Tangerine UI is contained in a single CSS file.**  
 
 * To use on your instance, simply copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the **Custom CSS** field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
-   * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) instead.
+   * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
 
 * If you're not an admin, you can still use Tangerine UI using a userstyle browser extension (ie. [Stylus](https://add0n.com/stylus.html)).
 
