@@ -785,7 +785,7 @@ body.layout-single-column  {
 }
 .layout-single-column .status__prepend {
     font-weight: bold;
-    padding-top: 5px;
+    padding-top: 2px;
     padding-left: 0;
     padding-right: 0;
     height: 25px;
