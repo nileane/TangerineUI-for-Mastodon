@@ -18,7 +18,7 @@ Default variant for Tangerine UI, featuring a soft orange palette.
 ### 🪻 Purple
 For those of you who like Tangerine UI but want to stick to Mastodon's purple palette.
 
-!a profile page on Mastodon featuring Tangerine UI's purple variant in light mode](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/f3ab51d2-c94d-4192-a1c8-6d15b0d9025a)
+![a profile page on Mastodon featuring Tangerine UI's purple variant in light mode](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/f3ab51d2-c94d-4192-a1c8-6d15b0d9025a)
 ![a profile page on Mastodon featuring Tangerine UI's purple variant in dark mode](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/2322a5ea-6fce-4acc-9e53-92a9bae72e89)
 
 ## How to use
