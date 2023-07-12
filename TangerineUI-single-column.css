@@ -186,7 +186,7 @@ body.layout-single-column  {
 :root:has(.layout-single-column) *::-webkit-scrollbar-thumb {
     background-color: var(--color-accent);
     border-radius: 50px;
-    opacity: .3;
+    opacity: .4;
 }
 :root:has(.layout-single-column) *::-webkit-scrollbar-track:hover {
     background-color: var(--color-bg);
@@ -201,28 +201,10 @@ body.layout-single-column  {
     }
 }
 
-/* 👋 Hide superfluous UI */
-.layout-single-column div#mastodon > div > div > div:nth-child(2) > div:nth-child(3) > div > div > div:nth-child(3) > hr,
-.layout-single-column .navigation-panel__legal > hr,
-.layout-single-column .navigation-panel > .column-link:only-of-type, /* Hide Explore tab for logged-out users */
-.layout-single-column .navigation-panel__sign-in-banner + .navigation-panel__legal + .flex-spacer + .getting-started__trends, /* Hide Trending section for logged-out users */
-.layout-single-column .about__footer, /* Hide meta footer */
-.layout-single-column .server-banner__introduction, /* Hide generic mastodon server introduction in sidebar */
-.layout-single-column .search-banner ~ .search, /* Hide search field for logged out users */
-.layout-single-column .ui__header__links .button.button-tertiary,
-.layout-single-column .getting-started__trends h4, /* Hide Trending header in sidebar */
-.layout-single-column .account__header__bio .account__header__fields > dl:first-child /* Hide "Joined" field on profiles */ {
-    display: none;
-}
-
-
-
 /* 💨 Loading bar */
 .layout-single-column .loading-bar { 
     background-color: var(--color-accent);
 }
-
-
 
 /* Resetting borders */
 .layout-single-column .column>.scrollable, 
@@ -369,6 +351,8 @@ body.layout-single-column  {
         filter: brightness(0) saturate(100%) invert(67%) sepia(40%) saturate(2566%) hue-rotate(340deg) brightness(97%) contrast(86%);
     }
 }
+
+
 /* Home icon */
 .layout-single-column .notification__filter-bar .fa-home::before {
     content: var(--icon-home-notification);
@@ -382,18 +366,29 @@ body.layout-single-column  {
 .layout-single-column .column-link.active .fa-home::before {
     content: var(--icon-home-column-link-active);
 }
+.layout-single-column .fa-home.column-header__icon:before {
+    content: var(--icon-home-notification-active);
+}
 /* Federated icon */
 .layout-single-column .column-link .fa-globe::before {
     content: var(--icon-globe);
 }
-.layout-single-column .column-link.active .fa-home::before {
-    content: var(--icon-home-column-link-active);
+.layout-single-column .fa-globe.column-header__icon:before {
+    content: var(--icon-globe);
 }
+/* Local icon */
+.layout-single-column .fa-group.column-header__icon:before,
+.layout-single-column .fa-users.column-header__icon:before {
+    content: var(--icon-users-column-link-active);
+} 
 /* Explore icon */
 .layout-single-column .column-link .fa-hashtag::before {
     content: var(--icon-hashtag);
 }
 .layout-single-column .column-link.active .fa-hashtag::before {
+    content: var(--icon-hashtag-active);
+}
+.layout-single-column .fa-hashtag.column-header__icon:before {
     content: var(--icon-hashtag-active);
 }
 /* Search icon */
@@ -406,6 +401,9 @@ body.layout-single-column  {
 }
 .layout-single-column .column-link.active .fa.fa-search::before {
     content: var(--icon-search);
+}
+.layout-single-column .column-header__icon.fa-search {
+    line-height: 18px;
 }
 /* Local icon */
 .layout-single-column .column-link .fa-users::before {
@@ -421,10 +419,17 @@ body.layout-single-column  {
 .layout-single-column .column-link.active .fa-bell::before {
     content: var(--icon-bell-active);
 }
+.layout-single-column .fa-bell.column-header__icon:before {
+    content: var(--icon-bell-active);
+}
 /* Direct messages icon */
 .layout-single-column .column-link .fa-at::before {
     content: var(--icon-direct-messages);
 }
+.layout-single-column .fa-at.column-header__icon:before {
+    content: var(--icon-direct-messages);
+}
+/* Bookmarks icon */
 .layout-single-column .column-link .fa-bookmark::before {
     content: var(--icon-bookmark-column-link);
     background-image: none;
@@ -432,6 +437,10 @@ body.layout-single-column  {
 .layout-single-column .column-link.active .fa-bookmark::before {
     content: var(--icon-bookmark-column-link-active);
 }
+.layout-single-column .fa-bookmark.column-header__icon:before {
+    content: var(--icon-bookmark-column-link-active);
+}
+/* Favorites icon */
 .layout-single-column .column-link .fa-star::before {
     content: var(--icon-star-column-link);
     background-image: none;
@@ -439,6 +448,10 @@ body.layout-single-column  {
 .layout-single-column .column-link.active .fa-star::before {
     content: var(--icon-star-column-link-active);
 }
+.layout-single-column .fa-star.column-header__icon:before {
+    content: var(--icon-star-column-link-active);
+}
+/* Lists icon */
 .layout-single-column .column-link .fa-list-ul {
     transform: scale(1);
     margin-right: 8px;
@@ -631,7 +644,7 @@ body.layout-single-column  {
 }
 
 /* 📏 Post dividers */
-/* Using ::before to set a non-full-width border between posts and notifications */
+/* Use ::before to set a non-full-width divider between posts and notifications. The divider sits above the post. */
 .layout-single-column .status::before,
 .layout-single-column .notification__message::before {
     position: absolute;
@@ -642,7 +655,7 @@ body.layout-single-column  {
     top: -2px;
     content: "";
 }
-/* Removing border between posts when applicable */
+/* Remove border between posts when applicable */
 .layout-single-column .notification .status::before, /* no dividers on posts _inside_ notifications */
 .layout-single-column .account-timeline__header + article .status::before, /* no divider above first post on profile pages */
 .layout-single-column .scrollable > div:first-child > .status::before, /* no divider above first post in a column thread */
@@ -708,6 +721,16 @@ body.layout-single-column  {
 }
 
 /* 👁️ Post detailed view */
+.layout-single-column .detailed-status__wrapper { /* Set full-width divider above and below a detailed post */
+    border-top: 4px solid var(--color-lines);
+    border-bottom: 4px solid var(--color-lines);
+}
+.layout-single-column .scrollable > div:first-child > .detailed-status__wrapper { /* Disable top divider when the detailed post in first in column */
+    border-top: 0;
+}
+.layout-single-column .scrollable > div:last-child .detailed-status__wrapper:last-child { /* Disabled bottom divider when the detailed post is last in column */
+    border-bottom: 0;
+}
 .layout-single-column .detailed-status .status__content {
     line-height: 24px;
 }
@@ -723,27 +746,15 @@ body.layout-single-column  {
 .detailed-status__display-name .display-name__account{
     opacity: .7;
 }
-.layout-single-column .detailed-status__wrapper {
-    border-top: 4px solid var(--color-lines);
-    border-bottom: 4px solid var(--color-lines);
-}
-.layout-single-column .scrollable > div:first-child > .detailed-status__wrapper {
-    border-top: 0;
-}
 .layout-single-column .detailed-status__meta {
     color: var(--color-fg);
     opacity: .8;
 }
 .layout-single-column .detailed-status__action-bar {
-    border-top: 0;
-    border-bottom: 0;
     padding: 0;
 }
 .layout-single-column .animated-number {
     color: var(--color-content-fg);
-}
-.layout-single-column .scrollable > div:last-child .detailed-status__wrapper:last-child {
-    border-bottom: 0;
 }
 
 .layout-single-column article > .account {
@@ -1043,34 +1054,6 @@ body.layout-single-column  {
     transform: scale(.8);
     line-height: 23px;
 }
-.layout-single-column .column-header__icon.fa-search {
-    line-height: 18px;
-}
-.layout-single-column .fa-home.column-header__icon:before {
-    content: var(--icon-home-notification-active);
-}
-.layout-single-column .fa-bell.column-header__icon:before {
-    content: var(--icon-bell-active);
-}
-.layout-single-column .fa-hashtag.column-header__icon:before {
-    content: var(--icon-hashtag-active);
-}
-.layout-single-column .fa-group.column-header__icon:before,
-.layout-single-column .fa-users.column-header__icon:before {
-    content: var(--icon-users-column-link-active);
-} 
-.layout-single-column .fa-globe.column-header__icon:before {
-    content: var(--icon-globe);
-}
-.layout-single-column .fa-at.column-header__icon:before {
-    content: var(--icon-direct-messages);
-}
-.layout-single-column .fa-star.column-header__icon:before {
-    content: var(--icon-star-column-link-active);
-}
-.layout-single-column .fa-bookmark.column-header__icon:before {
-    content: var(--icon-bookmark-column-link-active);
-}
 @media screen and (max-width:1174px) {
     .layout-single-column .ui__header {
         background-color: transparent;
@@ -1096,7 +1079,7 @@ body.layout-single-column  {
         background-color: transparent;
         height: 55px;
     }
-    .layout-single-column .ui:after {
+    .layout-single-column .ui:after { /* Set a backdrop blur background to both top bars */
         -webkit-backdrop-filter: blur(12px);
         backdrop-filter: blur(12px);
         background-color: rgba(245, 242, 239, 0.75);
@@ -1109,14 +1092,14 @@ body.layout-single-column  {
         z-index: 1;
     }
     .layout-single-column .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-back-button):after,
-    .layout-single-column .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-header__wrapper):after {
+    .layout-single-column .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-header__wrapper):after { /* Backdrop blur has double the height only in cases where there's 2 top bars present */
         height: 110px;
     }
     .layout-single-column .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-back-button),
-    .layout-single-column .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) {
+    .layout-single-column .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) { /* Column header (2nd top bar) is displayed only if there's something inside */
         display: block;
     }
-    .layout-single-column .column-header__collapsible:not(.collapsed) {
+    .layout-single-column .column-header__collapsible:not(.collapsed) { /* Remove margin between column settings and column header */
         margin-top: -10px;
     }
 }
@@ -2270,4 +2253,19 @@ body.layout-single-column  {
 }
 .about__domain-blocks__domain:nth-child(2n) {
     background-color: var(--color-content-secondary-bg);
+}
+
+
+/* 👋 Hide superfluous UI */
+.layout-single-column div#mastodon > div > div > div:nth-child(2) > div:nth-child(3) > div > div > div:nth-child(3) > hr,
+.layout-single-column .navigation-panel__legal > hr,
+.layout-single-column .navigation-panel > .column-link:only-of-type, /* Hide Explore tab for logged-out users */
+.layout-single-column .navigation-panel__sign-in-banner + .navigation-panel__legal + .flex-spacer + .getting-started__trends, /* Hide Trending section for logged-out users */
+.layout-single-column .about__footer, /* Hide meta footer */
+.layout-single-column .server-banner__introduction, /* Hide generic mastodon server introduction in sidebar */
+.layout-single-column .search-banner ~ .search, /* Hide search field for logged out users */
+.layout-single-column .ui__header__links .button.button-tertiary,
+.layout-single-column .getting-started__trends h4, /* Hide Trending header in sidebar */
+.layout-single-column .account__header__bio .account__header__fields > dl:first-child /* Hide "Joined" field on profiles */ {
+    display: none;
 }
