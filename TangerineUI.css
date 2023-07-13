@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.1
+    version: 1.2
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -1638,6 +1638,17 @@ body.layout-single-column  {
 }
 .layout-single-column .account-card__counters__item small {
     opacity: .7;
+}
+.layout-single-column .account-card__bio a {
+    color: var(--color-accent);
+}
+.layout-single-column .filter-form {
+    background-color: var(--color-accent-bg);
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.layout-single-column .filter-form__column {
+    padding: 10px 15px;
 }
 
 /* 📰 Trending stories */
