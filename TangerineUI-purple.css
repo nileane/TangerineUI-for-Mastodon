@@ -1606,6 +1606,40 @@ body.layout-single-column  {
     box-shadow: 0 0 0 3px var(--color-content-bg);
 }
 
+/* Account recommendations (For You Tab + User directory */
+.layout-single-column .scrollable .account-card {
+    margin: 0 0 10px;
+    background-color: var(--color-content-bg);
+    border-radius: 7px;
+} 
+.layout-single-column .account-card__header {
+    padding: 0;
+    border-radius: 7px 7px 0 0;
+    height: 128px;
+    overflow: hidden;
+}
+.layout-single-column .scrollable .account-card__bio:after {
+    background: linear-gradient(270deg, var(--color-content-bg), transparent);
+}
+.layout-single-column .account-card__title__avatar .account__avatar {
+    border: 0;
+    border-radius: 50%;
+    overflow: visible;
+}
+.layout-single-column .account-card__title__avatar img {
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px var(--color-content-bg);
+}
+.layout-single-column .account-card__title .display-name bdi,
+.layout-single-column .account-card__counters__item,
+.layout-single-column .account-card__counters__item small {
+    color: var(--color-content-fg-bold);
+}
+.layout-single-column .account-card__counters__item small {
+    opacity: .7;
+}
+
 /* 📰 Trending stories */
 .layout-single-column .story {
     background-color: var(--color-content-bg);
