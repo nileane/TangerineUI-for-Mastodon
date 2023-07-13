@@ -4,6 +4,10 @@ Tangerine UI is a redesign of Mastodon's Web interface, using just CSS.
 
 Make your Mastodon Web interface a friendlier place. Tangerine UI features a soft orange palette, a bubblier look, and a more compact timeline that should be easier on your eyes. Also, Tangerine UI supports both dark and light modes.
 
+* [Screenshots](#2-variants)
+* [How to use](#how-to-use)
+* [Things to know](#things-to-know)
+
 ## Live demo at [nileane.fr](https://nileane.fr)
 * [See the announcement post](https://nileane.fr/@nileane/110691663040709608) on Mastodon
 
@@ -14,12 +18,16 @@ Default variant for Tangerine UI, featuring a soft orange palette.
 
 ![a profile page on Mastodon featuring Tangerine UI in light mode](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/77f49e2a-74c7-4d94-a427-c991289f2383)
 ![a profile page on Mastodon featuring Tangerine UI in dark mode](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/6891bfde-c5a2-43a6-8357-76c5f8b0f8d3)
+![TangerineUI Mobile](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/b10f3e72-0a58-4b0d-8f00-f7210958483c)
+
 
 ### 🪻 Purple
 For those of you who like Tangerine UI but want to stick to Mastodon's purple palette.
 
 ![a profile page on Mastodon featuring Tangerine UI's purple variant in light mode](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/f3ab51d2-c94d-4192-a1c8-6d15b0d9025a)
 ![a profile page on Mastodon featuring Tangerine UI's purple variant in dark mode](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/2322a5ea-6fce-4acc-9e53-92a9bae72e89)
+![TangerineUI Mobile in purple](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/f2098d06-7c48-4282-b5f6-a62c38155c7b)
+
 
 ## How to use
 **Tangerine UI is contained in a single CSS file.**  
