@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.4.3
+    version: 1.5
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -36,19 +36,19 @@
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-bg: #19191a;
+        --color-bg: #000000;
         --color-fg: #e0d6d1;
         --color-fg-muted: #6e635e;
-        --color-secondary-bg: #211f1d;
-        --color-secondary-separator: #2e2823;
+        --color-secondary-bg: #0d0c0c;
+        --color-secondary-separator: #25201c;
     
-        --color-content-bg: #262627;
+        --color-content-bg: #0b0b0b;
         --color-content-fg: #f2f2f2;
         --color-content-fg-bold: #ffffff;
         --color-content-fg-muted: #737373;
-        --color-content-secondary-bg: #332f2c;
+        --color-content-secondary-bg: #292623;
         --color-content-secondary-separator: rgba(77, 73, 70, 0.4);
-        --color-content-bg-focus: #2e2e2e;
+        --color-content-bg-focus: #222222;
     
         --color-accent: #e68933;
         --color-accent-focus: #ffa047;
@@ -1129,7 +1129,7 @@ body.layout-single-column  {
         background-color: transparent;
         height: 55px;
     }
-    .layout-single-column .ui:after { /* Set a backdrop blur background to both top bars */
+    .layout-single-column .ui::after { /* Set a backdrop blur background to both top bars */
         -webkit-backdrop-filter: blur(12px);
         backdrop-filter: blur(12px);
         background-color: rgba(245, 242, 239, 0.75);
@@ -1155,8 +1155,8 @@ body.layout-single-column  {
 }
 @media (prefers-color-scheme: dark) {
     @media screen and (max-width:1174px) {
-        .layout-single-column .ui:after {
-            background-color: rgba(24, 24, 25, 0.7);
+        .layout-single-column .ui::after {
+            background-color: rgba(0, 0, 0, 0.5);
         }
     }
 }
