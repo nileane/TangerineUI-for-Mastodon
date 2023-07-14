@@ -942,6 +942,20 @@ body.layout-single-column  {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
 }
+/* Poll composer */
+.layout-single-column .compose-form__poll-wrapper,
+.layout-single-column .compose-form__poll-wrapper .poll__footer {
+    border-top: 0;
+}
+.layout-single-column .compose-form__poll-wrapper ul {
+    background-color: var(--color-accent-bg);
+}
+.layout-single-column .compose-form__poll-wrapper .autosuggest-input input:focus {
+    box-shadow: 0 0 0 2px var(--color-accent);
+}
+.layout-single-column .compose-form__poll-wrapper .poll__footer .button.button-secondary {
+    padding: 6px 16px;
+}
 
 
 
