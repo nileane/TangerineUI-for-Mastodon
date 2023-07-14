@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.4
+    version: 1.4.1
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -602,9 +602,9 @@ body.layout-single-column  {
 .layout-single-column .compose-form .compose-form__modifiers .compose-form__upload .icon-button {
     color: #ffffff;
 }
-.compose-form .compose-form__modifiers .compose-form__upload .icon-button:active,
-.compose-form .compose-form__modifiers .compose-form__upload .icon-button:focus,
-.compose-form .compose-form__modifiers .compose-form__upload .icon-button:hover {
+.layout-single-column .compose-form .compose-form__modifiers .compose-form__upload .icon-button:active,
+.layout-single-column .compose-form .compose-form__modifiers .compose-form__upload .icon-button:focus,
+.layout-single-column .compose-form .compose-form__modifiers .compose-form__upload .icon-button:hover {
     background-color: rgba(0, 0, 0, .4);
 }
 @media screen and (max-width:1174px) {
@@ -941,6 +941,20 @@ body.layout-single-column  {
 .layout-single-column .poll__footer .button.button-secondary:hover {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
+}
+/* Poll composer */
+.layout-single-column .compose-form__poll-wrapper,
+.layout-single-column .compose-form__poll-wrapper .poll__footer {
+    border-top: 0;
+}
+.layout-single-column .compose-form__poll-wrapper ul {
+    background-color: var(--color-accent-bg);
+}
+.layout-single-column .compose-form__poll-wrapper .autosuggest-input input:focus {
+    box-shadow: 0 0 0 2px var(--color-accent);
+}
+.layout-single-column .compose-form__poll-wrapper .poll__footer .button.button-secondary {
+    padding: 6px 16px;
 }
 
 

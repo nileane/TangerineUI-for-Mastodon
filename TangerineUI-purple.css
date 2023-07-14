@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon ・ Purple variant 🪻
-    version: 1.4
+    version: 1.4.1
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -941,6 +941,20 @@ body.layout-single-column  {
 .layout-single-column .poll__footer .button.button-secondary:hover {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
+}
+/* Poll composer */
+.layout-single-column .compose-form__poll-wrapper,
+.layout-single-column .compose-form__poll-wrapper .poll__footer {
+    border-top: 0;
+}
+.layout-single-column .compose-form__poll-wrapper ul {
+    background-color: var(--color-accent-bg);
+}
+.layout-single-column .compose-form__poll-wrapper .autosuggest-input input:focus {
+    box-shadow: 0 0 0 2px var(--color-accent);
+}
+.layout-single-column .compose-form__poll-wrapper .poll__footer .button.button-secondary {
+    padding: 6px 16px;
 }
 
 
