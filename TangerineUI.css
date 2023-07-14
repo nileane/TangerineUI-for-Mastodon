@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.3
+    version: 1.4
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -2159,6 +2159,7 @@ body.layout-single-column  {
 .layout-single-column .mute-modal__container,
 .layout-single-column .block-modal__container {
     background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
 }
 .layout-single-column .boost-modal__container {
     margin-bottom: -11px;
@@ -2185,6 +2186,20 @@ body.layout-single-column  {
 .layout-single-column .boost-modal__container .status__relative-time time,
 .layout-single-column .boost-modal__container .status.light .status__visibility-icon {
     color: var(--color-content-fg);
+}
+.layout-single-column .actions-modal ul li:not(:empty) a {
+    color: var(--color-content-fg);
+}
+.layout-single-column .actions-modal ul li:not(:empty) a.active,
+.layout-single-column .actions-modal ul li:not(:empty) a.active button,
+.layout-single-column .actions-modal ul li:not(:empty) a:active,
+.layout-single-column .actions-modal ul li:not(:empty) a:active button,
+.layout-single-column .actions-modal ul li:not(:empty) a:focus,
+.layout-single-column .actions-modal ul li:not(:empty) a:focus button,
+.layout-single-column .actions-modal ul li:not(:empty) a:hover,
+.layout-single-column .actions-modal ul li:not(:empty) a:hover button {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
 }
 
 
