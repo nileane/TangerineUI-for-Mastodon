@@ -1869,7 +1869,7 @@ body.layout-single-column  {
 
 
 
-/* Lists tab */
+/* 📋 Lists tab */
 .layout-single-column .column-inline-form {
     background-color: var(--color-accent-bg);
     border-radius: 7px;
@@ -1924,7 +1924,7 @@ body.layout-single-column  {
 }
 
 
-/* Follow requests */
+/* ➕ Follow requests */
 .layout-single-column #Follow-requests {
     margin-bottom: 0;
     z-index: 0;
@@ -2039,7 +2039,7 @@ body.layout-single-column  {
     background-color: var(--color-accent-focus);
 }
 
-/* Toggles */
+/* ⏺️ Toggles */
 .layout-single-column .setting-toggle__label {
     vertical-align: top;
 }
@@ -2059,7 +2059,7 @@ body.layout-single-column  {
 }
 
 
-/* Radio buttons */
+/* ⏺️ Radio buttons */
 .layout-single-column .radio-button {
     color: var(--color-content-fg);
 }
@@ -2214,6 +2214,27 @@ body.layout-single-column  {
 .layout-single-column .actions-modal ul li:not(:empty) a:hover button {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
+}
+
+/* 🖼️ Picture in Picture */
+.layout-single-column .picture-in-picture {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    border-radius: 7px;
+}
+.layout-single-column .picture-in-picture__footer,
+.layout-single-column .picture-in-picture__header {
+    background-color: var(--color-content-bg);
+}
+.layout-single-column .picture-in-picture__header .display-name span {
+    color: var(--color-content-fg-muted);
+}
+
+/* ⏯️ Video controls */
+.layout-single-column .video-player__seek__buffer,
+.layout-single-column .video-player__seek__progress,
+.layout-single-column .video-player__volume__handle,
+.layout-single-column .video-player__volume__current {
+    background-color: var(--color-accent);
 }
 
 
