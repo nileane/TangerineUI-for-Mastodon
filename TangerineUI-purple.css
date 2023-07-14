@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon ・ Purple variant 🪻
-    version: 1.4.2
+    version: 1.4.3
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -2225,15 +2225,15 @@ body.layout-single-column  {
 .layout-single-column .picture-in-picture__header {
     background-color: var(--color-content-bg);
 }
-.picture-in-picture__header .display-name span {
+.layout-single-column .picture-in-picture__header .display-name span {
     color: var(--color-content-fg-muted);
 }
 
 /* ⏯️ Video controls */
-.layout-single-column .video-player__seek__buffer,
 .layout-single-column .video-player__seek__progress,
 .layout-single-column .video-player__volume__handle,
-.layout-single-column .video-player__volume__current {
+.layout-single-column .video-player__volume__current,
+.layout-single-column .video-player__seek__handle {
     background-color: var(--color-accent);
 }
 
