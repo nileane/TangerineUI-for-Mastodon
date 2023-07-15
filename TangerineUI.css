@@ -865,7 +865,10 @@ body.layout-single-column  {
     background-color: var(--color-accent-bg);
 }
 .layout-single-column .status-card__image {
-    background: var(--color-content-secondary-bg);
+    background: var(--color-accent-bg);
+}
+.layout-single-column .status-card__image > .fa {
+    color: var(--color-accent);
 }
 .layout-single-column .status__content p {
     margin-bottom: 12px;
