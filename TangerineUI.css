@@ -2143,6 +2143,7 @@ body.layout-single-column  {
    --------------------- */
 .layout-single-column .interaction-modal {
     background-color: var(--color-content-bg);
+    border: 0;
 }
 .layout-single-column .interaction-modal,
 .layout-single-column .interaction-modal__lead h3 {
@@ -2167,7 +2168,9 @@ body.layout-single-column  {
 .layout-single-column .interaction-modal .copypaste button {
     padding: 7px 18px;
 }
-
+.layout-single-column .modal-root__overlay {
+    background-color: hsla(0, 0%, 1%, 0.7);
+}
 .layout-single-column .modal-root__modal,
 .layout-single-column .boost-modal__container,
 .layout-single-column .mute-modal__container,
