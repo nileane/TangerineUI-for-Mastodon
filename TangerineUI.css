@@ -42,13 +42,13 @@
         --color-secondary-bg: #0d0c0c;
         --color-secondary-separator: #25201c;
 
-        --color-content-bg: #0b0b0b;
+        --color-content-bg: #111111;
         --color-content-fg: #f2f2f2;
         --color-content-fg-bold: #ffffff;
         --color-content-fg-muted: #737373;
         --color-content-secondary-bg: #292623;
         --color-content-secondary-separator: rgba(77, 73, 70, 0.4);
-        --color-content-bg-focus: #222222;
+        --color-content-bg-focus: #181818;
 
         --color-accent: #e68933;
         --color-accent-focus: #ffa047;
@@ -1156,7 +1156,7 @@ body.layout-single-column  {
 @media (prefers-color-scheme: dark) {
     @media screen and (max-width:1174px) {
         .layout-single-column .ui::after {
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.7);
         }
     }
 }
