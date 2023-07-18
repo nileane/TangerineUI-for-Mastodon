@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.5
+    version: 1.6
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -964,8 +964,10 @@ body.layout-single-column  {
 
 /* Empty columns */
 .layout-single-column .empty-column-indicator {
-    background-color: var(--color-content-bg);
+    background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
+    border-radius: 7px;
+    contain: content;
 }
 .layout-single-column .empty-column-indicator a {
     color: var(--color-accent);
@@ -973,10 +975,10 @@ body.layout-single-column  {
 
 /* Timeline hint */
 .layout-single-column .timeline-hint {
+    background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
 }
 .layout-single-column .timeline-hint a {
-    background-color: var(--color-content-secondary-bg);
     color: var(--color-accent);
 }
 
@@ -1561,6 +1563,21 @@ body.layout-single-column  {
     border-radius: 7px 7px 0 0;
 }
 
+.layout-single-column .follow-request-banner,
+.layout-single-column .moved-account-banner {
+    background-color: var(--color-accent-bg);
+}
+.layout-single-column .moved-account-banner {
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+.layout-single-column .follow-request-banner__message,
+.layout-single-column .moved-account-banner__message {
+    color: var(--color-content-fg);
+}
+.layout-single-column .moved-account-banner__message {
+    font-weight: bold;
+}
 
 
 /* ✨ Explore tab
@@ -2120,15 +2137,33 @@ body.layout-single-column  {
 .layout-single-column .button.button-tertiary.button--destructive {
     background-color: transparent;
 }
+.layout-single-column .button.button-tertiary.button--confirmation {
+    color: #4e8a6b;
+    background-color: rgba(121, 189, 154, 0.3);
+}
+.layout-single-column .button.button-tertiary.button--destructive {
+    color: #df405a;
+    background-color: rgba(223, 64, 90, 0.3);
+}
 .layout-single-column .button.button-tertiary.button--confirmation:active,
 .layout-single-column .button.button-tertiary.button--confirmation:focus,
 .layout-single-column .button.button-tertiary.button--confirmation:hover {
     background-color: #79bd9a;
+    color: #ffffff;
 }
 .layout-single-column .button.button-tertiary.button--destructive:active,
 .layout-single-column .button.button-tertiary.button--destructive:focus,
 .layout-single-column .button.button-tertiary.button--destructive:hover {
     background-color: #df405a;
+    color: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+    .layout-single-column .button.button-tertiary.button--confirmation {
+        color: #72cb9d;
+    }
+    .layout-single-column .button.button-tertiary.button--destructive {
+        color: #f3637b;
+    }
 }
 .layout-single-column .app-body .block-modal__cancel-button,
 .layout-single-column .app-body .confirmation-modal__cancel-button,
