@@ -1561,6 +1561,17 @@ body.layout-single-column  {
     border-radius: 7px 7px 0 0;
 }
 
+.follow-request-banner,
+.moved-account-banner {
+    background-color: var(--color-accent-bg);
+}
+.follow-request-banner__message,
+.moved-account-banner__message {
+    color: var(--color-content-fg);
+}
+.moved-account-banner__message {
+    font-weight: bold;
+}
 
 
 /* ✨ Explore tab
