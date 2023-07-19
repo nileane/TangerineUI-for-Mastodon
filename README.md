@@ -83,8 +83,8 @@ As an admin, you should also now be able to set Tangerine UI as the default them
 ![Screenshot : select Tangerine UI as the default theme for your Mastodon instance in the administration panel.](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/05fcbb53-54de-40e4-89bd-199107116dfc)
 
 
-## Installation for regular users:
-Even if you are not the admin of your instance, you can still use Tangerine UI using a browser extension.
+## Installation for regular users
+Even if you are not the admin of your instance, you can still use Tangerine UI with a browser extension.
 
 * Install any browser extension that allows you to inject CSS on a webpage, such as [Stylus](https://add0n.com/stylus.html), or [Live CSS Editor](https://github.com/webextensions/live-css-editor)
 * Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the extension's editor
