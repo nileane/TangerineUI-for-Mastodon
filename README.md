@@ -97,7 +97,7 @@ Even if you are not the admin of your instance, you can still use Tangerine UI u
 * **Tangerine UI currently only supports Mastodon's single column layout**. The advanced web interface (multiple columns) will not be affected.
 * **Tangerine UI auto-switches from light to dark mode based on your OS preference**.
 * Check your Mastodon instance version before using. The latest Mastodon release checked to be compatible is indicated in the CSS file header.
-* If you run a **Glitch** or **Hometown** instance, beware: Tangerine UI is currently only meant to be applied to Mastodon's vanilla Dark and Light themes.
+* If you run a **Glitch** or **Hometown** instance, beware: Tangerine UI is currently only meant to be applied on top of Mastodon's vanilla Dark and Light themes.
     * If you are a user on a Glitch instance using a browser extension, first switch your instance to the vanilla flavour before applying Tangerine UI.
 
 ## Accessibility
