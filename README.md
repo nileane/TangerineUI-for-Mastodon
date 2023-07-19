@@ -3,8 +3,15 @@
 A Tangerine redesign for Mastodon's Web UI, using just CSS.
 Tangerine UI features a bubblier look, a more compact timeline, round avatars, and a soft color palette.
 
-* Live demo at [nileane.fr](https://nileane.fr)
-* [See the announcement post](https://nileane.fr/@nileane/110691663040709608) on Mastodon
+* [**Live demo** at nileane.fr](https://nileane.fr)
+* [**Announcement** post on Mastodon](https://nileane.fr/@nileane/110691663040709608)
+
+* [**Installation** for instance admins](#installation-for-instance-admins)
+  * [Install as the only theme](#install-tangerine-ui-as-the-only-theme-on-your-instance)
+  * [Install as an optional theme [Recommended]](#install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended)
+* [**Installation** for regular users](#installation-for-regular-users)
+* [**Things to know**](#things-to-know)
+* [**Credits**](#credits)
 
 ## Variants
 
@@ -96,7 +103,7 @@ Even if you are not the admin of your instance, you can still use Tangerine UI u
     * If you are a user on a Glitch-soc instance using a browser extension, first switch your instance to the vanilla flavour before applying Tangerine UI.
 
 ## Accessibility
-* I have not yet adapted Tangerine to Mastodon's *High Contrast* theme setting. Please consider that some of your users may depend on it.
+* I have not yet adapted Tangerine to Mastodon's *High Contrast* theme setting. Please consider that some of your users may depend on it before setting Tangerine UI as the only theme on your instance.
 
 ## Credits
 Huge thanks to [Roni Laukkarinen](https://mementomori.social/@rolle) whose work on [Mastodon Bird UI](https://github.com/ronilaukkarinen/mastodon-bird-ui) I adapted for multiple parts of the redesign. The icon replacement implementations I have also adapted from Bird UI.
