@@ -10,6 +10,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
   * [Install as an optional theme [Recommended]](#install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended)
 * [**Installation** for regular users](#installation-for-regular-users)
 * [**Things to know**](#things-to-know)
+* [**Accessibility**](#accessibility)
 * [**Credits**](#credits)
 
 ## Variants
