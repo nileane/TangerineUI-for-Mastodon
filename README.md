@@ -28,7 +28,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 ### Install Tangerine UI as an optional theme on your instance [Recommended]:
 Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance. This will also allow you to set Tangerine UI as the default theme for your instance, while still letting users change back to Mastodon's default themes in their appearance settings.
 
-1. Add the files from the `mastodon/app` folder in this repository to your Mastodon themes directory:
+1. Add the files from the [`mastodon`](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles) folder in this repository to your Mastodon themes directory:
 
 ```
 app/
