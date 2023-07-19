@@ -1,17 +1,17 @@
 # Tangerine UI for Mastodon 🍊🐘
 
-A Tangerine redesign for Mastodon's Web UI, using just CSS.
+A Tangerine redesign for Mastodon's Web UI, using just CSS.  
 Tangerine UI features a bubblier look, a more compact timeline, round avatars, and a soft color palette.
 
 * [**Live demo** at nileane.fr](https://nileane.fr)
 * [**Announcement** post on Mastodon](https://nileane.fr/@nileane/110691663040709608)
-
 * [**Installation** for instance admins](#installation-for-instance-admins)
   * [Install as the only theme](#install-tangerine-ui-as-the-only-theme-on-your-instance)
   * [Install as an optional theme [Recommended]](#install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended)
 * [**Installation** for regular users](#installation-for-regular-users)
 * [**Things to know**](#things-to-know)
 * [**Credits**](#credits)
+
 
 ## Variants
 
