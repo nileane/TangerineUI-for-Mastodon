@@ -37,25 +37,21 @@ Otherwise, see below how to install Tangerine UI as an optional theme for your u
 ### Install Tangerine UI as an optional theme on your instance [Recommended]:
 Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance. This will also allow you to set Tangerine UI as the default theme for your instance, while still letting users change back to Mastodon's default themes in their appearance settings.
 
-1. Add the files from the [`mastodon`](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles) folder in this repository to your Mastodon themes directory:
+1. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) in this repository to your Mastodon themes directory `app/javascript/styles/`:
 
 ```
 app/
   javascript/
     styles/
-    tangerineui.scss                                  | **new**
-    tangerineui-purple.scss                           | **new**
-      contrast/
-        ...
-      fonts/
-        ...
-      tangerineui/                                    | **new**
-        layout-single-column.scss                     | **new**
-      tangerineui-purple/                             | **new**
-        layout-single-column.scss                     | **new**
+      tangerineui.scss                                | **new**
+      tangerineui-purple.scss                         | **new**
+        tangerineui/                                  | **new**
+          layout-single-column.scss                   | **new**
+        tangerineui-purple/                           | **new**
+          layout-single-column.scss                   | **new**
 ```
 
-2. **Add Tangerine UI to the config.** To make Tangerine UI available in your users's settings, you need to add a new line to [`config/themes.yml`](https://github.com/tootsuite/mastodon/blob/master/config/themes.yml). Here we're adding 2 new lines, one for Tangerine UI, another for Tangerine UI's purple variant:
+2. **Add Tangerine UI to the config.** To make Tangerine UI available in your users's settings, you need to add a new line to [`config/themes.yml`](https://github.com/mastodon/mastodon/blob/main/config/themes.yml). Here we're adding 2 new lines, one for Tangerine UI, another for Tangerine UI's purple variant:
 
 ```yml
 default: styles/application.scss
