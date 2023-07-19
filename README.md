@@ -57,7 +57,7 @@ tangerineui: styles/tangerineui.scss                  | **new**
 tangerineui-purple: styles/tangerineui-purple.scss    | **new**
 ```
 
-3. **Add a human-friendly name (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use, otherwise, in their themes list, they will see the unlocalized `themeName` ("tangerineui"), instead of a human-friendly theme name ("Tangerine UI").
+3. **Add a human-friendly name (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized `themeName` ("tangerineui"), instead of a human-friendly theme name ("Tangerine UI").
 
 ```yml
 themes:
