@@ -23,29 +23,31 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 ### Install Tangerine UI as the only theme on your instance:
 * Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the **Custom CSS** field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
-   * ⚠️ **Caution: Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their settings.** Please make sure there is a consensus among your users for doing so. If not, see below how to install Tangerine UI as an optional site theme for your users.
+   * ⚠️ **Caution: Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their settings.** Please make sure there is a consensus among your users for doing so. Otherwise, see below how to install Tangerine UI as an optional site theme for your users.
 
 ### Install Tangerine UI as an optional theme on your instance [Recommended]:
-1. Add the files and folders from [this repository](https://github.com/nileane/TangerineUI-admins) to your Mastodon themes directory:
+Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance. This will also allow you to set Tangerine UI as the default theme for your instance, while still letting users change back to Mastodon's default themes in their appearance settings.
+
+1. Add the files and folders from [the `TangerineUI-admins` repository](https://github.com/nileane/TangerineUI-admins) to your Mastodon themes directory:
 
 ```
 app/
   javascript/
     styles/
-    tangerineui.scss                          | **new**
-    tangerineui-purple.scss                   | **new**
+    tangerineui.scss                                  | **new**
+    tangerineui-purple.scss                           | **new**
       contrast/
         ...
       fonts/
         ...
-      tangerineui/                            | **new**
-        layout-single-column.scss             | **new**
-      tangerineui-purple/                     | **new**
-        layout-single-column.scss             | **new**
+      tangerineui/                                    | **new**
+        layout-single-column.scss                     | **new**
+      tangerineui-purple/                             | **new**
+        layout-single-column.scss                     | **new**
 ```
 
 
-2. **Add your themes to the config.** This is what [the default themes.yml](https://github.com/tootsuite/mastodon/blob/master/config/themes.yml) looks like in Mastodon. To make Tangerine UI visible in your users's settings, you need to add a new line to [`themes.yml`](https://github.com/tootsuite/mastodon/blob/master/config/themes.yml) (`).
+2. **Add Tangerine UI to the config.** To make Tangerine UI available in your users's settings, you need to add a new line to [`config/themes.yml`](https://github.com/tootsuite/mastodon/blob/master/config/themes.yml). Here we're adding 2 new lines, one for Tangerine UI, another for Tangerine UI's purple variant:
 
 ```yml
 default: styles/application.scss
@@ -55,7 +57,7 @@ tangerineui: styles/tangerineui.scss                  | **new**
 tangerineui-purple: styles/tangerineui-purple.scss    | **new**
 ```
 
-3. **Add a human-friendly name for the themes (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for your theme's `themeName` as added in the previous step. For example, [the default `config/locales/en.yml`](https://github.com/tootsuite/mastodon/blob/041ff5fa9a45f7b8d1048a05a35611622b6f5fdb/config/locales/en.yml#L942-L945) contains localizations for the three default themes that ship with Mastodon, into the `en`glish language. You need to do this for every language you expect your users to use, or else they will see the unlocalized `themeName` directly.
+3. **Add a human-friendly name (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use, otherwise, in their themes list, they will see the unlocalized `themeName` ("tangerineui"), instead of a human-friendly theme name ("Tangerine UI").
 
 ```yml
 themes:
@@ -68,9 +70,21 @@ themes:
 
 4. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Mastodon instance for the changes to take effect.
 
+Your users should now be able to choose '*Tangerine UI*' and '*Tangerine UI (Purple)*' as their site theme:
+
+![Safari - 2023-07-19 à 16 59 2@2x](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/8cce803c-099b-4f25-8e39-e1c0da3aa6dc)
+
+As an admin, you should also now be able to set Tangerine UI as the default theme for your instance (navigate to https://*domain*/admin/settings/appearance):
+
+![Safari - 2023-07-19 à 17 01 2@2x](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/05fcbb53-54de-40e4-89bd-199107116dfc)
+
+
+
 
 ## Installation for regular users:
-* Install a browser extension that allows you to inject CSS on a webpage, such as [Stylus](https://add0n.com/stylus.html), or [Live CSS Editor](https://github.com/webextensions/live-css-editor)
+Even if you are not the admin of your instance, you can still use Tangerine UI using a browser extension.
+
+* Install any browser extension that allows you to inject CSS on a webpage, such as [Stylus](https://add0n.com/stylus.html), or [Live CSS Editor](https://github.com/webextensions/live-css-editor)
 * Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the extension's editor
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
 
