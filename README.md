@@ -34,11 +34,11 @@ For those of you who like Tangerine UI but want to stick to Mastodon's purple pa
 
 * To use on your instance, simply copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the **Custom CSS** field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
+   * ⚠️ Caution: Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their settings. Please make sure there is a consensus among your users for doing so.
 
-* If you're not an admin, you can still use Tangerine UI using a userstyle browser extension (ie. [Stylus](https://add0n.com/stylus.html)).
+* If you're not an admin, you can still use Tangerine UI using a browser extension (ie. [Stylus](https://add0n.com/stylus.html)).
 
 ### Things to know
-* This is still pretty early, and this is a personal project, so things might not be styled properly in some places. [Feel free to message me](https://nileane.fr/@nileane) if you notice anything wonky though :)
 * **Tangerine UI currently only supports Mastodon's single column layout**. The advanced view (multiple columns) will not be affected.
 * **Tangerine UI auto-switches from light to dark mode based on your OS preference**, whether you set your Mastodon theme to *Mastodon (Dark)* or *Mastodon (Light*).
 * Check your Mastodon instance version before using. The latest Mastodon release checked to be compatible is indicated in the CSS file header.
