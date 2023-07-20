@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.7.1
+    version: 1.7.2
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -417,7 +417,8 @@ body.layout-single-column  {
     content: var(--icon-search);
 }
 .layout-single-column .column-header__icon.fa-search {
-    line-height: 18px;
+    vertical-align: baseline;
+    color: var(--color-content-fg);
 }
 /* Local icon */
 .layout-single-column .column-link .fa-users::before {
