@@ -10,7 +10,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 * **Installation**
   * [Install on a **Mastodon** instance](#installation-for-mastodon-admins)
   * [Install on a **Glitch-soc** instance](#installation-for-glitch-soc-admins)
-  * [Installation for regular users](#installation-for-regular-users)
+  * [Install as a regular user](#installation-for-regular-users)
 * [**Things to know**](#things-to-know)
 * [**Accessibility**](#accessibility)
 * [**Credits**](#credits)
@@ -32,9 +32,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 ### Install Tangerine UI as the only theme on your instance:
 * Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the **Custom CSS** field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
-     
-⚠️ **Caution: Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their settings.** Please make sure there is a consensus among your users for doing so.  
-Otherwise, see below how to install Tangerine UI as an optional theme for your users.
+* ⚠️ **Caution: Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their settings.** Please make sure there is a consensus among your users for doing so. If not, see below how to install Tangerine UI as an optional theme for your users.
 
 ### Install Tangerine UI as an optional theme on your instance [Recommended]:
 Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance. This will also allow you to set Tangerine UI as the default theme for your instance, while still letting users change back to Mastodon's default themes in their appearance settings.
@@ -117,7 +115,7 @@ app/
           names.yml                                   | **new**
 ```
 
-3. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Mastodon instance for the changes to take effect.
+3. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Glitch-soc instance for the changes to take effect.
 
 Your users should now be able to select Tangerine UI as their theme in their settings, under Flavours → Vanilla Mastodon → Skin
 
