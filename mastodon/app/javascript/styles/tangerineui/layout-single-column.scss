@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.7
+    version: 1.7.1
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -529,9 +529,12 @@ body.layout-single-column  {
 .layout-single-column .compose-form .character-counter {
     color: var(--color-fg);
 }
-.layout-single-column .compose-form .compose-form__buttons-wrapper .icon-button.active,
-.layout-single-column .compose-form .compose-form__buttons-wrapper .text-icon-button.active {
+.layout-single-column .compose-form .compose-form__buttons-wrapper .icon-button.active {
     color: var(--color-accent);
+}
+.layout-single-column .compose-form .compose-form__buttons-wrapper .text-icon-button.active {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
 }
 .layout-single-column .compose-panel .autosuggest-textarea__textarea {
     padding-left: 20px;
@@ -589,12 +592,23 @@ body.layout-single-column  {
 }
 .layout-single-column .compose-form .spoiler-input.spoiler-input--visible {
     margin-bottom: 0;
+    height: auto;
+    background-color: var(--color-content-bg);
 }
 .layout-single-column .compose-form .spoiler-input__input {
     background-color: var(--color-accent-bg);
     color: var(--color-accent);
     margin-bottom: 0;
-    border-radius: 0;
+    border-radius: 10px;
+    padding: 12px 15px;
+    box-shadow:
+        0 0 0 4px inset var(--color-content-bg);
+}
+.layout-single-column .compose-form .spoiler-input__input:focus {
+    box-shadow:
+        0 0 0 4px inset var(--color-content-bg),
+        0 0 0 6px inset var(--color-accent),
+        0 0 0 1px inset var(--color-content-bg);
 }
 .layout-single-column .display-name {
     color: var(--color-content-fg);
@@ -958,6 +972,10 @@ body.layout-single-column  {
 }
 .layout-single-column .compose-form__poll-wrapper .poll__footer .button.button-secondary {
     padding: 6px 16px;
+}
+.layout-single-column .compose-form__poll-wrapper .icon-button.disabled {
+    color: transparent;
+    pointer-events: none;
 }
 
 
