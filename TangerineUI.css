@@ -529,9 +529,12 @@ body.layout-single-column  {
 .layout-single-column .compose-form .character-counter {
     color: var(--color-fg);
 }
-.layout-single-column .compose-form .compose-form__buttons-wrapper .icon-button.active,
-.layout-single-column .compose-form .compose-form__buttons-wrapper .text-icon-button.active {
+.layout-single-column .compose-form .compose-form__buttons-wrapper .icon-button.active {
     color: var(--color-accent);
+}
+.layout-single-column .compose-form .compose-form__buttons-wrapper .text-icon-button.active {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
 }
 .layout-single-column .compose-panel .autosuggest-textarea__textarea {
     padding-left: 20px;
