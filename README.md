@@ -3,12 +3,12 @@
 A Tangerine redesign for Mastodon's Web UI, using just CSS.  
 Tangerine UI features a bubblier look, a more compact timeline, round avatars, and a soft color palette.
 
-* [**Live demo** at nileane.fr](https://nileane.fr)
-* [**Announcement** post on Mastodon](https://nileane.fr/@nileane/110691663040709608)
-* [**Installation** for instance admins](#installation-for-instance-admins)
-  * [Install as the only theme](#install-tangerine-ui-as-the-only-theme-on-your-instance)
-  * [Install as an optional theme [Recommended]](#install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended)
-* [**Installation** for regular users](#installation-for-regular-users)
+[**Live demo** at nileane.fr](https://nileane.fr) ・ [**Announcement** post on Mastodon](https://nileane.fr/@nileane/110691663040709608)
+
+* **Installation**
+  * [Install on a **Mastodon** instance](#installation-for-mastodon-admins)
+  * [Install on a **Glitch-soc** instance](#installation-for-glitch-soc-admins)
+  * [Installation for regular users](#installation-for-regular-users)
 * [**Things to know**](#things-to-know)
 * [**Accessibility**](#accessibility)
 * [**Credits**](#credits)
@@ -25,7 +25,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 
 ![Tangerine UI's purple variant, both in dark and light modes.](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/c01c7a54-d2db-4fe5-a0f6-dc6e77cfe128)
 
-## Installation for instance admins
+## Installation for Mastodon admins
 
 ### Install Tangerine UI as the only theme on your instance:
 * Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the **Custom CSS** field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
@@ -37,7 +37,7 @@ Otherwise, see below how to install Tangerine UI as an optional theme for your u
 ### Install Tangerine UI as an optional theme on your instance [Recommended]:
 Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance. This will also allow you to set Tangerine UI as the default theme for your instance, while still letting users change back to Mastodon's default themes in their appearance settings.
 
-1. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) in this repository to your Mastodon themes directory `app/javascript/styles/`:
+1. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
 
 ```
 app/
@@ -51,7 +51,7 @@ app/
           layout-single-column.scss                   | **new**
 ```
 
-2. **Add Tangerine UI to the config.** To make Tangerine UI available in your users's settings, you need to add a new line to [`config/themes.yml`](https://github.com/mastodon/mastodon/blob/main/config/themes.yml). Here we're adding 2 new lines, one for Tangerine UI, another for Tangerine UI's purple variant:
+2. **Add Tangerine UI to `themes.yml`**. To make Tangerine UI available in your users's settings, you need to add a new line to [`config/themes.yml`](https://github.com/mastodon/mastodon/blob/main/config/themes.yml). Here we're adding 2 new lines, one for Tangerine UI, another for Tangerine UI's purple variant:
 
 ```yml
 default: styles/application.scss
@@ -61,7 +61,7 @@ tangerineui: styles/tangerineui.scss                  | **new**
 tangerineui-purple: styles/tangerineui-purple.scss    | **new**
 ```
 
-3. **Add a human-friendly name (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized theme name ("*tangerineui-purple*"), instead of a readable theme name ("*Tangerine UI (Purple)*").
+3. **Add a localized name (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized theme name ("*tangerineui-purple*"), instead of a readable theme name ("*Tangerine UI (Purple)*").
 
 ```yml
 themes:
@@ -82,6 +82,46 @@ As an admin, you should also now be able to set Tangerine UI as the default them
 
 ![Screenshot : select Tangerine UI as the default theme for your Mastodon instance in the administration panel.](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/05fcbb53-54de-40e4-89bd-199107116dfc)
 
+## Installation for Glitch-soc admins
+
+Tangerine UI does not yet support Glitch-soc features, but it can still be installed as a vanilla skin on your Glitch-soc instance.
+
+1. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
+
+```
+app/
+  javascript/
+    styles/
+      tangerineui.scss                                | **new**
+      tangerineui-purple.scss                         | **new**
+        tangerineui/                                  | **new**
+          layout-single-column.scss                   | **new**
+        tangerineui-purple/                           | **new**
+          layout-single-column.scss                   | **new**
+```
+
+2. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/skins/vanilla/) to your Glitch-soc themes directory `app/javascript/skins/vanilla/`:
+
+```
+app/
+  javascript/
+    skins/
+      vanilla/
+        tangerineui/                                  | **new**
+          common.scss                                 | **new**
+          names.yml                                   | **new**
+        tangerineui-purple/                           | **new**
+          common.scss                                 | **new**
+          names.yml                                   | **new**
+```
+
+3. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Mastodon instance for the changes to take effect.
+
+Your users should now be able to select Tangerine UI as their theme in their settings, under Flavours → Vanilla Mastodon → Skin
+
+![Glitch-soc settings. Flavours → Vanilla Mastodon → Skin](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/abd931ab-685a-4d55-aa24-cb6356a19a7c)
+
+
 
 ## Installation for regular users
 Even if you are not the admin of your instance, you can still use Tangerine UI with a browser extension.
@@ -89,13 +129,13 @@ Even if you are not the admin of your instance, you can still use Tangerine UI w
 * Install any browser extension that allows you to inject CSS on a webpage, such as [Stylus](https://add0n.com/stylus.html), or [Live CSS Editor](https://github.com/webextensions/live-css-editor)
 * Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the extension's editor
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
+* ⚠️ If you are a user on a Glitch-soc instance, you must switch to the vanilla flavour for Tangerine UI to work properly:
+   * In your settings, navigate to Flavours → Vanilla Mastodon → select the 'Default' skin).
 
 ## Things to know
 * **Tangerine UI currently only supports Mastodon's single column layout**. The advanced web interface (multiple columns) will not be affected.
 * **Tangerine UI auto-switches from light to dark mode based on your OS preference**.
 * Check your Mastodon instance version before using. The latest Mastodon release checked to be compatible is indicated in the CSS file header.
-* If you run a **Glitch** or **Hometown** instance, beware: Tangerine UI is currently only meant to be applied on top of Mastodon's vanilla Dark and Light themes.
-    * If you are a user on a Glitch instance using a browser extension, first switch your instance to the vanilla flavour before applying Tangerine UI.
 
 ## Accessibility
 * I have not yet adapted Tangerine to Mastodon's *High Contrast* theme setting. Please consider that some of your users may depend on it before setting Tangerine UI as the only theme on your instance.
