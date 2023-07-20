@@ -973,6 +973,10 @@ body.layout-single-column  {
 .layout-single-column .compose-form__poll-wrapper .poll__footer .button.button-secondary {
     padding: 6px 16px;
 }
+.layout-single-column .compose-form__poll-wrapper .icon-button.disabled {
+    color: transparent;
+    pointer-events: none;
+}
 
 
 
