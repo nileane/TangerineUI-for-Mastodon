@@ -1135,8 +1135,8 @@ body.layout-single-column  {
         height: 55px;
     }
     .layout-single-column .ui::after { /* Set a backdrop blur background to both top bars */
-        -webkit-backdrop-filter: blur(12px);
-        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
         background-color: rgba(242, 239, 245, .75);
         content: "";
         height: 55px;
@@ -1161,7 +1161,7 @@ body.layout-single-column  {
 @media (prefers-color-scheme: dark) {
     @media screen and (max-width:1174px) {
         .layout-single-column .ui::after {
-            background-color: rgb(0, 0, 0, .7);
+            background-color: rgba(0, 0, 0, .7);
         }
     }
 }
