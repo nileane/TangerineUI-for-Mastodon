@@ -2363,6 +2363,27 @@ body.layout-single-column  {
 
 
 
+/* 🤗 Onboarding suggestions */
+.layout-single-column .scrollable.follow-recommendations-container,
+.layout-single-column .column-list {
+    background-color: var(--color-content-bg);
+}
+.layout-single-column .column-title .logo {
+    display: none;
+}
+.layout-single-column .column-title h3,
+.layout-single-column .column-title p {
+    color: var(--color-content-fg);
+}
+.layout-single-column .column-list {
+    border: 0;
+}
+.layout-single-column .account__note {
+    color: var(--color-content-fg-muted);
+}
+
+
+
 /* 📜 About page
    ------------- */
 .layout-single-column .scrollable.about {
