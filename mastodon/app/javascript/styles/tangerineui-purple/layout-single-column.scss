@@ -1738,7 +1738,9 @@ body.layout-single-column  {
     top: 15px;
     color: var(--color-accent);
 }
-.layout-single-column .compose-panel .fa-search.active {
+.layout-single-column .compose-panel .fa-search.active,
+.layout-single-column .compose-panel .fa-times-circle.active,
+.layout-single-column .search__icon .fa.active {
     opacity: 1;
 }
 .layout-single-column .compose-panel .fa-times-circle.active {
