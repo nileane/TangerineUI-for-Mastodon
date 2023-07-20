@@ -7,13 +7,17 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 
 ## Summary
 
-* **Installation**
+* [**Variants**](#variants)
+* [**Installation**](#installation-for-mastodon-admins)
   * [Install on a **Mastodon** instance](#installation-for-mastodon-admins)
+    * [as the only theme](#install-tangerine-ui-as-the-only-theme-on-your-instance)
+    * [as an optional theme \[recommended\]](#install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended)
   * [Install on a **Glitch-soc** instance](#installation-for-glitch-soc-admins)
   * [Install as a regular user](#installation-for-regular-users)
 * [**Things to know**](#things-to-know)
 * [**Accessibility**](#accessibility)
 * [**Credits**](#credits)
+* [**<3**](#3)
 
 ## Variants
 
