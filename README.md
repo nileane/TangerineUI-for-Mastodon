@@ -5,6 +5,8 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 
 [**Live demo** at nileane.fr](https://nileane.fr) ・ [**Announcement** post on Mastodon](https://nileane.fr/@nileane/110691663040709608)
 
+## Summary
+
 * **Installation**
   * [Install on a **Mastodon** instance](#installation-for-mastodon-admins)
   * [Install on a **Glitch-soc** instance](#installation-for-glitch-soc-admins)
@@ -84,7 +86,7 @@ As an admin, you should also now be able to set Tangerine UI as the default them
 
 ## Installation for Glitch-soc admins
 
-Tangerine UI does not yet support Glitch-soc features, but it can still be installed as a vanilla skin on your Glitch-soc instance.
+Tangerine UI does not yet support Glitch-soc's features and layout, but it can still be installed as a vanilla skin on your Glitch-soc instance.
 
 1. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
 
