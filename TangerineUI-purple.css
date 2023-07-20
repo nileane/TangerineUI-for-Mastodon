@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon ・ Purple variant 🪻
-    version: 1.7.2
+    version: 1.7.3
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -1091,6 +1091,13 @@ body.layout-single-column  {
     color: var(--color-accent);
     background-color: var(--color-accent-bg);
 }
+@media screen and (max-width:1174px) {
+    .layout-single-column .column-header__button.active,
+    .layout-single-column .column-header__button.active:hover,
+    .layout-single-column .column-header__button:hover {
+        background-color: transparent;
+    }
+}
 .layout-single-column .load-gap,
 .layout-single-column .load-more {
     background-color: var(--color-accent-bg);
@@ -1104,6 +1111,13 @@ body.layout-single-column  {
 .layout-single-column .column-header__collapsible {
     border-bottom: 0;
     border-radius: 7px;
+    box-shadow: 0 -20px 0 var(--color-bg);
+}
+@media screen and (max-width:1174px) {
+    .layout-single-column .column-header__collapsible {
+        box-shadow: none;
+        border-radius: 0;
+    }
 }
 .layout-single-column .column-header__collapsible:not(.collapsed) {
     margin-bottom: 10px;
@@ -2403,6 +2417,59 @@ body.layout-single-column  {
 }
 .layout-single-column .account__note {
     color: var(--color-content-fg-muted);
+}
+
+
+
+/* 📢 Announcements */
+.layout-single-column .announcements,
+.layout-single-column .announcements::after {
+    background-color: var(--color-accent-bg);
+    color: var(--color-content-fg);
+}
+.layout-single-column .announcements {
+    margin-bottom: 10px;
+    border-radius: 7px;
+    overflow: visible;
+    z-index: 0;
+    box-shadow: 0 -20px var(--color-bg);
+}
+.layout-single-column .announcements__item strong {
+    font-weight: 800;
+    color: var(--color-content-fg-bold);
+}
+.layout-single-column .announcements__pagination,
+.layout-single-column .announcements__pagination .icon-button {
+    color: var(--color-content-fg);
+}
+.layout-single-column .announcements__mastodon {
+    border-radius: 0 0 0 7px;
+}
+.layout-single-column .reactions-bar__item {
+    background-color: var(--color-content-bg);
+}
+.layout-single-column .reactions-bar__item.active {
+    background-color: var(--color-accent);
+}
+.layout-single-column .reactions-bar__item__count,
+.layout-single-column .reactions-bar__item__count .animated-number {
+    color: var(--color-content-fg);
+}
+.layout-single-column .reactions-bar__item.active .reactions-bar__item__count .animated-number {
+    color: var(--color-accent-fg);
+}
+.layout-single-column .reactions-bar .emoji-button {
+    color: var(--color-accent);
+}
+@media screen and (max-width:1174px) {
+    .layout-single-column .announcements {
+        box-shadow: none;
+        margin-top: -10px;
+        border-radius: 0;
+    }
+    .layout-single-column .announcements__mastodon {
+        border-radius: 0;
+    }
 }
 
 
