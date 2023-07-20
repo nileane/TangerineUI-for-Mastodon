@@ -2458,7 +2458,8 @@ body.layout-single-column  {
 .layout-single-column .reactions-bar__item.active .reactions-bar__item__count .animated-number {
     color: var(--color-accent-fg);
 }
-.layout-single-column .reactions-bar .emoji-button {
+.layout-single-column .reactions-bar .emoji-button,
+.layout-single-column .announcements__item__content a.unhandled-link {
     color: var(--color-accent);
 }
 @media screen and (max-width:1174px) {
