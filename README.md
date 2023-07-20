@@ -84,7 +84,7 @@ As an admin, you should also now be able to set Tangerine UI as the default them
 
 ## Installation for Glitch-soc admins
 
-Tangerine UI does not yet support Glitch-soc's features and layout, but it can still be installed as a vanilla skin on your Glitch-soc instance.
+Tangerine UI does not yet support Glitch-soc's features and layout, but it can still be installed as a vanilla skin on your Glitch-soc instance:
 
 1. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
 
@@ -100,7 +100,7 @@ app/
           layout-single-column.scss                   | **new**
 ```
 
-2. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/skins/vanilla/) to your Glitch-soc themes directory `app/javascript/skins/vanilla/`:
+2. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/skins/vanilla/) to your Glitch-soc skins directory `app/javascript/skins/vanilla/`:
 
 ```
 app/
@@ -117,7 +117,7 @@ app/
 
 3. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Glitch-soc instance for the changes to take effect.
 
-Your users should now be able to select Tangerine UI as their theme in their settings, under Flavours → Vanilla Mastodon → Skin
+Your users should now be able to select Tangerine UI as a theme in their settings, under Flavours → Vanilla Mastodon → Skin
 
 ![Glitch-soc settings. Flavours → Vanilla Mastodon → Skin](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/abd931ab-685a-4d55-aa24-cb6356a19a7c)
 
@@ -130,7 +130,7 @@ Even if you are not the admin of your instance, you can still use Tangerine UI w
 * Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the extension's editor
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
 * ⚠️ If you are a user on a Glitch-soc instance, you must switch to the vanilla flavour for Tangerine UI to work properly:
-   * In your settings, navigate to Flavours → Vanilla Mastodon → select the 'Default' skin).
+   * In your settings, navigate to Flavours → Vanilla Mastodon → select the 'Default' skin.
 
 ## Things to know
 * **Tangerine UI currently only supports Mastodon's single column layout**. The advanced web interface (multiple columns) will not be affected.
