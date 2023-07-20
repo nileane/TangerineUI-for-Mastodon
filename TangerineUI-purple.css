@@ -2459,7 +2459,8 @@ body.layout-single-column  {
     color: var(--color-accent-fg);
 }
 .layout-single-column .reactions-bar .emoji-button,
-.layout-single-column .announcements__item__content a.unhandled-link {
+.layout-single-column .announcements__item__content a.unhandled-link,
+.layout-single-column .announcements__item__content a {
     color: var(--color-accent);
 }
 @media screen and (max-width:1174px) {
