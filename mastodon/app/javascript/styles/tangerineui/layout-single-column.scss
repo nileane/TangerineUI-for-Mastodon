@@ -915,7 +915,9 @@ body.layout-single-column  {
     color: var(--color-accent);
 }
 .layout-single-column .status__wrapper--filtered {
-    border-bottom: 0;
+    color: var(--color-content-fg);
+    border-top: 2px solid var(--color-lines);
+    border-bottom: 2px solid var(--color-lines);
     padding: 12px;
 }
 
