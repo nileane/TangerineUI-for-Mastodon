@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon ・ Purple variant 🪻
-    version: 1.7.3
+    version: 1.7.4
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -2295,6 +2295,27 @@ body.layout-single-column  {
 .layout-single-column .actions-modal ul li:not(:empty) a:hover button {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
+}
+
+
+/* Media modals */
+.layout-single-column .modal-root__modal.media-modal {
+    background-color: rgba(255, 255, 255, .8);
+}
+.layout-single-column .media-modal__overlay .picture-in-picture__footer {
+    background-color: transparent;
+}
+.layout-single-column .media-modal__nav,
+.layout-single-column .media-modal__overlay .picture-in-picture__footer .icon-button {
+    color: var(--color-content-fg);
+}
+.layout-single-column .media-modal__page-dot {
+    background-color: var(--color-content-fg);
+}
+@media (prefers-color-scheme: dark) {
+    .layout-single-column .modal-root__modal.media-modal {
+        background-color: rgba(0, 0, 0, .6);
+    }
 }
 
 /* 🖼️ Picture in Picture */
