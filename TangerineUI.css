@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.7.4
+    version: 1.7.5
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -444,6 +444,12 @@ body.layout-single-column  {
 .layout-single-column .fa-at.column-header__icon:before {
     content: var(--icon-direct-messages);
 }
+.layout-single-column .fa-at.status__prepend-icon {
+    transform: scale(.7);
+}
+.layout-single-column .fa-at.status__prepend-icon::before {
+    content: var(--icon-direct-messages);
+}
 /* Bookmarks icon */
 .layout-single-column .column-link .fa-bookmark::before {
     content: var(--icon-bookmark-column-link);
@@ -850,12 +856,16 @@ body.layout-single-column  {
     padding-top: 2px;
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 0;
     height: 25px;
     color: var(--color-content-fg);
 }
 .layout-single-column .status__prepend-icon-wrapper {
     width: 56px;
     text-align: right;
+}
+.layout-single-column .detailed-status__wrapper .status__prepend-icon-wrapper {
+    width: 46px;
 }
 .layout-single-column .status-card,
 .layout-single-column .status-card.compact {
@@ -1009,6 +1019,7 @@ body.layout-single-column  {
 .layout-single-column .follow_requests-unlocked_explanation {
     background-color: var(--color-accent-bg);
     color: var(--color-content-fg);
+    border-bottom: 0;
 }
 .layout-single-column .follow_requests-unlocked_explanation a {
     color: var(--color-accent);
@@ -1865,6 +1876,28 @@ body.layout-single-column  {
 .layout-single-column .dismissable-banner__action .icon-button {
     color: var(--color-accent-fg);
 }
+.layout-single-column .dismissable-banner__message h1 {
+    color: var(--color-accent-fg);
+    margin-top: 10px;
+}
+.layout-single-column .dismissable-banner__message__actions__wrapper {
+    flex-flow: row-reverse;
+}
+.layout-single-column .dismissable-banner:has(.dismissable-banner__message > img:first-child) {
+    background: linear-gradient(to bottom, var(--color-accent), rgba(247, 105, 2, 0.4));
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 2px;
+}
+.layout-single-column .dismissable-banner__background-image {
+    bottom: -35%;
+    opacity: .3;
+}
+.layout-single-column .dismissable-banner__message__actions .button,
+.layout-single-column .dismissable-banner__message__actions .button.button-tertiary {
+    line-height: 28px;
+    padding: 6px 17px;
+}
 
 
 
@@ -2653,7 +2686,6 @@ body.layout-single-column  {
 /* 👋 Hide superfluous UI */
 .layout-single-column div#mastodon > div > div > div:nth-child(2) > div:nth-child(3) > div > div > div:nth-child(3) > hr,
 .layout-single-column .navigation-panel__legal > hr,
-.layout-single-column .navigation-panel > .column-link:only-of-type, /* Hide Explore tab for logged-out users */
 .layout-single-column .navigation-panel__sign-in-banner + .navigation-panel__legal + .flex-spacer + .getting-started__trends, /* Hide Trending section for logged-out users */
 .layout-single-column .about__footer, /* Hide meta footer */
 .layout-single-column .server-banner__introduction, /* Hide generic mastodon server introduction in sidebar */
