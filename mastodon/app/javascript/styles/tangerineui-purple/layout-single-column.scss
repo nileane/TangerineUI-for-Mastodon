@@ -36,7 +36,7 @@
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-bg: #000000;
+        --color-bg: #030303;
         --color-fg: #d6d2e0;
         --color-fg-muted: #655e6e;
         --color-secondary-bg: #1e162b;
@@ -55,7 +55,7 @@
         --color-accent-bg: #261f3c;
         --color-accent-fg: #ffffff;
 
-        --color-lines: var(--color-content-secondary-separator);
+        --color-lines: #343434;
     }
 }
 :root {
@@ -1209,7 +1209,7 @@ body.layout-single-column  {
 @media (prefers-color-scheme: dark) {
     @media screen and (max-width:1174px) {
         .layout-single-column .ui::after {
-            background-color: rgba(0, 0, 0, .7);
+            background-color: rgba(3, 3, 3, .65);
         }
     }
 }
@@ -1470,7 +1470,7 @@ body.layout-single-column  {
 @media (prefers-color-scheme: dark) {
     @media screen and (max-width:1174px) {
         .layout-single-column .columns-area__panels__pane--navigational .navigation-panel {
-            background-color: rgba(24, 24, 25, 0.7);
+            background-color: rgba(3, 3, 3, 0.65);
             border: 0;
         }
         .layout-single-column a.column-link--transparent.active,
