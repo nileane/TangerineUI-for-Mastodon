@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon ・ Purple variant 🪻
-    version: 1.7.5
+    version: 1.7.6
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -39,23 +39,23 @@
         --color-bg: #000000;
         --color-fg: #d6d2e0;
         --color-fg-muted: #655e6e;
-        --color-secondary-bg: #0c0c0d;
+        --color-secondary-bg: #1e162b;
         --color-secondary-separator: #26232e;
 
-        --color-content-bg: #111111;
+        --color-content-bg: #1a1a1a;
         --color-content-fg: #f2f2f2;
         --color-content-fg-bold: #ffffff;
         --color-content-fg-muted: #737373;
-        --color-content-secondary-bg: #1f1b22;
+        --color-content-secondary-bg: #22212f;
         --color-content-secondary-separator: rgba(64, 62, 89, 0.4);
-        --color-content-bg-focus: #181818;
+        --color-content-bg-focus: #222222;
 
         --color-accent: #7a7af9;
         --color-accent-focus: #5a47ff;
         --color-accent-bg: #261f3c;
         --color-accent-fg: #ffffff;
 
-        --color-lines: var(--color-content-secondary-bg);
+        --color-lines: var(--color-content-secondary-separator);
     }
 }
 :root {
@@ -1237,8 +1237,8 @@ body.layout-single-column  {
 .layout-single-column .account__section-headline button:hover,
 .layout-single-column .notification__filter-bar a:hover,
 .layout-single-column .notification__filter-bar button:hover {
-    background-color: var(--color-content-bg);
-    color: var(--color-content-fg);
+    background-color: var(--color-lines);
+    color: var(--color-accent);
     box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
 }
 .layout-single-column .account__section-headline a.active,
@@ -1744,6 +1744,7 @@ body.layout-single-column  {
 /* 📰 Trending stories */
 .layout-single-column .story {
     background-color: var(--color-content-bg);
+    transition: background-color .2s;
 }
 .layout-single-column .story:not(:last-child) {
     border-bottom: 2px solid var(--color-content-secondary-separator);
@@ -1753,7 +1754,7 @@ body.layout-single-column  {
     color: var(--color-content-fg);
 }
 .layout-single-column .story:hover {
-    background-color: var(--color-accent-bg);
+    background-color: var(--color-content-bg-focus);
 }
 .layout-single-column .story__details__publisher,
 .layout-single-column .story__details__shared {
@@ -2350,6 +2351,34 @@ body.layout-single-column  {
         background-color: rgba(0, 0, 0, .6);
     }
 }
+
+
+/* Report modals */
+.layout-single-column .report-dialog-modal__container {
+    border-top: 0;
+}
+.layout-single-column .report-dialog-modal__lead {
+    color: var(--color-content-fg-muted);
+}
+.layout-single-column .report-dialog-modal .poll__option.dialog-option {
+    border-color: var(--color-lines);
+    border-width: 3px;
+}
+.layout-single-column .report-dialog-modal .dialog-option .poll__input {
+    border-color: var(--color-accent);
+}
+.layout-single-column .report-dialog-modal .dialog-option .poll__input.active {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
+}
+.layout-single-column .report-dialog-modal .poll__option.dialog-option>.poll__option__text {
+    color: var(--color-content-fg);
+}
+.layout-single-column .report-dialog-modal .poll__option.dialog-option>.poll__option__text strong {
+    color: var(--color-content-fg-bold)
+}
+
+
 
 /* 🖼️ Picture in Picture */
 .layout-single-column .picture-in-picture {
