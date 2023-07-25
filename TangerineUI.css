@@ -1073,6 +1073,7 @@ body.layout-single-column  {
     color: var(--color-content-fg);
     border: 0;
     border-radius: 7px;
+    overflow: hidden;
     font-weight: bold;
     margin-bottom: 10px;
 }
