@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon ・ Purple variant 🪻
-    version: 1.7.6
+    version: 1.7.7
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -742,6 +742,7 @@ body.layout-single-column  {
 .layout-single-column .status--in-thread .status__content,
 .layout-single-column .status--in-thread .video-player {
     margin-left: 0;
+    width: auto;
 }
 .layout-single-column .status--in-thread .status__line {
     -webkit-border-start: 4px solid var(--color-lines);
