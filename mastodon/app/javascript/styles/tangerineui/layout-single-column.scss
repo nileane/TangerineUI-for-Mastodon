@@ -39,16 +39,16 @@
         --color-bg: #000000;
         --color-fg: #e0d6d1;
         --color-fg-muted: #6e635e;
-        --color-secondary-bg: #0d0c0c;
+        --color-secondary-bg: #282015;
         --color-secondary-separator: #25201c;
 
-        --color-content-bg: #111111;
+        --color-content-bg: #1a1a1a;
         --color-content-fg: #f2f2f2;
         --color-content-fg-bold: #ffffff;
         --color-content-fg-muted: #737373;
         --color-content-secondary-bg: #292623;
         --color-content-secondary-separator: rgba(77, 73, 70, 0.4);
-        --color-content-bg-focus: #181818;
+        --color-content-bg-focus: #222222;
 
         --color-accent: #e68933;
         --color-accent-focus: #ffa047;
@@ -1237,8 +1237,8 @@ body.layout-single-column  {
 .layout-single-column .account__section-headline button:hover,
 .layout-single-column .notification__filter-bar a:hover,
 .layout-single-column .notification__filter-bar button:hover {
-    background-color: var(--color-content-bg);
-    color: var(--color-content-fg);
+    background-color: var(--color-lines);
+    color: var(--color-accent);
     box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
 }
 .layout-single-column .account__section-headline a.active,
@@ -1744,6 +1744,7 @@ body.layout-single-column  {
 /* 📰 Trending stories */
 .layout-single-column .story {
     background-color: var(--color-content-bg);
+    transition: background-color .2s;
 }
 .layout-single-column .story:not(:last-child) {
     border-bottom: 2px solid var(--color-content-secondary-separator);
@@ -1753,7 +1754,7 @@ body.layout-single-column  {
     color: var(--color-content-fg);
 }
 .layout-single-column .story:hover {
-    background-color: var(--color-accent-bg);
+    background-color: var(--color-content-bg-focus);
 }
 .layout-single-column .story__details__publisher,
 .layout-single-column .story__details__shared {
