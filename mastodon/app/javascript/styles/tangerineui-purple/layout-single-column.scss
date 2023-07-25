@@ -2352,6 +2352,34 @@ body.layout-single-column  {
     }
 }
 
+
+/* Report modals */
+.layout-single-column .report-dialog-modal__container {
+    border-top: 0;
+}
+.layout-single-column .report-dialog-modal__lead {
+    color: var(--color-content-fg-muted);
+}
+.layout-single-column .report-dialog-modal .poll__option.dialog-option {
+    border-color: var(--color-lines);
+    border-width: 3px;
+}
+.layout-single-column .report-dialog-modal .dialog-option .poll__input {
+    border-color: var(--color-accent);
+}
+.layout-single-column .report-dialog-modal .dialog-option .poll__input.active {
+    border-color: var(--color-accent);
+    background-color: var(--color-accent);
+}
+.layout-single-column .report-dialog-modal .poll__option.dialog-option>.poll__option__text {
+    color: var(--color-content-fg);
+}
+.layout-single-column .report-dialog-modal .poll__option.dialog-option>.poll__option__text strong {
+    color: var(--color-content-fg-bold)
+}
+
+
+
 /* 🖼️ Picture in Picture */
 .layout-single-column .picture-in-picture {
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
