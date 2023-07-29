@@ -1941,6 +1941,7 @@ body.layout-single-column  {
     .layout-single-column .account-timeline__header + article .account {
         border-left: 0;
         border-right: 0;
+        border-radius: 0;
     }
 }
 
@@ -3150,7 +3151,6 @@ body.layout-single-column  {
 /* 👋 Hide superfluous UI */
 .layout-single-column div#mastodon > div > div > div:nth-child(2) > div:nth-child(3) > div > div > div:nth-child(3) > hr,
 .layout-single-column .navigation-panel__legal > hr,
-.layout-single-column .navigation-panel__sign-in-banner + .navigation-panel__legal + .flex-spacer + .getting-started__trends, /* Hide Trending section for logged-out users */
 .layout-single-column .about__footer, /* Hide meta footer */
 .layout-single-column .server-banner__introduction, /* Hide generic mastodon server introduction in sidebar */
 .layout-single-column .search-banner ~ .search, /* Hide search field for logged out users */
