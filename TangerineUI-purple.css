@@ -2006,10 +2006,10 @@ body.layout-single-column  {
     border-bottom: 0;
 }
 .layout-single-column .trends__item__name,
-.layout-single-column .trends__item__name a {
-    color: var(--color-content-fg);
+.layout-single-column .trends__item__current {
+    color: var(--color-fg-muted);
 }
-.getting-started__trends .trends__item__current {
+.layout-single-column .trends__item__name a {
     color: var(--color-fg);
 }
 
