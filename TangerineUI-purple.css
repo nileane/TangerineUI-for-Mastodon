@@ -1414,9 +1414,10 @@ body.layout-single-column  {
     .layout-single-column .tabs-bar__wrapper {
         box-shadow: none;
         display: none;
-        margin-bottom: 0;
+        margin-bottom: -2px;
         border-radius: 0;
         height: 45px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
     .layout-single-column .column-header,
     .layout-single-column .column-back-button,
@@ -1441,7 +1442,6 @@ body.layout-single-column  {
     .layout-single-column .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-back-button):after,
     .layout-single-column .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-header__wrapper):after { /* Backdrop blur has double the height only in cases where there's 2 top bars present */
         height: 100px;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
     .layout-single-column .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-back-button),
     .layout-single-column .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) { /* Column header (2nd top bar) is displayed only if there's something inside */
@@ -1455,6 +1455,8 @@ body.layout-single-column  {
     @media screen and (max-width:1174px) {
         .layout-single-column .ui::after {
             background-color: rgba(3, 3, 3, .65);
+        }
+        .layout-single-column .tabs-bar__wrapper {
             border-color: rgba(255, 255, 255, .1);
         }
     }
@@ -1594,9 +1596,6 @@ body.layout-single-column  {
     margin-left: 3px;
     font-weight: 500;
 }
-.layout-single-column .column-link:not(.column-link--logo)[href="/settings/preferences"] {
-    padding-bottom: 13px;
-}
 .layout-single-column a.column-link--transparent.active,
 .layout-single-column a.column-link--transparent.active:hover {
     color: var(--color-content-fg);
@@ -1612,6 +1611,9 @@ body.layout-single-column  {
 @media screen and (min-width:1175px) {
     .layout-single-column .column-link:not(.column-link--logo) {
         transition: all .2s;
+    }
+    .layout-single-column .column-link:not(.column-link--logo)[href="/settings/preferences"] {
+        padding-bottom: 13px;
     }
     .layout-single-column a.column-link--transparent span::before {
         content: " ";
