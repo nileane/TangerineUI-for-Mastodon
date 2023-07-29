@@ -28,7 +28,7 @@
 
     --color-accent: #6364ff;
     --color-accent-focus: #563acc;
-    --color-accent-border: rgba(99, 100, 255, 0.12);
+    --color-accent-lines: rgba(99, 100, 255, 0.12);
     --color-accent-bg: #e5ddf6;
     --color-accent-fg: #ffffff;
 
@@ -53,7 +53,7 @@
 
         --color-accent: #7a7af9;
         --color-accent-focus: #5a47ff;
-        --color-accent-border: rgba(122, 122, 249, 0.12);
+        --color-accent-lines: rgba(122, 122, 249, 0.12);
         --color-accent-bg: #261f3c;
         --color-accent-fg: #ffffff;
 
@@ -599,8 +599,8 @@ body.layout-single-column  {
 .layout-single-column .reply-indicator,
 .layout-single-column .compose-form .compose-form__warning {
     background-color: var(--color-accent-bg);
-    border-left: 1px solid var(--color-accent-border);
-    border-right: 1px solid var(--color-accent-border);
+    border-left: 1px solid var(--color-accent-lines);
+    border-right: 1px solid var(--color-accent-lines);
     border-top: 0;
     border-bottom: 0;
     box-shadow: none;
@@ -694,7 +694,7 @@ body.layout-single-column  {
 }
 .layout-single-column .emoji-mart-bar:first-child {
     background-color: var(--color-accent-bg);
-    border-color: var(--color-accent-border);
+    border-color: var(--color-accent-lines);
 }
 .layout-single-column .emoji-mart-anchor-bar {
     background-color: var(--color-accent);
@@ -727,7 +727,7 @@ body.layout-single-column  {
 }
 .layout-single-column .emoji-mart-search input {
     background-color: var(--color-accent-bg);
-    border-color: var(--color-accent-border);
+    border-color: var(--color-accent-lines);
     border-radius: 8px;
 }
 .layout-single-column .emoji-mart-search input:focus {
@@ -886,13 +886,8 @@ body.layout-single-column  {
     border-top: 0;
 }
 .layout-single-column .status--first-in-thread::before {
-    position: absolute;
-    background-color: var(--color-lines);
-    height: 4px;
     width: 100%;
     right: 0;
-    top: -3px;
-    content: "";
 }
 .layout-single-column .status--in-thread .attachment-list,
 .layout-single-column .status--in-thread .audio-player,
@@ -906,15 +901,15 @@ body.layout-single-column  {
     width: auto;
 }
 .layout-single-column .status--in-thread .status__line {
-    -webkit-border-start: 4px solid var(--color-lines);
-    border-inline-start: 4px solid var(--color-lines);
+    -webkit-border-start: 4px solid var(--color-accent-bg);
+    border-inline-start: 4px solid var(--color-accent-bg);
     inset-inline-start: 43px;
     position: absolute;
     top: 0;
     width: 0;
 }
 .layout-single-column .status__line--full:before {
-    background: var(--color-lines);
+    background: var(--color-accent-bg);
     inset-inline-start: -3px;
     width: 3px;
 }
@@ -1341,11 +1336,11 @@ body.layout-single-column  {
 .layout-single-column .load-more {
     background-color: var(--color-accent-bg);
     color: var(--color-accent);
-    border: 1px solid var(--color-accent-border);
+    border: 1px solid var(--color-accent-lines);
 }
 .layout-single-column .load-gap:hover,
 .layout-single-column .load-more:hover {
-    background-color: var(--color-accent-border);
+    background-color: var(--color-accent-lines);
 }
 @media screen and (min-width:890px) {
     .layout-single-column .item-list > .load-gap:first-child,
@@ -1469,7 +1464,7 @@ body.layout-single-column  {
 .layout-single-column .account__section-headline,
 .layout-single-column .notification__filter-bar {
     background: var(--color-accent-bg);
-    border: 1px solid var(--color-accent-border);
+    border: 1px solid var(--color-accent-lines);
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -1488,7 +1483,7 @@ body.layout-single-column  {
 .layout-single-column .account__section-headline button:hover,
 .layout-single-column .notification__filter-bar a:hover,
 .layout-single-column .notification__filter-bar button:hover {
-    background-color: var(--color-accent-border);
+    background-color: var(--color-accent-lines);
     color: var(--color-accent);
     box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
 }
@@ -1523,7 +1518,7 @@ body.layout-single-column  {
     content: " ";
     width: 2px;
     height: auto;
-    background-color: var(--color-accent-border);
+    background-color: var(--color-accent-lines);
     top: 8px;
     right: -1px;
     left: auto;
@@ -2095,7 +2090,7 @@ body.layout-single-column  {
     border-radius: 8px;
     background-color: var(--color-accent-bg);
     color: var(--color-content-fg);
-    border: 1px solid var(--color-accent-border);
+    border: 1px solid var(--color-accent-lines);
 }
 .layout-single-column .search__input::placeholder,
 .layout-single-column .compose-form .spoiler-input__input::placeholder {
@@ -2338,7 +2333,7 @@ body.layout-single-column  {
 /* 📋 Lists tab */
 .layout-single-column .column-inline-form {
     background-color: var(--color-accent-bg);
-    border: 1px solid var(--color-accent-border);
+    border: 1px solid var(--color-accent-lines);
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -2544,12 +2539,12 @@ body.layout-single-column  {
     vertical-align: top;
 }
 .layout-single-column .react-toggle-track {
-    background-color: var(--color-accent-border);
+    background-color: var(--color-accent-lines);
     box-shadow:
-        0 0 0 20px var(--color-accent-border) inset,
-        0 0 0 20px var(--color-accent-border) inset,
-        0 0 0 1px var(--color-accent-border) inset,
-        0 0 0 1px var(--color-accent-border) inset
+        0 0 0 20px var(--color-accent-lines) inset,
+        0 0 0 20px var(--color-accent-lines) inset,
+        0 0 0 1px var(--color-accent-lines) inset,
+        0 0 0 1px var(--color-accent-lines) inset
 }
 .layout-single-column .react-toggle-thumb {
     border: 0;
