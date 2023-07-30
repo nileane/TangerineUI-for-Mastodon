@@ -735,6 +735,20 @@ body.layout-single-column  {
 
 
 
+/* Zoom on emojis on hover (in post content only */ 
+.layout-single-column .status__content { /* So the emoji doesn't clip out when zoomed on. */
+    overflow: visible;
+}
+.layout-single-column .status__content .emojione {
+    transition: transform .8s .8s;
+}
+.layout-single-column .status__content .emojione:hover {
+    transform: scale(2.5);
+}
+
+
+
+
 /* 💬 Posts
    -------- */
 .layout-single-column .reply-indicator__content,
@@ -1203,6 +1217,9 @@ body.layout-single-column  {
 }
 .layout-single-column .detailed-status__wrapper .status__prepend-icon-wrapper {
     width: 46px;
+}
+.layout-single-column .status__prepend .muted .emojione {
+    opacity: 1;
 }
 .layout-single-column .status-card,
 .layout-single-column .status-card.compact {
