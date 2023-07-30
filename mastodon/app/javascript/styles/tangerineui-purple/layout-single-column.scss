@@ -525,7 +525,7 @@ body.layout-single-column  {
     border-right: 1px solid var(--color-lines);
 }
 .layout-single-column .navigation-bar strong {
-    color: var(--color-content-fg-bold);
+    color: var(--color-content-fg);
 }
 .layout-single-column .compose-form .autosuggest-textarea__suggestions,
 .layout-single-column .compose-form .autosuggest-textarea__textarea,
@@ -752,6 +752,10 @@ body.layout-single-column  {
 .layout-single-column .status__info .status__display-name .display-name__account {
     color: var(--color-content-fg);
 }
+.layout-single-column .account__display-name strong,
+.layout-single-column .status__display-name strong {
+    font-weight: bold;
+}
 .layout-single-column .status {
     margin-left: 56px;
     padding: 0 10px;
@@ -842,7 +846,8 @@ body.layout-single-column  {
     position: absolute;
     right: 22px;
     color: var(--color-content-fg);
-    opacity: .7;
+    opacity: .6;
+    font-weight: bold;
 }
 .layout-single-column .status__avatar {
     margin-bottom: -10px;
@@ -1009,9 +1014,13 @@ body.layout-single-column  {
     background-color: var(--color-content-bg);
     border: 0;
 }
-.detailed-status__display-name strong,
-.detailed-status__display-name .display-name__account {
-    color: var(--color-content-fg-bold);
+.layout-single-column .detailed-status__display-name strong,
+.layout-single-column .detailed-status__display-name .display-name__account {
+    color: var(--color-content-fg);
+}
+.layout-single-column .detailed-status__display-name strong {
+    font-size: 18px;
+    font-weight: bold;
 }
 .detailed-status__display-name .display-name__account{
     opacity: .7;
@@ -1072,7 +1081,7 @@ body.layout-single-column  {
 .layout-single-column .icon-button.star-icon.activate>.fa-star { /* Disable default star spinning animation */
     animation: none;
 }
-.layout-single-column .icon-button.active>.fa {
+.layout-single-column .status__action-bar .icon-button.active>.fa {
     animation: bounce .4s ease-out !important;
 }
 .layout-single-column .detailed-status__action-bar .icon-button.active>.fa {
@@ -1083,7 +1092,7 @@ body.layout-single-column  {
         transform: scale(.8);
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(1.4);
     }
     75% {
         transform: scale(.6);
@@ -1097,7 +1106,7 @@ body.layout-single-column  {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.4);
+        transform: scale(1.6);
     }
     75% {
         transform: scale(.8);
@@ -1298,7 +1307,7 @@ body.layout-single-column  {
 .layout-single-column .follow_requests-unlocked_explanation {
     background-color: var(--color-accent-bg);
     color: var(--color-content-fg);
-    border-bottom: 0;
+    border: 1px solid var(--color-accent-lines);
 }
 .layout-single-column .follow_requests-unlocked_explanation a {
     color: var(--color-accent);
@@ -1335,6 +1344,35 @@ body.layout-single-column  {
         border-left: 1px solid var(--color-lines);
         border-right: 1px solid var(--color-lines);
     }
+}
+
+/* Speech bubble look DMs */
+.layout-single-column .status-direct .status__content,
+.layout-single-column .detailed-status-direct .status__content {
+    padding: .7em 1.2em .7em 1em;
+    margin-top: 4px;
+    background: var(--color-accent-bg);
+    border: 1px solid var(--color-accent-lines);
+    border-radius: 5px 18px 18px 16px;
+    display: inline-block;
+}
+.layout-single-column .status-direct .fa.fa-at,
+.layout-single-column .detailed-status-direct .fa.fa-at {
+    font-size: 20px;
+}
+.layout-single-column .status-direct .fa.fa-at::before,
+.layout-single-column .detailed-status-direct .fa.fa-at::before {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: var(--icon-direct-messages);
+    background-position: center 3px;
+    color: transparent;
+}
+.layout-single-column .detailed-status-direct .fa.fa-at::before {
+    background-position: center 4px;
+}
+.layout-single-column .status-direct.muted .status__content {
+    background: rgba(155, 174, 200, 0.1);
 }
 
 
@@ -1911,7 +1949,10 @@ body.layout-single-column  {
 }
 .layout-single-column .account__header__tabs__name h1,
 .layout-single-column .account__header__tabs__name h1 small {
-    color: var(--color-content-fg-bold);
+    color: var(--color-content-fg);
+}
+.layout-single-column .account__header__tabs__name h1 > span {
+    font-size: 18px;
 }
 .layout-single-column .account__header__tabs__name h1 small {
     opacity: .7;
@@ -2667,6 +2708,15 @@ body.layout-single-column  {
     background-color: var(--color-accent);
 }
 
+.layout-single-column .dropdown-menu,
+.layout-single-column .dropdown-menu__container__header,
+.layout-single-column .dropdown-menu__item.edited-timestamp__history__item,
+.layout-single-column .dropdown-menu__item a,
+.layout-single-column .dropdown-menu__item button {
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
+    border-color: var(--color-lines);
+}
 
 .layout-single-column .dropdown-menu,
 .layout-single-column .dropdown-menu__item a,
