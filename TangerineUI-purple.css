@@ -2461,6 +2461,15 @@ body.layout-single-column  {
 .layout-single-column .scrollable > div > article:first-child .notification__message {
     border-top: 1px solid var(--color-lines);
 }
+.layout-single-column .notification__report {
+    background-color: var(--color-content-bg);
+    border-bottom: 0;
+    padding-top: 10px;
+    gap: 15px;
+}
+.layout-single-column .notification__report__details {
+    color: var(--color-content-fg);
+}
 @media screen and (min-width:889px) {
     .layout-single-column .notification__message {
         border-left: 1px solid var(--color-lines);
@@ -2470,6 +2479,10 @@ body.layout-single-column  {
         border-top: 1px solid var(--color-lines);
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
+    }
+    .layout-single-column .notification__report {
+        border-left: 1px solid var(--color-lines);
+        border-right: 1px solid var(--color-lines);
     }
 }
 .layout-single-column .notification__message .fa {
