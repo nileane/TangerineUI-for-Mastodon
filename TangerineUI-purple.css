@@ -815,8 +815,8 @@ body.layout-single-column  {
     }
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
-    .layout-single-column .scrollable > div:first-child > div:first-child > .status__wrapper,
-    .layout-single-column .scrollable > div > article:first-child > div > .status__wrapper {
+    .layout-single-column .scrollable:first-child > div:first-child > div:first-child > .status__wrapper,
+    .layout-single-column .scrollable:first-child > div > article:first-child > div > .status__wrapper {
         margin-top: 15px;
     }
 }
