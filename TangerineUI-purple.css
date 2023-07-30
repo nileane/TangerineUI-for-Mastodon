@@ -1123,11 +1123,11 @@ body.layout-single-column  {
         opacity: 1;
     }
     50% {
-        transform: scale(.8) translate(150%, -150%);
+        transform: scale(.8) translate(200%, -150%);
         opacity: 0;
     }
     80% {
-        transform: scale(.8) translate(150%, -150%);
+        transform: scale(.8) translate(200%, -150%);
         opacity: 0;
     }
     85% {
