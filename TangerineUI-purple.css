@@ -2195,7 +2195,7 @@ body.layout-single-column  {
 .layout-single-column .compose-panel .fa-search,
 .layout-single-column .compose-panel .fa.active {
     right: 15px;
-    top: 15px;
+    top: 16px;
     color: var(--color-accent);
 }
 .layout-single-column .compose-panel .fa-search.active,
@@ -2293,7 +2293,7 @@ body.layout-single-column  {
     .layout-single-column i.fa.active {
         color: var(--color-accent);
         transform: scale(1);
-        top: 13px;
+        top: 14px;
     }
     .layout-single-column .explore__search-header {
         padding: 10px 0 0;
