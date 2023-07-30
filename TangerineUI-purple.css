@@ -1190,7 +1190,6 @@ body.layout-single-column  {
     color: #ffb609;
 }
 .layout-single-column .status__prepend {
-    font-weight: bold;
     padding-top: 2px;
     padding-left: 0;
     padding-right: 0;
