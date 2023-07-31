@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon ・ Purple variant 🪻
-    version: 1.8.2
+    version: 1.8.3
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -736,7 +736,7 @@ body.layout-single-column  {
 
 
 /* Zoom on emojis on hover (in post content only */ 
-.layout-single-column .status__content { /* So the emoji doesn't clip out when zoomed on. */
+.layout-single-column .status__content:not(.status__content--collapsed) { /* So the emoji doesn't clip out when zoomed on. */
     overflow: visible;
 }
 .layout-single-column .status__content .emojione {
