@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.8.1
+    version: 1.8.2
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -1603,11 +1603,18 @@ body.layout-single-column  {
     }
     .layout-single-column .tabs-bar__wrapper {
         box-shadow: none;
-        display: none;
+        display: block;
         margin-bottom: -2px;
         border-radius: 0;
         height: 45px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+    .layout-single-column .tabs-bar__wrapper:has(> #tabs-bar__portal) {
+        display: none;
+    }
+    .layout-single-column .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-back-button),
+    .layout-single-column .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) { /* Column header (2nd top bar) is displayed only if there's something inside */
+        display: block;
     }
     .layout-single-column .column-header,
     .layout-single-column .column-back-button,
@@ -1622,20 +1629,19 @@ body.layout-single-column  {
         backdrop-filter: blur(20px);
         background-color: rgba(245, 242, 239, 0.75);
         content: "";
-        height: 55px;
+        height: 100px;
         left: 0;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 1;
     }
-    .layout-single-column .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-back-button):after,
-    .layout-single-column .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-header__wrapper):after { /* Backdrop blur has double the height only in cases where there's 2 top bars present */
-        height: 100px;
+    .layout-single-column .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal)::after {
+        height: 55px;
     }
-    .layout-single-column .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-back-button),
-    .layout-single-column .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) { /* Column header (2nd top bar) is displayed only if there's something inside */
-        display: block;
+    .layout-single-column .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-back-button)::after,
+    .layout-single-column .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-header__wrapper)::after { /* Backdrop blur has double the height only in cases where there's 2 top bars present */
+        height: 100px;
     }
     .layout-single-column .column-header__collapsible:not(.collapsed) { /* Remove margin between column settings and column header */
         margin-top: 0;
