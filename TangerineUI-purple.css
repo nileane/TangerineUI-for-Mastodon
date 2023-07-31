@@ -2478,6 +2478,9 @@ body.layout-single-column  {
 .layout-single-column .scrollable > div > article:first-child .notification__message {
     border-top: 1px solid var(--color-lines);
 }
+.layout-single-column .notification__display-name {
+    font-weight: bold;
+}
 .layout-single-column .notification__report {
     background-color: var(--color-content-bg);
     border-bottom: 0;
