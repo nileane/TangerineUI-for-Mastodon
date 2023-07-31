@@ -2509,6 +2509,11 @@ body.layout-single-column  {
     width: 56px;
     text-align: right;
 }
+@media screen and (max-width:889px) {
+    .layout-single-column .notification__favourite-icon-wrapper {
+        width: 51px;
+    }
+}
 .layout-single-column .notification__favourite-icon-wrapper i.fa-star {
     font-size: 15px;
 }
