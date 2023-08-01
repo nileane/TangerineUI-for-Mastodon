@@ -3422,6 +3422,15 @@ body.layout-single-column  {
 }
 
 
+
+/* Privacy Policy page */ 
+.layout-single-column .column > .scrollable.privacy-policy {
+    border: 1px solid var(--color-lines);
+    background-color: var(--color-content-bg);
+}
+
+
+
 /* 👋 Hide superfluous UI */
 .layout-single-column div#mastodon > div > div > div:nth-child(2) > div:nth-child(3) > div > div > div:nth-child(3) > hr,
 .layout-single-column .navigation-panel__legal > hr,
