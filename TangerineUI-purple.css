@@ -2166,8 +2166,13 @@ body.layout-single-column  {
    -------------- */
 @media screen and (min-width:890px) {
 .layout-single-column .account__section-headline + .scrollable article:first-child .status__wrapper {
-    border-radius: 8px 8px 0 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
         margin-top: 0;
+    }
+    .layout-single-column .account__section-headline + .scrollable article:last-child .status__wrapper {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 }
 .layout-single-column .icon-button.active .fa.fa-retweet + .icon-button__counter .animated-number {
