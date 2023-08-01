@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.8.3
+    version: 1.8.4
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -2171,7 +2171,7 @@ body.layout-single-column  {
     }
 }
 .layout-single-column .icon-button.active .fa.fa-retweet + .icon-button__counter .animated-number {
-    color: var(--color-verified);
+    color: #E53880;
 }
 .layout-single-column .icon-button.active .fa.fa-star + .icon-button__counter .animated-number {
     color: #ca8f04;
