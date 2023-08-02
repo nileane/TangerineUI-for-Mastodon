@@ -254,6 +254,10 @@ body.layout-single-column  {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+.layout-single-column .dismissable-banner + .scrollable {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 
 
 /* *️⃣ Icons
@@ -2423,12 +2427,36 @@ body.layout-single-column  {
         padding: 10px 10px 0;
     }
 }
+
+
+
+/* Dismissable banners */
 .layout-single-column .dismissable-banner {
     background-color: var(--color-accent);
     box-shadow: 0 5px var(--color-content-bg);
     border-radius: 8px 8px 0 0;
-    border: 0;
+    border: 1px solid var(--color-lines);
     margin: 0;
+}
+.layout-single-column .explore__links .dismissable-banner {
+    border: 0;
+    border-radius: 7px 7px 0 0;
+}
+@media screen and (max-width:889px) {
+    .layout-single-column .dismissable-banner,
+    .layout-single-column .explore__links .dismissable-banner {
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+}
+@media screen and (min-width:890px) and (max-width:1174px) {
+    .layout-single-column .dismissable-banner {
+        margin-top: 10px;
+    }
+    .layout-single-column .explore__links .dismissable-banner {
+        margin-top: 0;
+    }
 }
 .layout-single-column .dismissable-banner__message,
 .layout-single-column .dismissable-banner__action .icon-button {
