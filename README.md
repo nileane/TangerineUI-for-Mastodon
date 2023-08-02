@@ -56,7 +56,7 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 * Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the **Custom CSS** field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
 
-* ⚠️ **Caution: Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their Appearance settings.** Unless you're running a single-user instance, please make sure there is a consensus among your users for doing so. If not, see below how to install Tangerine UI as an optional theme for your users.
+* ⚠️ **Caution: Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their Appearance settings.** Please make sure there is a consensus among your users for doing so. If not, see below how to install Tangerine UI as an optional theme for your users.
 
 ### Install Tangerine UI as an optional theme on your instance [Recommended]:
 Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance.  
@@ -163,7 +163,7 @@ Even if you are not the admin of your instance, you can still use Tangerine UI w
 * Check your Mastodon instance version before using. The latest Mastodon release checked to be compatible is indicated in the CSS file header.
 
 ## Accessibility
-* I have not yet adapted Tangerine to Mastodon's *High Contrast* theme setting. Please consider that some of your users may depend on it before setting Tangerine UI as the only theme on your instance.
+* Please consider that some of your users may depend on Mastodon's High Contrast theme before [setting Tangerine UI as the only theme](#install-tangerine-ui-as-the-only-theme-on-your-instance) on your instance. For this reason, unless you're running a single-user instance, I recommend [installing Tangerine UI as an optional/revertable theme](#install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended) instead.
 
 ## Credits
 Huge thanks to [Roni Laukkarinen](https://mementomori.social/@rolle) whose work on [Mastodon Bird UI](https://github.com/ronilaukkarinen/mastodon-bird-ui) I adapted for some parts of the redesign.
