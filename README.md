@@ -44,6 +44,7 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 | [pipou.academy](https://pipou.academy)                 | 100+           | an optional theme   | No                 |
 | [indiepocalypse.social](https://indiepocalypse.social) | 100+           | an optional theme   | No                 |
 | [bolha.one](https://bolha.one)                         | 20+            | an optional theme   | Yes                |
+| [nileane.fr](https://nileane.fr)                       | 5+             | the only theme      | Yes                |
 
 
 ## Installation for Mastodon admins
