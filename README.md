@@ -16,7 +16,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 * [**Things to know**](#things-to-know)
 * [**Accessibility**](#accessibility)
 * [**Credits**](#credits)
-* [**<3**](#3)
+* [**Support me**](#3)
 
 ## Variants
 
