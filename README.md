@@ -8,6 +8,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 ## Summary
 
 * [**Variants**](#variants)
+* [**List of instances that use Tangerine UI**](#list-of-instances-that-use-tangerine-ui)
 * [**Installation**](#installation-for-mastodon-admins)
   * [Install on a **Mastodon** instance](#installation-for-mastodon-admins)
   * [Install on a **Glitch-soc** instance](#installation-for-glitch-soc-admins)
@@ -28,6 +29,19 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
   For those of you who like Tangerine UI but want to stick to Mastodon's purple palette.
 
 ![Tangerine UI's purple variant, both in dark and light modes.](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/c01c7a54-d2db-4fe5-a0f6-dc6e77cfe128)
+
+ 
+## List of instances that use Tangerine UI
+These are known instances have enabled Tangerine UI for their users, either as the only theme, or as an optional theme.  
+If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours here (open a PR, or just [DM me](https://nileane.fr/@nileane))**
+
+| **Instance**                                           | **User count** | **Installed as...**     | **Default theme?** |
+|--------------------------------------------------------|----------------|-------------------------|--------------------|
+| [piaille.fr](https://piaille.fr)                       | 10K+           | an optional theme       | No                 |
+| [norden.social](https://norden.social)                 | 5K+            | an optional theme       | No                 |
+| [pipou.academy](https://pipou.academy)                 | 100+           | an optional theme       | No                 |
+| [bolha.one](https://bolha.one)                         | 20             | an optional theme       | Yes                |
+
 
 ## Installation for Mastodon admins
 
