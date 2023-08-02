@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.8.5
+    version: 1.8.6
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -726,6 +726,7 @@ body.layout-single-column  {
 .layout-single-column .emoji-mart-search input {
     background-color: var(--color-accent-bg);
     border-color: var(--color-accent-lines);
+    color: var(--color-content-fg);
     border-radius: 8px;
 }
 .layout-single-column .emoji-mart-search input:focus {
