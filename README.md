@@ -16,7 +16,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 * [**Things to know**](#things-to-know)
 * [**Accessibility**](#accessibility)
 * [**Credits**](#credits)
-* [**Support me**](#3)
+* [**Support me**](#support-me-3)
 
 ## Variants
 
@@ -161,7 +161,7 @@ Even if you are not the admin of your instance, you can still use Tangerine UI w
 * I have not yet adapted Tangerine to Mastodon's *High Contrast* theme setting. Please consider that some of your users may depend on it before setting Tangerine UI as the only theme on your instance.
 
 ## Credits
-Huge thanks to [Roni Laukkarinen](https://mementomori.social/@rolle) whose work on [Mastodon Bird UI](https://github.com/ronilaukkarinen/mastodon-bird-ui) I adapted for multiple parts of the redesign. The icon replacement implementations I have also adapted from Bird UI.
+Huge thanks to [Roni Laukkarinen](https://mementomori.social/@rolle) whose work on [Mastodon Bird UI](https://github.com/ronilaukkarinen/mastodon-bird-ui) I adapted for some parts of the redesign.
 
-## <3
+## Support me <3
 If you enjoy Tangerine UI, jobless me would really appreciate a [tip 💛](https://ko-fi.com/nileane)!
