@@ -44,6 +44,7 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 | [pipou.academy](https://pipou.academy)                 | 100+           | an optional theme   | No                      |
 | [indiepocalypse.social](https://indiepocalypse.social) | 100+           | an optional theme   | No                      |
 | [bolha.one](https://bolha.one)                         | 20+            | an optional theme   | Yes (Tangerine variant) |
+| [i1.no](https://i1.no)                                 | 15+            | the only theme      | Yes (Purple variant)    |
 | [nileane.fr](https://nileane.fr)                       | 5+             | the only theme      | Yes (Tangerine variant) |
 | [isfeeling.social](https://isfeeling.social)           | 1+             | the only theme      | Yes (Purple variant)    |
 
@@ -53,10 +54,12 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 ### Install Tangerine UI as the only theme on your instance:
 * Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the **Custom CSS** field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
-* ⚠️ **Caution: Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their settings.** Please make sure there is a consensus among your users for doing so. If not, see below how to install Tangerine UI as an optional theme for your users.
+
+* ⚠️ **Caution: Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their Appearance settings.** Unless you're running a single-user instance, please make sure there is a consensus among your users for doing so. If not, see below how to install Tangerine UI as an optional theme for your users.
 
 ### Install Tangerine UI as an optional theme on your instance [Recommended]:
-Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance. This will also allow you to set Tangerine UI as the default theme for your instance, while still letting users change back to Mastodon's default themes in their appearance settings.
+Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance.  
+This will also allow you to set Tangerine UI as the default theme for your instance, while still letting users change back to Mastodon's default themes in their Appearance settings.
 
 1. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
 
