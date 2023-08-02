@@ -34,12 +34,13 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 ## List of instances that use Tangerine UI
 These are the known instances that have enabled Tangerine UI for their users, either as the only theme, or as an optional theme.
 
-If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours here (open a PR, or just [DM me](https://nileane.fr/@nileane))**
+If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours here** (open a PR, or just [DM me](https://nileane.fr/@nileane))
 
 | **Instance**                                           | **User count** | **Installed as...** | **Default theme?** |
 | ------------------------------------------------------ | -------------- | ------------------- | ------------------ |
 | [piaille.fr](https://piaille.fr)                       | 10K+           | an optional theme   | No                 |
 | [norden.social](https://norden.social)                 | 5K+            | an optional theme   | No                 |
+| [shelter.moe](https://shelter.moe)                     | 350+           | an optional theme   | No                 |
 | [pipou.academy](https://pipou.academy)                 | 100+           | an optional theme   | No                 |
 | [indiepocalypse.social](https://indiepocalypse.social) | 100+           | an optional theme   | No                 |
 | [bolha.one](https://bolha.one)                         | 20+            | an optional theme   | Yes                |
