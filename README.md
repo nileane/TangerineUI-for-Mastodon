@@ -3,7 +3,7 @@
 A Tangerine redesign for Mastodon's Web UI, using just CSS.  
 Tangerine UI features a bubblier look, a more compact timeline, round avatars, and a soft color palette that automatically switches between light and dark modes.
 
-[🕹️ **Live demo** at nileane.fr](https://nileane.fr) • [📢 **Announcement** post on Mastodon](https://nileane.fr/@nileane/110691663040709608) • [📝 **Changelog**](https://github.com/nileane/TangerineUI-for-Mastodon/releases)
+[🕹️ **Live demo** @ nileane.fr](https://nileane.fr) • [📢 **Announcement** post on Mastodon](https://nileane.fr/@nileane/110691663040709608) • [📝 **Changelog**](https://github.com/nileane/TangerineUI-for-Mastodon/releases)
 
 ## Summary
 
@@ -36,15 +36,16 @@ These are the known instances that have enabled Tangerine UI for their users, ei
 
 If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours here** (open a PR, or just [DM me](https://nileane.fr/@nileane))
 
-| **Instance**                                           | **User count** | **Installed as...** | **Default theme?** |
-| ------------------------------------------------------ | -------------- | ------------------- | ------------------ |
-| [piaille.fr](https://piaille.fr)                       | 10K+           | an optional theme   | No                 |
-| [norden.social](https://norden.social)                 | 5K+            | an optional theme   | No                 |
-| [shelter.moe](https://shelter.moe)                     | 350+           | an optional theme   | No                 |
-| [pipou.academy](https://pipou.academy)                 | 100+           | an optional theme   | No                 |
-| [indiepocalypse.social](https://indiepocalypse.social) | 100+           | an optional theme   | No                 |
-| [bolha.one](https://bolha.one)                         | 20+            | an optional theme   | Yes                |
-| [nileane.fr](https://nileane.fr)                       | 5+             | the only theme      | Yes                |
+| **Instance**                                           | **User count** | **Installed as...** | **Default theme?**      |
+| ------------------------------------------------------ | -------------- | ------------------- | ----------------------- |
+| [piaille.fr](https://piaille.fr)                       | 10K+           | an optional theme   | No                      |
+| [norden.social](https://norden.social)                 | 5K+            | an optional theme   | No                      |
+| [shelter.moe](https://shelter.moe)                     | 350+           | an optional theme   | No                      |
+| [pipou.academy](https://pipou.academy)                 | 100+           | an optional theme   | No                      |
+| [indiepocalypse.social](https://indiepocalypse.social) | 100+           | an optional theme   | No                      |
+| [bolha.one](https://bolha.one)                         | 20+            | an optional theme   | Yes (Tangerine variant) |
+| [nileane.fr](https://nileane.fr)                       | 5+             | the only theme      | Yes (Tangerine variant) |
+| [isfeeling.social](https://isfeeling.social)           | 1+             | the only theme      | Yes (Purple variant)    |
 
 
 ## Installation for Mastodon admins
