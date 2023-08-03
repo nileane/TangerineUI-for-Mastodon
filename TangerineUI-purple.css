@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon ・ Purple variant 🪻
-    version: 1.8.6
+    version: 1.8.7
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -2194,7 +2194,7 @@ body.layout-single-column  {
 }
 .layout-single-column .trends__item__sparkline path:first-child {
     fill: var(--color-accent) !important;
-    opacity: 20%;
+    fill-opacity: 20% !important;
 }
 .layout-single-column .explore__links {
     background-color: var(--color-content-bg);
