@@ -47,6 +47,7 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 | [i1.no](https://i1.no)                                 | 15+            | the only theme      | Yes (Purple variant)    |
 | [nileane.fr](https://nileane.fr)                       | 5+             | the only theme      | Yes (Tangerine variant) |
 | [social.nah.re](https://social.nah.re)                 | 5+             | an optional theme   | No                      |
+| [esoteric.party](https://esoteric.party)               | 5+             | the only theme      | Yes (Tangerine variant) |
 | [isfeeling.social](https://isfeeling.social)           | 1+             | the only theme      | Yes (Purple variant)    |
 
 
