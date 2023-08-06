@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.8.8
+    version: 1.8.9
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -3436,8 +3436,11 @@ body.layout-single-column  {
 }
 .layout-single-column .about__section__body .prose a,
 .layout-single-column .about__section__body .prose a:hover {
-    color: var(--color-content-fg);
+    color: var(--color-accent);
     text-decoration: none;
+}
+.layout-single-column .about__section__body .prose a:hover {
+    text-decoration: underline;
 }
 .layout-single-column .about__section__body .prose small.lang_label {
     margin-left: -2em;
