@@ -2099,8 +2099,10 @@ body.layout-single-column  {
     background-color: var(--color-accent-bg);
 }
 .layout-single-column .account__header__badges .account-role {
-    color: var(--color-content-fg);
     border-radius: 8px;
+}
+.layout-single-column .account__header__badges .account-role span {
+    color: var(--color-content-fg);
 }
 .layout-single-column .account__header__extra__links a,
 .layout-single-column .account__header__bio .account__header__content,
