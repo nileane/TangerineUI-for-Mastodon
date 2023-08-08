@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.8.9
+    version: 1.8.10
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -1091,10 +1091,12 @@ body.layout-single-column  {
 .layout-single-column .icon-button.star-icon.activate>.fa-star { /* Disable default star spinning animation */
     animation: none;
 }
-.layout-single-column .status__action-bar .icon-button.active>.fa {
+.layout-single-column .status__action-bar .icon-button.star-icon.active>.fa,
+.layout-single-column .status__action-bar .icon-button.bookmark-icon.active>.fa  {
     animation: bounce .4s ease-out !important;
 }
-.layout-single-column .detailed-status__action-bar .icon-button.active>.fa {
+.layout-single-column .detailed-status__action-bar .icon-button.star-icon.active>.fa,
+.layout-single-column .detailed-status__action-bar .icon-button.bookmark-icon.active>.fa {
     animation: bounce-detailed .4s ease-out !important;
 }
 @keyframes bounce {

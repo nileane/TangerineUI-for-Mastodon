@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon ・ Purple variant 🪻
-    version: 1.8.9
+    version: 1.8.10
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -319,6 +319,7 @@ body.layout-single-column  {
 }
 .layout-single-column .detailed-status__link i.fa.fa-star:before {
     content: " ";
+    transform: scale(.9);
 }
 /* Replace retweet icon */
 .layout-single-column i.fa.fa-retweet.fa-fw,
@@ -1090,10 +1091,12 @@ body.layout-single-column  {
 .layout-single-column .icon-button.star-icon.activate>.fa-star { /* Disable default star spinning animation */
     animation: none;
 }
-.layout-single-column .status__action-bar .icon-button.active>.fa {
+.layout-single-column .status__action-bar .icon-button.star-icon.active>.fa,
+.layout-single-column .status__action-bar .icon-button.bookmark-icon.active>.fa  {
     animation: bounce .4s ease-out !important;
 }
-.layout-single-column .detailed-status__action-bar .icon-button.active>.fa {
+.layout-single-column .detailed-status__action-bar .icon-button.star-icon.active>.fa,
+.layout-single-column .detailed-status__action-bar .icon-button.bookmark-icon.active>.fa {
     animation: bounce-detailed .4s ease-out !important;
 }
 @keyframes bounce {
@@ -2733,7 +2736,6 @@ body.layout-single-column  {
         right: 0;
         margin: 0;
         width: auto;
-        padding: 12px;
     }
 }
 
