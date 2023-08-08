@@ -1233,30 +1233,43 @@ body.layout-single-column  {
 .layout-single-column .status-card,
 .layout-single-column .status-card.compact {
     background-color: var(--color-content-secondary-bg);
-    border: none;
-    box-shadow:
-        0 1px 4px rgba(0, 0, 0, .08);
-}
-.layout-single-column .status-card__title,
-.layout-single-column .status-card__host,
-.layout-single-column .status-card__description {
-    color: var(--color-content-fg-bold);
-}
-.layout-single-column .status-card__description {
-    opacity: .7;
-}
-.layout-single-column .status-card__host {
-    opacity: .5;
+    border: 1px solid var(--color-lines);
+    box-shadow: none;
+    transition: all .3s;
 }
 .layout-single-column a.status-card:hover,
 .layout-single-column a.status-card.compact:hover {
-    background-color: var(--color-accent-bg);
+    background-color: var(--color-content-bg-focus);
+    border-color: var(--color-lines);
 }
 .layout-single-column .status-card__image {
     background: var(--color-accent-bg);
 }
 .layout-single-column .status-card__image > .fa {
     color: var(--color-accent);
+}
+.layout-single-column .status-card__title,
+.layout-single-column .status-card__host,
+.layout-single-column .status-card__description,
+.layout-single-column .status-card__author {
+    color: var(--color-content-fg);
+    transition: all .2s;
+}
+.layout-single-column .status-card:active .status-card__host,
+.layout-single-column .status-card:focus .status-card__host,
+.layout-single-column .status-card:hover .status-card__host {
+    color: var(--color-accent);
+}
+.layout-single-column .status-card:active .status-card__author,
+.layout-single-column .status-card:active .status-card__description,
+.layout-single-column .status-card:active .status-card__title,
+.layout-single-column .status-card:focus .status-card__author,
+.layout-single-column .status-card:focus .status-card__description,
+.layout-single-column .status-card:focus .status-card__title,
+.layout-single-column .status-card:hover .status-card__author,
+.layout-single-column .status-card:hover .status-card__description,
+.layout-single-column .status-card:hover .status-card__title {
+    color: var(--color-content-fg);
 }
 .layout-single-column .status__content p {
     margin-bottom: 12px;
@@ -2780,6 +2793,10 @@ body.layout-single-column  {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
     transition: all .2s;
+}
+.layout-single-column .button:disabled,
+.layout-single-column .button.disabled {
+    opacity: .7;
 }
 .layout-single-column .text-icon-button.active,
 .layout-single-column .button.button-tertiary,
