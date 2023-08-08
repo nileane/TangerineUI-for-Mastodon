@@ -1275,6 +1275,9 @@ body.layout-single-column  {
 .layout-single-column .status-card:hover .status-card__title {
     color: var(--color-content-fg);
 }
+.layout-single-column .status-card__author strong {
+    font-weight: 800;
+}
 .layout-single-column .status__content p {
     margin-bottom: 12px;
 }
