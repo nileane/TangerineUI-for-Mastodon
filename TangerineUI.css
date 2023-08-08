@@ -1246,6 +1246,10 @@ body.layout-single-column  {
     background: var(--color-accent-bg);
 }
 .layout-single-column .status-card__image > .fa {
+    color: var(--color-content-fg);
+    transition: all .3s;
+}
+.layout-single-column a.status-card:hover .status-card__image > .fa {
     color: var(--color-accent);
 }
 .layout-single-column .status-card__title,
