@@ -767,6 +767,9 @@ body.layout-single-column  {
 .layout-single-column .status__info .status__display-name .display-name__account {
     color: var(--color-content-fg);
 }
+.layout-single-column .translate-button {
+    color: var(--color-content-fg-muted);
+}
 .layout-single-column .account__display-name strong,
 .layout-single-column .status__display-name strong {
     font-weight: bold;
@@ -930,6 +933,10 @@ body.layout-single-column  {
 .layout-single-column .status--in-thread .video-player {
     margin-left: 0;
     width: auto;
+}
+.layout-single-column .status--in-thread .status__content__read-more-button {
+    -webkit-margin-start: 0;
+    margin-inline-start: 0;
 }
 .layout-single-column .status--in-thread .status__line {
     -webkit-border-start: 4px solid var(--color-accent-bg);
