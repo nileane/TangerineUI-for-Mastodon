@@ -2827,6 +2827,8 @@ body.layout-single-column  {
 .layout-single-column .interaction-modal__icon,
 .layout-single-column .status__content a.mention,
 .layout-single-column .status__content__read-more-button,
+.layout-single-column .link-button,
+.layout-single-column .translate-button button,
 .layout-single-column .status__action-bar__dropdown .icon-button.active,
 .layout-single-column .account__relationship .icon-button.active,
 .layout-single-column .account__header__tabs__buttons .icon-button.active,
