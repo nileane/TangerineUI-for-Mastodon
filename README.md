@@ -45,6 +45,7 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 | [indiepocalypse.social](https://indiepocalypse.social)   | 100+           | an optional theme   | No                      |
 | [bolha.one](https://bolha.one)                           | 20+            | an optional theme   | Yes (Tangerine variant) |
 | [i1.no](https://i1.no)                                   | 15+            | the only theme      | Yes (Purple variant)    |
+| [zeppelin.flights](https://zeppelin.flights)             | 15+            | the only theme      | Yes (Tangerine variant) |
 | [catharsis.cafe](https://catharsis.cafe)                 | 10+            | an optional theme   | Yes (Tangerine variant) |
 | [nileane.fr](https://nileane.fr)                         | 5+             | the only theme      | Yes (Tangerine variant) |
 | [social.nah.re](https://social.nah.re)                   | 5+             | an optional theme   | No                      |
@@ -53,6 +54,7 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 | [isfeeling.social](https://isfeeling.social)             | 1+             | the only theme      | Yes (Purple variant)    |
 | [ucn.social](https://ucn.social)                         | 1+             | an optional theme   | Yes (Tangerine variant) |
 | [fedi.cyberwitches.club](https://fedi.cyberwitches.club) | 1+             | the only theme      | Yes (Purple variant)    |
+| [toulouse.social](https://toulouse.social)               | 1+             | the only theme      | Yes (Tangerine variant) |
 
 
 ## Installation for Mastodon admins
