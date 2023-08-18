@@ -1456,7 +1456,8 @@ body.layout-single-column  {
 
 /* Speech bubble look DMs */
 .layout-single-column .status-direct .status__content,
-.layout-single-column .detailed-status-direct .status__content {
+.layout-single-column .detailed-status-direct .status__content,
+.layout-single-column .detailed-status__wrapper-direct .status__content {
     padding: .7em 1.2em .7em 1em;
     margin-top: 4px;
     background: var(--color-accent-bg);
@@ -1469,19 +1470,25 @@ body.layout-single-column  {
     font-size: 20px;
 }
 .layout-single-column .status-direct .fa.fa-at::before,
-.layout-single-column .detailed-status-direct .fa.fa-at::before {
+.layout-single-column .detailed-status-direct .fa.fa-at::before,
+.layout-single-column .detailed-status__wrapper-direct .fa.fa-at::before {
     background-size: contain;
     background-repeat: no-repeat;
     background-image: var(--icon-direct-messages);
     background-position: center 3px;
     color: transparent;
 }
-.layout-single-column .detailed-status-direct .fa.fa-at::before {
+.layout-single-column .detailed-status-direct .fa.fa-at::before,
+.layout-single-column .detailed-status__wrapper-direct .fa.fa-at::before {
     background-position: center 4px;
 }
 .layout-single-column .status-direct.muted .status__content {
     background: rgba(155, 174, 200, 0.1);
     border-color: var(--color-lines);
+}
+.layout-single-column .status__wrapper-direct .status__prepend,
+.layout-single-column .detailed-status__wrapper-direct .status__prepend {
+    display: none;
 }
 
 
