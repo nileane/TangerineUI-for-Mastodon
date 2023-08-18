@@ -1819,6 +1819,12 @@ body.layout-single-column  {
 .layout-single-column .column-link--transparent {
     color: var(--color-fg);
 }
+.layout-single-column .ui__header__logo .logo--icon {
+    display: none;
+}
+.layout-single-column .ui__header__links .button.button-secondary {
+    padding: 7px 18px 9px 18px;
+}
 .layout-single-column .column-link--logo {
     margin-left: 4px;
 }
