@@ -204,7 +204,6 @@ body.layout-single-column  {
 
 /* Resetting borders */
 .layout-single-column .column>.scrollable,
-.layout-single-column .error-column,
 .layout-single-column .getting-started,
 .layout-single-column .regeneration-indicator,
 .layout-single-column .audio-player,
@@ -221,7 +220,6 @@ body.layout-single-column  {
 }
 .layout-single-column .column-inline-form,
 .layout-single-column .column>.scrollable,
-.layout-single-column .error-column,
 .layout-single-column .getting-started,
 .layout-single-column .regeneration-indicator {
     background: transparent;
@@ -614,11 +612,6 @@ body.layout-single-column  {
 .layout-single-column .reply-indicator__content a,
 .layout-single-column .navigation-bar__profile-edit {
     color: var(--color-accent);
-}
-.layout-single-column .empty-column-indicator,
-.layout-single-column .error-column {
-    background-color: var(--color-content-bg);
-    color: var(--color-content-fg);
 }
 
 .layout-single-column .compose-form .autosuggest-input {
@@ -3375,6 +3368,33 @@ body.layout-single-column  {
     }
     .layout-single-column .announcements__mastodon {
         border-radius: 0;
+    }
+}
+
+
+
+/* 404 */
+.layout-single-column .empty-column-indicator,
+.layout-single-column .error-column {
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
+}
+.layout-single-column .error-column {
+    border: 1px solid var(--color-lines);
+    border-radius: 8px !important;
+}
+.layout-single-column .error-column__message h1,
+.layout-single-column .error-column__message {
+    color: var(--color-content-fg);
+}
+.layout-single-column .error-column__image {
+    margin-top: 0;
+}
+@media screen and (max-width:889px) {
+    .layout-single-column .error-column {
+        border-radius: 0 !important;
+        border-left: 0;
+        border-right: 0;
     }
 }
 
