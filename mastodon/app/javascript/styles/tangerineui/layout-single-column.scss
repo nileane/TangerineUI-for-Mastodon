@@ -1236,6 +1236,7 @@ body.layout-single-column  {
     border: 1px solid var(--color-lines);
     box-shadow: none;
     transition: all .3s;
+    border-radius: 8px;
 }
 .layout-single-column a.status-card:hover,
 .layout-single-column a.status-card.compact:hover {
