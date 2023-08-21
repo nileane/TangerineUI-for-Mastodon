@@ -3581,7 +3581,8 @@ body.layout-single-column  {
     border-width: 3px;
 }
 .layout-single-column .about__section__body .prose a,
-.layout-single-column .about__section__body .prose a:hover {
+.layout-single-column .about__section__body .prose a:hover,
+.layout-single-column .prose a strong {
     color: var(--color-accent);
     text-decoration: none;
 }
