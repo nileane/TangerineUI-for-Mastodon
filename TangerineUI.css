@@ -1953,6 +1953,9 @@ body.layout-single-column  {
     position: relative;
     top: 1px;
 }
+.layout-single-column .column-link .fa.fa-cog {
+    transform: scale(1) translate(1px, -1px);
+}
 .layout-single-column .list-panel {
     padding: 5px 9px 8px 27px;
     margin: 0 0 5px;
