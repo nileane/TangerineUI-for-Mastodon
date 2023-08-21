@@ -339,7 +339,7 @@ body.layout-single-column  {
 .layout-single-column .fa.fa-retweet.status__prepend-icon.fa-fw,
 .layout-single-column .notification i.fa.fa-retweet.fa-fw {
     background-image: var(--icon-boost-active);
-    transform: scale(.9);
+    transform: scale(.9) translate(0, -1px);
 }
 .layout-single-column .detailed-status__link .fa.fa-retweet:before {
     background-image: var(--icon-boost);
