@@ -1822,6 +1822,9 @@ body.layout-single-column  {
     content: var(--icon-reply-accent);
     top: 2px
 }
+.layout-single-column .notification__filter-bar .active i.fa-reply-all::before {
+    content: var(--icon-reply);
+}
 .layout-single-column .notification__filter-bar i.fa-fw::before {
     width: 18px;
     height: 18px;
@@ -1831,9 +1834,15 @@ body.layout-single-column  {
     background-image: var(--icon-star-accent);
     transform: translate(0, 1px);
 }
+.layout-single-column .notification__filter-bar .active i.fa-star::before {
+    background-image: var(--icon-star);
+}
 .layout-single-column .notification__filter-bar i.fa.fa-retweet {
     background-image: var(--icon-boost-accent);
     transform: translate(0, 1px);
+}
+.layout-single-column .notification__filter-bar .active i.fa.fa-retweet {
+    background-image: var(--icon-boost);
 }
 .layout-single-column .notification__filter-bar i.fa.fa-home,
 .layout-single-column .notification__filter-bar i.fa.fa-tasks {
