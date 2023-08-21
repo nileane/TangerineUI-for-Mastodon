@@ -370,12 +370,6 @@ body.layout-single-column  {
 
 
 /* Home icon */
-.layout-single-column .notification__filter-bar .fa-home::before {
-    content: var(--icon-home-notification);
-}
-.layout-single-column .notification__filter-bar .active .fa-home::before {
-    content: var(--icon-home-notification-active);
-}
 .layout-single-column .column-link .fa-home::before {
     content: var(--icon-home);
 }
@@ -1824,6 +1818,27 @@ body.layout-single-column  {
     }
 }
 
+.layout-single-column .notification__filter-bar i.fa-reply-all::before {
+    content: var(--icon-reply-accent);
+    top: 2px
+}
+.layout-single-column .notification__filter-bar i.fa-fw::before {
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+}
+.layout-single-column .notification__filter-bar i.fa-star::before {
+    background-image: var(--icon-star-accent);
+    transform: translate(0, 1px);
+}
+.layout-single-column .notification__filter-bar i.fa.fa-retweet {
+    background-image: var(--icon-boost-accent);
+    transform: translate(0, 1px);
+}
+.layout-single-column .notification__filter-bar i.fa.fa-home,
+.layout-single-column .notification__filter-bar i.fa.fa-tasks {
+    transform: scale(1.2);
+}
 
 
 /* 📍 Navigation panel
