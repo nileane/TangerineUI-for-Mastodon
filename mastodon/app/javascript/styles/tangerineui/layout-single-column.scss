@@ -3590,9 +3590,9 @@ body.layout-single-column  {
 }
 .layout-single-column .about__section__body .prose small.lang_label {
     margin-left: -2em;
+    margin-top: 1px;
     display: block;
-    color: var(--color-content-fg-bold);
-    opacity: .5;
+    color: var(--color-content-fg-muted);
     font-weight: bold;
     font-size: 80%;
     float: left;
