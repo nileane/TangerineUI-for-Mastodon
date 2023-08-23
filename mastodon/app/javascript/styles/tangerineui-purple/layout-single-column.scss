@@ -3287,6 +3287,13 @@ body.layout-single-column  {
 .layout-single-column .report-dialog-modal .poll__option.dialog-option>.poll__option__text strong {
     color: var(--color-content-fg-bold)
 }
+.layout-single-column .report-modal__comment,
+.layout-single-column .report-modal__container {
+    border-color: var(--color-lines);
+}
+.layout-single-column .report-modal__comment .setting-text-label {
+    color: var(--color-content-fg-muted);
+}
 
 
 
