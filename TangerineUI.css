@@ -1078,7 +1078,7 @@ body.layout-single-column  {
 /* Hashtag bar */
 .layout-single-column .hashtag-bar a {
     color: var(--color-accent);
-    background-color: var(--color-accent-bg);
+    background-color: var(--color-accent-lines);
     border-radius: 8px;
     transition: all .3s;
 }
@@ -1090,6 +1090,10 @@ body.layout-single-column  {
 .layout-single-column .status__action-bar {
     justify-content: left;
     margin-top: 8px;
+}
+.layout-single-column .status__action-bar button,
+.layout-single-column .status__action-bar .status__action-bar__dropdown {
+    transition: all .3s;
 }
 .layout-single-column .status__action-bar .status__action-bar__dropdown {
     position: absolute;
@@ -2213,6 +2217,9 @@ body.layout-single-column  {
 }
 .layout-single-column .account__header__badges .account-role span {
     color: var(--color-content-fg);
+}
+.layout-single-column .account-role svg {
+    opacity: 1;
 }
 .layout-single-column .account__header__extra__links a,
 .layout-single-column .account__header__bio .account__header__content,
