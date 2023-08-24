@@ -154,19 +154,18 @@ Your users should now be able to select Tangerine UI as a theme in their setting
 ![Glitch-soc settings. Flavours → Vanilla Mastodon → Skin](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/abd931ab-685a-4d55-aa24-cb6356a19a7c)
 
 
-
 ## Installation for regular users
 Even if you are not the admin of your instance, you can still use Tangerine UI with a browser extension.
 
-### Using a UserStyle browser extension
-* Install any browser extension that allows you to inject CSS on a webpage, such as [Stylus](https://add0n.com/stylus.html), or [Live CSS Editor](https://github.com/webextensions/live-css-editor)
-* Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the extension's editor
+### With a CSS browser extension [UserStyle]
+1. Install any browser extension that allows you to inject CSS on a webpage, such as [Stylus](https://add0n.com/stylus.html), or [Live CSS Editor](https://github.com/webextensions/live-css-editor)
+2. Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the extension's editor
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
-* ⚠️ If you are a user on a Glitch-soc instance, you must switch to the vanilla flavour for Tangerine UI to work properly:
-   * In your settings, navigate to Flavours → Vanilla Mastodon → select the 'Default' skin.
+
+⚠️ If you are a user on a Glitch-soc instance, you must switch to the vanilla flavour for Tangerine UI to work properly: in your instance settings, navigate to Flavours → Vanilla Mastodon → select the 'Default' skin.
  
- ### Using a UserScript browser extension
- If you wish to use a UserScript browser extension, [@Write](https://github.com/Write) has written a ready-to-use UserScript to load Tangerine UI on any Mastodon instance.
+ ### With a JavaScript browser extension [UserScript]
+ If you wish to use a JavaScript browser extension, [@Write](https://github.com/Write) has written a ready-to-use UserScript to load Tangerine UI on any Mastodon instance.
  
  * Check out [the TangerineUI-Userscript repository](https://github.com/Write/TangerineUI-Userscript) for instructions.
 
