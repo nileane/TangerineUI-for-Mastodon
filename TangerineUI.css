@@ -1425,7 +1425,13 @@ body.layout-single-column  {
 .layout-single-column .timeline-hint a {
     color: var(--color-accent);
 }
-
+.layout-single-column article + .timeline-hint:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: 1px solid var(--color-lines);
+    border-left: 1px solid var(--color-lines);
+    border-right: 1px solid var(--color-lines);
+}
 
 
 /* 📤 DMs */
