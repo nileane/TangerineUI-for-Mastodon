@@ -1096,7 +1096,9 @@ body.layout-single-column  {
     margin-top: 8px;
 }
 .layout-single-column .status__action-bar button,
-.layout-single-column .status__action-bar .status__action-bar__dropdown {
+.layout-single-column .status__action-bar .status__action-bar__dropdown,
+.layout-single-column .detailed-status__action-bar button,
+.layout-single-column .detailed-status__action-bar .status__action-bar__dropdown {
     transition: all .3s;
 }
 .layout-single-column .status__action-bar .status__action-bar__dropdown {
