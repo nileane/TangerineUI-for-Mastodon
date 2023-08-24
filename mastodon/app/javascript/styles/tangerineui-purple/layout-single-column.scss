@@ -1075,6 +1075,9 @@ body.layout-single-column  {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+.layout-single-column .detailed-status__link {
+    display: inline-block;
+}
 
 /* Hashtag bar */
 .layout-single-column .hashtag-bar a {
