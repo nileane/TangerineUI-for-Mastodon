@@ -32,7 +32,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 
  
 ## List of instances that use Tangerine UI
-These are the known instances that have enabled Tangerine UI for their users, either as the only theme, or as an optional theme.
+These are known instances that have enabled Tangerine UI for their users, either as the only theme, or as an optional theme.
 
 If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours here** (open a PR, or just [DM me](https://nileane.fr/@nileane))
 
