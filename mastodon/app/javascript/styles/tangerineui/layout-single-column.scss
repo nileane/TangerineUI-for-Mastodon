@@ -3194,6 +3194,12 @@ body.layout-single-column  {
 .layout-single-column .interaction-modal__choices__choice p {
     color: var(--color-fg);
 }
+.layout-single-column .interaction-modal p {
+    color: var(--color-content-fg);
+}
+.layout-single-column .interaction-modal p.hint {
+    color: var(--color-content-fg-muted);
+}
 .layout-single-column .interaction-modal .button,
 .layout-single-column .interaction-modal .button.button-tertiary {
     padding: 10px 18px;
@@ -3201,10 +3207,29 @@ body.layout-single-column  {
 .layout-single-column .interaction-modal .button.button-tertiary:hover {
     background-color: var(--color-content-secondary-separator);
 }
-.layout-single-column .copypaste input {
+.layout-single-column .copypaste input,
+.layout-single-column .interaction-modal__login__input {
     border-color: var(--color-accent);
-    background-color: var(--color-content-bg);
+    background-color: var(--color-accent-lines);
     color: var(--color-content-fg);
+    border-radius: 8px;
+}
+.layout-single-column .interaction-modal__login.expanded .interaction-modal__login__input {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.layout-single-column .interaction-modal__login__input input::placeholder {
+    color: var(--color-accent);
+}
+.layout-single-column .interaction-modal__login.focused .interaction-modal__login__input {
+    background-color: var(--color-content-bg);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px var(--color-accent);
+}
+.layout-single-column .interaction-modal__login .search__popout {
+    border-color: var(--color-lines);
 }
 .layout-single-column .interaction-modal .copypaste button {
     padding: 8px 18px;
