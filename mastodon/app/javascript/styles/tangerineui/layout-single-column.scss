@@ -3475,11 +3475,12 @@ body.layout-single-column  {
     color: var(--color-content-fg);
 }
 .layout-single-column .announcements {
-    margin-bottom: 10px;
+    margin-top: 10px;
     border-radius: 8px;
     overflow: visible;
     z-index: 0;
     box-shadow: 0 -20px var(--color-bg);
+    border: 1px solid var(--color-accent-lines);
 }
 .layout-single-column .announcements__item strong {
     font-weight: 800;
@@ -3509,6 +3510,9 @@ body.layout-single-column  {
 .layout-single-column .announcements__item__content a.unhandled-link,
 .layout-single-column .announcements__item__content a {
     color: var(--color-accent);
+}
+.layout-single-column .announcements .emoji-button {
+    margin: 0;
 }
 @media screen and (max-width:1174px) {
     .layout-single-column .announcements {
