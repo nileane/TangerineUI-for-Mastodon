@@ -80,7 +80,7 @@ This will also allow you to set Tangerine UI as the default theme for your insta
 
 ```sh
 # Where $REPO is this repository, and $INSTALLDIR is your Mastodon installation.
-$ cp -r $REPO/mastodon/app/javascript/styles/* $INSTALLDIR/app/javascript/styles
+cp -r $REPO/mastodon/app/javascript/styles/* $INSTALLDIR/app/javascript/styles
 ```
 
 
@@ -123,7 +123,7 @@ Tangerine UI does not yet support Glitch-soc's features and layout, but it can s
 
 ```sh
 # Where $REPO is this repository, and $INSTALLDIR is your Glitch-soc installation.
-$ cp -r $REPO/mastodon/app/javascript/styles/* $INSTALLDIR/app/javascript/styles
+cp -r $REPO/mastodon/app/javascript/styles/* $INSTALLDIR/app/javascript/styles
 ```
 
 2. **Copy the files** from `mastodon/app/javascript/skins/vanilla/` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/skins/vanilla/) to your Glitch-soc skins directory `app/javascript/skins/vanilla/`:
@@ -160,7 +160,8 @@ Even if you are not an admin on your instance, you can still use Tangerine UI wi
 Please consider that some of your users may depend on Mastodon's High Contrast theme before [setting Tangerine UI as the only theme](#install-tangerine-ui-as-the-only-theme-on-your-instance) on your instance. For this reason, unless you're running a single-user instance, I recommend [installing Tangerine UI as an optional/revertable theme](#install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended) instead.
 
 ## Credits
-Huge thanks to [Roni Laukkarinen](https://mementomori.social/@rolle) whose work on [Mastodon Bird UI](https://github.com/ronilaukkarinen/mastodon-bird-ui) I adapted for some parts of the redesign.
+* The logo for Tangerine UI was designed by [Younis @younishd](https://younishd.fr). 🍊
+* Huge thanks to [Roni Laukkarinen](https://mementomori.social/@rolle) whose work on [Mastodon Bird UI](https://github.com/ronilaukkarinen/mastodon-bird-ui) I adapted for some parts of the design.
 
 ## Support me <3
 If you enjoy Tangerine UI, jobless me would really appreciate a [tip 💛](https://ko-fi.com/nileane)!
