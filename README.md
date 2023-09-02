@@ -2,7 +2,7 @@
  <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./art/Logo_Wide_Dark.png?raw=true">
   <source media="(prefers-color-scheme: light)" srcset="./art/Logo_Wide.png?raw=true">
-  <img alt="Tangerine UI for Mastodon" src="./art/Logo_Wide.png?raw=true" height="130">
+  <img alt="Tangerine UI for Mastodon" src="./art/Logo_Wide.png?raw=true" height="110">
  </picture>
 </h1>
 
