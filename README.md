@@ -69,19 +69,13 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance.  
 This will also allow you to set Tangerine UI as the default theme for your instance, while still letting your users change back to any of Mastodon's default themes in their Appearance settings.
 
-1. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
+1. **Copy the files** from `mastodon/app/javascript/styles/` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
 
+```sh
+# Where $REPO is this repository, and $INSTALLDIR is your Mastodon installation.
+$ cp -r $REPO/mastodon/app/javascript/styles/* $INSTALLDIR/app/javascript/styles
 ```
-app/
-  javascript/
-    styles/
-      tangerineui.scss                                | **new**
-      tangerineui-purple.scss                         | **new**
-        tangerineui/                                  | **new**
-          layout-single-column.scss                   | **new**
-        tangerineui-purple/                           | **new**
-          layout-single-column.scss                   | **new**
-```
+
 
 2. **Add Tangerine UI to `themes.yml`**. To make Tangerine UI available in your users's settings, you need to add a new line to [`config/themes.yml`](https://github.com/mastodon/mastodon/blob/main/config/themes.yml). Here we're adding 2 new lines, one for Tangerine UI, another for Tangerine UI's purple variant:
 
@@ -118,33 +112,18 @@ As an admin, you should also now be able to set Tangerine UI as the default them
 
 Tangerine UI does not yet support Glitch-soc's features and layout, but it can still be installed as a vanilla skin on your Glitch-soc instance:
 
-1. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
+1. **Copy the files** from `mastodon/app/javascript/styles/` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
 
-```
-app/
-  javascript/
-    styles/
-      tangerineui.scss                                | **new**
-      tangerineui-purple.scss                         | **new**
-        tangerineui/                                  | **new**
-          layout-single-column.scss                   | **new**
-        tangerineui-purple/                           | **new**
-          layout-single-column.scss                   | **new**
+```sh
+# Where $REPO is this repository, and $INSTALLDIR is your Glitch-soc installation.
+$ cp -r $REPO/mastodon/app/javascript/styles/* $INSTALLDIR/app/javascript/styles
 ```
 
-2. **Copy the files** from [this folder](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/skins/vanilla/) to your Glitch-soc skins directory `app/javascript/skins/vanilla/`:
+2. **Copy the files** from `mastodon/app/javascript/skins/vanilla/` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/skins/vanilla/) to your Glitch-soc skins directory `app/javascript/skins/vanilla/`:
 
-```
-app/
-  javascript/
-    skins/
-      vanilla/
-        tangerineui/                                  | **new**
-          common.scss                                 | **new**
-          names.yml                                   | **new**
-        tangerineui-purple/                           | **new**
-          common.scss                                 | **new**
-          names.yml                                   | **new**
+```sh
+# Where $REPO is this repository, and $INSTALLDIR is your Glitch-soc installation.
+cp -r $REPO/mastodon/app/javascript/skins/vanilla/* $INSTALLDIR/app/javascript/skins/vanilla
 ```
 
 3. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Glitch-soc instance for the changes to take effect.
