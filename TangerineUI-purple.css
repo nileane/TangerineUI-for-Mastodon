@@ -878,6 +878,13 @@ body.layout-single-column  {
     line-height: 19px;
 }
 
+.layout-single-column .e-content blockquote,
+.layout-single-column .reply-indicator__content blockquote,
+.layout-single-column .status__content__text blockquote {
+    color: var(--color-content-fg-muted);
+    border-color: var(--color-lines);
+} 
+
 /* 📏 Post dividers */
 /* Use ::before to set a non-full-width divider between posts and notifications. The divider sits above the post. */
 .layout-single-column .status::before,
