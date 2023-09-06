@@ -2496,6 +2496,22 @@ body.layout-single-column  {
 .layout-single-column .story__details__shared {
     color: var(--color-fg);
 }
+.layout-single-column .story .story__details__publisher,
+.layout-single-column .story .story__details__shared,
+.layout-single-column .story .story__details__publisher,
+.layout-single-column .story .story__details__shared,
+.layout-single-column .story .story__details__publisher,
+.layout-single-column .story .story__details__shared {
+    transition: all .3s;
+}
+.layout-single-column .story:active .story__details__publisher,
+.layout-single-column .story:active .story__details__shared,
+.layout-single-column .story:focus .story__details__publisher,
+.layout-single-column .story:focus .story__details__shared,
+.layout-single-column .story:hover .story__details__publisher,
+.layout-single-column .story:hover .story__details__shared {
+    color: var(--color-accent);
+}
 
 /* 🔍 Search field and search results */
 .layout-single-column .search {
@@ -2541,34 +2557,62 @@ body.layout-single-column  {
 .layout-single-column .explore__search-results .account {
     padding-top: 16px;
 }
-.layout-single-column .explore__search-results .account:first-child {
+.layout-single-column .explore__search-results article:first-child > .account {
     border-top: 1px solid var(--color-lines);
 }
-.layout-single-column .explore__search-results .account:last-child {
+.layout-single-column .explore__search-results article:last-child > .account {
     border-bottom: 1px solid var(--color-lines);
 }
 .layout-single-column .explore__search-results .trends__item {
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
 }
-.layout-single-column .explore__search-results .trends__item:first-child {
+.layout-single-column .explore__search-results article:first-child > .trends__item,
+.layout-single-column .search-results__section > .trends__item:first-child,
+.layout-single-column .search-results__section > .account:first-child {
     border-top: 1px solid var(--color-lines);
 }
-.layout-single-column .explore__search-results .trends__item:last-child {
+.layout-single-column .explore__search-results article:last-child > .trends__item,
+.layout-single-column .search-results__section > .trends__item:last-child,
+.layout-single-column .search-results__section > .account:last-child {
     border-bottom: 1px solid var(--color-lines);
+}
+.layout-single-column .search-results__section {
+    background-color: var(--color-bg);
+    padding-bottom: 10px;
+    border-bottom: 0;
+}
+.layout-single-column .search-results__section__header {
+    background-color: var(--color-accent-bg);
+    border-top: 1px solid var(--color-accent-lines);
+    border-left: 1px solid var(--color-accent-lines);
+    border-right: 1px solid var(--color-accent-lines);
+    border-bottom: 1px solid var(--color-accent-lines);
+    color: var(--color-content-fg);
+}
+.layout-single-column .search-results__section__header button {
+    color: var(--color-accent);
 }
 @media screen and (min-width:890px) {
     .layout-single-column .explore__search-results {
         border-radius: 8px;
     }
-    .layout-single-column .explore__search-results .account:first-child,
-    .layout-single-column .explore__search-results .trends__item:first-child {
+    .layout-single-column .explore__search-results article:first-child > .account,
+    .layout-single-column .search-results__section > .account:first-child,
+    .layout-single-column .explore__search-results article:first-child > .trends__item,
+    .layout-single-column .search-results__section > .trends__item:first-child {
         border-radius: 8px 8px 0 0;
     }
-    .layout-single-column .explore__search-results .account:last-child,
-    .layout-single-column .explore__search-results .trends__item:last-child,
+    .layout-single-column .explore__search-results article:last-child > .account,
+    .layout-single-column .search-results__section > .account:last-child,
+    .layout-single-column .explore__search-results article:last-child > .trends__item,
+    .layout-single-column .search-results__section > .trends__item:last-child,
     .layout-single-column .explore__search-results .load-more:last-child {
         border-radius: 0 0 8px 8px;
+    }
+    .layout-single-column .search-results__section__header {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     }
 }
 .layout-single-column .account .account__details > span {
