@@ -62,6 +62,7 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 | [ucn.social](https://ucn.social)                         | 1+             | an optional theme   | Yes (Tangerine variant) |
 | [fedi.cyberwitches.club](https://fedi.cyberwitches.club) | 1+             | the only theme      | Yes (Purple variant)    |
 | [toulouse.social](https://toulouse.social)               | 1+             | the only theme      | Yes (Tangerine variant) |
+| [mastodon.projetretro.io](mastodon.projetretro.io)       | 1+             | an optional theme   | No                      |
 
 
 ## Installation for Mastodon admins
