@@ -1087,11 +1087,13 @@ body.layout-single-column  {
 }
 
 /* Hashtag bar */
-.layout-single-column .hashtag-bar a {
+.layout-single-column .hashtag-bar a,
+.layout-single-column .hashtag-bar .link-button {
     color: var(--color-fg-muted);
     transition: all .3s;
 }
-.layout-single-column .hashtag-bar a:hover {
+.layout-single-column .hashtag-bar a:hover,
+.layout-single-column .hashtag-bar .link-button:hover {
     color: var(--color-accent);
 }
 
