@@ -2245,6 +2245,8 @@ body.layout-single-column  {
 }
 .layout-single-column .account__header__badges .account-role {
     border-radius: 8px;
+    border-color: var(--color-accent);
+    color: var(--color-accent);
 }
 .layout-single-column .account__header__badges .account-role span {
     color: var(--color-content-fg);
