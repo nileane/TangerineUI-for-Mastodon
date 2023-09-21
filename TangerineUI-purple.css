@@ -998,7 +998,8 @@ body.layout-single-column  {
     background: var(--color-content-bg-focus);
 }
 @media screen and (min-width:1175px) { /* Subtle hover effect when you hover over a post content in the timeline. Only on bigger screens. */
-    .layout-single-column .status__wrapper:has(.status__content:hover) {
+    .layout-single-column .status__wrapper:has(.status__content:hover),
+    .layout-single-column .notification__message:has(+ div > .status__wrapper .status__content:hover) {
         background: var(--color-content-bg-focus);
     }
 }
@@ -2751,6 +2752,11 @@ body.layout-single-column  {
     line-height: 28px;
     padding: 6px 17px;
 }
+@media (prefers-color-scheme: dark) {
+    .layout-single-column .dismissable-banner:has(.dismissable-banner__message > img:first-child) {
+        background: linear-gradient(to top, rgba(122, 122, 249, .5), rgba(122, 122, 249, .3));
+    }
+}
 
 
 
@@ -2780,6 +2786,7 @@ body.layout-single-column  {
     padding: 12px 12px 0;
     background-color: var(--color-content-bg);
     color: var(--color-content-fg-bold);
+    transition: all .3s;
 }
 .layout-single-column .scrollable > div > article:first-child .notification__message {
     border-top: 1px solid var(--color-lines);
