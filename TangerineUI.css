@@ -543,7 +543,8 @@ body.layout-single-column  {
 .layout-single-column .navigation-bar:has(+ .compose-form .compose-form__autosuggest-wrapper:focus-within),
 .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper,
 .layout-single-column .compose-form:has(.compose-form__autosuggest-wrapper:focus-within) .reply-indicator,
-.layout-single-column .compose-form:has(.compose-form__autosuggest-wrapper:focus-within) .autosuggest-input {
+.layout-single-column .compose-form:has(.compose-form__autosuggest-wrapper:focus-within) .autosuggest-input,
+.layout-single-column .compose-form:has(.compose-form__autosuggest-wrapper:focus-within) .compose-form__warning {
     border-color: var(--color-accent);
 }
 .layout-single-column .compose-form .autosuggest-textarea__suggestions,
@@ -3033,7 +3034,8 @@ body.layout-single-column  {
 .layout-single-column .account__relationship .icon-button.active,
 .layout-single-column .account__header__tabs__buttons .icon-button.active,
 .layout-single-column .text-btn,
-.layout-single-column .detailed-status__action-bar-dropdown .icon-button {
+.layout-single-column .detailed-status__action-bar-dropdown .icon-button,
+.layout-single-column .notification-bar-action {
     color: var(--color-accent);
 }
 .layout-single-column .icon-button,
