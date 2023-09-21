@@ -2727,7 +2727,6 @@ body.layout-single-column  {
     background: linear-gradient(to bottom, var(--color-accent), rgba(99, 99, 255, 0.4));
     padding-left: 10px;
     padding-right: 10px;
-    margin-bottom: 2px;
 }
 .layout-single-column .dismissable-banner__background-image {
     bottom: -35%;
