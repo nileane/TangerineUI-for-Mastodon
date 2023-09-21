@@ -47,6 +47,7 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 | -------------------------------------------------------- | -------------- | ------------------- | ----------------------- |
 | [piaille.fr](https://piaille.fr)                         | 10K+           | an optional theme   | No                      |
 | [norden.social](https://norden.social)                   | 5K+            | an optional theme   | No                      |
+| [vmst.io](https://vmst.io)                               | 2K+            | an optional theme   | No                      |
 | [shelter.moe](https://shelter.moe)                       | 350+           | an optional theme   | No                      |
 | [pipou.academy](https://pipou.academy)                   | 100+           | an optional theme   | No                      |
 | [indiepocalypse.social](https://indiepocalypse.social)   | 100+           | an optional theme   | No                      |
