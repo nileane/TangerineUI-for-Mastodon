@@ -541,7 +541,9 @@ body.layout-single-column  {
 .layout-single-column .compose-form__highlightable.active .compose-form__buttons-wrapper,
 .layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within,
 .layout-single-column .navigation-bar:has(+ .compose-form .compose-form__autosuggest-wrapper:focus-within),
-.layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper {
+.layout-single-column .compose-form .compose-form__autosuggest-wrapper:focus-within ~ .compose-form__buttons-wrapper,
+.layout-single-column .compose-form:has(.compose-form__autosuggest-wrapper:focus-within) .reply-indicator,
+.layout-single-column .compose-form:has(.compose-form__autosuggest-wrapper:focus-within) .autosuggest-input {
     border-color: var(--color-accent);
 }
 .layout-single-column .compose-form .autosuggest-textarea__suggestions,
