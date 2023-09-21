@@ -2634,7 +2634,7 @@ body.layout-single-column  {
     background-color: var(--color-content-bg);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,.1);
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .layout-single-column .search__popout h4,
 .layout-single-column .search__popout__menu__message,
