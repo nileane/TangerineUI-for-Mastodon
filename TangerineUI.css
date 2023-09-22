@@ -2581,7 +2581,7 @@ body.layout-single-column  {
     z-index: 1;
 }
 .layout-single-column .compose-panel .fa-times-circle.active {
-    top: 16px;
+    top: 17px;
 }
 .layout-single-column .explore__search-results {
     background-color: var(--color-content-bg);
