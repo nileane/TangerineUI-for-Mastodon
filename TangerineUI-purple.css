@@ -2668,17 +2668,26 @@ body.layout-single-column  {
 .layout-single-column .search__popout__menu__item {
     color: var(--color-content-fg);
 }
+.layout-single-column .search__popout__menu__item {
+    align-items: initial;
+}
 .layout-single-column .search__popout__menu__item mark {
     color: var(--color-content-fg-bold);
 }
-.search__popout__menu__item.selected,
-.search__popout__menu__item:active,
-.search__popout__menu__item:focus,
-.search__popout__menu__item:hover,
-.search__popout__menu__item.selected mark,
-.search__popout__menu__item:active mark,
-.search__popout__menu__item:focus mark,
-.search__popout__menu__item:hover mark {
+.layout-single-column .search__popout__menu__item .icon-button:active,
+.layout-single-column .search__popout__menu__item .icon-button:focus,
+.layout-single-column .search__popout__menu__item .icon-button:hover {
+    background-color: transparent;
+    color: var(--color-accent-fg);
+}
+.layout-single-column .search__popout__menu__item.selected,
+.layout-single-column .search__popout__menu__item:active,
+.layout-single-column .search__popout__menu__item:focus,
+.layout-single-column .search__popout__menu__item:hover,
+.layout-single-column .search__popout__menu__item.selected mark,
+.layout-single-column .search__popout__menu__item:active mark,
+.layout-single-column .search__popout__menu__item:focus mark,
+.layout-single-column .search__popout__menu__item:hover mark {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
 }
