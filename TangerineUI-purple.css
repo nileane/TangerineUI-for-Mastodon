@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon ・ Purple variant 🪻
-    version: 1.9
+    version: 1.9.1
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -1949,7 +1949,17 @@ body.layout-single-column  {
     display: none;
 }
 .layout-single-column .ui__header__links .button.button-secondary {
-    padding: 7px 18px 9px 18px;
+    padding: 8px 18px 8px 18px;
+}
+.layout-single-column .ui__header__links .button.button-secondary[href="/publish"] {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
+}
+.layout-single-column .ui__header__links .button.button-secondary[href="/publish"]:hover,
+.layout-single-column .ui__header__links .button.button-secondary[href="/publish"]:focus,
+.layout-single-column .ui__header__links .button.button-secondary[href="/publish"]:active {
+    background-color: var(--color-accent-focus);
+    color: var(--color-accent-fg);
 }
 .layout-single-column .column-link--logo {
     margin-left: 4px;
