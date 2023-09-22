@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.9.1
+    version: 1.9.2
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -2268,9 +2268,6 @@ body.layout-single-column  {
     border-radius: 8px;
     border-color: var(--color-accent);
     color: var(--color-accent);
-}
-.layout-single-column .account__header__badges .account-role span {
-    color: var(--color-content-fg);
 }
 .layout-single-column .account-role svg {
     opacity: 1;
