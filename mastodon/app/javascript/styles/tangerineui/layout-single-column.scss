@@ -2126,6 +2126,7 @@ body.layout-single-column  {
         margin: 6px 0 8px;
         padding: 4px 0 3px;
         border-radius: 0;
+        border: 0;
         justify-content: center;
         display: inline-flex;
         align-items: center;
@@ -2138,6 +2139,7 @@ body.layout-single-column  {
         margin: 6px 0 8px;
         padding: 4px 0 3px;
         border-radius: 8px;
+        border: 0;
         background-color: #ffffff;
     }
     .layout-single-column .column-link__icon {
@@ -2164,6 +2166,7 @@ body.layout-single-column  {
     .layout-single-column .columns-area__panels .navigation-panel__legal .column-link--transparent {
         height: calc(100% - 13px);
         box-sizing: border-box;
+        border: 0;
     }
 }
 @media screen and (max-width:889px) {
@@ -3539,6 +3542,11 @@ body.layout-single-column  {
 .layout-single-column .button.button-tertiary {
     padding: 10px 18px;
 }
+@media screen and (max-width:1174px) {
+    .layout-single-column .button.button-tertiary {
+        padding: 7px 18px;
+    }
+}
 .layout-single-column .sign-in-banner p {
     color: var(--color-fg);
     opacity: .5;
@@ -3901,7 +3909,6 @@ body.layout-single-column  {
 .layout-single-column .about__footer, /* Hide meta footer */
 .layout-single-column .server-banner__introduction, /* Hide generic mastodon server introduction in sidebar */
 .layout-single-column .search-banner ~ .search, /* Hide search field for logged out users */
-.layout-single-column .ui__header__links .button.button-tertiary,
 .layout-single-column .getting-started__trends h4, /* Hide Trending header in sidebar */
 .layout-single-column .account__header__bio .account__header__fields > dl:first-child /* Hide "Joined" field on profiles */ {
     display: none;
