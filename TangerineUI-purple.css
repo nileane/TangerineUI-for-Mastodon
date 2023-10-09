@@ -525,6 +525,7 @@ body.layout-single-column  {
 }
 .layout-single-column .navigation-bar {
     border-radius: 8px 8px 0 0;
+    padding: 21px 15px 22px;
     background-color: var(--color-content-secondary-bg);
     border-top: 1px solid var(--color-lines);
     border-left: 1px solid var(--color-lines);
@@ -936,7 +937,8 @@ body.layout-single-column  {
 .layout-single-column .notification .status::before, /* no dividers on posts _inside_ notifications */
 .layout-single-column .account-timeline__header + article .status::before, /* no divider above first post on profile pages */
 .layout-single-column .scrollable > div:first-child > .status::before, /* no divider above first post in a column thread */
-.layout-single-column .scrollable > div:first-child > div:first-child .status::before /* no divider above first post in a column thread (backwards compatibility with 4.1.*) */ {
+.layout-single-column .scrollable > div:first-child > div:first-child .status::before, /* no divider above first post in a column thread (backwards compatibility with 4.1.*) */
+.layout-single-column .hashtag-header + article .status::before {
     display: none;
 }
 @media screen and (min-width:890px) and (max-width:1174px) { /* no divider above first post in a column thread on medium-size devices */
@@ -2461,10 +2463,11 @@ body.layout-single-column  {
 /* Hashtag header */
 .layout-single-column .hashtag-header {
     font-size: 15px;
+    padding: 18px 20px 20px;
     color: var(--color-content-fg);
-    background-color: var(--color-accent-bg);
-    border-top: 1px solid var(--color-accent-lines);
-    border-bottom: 1px solid var(--color-lines);
+    background-color: var(--color-content-secondary-bg);
+    border-top: 1px solid var(--color-lines);
+    border-bottom: 0;
 }
 .layout-single-column .hashtag-header__header {
     margin-bottom: 0;
@@ -2472,6 +2475,14 @@ body.layout-single-column  {
 .layout-single-column .hashtag-header__header h1 {
     color: var(--color-content-fg);
 }
+.layout-single-column .hashtag-header .hashtag-header__header + div {
+    color: var(--color-content-fg);
+    font-size: 85%;
+    opacity: .8;
+    margin-top: -5px;
+    width: max-content;
+}
+
 @media screen and (min-width:890px) and (max-width:1174px) {
     .layout-single-column .hashtag-header {
         margin-top: 15px;
@@ -2481,8 +2492,11 @@ body.layout-single-column  {
     .layout-single-column .hashtag-header {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-        border-left: 1px solid var(--color-accent-lines);
-        border-right: 1px solid var(--color-accent-lines);
+        border-left: 1px solid var(--color-lines);
+        border-right: 1px solid var(--color-lines);
+    }
+    .layout-single-column .hashtag-header .hashtag-header__header button {
+        transform: translate(0, 8px);
     }
 }
 
