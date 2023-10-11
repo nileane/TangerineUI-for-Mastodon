@@ -1413,6 +1413,9 @@ body.layout-single-column  {
 .layout-single-column .muted .poll__chart.leading {
     opacity: 1;
 }
+.layout-single-column .muted .poll {
+    color: var(--color-content-fg-muted);
+}
 .layout-single-column .poll__footer {
     color: var(--color-content-fg);
 }
