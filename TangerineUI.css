@@ -1,12 +1,12 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.9.2
+    version: 1.9.3
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
 
     by @nileane@nileane.fr
 
-    Compatible with: Mastodon v4.2.0 ✅
+    Compatible with: Mastodon v4.2.1 ✅
 */
 
 
@@ -211,7 +211,6 @@ body.layout-single-column  {
 }
 
 /* Resetting borders */
-.layout-single-column .column>.scrollable,
 .layout-single-column .getting-started,
 .layout-single-column .regeneration-indicator,
 .layout-single-column .audio-player,
