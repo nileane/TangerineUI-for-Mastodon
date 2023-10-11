@@ -1,5 +1,5 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.9.3
+    version: 1.9.4
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
@@ -793,6 +793,11 @@ body.layout-single-column  {
 }
 .layout-single-column .translate-button {
     color: var(--color-content-fg-muted);
+}
+.layout-single-column .translate-button__meta,
+.layout-single-column .translate-button button,
+.layout-single-column .status__content__translate-button {
+    font-size: 85%;
 }
 .layout-single-column .account__display-name strong,
 .layout-single-column .status__display-name strong {
