@@ -43,13 +43,13 @@
         --color-secondary-bg: #282015;
         --color-secondary-separator: #25201c;
 
-        --color-content-bg: #1a1a1a;
+        --color-content-bg: #111111;
         --color-content-fg: #f2f2f2;
         --color-content-fg-bold: #ffffff;
         --color-content-fg-muted: #737373;
         --color-content-secondary-bg: #292623;
         --color-content-secondary-separator: rgba(77, 73, 70, 0.4);
-        --color-content-bg-focus: #222222;
+        --color-content-bg-focus: #1b1b1b;
 
         --color-accent: #e68933;
         --color-accent-focus: #ffa047;
@@ -988,6 +988,12 @@ body.layout-single-column  {
     width: 0;
     height: 14px;
 }
+@media (prefers-color-scheme: dark) {
+    .layout-single-column .status--in-thread .status__line {
+        border-color: var(--color-accent);
+        opacity: .3;
+    }
+}
 .layout-single-column .status__line.status__line--full {
     height: 100%;
 }
@@ -1122,6 +1128,7 @@ body.layout-single-column  {
 .layout-single-column .hashtag-bar .link-button {
     color: var(--color-fg-muted);
     font-size: 90%;
+    transition: all .1s;
 }
 .layout-single-column .hashtag-bar .link-button {
     font-size: 80%;
@@ -1147,6 +1154,16 @@ body.layout-single-column  {
 }
 .layout-single-column .hashtag-bar a:hover span {
     text-decoration: none;
+}
+@media (prefers-color-scheme: dark) {
+    .layout-single-column .hashtag-bar a,
+    .layout-single-column .hashtag-bar .link-button {
+        color: var(--color-accent);
+    }
+    .layout-single-column .hashtag-bar a:hover,
+    .layout-single-column .hashtag-bar .link-button:hover {
+        color: var(--color-content-fg);
+    }
 }
 
 /* ⭐ Action bar */
