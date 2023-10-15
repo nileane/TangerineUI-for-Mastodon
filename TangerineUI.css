@@ -1364,11 +1364,13 @@ body.layout-single-column  {
     color: var(--color-accent);
 }
 .layout-single-column .status-card__title,
-.layout-single-column .status-card__host,
 .layout-single-column .status-card__description,
 .layout-single-column .status-card__author {
     color: var(--color-content-fg);
     transition: all .2s;
+}
+.layout-single-column .status-card__host {
+    color: var(--color-accent);
 }
 .layout-single-column .status-card:active .status-card__host,
 .layout-single-column .status-card:focus .status-card__host,
