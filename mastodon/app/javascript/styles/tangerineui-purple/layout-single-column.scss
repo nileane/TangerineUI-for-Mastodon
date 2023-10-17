@@ -2626,6 +2626,14 @@ body.layout-single-column  {
 .layout-single-column .story:hover .story__details__shared {
     color: var(--color-accent);
 }
+.layout-single-column .story.expanded .story__thumbnail {
+    margin: 0 0 -25px;
+}
+.layout-single-column .story.expanded .story__thumbnail img {
+    width: calc(100% + 30px);
+    margin: -15px -15px 0 -15px;
+    border-radius: 0 0 0 0;
+}
 
 /* 🔍 Search field and search results */
 .layout-single-column .search {
