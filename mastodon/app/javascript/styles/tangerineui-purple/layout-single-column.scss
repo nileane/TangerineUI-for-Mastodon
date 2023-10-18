@@ -2127,7 +2127,7 @@ body.layout-single-column  {
 .layout-single-column .list-panel .column-link span::before {
     left: -12px;
     top: -10px;
-    right: -12px;;
+    right: -12px;
     bottom: -10px;
 }
 .layout-single-column .column-link[href="/lists"].active:has(+ .list-panel .column-link.active) span::before {
