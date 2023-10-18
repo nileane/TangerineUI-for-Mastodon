@@ -3833,10 +3833,10 @@ body.layout-single-column  {
     margin-bottom: 10px;
 }
 .layout-single-column .about__section:nth-child(3) {
-    order: 2;
+    order: 3;
 }
 .layout-single-column .about__meta {
-    order: 3;
+    order: 2;
 }
 .layout-single-column .about__section:nth-child(4) {
     order: 4;
@@ -3905,7 +3905,7 @@ body.layout-single-column  {
     }
 }
 .layout-single-column .about__section:nth-child(3) .about__section__body {
-    padding-bottom: 4em;
+    padding-bottom: 3em;
 }
 .layout-single-column .about__meta,
 .layout-single-column .about__section__title {
