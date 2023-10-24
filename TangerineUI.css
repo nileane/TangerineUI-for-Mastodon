@@ -1,12 +1,12 @@
 /*  TangerineUI 🍊 for Mastodon
-    version: 1.9.5
+    version: 1.10
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
 
     by @nileane@nileane.fr
 
-    Compatible with: Mastodon v4.2.1 ✅
+    Compatible with: Mastodon v4.3.0 ✅
 */
 
 
@@ -2388,20 +2388,20 @@ body.layout-single-column  {
     border-left: 0;
     background: none;
 }
-.layout-single-column .account__header__extra .account__header__fields .verified dd span:first-child { /* Verified field tweak: adding a green background circle to the checkmark icon */
+.layout-single-column .account__header__extra .account__header__fields .verified dd > span:first-child { /* Verified field tweak: adding a green background circle to the checkmark icon */
     display: inline-block;
     background-color: var(--color-accent);
+    vertical-align: bottom;
     border-radius: 50px;
-    width: 1.2em;
-    height: 1.2em;
-    line-height: 1.2;
-    text-align: center;
+    width: 16px;
+    height: 16px;
     margin-right: 2px;
 }
-.layout-single-column .account__header__extra .account__header__fields .verified dd span:first-child i { /* white checkmark */
+.layout-single-column .account__header__extra .account__header__fields .verified__mark { /* white checkmark */
     color: #fff;
-    font-size: 85%;
     transform: scale(.9);
+    width: 16px;
+    height: 17px;
 }
 .layout-single-column .account__header__bio .account__header__fields .verified:last-child {
     border-bottom: 0;
