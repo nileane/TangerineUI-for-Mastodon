@@ -330,39 +330,39 @@ body.layout-single-column  {
     transform: scale(.9);
 }
 /* Replace retweet icon */
-.layout-single-column i.fa.fa-retweet.fa-fw,
-.layout-single-column button.icon-button i.fa.fa-retweet.fa-fw,
-.layout-single-column button.icon-button:hover i.fa.fa-retweet.fa-fw {
-    background-image: var(--icon-boost);
-    background-position: center;
+.layout-single-column .icon-retweet path {
+    display: none;
 }
-.layout-single-column .detailed-status__button i.fa.fa-retweet.fa-fw,
-.layout-single-column .detailed-status__button button.icon-button i.fa.fa-retweet.fa-fw,
-.layout-single-column .detailed-status__button button.icon-button:hover i.fa.fa-retweet.fa-fw {
+.layout-single-column .status__action-bar__button .icon-retweet {
+    background-image: var(--icon-boost);
+}
+.layout-single-column .detailed-status__button .icon-retweet,
+.layout-single-column .detailed-status__button button.icon-button .icon-retweet,
+.layout-single-column .detailed-status__button button.icon-button:hover .icon-retweet {
     background-image: var(--icon-boost-accent);
 }
-.layout-single-column button.icon-button.active i.fa.fa-retweet.fa-fw,
-.layout-single-column .detailed-status__button button.icon-button.active:hover i.fa.fa-retweet.fa-fw {
+.layout-single-column button.icon-button.active .icon-retweet,
+.layout-single-column .detailed-status__button button.icon-button.active:hover .icon-retweet {
     background-image: var(--icon-boost-active);
     background-position: center;
 }
-.layout-single-column .fa.fa-retweet.status__prepend-icon.fa-fw,
-.layout-single-column .notification i.fa.fa-retweet.fa-fw {
+.layout-single-column .status__prepend-icon.icon-retweet,
+.layout-single-column .notification .icon-retweet {
     background-image: var(--icon-boost-active);
-    transform: scale(.9) translate(0, -1px);
+    transform: scale(.9) translate(0, 1px);
 }
-.layout-single-column .detailed-status__link .fa.fa-retweet:before {
+.layout-single-column .detailed-status__link .icon-retweet {
     background-image: var(--icon-boost);
 }
-.layout-single-column button.icon-button.reblogPrivate i.fa-retweet,
-.layout-single-column button.icon-button.reblogPrivate:hover i.fa-retweet,
-.layout-single-column button.icon-button.disabled i.fa-retweet,
-.layout-single-column button.icon-button.disabled:hover i.fa-retweet  {
+.layout-single-column button.icon-button.reblogPrivate .icon-retweet,
+.layout-single-column button.icon-button.reblogPrivate:hover .icon-retweet,
+.layout-single-column button.icon-button.disabled .icon-retweet,
+.layout-single-column button.icon-button.disabled:hover .icon-retweet {
     background-image: var(--icon-boost);
     opacity: .2;
     pointer-events: none;
 }
-.layout-single-column .boost-modal__action-bar .fa-retweet {
+.layout-single-column .boost-modal__action-bar .icon-retweet {
     background-image: var(--icon-boost);
     vertical-align: middle;
 }
