@@ -172,4 +172,4 @@ Please consider that some of your users may depend on Mastodon's High Contrast t
 * Huge thanks to [Roni Laukkarinen](https://mementomori.social/@rolle) whose work on [Mastodon Bird UI](https://github.com/ronilaukkarinen/mastodon-bird-ui) I adapted for some parts of the design.
 
 ## Support me <3
-If you enjoy Tangerine UI, jobless me would really appreciate a [tip 💛](https://ko-fi.com/nileane)!
+If you enjoy Tangerine UI, please consider leaving a [tip 💛](https://ko-fi.com/nileane)!
