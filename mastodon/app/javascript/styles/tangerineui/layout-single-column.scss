@@ -44,7 +44,7 @@
         --color-secondary-separator: #25201c;
 
         --color-content-bg: #111111;
-        --color-content-fg: #f2f2f2;
+        --color-content-fg: var(--color-fg);
         --color-content-fg-bold: #ffffff;
         --color-content-fg-muted: #737373;
         --color-content-secondary-bg: #292623;
