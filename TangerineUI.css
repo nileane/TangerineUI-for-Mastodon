@@ -3594,9 +3594,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* 🖱️ Interaction modals
    --------------------- */
+.layout-single-column .modal-root__modal {
+    border: 1px solid var(--color-lines);
+}
 .layout-single-column .interaction-modal {
     background-color: var(--color-content-bg);
-    border: 0;
 }
 .layout-single-column .interaction-modal,
 .layout-single-column .interaction-modal__lead h3 {
@@ -3731,7 +3733,6 @@ a:is(.active,
 }
 .layout-single-column .report-dialog-modal .poll__option.dialog-option {
     border-color: var(--color-lines);
-    border-width: 3px;
 }
 .layout-single-column .report-dialog-modal .dialog-option .poll__input {
     border-color: var(--color-accent);
