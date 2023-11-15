@@ -733,6 +733,9 @@ body.layout-single-column  {
     .layout-single-column .column-link .icon-cog {
         background-image: var(--icon-gear);
     }
+    .layout-single-column .column-link .icon-ellipsis-h {
+        background-image: var(--icon-ellipsis);
+    }
     .layout-single-column .column-link.active .icon-ellipsis-h {
         background-image: var(--icon-ellipsis-active);
     }
