@@ -315,7 +315,8 @@ body.layout-single-column  {
 /* *️⃣ Icons
    -------- */
 .layout-single-column
-    :is(.icon-bookmark,
+    :is(
+        .icon-bookmark,
         .icon-star,
         .icon-retweet,
         .icon-reply,
@@ -353,13 +354,15 @@ body.layout-single-column  {
         .icon-check,
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
-        .account__header__tabs__buttons .icon-close)
+        .account__header__tabs__buttons .icon-close
+    )
     path {
     display: none;
 }
 
 .layout-single-column
-    :is(.icon-bookmark,
+    :is(
+        .icon-bookmark,
         .icon-star,
         .icon-retweet,
         .icon-reply,
@@ -397,7 +400,8 @@ body.layout-single-column  {
         .icon-check,
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
-        .account__header__tabs__buttons .icon-close) {
+        .account__header__tabs__buttons .icon-close
+    ) {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -441,7 +445,14 @@ body.layout-single-column  {
     background-image: var(--icon-boost);
     margin: 0 4px -2px 0;
 }
-.layout-single-column button.icon-button:is(.reblogPrivate, .reblogPrivate:hover, .disabled, .disabled:hover) .icon-retweet {
+.layout-single-column
+    button.icon-button:is(
+        .reblogPrivate,
+        .reblogPrivate:hover,
+        .disabled,
+        .disabled:hover
+    )
+    .icon-retweet {
     background-image: var(--icon-boost-accent);
     opacity: .2;
     pointer-events: none;
@@ -646,7 +657,13 @@ body.layout-single-column  {
 .layout-single-column .icon-file-text {
     background-image: var(--icon-link);
 }
-.layout-single-column :is(.account--panel, .follow-request-banner, .account__relationship) .icon-times {
+.layout-single-column
+    :is(
+        .account--panel,
+        .follow-request-banner,
+        .account__relationship
+    )
+    .icon-times {
     background-image: var(--icon-reject);
 }
 .layout-single-column .account--panel .icon-times,
@@ -757,11 +774,13 @@ body.layout-single-column  {
     border-color: var(--color-accent);
 }
 .layout-single-column .compose-form 
-    :is(.autosuggest-textarea__suggestions,
+    :is(
+        .autosuggest-textarea__suggestions,
         .autosuggest-textarea__textarea,
         .autosuggest-textarea__suggestions__item,
         .compose-form__buttons-wrapper,
-        .compose-form__modifiers),
+        .compose-form__modifiers
+    ),
 .layout-single-column .compose-form__autosuggest-wrapper {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
@@ -1210,7 +1229,8 @@ body.layout-single-column  {
     right: 0;
 }
 .layout-single-column .status--in-thread
-    :is(.attachment-list,
+    :is(
+        .attachment-list,
         .audio-player,
         .hashtag-bar,
         .media-gallery,
@@ -1218,7 +1238,8 @@ body.layout-single-column  {
         .status-card,
         .status__action-bar,
         .status__content,
-        .video-player) {
+        .video-player
+    ) {
     margin-left: 0;
     width: auto;
 }
@@ -1275,12 +1296,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 
 /* ⏺️ Posts when in focus */
-.layout-single-column .status__wrapper.focusable:focus,
-.layout-single-column .detailed-status__wrapper.focusable:focus,
-.layout-single-column .focusable:focus .detailed-status,
-.layout-single-column .focusable:focus .detailed-status__action-bar,
-.layout-single-column .status__wrapper.focusable:focus .detailed-status,
-.layout-single-column .focusable:focus .detailed-status__action-bar {
+.layout-single-column
+    :is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus,
+.layout-single-column
+    :is(.focusable, .status__wrapper.focusable):focus
+    :is(.detailed-status, .detailed-status__action-bar) {
     outline: 0;
     background: var(--color-content-bg-focus);
 }
@@ -1436,10 +1456,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin-top: 8px;
     gap: 8px;
 }
-.layout-single-column .status__action-bar button,
-.layout-single-column .status__action-bar .status__action-bar__dropdown,
-.layout-single-column .detailed-status__action-bar button,
-.layout-single-column .detailed-status__action-bar .status__action-bar__dropdown {
+.layout-single-column
+    :is(.status__action-bar, .detailed-status__action-bar)
+    :is(button, .status__action-bar__dropdown) {
     transition: all .3s;
 }
 .layout-single-column .status__action-bar button:last-child {
@@ -1449,14 +1468,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-single-column .status__action-bar .icon-button.disabled {
     pointer-events: none;
 }
-.layout-single-column .status__action-bar .icon-button:active,
-.layout-single-column .status__action-bar .icon-button.active:active,
-.layout-single-column .status__action-bar .icon-button:focus,
-.layout-single-column .status__action-bar .icon-button.active:focus,
-.layout-single-column .detailed-status__action-bar .icon-button:active,
-.layout-single-column .detailed-status__action-bar .icon-button.active:active,
-.layout-single-column .detailed-status__action-bar .icon-button:focus,
-.layout-single-column .detailed-status__action-bar .icon-button.active:focus {
+.layout-single-column
+    :is(.status__action-bar, .detailed-status__action-bar)
+    .icon-button:is(
+        :active,
+        .active:active,
+        :focus,
+        .active:focus
+    ) {
     background-color: transparent;
 }
 .layout-single-column .icon-button.star-icon.deactivate>.icon-star,
@@ -2038,7 +2057,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* ⏺️ Horizontal selectors
    (used to navigate subsections on the Explore, Live Feeds and Account pages) */
-.layout-single-column :is(.account__section-headline, .notification__filter-bar) {
+.layout-single-column
+    :is(.account__section-headline, .notification__filter-bar) {
     background: var(--color-accent-bg);
     border: 1px solid var(--color-accent-lines);
 }
@@ -2067,7 +2087,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         border-right: 0;
     }
 }
-.layout-single-column :is(.account__section-headline, .notification__filter-bar) :is(a, button) {
+.layout-single-column
+    :is(.account__section-headline, .notification__filter-bar)
+    :is(a, button) {
     background-color: var(--color-accent-bg);
     color: var(--color-accent);
     box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
@@ -2076,26 +2098,38 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     max-height: 45px;
     padding: 14px 10px;
 }
-.layout-single-column :is(.account__section-headline, .notification__filter-bar) .icon {
+.layout-single-column
+    :is(.account__section-headline, .notification__filter-bar)
+    .icon {
     margin-top: -1.5px;
 }
-.layout-single-column :is(.account__section-headline, .notification__filter-bar) :is(a, button):hover {
+.layout-single-column
+    :is(.account__section-headline, .notification__filter-bar)
+    :is(a, button):hover {
     background-color: var(--color-accent-lines);
     color: var(--color-accent);
     box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
 }
-.layout-single-column :is(.account__section-headline, .notification__filter-bar) :is(a, button).active {
+.layout-single-column
+    :is(.account__section-headline, .notification__filter-bar)
+    :is(a, button).active {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
     box-shadow: 0 0 0 4px var(--color-accent-bg) inset;
 }
-.layout-single-column :is(.account__section-headline, .notification__filter-bar) :is(a, button).active::before {
+.layout-single-column
+    :is(.account__section-headline, .notification__filter-bar)
+    :is(a, button).active::before {
     display: none;
 }
-.layout-single-column :is(.account__section-headline, .notification__filter-bar) button {
+.layout-single-column
+    :is(.account__section-headline, .notification__filter-bar)
+    button {
     background-color: transparent;
 }
-.layout-single-column :is(.account__section-headline, .notification__filter-bar) :is(a, button, a.active, button.active)::after {
+.layout-single-column
+    :is(.account__section-headline, .notification__filter-bar)
+    :is(a, button, a.active, button.active)::after {
     display: block;
     position: absolute;
     content: " ";
@@ -2111,11 +2145,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transform: unset;
     border: 0;
 }
-.layout-single-column :is(.account__section-headline, .notification__filter-bar) :is(a, button):last-child::after {
+.layout-single-column
+    :is(.account__section-headline, .notification__filter-bar)
+    :is(a, button):last-child::after {
     display: none;
 }
 @media (prefers-color-scheme: dark) {
-    .layout-single-column :is(.account__section-headline, .notification__filter-bar) :is(a, button).active {
+    .layout-single-column
+        :is(.account__section-headline, .notification__filter-bar)
+        :is(a, button).active {
         background-color: var(--color-bg);
     }
 }
