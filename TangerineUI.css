@@ -1390,6 +1390,19 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding-right: 4px;
     margin-right: 2px;
 }
+.layout-single-column
+    :is(.status__action-bar, .detailed-status__action-bar)
+    .active
+    .icon-retweet + .icon-button__counter > .animated-number {
+    color: #D3487F;
+}
+.layout-single-column
+    :is(.status__action-bar, .detailed-status__action-bar)
+    .active
+    .icon-star + .icon-button__counter
+    > .animated-number {
+    color: #EBBB59;
+}
 .layout-single-column .detailed-status__meta .animated-number {
     transform: translate(0, -1px);
 }
