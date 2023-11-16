@@ -4300,7 +4300,12 @@ a:is(.active,
 
 /* Multi-column layout */
 .layout-multiple-columns {
-    --color-bg: #f5f2ef;
+    --color-bg: #f2eff5;
+}
+@media (prefers-color-scheme: dark) {
+    .layout-multiple-columns {
+        --color-bg: #030303;
+    }
 }
 :root:has(.layout-multiple-columns) *::-webkit-scrollbar {
     width: 4px;
