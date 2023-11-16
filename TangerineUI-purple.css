@@ -12,7 +12,7 @@
 
 /* 🎨 Colors */
 :root {
-    --color-bg: #ffffff;
+    --color-bg: #ffffff /* #f2eff5 */;
     --color-fg: #2a2d37;
     --color-fg-muted: #888494;
     --color-secondary-bg: #e8e4f2;
@@ -602,7 +602,8 @@ body.layout-single-column  {
 .layout-single-column .active .icon-user-plus {
     background-image: var(--icon-user-plus);
 }
-.layout-single-column .column-link.active .icon-user-plus {
+.layout-single-column .column-link.active .icon-user-plus,
+.layout-single-column .column-header__icon.icon-user-plus {
     background-image: var(--icon-user-plus-active);
 }
 /* Users icon */
@@ -1730,8 +1731,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .layout-single-column .audio-player,
 .layout-single-column .media-gallery,
-.layout-single-column .media-gallery__gifv,
-.layout-single-column .media-gallery__preview,
 .layout-single-column .video-player {
     border: 1px solid var(--color-lines);
 }
@@ -1978,6 +1977,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 @media screen and (max-width:1174px) {
     .layout-single-column .column-back-button--slim-button {
         height: 50px;
+    }
+}
+@media screen and (min-width:1175px) {
+    .layout-single-column .column-back-button--slim-button {
+        display: none;
     }
 }
 
