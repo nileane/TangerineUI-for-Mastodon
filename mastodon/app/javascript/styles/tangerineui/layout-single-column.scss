@@ -1837,12 +1837,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-content-fg);
     border: 1px solid var(--color-accent-lines);
 }
-@media screen and (min-width:890px) {
-    .layout-single-column .column-back-button--slim + .scrollable .follow_requests-unlocked_explanation {
-        border-radius: 8px;
-        margin-top: 13px;
-    }
-}
 .layout-single-column .follow_requests-unlocked_explanation a {
     color: var(--color-accent);
 }
@@ -1883,9 +1877,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-single-column :is(.status-direct, .detailed-status-direct, .detailed-status__wrapper-direct) .status__content {
     padding: .7em 1.2em .7em 1em;
     margin-top: 4px;
-    background: var(--color-accent-bg);
-    border: 1px solid var(--color-accent-lines);
-    border-radius: 5px 18px 18px 16px;
+    background: var(--color-content-secondary-bg);
+    border: 1px solid var(--color-lines);
+    border-radius: 4px 12px 12px 12px;
     display: inline-block;
 }
 .layout-single-column .status-direct.muted .status__content {
