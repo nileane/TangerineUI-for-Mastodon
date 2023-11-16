@@ -1050,6 +1050,10 @@ body.layout-single-column  {
 .layout-single-column .detailed-status .status__content__translate-button,
 .layout-single-column .detailed-status .translate-button .link-button {
     background-image: var(--icon-translate-accent);
+    background-size: 25px;
+    width: 40px;
+    height: 40px;
+    right: 60px;
 }
 .layout-single-column .translate-button .link-button,
 .layout-single-column .detailed-status .translate-button .link-button {
@@ -1598,11 +1602,20 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .layout-single-column .status__action-bar .icon-button,
 .layout-single-column .detailed-status__action-bar .icon-button {
-    min-width: 32px !important;
-    height: 32px !important;
+    min-width: 32px;
+    height: 32px;
     border-radius: 8px;
     position: relative;
 }
+.layout-single-column .detailed-status__action-bar .icon-button {
+    min-width: 40px;
+    height: 40px;
+}
+.layout-single-column .detailed-status__action-bar .icon-button > .icon {
+    width: 25px;
+    height: 25px;
+}
+.layout-single-column .detailed-status__action-bar .icon-button
 .layout-single-column .icon-button.star-icon.active,
 .layout-single-column .notification__favourite-icon-wrapper .star-icon {
     color: #ffb609;
