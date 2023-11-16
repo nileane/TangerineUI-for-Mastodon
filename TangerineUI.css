@@ -3557,6 +3557,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-accent);
 }
 
+.layout-single-column .dropdown-menu {
+    border: 1px solid var(--color-lines);
+    border-radius: 8px;
+}
 .layout-single-column .dropdown-menu,
 .layout-single-column .dropdown-menu__container__header,
 .layout-single-column .dropdown-menu__item.edited-timestamp__history__item,
@@ -3566,7 +3570,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-color: var(--color-lines);
 }
 
-.layout-single-column .dropdown-menu,
 .layout-single-column .dropdown-menu__item a,
 .layout-single-column .dropdown-menu__arrow:before {
     background-color: var(--color-content-bg);
