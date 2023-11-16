@@ -1905,7 +1905,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .layout-single-column .column-header,
 .layout-single-column .column-back-button {
-    background: var(--color-content-bg);
+    background-color: rgba(255, 255, 255, .75);
     color: var(--color-content-fg);
     border-top: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
@@ -1916,10 +1916,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-weight: bold;
     height: 50px;
     box-sizing: border-box;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+@media (prefers-color-scheme: dark) {
+    .layout-single-column .column-header,
+    .layout-single-column .column-back-button {
+        background-color: rgba(3, 3, 3, .65);
+    }
 }
 .layout-single-column .column-header__button,
 .layout-single-column .column-header__back-button {
-    background-color: var(--color-content-bg);
+    background-color: transparent;
     border: 0;
 }
 .layout-single-column .column-header__button {
@@ -1944,10 +1952,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .layout-single-column .column-back-button::after {
         display: none;
     }
-    .layout-single-column .column-header__button.active,
-    .layout-single-column .column-header__button.active:hover,
-    .layout-single-column .column-header__button:hover {
+    .layout-single-column .column-header__button:is(.active, .active:hover, :hover),
+    .layout-single-column .column-header,
+    .layout-single-column .column-back-button {
         background-color: transparent;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
     }
 }
 
@@ -2064,7 +2074,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
             background-color: rgba(3, 3, 3, .65);
         }
         .layout-single-column .tabs-bar__wrapper {
-            border-color: rgba(255, 255, 255, .1);
+            border-color: var(--color-lines);
         }
     }
 }
