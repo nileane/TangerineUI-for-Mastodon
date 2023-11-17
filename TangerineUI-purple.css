@@ -4342,14 +4342,12 @@ a:is(.active,
 }
 .layout-multiple-columns .drawer__header {
     background-color: var(--color-content-bg);
-    border-top: 1px solid var(--color-lines);
-    border-left: 1px solid var(--color-lines);
-    border-right: 1px solid var(--color-lines);
-    border-radius: 8px 8px 0 0;
+    border: 1px solid var(--color-lines);
+    border-radius: 8px;
     margin-bottom: 0;
 }
-.layout-multiple-columns .drawer .search__input {
-    border-radius: 0 0 8px 8px;
+.layout-multiple-columns .drawer .search {
+    margin-top: 10px;
 }
 .layout-multiple-columns .drawer__tab {
     transition: all .3s;
@@ -4360,6 +4358,9 @@ a:is(.active,
     box-sizing: border-box;
     border: 0;
 }
+.layout-multiple-columns .drawer__tab .icon {
+    transform: scale(1.2);
+} 
 .layout-multiple-columns .drawer__tab:is(:active, :focus, :hover) {
     background-color: var(--color-accent-bg);
 }
@@ -4400,11 +4401,16 @@ a:is(.active,
 }
 .app-body .getting-started .column-link {
     margin-left: 0;
+    font-weight: 500;
+    color: var(--color-fg);
 }
 .layout-multiple-columns .getting-started .column-link:is(:active, :focus, :hover) {
     background-color: var(--color-accent-bg);
-    color: var(--color-accent);
+    color: var(--color-fg);
 }
+.layout-multiple-columns .getting-started .column-link__icon {
+    transform: scale(1.4);
+}  
 
 .app-body .getting-started .column-link__badge {
     background-color: var(--color-accent);
@@ -4438,6 +4444,15 @@ a:is(.active,
     display: none;
 }
 
+.layout-multiple-columns .drawer {
+    width: 280px;
+    transition: width .3s;
+}
+.layout-multiple-columns
+    .drawer:has(> .drawer__pager > .drawer__inner > .search-results > .search-results__section) {
+        width: 400px;
+}
+
 .layout-multiple-columns
     .drawer
     > .search:has(+ .drawer__pager > .drawer__inner > .search-results > .search-results__section) {
@@ -4446,9 +4461,19 @@ a:is(.active,
 .layout-multiple-columns
     .drawer
     > .search:has(+ .drawer__pager > .drawer__inner > .search-results > .search-results__section)
-    > .search__input,
+    > .search__input {
+        border-radius: 8px 8px 0 0;
+}
+
 .layout-multiple-columns .drawer__pager {
-        border-radius: 0;
+    border-radius: 0;
+}
+.layout-multiple-columns
+    .drawer
+    > .search:has(+ .drawer__pager > .drawer__inner > .search-results > .search-results__section)
+    > .search__popout {
+        border-radius: 0 0 8px 8px;
+        margin-top: 0;
 }
 
 @media screen and (min-width:630px) and (max-width:1174px) {
