@@ -14,7 +14,9 @@ jobs:
       - run: npm install -g sass
       - run: sass --version
       - run: sass TangerineUI.scss:out/TangerineUI.css TangerineUI-purple.scss:out/TangerineUI-purple.css
+      - run: cp out/TangerineUI.css mastodon/app/javascript/styles/tangerineui/layout-single-column.scss
+      - run: cp out/TangerineUI-purple.css mastodon/app/javascript/styles/tangerineui-purple/layout-single-column.scss
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Re-run Sass preprocessor
-          file_pattern: 'out/*.css'
+          file_pattern: 'out/*.css mastodon/app/javascript/styles'
