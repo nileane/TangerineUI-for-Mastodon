@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
       - run: npm install -g sass
       - run: sass --version
-      - run: sass TangerineUI.sass:out/TangerineUI.css TangerineUI-purple.sass:out/TangerineUI-purple.css
+      - run: sass TangerineUI.scss:out/TangerineUI.css TangerineUI-purple.scss:out/TangerineUI-purple.css
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Re-run Sass preprocessor
