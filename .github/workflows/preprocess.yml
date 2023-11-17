@@ -1,0 +1,20 @@
+name: preprocess
+on:
+  push:
+    branches:
+      - main
+jobs:
+  sass:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm install -g sass
+      - run: sass --version
+      - run: sass TangerineUI.sass:out/TangerineUI.css TangerineUI-purple.sass:out/TangerineUI-purple.css
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Re-run Sass preprocessor
+          file_pattern: 'out/*.css'
