@@ -3057,6 +3057,29 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 
+@keyframes makeawish {
+    0% {
+        transform: scale(120%) translate(0, 0) rotate(0deg);
+    }
+    100% {
+        transform: scale(200%) translate(100vw, 100vh) rotate(600deg);
+    }
+}
+.app-body:has(.search__input[value="Tangerine"])::after {
+    content: "🍊";
+    position: fixed;
+    display: block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 27px;
+    line-height: 30px;
+    top: -40px;
+    left: -40px;
+    animation:
+        10s linear 0s makeawish;
+}
+
 
 
 /* Dismissable banners */
@@ -4032,14 +4055,15 @@ a:is(.active,
 /* 📢 Announcements */
 .app-body .announcements,
 .app-body .announcements::after {
-    background-color: var(--color-accent-bg);
+    background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
 }
 .app-body .announcements {
     overflow: visible;
     z-index: 0;
     box-shadow: 0 -20px var(--color-bg);
-    border: 1px solid var(--color-accent-lines);
+    border-left: 1px solid var(--color-lines);
+    border-right: 1px solid var(--color-lines);
 }
 .app-body .announcements__item strong {
     font-weight: 800;
