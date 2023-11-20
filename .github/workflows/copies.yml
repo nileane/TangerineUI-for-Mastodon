@@ -4,7 +4,7 @@ on:
     branches:
       - '**'
 jobs:
-  sass:
+  copies:
     runs-on: ubuntu-latest
     permissions:
       contents: write
