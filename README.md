@@ -101,6 +101,7 @@ contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
 tangerineui: styles/tangerineui.scss                  | **new**
 tangerineui-purple: styles/tangerineui-purple.scss    | **new**
+tangerineui-cherry: styles/tangerineui-cherry.scss    | **new**
 ```
 
 3. **Add a localized name (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized theme name ("*tangerineui-purple*"), instead of a readable theme name ("*Tangerine UI (Purple)*").
@@ -112,6 +113,7 @@ themes:
   mastodon-light: Mastodon (Light)
   tangerineui: Tangerine UI                           | **new**
   tangerineui-purple: Tangerine UI (Purple)           | **new**
+  tangerineui-cherry: Tangerine UI (Cherry)           | **new**
 ```
 
 4. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Mastodon instance for the changes to take effect.
