@@ -2080,6 +2080,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         background-color: transparent;
         height: 50px;
         border: 0;
+        margin: 0;
     }
     .app-body .ui::after { /* Set a backdrop blur background to both top bars */
         -webkit-backdrop-filter: blur(20px);
