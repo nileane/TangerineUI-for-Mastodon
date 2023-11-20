@@ -2471,6 +2471,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .columns-area__panels__pane--navigational .navigation-panel {
         width: 100vw;
         height: 4.2em;
+        padding-right: 20vw;
         padding-bottom: env(safe-area-inset-bottom);
         flex-direction: row;
         overflow-x: auto;
@@ -2478,9 +2479,38 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         border-top: 1px solid var(--color-lines);
         border-left: 0;
     }
+    .app-body .columns-area__panels__pane--navigational .navigation-panel::before {
+        content: " ";
+        position: fixed;
+        right: 0;
+        background-image: linear-gradient(to right, transparent, var(--color-bg) 75.63%);
+        height: 4.2em;
+        width: 17vw;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        justify-content: center;
+        display: inline-flex;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: transparent;
+        z-index: 2;
+    }
+    .app-body .columns-area__panels__pane--navigational .navigation-panel::after {
+        content: " ";
+    }
+    .app-body .navigation-panel:has(> *:nth-child(4):last-child)::after,
+    .app-body .navigation-panel:has(> *:nth-child(5):last-child)::after,
+    .app-body .navigation-panel:has(> *:nth-child(6):last-child)::after,
+    .app-body .navigation-panel:has(> *:nth-child(4):last-child)::before,
+    .app-body .navigation-panel:has(> *:nth-child(5):last-child)::before,
+    .app-body .navigation-panel:has(> *:nth-child(6):last-child)::before {
+        display: none;
+    }
     .app-body .navigation-panel :is(.column-link, .navigation-panel__legal),
-    .app-body .column-link--transparent:is(.active, .active:hover, :active) {
-        flex: 0 0 20vw;
+    .app-body .column-link--transparent:is(.active, .active:hover, :active),
+    .app-body .columns-area__panels__pane--navigational .navigation-panel::after {
+        flex: 0 0 17vw;
         margin: 6px 0 8px;
         padding: 4px 0 3px;
         border-radius: 0;
