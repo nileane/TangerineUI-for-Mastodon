@@ -2102,7 +2102,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         height: 100px;
     }
     .app-body .column-header__collapsible:not(.collapsed) { /* Remove margin between column settings and column header */
-        margin-top: 0;
+        margin-top: -4px;
     }
 }
 @media (prefers-color-scheme: dark) {
@@ -4104,7 +4104,7 @@ a:is(.active,
 @media screen and (max-width:1174px) {
     .app-body .announcements {
         box-shadow: none;
-        margin-top: -10px;
+        margin-top: -4px;
         border-radius: 0;
     }
     .app-body .announcements__mastodon {
