@@ -32,12 +32,19 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 * **Tangerine 🍊**  
   Default variant for Tangerine UI, featuring a soft orange palette.
 
-![Tangerine UI's orange palette, both in dark and light modes.](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/5048329b-9d95-4b11-a859-48c1f37d54e6)
+  <img width="1684" alt="TangerineUI-tangerine" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/5eba6ead-5634-4ce8-aaf4-ccec7f11a690">
 
 * **Purple 🪻**  
-  For those of you who like Tangerine UI but want to stick to Mastodon's purple palette.
+  For those of you who like Tangerine UI but want to stick to Mastodon's purple.
 
-![Tangerine UI's purple variant, both in dark and light modes.](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/c01c7a54-d2db-4fe5-a0f6-dc6e77cfe128)
+<img width="1684" alt="TangerineUI-purple" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/8445c052-7081-4f00-b46e-5d003e4209a2">
+
+* **Cherry 🍒**  
+ I won't be held responsible if you end up licking your screen with this one.
+  
+<img width="1684" alt="TangerineUI-cherry" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/33da47d7-d357-43ff-b2c1-6c15bc3f0ecb">
+
+
 
  
 ## List of instances that use Tangerine UI
