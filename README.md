@@ -14,9 +14,10 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 
 [🐘 **Follow Tangerine UI** on Mastodon](https://nileane.fr/@TangerineUI)
 
-## Summary
+## Table of contents
 
 * [**Variants**](#variants)
+* [**Features**](#features)
 * [**List of instances that use Tangerine UI**](#list-of-instances-that-use-tangerine-ui)
 * [**Installation**](#installation-for-mastodon-admins)
   * [Install on a **Mastodon** instance](#installation-for-mastodon-admins)
@@ -45,8 +46,11 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 <img width="1684" alt="TangerineUI-cherry" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/33da47d7-d357-43ff-b2c1-6c15bc3f0ecb">
 
 
+## Features
 
- 
+* **Thoughtful animations**
+<img width="500" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/13a5a21f-5743-4c2d-a250-f4504609abd0">
+
 ## List of instances that use Tangerine UI
 These are known instances that have enabled Tangerine UI for their users, either as the only theme, or as an optional theme.
 
@@ -85,6 +89,7 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 ### Install Tangerine UI as the only theme on your instance:
 * Copy & paste the contents of [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the **Custom CSS** field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
+   * 🍒 For the cherry variant, copy the contents of [`TangerineUI-cherry.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-cherry.css) instead.
 
 ⚠️ **Caution: Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their Appearance settings** ([see *Accessibility*](#accessibility)). Please make sure there is a consensus among your users for doing so. If not, see below how to install Tangerine UI as an optional theme for your users.
 
