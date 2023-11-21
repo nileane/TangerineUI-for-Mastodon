@@ -32,7 +32,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 * **🍊 Tangerine**  
   Default variant for Tangerine UI, featuring a soft orange palette.
 
-  <img width="1684" alt="TangerineUI-tangerine" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/5eba6ead-5634-4ce8-aaf4-ccec7f11a690">
+<img width="1684" alt="TangerineUI-tangerine" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/5eba6ead-5634-4ce8-aaf4-ccec7f11a690">
 
 * **🪻 Purple**  
   For those of you who like Tangerine UI but want to stick to Mastodon's purple.
