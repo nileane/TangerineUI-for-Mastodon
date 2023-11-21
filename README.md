@@ -23,24 +23,25 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
   * [Install on a **Mastodon** instance](#installation-for-mastodon-admins)
   * [Install on a **Glitch-soc** instance](#installation-for-glitch-soc-admins)
   * [Install as a regular user](#installation-for-regular-users)
-* [**Things to know**](#things-to-know)
+* [**Compatibility**](#compatibility)
 * [**Accessibility**](#accessibility)
 * [**Credits**](#credits)
 * [**Support me**](#support-me-3)
+  
 
 ## Variants
 
-* **Tangerine 🍊**  
+* **🍊 Tangerine**  
   Default variant for Tangerine UI, featuring a soft orange palette.
 
   <img width="1684" alt="TangerineUI-tangerine" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/5eba6ead-5634-4ce8-aaf4-ccec7f11a690">
 
-* **Purple 🪻**  
+* **🪻 Purple**  
   For those of you who like Tangerine UI but want to stick to Mastodon's purple.
 
 <img width="1684" alt="TangerineUI-purple" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/8445c052-7081-4f00-b46e-5d003e4209a2">
 
-* **Cherry 🍒**  
+* **🍒 Cherry**  
  I won't be held responsible if you end up licking your screen with this one.
   
 <img width="1684" alt="TangerineUI-cherry" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/33da47d7-d357-43ff-b2c1-6c15bc3f0ecb">
@@ -48,8 +49,29 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 
 ## Features
 
-* **Thoughtful animations**
-<img width="500" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/13a5a21f-5743-4c2d-a250-f4504609abd0">
+* 🧑‍🔬 **Support for the advanced web interface**  
+  All variants of Tangerine UI support Mastodon's multi-column layout.
+  
+<img width="1840" alt="TangerineUI-multicolumn" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/e4e17e83-dade-40d2-8973-9f7e19f8e0d9">
+
+
+* 🚀 **Thoughtful animations**  
+  The rocket flies!
+  
+<img width="600" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/31d41d04-6ef1-4ef0-80c3-b4b445ee98a1">
+
+
+* 🌚 **Dark mode**  
+  Tangerine UI automatically switches from light to dark mode based on your system or browser preference.
+  
+* ⏺️ **Phosphor icons**  
+  Tangerine UI uses a selection of icons from the beautiful [Phosphor](https://phosphoricons.com) icon family
+
+* 🔍 **Zoom on emojis**  
+  Custom emojis are great, but they may be difficult to distinguish when they are overly detailed. Tangerine UI allows you to hover and pause over an emoji to enlarge it.
+
+* ✨ **and more**
+
 
 ## List of instances that use Tangerine UI
 These are known instances that have enabled Tangerine UI for their users, either as the only theme, or as an optional theme.
@@ -175,17 +197,17 @@ Even if you are not an admin on your instance, you can still use Tangerine UI wi
  
 💡 Alternatively, if you wish to use a JavaScript browser extension, [@Write](https://github.com/Write) has written a ready-to-use UserScript to load Tangerine UI on any Mastodon instance. Check out [the TangerineUI-Userscript repository](https://github.com/Write/TangerineUI-Userscript) for instructions.
 
-## Things to know
-* **Tangerine UI currently only supports Mastodon's single column layout**. The advanced web interface (multiple columns) will not be affected.
-* **Tangerine UI auto-switches from light to dark mode based on your OS preference**.
-* Check your Mastodon instance version before using. The latest Mastodon release checked to be compatible is indicated in the CSS file header.
+## Compatibility
+* **Tangerine UI v2.x is compatible with instances running Mastodon 4.3 and above.** 
+* For instances running Mastodon 4.1.x or 4.2.x, use [**Tangerine UI v1.9.4**](https://github.com/nileane/TangerineUI-for-Mastodon/tree/v1.9.4) instead.
+  * ⚠️ The advanced web interface (multi-column layout) is not supported by Tangerine UI v1.9.4
+* Tangerine UI is **not** compatible with Mastodon 4.0.x and older.
 
 ## Accessibility
 Please consider that some of your users may depend on Mastodon's High Contrast theme before [setting Tangerine UI as the only theme](#install-tangerine-ui-as-the-only-theme-on-your-instance) on your instance. For this reason, unless you're running a single-user instance, I recommend [installing Tangerine UI as an optional/revertable theme](#install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended) instead.
 
 ## Credits
 * The logo for Tangerine UI was designed by [Younis @younishd](https://younishd.fr). 🍊
-* Huge thanks to [Roni Laukkarinen](https://mementomori.social/@rolle) whose work on [Mastodon Bird UI](https://github.com/ronilaukkarinen/mastodon-bird-ui) I adapted for some parts of the design.
 
 ## Support me <3
 If you enjoy Tangerine UI, jobless me would really appreciate a [tip 💛](https://ko-fi.com/nileane)!
