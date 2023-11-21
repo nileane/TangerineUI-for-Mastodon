@@ -10,9 +10,7 @@
 ## A Tangerine redesign for Mastodon's Web UI.  
 Tangerine UI features a bubblier look, a more compact timeline, round avatars, and a soft color palette that automatically switches between light and dark modes.
 
-[🕹️ **Live demo** @ nileane.fr](https://nileane.fr) • [📢 **Announcement** post on Mastodon](https://nileane.fr/@nileane/110691663040709608) • [📝 **Changelog**](https://github.com/nileane/TangerineUI-for-Mastodon/releases)  
-
-[🐘 **Follow Tangerine UI** on Mastodon](https://nileane.fr/@TangerineUI)
+[🕹️ **Live demo** @ nileane.fr](https://nileane.fr) • [👋 **Follow Tangerine UI** on Mastodon](https://nileane.fr/@TangerineUI) • [📝 **Changelog**](https://github.com/nileane/TangerineUI-for-Mastodon/releases)
 
 ## Table of contents
 
