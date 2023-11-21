@@ -50,7 +50,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 * 🧑‍🔬 **Support for the advanced web interface**  
   All variants of Tangerine UI support Mastodon's multi-column layout.
   
-<img width="1840" alt="TangerineUI-multicolumn" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/e4e17e83-dade-40d2-8973-9f7e19f8e0d9">
+<img width="1840" alt="TangerineUI-multicolumn" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/bfa74219-bfef-46ec-9742-78165593e2a6">
 
 
 * 🚀 **Thoughtful animations**  
