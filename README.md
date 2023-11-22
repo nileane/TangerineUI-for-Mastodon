@@ -146,15 +146,15 @@ cp -r $REPO/mastodon/app/javascript/styles/* $INSTALLDIR/app/javascript/styles
 ```
 
 
-2. **Add Tangerine UI to `themes.yml`**. To make Tangerine UI available in your users's settings, you need to add a new line to [`config/themes.yml`](https://github.com/mastodon/mastodon/blob/main/config/themes.yml). Here we're adding 2 new lines, one for Tangerine UI, another for Tangerine UI's purple variant:
+2. **Add Tangerine UI to `themes.yml`**. To make Tangerine UI available in your users's settings, you need to add a new line to [`config/themes.yml`](https://github.com/mastodon/mastodon/blob/main/config/themes.yml). Here we're adding 3 new lines, one for Tangerine UI, a 2nd one for the purple variant, and a 3rd one for the Cherry variant:
 
 ```yml
 default: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
-tangerineui: styles/tangerineui.scss                  | **new**
-tangerineui-purple: styles/tangerineui-purple.scss    | **new**
-tangerineui-cherry: styles/tangerineui-cherry.scss    | **new**
+tangerineui: styles/tangerineui.scss
+tangerineui-purple: styles/tangerineui-purple.scss
+tangerineui-cherry: styles/tangerineui-cherry.scss
 ```
 
 3. **Add a localized name (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized theme name ("*tangerineui-purple*"), instead of a readable theme name ("*Tangerine UI (Purple)*").
@@ -164,9 +164,9 @@ themes:
   contrast: Mastodon (High contrast)
   default: Mastodon (Dark)
   mastodon-light: Mastodon (Light)
-  tangerineui: Tangerine UI                           | **new**
-  tangerineui-purple: Tangerine UI (Purple)           | **new**
-  tangerineui-cherry: Tangerine UI (Cherry)           | **new**
+  tangerineui: Tangerine UI
+  tangerineui-purple: Tangerine UI (Purple)
+  tangerineui-cherry: Tangerine UI (Cherry)
 ```
 
 4. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Mastodon instance for the changes to take effect.
