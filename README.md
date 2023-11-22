@@ -53,31 +53,38 @@ I won't be held responsible if you end up licking your screen because of this on
 * 🧑‍🔬 **Support for the advanced web interface**  
   All variants of Tangerine UI support Mastodon's multi-column layout.
   
-<img width="1840" alt="TangerineUI-multicolumn" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/bfa74219-bfef-46ec-9742-78165593e2a6">  
+<img width="1840" alt="Mastodon's advanced web interface featuring Tangerine UI" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/bfa74219-bfef-46ec-9742-78165593e2a6">  
 
 
 * 🚀 **Thoughtful animations**  
-  The rocket flies!
-  
-<img width="600" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/31d41d04-6ef1-4ef0-80c3-b4b445ee98a1">
+  The rocket flies!  
+  <img width="600" alt="Clicking the Boost buttons makes the rocket icon seeming like it's taking off. Clicking the favorite button makes it bounce. Cliking the bookmark button makes it shake vertically." src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/31d41d04-6ef1-4ef0-80c3-b4b445ee98a1">
 
 
 * 🌚 **Dark mode**  
-  Tangerine UI automatically switches from light to dark mode based on your system or browser preference.
+  Tangerine UI automatically switches from light to dark mode based on your system or browser preference.[^1]
+  [^1]: Tangerine UI uses the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS media feature to detect if you have requested a light or dark theme through an operating system setting or a user agent setting.
   
-* ⏺️ **Phosphor icons**  
+* 💬 **Distinct look for DMs**  
+  It can be easy to mistake a DM for a regular post on Mastodon. Tangerine UI gives DMs a specific look, so they stand out in your timeline, and you don't make any embarrassing mistakes.
+  <img width="600" alt="with Tangerine UI, DMs have a distinct speech bubble look." src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/bfb650a9-d21a-4621-8a92-5de0276797cb">
+
+* 👁️ **Compact timeline**  
+  Avatars are aligned on the side, margins are properly reduced, and threads are easier to read.
+  
+* ✴️ **Phosphor icons**  
   Tangerine UI uses a selection of icons from the beautiful [Phosphor](https://phosphoricons.com) icon family
 
 * 🔍 **Zoom on emojis**  
   Custom emojis are great, but they may be difficult to distinguish when they are overly detailed. Tangerine UI allows you to hover and pause over an emoji to enlarge it.
 
-* ✨ **and more**
+* ✳️ **and more**  
+  Tangerine UI was designed with care and great attention to detail. Feel free to explore all the changes it brings to Mastodon's UI, and feel free to [message me](https://nileane.fr/@TangerineUI) if you ever have any feedback to share or [bugs to report](https://github.com/nileane/TangerineUI-for-Mastodon/issues). :)
 
 
 ## List of instances that use Tangerine UI
-These are known instances that have enabled Tangerine UI for their users, either as the only theme, or as an optional theme.
-
-If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours here** (open a PR, or just [DM me](https://nileane.fr/@nileane))
+These are known instances that have enabled Tangerine UI for their users, either as the only theme, or as an optional theme.[^2]
+[^2]: If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours to this list**. (Make a Pull Request, or just [DM me](https://nileane.fr/@tangerineui))
 
 | **Instance**                                             | **User count** | **Installed as...** | **Default theme?**      |
 | -------------------------------------------------------- | -------------- | ------------------- | ----------------------- |
@@ -108,12 +115,12 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 
 
 ## Compatibility
-✅ **Tangerine UI v2._x_ is compatible with instances running Mastodon 4.3 and newer.**[^1]
-[^1]: Tangerine UI v2._x_ is also compatible with instances running a version of **Glitch-soc** based on Mastodon 4.3 and newer, as long as it is [installed as a vanilla theme](#installation-for-glitch-soc-admins) on these instances.
+✅ **[Tangerine UI v2._x_](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) is compatible with instances running Mastodon 4.3 and newer.**[^3]
+[^3]: Tangerine UI v2._x_ is also compatible with instances running a version of **Glitch-soc** based on Mastodon 4.3 and newer, as long as it is [installed as a vanilla theme](#installation-for-glitch-soc-admins) on these instances.
 
-⚠️ For instances running Mastodon 4.1._x_ or 4.2._x_, use [**Tangerine UI v1.9.4**](https://github.com/nileane/TangerineUI-for-Mastodon/tree/v1.9.4) instead.[^2][^3]
-[^2]: The advanced web interface (multi-column layout) is not supported by Tangerine UI v1.9.4 and will fall back to Mastodon's default appearance if enabled.
-[^3]: The Cherry variant is not available with Tangerine UI v1.9.4.
+⚠️ For instances running Mastodon 4.1._x_ or 4.2._x_, use [**Tangerine UI v1.9.4**](https://github.com/nileane/TangerineUI-for-Mastodon/tree/v1.9.4) instead.[^4][^5]
+[^4]: The advanced web interface (multi-column layout) is not supported by Tangerine UI v1.9.4 and will fall back to Mastodon's default appearance if enabled.
+[^5]: The Cherry variant is not available with Tangerine UI v1.9.4.
     
 🚫 Tangerine UI is not compatible with instances running Mastodon 4.0._x_ and older.
 
