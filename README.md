@@ -224,4 +224,4 @@ Please consider that some of your users may depend on Mastodon's High Contrast t
 The logo for Tangerine UI was designed by [Younis @younishd](https://younishd.fr). 🍊
 
 ## Support me <3
-If you enjoy Tangerine UI, jobless me would really appreciate a [tip 💛](https://ko-fi.com/nileane)!
+If you enjoy Tangerine UI, I would really appreciate a [tip 💛](https://ko-fi.com/nileane)!
