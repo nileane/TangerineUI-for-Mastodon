@@ -171,7 +171,7 @@ themes:
 
 4. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Mastodon instance for the changes to take effect.
 
-Your users should now be able to choose '*Tangerine UI*' and '*Tangerine UI (Purple)*' as their site theme:
+Your users should now be able to choose '*Tangerine UI*', '*Tangerine UI (Purple)*', or '*Tangerine UI (Cherry)*' as their site theme:
 
 ![Screenshot : select Tangerine UI as a theme in appearance settings on Mastodon.](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/8cce803c-099b-4f25-8e39-e1c0da3aa6dc)
 
