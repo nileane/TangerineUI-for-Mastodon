@@ -17,11 +17,11 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 * [**Variants**](#variants)
 * [**Features**](#features)
 * [**List of instances that use Tangerine UI**](#list-of-instances-that-use-tangerine-ui)
+* [**Compatibility**](#compatibility)
 * [**Installation**](#installation-for-mastodon-admins)
   * [Install on a **Mastodon** instance](#installation-for-mastodon-admins)
   * [Install on a **Glitch-soc** instance](#installation-for-glitch-soc-admins)
   * [Install as a regular user](#installation-for-regular-users)
-* [**Compatibility**](#compatibility)
 * [**Accessibility**](#accessibility)
 * [**Credits**](#credits)
 * [**Support me**](#support-me-3)
@@ -105,6 +105,17 @@ If you're an admin and have installed Tangerine UI on your instance, **feel free
 | [toulouse.social](https://toulouse.social)               | 1+             | the only theme      | Yes (Tangerine variant) |
 | [mastodon.projetretro.io](mastodon.projetretro.io)       | 1+             | an optional theme   | No                      |
 | [mstdn.0xdj.dev](https://mstdn.0xdj.dev)                 | 1              | the only theme      | Yes (Tangerine variant) |
+
+
+## Compatibility
+✅ **Tangerine UI v2._x_ is compatible with instances running Mastodon 4.3 and newer.**[^1]
+[^1]: Tangerine UI v2._x_ is also compatible with instances running a version of **Glitch-soc** based on Mastodon 4.3 and newer, as long as it is [installed as a vanilla theme](#installation-for-glitch-soc-admins) on these instances.
+
+⚠️ For instances running Mastodon 4.1._x_ or 4.2._x_, use [**Tangerine UI v1.9.4**](https://github.com/nileane/TangerineUI-for-Mastodon/tree/v1.9.4) instead.[^2][^3]
+[^2]: The advanced web interface (multi-column layout) is not supported by Tangerine UI v1.9.4 and will fall back to Mastodon's default appearance if enabled.
+[^3]: The Cherry variant is not available with Tangerine UI v1.9.4.
+    
+🚫 Tangerine UI is not compatible with instances running Mastodon 4.0._x_ and older.
 
 
 ## Installation for Mastodon admins
@@ -198,17 +209,12 @@ Even if you are not an admin on your instance, you can still use Tangerine UI wi
  
 💡 Alternatively, if you wish to use a JavaScript browser extension, [@Write](https://github.com/Write) has written a ready-to-use UserScript to load Tangerine UI on any Mastodon instance. Check out [the TangerineUI-Userscript repository](https://github.com/Write/TangerineUI-Userscript) for instructions.
 
-## Compatibility
-* **Tangerine UI v2.x is compatible with instances running Mastodon 4.3 and above.** 
-* For instances running Mastodon 4.1.x or 4.2.x, use [**Tangerine UI v1.9.4**](https://github.com/nileane/TangerineUI-for-Mastodon/tree/v1.9.4) instead.
-  * ⚠️ The advanced web interface (multi-column layout) is not supported by Tangerine UI v1.9.4
-* Tangerine UI is **not** compatible with Mastodon 4.0.x and older.
 
 ## Accessibility
-Please consider that some of your users may depend on Mastodon's High Contrast theme before [setting Tangerine UI as the only theme](#install-tangerine-ui-as-the-only-theme-on-your-instance) on your instance. For this reason, unless you're running a single-user instance, I recommend [installing Tangerine UI as an optional/revertable theme](#install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended) instead.
+Please consider that some of your users may depend on Mastodon's High Contrast theme before [setting Tangerine UI as the only theme](#install-tangerine-ui-as-the-only-theme-on-your-instance) on your instance. For this reason, unless you're running a single-user instance, I strongly recommend [installing Tangerine UI as an optional/revertable theme](#install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended) instead.
 
 ## Credits
-* The logo for Tangerine UI was designed by [Younis @younishd](https://younishd.fr). 🍊
+The logo for Tangerine UI was designed by [Younis @younishd](https://younishd.fr). 🍊
 
 ## Support me <3
 If you enjoy Tangerine UI, jobless me would really appreciate a [tip 💛](https://ko-fi.com/nileane)!
