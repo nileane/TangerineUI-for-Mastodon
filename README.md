@@ -29,20 +29,23 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 
 ## Variants
 
-* **🍊 Tangerine**  
-  Default variant for Tangerine UI, featuring a soft orange palette.
+**🍊 Tangerine**  
+Default variant for Tangerine UI, featuring a soft orange palette.
 
-<img width="1684" alt="TangerineUI-tangerine" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/5eba6ead-5634-4ce8-aaf4-ccec7f11a690">
+<img width="1784" alt="TangerineUI-tangerine" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/482870ca-cc69-49ab-92be-2cfc8c2aa13c">  
+&nbsp;
 
-* **🪻 Purple**  
-  For those of you who like Tangerine UI but want to stick to Mastodon's purple.
+**🪻 Purple**  
+For those of you who like Tangerine UI but want to stick to Mastodon's purple.
 
-<img width="1684" alt="TangerineUI-purple" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/8445c052-7081-4f00-b46e-5d003e4209a2">
+<img width="1784" alt="TangerineUI-purple" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/0643bfea-93a7-4b1f-a4b6-04d7ebad2bdf">  
+&nbsp;
 
-* **🍒 Cherry**  
- I won't be held responsible if you end up licking your screen with this one.
+
+**🍒 Cherry**  
+I won't be held responsible if you end up licking your screen because of this one.
   
-<img width="1684" alt="TangerineUI-cherry" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/33da47d7-d357-43ff-b2c1-6c15bc3f0ecb">
+<img width="1784" alt="TangerineUI-cherry" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/4e0e19f5-b78f-4b72-8e72-8a8c830a61bc">  
 
 
 ## Features
@@ -50,7 +53,7 @@ Tangerine UI features a bubblier look, a more compact timeline, round avatars, a
 * 🧑‍🔬 **Support for the advanced web interface**  
   All variants of Tangerine UI support Mastodon's multi-column layout.
   
-<img width="1840" alt="TangerineUI-multicolumn" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/bfa74219-bfef-46ec-9742-78165593e2a6">
+<img width="1840" alt="TangerineUI-multicolumn" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/bfa74219-bfef-46ec-9742-78165593e2a6">  
 
 
 * 🚀 **Thoughtful animations**  
