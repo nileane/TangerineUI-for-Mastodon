@@ -46,7 +46,7 @@ For those of you who like Tangerine UI but want to stick to Mastodon's purple.
 **🍒 Cherry**  
 I won't be held responsible if you end up licking your screen because of this one.
   
-<img width="1784" alt="TangerineUI-cherry" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/4c4e7b05-d323-496c-bd55-6f84309faf27">  
+<img width="1784" alt="TangerineUI-cherry" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/3d5d9a35-87d5-437d-bfc8-1f49c7679908">  
 
 
 ## Features
