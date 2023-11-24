@@ -1206,7 +1206,7 @@ body.app-body  {
 .app-body .e-content blockquote,
 .app-body .reply-indicator__content blockquote,
 .app-body .status__content__text blockquote {
-    color: var(--color-content-fg-muted);
+    color: var(--color-content-fg);
     border-color: var(--color-lines);
 } 
 
