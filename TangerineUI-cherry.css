@@ -372,7 +372,7 @@ body.app-body  {
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
         .icon-sign-out,
-        .icon-undefined
+        .account__header__tabs__buttons .icon-undefined
     )
     path {
     display: none;
@@ -421,7 +421,7 @@ body.app-body  {
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
         .icon-sign-out,
-        .icon-undefined
+        .account__header__tabs__buttons .icon-undefined
     ) {
     background-repeat: no-repeat;
     background-size: 100%;
@@ -711,7 +711,7 @@ body.app-body  {
 .app-body .follow-request-banner .button .icon-times {
     background-image: var(--icon-reject);
 }
-.app-body .icon-undefined {
+.app-body .account__header__tabs__buttons .icon-undefined {
     background-image: var(--icon-share);
 }
 
@@ -4164,10 +4164,10 @@ a:is(.active,
     background-color: var(--color-accent-bg);
 }
 .app-body .onboarding__steps__item__icon,
-.app-body .onboarding__steps__item__description h6,
 .app-body .onboarding__link {
     color: var(--color-accent);
 }
+.app-body .onboarding__steps__item__description h6,
 .app-body .onboarding__steps__item__description p,
 .app-body .onboarding__lead,
 .app-body .onboarding__lead strong {
@@ -4178,6 +4178,66 @@ a:is(.active,
     fill: var(--color-accent);
 }
 
+.app-body .onboarding__profile .app-form__avatar-input {
+    border-color: var(--color-content-bg);
+    border-radius: 50%;
+    border-width: 5px;
+}
+.app-body .onboarding__profile .app-form__avatar-input img {
+    border-radius: 50%;
+    background: var(--color-content-secondary-bg);
+}
+.app-body .onboarding__profile .app-form__header-input img {
+    background: var(--color-secondary-bg);
+}
+.app-body .simple_form .input.with_block_label > label,
+.app-body .simple_form .input.with_block_label .hint,
+.app-body .app-form__toggle__label strong,
+.app-body .simple_form .hint {
+    color: var(--color-fg);
+}
+.app-body .app-form__toggle__toggle > div {
+    border-color: var(--color-lines);
+}
+.app-form__avatar-input.selected .icon,
+.app-form__header-input.selected .icon {
+    color: var(--color-accent);
+}
+.app-body .simple_form
+    :is(
+        input[type=datetime-local],
+        input[type=email],
+        input[type=number],
+        input[type=password],
+        input[type=text],
+        input[type=url],
+        textarea
+    ) {
+    background-color: var(--color-content-secondary-bg);
+    border-color: var(--color-lines);
+    border-radius: 8px;
+    color: var(--color-content-fg);
+}
+.app-body .simple_form
+    :is(
+        input[type=datetime-local],
+        input[type=email],
+        input[type=number],
+        input[type=password],
+        input[type=text],
+        input[type=url],
+        textarea
+    ):is(:active, :focus) {
+    border-color: var(--color-accent);
+}
+.app-body .column-title {
+    margin: -20px -20px 30px;
+    padding: 40px;
+    background-color: var(--color-content-secondary-bg);
+}
+.app-body .column-title:has(+ .simple_form) {
+    margin-bottom: 0;
+} 
 .app-body .follow-recommendations {
     background-color: var(--color-content-bg);
 }
@@ -4480,6 +4540,12 @@ a:is(.active,
 .app-body .column > .scrollable.privacy-policy {
     border: 1px solid var(--color-lines);
     background-color: var(--color-content-bg);
+}
+@media screen and (min-width:1175px) {
+    .app-body:not(:has(#tabs-bar__portal > *)) .column > .scrollable.privacy-policy {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
 }
 
 
