@@ -2819,7 +2819,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .account__header__extra .account__header__fields .verified__mark {
     float: left;
-    margin-right: 2px;
+    margin-left: -1px;
 }
 .app-body .account__header__bio .account__header__fields .verified:last-child {
     border-bottom: 0;
