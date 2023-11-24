@@ -3260,21 +3260,26 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         margin-top: 0;
     }
 }
-.app-body .dismissable-banner__message,
 .app-body .dismissable-banner__action .icon-button {
-    color: var(--color-accent-fg);
+    color: var(--color-accent);
 }
 .app-body .dismissable-banner__message h1 {
-    color: var(--color-accent-fg);
+    color: var(--color-content-fg);
     margin-top: 10px;
+    margin-bottom: 8px;
+}
+.app-body .dismissable-banner__message {
+    color: var(--color-content-fg);
+    font-weight: normal;
 }
 .app-body .dismissable-banner__message__actions__wrapper {
     flex-flow: row-reverse;
 }
 .app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) {
-    background: linear-gradient(to bottom, rgba(247, 105, 2, 0.8), rgba(247, 105, 2, 0.5));
+    background: var(--color-content-bg);
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
 }
 .app-body .dismissable-banner__background-image {
     display: none;
@@ -3284,10 +3289,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     line-height: 28px;
     padding: 6px 17px;
 }
-@media (prefers-color-scheme: dark) {
-    .app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) {
-        background: linear-gradient(to top, rgba(230, 137, 51, .5), rgba(230, 137, 51, .3));
-    }
+.app-body .dismissable-banner__message__actions {
+    gap: 5px;
 }
 
 
