@@ -3846,6 +3846,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .interaction-modal__icon {
     vertical-align: middle;
+    display: inline-block;
+    transform: scale(1.4) translateX(-2px);
 }
 .app-body .interaction-modal p {
     color: var(--color-content-fg);
@@ -3887,7 +3889,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding: 8px 18px;
 }
 .app-body .modal-root__overlay {
-    background-color: hsla(0, 0%, 1%, 0.7);
+    background-color: hsla(0, 0%, 79.5%, 0.7);
+}
+@media (prefers-color-scheme: dark) {
+    .app-body .modal-root__overlay {
+        background-color: hsla(0, 0%, 0%, 0.7);
+    }
 }
 .app-body .modal-root__modal,
 .app-body .boost-modal__container,
