@@ -371,7 +371,8 @@ body.app-body  {
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
-        .icon-sign-out
+        .icon-sign-out,
+        .icon-undefined
     )
     path {
     display: none;
@@ -419,7 +420,8 @@ body.app-body  {
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
-        .icon-sign-out
+        .icon-sign-out,
+        .icon-undefined
     ) {
     background-repeat: no-repeat;
     background-size: 100%;
@@ -708,6 +710,9 @@ body.app-body  {
 .app-body .account__relationship .icon-times,
 .app-body .follow-request-banner .button .icon-times {
     background-image: var(--icon-reject);
+}
+.app-body .icon-undefined {
+    background-image: var(--icon-share);
 }
 
 @media screen and (max-width:1174px) {
