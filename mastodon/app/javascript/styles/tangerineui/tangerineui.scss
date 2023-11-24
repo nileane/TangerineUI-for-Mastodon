@@ -371,7 +371,8 @@ body.app-body  {
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
-        .icon-sign-out
+        .icon-sign-out,
+        .account__header__tabs__buttons .icon-undefined
     )
     path {
     display: none;
@@ -419,7 +420,8 @@ body.app-body  {
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
-        .icon-sign-out
+        .icon-sign-out,
+        .account__header__tabs__buttons .icon-undefined
     ) {
     background-repeat: no-repeat;
     background-size: 100%;
@@ -708,6 +710,9 @@ body.app-body  {
 .app-body .account__relationship .icon-times,
 .app-body .follow-request-banner .button .icon-times {
     background-image: var(--icon-reject);
+}
+.app-body .account__header__tabs__buttons .icon-undefined {
+    background-image: var(--icon-share);
 }
 
 @media screen and (max-width:1174px) {
@@ -3035,6 +3040,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .story:is(:active, :focus, :hover) :is(.story__details__publisher, .story__details__shared) {
     color: var(--color-accent);
 }
+.app-body .story.expanded {
+    gap: 10px;
+    padding-bottom: 20px;
+}
 .app-body .story.expanded .story__thumbnail {
     margin: 0 0 -25px;
 }
@@ -3244,28 +3253,30 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
-    .app-body .dismissable-banner {
-        margin-top: 10px;
-    }
     .app-body .explore__links .dismissable-banner {
         margin-top: 0;
     }
 }
-.app-body .dismissable-banner__message,
 .app-body .dismissable-banner__action .icon-button {
-    color: var(--color-accent-fg);
+    color: var(--color-accent);
 }
 .app-body .dismissable-banner__message h1 {
-    color: var(--color-accent-fg);
+    color: var(--color-content-fg);
     margin-top: 10px;
+    margin-bottom: 8px;
+}
+.app-body .dismissable-banner__message {
+    color: var(--color-content-fg);
+    font-weight: normal;
 }
 .app-body .dismissable-banner__message__actions__wrapper {
     flex-flow: row-reverse;
 }
 .app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) {
-    background: linear-gradient(to bottom, rgba(247, 105, 2, 0.8), rgba(247, 105, 2, 0.5));
+    background: var(--color-content-bg);
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
 }
 .app-body .dismissable-banner__background-image {
     display: none;
@@ -3275,10 +3286,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     line-height: 28px;
     padding: 6px 17px;
 }
-@media (prefers-color-scheme: dark) {
-    .app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) {
-        background: linear-gradient(to top, rgba(230, 137, 51, .5), rgba(230, 137, 51, .3));
-    }
+.app-body .dismissable-banner__message__actions {
+    gap: 5px;
 }
 
 
@@ -3879,8 +3888,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .copypaste input,
 .app-body .interaction-modal__login__input {
-    border-color: var(--color-accent);
-    background-color: var(--color-accent-lines);
+    border-color: var(--color-lines);
+    background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
     border-radius: 8px;
 }
@@ -3891,12 +3900,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-bottom-right-radius: 8px;
 }
 .app-body .interaction-modal__login__input input::placeholder {
-    color: var(--color-accent);
+    color: var(--color-content-fg-muted);
 }
 .app-body .interaction-modal__login.focused .interaction-modal__login__input {
     background-color: var(--color-content-bg);
     border-color: var(--color-accent);
-    box-shadow: 0 0 0 2px var(--color-accent);
 }
 .app-body .interaction-modal__login .search__popout {
     border-color: var(--color-lines);
@@ -3905,7 +3913,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding: 8px 18px;
 }
 .app-body .modal-root__overlay {
-    background-color: hsla(0, 0%, 79.5%, 0.7);
+    background-color: hsla(0, 0%, 23.5%, 0.7);
 }
 @media (prefers-color-scheme: dark) {
     .app-body .modal-root__overlay {
@@ -4159,10 +4167,10 @@ a:is(.active,
     background-color: var(--color-accent-bg);
 }
 .app-body .onboarding__steps__item__icon,
-.app-body .onboarding__steps__item__description h6,
 .app-body .onboarding__link {
     color: var(--color-accent);
 }
+.app-body .onboarding__steps__item__description h6,
 .app-body .onboarding__steps__item__description p,
 .app-body .onboarding__lead,
 .app-body .onboarding__lead strong {
@@ -4173,6 +4181,66 @@ a:is(.active,
     fill: var(--color-accent);
 }
 
+.app-body .onboarding__profile .app-form__avatar-input {
+    border-color: var(--color-content-bg);
+    border-radius: 50%;
+    border-width: 5px;
+}
+.app-body .onboarding__profile .app-form__avatar-input img {
+    border-radius: 50%;
+    background: var(--color-content-secondary-bg);
+}
+.app-body .onboarding__profile .app-form__header-input img {
+    background: var(--color-secondary-bg);
+}
+.app-body .simple_form .input.with_block_label > label,
+.app-body .simple_form .input.with_block_label .hint,
+.app-body .app-form__toggle__label strong,
+.app-body .simple_form .hint {
+    color: var(--color-fg);
+}
+.app-body .app-form__toggle__toggle > div {
+    border-color: var(--color-lines);
+}
+.app-form__avatar-input.selected .icon,
+.app-form__header-input.selected .icon {
+    color: var(--color-accent);
+}
+.app-body .simple_form
+    :is(
+        input[type=datetime-local],
+        input[type=email],
+        input[type=number],
+        input[type=password],
+        input[type=text],
+        input[type=url],
+        textarea
+    ) {
+    background-color: var(--color-content-secondary-bg);
+    border-color: var(--color-lines);
+    border-radius: 8px;
+    color: var(--color-content-fg);
+}
+.app-body .simple_form
+    :is(
+        input[type=datetime-local],
+        input[type=email],
+        input[type=number],
+        input[type=password],
+        input[type=text],
+        input[type=url],
+        textarea
+    ):is(:active, :focus) {
+    border-color: var(--color-accent);
+}
+.app-body .column-title {
+    margin: -20px -20px 30px;
+    padding: 40px;
+}
+.app-body .column-title:has(+ .simple_form) {
+    margin-bottom: 0;
+    background-color: var(--color-content-secondary-bg);
+} 
 .app-body .follow-recommendations {
     background-color: var(--color-content-bg);
 }
@@ -4475,6 +4543,12 @@ a:is(.active,
 .app-body .column > .scrollable.privacy-policy {
     border: 1px solid var(--color-lines);
     background-color: var(--color-content-bg);
+}
+@media screen and (min-width:1175px) {
+    .app-body:not(:has(#tabs-bar__portal > *)) .column > .scrollable.privacy-policy {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
 }
 
 
