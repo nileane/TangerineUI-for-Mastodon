@@ -367,7 +367,8 @@ body.app-body  {
         .account__relationship .icon-times,
         .icon-ellipsis-h,
         .icon-ellipsis-v,
-        .icon-check,
+        .icon-check:is(.verified__mark, .verified-badge__mark),
+        .follow-request-banner .button .icon-check,
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
@@ -416,7 +417,8 @@ body.app-body  {
         .account__relationship .icon-times,
         .icon-ellipsis-h,
         .icon-ellipsis-v,
-        .icon-check,
+        .icon-check:is(.verified__mark, .verified-badge__mark),
+        .follow-request-banner .button .icon-check,
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
@@ -672,7 +674,7 @@ body.app-body  {
 .app-body .icon-paperclip {
     background-image: var(--icon-paperclip);
 }
-.app-body .icon-check {
+.app-body .icon-check:is(.verified__mark, .verified-badge__mark) {
     background-image: var(--icon-verified);
 }
 .app-body .follow-request-banner .button:is(:active, :focus, :hover) .icon-check {
@@ -3436,8 +3438,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .column-inline-form {
     background-color: var(--color-accent-bg);
     border: 1px solid var(--color-accent-lines);
-    border-radius: 0 0 8px 8px;
-    margin-bottom: 10px;
 }
 @media screen and (max-width:1174px) {
     .app-body .column-inline-form {
@@ -3465,8 +3465,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .item-list .column-subheading {
     color: var(--color-fg-muted);
     border: 1px solid var(--color-lines);
+    border-top: 0;
     border-bottom: 0;
-    border-radius: 8px 8px 0 0;
 }
 .app-body .getting-started .column-subheading {
     color: var(--color-fg-muted);
@@ -3478,6 +3478,42 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         border-radius: 0;
     }
 }
+.app-body .list-editor .drawer__inner {
+    background-color: var(--color-content-bg);
+}
+.app-body .list-editor__search {
+    margin: 10px;
+}
+.app-body .list-editor .column-inline-form {
+    background-color: var(--color-content-secondary-bg);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: var(--color-lines);
+}
+.app-body .list-editor .column-inline-form .icon-button {
+    color: var(--color-accent);
+}
+.app-body .list-editor .column-inline-form .icon-button.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+.app-body .list-editor .account {
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+.app-body .list-editor .setting-text {
+    width: 100%;
+    background-color: var(--color-accent-bg);
+    border: 1px solid var(--color-accent-lines);
+    border-radius: 8px;
+    color: var(--color-content-fg);
+}
+.app-body .list-editor .setting-text:is(:active, :focus) {
+    border-color: var(--color-accent);
+    background-color: var(--color-content-bg);
+}
+
 .app-body .item-list .column-link {
     margin-left: 0;
     width: 100%;
