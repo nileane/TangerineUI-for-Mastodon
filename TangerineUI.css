@@ -1467,6 +1467,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+.app-body .account-timeline__header + article > .account {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: 1px solid var(--color-lines);
+}
 .app-body .detailed-status__link {
     display: inline-block;
     position: static;
@@ -1900,6 +1905,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         border-bottom-right-radius: 0;
         border-left: 0;
         border-right: 0;
+    }
+}
+@media screen and (min-width:890px) {
+    .app-body .account-timeline__header + .empty-column-indicator {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     }
 }
 
