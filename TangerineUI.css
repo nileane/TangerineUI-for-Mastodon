@@ -2627,13 +2627,20 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     .app-body
         .navigation-panel:has(> *:nth-child(5):last-child)
-        :is(.column-link, .navigation-panel__legal) {
+        :is(.column-link, .navigation-panel__legal),
+    .app-body
+        .navigation-panel:has(> *:nth-child(7):last-child):has(.getting-started__trends)
+        :is(.column-link, .navigation-panel__legal)  {
         flex: calc(100vw / 3);
     }
     .app-body
         .navigation-panel:has(> *:nth-child(6):last-child)
         :is(.column-link, .navigation-panel__legal) {
         flex: 25vw;
+    }
+    .app-body
+        .navigation-panel:has(> *:nth-child(7):last-child):has(.getting-started__trends)::after {
+        display: none;
     }
     .app-body .column-link--transparent:is(.active, .active:hover, :active) {
         margin: 6px 0 8px;
