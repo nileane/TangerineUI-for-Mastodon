@@ -2819,7 +2819,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .account__header__extra .account__header__fields .verified__mark {
     float: left;
-    margin-right: 2px;
+    margin-left: -1px;
 }
 .app-body .account__header__bio .account__header__fields .verified:last-child {
     border-bottom: 0;
@@ -3846,6 +3846,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .interaction-modal__icon {
     vertical-align: middle;
+    display: inline-block;
+    transform: scale(1.4) translateX(-2px);
 }
 .app-body .interaction-modal p {
     color: var(--color-content-fg);
@@ -3887,7 +3889,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding: 8px 18px;
 }
 .app-body .modal-root__overlay {
-    background-color: hsla(0, 0%, 1%, 0.7);
+    background-color: hsla(0, 0%, 79.5%, 0.7);
+}
+@media (prefers-color-scheme: dark) {
+    .app-body .modal-root__overlay {
+        background-color: hsla(0, 0%, 0%, 0.7);
+    }
 }
 .app-body .modal-root__modal,
 .app-body .boost-modal__container,
@@ -4332,6 +4339,11 @@ a:is(.active,
     }
     .app-body .about__header__hero {
         border-radius: 8px 8px 0 0;
+    }
+}
+@media screen and (min-width:890px) and (max-width:1174px) {
+    .app-body .scrollable.about {
+        margin-top: 10px;
     }
 }
 .app-body .about__mail {
