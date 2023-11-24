@@ -1716,6 +1716,44 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status-card__author strong {
     font-weight: 800;
 }
+@media screen and (max-width:889px) {
+    .app-body .status-card:not(.expanded) .status-card__image {
+        width: 80px;
+    }
+    .app-body .status-card:not(.expanded) .status-card__content {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .app-body .status-card:not(.expanded) .status-card__host {
+        margin-bottom: 2px;
+        font-size: 12px;
+    }
+    .app-body .status-card:not(.expanded) .status-card__title {
+        font-size: 16px;
+    }
+    .app-body .status-card:not(.expanded) .status-card__description {
+        margin-top: 2px;
+        font-size: 12px;
+    }
+}
+.layout-multiple-columns .status-card:not(.expanded) .status-card__image {
+    width: 80px;
+}
+.layout-multiple-columns .status-card:not(.expanded) .status-card__content {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.layout-multiple-columns .status-card:not(.expanded) .status-card__host {
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+.layout-multiple-columns .status-card:not(.expanded) .status-card__title {
+    font-size: 16px;
+}
+.layout-multiple-columns .status-card:not(.expanded) .status-card__description {
+    margin-top: 2px;
+    font-size: 12px;
+}
 .app-body .status__content p {
     margin-bottom: 12px;
 }
