@@ -714,10 +714,10 @@ body.app-body  {
         background-image: var(--icon-bell);
     }
     .app-body .navigation-panel .column-link .icon-hashtag {
-        background-image: var(--icon-hashtag-active);
+        background-image: var(--icon-search-column-link-active);
     }
     .app-body .navigation-panel .column-link.active .icon-hashtag {
-        background-image: var(--icon-hashtag);
+        background-image: var(--icon-search-column-link);
     }
     .app-body .navigation-panel .column-link .icon-search {
         background-image: var(--icon-search-column-link-active);
@@ -2361,6 +2361,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .ui__header__links .button.button-secondary {
     padding: 8px 15px;
+}
+.app-body .ui__header__links .button.button-secondary[href="/search"] {
+    display: none;
 }
 .app-body .ui__header__links .button.button-secondary[href="/publish"] {
     background-color: var(--color-accent);
