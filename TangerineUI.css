@@ -4334,6 +4334,11 @@ a:is(.active,
         border-radius: 8px 8px 0 0;
     }
 }
+@media screen and (min-width:890px) and (max-width:1174px) {
+    .app-body .scrollable.about {
+        margin-top: 10px;
+    }
+}
 .app-body .about__mail {
     color: var(--color-content-fg);
 }
