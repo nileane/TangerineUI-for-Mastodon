@@ -448,6 +448,9 @@ body.app-body  {
     background-image: var(--icon-star);
     margin: 0 4px -2px 0;
 }
+.app-body .media-modal__overlay .icon-star {
+    background-image: var(--icon-star);
+}
 /* Boost */
 .app-body .icon-retweet {
     background-image: var(--icon-boost-accent);
@@ -480,6 +483,9 @@ body.app-body  {
     background-image: var(--icon-boost-accent);
     vertical-align: middle;
 }
+.app-body .media-modal__overlay .icon-retweet {
+    background-image: var(--icon-boost);
+}
 /* Reply */
 .app-body .icon-reply,
 .app-body .icon-reply-all {
@@ -487,6 +493,9 @@ body.app-body  {
 }
 .app-body .detailed-status__action-bar :is(.icon-reply, .icon-reply-all) {
     background-image: var(--icon-reply-accent);
+}
+.app-body .media-modal__overlay :is(.icon-reply, .icon-reply-all) {
+    background-image: var(--icon-reply);
 }
 /* Ellipsis */
 .app-body :is(.icon-ellipsis-h, .icon-ellipsis-v) {
@@ -2618,13 +2627,20 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     .app-body
         .navigation-panel:has(> *:nth-child(5):last-child)
-        :is(.column-link, .navigation-panel__legal) {
+        :is(.column-link, .navigation-panel__legal),
+    .app-body
+        .navigation-panel:has(> *:nth-child(7):last-child):has(.getting-started__trends)
+        :is(.column-link, .navigation-panel__legal)  {
         flex: calc(100vw / 3);
     }
     .app-body
         .navigation-panel:has(> *:nth-child(6):last-child)
         :is(.column-link, .navigation-panel__legal) {
         flex: 25vw;
+    }
+    .app-body
+        .navigation-panel:has(> *:nth-child(7):last-child):has(.getting-started__trends)::after {
+        display: none;
     }
     .app-body .column-link--transparent:is(.active, .active:hover, :active) {
         margin: 6px 0 8px;
