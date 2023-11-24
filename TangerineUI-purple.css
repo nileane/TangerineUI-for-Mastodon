@@ -3253,9 +3253,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
-    .app-body .dismissable-banner {
-        margin-top: 10px;
-    }
     .app-body .explore__links .dismissable-banner {
         margin-top: 0;
     }
