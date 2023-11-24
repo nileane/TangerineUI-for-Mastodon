@@ -3040,6 +3040,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .story:is(:active, :focus, :hover) :is(.story__details__publisher, .story__details__shared) {
     color: var(--color-accent);
 }
+.app-body .story.expanded {
+    gap: 10px;
+    padding-bottom: 20px;
+}
 .app-body .story.expanded .story__thumbnail {
     margin: 0 0 -25px;
 }
