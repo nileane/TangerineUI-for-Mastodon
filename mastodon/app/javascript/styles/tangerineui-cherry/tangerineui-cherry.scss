@@ -1467,6 +1467,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+.app-body .account-timeline__header + article > .account {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: 1px solid var(--color-lines);
+}
 .app-body .detailed-status__link {
     display: inline-block;
     position: static;
@@ -1900,6 +1905,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         border-bottom-right-radius: 0;
         border-left: 0;
         border-right: 0;
+    }
+}
+@media screen and (min-width:890px) {
+    .app-body .account-timeline__header + .empty-column-indicator {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
     }
 }
 
@@ -3261,17 +3272,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         margin-top: 0;
     }
 }
-.app-body .dismissable-banner__action .icon-button {
-    color: var(--color-accent);
-}
 .app-body .dismissable-banner__message h1 {
     color: var(--color-content-fg);
     margin-top: 10px;
     margin-bottom: 8px;
 }
-.app-body .dismissable-banner__message {
-    color: var(--color-content-fg);
+.app-body .dismissable-banner__message,
+.app-body .dismissable-banner .dismissable-banner__action .icon-button {
+    color: var(--color-accent-fg);
     font-weight: normal;
+}
+.app-body .dismissable-banner .dismissable-banner__action .icon-button:hover {
+    color: var(--color-accent);
 }
 .app-body .dismissable-banner__message__actions__wrapper {
     flex-flow: row-reverse;
@@ -3281,6 +3293,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+}
+.app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) .dismissable-banner__action .icon-button {
+    color: var(--color-accent);
+}
+.app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) .dismissable-banner__message {
+    color: var(--color-content-fg);
 }
 .app-body .dismissable-banner__background-image {
     display: none;
