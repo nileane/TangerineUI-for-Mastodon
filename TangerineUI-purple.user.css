@@ -1,12 +1,25 @@
 /* ==UserStyle==
 @name           TangerineUI Purple 🪻 for Mastodon
 @namespace      github.com/nileane/TangerineUI-for-Mastodon
-@version        2.0.0-pre.user-03
+@version        2.0.0-pre.user-04
 @description    A Tangerine redesign for Mastodon's Web UI.
 @author         @nileane@nileane.fr
 @homepageURL    https://github.com/BreadlyUwU/TangerineUI-for-Mastodon/
 @updateURL      https://github.com/BreadlyUwU/TangerineUI-for-Mastodon/raw/UserStyle-refactor/TangerineUI-purple.user.css
 ==/UserStyle== */
+
+/*
+⚠️ Don't forget to add your instance's URL! ⚠️
+Here's how you can proceed on Stylus
+    1. Install the style
+    2. Click "Edit" in the left sidebar
+    3. Click "Settings" in the left sidebar
+    4. Paste your server's URL in the
+        "Custom included sites" textbox like this:
+            * //DOMAIN HERE/ *
+            (Remove the space between the '/' and the '*' characters)
+    5. Click "Save"
+*/
 
 @-moz-document domain("eldritch.cafe") {
 /* 🎨 Colors */
