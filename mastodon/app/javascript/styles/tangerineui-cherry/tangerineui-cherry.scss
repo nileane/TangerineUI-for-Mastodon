@@ -2367,7 +2367,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .column-link[href="/notifications"] {
         order: 3;
     }
-    .app-body .column-link[href="/explore"] {
+    .app-body .column-link:is([href="/explore"],[href="/search"]) {
         order: 4;
     }
     .app-body .column-link[href="/public/local"] {
@@ -4410,6 +4410,20 @@ a:is(.active,
         border-radius: 0 !important;
         border-left: 0;
         border-right: 0;
+    }
+}
+.app-body .regeneration-indicator {
+    background-color: var(--color-content-bg);
+}
+@media screen and (min-width:890px) {
+    .app-body .regeneration-indicator {
+        border-left: 1px solid var(--color-lines);
+        border-right: 1px solid var(--color-lines);
+        border-bottom: 1px solid var(--color-lines);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding-top: 50px;
+        padding-bottom: 40px;
     }
 }
 
