@@ -8,8 +8,9 @@
 @updateURL      https://github.com/BreadlyUwU/TangerineUI-for-Mastodon/raw/UserStyle-refactor/TangerineUI.user.css
 ==/UserStyle== */
 
-/* 
-Don't forget to add your instance's URL, here's how you can proceed
+/*
+⚠️ Don't forget to add your instance's URL! ⚠️
+Here's how you can proceed on Stylus
     1. Install the style
     2. Click "Edit" in the left sidebar
     3. Click "Settings" in the left sidebar
@@ -17,7 +18,7 @@ Don't forget to add your instance's URL, here's how you can proceed
         "Custom included sites" textbox like this:
             * //DOMAIN HERE/ *
             (Remove the space between the '/' and the '*' characters)
-    5. Click "Save"		 
+    5. Click "Save"
 */
 
 @-moz-document domain("eldritch.cafe") {
