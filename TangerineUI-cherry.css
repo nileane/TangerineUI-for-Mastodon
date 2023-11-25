@@ -3277,9 +3277,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin-top: 10px;
     margin-bottom: 8px;
 }
-.app-body .dismissable-banner__message {
-    color: var(--color-content-fg);
+.app-body .dismissable-banner__message,
+.app-body .dismissable-banner .dismissable-banner__action .icon-button {
+    color: var(--color-accent-fg);
     font-weight: normal;
+}
+.app-body .dismissable-banner .dismissable-banner__action .icon-button:hover {
+    color: var(--color-accent);
 }
 .app-body .dismissable-banner__message__actions__wrapper {
     flex-flow: row-reverse;
@@ -3292,6 +3296,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) .dismissable-banner__action .icon-button {
     color: var(--color-accent);
+}
+.app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) .dismissable-banner__message {
+    color: var(--color-content-fg);
 }
 .app-body .dismissable-banner__background-image {
     display: none;
