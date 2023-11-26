@@ -3064,9 +3064,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin: 0 0 -25px;
 }
 .app-body .story.expanded .story__thumbnail img {
-    width: calc(100% + 30px);
-    margin: -15px -15px 0 -15px;
-    border-radius: 0 0 0 0;
+    margin: 0 0 30px;
+    border-radius: 8px;
 }
 
 /* 🔍 Search field and search results */
