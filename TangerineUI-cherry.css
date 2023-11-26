@@ -925,6 +925,10 @@ body.app-body  {
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
 }
+.app-body .compose-form .poll__option .autosuggest-input {
+    border-left: 0;
+    border-right: 0;
+}
 .app-body .compose-form .spoiler-input.spoiler-input--visible {
     margin-bottom: 0;
     height: auto;
