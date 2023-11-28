@@ -3860,10 +3860,28 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-color: var(--color-content-secondary-separator);
 }
 
+.app-body .privacy-dropdown__dropdown {
+    background-color: var(--color-content-bg);
+    border-radius: 8px;
+    border: 1px solid var(--color-lines);
+}
+.app-body .privacy-dropdown :is(.privacy-dropdown__value, .privacy-dropdown__value),
+.app-body .privacy-dropdown__option {
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
+}
 .app-body .privacy-dropdown.active :is(.privacy-dropdown__value, .privacy-dropdown__value.active),
 .app-body .privacy-dropdown__option:is(.active, .active:hover, :hover) {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
+}
+.app-body .privacy-dropdown.active .privacy-dropdown__value:has(.text-icon-button.active) {
+    border-radius: 6px 6px 0 0;
+}
+.app-body .privacy-dropdown__option .privacy-dropdown__option__content,
+.app-body .privacy-dropdown__option .privacy-dropdown__option__content strong {
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
 }
 .app-body .privacy-dropdown__option.active .privacy-dropdown__option__content,
 .app-body .privacy-dropdown__option.active .privacy-dropdown__option__content strong,
