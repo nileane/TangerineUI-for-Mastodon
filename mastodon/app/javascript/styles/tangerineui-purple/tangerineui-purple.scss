@@ -1834,6 +1834,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: 1px solid var(--color-lines);
 }
 
+.app-body div:not(.detailed-status) > .media-gallery:has(.media-gallery__item.standalone) {
+    max-height: 500px;
+    width: auto;
+}
+
 /* 📊 Polls */
 .app-body .poll__chart,
 .app-body .muted .poll__chart.leading {
@@ -1895,7 +1900,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: transparent;
     pointer-events: none;
 }
-
 
 
 /* Empty columns */
