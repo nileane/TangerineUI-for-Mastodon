@@ -9,6 +9,12 @@
     Compatible with: Mastodon v4.3.0 ✅
 */
 
+/* 📄 Version */
+:root {
+    --version: "v2.0.0-pre";
+    --variant: "🪻 Purple";
+    --version-f: var(--version) ' · ' var(--variant) ' variant';
+}
 
 /* 🎨 Colors */
 :root {
@@ -3324,7 +3330,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         transform: scale(200%) translate(100vw, 100vh) rotate(600deg);
     }
 }
-.app-body:has(.search__input[value="Tangerine"])::after {
+.app-body:has(.search__input[value="Tangerine UI"])::after {
     content: "🍊";
     position: fixed;
     display: block;
@@ -4217,9 +4223,25 @@ a:is(.active,
 
 /* 📄 Meta
    ------- */
+.app-body .link-footer {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+}
 .app-body .link-footer p,
 .app-body .link-footer a {
     color: var(--color-fg-muted);
+}
+.app-body .link-footer::before {
+    content: 'Tangerine UI for Mastodon:';
+    color: var(--color-fg-muted);
+    font-weight: 500;
+    order: 9;
+}
+.app-body .link-footer::after {
+    content: var(--version-f);
+    color: var(--color-fg-muted);
+    order: 10;
 }
 
 /* Server banner */
