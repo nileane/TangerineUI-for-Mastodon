@@ -4971,3 +4971,12 @@ a:is(.active,
         border-top-right-radius: 0;
     }
 }
+
+.app-body .switch-to-advanced {
+    background-color: var(--color-accent-bg);
+    border-radius: 8px;
+    color: var(--color-content-fg);
+}
+.app-body .switch-to-advanced .switch-to-advanced__toggle {
+    color: var(--color-accent);
+}
