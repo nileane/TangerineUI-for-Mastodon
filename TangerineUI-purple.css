@@ -1,19 +1,15 @@
-/*  TangerineUI 🍊 for Mastodon ・ Purple variant 🪻
-    version: 2.0.0-pre
+/*  Tangerine UI for Mastodon 🍊
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
 
     by @nileane@nileane.fr
-
-    Compatible with: Mastodon v4.3.0 ✅
 */
 
-/* 📄 Version */
+/* 📄 Meta */
 :root {
     --version: "v2.0.0-pre";
     --variant: "🪻 Purple";
-    --version-f: var(--version) ' · ' var(--variant) ' variant';
 }
 
 /* 🎨 Colors */
@@ -4221,8 +4217,7 @@ a:is(.active,
 }
 
 
-/* 📄 Meta
-   ------- */
+/* 📄 Meta footer */
 .app-body .link-footer {
     margin-bottom: 10px;
     display: flex;
@@ -4239,6 +4234,7 @@ a:is(.active,
     order: 9;
 }
 .app-body .link-footer::after {
+    --version-f: var(--version) ' · ' var(--variant) ' variant';
     content: var(--version-f);
     color: var(--color-fg-muted);
     order: 10;
