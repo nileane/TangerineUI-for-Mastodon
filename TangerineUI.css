@@ -325,6 +325,7 @@ body.app-body  {
     max-height: max-content;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    border: 0;
 }
 .app-body .dismissable-banner + .scrollable {
     border-top-left-radius: 0;
