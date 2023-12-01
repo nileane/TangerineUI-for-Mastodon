@@ -1,17 +1,20 @@
-/*  TangerineUI 🍊 for Mastodon
-    version: 2.0.0-pre
+/*  Tangerine UI for Mastodon 🍊
 
     A Tangerine redesign for Mastodon's Web UI.
     https://github.com/nileane/TangerineUI-for-Mastodon/
 
     by @nileane@nileane.fr
-
-    Compatible with: Mastodon v4.3.0 ✅
 */
 
+/* 📄 Meta */
+:root {
+    --version: "v2.0.0-pre";
+    --variant: "🍊 Tangerine";
+}
 
 /* 🎨 Colors */
 :root {
+
     --color-bg: #ffffff;
     --color-fg: #2a2d37;
     --color-fg-muted: #948c84;
@@ -3324,7 +3327,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         transform: scale(200%) translate(100vw, 100vh) rotate(600deg);
     }
 }
-.app-body:has(.search__input[value="Tangerine"])::after {
+.app-body:has(.search__input[value="Tangerine UI"])::after {
     content: "🍊";
     position: fixed;
     display: block;
@@ -4215,11 +4218,27 @@ a:is(.active,
 }
 
 
-/* 📄 Meta
-   ------- */
+/* 📄 Meta footer */
+.app-body .link-footer {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+}
 .app-body .link-footer p,
 .app-body .link-footer a {
     color: var(--color-fg-muted);
+}
+.app-body .link-footer::before {
+    content: 'Tangerine UI for Mastodon:';
+    color: var(--color-fg-muted);
+    font-weight: 500;
+    order: 9;
+}
+.app-body .link-footer::after {
+    --version-f: var(--version) ' · ' var(--variant) ' variant';
+    content: var(--version-f);
+    color: var(--color-fg-muted);
+    order: 10;
 }
 
 /* Server banner */
@@ -4699,7 +4718,7 @@ a:is(.active,
     background-color: var(--color-accent-bg);
 }
 .app-body .rules-list li {
-    border-bottom: 2px solid var(--color-accent-lines);
+    border-bottom: 1px solid var(--color-accent-lines);
     padding: 1em 1.75em 1em 3.4em;
 }
 .app-body .rules-list li:last-child {
