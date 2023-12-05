@@ -88,9 +88,10 @@ These are known instances that have enabled Tangerine UI for their users, either
 [^2]: If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours to this list**. (Make a Pull Request, or just [DM me](https://nileane.fr/@tangerineui))
 
 | **Instance**                                             | **User count** | **Installed as...** | **Default theme?**      |
-| -------------------------------------------------------- | -------------- | ------------------- | ----------------------- |
+|----------------------------------------------------------|----------------|---------------------|-------------------------|
 | [piaille.fr](https://piaille.fr)                         | 10K+           | an optional theme   | No                      |
 | [norden.social](https://norden.social)                   | 5K+            | an optional theme   | No                      |
+| [convo.casa](https://convo.casa)                         | 5K+            | an optional theme   | No                      |
 | [vmst.io](https://vmst.io)                               | 2K+            | an optional theme   | No                      |
 | [eldritch.cafe](https://eldritch.cafe)                   | 1.5K+          | an optional theme   | No                      |
 | [octodon.social](https://octodon.social)                 | 1K+            | an optional theme   | No                      |
