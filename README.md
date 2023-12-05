@@ -88,7 +88,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 [^2]: If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours to this list**. (Make a Pull Request, or just [DM me](https://nileane.fr/@tangerineui))
 
 | **Instance**                                             | **User count** | **Installed as...** | **Default theme?**      |
-|----------------------------------------------------------|----------------|---------------------|-------------------------|
+| -------------------------------------------------------- | -------------- | ------------------- | ----------------------- |
 | [piaille.fr](https://piaille.fr)                         | 10K+           | an optional theme   | No                      |
 | [norden.social](https://norden.social)                   | 5K+            | an optional theme   | No                      |
 | [convo.casa](https://convo.casa)                         | 5K+            | an optional theme   | No                      |
@@ -97,6 +97,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [octodon.social](https://octodon.social)                 | 1K+            | an optional theme   | No                      |
 | [social.lol](https://social.lol)                         | 750+           | an optional theme   | No                      |
 | [shelter.moe](https://shelter.moe)                       | 350+           | an optional theme   | No                      |
+| [toki.social](https://toki.social)                       | 200+           | an optional theme   | No                      |
 | [pipou.academy](https://pipou.academy)                   | 100+           | an optional theme   | No                      |
 | [indiepocalypse.social](https://indiepocalypse.social)   | 100+           | an optional theme   | No                      |
 | [bolha.one](https://bolha.one)                           | 20+            | an optional theme   | Yes (Tangerine variant) |
