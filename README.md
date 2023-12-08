@@ -105,7 +105,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [zeppelin.flights](https://zeppelin.flights)             | 15+            | the only theme      | Yes (Tangerine variant) |
 | [catharsis.cafe](https://catharsis.cafe)                 | 10+            | an optional theme   | Yes (Tangerine variant) |
 | [toulouse.social](https://toulouse.social)               | 10+            | an optional theme   | Yes (Tangerine variant) |
-| [fedinerds.social](https://fedinerds.social)             | 5+             | an optional theme   | No                      |
+| [fedinerds.social](https://fedinerds.social)             | 10+            | an optional theme   | No                      |
 | [nileane.fr](https://nileane.fr)                         | 5+             | the only theme      | Yes (Tangerine variant) |
 | [social.nah.re](https://social.nah.re)                   | 5+             | an optional theme   | No                      |
 | [esoteric.party](https://esoteric.party)                 | 5+             | the only theme      | Yes (Tangerine variant) |
