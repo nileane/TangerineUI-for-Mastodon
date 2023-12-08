@@ -1267,6 +1267,9 @@ body.app-body  {
 .app-body .status__avatar {
     margin-bottom: -10px;
     z-index: 2;
+    border-radius: 50%;
+    box-shadow: 0 0 0 7px var(--color-content-bg);
+    transition: box-shadow .3s;
 }
 .app-body .reply-indicator__content,
 .app-body .status__content {
@@ -1378,7 +1381,7 @@ body.app-body  {
 }
 /* Threaded line, actually */
 .app-body .status__line {
-    margin-inline-start: 5px;
+    margin-inline-start: 6px;
     border-inline-start: 2px solid var(--color-accent);
     -webkit-border-start: 2px solid var(--color-accent);
     opacity: .6;
@@ -1413,6 +1416,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .notification__message:has(+ div > .status__wrapper .status__content:hover) {
         background: var(--color-content-bg-focus);
     }
+    .app-body .status__wrapper:has(.status__content:hover) .status__avatar {
+        box-shadow: 0 0 0 7px var(--color-content-bg-focus);
+    }
+}
+.app-body :is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus .status__avatar {
+    box-shadow: 0 0 0 7px var(--color-content-bg-focus);
 }
 
 /* 👁️ Post detailed view */
