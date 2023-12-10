@@ -962,10 +962,12 @@ body.app-body  {
     box-sizing: border-box;
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
+    padding: 5px;
 }
 .app-body .compose-form .poll__option .autosuggest-input {
     border-left: 0;
     border-right: 0;
+    padding: 0;
 }
 .app-body .compose-form .spoiler-input.spoiler-input--visible {
     margin-bottom: 0;
@@ -976,16 +978,11 @@ body.app-body  {
     background-color: var(--color-accent-bg);
     color: var(--color-accent);
     margin-bottom: 0;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 12px 15px;
-    box-shadow:
-        0 0 0 4px inset var(--color-content-bg);
 }
 .app-body .compose-form .spoiler-input__input:focus {
-    box-shadow:
-        0 0 0 4px inset var(--color-content-bg),
-        0 0 0 6px inset var(--color-accent),
-        0 0 0 1px inset var(--color-content-bg);
+    box-shadow: 0 0 0 1px inset var(--color-accent);
 }
 .app-body .display-name {
     color: var(--color-content-fg);
