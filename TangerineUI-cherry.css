@@ -3304,6 +3304,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .search__popout__menu__item mark {
     color: var(--color-content-fg-bold);
 }
+.app-body .search__popout__menu__item:is(.selected, :active, :focus, :hover) .icon-button {
+    color: var(--color-accent-fg);
+}
 .app-body .search__popout__menu__item .icon-button:is(:active, :focus, :hover) {
     background-color: var(--color-content-secondary-bg);
     color: var(--color-accent);
