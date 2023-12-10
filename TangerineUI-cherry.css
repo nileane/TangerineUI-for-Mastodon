@@ -3315,6 +3315,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .search__popout__menu__item:is(.selected, :active, :focus, :hover) mark {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
+    border-radius: 8px;
 }
 
 @media screen and (max-width:1174px) {
