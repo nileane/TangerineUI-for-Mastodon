@@ -840,6 +840,29 @@ body.app-body  {
 
 
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-10%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+@keyframes fadein-short {
+    from {
+        transform: translate(0, -10px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
+
 /* 📝 Compose panel
    ---------------- */
 .app-body .compose-form {
@@ -962,10 +985,12 @@ body.app-body  {
     box-sizing: border-box;
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
+    padding: 5px;
 }
 .app-body .compose-form .poll__option .autosuggest-input {
     border-left: 0;
     border-right: 0;
+    padding: 0;
 }
 .app-body .compose-form .spoiler-input.spoiler-input--visible {
     margin-bottom: 0;
@@ -976,16 +1001,11 @@ body.app-body  {
     background-color: var(--color-accent-bg);
     color: var(--color-accent);
     margin-bottom: 0;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 12px 15px;
-    box-shadow:
-        0 0 0 4px inset var(--color-content-bg);
 }
 .app-body .compose-form .spoiler-input__input:focus {
-    box-shadow:
-        0 0 0 4px inset var(--color-content-bg),
-        0 0 0 6px inset var(--color-accent),
-        0 0 0 1px inset var(--color-content-bg);
+    box-shadow: 0 0 0 1px inset var(--color-accent);
 }
 .app-body .display-name {
     color: var(--color-content-fg);
@@ -1004,6 +1024,11 @@ body.app-body  {
         border-radius: 8px 8px 0 0;
         margin: 10px 10px 0;
     }
+}
+
+.app-body .compose-form .attachment-list.compact .icon {
+    color: var(--color-content-fg-muted);
+    vertical-align: bottom;
 }
 
 /* Publish button */
@@ -1036,9 +1061,7 @@ body.app-body  {
     overflow: hidden;
     border-radius: 8px;
     background-color: var(--color-content-bg);
-    box-shadow:
-        0 0 0 1px var(--color-lines),
-        0 0 5px rgba(0, 0, 0, .15);
+    border: 1px solid var(--color-lines);
 }
 .app-body .emoji-mart {
     width: 100% !important;
@@ -2650,16 +2673,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         animation: fadein .5s 1;
     }
 }
-@keyframes fadein {
-    from {
-        opacity: 0;
-        transform: translateY(-10%); 
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0); 
-    }
-}
 @media screen and (max-width:1174px) {
     .app-body .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
         width: 100vw;
@@ -2921,6 +2934,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .account__header__bio .account__header__fields .verified :is(a, dd) {
     color: var(--color-accent);
+    gap: 5px;
 }
 .app-body .account__header__bio .account__header__fields :is(.verified dt, dt) {
     color: var(--color-content-fg);
@@ -3265,24 +3279,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .account .account__details .verified-badge span {
     font-weight: 500;
-} 
-@keyframes fadein-short {
-    from {
-        transform: translate(0, -10px);
-        opacity: 0;
-    }
-    to {
-        transform: translate(0, 0);
-        opacity: 1;
-    }
+}
+.app-body .compose-panel:has(> .search.active) {
+    overflow: visible;
 }
 .app-body .search__popout {
     background-color: var(--color-content-bg);
     border-radius: 8px;
-    box-shadow: none;
     margin-top: 10px;
     border: 1px solid var(--color-lines);
-    animation: .3s fadein-short 1;
+    animation: fadein-short .2s 1;
 }
 .app-body .search__popout h4 {
     font-weight: bold;
@@ -3297,6 +3303,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .search__popout__menu__item mark {
     color: var(--color-content-fg-bold);
+}
+.app-body .search__popout__menu__item:is(.selected, :active, :focus, :hover) .icon-button {
+    color: var(--color-accent-fg);
 }
 .app-body .search__popout__menu__item .icon-button:is(:active, :focus, :hover) {
     background-color: var(--color-content-secondary-bg);
@@ -3762,8 +3771,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 } 
 
 
-/* ⏺️ Other UI components : buttons, toggles, ...
-   ----------------------------------------- */
+
 .app-body .button,
 .app-body .account__header__tabs__buttons .icon-button {
     border-radius: 8px;
@@ -3837,7 +3845,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-content-bg);
     border-radius: 8px;
     border: 1px solid var(--color-lines);
-    box-shadow: 0 0 5px rgba(0, 0, 0, .15);
 }
 .app-body .language-dropdown__dropdown__results__item {
     border-radius: 8px;
@@ -3879,7 +3886,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-accent-focus);
 }
 
-/* ⏺️ Toggles */
 .app-body .setting-toggle__label {
     vertical-align: top;
 }
@@ -3906,8 +3912,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-accent-focus);
 }
 
-
-/* ⏺️ Radio buttons */
 .app-body .radio-button {
     color: var(--color-content-fg);
 }
@@ -3992,6 +3996,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .privacy-dropdown__option:is(:hover, .active, .active:hover) .icon-at {
     background-image: var(--icon-at-inv);
+}
+
+.app-body .dropdown-animation {
+    animation: fadein-short .2s 1;
 }
 
 .app-body .button.button-tertiary:is(.button--confirmation, .button--destructive) {
