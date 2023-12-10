@@ -1003,6 +1003,11 @@ body.app-body  {
     }
 }
 
+.app-body .compose-form .attachment-list.compact .icon {
+    color: var(--color-content-fg-muted);
+    vertical-align: bottom;
+}
+
 /* Publish button */
 .app-body .compose-form .compose-form__publish .compose-form__publish-button-wrapper {
     padding-top: 10px;
