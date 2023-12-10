@@ -2933,6 +2933,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .account__header__bio .account__header__fields .verified :is(a, dd) {
     color: var(--color-accent);
+    gap: 5px;
 }
 .app-body .account__header__bio .account__header__fields :is(.verified dt, dt) {
     color: var(--color-content-fg);
