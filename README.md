@@ -58,7 +58,8 @@ I won't be held responsible if you end up licking your screen because of this on
 
 
 * 🚀 **Thoughtful animations**  
-  The rocket flies!  
+  The rocket flies!
+  
   <img width="600" alt="Clicking the Boost buttons makes the rocket icon seeming like it's taking off. Clicking the favorite button makes it bounce. Cliking the bookmark button makes it shake vertically." src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/31d41d04-6ef1-4ef0-80c3-b4b445ee98a1">
 
 
@@ -68,6 +69,7 @@ I won't be held responsible if you end up licking your screen because of this on
   
 * 💬 **Distinct look for DMs**  
   It can be easy to mistake a DM for a regular post on Mastodon. Tangerine UI gives DMs a specific look, so they stand out in your timeline, and you don't make any embarrassing mistakes.
+  
   <img width="600" alt="with Tangerine UI, DMs have a distinct speech bubble look." src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/bfb650a9-d21a-4621-8a92-5de0276797cb">
 
 * 👁️ **Compact timeline**  
