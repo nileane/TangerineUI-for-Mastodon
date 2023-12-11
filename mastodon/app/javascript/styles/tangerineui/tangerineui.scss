@@ -2203,11 +2203,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .column-header__collapsible {
-    border-bottom: 0;
-    box-shadow: 0 -20px 0 var(--color-bg);
     background-color: var(--color-secondary-bg);
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
+    border-bottom: 0;
 }
 .app-body .column-header__collapsible::-webkit-scrollbar-track {
     background-color: transparent;
@@ -3885,19 +3884,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-accent-focus);
 }
 
-.app-body .setting-toggle__label {
-    vertical-align: top;
-}
 .app-body .react-toggle-track {
-    background-color: var(--color-accent-lines);
-    box-shadow:
-        0 0 0 20px var(--color-accent-lines) inset,
-        0 0 0 20px var(--color-accent-lines) inset,
-        0 0 0 1px var(--color-accent-lines) inset,
-        0 0 0 1px var(--color-accent-lines) inset
+    background-color: var(--color-fg-muted);
+    transition: all .2s;
 }
 .app-body .react-toggle-thumb {
     border: 0;
+    background-color: #ffffff;
 }
 .app-body .react-toggle.react-toggle--checked .react-toggle-track,
 .app-body .react-toggle.react-toggle--checked:is(:hover,:focus-within):not(.react-toggle--disabled) .react-toggle-track,
