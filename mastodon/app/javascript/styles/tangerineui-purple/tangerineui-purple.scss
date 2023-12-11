@@ -4486,15 +4486,21 @@ a:is(.active,
 }
 .app-body .announcements__item__unread {
     color: var(--color-accent);
+    background-color: var(--color-accent);
 }
 .app-body .announcements__pagination,
 .app-body .announcements__pagination .icon-button {
     color: var(--color-content-fg);
 }
-.app-body .announcements__mastodon {
-    border-radius: 0 0 0 8px;
-}
+.app-body .announcements__pagination > * {
+    vertical-align: middle;
+} 
 .app-body .reactions-bar__item {
+    background-color: var(--color-accent-bg);
+    border-radius: 8px;
+    padding: 2px 8px;
+}
+.app-body .reactions-bar__item:is(:active, :hover, :focus) {
     background-color: var(--color-content-bg);
 }
 .app-body .reactions-bar__item.active {
@@ -4502,6 +4508,9 @@ a:is(.active,
 }
 .app-body .reactions-bar__item__count,
 .app-body .reactions-bar__item__count .animated-number {
+    color: var(--color-accent);
+}
+.app-body .reactions-bar__item:is(:active, :hover, :focus) .reactions-bar__item__count .animated-number {
     color: var(--color-content-fg);
 }
 .app-body .reactions-bar__item.active .reactions-bar__item__count .animated-number {
