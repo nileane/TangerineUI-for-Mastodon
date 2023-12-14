@@ -461,7 +461,7 @@ body.app-body  {
     margin: 0 4px -2px 0;
 }
 .app-body .media-modal__overlay .icon-star {
-    background-image: var(--icon-star);
+    background-image: var(--icon-star-accent);
 }
 /* Boost */
 .app-body .icon-retweet {
@@ -496,7 +496,7 @@ body.app-body  {
     vertical-align: middle;
 }
 .app-body .media-modal__overlay .icon-retweet {
-    background-image: var(--icon-boost);
+    background-image: var(--icon-boost-accent);
 }
 /* Reply */
 .app-body .icon-reply,
@@ -507,7 +507,7 @@ body.app-body  {
     background-image: var(--icon-reply-accent);
 }
 .app-body .media-modal__overlay :is(.icon-reply, .icon-reply-all) {
-    background-image: var(--icon-reply);
+    background-image: var(--icon-reply-accent);
 }
 /* Ellipsis */
 .app-body :is(.icon-ellipsis-h, .icon-ellipsis-v) {
@@ -1290,7 +1290,7 @@ body.app-body  {
     margin-bottom: -10px;
     z-index: 2;
     border-radius: 50%;
-    box-shadow: 0 0 0 7px var(--color-content-bg);
+    box-shadow: 0 0 0 9px var(--color-content-bg);
     transition: box-shadow .3s;
 }
 .app-body .reply-indicator__content,
@@ -1439,11 +1439,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         background: var(--color-content-bg-focus);
     }
     .app-body .status__wrapper:has(.status__content:hover) .status__avatar {
-        box-shadow: 0 0 0 7px var(--color-content-bg-focus);
+        box-shadow: 0 0 0 9px var(--color-content-bg-focus);
     }
 }
 .app-body :is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus .status__avatar {
-    box-shadow: 0 0 0 7px var(--color-content-bg-focus);
+    box-shadow: 0 0 0 9px var(--color-content-bg-focus);
 }
 
 /* 👁️ Post detailed view */
@@ -1527,13 +1527,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin-right: 2px;
 }
 .app-body
-    :is(.status__action-bar, .detailed-status__action-bar)
+    :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     .active
     .icon-retweet + .icon-button__counter > .animated-number {
     color: #D3487F;
 }
 .app-body
-    :is(.status__action-bar, .detailed-status__action-bar)
+    :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     .active
     .icon-star + .icon-button__counter
     > .animated-number {
@@ -1611,7 +1611,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     gap: 8px;
 }
 .app-body
-    :is(.status__action-bar, .detailed-status__action-bar)
+    :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     :is(button, .status__action-bar__dropdown) {
     transition: all .3s;
 }
@@ -1623,7 +1623,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     pointer-events: none;
 }
 .app-body
-    :is(.status__action-bar, .detailed-status__action-bar)
+    :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     .icon-button:is(
         :active,
         .active:active,
@@ -1632,12 +1632,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     ) {
     background-color: transparent;
 }
-.app-body .icon-button.star-icon.deactivate>.icon-star,
-.app-body .icon-button.star-icon.activate>.icon-star { /* Disable default star spinning animation */
+.app-body .icon-button.star-icon.deactivate > .icon-star,
+.app-body .icon-button.star-icon.activate > .icon-star { /* Disable default star spinning animation */
     animation: none;
 }
-.app-body .status__action-bar .icon-button.star-icon.active>.icon-star,
-.app-body .detailed-status__action-bar .icon-button.star-icon.active>.icon-star {
+.app-body
+    :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
+    .icon-button.star-icon.active
+    > .icon-star {
     animation: bounce .4s ease-out !important;
 }
 @keyframes bounce {
@@ -1657,11 +1659,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status__action-bar .icon-button.reblogPrivate>.icon-retweet {
     opacity: 1;
 }
-.app-body .status__action-bar .icon-button.active>.icon-retweet {
+.app-body
+    :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
+    .icon-button.active>.icon-retweet {
     animation: launch 1.2s ease-in !important;
-}
-.app-body .detailed-status__action-bar .icon-button.active>.icon-retweet {
-    animation: launch-detailed 1.2s ease-out !important;
 }
 @keyframes launch {
     0% {
@@ -1678,32 +1679,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     80% {
         transform: translate(200%, -150%);
-        opacity: 0;
-    }
-    85% {
-        transform: translate(-20%, 20%);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0);
-        opacity: 1;
-    }
-}
-@keyframes launch-detailed {
-    0% {
-        transform: translate(0);
-        opacity: 0;
-    }
-    5% {
-        transform: translate(0);
-        opacity: 1;
-    }
-    50% {
-        transform: translate(150%, -150%);
-        opacity: 0;
-    }
-    80% {
-        transform: translate(150%, -150%);
         opacity: 0;
     }
     85% {
@@ -1783,10 +1758,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transition: all .3s;
     border-radius: 8px;
 }
-.app-body a.status-card:hover,
-.app-body a.status-card.compact:hover {
+.app-body .status-card:hover,
+.app-body .status-card.compact:hover {
     background-color: var(--color-content-bg-focus);
     border-color: var(--color-lines);
+}
+.app-body .status-card:active,
+.app-body .status-card.compact:active {
+    transform: scale(.98);
 }
 .app-body .status-card__image {
     background: var(--color-content-secondary-bg);
@@ -1903,11 +1882,22 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .media-gallery,
 .app-body .video-player {
     border: 1px solid var(--color-lines);
+    transition: transform .3s;
+}
+.app-body .media-gallery__item {
+    border-radius: 4px;
 }
 
-.app-body div:not(.detailed-status) > .media-gallery:has(.media-gallery__item.standalone) {
+.app-body div:not(.detailed-status) > .media-gallery:has(.media-gallery__item.standalone),
+.app-body .status > *:not(.status__info, .status__content, .status__action-bar) {
     max-height: 450px;
     width: auto;
+}
+.app-body .media-gallery__item-thumbnail {
+    cursor: pointer;
+}
+.app-body .media-gallery:active {
+    transform: scale(.98);
 }
 
 /* 📊 Polls */
@@ -2503,7 +2493,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .navigation-panel__legal {
         order: 14;
     }
-    .app-body .flex-spacer {
+    .app-body *:not(.compose-panel) > .flex-spacer {
         order: 15;
     }
     .app-body .getting-started__trends {
@@ -2580,10 +2570,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-weight: 500;
     font-size: 18px;
     overflow: visible;
+    transform-origin: 60px center;
 }
 .app-body .column-link--transparent:is(.active, .active:hover) {
     color: var(--color-content-fg);
-    font-weight: bold;
 }
 .app-body .column-link--transparent:hover {
     border-radius: 8px;
@@ -2594,7 +2584,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 @media screen and (min-width:1175px) {
     .app-body .column-link:not(.column-link--logo) {
-        transition: all .2s;
+        transition: all .3s;
     }
     .app-body .column-link:not(.column-link--logo)[href="/settings/preferences"] {
         padding-bottom: 13px;
@@ -2616,6 +2606,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     .app-body .column-link--transparent:is(.active, .active:hover) span::before {
         background-color: var(--color-content-secondary-bg);
+    }
+    .app-body .column-link--transparent:active {
+        transform: scale(.95);
     }
 }
 @media (prefers-color-scheme: dark) {
@@ -4152,8 +4145,11 @@ a:is(.active,
 
 
 /* Media modals */
+.app-body .modal-root__overlay {
+    background-color: transparent !important;
+}
 .app-body .modal-root__modal.media-modal {
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .9);
 }
 .app-body .media-modal__overlay .picture-in-picture__footer {
     background-color: transparent;
@@ -4162,12 +4158,40 @@ a:is(.active,
 .app-body .media-modal__overlay .picture-in-picture__footer .icon-button {
     color: var(--color-content-fg);
 }
+.app-body .media-modal__overlay .picture-in-picture__footer .icon-button > svg {
+    width: 25px;
+    height: 25px;
+}
+.app-body .media-modal__overlay .picture-in-picture__footer .icon-button:is(:active, :hover, :focus) {
+    background-color: transparent !important;
+}
+.app-body .picture-in-picture__footer .animated-number {
+    color: var(--color-accent);
+}
 .app-body .media-modal__page-dot {
     background-color: var(--color-content-fg);
 }
 @media (prefers-color-scheme: dark) {
     .app-body .modal-root__modal.media-modal {
-        background-color: rgba(0, 0, 0, .6);
+        background-color: rgba(3, 3, 3, .8);
+    }
+}
+.app-body .media-modal__overlay .icon-external-link path {
+    fill: var(--color-accent);
+}
+
+.app-body .modal-root > div {
+    animation: slowin .3s 1;
+}
+@keyframes slowin {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -4212,6 +4236,18 @@ a:is(.active,
 .app-body .picture-in-picture {
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
     border-radius: 8px;
+    border: 1px solid var(--color-lines);
+}
+.app-body .picture-in-picture__header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.app-body .picture-in-picture__footer {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.app-body .picture-in-picture .video-player {
+    border: 0;
 }
 .app-body .picture-in-picture__footer,
 .app-body .picture-in-picture__header {
@@ -4219,6 +4255,13 @@ a:is(.active,
 }
 .app-body .picture-in-picture__header .display-name span {
     color: var(--color-content-fg-muted);
+}
+
+.app-body .picture-in-picture-placeholder {
+    border-radius: 8px;
+    background-color: var(--color-content-secondary-bg);
+    border-color: var(--color-lines);
+    color: var(--color-accent);
 }
 
 /* ⏯️ Video controls */
