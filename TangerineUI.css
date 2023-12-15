@@ -326,6 +326,7 @@ body.app-body  {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     border: 0;
+    padding-bottom: 1px;
 }
 .app-body .dismissable-banner + .scrollable {
     border-top-left-radius: 0;
@@ -2825,6 +2826,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account__header__bar {
     border: 0;
 }
+.app-body .account__header__bar .avatar {
+    transition: transform .3s;
+}
+.app-body .account__header__bar .avatar:active {
+    transform: scale(.92);
+}
 .app-body .account__header__bar .avatar .account__avatar {
     border-radius: 50%;
     border-width: 5px;
@@ -4358,6 +4365,10 @@ a:is(.active,
 .app-body .button:is(.button-secondary, .button-tertiary) {
     padding: 10px 18px;
 }
+.app-body .sign-in-banner .button:active,
+.app-body .button:is(.button-secondary, .button-tertiary):active {
+    transform: scale(.95);
+}
 @media screen and (max-width:1174px) {
     .app-body .button.button-tertiary {
         padding: 7px 18px;
@@ -4621,6 +4632,7 @@ a:is(.active,
     border: 1px solid var(--color-lines);
     display: flex;
     flex-flow: column;
+    padding-bottom: 20px;
 }
 @media screen and (max-width:889px) {
     .app-body .scrollable.about {
@@ -4650,8 +4662,6 @@ a:is(.active,
 .app-body .about__footer {
     order: 7;
 }
-.app-body .about__header h1,
-.app-body .about__header p,
 .app-body #mastodon > div > div > div.columns-area__panels > div.columns-area__panels__main > div.columns-area.columns-area--mobile > div > div > div.about__section.active:nth-of-type(3) > div.about__section__title {
     display: none;
 }
@@ -4669,8 +4679,20 @@ a:is(.active,
 .app-body .about__meta {
     margin-bottom: 10px;
 }
-.app-body .about__header h1 {
-    margin-bottom: 0;
+.app-body .about__header > h1 {
+    color: var(--color-content-fg);
+    margin: 30px 0 0 20px;
+    text-align: left;
+    font-variant: small-caps;
+    font-size: 20px;
+}
+.app-body .about__header > h1 + p {
+    color: var(--color-content-fg);
+    opacity: .8;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
 }
 @media screen and (min-width:890px) {
     .app-body .scrollable.about {
@@ -4756,10 +4778,13 @@ a:is(.active,
 .app-body .about__section__body .prose a:hover,
 .app-body .prose a strong {
     color: var(--color-accent);
-    text-decoration: none;
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-accent-bg);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
 }
 .app-body .about__section__body .prose a:hover {
-    text-decoration: underline;
+    text-decoration-color: var(--color-accent);
 }
 .app-body .about__section__body .prose small.lang_label {
     margin-left: -2em;
