@@ -4035,6 +4035,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .interaction-modal {
     background-color: var(--color-content-bg);
+    box-shadow:
+        0 20px 25px -5px rgba(0, 0, 0, .25),
+        0 8px 10px -6px rgba(0, 0, 0, .25);
 }
 .app-body .interaction-modal,
 .app-body .interaction-modal__lead h3 {
@@ -4088,14 +4091,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding: 8px 18px;
 }
 .app-body .modal-root__overlay {
-    background-color: hsla(0, 0%, 23.5%, 0.7);
+    background-color: rgba(255, 255, 255, .9) !important;
 }
 @media (prefers-color-scheme: dark) {
     .app-body .modal-root__overlay {
-        background-color: hsla(0, 0%, 0%, 0.7);
+        background-color: rgba(3, 3, 3, .8) !important;
     }
 }
-.app-body .modal-root__modal,
+.app-body .interaction-modal,
 .app-body .boost-modal__container,
 .app-body .mute-modal__container,
 .app-body .block-modal__container {
@@ -4146,12 +4149,6 @@ a:is(.active,
 
 
 /* Media modals */
-.app-body .modal-root__overlay {
-    background-color: transparent !important;
-}
-.app-body .modal-root__modal.media-modal {
-    background-color: rgba(255, 255, 255, .9);
-}
 .app-body .media-modal__overlay .picture-in-picture__footer {
     background-color: transparent;
 }
@@ -4171,11 +4168,6 @@ a:is(.active,
 }
 .app-body .media-modal__page-dot {
     background-color: var(--color-content-fg);
-}
-@media (prefers-color-scheme: dark) {
-    .app-body .modal-root__modal.media-modal {
-        background-color: rgba(3, 3, 3, .8);
-    }
 }
 .app-body .media-modal__overlay .icon-external-link path {
     fill: var(--color-accent);
@@ -4799,6 +4791,12 @@ a:is(.active,
 }
 .about__domain-blocks__domain:nth-child(2n) {
     background-color: var(--color-content-secondary-bg);
+}
+
+@media screen and (min-width:1175px) {
+    .app-body .about :is(.link-footer, .about__footer) {
+        display: none;
+    }
 }
 
 
