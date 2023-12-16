@@ -974,7 +974,9 @@ body.app-body  {
 .app-body .navigation-bar__profile-edit {
     color: var(--color-accent);
 }
-
+.app-body .simple_form .recommended {
+    border-color: var(--color-lines);
+}
 .app-body .compose-form__sensitive-button .icon-button:hover {
     background-color: transparent;
 } 
@@ -4435,7 +4437,7 @@ a:is(.active,
     background: var(--color-content-secondary-bg);
 }
 .app-body .onboarding__profile .app-form__header-input img {
-    background: var(--color-secondary-bg);
+    background: var(--color-accent-bg);
 }
 .app-body .simple_form .input.with_block_label > label,
 .app-body .simple_form .input.with_block_label .hint,
@@ -4480,6 +4482,9 @@ a:is(.active,
 .app-body .column-title {
     margin: -20px -20px 30px;
     padding: 40px;
+}
+.app-body .column-title:not(:has(.onboarding__illustration)) {
+    background-color: var(--color-content-secondary-bg);
 }
 .app-body .column-title:has(+ .simple_form) {
     margin-bottom: 0;
@@ -4830,6 +4835,7 @@ a:is(.active,
 .app-body .column > .scrollable.privacy-policy {
     border: 1px solid var(--color-lines);
     background-color: var(--color-content-bg);
+    padding-bottom: 20px;
 }
 @media screen and (min-width:1175px) {
     .app-body:not(:has(#tabs-bar__portal > *)) .column > .scrollable.privacy-policy {
