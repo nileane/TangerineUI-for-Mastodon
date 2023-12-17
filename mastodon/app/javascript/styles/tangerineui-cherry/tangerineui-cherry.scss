@@ -1895,7 +1895,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body div:not(.detailed-status) > .media-gallery:has(.media-gallery__item.standalone),
-.app-body .status > *:not(.status__info, .status__content, .status__action-bar) {
+.app-body .status > *:not(.status__info, .status__content, .status__action-bar, .status__line) {
     max-height: 450px;
     width: auto;
 }
@@ -4523,6 +4523,7 @@ a:is(.active,
 .app-body .onboarding__steps__item,
 .app-body .onboarding__link {
     background-color: var(--color-content-secondary-bg);
+    margin-bottom: 8px;
     transition: all .2s;
 }
 .app-body .onboarding__steps__item:is(:active, :focus, :hover),
