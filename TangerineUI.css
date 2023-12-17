@@ -1894,7 +1894,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body div:not(.detailed-status) > .media-gallery:has(.media-gallery__item.standalone),
-.app-body .status > *:not(.status__info, .status__content, .status__action-bar) {
+.app-body .status > *:not(.status__info, .status__content, .status__action-bar, .status__line) {
     max-height: 450px;
     width: auto;
 }
