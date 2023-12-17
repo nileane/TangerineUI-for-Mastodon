@@ -4522,6 +4522,7 @@ a:is(.active,
 .app-body .onboarding__steps__item,
 .app-body .onboarding__link {
     background-color: var(--color-content-secondary-bg);
+    margin-bottom: 8px;
     transition: all .2s;
 }
 .app-body .onboarding__steps__item:is(:active, :focus, :hover),
