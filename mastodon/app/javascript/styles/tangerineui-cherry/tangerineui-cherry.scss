@@ -1943,8 +1943,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-radius: 8px;
     transition: all .2s;
 }
-.app-body .spoiler-button:hover + .media-gallery__item > .media-gallery__preview {
+.app-body .spoiler-button:hover ~ .media-gallery__item > .media-gallery__preview {
     outline: 1px solid rgba(0, 0, 0, 0.15);
+}
+@media (prefers-color-scheme: dark) {
+    .app-body .media-gallery__preview {
+        outline-color: rgba(255, 255, 255, .05);
+    }
+    .app-body .spoiler-button:hover ~ .media-gallery__item > .media-gallery__preview {
+        outline-color: rgba(255, 255, 255, .1);
+    }
 }
 .app-body .spoiler-button__overlay__label,
 .app-body .spoiler-button__overlay__label:is(:focus, :hover),
