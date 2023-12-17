@@ -1958,8 +1958,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .spoiler-button__overlay:is(:focus, :hover) .spoiler-button__overlay__label {
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    background-color: transparent;
+    background-color: var(--color-content-bg);
+    border: 1px solid rgba(0, 0, 0, .1);
     color: var(--color-content-fg);
+    border-radius: 8px;
 }
 .app-body .spoiler-button__overlay__label > span:first-child {
     font-weight: bold;
@@ -1968,7 +1970,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .media-gallery__gifv__label {
     background-color: rgba(0, 0, 0, .1);
     border-radius: 6px;
-} 
+}
+.app-body .spoiler-button:not(.spoiler-button--minified) ~ .media-gallery__item .media-gallery__gifv__label {
+    display: none;
+}
 
 
 /* 📊 Polls */
