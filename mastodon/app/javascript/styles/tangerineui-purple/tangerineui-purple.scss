@@ -1293,8 +1293,8 @@ body.app-body  {
     margin-bottom: -10px;
     z-index: 2;
     border-radius: 50%;
-    box-shadow: 0 0 0 6px var(--color-content-bg);
-    transition: box-shadow .3s;
+    outline: 6px solid var(--color-content-bg);
+    transition: outline .3s;
 }
 .app-body .reply-indicator__content,
 .app-body .status__content {
@@ -1442,11 +1442,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         background: var(--color-content-bg-focus);
     }
     .app-body .status__wrapper:has(.status__content:hover) .status__avatar {
-        box-shadow: 0 0 0 6px var(--color-content-bg-focus);
+        outline: 6px solid var(--color-content-bg-focus);
     }
 }
 .app-body :is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus .status__avatar {
-    box-shadow: 0 0 0 6px var(--color-content-bg-focus);
+    outline: 6px solid var(--color-content-bg-focus);
 }
 
 /* 👁️ Post detailed view */
