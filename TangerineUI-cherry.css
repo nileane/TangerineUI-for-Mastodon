@@ -1926,7 +1926,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: 1px solid rgba(0, 0, 0, .15);
     z-index: 1;
 }
-.app-body .media-gallery__gifv:hover::after {
+.app-body .media-gallery__gifv:is(:active, :hover)::after {
     display: none;
 }
 .app-body .picture-in-picture .video-player::after {
