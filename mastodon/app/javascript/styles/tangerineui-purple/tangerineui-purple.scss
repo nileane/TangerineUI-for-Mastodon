@@ -377,6 +377,7 @@ body.app-body  {
         .icon-check:is(.verified__mark, .verified-badge__mark),
         .follow-request-banner .button .icon-check,
         .account--panel button .icon-check,
+        .account__relationship .icon-check,
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
@@ -428,6 +429,7 @@ body.app-body  {
         .icon-check:is(.verified__mark, .verified-badge__mark),
         .follow-request-banner .button .icon-check,
         .account--panel button .icon-check,
+        .account__relationship .icon-check,
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
@@ -1753,6 +1755,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status__prepend .muted .emojione {
     opacity: 1;
 }
+.app-body :is(.status__prepend, .notification__message):has(.icon-retweet) {
+    color: #D3487F;
+}
 .app-body .status-card,
 .app-body .status-card.compact {
     background-color: var(--color-content-bg);
@@ -2182,7 +2187,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .column-header,
 .app-body .column-back-button {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .9);
     color: var(--color-content-fg);
     border-top: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
@@ -3533,6 +3538,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .notification__display-name {
     font-weight: bold;
+    color: var(--color-content-fg);
 }
 .app-body .notification__report {
     background-color: var(--color-content-bg);
@@ -3621,6 +3627,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .notification .account__relationship .icon-button {
     padding: 5px;
     border-radius: 8px;
+    transition: background-color .2s;
 }
 .app-body .notification .account__relationship .icon-button:first-child {
     background-color: rgba(121, 189, 154, 0.3);
