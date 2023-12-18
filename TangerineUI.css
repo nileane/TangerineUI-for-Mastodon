@@ -3627,6 +3627,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .notification .account__relationship .icon-button {
     padding: 5px;
     border-radius: 8px;
+    transition: background-color .2s;
 }
 .app-body .notification .account__relationship .icon-button:first-child {
     background-color: rgba(121, 189, 154, 0.3);
