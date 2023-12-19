@@ -1138,6 +1138,7 @@ body.app-body  {
 .app-body .poll__option input[type=text] {
     border-radius: 8px;
     border: 1px solid var(--color-lines);
+    background-color: var(--color-content-bg);
 }
 .app-body .poll__option input[type=text]:focus {
     border-color: var(--color-accent);
@@ -1145,6 +1146,9 @@ body.app-body  {
 .app-body .compose-form__poll__footer {
     margin-top: 5px;
     padding-inline-start: 25px;
+}
+.app-body .compose-form__poll__select__label {
+    color: var(--color-content-fg)
 }
 .app-body .compose-form__poll__select__value {
     color: var(--color-accent);
