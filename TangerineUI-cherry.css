@@ -331,6 +331,108 @@ body.app-body  {
     border-radius: 50%;
 }
 
+/* Keyframes */
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.6);
+    }
+    75% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes bounce-sml {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes bounce-vertical {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-40%);
+    }
+    75% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+@keyframes launch {
+    0% {
+        transform: translate(0);
+        opacity: 0;
+    }
+    5% {
+        transform: translate(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(200%, -150%);
+        opacity: 0;
+    }
+    80% {
+        transform: translate(200%, -150%);
+        opacity: 0;
+    }
+    85% {
+        transform: translate(-20%, 20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(-10%); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+@keyframes fadein-short {
+    from {
+        transform: translate(0, -10px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes slowin {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 /* Rordered layout */
 .app-body .columns-area__panels__pane--navigational {
     order: 1;
@@ -909,29 +1011,6 @@ body.app-body  {
 
 
 
-@keyframes fadein {
-    from {
-        opacity: 0;
-        transform: translateY(-10%); 
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0); 
-    }
-}
-@keyframes fadein-short {
-    from {
-        transform: translate(0, -10px);
-        opacity: 0;
-    }
-    to {
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-}
-
-
-
 /* 📝 Compose panel
    ---------------- */
 .app-body .compose-form {
@@ -1205,20 +1284,6 @@ body.app-body  {
 .app-body .compose-form:has(.autosuggest-textarea__textarea:placeholder-shown) .compose-form__submit .button {
     background-image: var(--icon-send);
     background-color: var(--color-accent-bg);
-}
-@keyframes bounce-sml {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    75% {
-        transform: scale(.9);
-    }
-    100% {
-        transform: scale(1);
-    }
 }
 .app-body .compose-form:not(:has(.autosuggest-textarea__textarea:placeholder-shown)) .compose-form__submit {
     animation: bounce-sml .3s ease-out 1;
@@ -2009,20 +2074,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     > .icon-star {
     animation: bounce .4s ease-out !important;
 }
-@keyframes bounce {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.6);
-    }
-    75% {
-        transform: scale(.8);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 .app-body .status__action-bar .icon-button.reblogPrivate>.icon-retweet {
     opacity: 1;
 }
@@ -2031,49 +2082,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .icon-button.active>.icon-retweet {
     animation: launch 1.2s ease-in !important;
 }
-@keyframes launch {
-    0% {
-        transform: translate(0);
-        opacity: 0;
-    }
-    5% {
-        transform: translate(0);
-        opacity: 1;
-    }
-    50% {
-        transform: translate(200%, -150%);
-        opacity: 0;
-    }
-    80% {
-        transform: translate(200%, -150%);
-        opacity: 0;
-    }
-    85% {
-        transform: translate(-20%, 20%);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0);
-        opacity: 1;
-    }
-}
 .app-body .status__action-bar .icon-button.bookmark-icon.active>.icon-bookmark,
 .app-body .detailed-status__action-bar .icon-button.bookmark-icon.active>.icon-bookmark {
     animation: bounce-vertical .4s ease-out !important;
-}
-@keyframes bounce-vertical {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-40%);
-    }
-    75% {
-        transform: translateY(20%);
-    }
-    100% {
-        transform: translate(0);
-    }
 }
 .app-body .status__action-bar .icon-button,
 .app-body .detailed-status__action-bar .icon-button {
@@ -3164,7 +3175,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         flex: 50vw;
     }
     .app-body .navigation-panel :is(.column-link, .navigation-panel__legal):active {
-        transform: scale(.9);
+        transform: scale(.8);
     }
     .app-body
         .navigation-panel:has(> *:nth-child(5):last-child)
@@ -3189,6 +3200,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         border-radius: 8px;
         border: 0;
         background-color: #ffffff;
+    }
+    .app-body .column-link--transparent.active {
+        animation: bounce-sml .3s 1;
     }
     .app-body .column-link__icon {
         margin: 0;
@@ -4680,17 +4694,7 @@ a:is(.active,
 .app-body .modal-root > div {
     animation: slowin .3s 1;
 }
-@keyframes slowin {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+
 
 
 /* Report modals */
