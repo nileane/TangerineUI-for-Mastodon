@@ -2068,6 +2068,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     vertical-align: middle;
     transition: border-color .2s;
 }
+.app-body .detailed-status :is(.reply-indicator__content, .status__content) .status__content__spoiler-link {
+    margin-left: -5px;
+}
 .app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link:hover {
     border-color: rgba(68, 74, 90, .6);
 }
