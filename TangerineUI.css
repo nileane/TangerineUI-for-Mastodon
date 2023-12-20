@@ -2358,8 +2358,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .media-gallery__preview {
         outline-color: rgba(255, 255, 255, .05);
     }
-    .app-body .spoiler-button:hover ~ .media-gallery__item > .media-gallery__preview {
-        outline-color: rgba(255, 255, 255, .1);
+    .app-body .spoiler-button:hover ~ .media-gallery__item > .media-gallery__preview,
+    .app-body .media-gallery__item-thumbnail img {
+        outline-color: rgba(255, 255, 255, .15);
+    }
+    .app-body .media-gallery__gifv::after,
+    .app-body .video-player::after {
+        border-color: rgba(255, 255, 255, .1);
     }
 }
 .app-body .spoiler-button__overlay__label,
