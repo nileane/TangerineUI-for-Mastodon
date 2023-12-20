@@ -1022,7 +1022,7 @@ body.app-body  {
     border-radius: 8px;
     border-color: var(--color-accent-bg);
     color: var(--color-accent);
-    padding: 4px 8px;
+    padding: 5px 8px;
     transition: border-color .2s;
 }
 .app-body .dropdown-button:hover {
@@ -2063,7 +2063,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     line-height: 16px;
     font-weight: 500;
     color: var(--color-content-fg);
-    padding: 4px 8px 4px 30px;
+    padding: 5px 8px 5px 30px;
     margin: 5px 0 5px -4px;
     vertical-align: middle;
     transition: border-color .2s;
