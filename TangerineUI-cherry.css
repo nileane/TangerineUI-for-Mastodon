@@ -15,6 +15,7 @@
 /* 🎨 Colors */
 :root {
     --color-bg: #ffffff;
+    --gradient-bg: linear-gradient(90deg, #fff, rgba(246, 221, 230, 0.3), #fff);
     --color-fg: #2a2d37;
     --color-fg-muted: #888494;
     --color-secondary-bg: #f2e4ea;
@@ -267,10 +268,28 @@
     }
 }
 
+
 body.app-body  {
     background-color: var(--color-bg);
+    background-image: var(--gradient-bg);
     color: var(--color-fg);
     font-family: ui-rounded, "mastodon-font-sans-serif", sans-serif;
+}
+
+.app-body .ui::before {
+    content: " ";
+    display: block;
+    height: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--color-bg);
+    background-image: var(--gradient-bg);
+}
+.app-body .columns-area__panels__pane {
+    z-index: 1;
 }
 
 /* 🖱️ Scrollbars */
@@ -1283,7 +1302,7 @@ body.app-body  {
 }
 .app-body .compose-form:has(.autosuggest-textarea__textarea:placeholder-shown) .compose-form__submit .button {
     background-image: var(--icon-send);
-    background-color: var(--color-accent-bg);
+    background-color: var(--color-content-secondary-bg);
 }
 .app-body .compose-form:not(:has(.autosuggest-textarea__textarea:placeholder-shown)) .compose-form__submit {
     animation: bounce-sml .3s ease-out 1;
@@ -1573,13 +1592,17 @@ body.app-body  {
     height: 40px;
     right: 60px;
 }
-.app-body .translate-button .link-button,
-.app-body .detailed-status .translate-button .link-button {
-    background-image: var(--icon-translate-active);
-}
 .app-body .status__content__translate-button:hover,
 .app-body .translate-button .link-button:hover {
     background-color: var(--color-accent-bg);
+}
+.app-body .translate-button .link-button,
+.app-body .detailed-status .translate-button .link-button,
+.app-body .translate-button .link-button:hover,
+.app-body .detailed-status .translate-button .link-button:hover {
+    background-image: var(--icon-translate-active);
+    background-color: var(--color-accent);
+    transform: scale(.8);
 }
 @media screen and (max-width:889px) {
     .app-body .status__content__translate-button,
@@ -2532,9 +2555,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .tabs-bar__wrapper {
     background-color: transparent;
     border-radius: 8px 8px 0 0;
-    box-shadow:
+    /* box-shadow:
         inset 0 10px var(--color-bg),
-        0 -30px var(--color-bg);
+        0 -30px var(--color-bg); */
 }
 .app-body .column-header__wrapper.active:before {
     background: none;
