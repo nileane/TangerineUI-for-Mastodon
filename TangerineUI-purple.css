@@ -40,6 +40,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-bg: #030303;
+        --gradient-bg: none;
         --color-fg: #d6d2e0;
         --color-fg-muted: #655e6e;
         --color-secondary-bg: #13111f;
