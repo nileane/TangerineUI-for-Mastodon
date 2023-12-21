@@ -1050,7 +1050,6 @@ body.app-body  {
 /* 📝 Compose panel
    ---------------- */
 .app-body .compose-form {
-    padding: 0 0 71px;
     gap: 0;
 }
 .app-body .navigation-bar {
