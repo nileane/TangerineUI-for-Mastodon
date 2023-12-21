@@ -263,7 +263,7 @@
 }
 @media (prefers-color-scheme: dark) {
     .layout-multiple-columns {
-        --color-bg: #030303;
+        --color-bg: #111111;
     }
 }
 
@@ -5579,4 +5579,8 @@ a:is(.active,
 }
 .app-body .switch-to-advanced .switch-to-advanced__toggle {
     color: var(--color-accent);
+}
+
+.layout-multiple-columns .link-footer {
+    margin-left: 0;
 }
