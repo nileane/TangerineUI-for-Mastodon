@@ -2628,6 +2628,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     height: 42px;
     margin: 4px 4px 4px 0;
 }
+.app-body .column-header__button:active {
+    transform: scale(.8);
+}
+.app-body .column-header__button.active {
+    animation: bounce-sml .3s 1;
+}
 .app-body .column-header__icon {
     transform: scale(1.1);
     margin-right: 4px;
@@ -2770,8 +2776,17 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-header__wrapper)::after { /* Backdrop blur has double the height only in cases where there's 2 top bars present */
         height: 100px;
     }
-    .app-body .column-header__collapsible:not(.collapsed) { /* Remove margin between column settings and column header */
+    .app-body .column-header__collapsible { /* Remove margin between column settings and column header */
         margin-top: -4px;
+    }
+    .app-body .column-header__collapsible:not(.collapsed) {
+        border-bottom: 1px solid var(--color-lines);
+    }
+}
+@media screen and (max-width:885px) {
+    .app-body .column-header__collapsible:not(.collapsed) {
+        border-left-color: var(--color-content-secondary-bg);
+        border-right-color: var(--color-content-secondary-bg);
     }
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
