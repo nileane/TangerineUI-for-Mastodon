@@ -454,10 +454,10 @@ body.app-body  {
         transform: rotate(0) scale(1);
     }
     60% {
-        transform: rotate(60deg) scale(1.2);
+        transform: rotate(80deg) scale(1.2);
     }
     100% {
-        transform: rotate(40deg) scale(1.1);
+        transform: rotate(60deg) scale(1.1);
     }
 }
 
@@ -826,7 +826,7 @@ body.app-body  {
     background-color: transparent;
 }
 .app-body .navigation-bar .icon-button.active {
-    transform: rotate(40deg) scale(1.1);
+    transform: rotate(60deg) scale(1.1);
     animation: rotate-bounce .4s 1;
 }
 /* Follow user icon */
