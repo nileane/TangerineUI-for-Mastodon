@@ -1276,8 +1276,25 @@ body.app-body  {
 
 .app-body .character-counter {
     color: var(--color-content-fg);
-    opacity: .6;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: normal;
+    transition:
+        opacity .3s,
+        margin-right .3s;
+    transform-origin: right center;
+    margin-right: -10px;
 }
+.app-body .compose-form:not(:has(.autosuggest-textarea__textarea:placeholder-shown)) .character-counter {
+    opacity: 1;
+    margin-right: 0;
+}
+.app-body .character-counter--over {
+    color: #df405a;
+    font-weight: 500;
+    animation: bounce .3s 1;
+}
+
 .compose-form__footer {
     gap: 6px;
 }
@@ -1335,6 +1352,7 @@ body.app-body  {
     border-radius: 8px;
     border: 1px solid var(--color-lines);
     background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
     transition: all .2s;
 }
 .app-body .poll__option input[type=text]:focus {
