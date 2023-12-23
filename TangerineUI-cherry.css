@@ -15,7 +15,7 @@
 /* 🎨 Colors */
 :root {
     --color-bg: #ffffff;
-    --gradient-bg: linear-gradient(90deg, #fff, rgba(246, 221, 230, 0.1), #fff);
+    --gradient-bg: linear-gradient(90deg, #fff, rgba(246, 221, 230, 0.2), #fff);
     --color-fg: #2a2d37;
     --color-fg-muted: #888494;
     --color-secondary-bg: #f2e4ea;
