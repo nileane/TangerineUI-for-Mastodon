@@ -15,7 +15,7 @@
 /* 🎨 Colors */
 :root {
     --color-bg: #ffffff;
-    --gradient-bg: linear-gradient(90deg, #fff, rgba(225, 221, 246, 0.2), #fff);
+    --gradient-bg: linear-gradient(90deg, var(--color-bg), rgba(225, 221, 246, 0.2), var(--color-bg));
     --color-fg: #2a2d37;
     --color-fg-muted: #888494;
     --color-secondary-bg: #e8e4f2;
@@ -40,7 +40,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-bg: #030303;
-        --gradient-bg: none;
+        --gradient-bg: linear-gradient(90deg, var(--color-bg), rgba(78, 51, 230, 0.05), var(--color-bg));
         --color-fg: #d6d2e0;
         --color-fg-muted: #655e6e;
         --color-secondary-bg: #13111f;
