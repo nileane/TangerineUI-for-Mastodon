@@ -3724,6 +3724,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-accent-bg);
     color: var(--color-content-fg);
     border: 1px solid var(--color-accent-lines);
+    font-weight: 500;
     transition:
         border-color .2s,
         background-color .2s;
