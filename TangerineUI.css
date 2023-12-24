@@ -2329,26 +2329,19 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body :is(.reply-indicator__content, .status__content):not(:has(> .status__content__text--visible)):has(> p:first-child .status__content__spoiler-link) + .media-gallery {
     margin-top: 5px;
 }
-@keyframes scroll {
-    from {
-        background-position-x: 0;
-    }
-    to {
-        background-position-x: 500%;
-    }
-}
 .app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link {
     background-color: transparent;
     background-image: var(--squigly);
-    background-position: center 35px;
+    background-position: 0 37px;
     background-repeat: repeat-x;
     width: 100%;
-    margin: -20px 0 0;
-    padding: 25px 0 5px;
+    margin: -22px 0 0;
+    padding: 27px 0 5px;
     text-align: end;
+    transition: background-position 1s;
 }
 .app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link:hover {
-    animation: scroll linear 50s infinite;
+    background-position-x: 10%;
 }
 .app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link span {
     background-color: var(--color-content-bg);
