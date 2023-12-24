@@ -1940,6 +1940,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .status__wrapper:has(.status__content:hover) .status__avatar {
         outline: 6px solid var(--color-content-bg-focus);
     }
+    .app-body .status__wrapper:has(.status__content:hover) .status__content__spoiler-link span {
+        background-color: var(--color-content-bg-focus);
+        outline-color: var(--color-content-bg-focus);
+    }
 }
 .app-body :is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus .status__avatar {
     outline: 6px solid var(--color-content-bg-focus);
@@ -2368,7 +2372,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transition:
         border-color .3s,
         outline-color .3s,
-        transform .3s;
+        transform .3s,
+        background-color .3s;
 }
 .app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link:hover span {
     border-color: rgba(68, 74, 90, .6);
