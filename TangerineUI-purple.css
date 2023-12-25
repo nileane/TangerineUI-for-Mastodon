@@ -5338,6 +5338,7 @@ a:is(.active,
     display: flex;
     flex-flow: column;
     padding-bottom: 20px;
+    z-index: 1;
 }
 @media screen and (max-width:889px) {
     .app-body .scrollable.about {
@@ -5539,6 +5540,7 @@ a:is(.active,
     border: 1px solid var(--color-lines);
     background-color: var(--color-content-bg);
     padding-bottom: 20px;
+    z-index: 1;
 }
 @media screen and (min-width:1175px) {
     .app-body:not(:has(#tabs-bar__portal > *)) .column > .scrollable.privacy-policy {
