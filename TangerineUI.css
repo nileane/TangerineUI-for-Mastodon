@@ -422,11 +422,11 @@ body.app-body  {
         opacity: 1;
     }
     50% {
-        transform: translate(200%, -150%);
+        transform: translate(200%, -200%);
         opacity: 0;
     }
     80% {
-        transform: translate(200%, -150%);
+        transform: translate(200%, -200%);
         opacity: 0;
     }
     85% {
@@ -2173,7 +2173,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body
     :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     .icon-button.active>.icon-retweet {
-    animation: launch 1.2s ease-in !important;
+    animation: launch 1.2s ease-in 1 !important;
 }
 .app-body .status__action-bar .icon-button.bookmark-icon.active>.icon-bookmark,
 .app-body .detailed-status__action-bar .icon-button.bookmark-icon.active>.icon-bookmark {
