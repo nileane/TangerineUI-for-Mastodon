@@ -36,6 +36,13 @@
     --color-accent-fg: #ffffff;
 
     --color-lines: #e1dde4;
+
+    --color-confirm: #79bd9a;
+    --color-confirm-bg: rgba(121, 189, 154, 0.3);
+    --color-confirm-fg: #4E8A6B;
+    
+    --color-reject: #df405a;
+    --color-reject-bg: rgba(223, 64, 90, 0.3);
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -168,6 +175,7 @@
     --icon-check-radio-inv: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2ZmZmZmZiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xNzYuNDksOTUuNTFhMTIsMTIsMCwwLDEsMCwxN2wtNTYsNTZhMTIsMTIsMCwwLDEtMTcsMGwtMjQtMjRhMTIsMTIsMCwxLDEsMTctMTdMMTEyLDE0M2w0Ny41MS00Ny41MkExMiwxMiwwLDAsMSwxNzYuNDksOTUuNTFaTTIzNiwxMjhBMTA4LDEwOCwwLDEsMSwxMjgsMjAsMTA4LjEyLDEwOC4xMiwwLDAsMSwyMzYsMTI4Wm0tMjQsMGE4NCw4NCwwLDEsMC04NCw4NEE4NC4wOSw4NC4wOSwwLDAsMCwyMTIsMTI4WiI+PC9wYXRoPjwvc3ZnPg==");
     --icon-check-box: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2Y3NjkwMiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik03OS41MSwxNDQuNDlhMTIsMTIsMCwxLDEsMTctMTdMMTEyLDE0M2w0Ny41MS00Ny41MmExMiwxMiwwLDAsMSwxNywxN2wtNTYsNTZhMTIsMTIsMCwwLDEtMTcsMFpNMjI4LDQ4VjIwOGEyMCwyMCwwLDAsMS0yMCwyMEg0OGEyMCwyMCwwLDAsMS0yMC0yMFY0OEEyMCwyMCwwLDAsMSw0OCwyOEgyMDhBMjAsMjAsMCwwLDEsMjI4LDQ4Wm0tMjQsNEg1MlYyMDRIMjA0WiI+PC9wYXRoPjwvc3ZnPg==");
     --icon-check-box-inv: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2ZmZmZmZiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik03OS41MSwxNDQuNDlhMTIsMTIsMCwxLDEsMTctMTdMMTEyLDE0M2w0Ny41MS00Ny41MmExMiwxMiwwLDAsMSwxNywxN2wtNTYsNTZhMTIsMTIsMCwwLDEtMTcsMFpNMjI4LDQ4VjIwOGEyMCwyMCwwLDAsMS0yMCwyMEg0OGEyMCwyMCwwLDAsMS0yMC0yMFY0OEEyMCwyMCwwLDAsMSw0OCwyOEgyMDhBMjAsMjAsMCwwLDEsMjI4LDQ4Wm0tMjQsNEg1MlYyMDRIMjA0WiI+PC9wYXRoPjwvc3ZnPg==");
+    --icon-trophy: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzRlOGE2YiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMDAsNTZ2NTUuMWMwLDM5LjctMzEuNzUsNzIuNi03MS40NSw3Mi45QTcyLDcyLDAsMCwxLDU2LDExMlY1NmE4LDgsMCwwLDEsOC04SDE5MkE4LDgsMCwwLDEsMjAwLDU2WiIgb3BhY2l0eT0iMC4yIj48L3BhdGg+PHBhdGggZD0iTTIzMiw2NEgyMDhWNTZhMTYsMTYsMCwwLDAtMTYtMTZINjRBMTYsMTYsMCwwLDAsNDgsNTZ2OEgyNEExNiwxNiwwLDAsMCw4LDgwVjk2YTQwLDQwLDAsMCwwLDQwLDQwaDMuNjVBODAuMTMsODAuMTMsMCwwLDAsMTIwLDE5MS42MVYyMTZIOTZhOCw4LDAsMCwwLDAsMTZoNjRhOCw4LDAsMCwwLDAtMTZIMTM2VjE5MS41OGMzMS45NC0zLjIzLDU4LjQ0LTI1LjY0LDY4LjA4LTU1LjU4SDIwOGE0MCw0MCwwLDAsMCw0MC00MFY4MEExNiwxNiwwLDAsMCwyMzIsNjRaTTQ4LDEyMEEyNCwyNCwwLDAsMSwyNCw5NlY4MEg0OHYzMnEwLDQsLjM5LDhabTE0NC04LjljMCwzNS41Mi0yOC40OSw2NC42NC02My41MSw2NC45SDEyOGE2NCw2NCwwLDAsMS02NC02NFY1NkgxOTJaTTIzMiw5NmEyNCwyNCwwLDAsMS0yNCwyNGgtLjVhODEuODEsODEuODEsMCwwLDAsLjUtOC45VjgwaDI0WiI+PC9wYXRoPjwvc3ZnPg==");
 
     --squigly: url("data:image/svg+xml,%3Csvg width='849' height='6' viewBox='0 0 849 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M530 1C534.427 1 534.427 5 538.854 5C543.282 5 543.281 1 547.708 1C552.136 1 552.136 5 556.562 5C560.989 5 560.989 1 565.417 1C569.844 1 569.844 5 574.271 5C578.698 5 578.698 1 583.125 1C587.552 1 587.552 5 591.979 5C596.407 5 596.406 1 600.833 1C605.261 1 605.261 5 609.687 5C614.114 5 614.114 1 618.542 1C622.969 1 622.969 5 627.396 5C631.823 5 631.823 1 636.25 1' stroke='%23444A5A' stroke-miterlimit='10'/%3E%3Cpath d='M636 1C640.427 1 640.427 5 644.854 5C649.282 5 649.281 1 653.708 1C658.136 1 658.136 5 662.562 5C666.989 5 666.989 1 671.417 1C675.844 1 675.844 5 680.271 5C684.698 5 684.698 1 689.125 1C693.552 1 693.552 5 697.979 5C702.407 5 702.406 1 706.833 1C711.261 1 711.261 5 715.687 5C720.114 5 720.114 1 724.542 1C728.969 1 728.969 5 733.396 5C737.823 5 737.823 1 742.25 1' stroke='%23444A5A' stroke-miterlimit='10'/%3E%3Cpath d='M742 1C746.427 1 746.427 5 750.854 5C755.282 5 755.281 1 759.708 1C764.136 1 764.136 5 768.562 5C772.989 5 772.989 1 777.417 1C781.844 1 781.844 5 786.271 5C790.698 5 790.698 1 795.125 1C799.552 1 799.552 5 803.979 5C808.407 5 808.406 1 812.833 1C817.261 1 817.261 5 821.687 5C826.114 5 826.114 1 830.542 1C834.969 1 834.969 5 839.396 5C843.823 5 843.823 1 848.25 1' stroke='%23444A5A' stroke-miterlimit='10'/%3E%3Cpath d='M424 1C428.427 1 428.427 5 432.854 5C437.282 5 437.281 1 441.708 1C446.136 1 446.136 5 450.562 5C454.989 5 454.989 1 459.417 1C463.844 1 463.844 5 468.271 5C472.698 5 472.698 1 477.125 1C481.552 1 481.552 5 485.979 5C490.407 5 490.406 1 494.833 1C499.261 1 499.261 5 503.687 5C508.114 5 508.114 1 512.542 1C516.969 1 516.969 5 521.396 5C525.823 5 525.823 1 530.25 1' stroke='%23444A5A' stroke-miterlimit='10'/%3E%3Cpath d='M318 1C322.427 1 322.427 5 326.854 5C331.282 5 331.281 1 335.708 1C340.136 1 340.136 5 344.562 5C348.989 5 348.989 1 353.417 1C357.844 1 357.844 5 362.271 5C366.698 5 366.698 1 371.125 1C375.552 1 375.552 5 379.979 5C384.407 5 384.406 1 388.833 1C393.261 1 393.261 5 397.687 5C402.114 5 402.114 1 406.542 1C410.969 1 410.969 5 415.396 5C419.823 5 419.823 1 424.25 1' stroke='%23444A5A' stroke-miterlimit='10'/%3E%3Cpath d='M212 1C216.427 1 216.427 5 220.854 5C225.282 5 225.281 1 229.708 1C234.136 1 234.136 5 238.562 5C242.989 5 242.989 1 247.417 1C251.844 1 251.844 5 256.271 5C260.698 5 260.698 1 265.125 1C269.552 1 269.552 5 273.979 5C278.407 5 278.406 1 282.833 1C287.261 1 287.261 5 291.687 5C296.114 5 296.114 1 300.542 1C304.969 1 304.969 5 309.396 5C313.823 5 313.823 1 318.25 1' stroke='%23444A5A' stroke-miterlimit='10'/%3E%3Cpath d='M106 1C110.427 1 110.427 5 114.854 5C119.282 5 119.281 1 123.708 1C128.136 1 128.136 5 132.562 5C136.989 5 136.989 1 141.417 1C145.844 1 145.844 5 150.271 5C154.698 5 154.698 1 159.125 1C163.552 1 163.552 5 167.979 5C172.407 5 172.406 1 176.833 1C181.261 1 181.261 5 185.687 5C190.114 5 190.114 1 194.542 1C198.969 1 198.969 5 203.396 5C207.823 5 207.823 1 212.25 1' stroke='%23444A5A' stroke-miterlimit='10'/%3E%3Cpath d='M0 1C4.42667 1 4.42667 5 8.85417 5C13.2817 5 13.2806 1 17.7083 1C22.136 1 22.1356 5 26.5625 5C30.9894 5 30.9892 1 35.4167 1C39.8442 1 39.844 5 44.2708 5C48.6977 5 48.6977 1 53.125 1C57.5523 1 57.5517 5 61.9792 5C66.4067 5 66.4056 1 70.8333 1C75.261 1 75.2606 5 79.6875 5C84.1144 5 84.1142 1 88.5417 1C92.9692 1 92.969 5 97.3958 5C101.823 5 101.823 1 106.25 1' stroke='%23444A5A' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
 }
@@ -1488,52 +1496,152 @@ body.app-body  {
 }
 
 /* Polls in posts */
-.app-body .poll__chart,
-.app-body .muted .poll__chart.leading {
-    background: var(--color-accent);
-    opacity: .4;
-    height: 12px;
-    border-radius: 10px;
-}
-.app-body .poll__chart.leading,
-.app-body .muted .poll__chart.leading {
-    opacity: 1;
-}
 .app-body .muted .poll {
     color: var(--color-content-fg-muted);
 }
 .app-body .poll__footer {
-    color: var(--color-content-fg);
+    color: var(--color-content-fg-muted);
+    text-align: end;
+    line-height: 30px;
+    min-height: 32px;
+    box-sizing: border-box;
+    padding: 0;
 }
 .app-body .poll__link {
     color: var(--color-accent);
     text-decoration: none;
+    padding: 5px 8px;
+    border: 1px solid var(--color-accent-bg);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: all .3s;
 }
-.app-body .poll__input {
-    border: 2px solid var(--color-content-fg);
-    background-color: var(--color-content-secondary-bg);
-    opacity: .5;
+.app-body .poll__link:hover {
+    border-color: var(--color-accent);
+}
+.app-body .poll__link:active {
+    background-color: var(--color-accent-bg);
 }
 .app-body .poll__option.editable .poll__input {
     display: none;
 }
-.app-body .poll__input:hover {
+.app-body .poll li {
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.app-body :is(.status, .detailed-status) .poll__option {
+    border: 1px solid var(--color-lines);
+    color: var(--color-content-fg);
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all .2s;
+    position: relative;
+    z-index: 1;
+}
+.app-body .poll__option.selectable {
+    cursor: pointer;
+}
+.app-body .poll__option.selectable:active {
+    transform: scale(.98);
+}
+.app-body .poll__option.selectable:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+.app-body .poll__option.selectable:has(.poll__input.active) {
     border-color: var(--color-accent);
     background-color: var(--color-accent-bg);
-    opacity: 1;
+    color: var(--color-accent);
 }
-.app-body .poll__input:is(.active, :active, :focus) {
-    background-color: var(--color-accent);
+.app-body .poll__option.selectable .poll__input:not(.active) {
+    border-width: 0;
+    outline-width: 0 !important;
+    background-color: var(--color-lines);
+    transition:
+        background .2s;
 }
-.app-body .poll__input.active {
-    border-color: var(--color-accent);
+.app-body .poll__option.selectable:hover .poll__input:not(.active) {
+    background-color: var(--color-accent-bg);
+}
+.app-body .poll__option.selectable .poll__input.active {
+    border-width: 3px;
+    border-color: var(--color-accent-bg);
+    outline-width: 1px !important;
 }
 .app-body .poll__footer .button.button-secondary {
     padding: 0 16px;
-}
-.app-body .poll__footer .button.button-secondary:hover {
+    margin: 0 0 0 10px;
+    height: 32px;
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
+    float: inline-end;
+}
+.app-body .poll__footer .button.button-secondary:hover {
+    background-color: var(--color-accent-focus);
+    color: var(--color-accent-fg);
+}
+.app-body .poll__footer .button.button-secondary:disabled {
+    opacity: 1;
+    background-color: var(--color-content-secondary-bg);
+    color: var(--color-accent);
+    display: none;
+}
+.app-body .poll__footer .button.button-secondary:not(:disabled) {
+    animation: bounce-sml .3s ease-out 1;
+}
+.app-body .poll__footer .button.button-secondary:active {
+    transform: scale(.95);
+}
+.app-body .poll__voted {
+    position: absolute;
+    top: 7px;
+    right: 3px;
+}
+.app-body .poll__option:has(+ .poll__chart.leading) .poll__voted {
+    right: 28px;
+    color: var(--color-confirm-fg);
+}
+.app-body .poll__chart {
+    background: var(--color-lines);
+    opacity: .5;
+    height: auto;
+    border-radius: 8px 0 0 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.app-body .poll__chart.leading,
+.app-body .muted .poll__chart.leading,
+.app-body .poll__option:has(.poll__voted) + .poll__chart.leading {
+    background: var(--color-confirm-bg);
+    opacity: 1;
+}
+.app-body .poll__option:has(.poll__voted) {
+    border-color: var(--color-accent);
+    background-color: transparent;
+    color: var(--color-accent);
+}
+.app-body .poll__option:has(.poll__voted) + .poll__chart {
+    background-color: var(--color-accent-bg);
+    opacity: 1;
+}
+.app-body .poll__option:has(+ .poll__chart.leading),
+.app-body .poll__option:has(.poll__voted):has(+ .poll__chart.leading) {
+    border-color: var(--color-confirm-bg);
+    color: var(--color-content-fg);
+    background-color: transparent;
+    background-size: 20px;
+    background-position: right 8px top 7px;
+    background-repeat: no-repeat;
+    background-image: var(--icon-trophy);
+}
+.app-body .poll__option:has(.poll__voted):has(+ .poll__chart.leading) {
+    border-color: var(--color-confirm);
 }
 
 /* Emoji picker */
@@ -3827,6 +3935,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-content-fg);
     border: 1px solid var(--color-accent-lines);
     font-weight: 500;
+    padding-right: 45px;
     transition:
         border-color .2s,
         background-color .2s;
@@ -4577,13 +4686,21 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .radio-button {
     color: var(--color-content-fg);
 }
-.app-body .radio-button__input {
-    border-width: 2px;
-    border-color: var(--color-content-fg-muted);
-    background-color: var(--color-content-bg);
+.app-body .radio-button__input,
+.app-body .poll__input {
+    border-width: 4px;
+    border-color: var(--color-content-bg);
+    background-color: var(--color-accent-bg);
+    outline: 1px solid var(--color-accent) !important;
+    outline-offset: -1px;
+    transition: transform .3s;
 }
-.app-body .radio-button__input.checked {
-    border-color: var(--color-accent);
+.app-body .radio-button:active .radio-button__input,
+.app-body .poll__option:active .poll__input {
+    transform: scale(.9);
+}
+.app-body .radio-button__input.checked,
+.app-body .poll__input.active {
     background-color: var(--color-accent);
 }
 
