@@ -480,6 +480,20 @@ body.app-body  {
         transform: rotate(60deg) scale(1.1);
     }
 }
+@keyframes bell-ring {
+    0% {
+        transform: rotate(0);
+    }
+    40% {
+        transform: rotate(15deg);
+    }
+    70% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
 
 
 /* Rordered layout */
@@ -4476,20 +4490,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .icon-button:is(:active, :focus, :hover) {
     background-color: var(--color-accent-bg);
     color: var(--color-accent);
-}
-@keyframes bell-ring {
-    0% {
-        transform: rotate(0);
-    }
-    40% {
-        transform: rotate(15deg);
-    }
-    70% {
-        transform: rotate(-15deg);
-    }
-    100% {
-        transform: rotate(0);
-    }
 }
 .app-body .account__header__tabs__buttons .icon-button.active .icon-bell {
     animation: bell-ring .4s ease-in 1;
