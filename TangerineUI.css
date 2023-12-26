@@ -59,7 +59,7 @@
         --color-content-fg-muted: #737373;
         --color-content-secondary-bg: var(--color-secondary-bg);
         --color-content-secondary-separator: rgba(77, 73, 70, 0.4);
-        --color-content-bg-focus: #111111;
+        --color-content-bg-focus: #0e0e0e;
 
         --color-accent: #e68933;
         --color-accent-focus: #ffa047;
