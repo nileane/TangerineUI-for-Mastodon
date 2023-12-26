@@ -3651,6 +3651,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     position: absolute;
     border-radius: 50px;
 }
+@media (prefers-color-scheme: dark) {
+    .app-body .account__header__bio .account__header__fields dl:not(:last-child):after {
+        background-color: var(--color-accent-bg);
+    }
+}
 .app-body .account__header__bio .account__header__fields dl:nth-child(2) { /* Add a corner radius to the second profile field because we're hiding the Joined field */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
