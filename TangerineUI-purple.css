@@ -5822,6 +5822,10 @@ a:is(.active,
     display: none;
 }
 
+.layout-multiple-columns .getting-started__trends {
+    margin-bottom: 10px;
+}
+
 .layout-multiple-columns .search-results__header {
     display: none;
 }
@@ -5930,4 +5934,7 @@ a:is(.active,
 
 .layout-multiple-columns .link-footer {
     margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
