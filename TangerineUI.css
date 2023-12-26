@@ -1616,6 +1616,11 @@ body.app-body  {
     bottom: 0;
     z-index: 0;
 }
+@media (prefers-color-scheme: dark) {
+    .app-body .poll__chart {
+        opacity: .65;
+    }
+}
 .app-body .poll__chart.leading,
 .app-body .muted .poll__chart.leading,
 .app-body .poll__option:has(.poll__voted) + .poll__chart.leading {
