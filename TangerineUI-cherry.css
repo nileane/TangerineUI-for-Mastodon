@@ -9,7 +9,7 @@
 /* 📄 Meta */
 :root {
     --version: "v2.0.0-prerelease";
-    --variant: "🍒 Cherry";
+    --variant: "🍒 Cherry";
 }
 
 /* 🎨 Colors */
@@ -5120,14 +5120,8 @@ a:is(.active,
 .app-body .link-footer a {
     color: var(--color-fg-muted);
 }
-.app-body .link-footer::before {
-    content: 'Tangerine UI for Mastodon:';
-    color: var(--color-fg-muted);
-    font-weight: 500;
-    order: 9;
-}
 .app-body .link-footer::after {
-    --version-f: var(--version) ' · ' var(--variant) ' variant';
+    --version-f: 'Tangerine UI for Mastodon: ' var(--version) ' · ' var(--variant) ' variant';
     content: var(--version-f);
     color: var(--color-fg-muted);
     order: 10;
@@ -5866,6 +5860,19 @@ a:is(.active,
 
 .layout-multiple-columns .compose-form {
     padding: 0;
+}
+
+.layout-multiple-columns .drawer__inner::after {
+    --version-f: 'Tangerine UI for Mastodon: ' var(--version) ' · ' var(--variant) ' variant';
+    content: var(--version-f);
+    color: var(--color-fg-muted);
+    padding: 12px;
+    position: absolute;
+    bottom: 0;
+}
+.layout-multiple-columns .link-footer::before,
+.layout-multiple-columns .link-footer::after {
+    display: none;
 }
 
 @media screen and (min-width:630px) and (max-width:1174px) {
