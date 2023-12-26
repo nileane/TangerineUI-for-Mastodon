@@ -2376,6 +2376,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     width: 32px;
     height: 32px;
 }
+.app-body .status-card__image:has(.icon-file-text:only-child),
+.app-body .status-card__description:empty  {
+    display: none;
+}
 .app-body .status-card__title,
 .app-body .status-card__description,
 .app-body .status-card__author,
@@ -2409,7 +2413,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .status-card:not(.expanded) .status-card__image {
         width: 80px;
     }
-    .app-body .status-card:not(.expanded) .status-card__content {
+    .app-body .status-card:not(.expanded,:has(.icon-file-text)) .status-card__content {
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -2428,7 +2432,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-multiple-columns .status-card:not(.expanded) .status-card__image {
     width: 80px;
 }
-.layout-multiple-columns .status-card:not(.expanded) .status-card__content {
+.layout-multiple-columns .status-card:not(.expanded,:has(.icon-file-text)) .status-card__content {
     padding-top: 0;
     padding-bottom: 0;
 }
