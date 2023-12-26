@@ -5864,6 +5864,10 @@ a:is(.active,
         margin-top: 0;
 }
 
+.layout-multiple-columns .compose-form {
+    padding: 0;
+}
+
 @media screen and (min-width:630px) and (max-width:1174px) {
     .layout-multiple-columns
         :is(
