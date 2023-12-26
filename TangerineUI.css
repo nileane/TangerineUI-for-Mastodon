@@ -15,7 +15,7 @@
 /* 🎨 Colors */
 :root {
     --color-bg: #ffffff;
-    --gradient-bg: linear-gradient(90deg, var(--color-bg), rgba(246, 229, 221, 0.2), var(--color-bg));
+    --gradient-bg: linear-gradient(90deg, var(--color-bg), var(--color-bg));
     --color-fg: #2a2d37;
     --color-fg-muted: #948c84;
     --color-secondary-bg: #f2eae4;
@@ -47,7 +47,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --color-bg: #030303;
-        --gradient-bg: linear-gradient(90deg, var(--color-bg), rgba(230, 138, 51, 0.05), var(--color-bg));
+        --gradient-bg: linear-gradient(90deg, var(--color-bg), var(--color-bg));
         --color-fg: #e0d6d1;
         --color-fg-muted: #6e635e;
         --color-secondary-bg: #1e1810;
@@ -285,7 +285,6 @@
 
 body.app-body  {
     background-color: var(--color-bg);
-    /* background-image: var(--gradient-bg); */
     color: var(--color-fg);
     font-family: ui-rounded, "mastodon-font-sans-serif", sans-serif;
 }
