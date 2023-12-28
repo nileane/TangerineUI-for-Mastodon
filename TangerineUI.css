@@ -498,25 +498,34 @@ body.app-body  {
 }
 .app-body .columns-area--mobile .column {
     flex: unset;
-    height: auto;
 }
 .app-body .columns-area--mobile .column:focus-within {
     overflow: visible;
 }
 .app-body .scrollable,
 .app-body .column > .scrollable {
-    max-height: max-content;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border: 0;
-    padding-bottom: 1px;
+    border-right: 1px solid var(--color-lines);
+    border-left: 1px solid var(--color-lines);
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 0;
 }
 .app-body .dismissable-banner + .scrollable {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+.app-body .columns-area--mobile {
+    padding: 0;
+}
 .app-body .columns-area__panels {
     gap: 10px;
+}
+@media screen and (max-width:889px) {
+    .app-body .scrollable,
+    .app-body .column > .scrollable {
+        border-right: 0;
+        border-left: 0;
+    }
 }
 @media screen and (min-width:1175px) {
     .app-body .columns-area__panels__main {
@@ -584,7 +593,7 @@ body.app-body  {
         .icon-eye
     )
     path {
-    display: none;
+        display: none;
 }
 
 .app-body
@@ -639,9 +648,9 @@ body.app-body  {
         .icon-eye-slash,
         .icon-eye
     ) {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
 }
 
 /* Bookmark */
@@ -693,9 +702,9 @@ body.app-body  {
         .disabled:hover
     )
     .icon-retweet {
-    background-image: var(--icon-boost-accent);
-    opacity: .2;
-    pointer-events: none;
+        background-image: var(--icon-boost-accent);
+        opacity: .2;
+        pointer-events: none;
 }
 .app-body .boost-modal__action-bar .icon-retweet {
     background-image: var(--icon-boost-accent);
@@ -936,7 +945,7 @@ body.app-body  {
         .account__relationship
     )
     .icon-times {
-    background-image: var(--icon-reject);
+        background-image: var(--icon-reject);
 }
 .app-body .account--panel .icon-times,
 .app-body .follow-request-banner .button:is(:active, :focus, :hover) .icon-times {
@@ -1082,7 +1091,6 @@ body.app-body  {
 .app-body .navigation-bar {
     border-radius: 8px 8px 0 0;
     padding: 23px 15px 22px 18px;
-    background-color: var(--color-content-secondary-bg);
     border-top: 1px solid var(--color-lines);
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
@@ -1132,11 +1140,11 @@ body.app-body  {
         .autosuggest-textarea__suggestions__item,
         .compose-form__modifiers
     ) {
-    background-color: var(--color-content-bg);
-    color: var(--color-content-fg);
-    border: 0;
-    border-top: 0;
-    border-radius: 0;
+        background-color: var(--color-content-bg);
+        color: var(--color-content-fg);
+        border: 0;
+        border-top: 0;
+        border-radius: 0;
 }
 .app-body .compose-form .autosuggest-textarea__textarea {
     padding-left: 20px;
@@ -1808,16 +1816,9 @@ body.app-body  {
 .app-body .detailed-status__wrapper {
     background-color: var(--color-content-bg);
     padding: 13px 12px;
-    border-left: 1px solid var(--color-lines);
-    border-right: 1px solid var(--color-lines);
     position: relative;
 }
 @media screen and (max-width:889px) {
-    .app-body .status__wrapper,
-    .app-body .detailed-status__wrapper {
-        border-left: 0;
-        border-right: 0;
-    }
     .app-body .status__wrapper {
         padding: 10px 8px;
     }
@@ -1835,24 +1836,6 @@ body.app-body  {
 }
 .app-body .dismissable-banner + .scrollable > div > article:first-child > div > .status__wrapper {
     border-top: 0;
-}
-@media screen and (min-width:890px) {
-    .app-body .scrollable > div:first-child > div:first-child > .status__wrapper,
-    .app-body .explore__search-results > div:first-child > .status__wrapper {
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-    .app-body .scrollable > div:last-child > div:last-child > .status__wrapper,
-    .app-body .scrollable > div:last-child > .status__wrapper,
-    .app-body .scrollable > div > article:last-child > div > .status__wrapper,
-    .app-body .search-results__section > div:last-child >.status__wrapper {
-        border-bottom-right-radius: 8px;
-        border-bottom-left-radius: 8px;
-    }
-    .app-body .dismissable-banner + .scrollable > div > article:first-child > div > .status__wrapper {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
 }
 .app-body .status__info {
     height: 22px;
@@ -1987,8 +1970,8 @@ body.app-body  {
         .status__content,
         .video-player
     ) {
-    margin-left: 0;
-    width: auto;
+        margin-left: 0;
+        width: auto;
 }
 .app-body .status__line--first {
     height: 100%;
@@ -2048,8 +2031,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body
     :is(.focusable, .status__wrapper.focusable):focus
     :is(.detailed-status, .detailed-status__action-bar) {
-    outline: 0;
-    background: var(--color-content-bg-focus);
+        outline: 0;
+        background: var(--color-content-bg-focus);
 }
 @media screen and (min-width:1175px) { /* Subtle hover effect when you hover over a post content in the timeline. Only on bigger screens. */
     .app-body .status__wrapper:has(.status__content:hover),
@@ -2074,8 +2057,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .scrollable > div:last-child .detailed-status__wrapper:last-child { /* Detailed post is last in column */
     border-bottom: 1px solid var(--color-lines);
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
 }
 .app-body .scrollable > div:only-child .detailed-status__wrapper:last-child { /* Detailed post is the only post in column */
     box-shadow: none;
@@ -2148,14 +2129,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     .active
     .icon-retweet + .icon-button__counter > .animated-number {
-    color: #D3487F;
+        color: #D3487F;
 }
 .app-body
     :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     .active
     .icon-star + .icon-button__counter
     > .animated-number {
-    color: #EBBB59;
+        color: #EBBB59;
 }
 .app-body .detailed-status__meta .animated-number {
     transform: translate(0, -1px);
@@ -2241,7 +2222,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body
     :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     :is(button, .status__action-bar__dropdown) {
-    transition: all .3s;
+        transition: all .3s;
 }
 .app-body .status__action-bar .icon-button:last-child {
     position: absolute;
@@ -2259,7 +2240,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         :focus,
         .active:focus
     ) {
-    background-color: transparent;
+        background-color: transparent;
 }
 
 .app-body .status__action-bar .icon-button:last-child:is(.active, .active:active, .active:focus),
@@ -2276,7 +2257,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     .icon-button.star-icon.active
     > .icon-star {
-    animation: bounce .4s ease-out !important;
+        animation: bounce .4s ease-out !important;
 }
 .app-body .status__action-bar .icon-button.reblogPrivate>.icon-retweet {
     opacity: 1;
@@ -2284,7 +2265,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body
     :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     .icon-button.active>.icon-retweet {
-    animation: launch 1.2s ease-in 1 !important;
+        animation: launch 1.2s ease-in 1 !important;
 }
 .app-body .status__action-bar .icon-button.bookmark-icon.active>.icon-bookmark,
 .app-body .detailed-status__action-bar .icon-button.bookmark-icon.active>.icon-bookmark {
@@ -2676,7 +2657,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .follow_requests-unlocked_explanation {
     background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
-    border: 1px solid var(--color-lines);
+    border-top: 1px solid var(--color-lines);
 }
 .app-body .follow_requests-unlocked_explanation a {
     color: var(--color-accent);
@@ -2704,22 +2685,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .conversation__content__relative-time {
     opacity: .7;
 }
-@media screen and (min-width:890px) {
-    .app-body .conversation {
-        border-left: 1px solid var(--color-lines);
-        border-right: 1px solid var(--color-lines);
-    }
-}
 .app-body .conversation__content {
     position: relative;
 }
 .app-body .conversation__content .status__action-bar button:last-child {
     bottom: 10px;
     right: 10px;
-}
-.app-body article:last-child .conversation {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 .app-body .account__avatar-composite {
     border-radius: 0;
@@ -2755,10 +2726,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
    ----------------- */
 .app-body .tabs-bar__wrapper {
     background-color: transparent;
-    border-radius: 8px 8px 0 0;
-    /* box-shadow:
-        inset 0 10px var(--color-bg),
-        0 -30px var(--color-bg); */
 }
 .app-body .column-header__wrapper.active:before {
     background: none;
@@ -2774,9 +2741,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .column-back-button {
     background-color: rgba(255, 255, 255, .9);
     color: var(--color-content-fg);
-    border-top: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
     border-left: 1px solid var(--color-lines);
+    border-top: 1px solid var(--color-lines);
     border-bottom: 0;
     border-radius: 8px 8px 0 0;
     overflow: hidden;
@@ -2996,12 +2963,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: 1px solid var(--color-accent-lines);
 }
 .app-body .account__header + .account__section-headline {
-    border-radius: 8px 8px 0 0;
-}
-.app-body .account__section-headline:has(+ .explore__suggestions) {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    margin-bottom: 10px;
+    border-left: 0;
+    border-right: 0;
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
     .app-body .explore__search-header + .account__section-headline {
@@ -3087,7 +3050,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body
         :is(.account__section-headline, .notification__filter-bar)
         :is(a, button).active {
-        background-color: var(--color-bg);
+            background-color: var(--color-bg);
     }
 }
 
@@ -3490,10 +3453,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 /* 👤 Account view
    --------------- */
 .app-body .account__header {
-    border-radius: 0 0 8px 8px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     background-color: var(--color-content-bg);
-    border: 1px solid var(--color-lines);
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
     .app-body .account__header {
@@ -3680,12 +3641,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* ✨ Explore tab
    -------------- */
-@media screen and (min-width:890px) {
-    .app-body .account__section-headline + .scrollable article:last-child .status__wrapper {
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-    }
-}
 
 /* #️⃣ Trending hashtags */
 .app-body .trends__item__sparkline path:last-child {
@@ -3698,22 +3653,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .explore__links {
     background-color: var(--color-content-bg);
     overflow: hidden;
-    margin-top: -1px;
-}
-.app-body .scrollable.explore__links {
-    border: 1px solid var(--color-lines);
-}
-@media screen and (max-width:889px) {
-    .app-body .scrollable.explore__links {
-        border-left: 0;
-        border-right: 0;
-    }
-}
-@media screen and (min-width:890px) and (max-width:1174px) {
-    .app-body .explore__links {
-        border-bottom-left-radius: 8px !important;
-        border-bottom-right-radius: 8px !important;
-    }
 }
 .layout-multiple-columns .explore__links.scrollable {
     background-color: var(--color-content-bg);
@@ -3779,10 +3718,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 @media screen and (min-width:890px) {
-    .app-body .hashtag-header {
-        border-left: 1px solid var(--color-lines);
-        border-right: 1px solid var(--color-lines);
-    }
     .app-body .hashtag-header .hashtag-header__header button {
         transform: translate(0, 8px);
     }
@@ -3791,10 +3726,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* Account recommendations (For You Tab + User directory */
 .app-body .scrollable .account-card {
-    margin: 0 0 10px;
+    margin: 0;
     background-color: var(--color-content-bg);
-    border-radius: 8px;
-    border: 1px solid var(--color-lines);
+    border-radius: 0;
+    border-bottom: 1px solid var(--color-lines);
 }
 @media screen and (max-width:889px) {
     .app-body .scrollable .account-card {
@@ -3803,10 +3738,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .account-card__header {
     padding: 0;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-radius: 0;
     height: 128px;
     overflow: hidden;
 }
@@ -3836,9 +3768,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .filter-form {
     background-color: var(--color-content-secondary-bg);
-    border-radius: 0 0 8px 8px;
-    margin-bottom: 10px;
-    border: 1px solid var(--color-lines);
+    border-top: 1px solid var(--color-lines);
 }
 .app-body .filter-form__column {
     padding: 10px 15px;
@@ -3939,6 +3869,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     z-index: 1;
 }
 .app-body .explore__search-results {
+    border-radius: 0;
     background-color: transparent;
     overflow: hidden;
 }
@@ -3952,8 +3883,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-bottom: 1px solid var(--color-lines);
 }
 .app-body .explore__search-results .trends__item {
-    border-left: 1px solid var(--color-lines);
-    border-right: 1px solid var(--color-lines);
     border-bottom: 2px solid var(--color-content-secondary-bg);
 }
 .app-body .explore__search-results article:first-child > .trends__item,
@@ -3972,8 +3901,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .search-results__section__header {
     background-color: var(--color-content-secondary-bg);
-    border-left: 1px solid var(--color-lines);
-    border-right: 1px solid var(--color-lines);
     border-bottom: 0;
     color: var(--color-content-fg);
 }
@@ -3981,10 +3908,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent);
 }
 @media screen and (min-width:890px) {
-    .app-body .explore__search-results
-    :is(article:last-child > .account,
+    .app-body
+    .explore__search-results
+    :is(
+        article:last-child > .account,
         article:last-child > .trends__item,
-        .load-more:last-child),
+        .load-more:last-child
+    ),
     .app-body .search-results__section:last-child > :is(.trends__item, .account):last-child {
         border-radius: 0 0 8px 8px;
     }
@@ -4082,8 +4012,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     line-height: 30px;
     top: -40px;
     left: -40px;
-    animation:
-        10s linear 0s makeawish;
+    animation: 10s linear 0s makeawish;
 }
 
 
@@ -4093,7 +4022,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-accent);
     box-shadow: 0 5px var(--color-content-bg);
     border-radius: 0;
-    border: 1px solid var(--color-lines);
+    border: 0;
+    border-bottom: 1px solid var(--color-lines);
     margin: 0;
 }
 .app-body .explore__links .dismissable-banner {
@@ -4156,10 +4086,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 /* 🔔 Notifications
    ---------------- */
 .app-body .status.muted
-:is(.status__content,
-    .status__content a,
-    .status__content p,
-    .status__display-name strong),
+    :is(
+        .status__content,
+        .status__content a,
+        .status__content p,
+        .status__display-name strong
+    ),
 .app-body .attachment-list__list a {
     color: var(--color-content-fg-muted);
 }
@@ -4194,16 +4126,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .notification__report__details {
     color: var(--color-content-fg);
 }
-@media screen and (min-width:889px) {
-    .app-body .notification__message {
-        border-left: 1px solid var(--color-lines);
-        border-right: 1px solid var(--color-lines);
-    }
-    .app-body .notification__report {
-        border-left: 1px solid var(--color-lines);
-        border-right: 1px solid var(--color-lines);
-    }
-}
 .app-body .notification__message .icon {
     color: var(--color-accent);
     width: 18px;
@@ -4227,7 +4149,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         .notification-status
     )
     .status__action-bar {
-    display: none;
+        display: none;
 }
 .app-body .account {
     background-color: var(--color-content-bg);
@@ -4252,10 +4174,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 } 
 
 @media screen and (min-width:890px) {
-    .app-body .account {
-        border-left: 1px solid var(--color-lines);
-        border-right: 1px solid var(--color-lines);
-    }
     .app-body .notification .account:has(.account__wrapper > .account__relationship > button:nth-child(2)) {
         padding-left: 32px;
         padding-right: 22px;
@@ -4277,19 +4195,19 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transition: background-color .2s;
 }
 .app-body .notification .account__relationship .icon-button:first-child {
-    background-color: rgba(121, 189, 154, 0.3);
+    background-color: var(--color-confirm-bg);
 }
 .app-body .notification .account__relationship .icon-button:first-child:is(:active, :focus, :hover) {
-    background-color: #79bd9a;
+    background-color: var(--color-confirm);
 }
 .app-body .notification .account__relationship .icon-button:first-child:is(:active, :focus, :hover) .icon-check {
     background-image: var(--icon-check-inv);
 }
 .app-body .notification .account__relationship .icon-button:last-child {
-    background-color: rgba(223, 64, 90, 0.3);
+    background-color: var(--color-reject-bg);
 }
 .app-body .notification .account__relationship .icon-button:last-child:is(:active, :focus, :hover) {
-    background-color: #df405a;
+    background-color: var(--color-reject);
 }
 .app-body .notification .account__relationship .icon-button:last-child:is(:active, :focus, :hover) .icon-times {
     background-image: var(--icon-reject-inv);
@@ -4429,14 +4347,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .account-authorize__wrapper {
     margin: 0;
-    border-left: 1px solid var(--color-lines);
-    border-right: 1px solid var(--color-lines);
     border-bottom: 1px solid var(--color-lines);
-}
-.app-body article:last-child > .account-authorize__wrapper,
-.app-body article:last-child > .account-authorize__wrapper .account--panel {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
 }
 .app-body .account-authorize {
     background-color: var(--color-content-bg);
@@ -4467,10 +4378,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-image: var(--icon-check-inv);
 }
 .app-body .account--panel__button:first-child .icon-button {
-    background-color: rgba(121, 189, 154, 0.3);
+    background-color: var(--color-confirm-bg);
 }
 .app-body .account--panel__button:first-child .icon-button:is(:hover, :active) {
-    background-color: #79bd9a;
+    background-color: var(--color-confirm);
 }
 .app-body .account--panel button .icon-times {
     background-image: var(--icon-reject);
@@ -4479,10 +4390,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-image: var(--icon-reject-inv);
 }
 .app-body .account--panel__button:nth-child(2) .icon-button {
-    background-color: rgba(223, 64, 90, 0.3);
+    background-color: var(--color-reject-bg);
 }
 .app-body .account--panel__button:nth-child(2) .icon-button:is(:hover, :active) {
-    background-color: #df405a;
+    background-color: var(--color-reject);
 }
 @media screen and (max-width:1174px) {
     .app-body #Follow-requests + .column-back-button--slim .column-back-button {
@@ -4492,12 +4403,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         width: auto;
     }
 }
-@media screen and (max-width:889px) {
-    .app-body .account-authorize__wrapper {
-        border-left: 0;
-        border-right: 0;
-    }
-} 
 
 
 
@@ -4900,8 +4805,8 @@ a:is(.active,
     :focus button,
     :hover,
     :hover button) {
-    background-color: var(--color-accent);
-    color: var(--color-accent-fg);
+        background-color: var(--color-accent);
+        color: var(--color-accent-fg);
 }
 
 
@@ -4913,16 +4818,17 @@ a:is(.active,
     :is(
         .media-modal__close,
         .media-modal__nav,
-        .media-modal__zoom-button) {
-            background-color: #1e1e1e;
-            color: #777777;
-            height: 44px;
-            width: 44px;
-            border-radius: 50%;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-            transition: .2s all;
+        .media-modal__zoom-button
+    ) {
+        background-color: #1e1e1e;
+        color: #777777;
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        transition: .2s all;
 
 }
 .app-body 
@@ -4931,8 +4837,8 @@ a:is(.active,
         .media-modal__nav,
         .media-modal__zoom-button
     ):is(:active, :focus, :hover) {
-            background-color: #343434;
-            color: #ffffff;
+        background-color: #343434;
+        color: #ffffff;
 }
 .app-body 
     :is(
@@ -4940,7 +4846,7 @@ a:is(.active,
         .media-modal__nav,
         .media-modal__zoom-button)
     svg {
-            transform: scale(1.3);
+        transform: scale(1.3);
 }
 .app-body .media-modal__close {
     top: 24px;
@@ -5268,7 +5174,7 @@ a:is(.active,
 }
 .app-body .column-title {
     margin: -20px -20px 30px;
-    padding: 40px;
+    padding: 50px 40px 40px;
 }
 .app-body .column-title:not(:has(.onboarding__illustration)) {
     background-color: var(--color-content-secondary-bg);
