@@ -1093,7 +1093,8 @@ body.app-body  {
 .app-body .navigation-bar {
     border-radius: 8px 8px 0 0;
     padding: 23px 15px 22px 18px;
-    background-color: var(--color-content-bg);
+    position: relative;
+    background-color: var(--color-content-secondary-bg);
     border-top: 1px solid var(--color-lines);
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
@@ -1216,6 +1217,7 @@ body.app-body  {
 }
 .app-body .reply-indicator__line:before {
     background-color: var(--color-accent);
+    z-index: 1;
     opacity: .6;
 }
 .app-body .reply-indicator + .navigation-bar {
@@ -2641,11 +2643,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent);
 }
 .app-body article + .timeline-hint:last-child {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
     border-bottom: 1px solid var(--color-lines);
-    border-left: 1px solid var(--color-lines);
-    border-right: 1px solid var(--color-lines);
 }
 
 
@@ -2816,6 +2814,37 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .column-back-button--slim-button {
         display: none;
     }
+}
+.app-body :is(.column-header__back-button, .column-back-button) {
+    gap: 5px;
+}
+.app-body .column-back-button__icon {
+    margin-inline-end: 0;
+}
+.app-body :is(.column-header__back-button, .column-back-button) span {
+    position: relative;
+    display: block;
+}
+.app-body :is(.column-header__back-button, .column-back-button):hover {
+    text-decoration: none;
+}
+.app-body :is(.column-header__back-button, .column-back-button) span::before {
+    content: " ";
+    position: absolute;
+    left: -35px;
+    right: -12px;
+    bottom: -11px;
+    z-index: -1;
+    top: -10px;
+    border-radius: 8px;
+    background-color: transparent;
+    transition: all .3s;
+}
+.app-body :is(.column-header__back-button, .column-back-button):hover span::before {
+    background-color: var(--color-accent-bg);
+}
+.app-body :is(.column-header__back-button, .column-back-button):active span::before {
+    transform: scale(.9);
 }
 
 .app-body .load-gap,
@@ -3501,12 +3530,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account__header__account-note textarea::placeholder {
     color: var(--color-content-fg-bold);
     opacity: .5;
+    font-style: normal;
 }
 .app-body .account__header__account-note textarea {
     color: var(--color-content-fg);
+    border-radius: 8px;
+    font-style: italic;
 }
 .app-body .account__header__account-note textarea:focus {
     background-color: var(--color-accent-bg);
+}
+.app-body .account__header__account-note textarea:not(:placeholder-shown):not(:focus) {
+    box-shadow: inset 0 0 0 1px var(--color-lines);
 }
 .app-body .account__header__badges .account-role {
     border-radius: 8px;
