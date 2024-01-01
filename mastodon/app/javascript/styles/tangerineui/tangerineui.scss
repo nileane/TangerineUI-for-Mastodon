@@ -2084,7 +2084,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         padding: 8px 8px 14px;
     }
 }
-.app-body .detailed-status__display-avatar .account__avatar {
+.app-body .detailed-status .detailed-status__display-avatar .account__avatar {
     width: 60px !important;
     height: 60px !important;
 }
@@ -3641,10 +3641,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .follow-request-banner,
 .app-body .moved-account-banner {
     background-color: var(--color-accent-bg);
-}
-.app-body .moved-account-banner {
-    margin-bottom: 10px;
-    border-radius: 8px;
 }
 .app-body .follow-request-banner__message,
 .app-body .moved-account-banner__message {
