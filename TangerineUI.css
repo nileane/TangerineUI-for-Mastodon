@@ -1897,6 +1897,7 @@ body.app-body  {
     z-index: 2;
     border-radius: 50%;
     outline: 6px solid var(--color-content-bg);
+    background-color: var(--color-content-bg);
     transition: outline .3s;
 }
 .app-body .reply-indicator__content,
