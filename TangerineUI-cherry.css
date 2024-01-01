@@ -1530,7 +1530,8 @@ body.app-body  {
     display: none;
 }
 .app-body .poll li {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
+    padding-bottom: 1px;
     position: relative;
     border-radius: 8px;
     overflow: hidden;
