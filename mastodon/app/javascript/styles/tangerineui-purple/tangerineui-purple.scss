@@ -3245,6 +3245,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .column-link--transparent:is(.active, .active:hover) {
     color: var(--color-content-fg);
+    font-weight: bold;
 }
 .app-body .column-link--transparent:hover {
     border-radius: 8px;
