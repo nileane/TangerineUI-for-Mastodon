@@ -698,9 +698,9 @@ body.app-body  {
 }
 .app-body
     button.icon-button:is(
-        .reblogPrivate,
-        .reblogPrivate:hover,
-        .disabled,
+        .reblogPrivate:where(.disabled, [disabled]), 
+        .reblogPrivate:where(.disabled, [disabled]):hover, 
+        .disabled, 
         .disabled:hover
     )
     .icon-retweet {
