@@ -8,7 +8,7 @@
 
 > [!NOTE]
 > You are currently on the **legacy branch** for Tangerine UI (v1.9).  
-> This version of Tangerine UI is only meant to be installed on instances running Mastodon 4.1.*x* or 4.2.*x*
+> **This version of Tangerine UI is only meant to be installed on instances running Mastodon 4.1.*x* or 4.2.*x***
 > 
 > If your Mastodon instance is running the latest version of Mastodon (4.3 and newer), use [the latest release of Tangerine UI](https://github.com/nileane/TangerineUI-for-Mastodon) (v2.*x*) instead.
 
