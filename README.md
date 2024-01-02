@@ -12,11 +12,7 @@
 > 
 > If your Mastodon instance is running the latest version of Mastodon (4.3 and newer), use [the latest release of Tangerine UI](https://github.com/nileane/TangerineUI-for-Mastodon) (v2.*x*) instead.
 
-
-## A Tangerine redesign for Mastodon's Web UI. 🍊   
-Tangerine UI features a bubblier look, a more compact timeline, round avatars, and a soft color palette that automatically switches between light and dark modes.
-
-## Summary
+## Table of contents
 
 * [**Variants**](#variants)
 * [**Compatibility**](#compatibility)
@@ -53,7 +49,9 @@ This version of Tangerine UI is only meant to be installed on instances running 
 * Copy & paste the contents of 🍊 [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/legacy/TangerineUI.css) to the **Custom CSS** field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/legacy/TangerineUI-purple.css) instead.
 
-⚠️ **Caution: Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their Appearance settings** ([see *Accessibility*](#accessibility)). Please make sure there is a consensus among your users for doing so. If not, see below how to install Tangerine UI as an optional theme for your users.
+> [!WARNING]
+> **Using the 'Custom CSS' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their Appearance settings** ([see *Accessibility*](#accessibility)).  
+> Please make sure there is a consensus among your users for doing so. If not, see below how to install Tangerine UI as an optional theme for your users.
 
 ### Install Tangerine UI as an optional theme on your instance [Recommended]:
 Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance.  
@@ -130,9 +128,11 @@ Even if you are not an admin on your instance, you can still use Tangerine UI wi
 2. Copy & paste the contents of 🍊 [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/legacy/TangerineUI.css) to the extension's editor
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/legacy/TangerineUI-purple.css) instead.
 
-⚠️ If you are a user on a Glitch-soc instance, you must switch to the Vanilla Mastodon flavour for Tangerine UI to work properly: in your instance settings, navigate to Flavours → Vanilla Mastodon → select the 'Default' skin.
- 
-💡 Alternatively, if you wish to use a JavaScript browser extension, [@Write](https://github.com/Write) has written a ready-to-use UserScript to load Tangerine UI on any Mastodon instance. Check out [the TangerineUI-Userscript repository](https://github.com/Write/TangerineUI-Userscript) for instructions.
+> [!IMPORTANT]
+> If you are a user on a Glitch-soc instance, you must switch to the Vanilla Mastodon flavour for Tangerine UI to work properly: in your instance settings, navigate to *Flavours* → *Vanilla Mastodon* → select the '*Default*' skin.
+
+> [!NOTE]
+> Alternatively, if you wish to use a JavaScript browser extension, [@Write](https://github.com/Write) has written a ready-to-use UserScript to load Tangerine UI on any Mastodon instance. Check out [the TangerineUI-Userscript repository](https://github.com/Write/TangerineUI-Userscript) for instructions.
 
 ## Things to know
 * **Tangerine UI Legacy only supports Mastodon's single column layout**. The advanced web interface (multiple columns) will not be affected.
