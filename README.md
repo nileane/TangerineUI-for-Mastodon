@@ -120,7 +120,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 
 
 ## Compatibility
-✅ **[Tangerine UI (v2._x_)](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) is compatible with instances running Mastodon 4.3 and newer.**[^3]
+✅ [**Tangerine UI** (v2._x_)](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) **is compatible with instances running Mastodon 4.3 and newer.**[^3]
 [^3]: Tangerine UI (v2._x_) is also compatible with instances running a version of **Glitch-soc** based on Mastodon 4.3 and newer, as long as it is [installed as a vanilla theme](#installation-for-glitch-soc-admins) on these instances.
 
 ⚠️ For instances running Mastodon 4.1._x_ or 4.2._x_, use [**Tangerine UI Legacy** (v1.9)](https://github.com/nileane/TangerineUI-for-Mastodon/tree/legacy) instead.[^4][^5]
