@@ -87,34 +87,35 @@ I won't be held responsible if you end up licking your screen because of this on
 These are known instances that have enabled Tangerine UI for their users, either as the only theme, or as an optional theme.[^2]
 [^2]: If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours to this list**. (Make a Pull Request, or just [DM me](https://nileane.fr/@tangerineui))
 
-| **Instance**                                             | **User count** | **Installed as...** | **Default theme?**      |
-| -------------------------------------------------------- | -------------- | ------------------- | ----------------------- |
-| [piaille.fr](https://piaille.fr)                         | 10K+           | an optional theme   | No                      |
-| [norden.social](https://norden.social)                   | 5K+            | an optional theme   | No                      |
-| [convo.casa](https://convo.casa)                         | 5K+            | an optional theme   | No                      |
-| [vmst.io](https://vmst.io)                               | 2K+            | an optional theme   | No                      |
-| [eldritch.cafe](https://eldritch.cafe)                   | 1.5K+          | an optional theme   | No                      |
-| [octodon.social](https://octodon.social)                 | 1K+            | an optional theme   | No                      |
-| [social.lol](https://social.lol)                         | 750+           | an optional theme   | No                      |
-| [shelter.moe](https://shelter.moe)                       | 350+           | an optional theme   | No                      |
-| [toki.social](https://toki.social)                       | 200+           | an optional theme   | No                      |
-| [pipou.academy](https://pipou.academy)                   | 100+           | an optional theme   | No                      |
-| [indiepocalypse.social](https://indiepocalypse.social)   | 100+           | an optional theme   | No                      |
-| [bolha.one](https://bolha.one)                           | 20+            | an optional theme   | Yes (Tangerine variant) |
-| [i1.no](https://i1.no)                                   | 15+            | the only theme      | Yes (Purple variant)    |
-| [zeppelin.flights](https://zeppelin.flights)             | 15+            | the only theme      | Yes (Tangerine variant) |
-| [catharsis.cafe](https://catharsis.cafe)                 | 10+            | an optional theme   | Yes (Tangerine variant) |
-| [toulouse.social](https://toulouse.social)               | 10+            | an optional theme   | Yes (Tangerine variant) |
-| [fedinerds.social](https://fedinerds.social)             | 10+            | an optional theme   | No                      |
-| [nileane.fr](https://nileane.fr)                         | 5+             | the only theme      | Yes (Tangerine variant) |
-| [social.nah.re](https://social.nah.re)                   | 5+             | an optional theme   | No                      |
-| [esoteric.party](https://esoteric.party)                 | 5+             | the only theme      | Yes (Tangerine variant) |
-| [asso.lgbt](https://asso.lgbt)                           | 5+             | the only theme      | Yes (Purple variant)    |
-| [Buddyverse.xyz](https://buddyverse.xyz)                 | 5+             | an optional theme   | No                      |
-| [isfeeling.social](https://isfeeling.social)             | 1+             | the only theme      | Yes (Purple variant)    |
-| [ucn.social](https://ucn.social)                         | 1+             | an optional theme   | Yes (Tangerine variant) |
-| [fedi.cyberwitches.club](https://fedi.cyberwitches.club) | 1+             | the only theme      | Yes (Purple variant)    |
-| [mastodon.projetretro.io](mastodon.projetretro.io)       | 1+             | an optional theme   | No                      |
+| **Instance**                                               | **User count** | **Installed as...** | **Default theme?**      |
+| ---------------------------------------------------------- | -------------- | ------------------- | ----------------------- |
+| [piaille.fr](https://piaille.fr)                           | 10K+           | an optional theme   | No                      |
+| [norden.social](https://norden.social)                     | 5K+            | an optional theme   | No                      |
+| [convo.casa](https://convo.casa)                           | 5K+            | an optional theme   | No                      |
+| [vmst.io](https://vmst.io)                                 | 2K+            | an optional theme   | No                      |
+| [eldritch.cafe](https://eldritch.cafe)                     | 1.5K+          | an optional theme   | No                      |
+| [octodon.social](https://octodon.social)                   | 1K+            | an optional theme   | No                      |
+| [social.lol](https://social.lol)                           | 750+           | an optional theme   | No                      |
+| [shelter.moe](https://shelter.moe)                         | 350+           | an optional theme   | No                      |
+| [toki.social](https://toki.social)                         | 200+           | an optional theme   | No                      |
+| [dmv.community](https://dmv.community)                     | 200+           | an optional theme   | No                      |
+| [pipou.academy](https://pipou.academy)                     | 100+           | an optional theme   | No                      |
+| [indiepocalypse.social](https://indiepocalypse.social)     | 100+           | an optional theme   | No                      |
+| [bolha.one](https://bolha.one)                             | 20+            | an optional theme   | Yes (Tangerine variant) |
+| [i1.no](https://i1.no)                                     | 15+            | the only theme      | Yes (Purple variant)    |
+| [zeppelin.flights](https://zeppelin.flights)               | 15+            | the only theme      | Yes (Tangerine variant) |
+| [catharsis.cafe](https://catharsis.cafe)                   | 10+            | an optional theme   | Yes (Tangerine variant) |
+| [toulouse.social](https://toulouse.social)                 | 10+            | an optional theme   | Yes (Tangerine variant) |
+| [fedinerds.social](https://fedinerds.social)               | 10+            | an optional theme   | No                      |
+| [nileane.fr](https://nileane.fr)                           | 5+             | the only theme      | Yes (Tangerine variant) |
+| [social.nah.re](https://social.nah.re)                     | 5+             | an optional theme   | No                      |
+| [esoteric.party](https://esoteric.party)                   | 5+             | the only theme      | Yes (Tangerine variant) |
+| [asso.lgbt](https://asso.lgbt)                             | 5+             | the only theme      | Yes (Purple variant)    |
+| [Buddyverse.xyz](https://buddyverse.xyz)                   | 5+             | an optional theme   | No                      |
+| [isfeeling.social](https://isfeeling.social)               | 1+             | the only theme      | Yes (Purple variant)    |
+| [ucn.social](https://ucn.social)                           | 1+             | an optional theme   | Yes (Tangerine variant) |
+| [fedi.cyberwitches.club](https://fedi.cyberwitches.club)   | 1+             | the only theme      | Yes (Purple variant)    |
+| [mastodon.projetretro.io](https://mastodon.projetretro.io) | 1+             | an optional theme   | No                      |
 
 
 ## Compatibility
