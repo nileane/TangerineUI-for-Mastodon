@@ -4547,6 +4547,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-accent-focus);
 }
 
+.app-body .react-toggle {
+    transition: transform .3s;
+}
+.app-body .react-toggle:active {
+    transform: scale(.9);
+}
 .app-body .react-toggle-track {
     background-color: var(--color-fg-muted);
     transition: all .2s;
@@ -4563,8 +4569,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .react-toggle--checked .react-toggle-thumb {
     border-color: var(--color-accent);
 }
-.app-body .react-toggle:is(:hover,:focus-within):not(.react-toggle--disabled) .react-toggle-track {
-    background-color: var(--color-accent-focus);
+.app-body .react-toggle--focus {
+    outline: 0;
 }
 
 .app-body .radio-button {
@@ -4913,38 +4919,71 @@ a:is(.active,
 
 
 /* Report modals */
-.app-body .report-dialog-modal__container {
-    border-top: 0;
-}
 .app-body .report-dialog-modal__lead {
     color: var(--color-content-fg-muted);
 }
-.app-body .report-dialog-modal .poll__option.dialog-option {
-    border-color: var(--color-lines);
+.app-body .report-dialog-modal {
+    background-color: var(--color-content-bg);
 }
-.app-body .report-dialog-modal .dialog-option .poll__input {
+.app-body .report-dialog-modal .dialog-option,
+.app-body .report-dialog-modal .poll__option.dialog-option:last-child {
+    border-top: 1px solid var(--color-lines);
+    border-left: 1px solid var(--color-lines);
+    border-right: 1px solid var(--color-lines);
+    border-bottom: 1px solid var(--color-lines);
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    transition: all .2s;
+}
+.app-body .report-dialog-modal .dialog-option:hover,
+.app-body .report-dialog-modal .poll__option.dialog-option:hover,
+.app-body .report-dialog-modal .dialog-option:has(.poll__input.active) {
+    border-top: 1px solid var(--color-accent);
+    border-left: 1px solid var(--color-accent);
+    border-right: 1px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.app-body .report-dialog-modal .dialog-option .poll__input,
+.app-body .report-dialog-modal__textarea:focus {
     border-color: var(--color-accent);
 }
 .app-body .report-dialog-modal .dialog-option .poll__input.active {
-    border-color: var(--color-accent);
     background-color: var(--color-accent);
 }
-.app-body .report-dialog-modal .poll__option.dialog-option>.poll__option__text {
+.app-body .report-dialog-modal .dialog-option .poll__input svg {
+    display: none;
+}
+.app-body .report-dialog-modal .poll__option.dialog-option>.poll__option__text,
+.app-body .report-dialog-modal .dialog-option time,
+.app-body .report-dialog-modal .status__content > p:first-child:has(.status__content__spoiler-link) > span,
+.app-body .report-dialog-modal__toggle,
+.app-body .report-dialog-modal__subtitle,
+.app-body .report-modal__comment .setting-text-label,
+.app-body .report-dialog-modal .status__content__text p,
+.app-body .report-dialog-modal__title,
+.app-body .report-modal__target {
     color: var(--color-content-fg);
 }
 .app-body .report-dialog-modal .poll__option.dialog-option>.poll__option__text strong {
     color: var(--color-content-fg-bold)
 }
 .app-body .report-modal__comment,
-.app-body .report-modal__container {
+.app-body .report-modal__container,
+.app-body .report-dialog-modal__container {
     border-color: var(--color-lines);
 }
-.app-body .report-modal__comment .setting-text-label {
+.app-body .report-dialog-modal__textarea {
+    background-color: var(--color-secondary-bg);
+    border: 1px solid var(--color-lines);
+    border-radius: 8px;
     color: var(--color-content-fg);
 }
-.app-body .report-dialog-modal .status__content__text p {
+.app-body .report-dialog-modal__textarea::placeholder {
     color: var(--color-content-fg);
-} 
+    opacity: .5;
+}
 
 
 
