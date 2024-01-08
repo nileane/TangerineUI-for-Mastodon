@@ -1778,6 +1778,20 @@ body.app-body  {
     width: 40px;
     height: 40px;
     right: 60px;
+    bottom: 20px;
+}
+@media screen and (max-width:889px) {
+    .app-body .status__content__translate-button,
+    .app-body .translate-button .link-button {
+        bottom: 10px;
+    }
+}
+.app-body .scrollable > div:is(:last-child, :only-child) .detailed-status__wrapper:last-child
+    :is(
+        .translate-button .link-button,
+        .status__content__translate-button
+    ) {
+        bottom: 13px;
 }
 .app-body .status__content__translate-button:hover,
 .app-body .translate-button .link-button:hover {
@@ -1790,16 +1804,6 @@ body.app-body  {
     background-image: var(--icon-translate-active);
     background-color: var(--color-accent);
     transform: scale(.8);
-}
-@media screen and (max-width:889px) {
-    .app-body .status__content__translate-button,
-    .app-body .translate-button .link-button {
-        bottom: 10px;
-    }
-    .app-body .detailed-status .status__content__translate-button,
-    .app-body .detailed-status .translate-button .link-button {
-        bottom: 13px;
-    }
 }
 .app-body .status__content__translate-button > span,
 .app-body .translate-button .link-button > span,
@@ -1820,7 +1824,8 @@ body.app-body  {
 }
 .app-body .status__wrapper,
 .app-body .detailed-status__wrapper {
-    background-color: var(--color-content-bg);
+    --color-post-bg: var(--color-content-bg);
+    background-color: var(--color-post-bg);
     padding: 13px 12px;
     position: relative;
 }
@@ -1897,8 +1902,8 @@ body.app-body  {
     margin-bottom: -10px;
     z-index: 2;
     border-radius: 50%;
-    outline: 6px solid var(--color-content-bg);
-    background-color: var(--color-content-bg);
+    outline: 6px solid var(--color-post-bg);
+    background-color: var(--color-post-bg);
     transition: outline .3s;
 }
 .app-body .reply-indicator__content,
@@ -2039,15 +2044,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     :is(.focusable, .status__wrapper.focusable):focus
     :is(.detailed-status, .detailed-status__action-bar) {
         outline: 0;
-        background: var(--color-content-bg-focus);
+        --color-post-bg: var(--color-content-bg-focus);
+        background-color: var(--color-post-bg);
 }
 @media screen and (min-width:1175px) { /* Subtle hover effect when you hover over a post content in the timeline. Only on bigger screens. */
     .app-body .status__wrapper:has(.status__content:hover),
-    .app-body .notification__message:has(+ div > .status__wrapper .status__content:hover) {
-        background: var(--color-content-bg-focus);
-    }
+    .app-body .notification__message:has(+ div > .status__wrapper .status__content:hover),
     .app-body .status__wrapper:has(.status__content:hover) .status__avatar {
-        outline: 6px solid var(--color-content-bg-focus);
+        --color-post-bg: var(--color-content-bg-focus);
     }
 }
 .app-body :is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus .status__avatar {
@@ -2056,16 +2060,24 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* 👁️ Post detailed view */
 .app-body .detailed-status__wrapper { /* Set full-width divider above and below a detailed post */
+    background-color: var(--color-post-bg);
     border-top: 1px solid var(--color-lines);
     border-bottom: 1px solid var(--color-lines);
+    padding-bottom: 20px;
+    box-shadow:
+        inset 0 -5px var(--color-content-secondary-bg),
+        inset 0 -6px var(--color-lines);
 }
 .app-body .scrollable > div:first-child > .detailed-status__wrapper { /* Detailed post is first in column */
     border-top: 0;
 }
 .app-body .scrollable > div:last-child .detailed-status__wrapper:last-child { /* Detailed post is last in column */
     border-bottom: 1px solid var(--color-lines);
+    padding-bottom: 12px;
+    box-shadow: none;
 }
 .app-body .scrollable > div:only-child .detailed-status__wrapper:last-child { /* Detailed post is the only post in column */
+    padding-bottom: 12px;
     box-shadow: none;
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
@@ -2077,11 +2089,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 @media screen and (max-width:889px) {
-    .app-body .scrollable > div:last-child .detailed-status__wrapper:last-child {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-
     .app-body .detailed-status {
         padding: 8px 8px 14px;
     }
@@ -2148,15 +2155,31 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .detailed-status__meta .animated-number {
     transform: translate(0, -1px);
 }
+.app-body .dropdown-menu__text-button:has(.icon-caret-down) {
+    padding: 2px 4px;
+    border: 1px solid var(--color-lines);
+    border-radius: 8px;
+    transition: all .2s;
+}
+.app-body .dropdown-menu__text-button:has(.icon-caret-down):hover {
+    border-color: var(--color-content-fg);
+}
+.app-body .dropdown-menu__text-button:has(.icon-caret-down):is(:active, :focus) {
+    border-color: var(--color-content-fg);
+    background-color: var(--color-lines);
+}
 .app-body .dropdown-menu__text-button:has(.icon-caret-down) span {
-    width: 15px;
     height: 17px;
     overflow: hidden;
-    color: transparent;
     background-image: var(--icon-edited);
-    background-position: center;
+    background-position: left center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 15px;
+    padding-left: 20px;
+    font-size: 12px;
+}
+.app-body .dropdown-menu__text-button .icon-caret-down {
+    align-self: baseline;
 }
 
 .app-body article > .account {
@@ -2654,6 +2677,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
     border-top: 1px solid var(--color-lines);
+    border-bottom: 1px solid var(--color-lines);
 }
 .app-body .follow_requests-unlocked_explanation a {
     color: var(--color-accent);
@@ -2699,21 +2723,49 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: none;
 }
 
-/* Speech bubble look DMs */
-.app-body :is(.status-direct, .detailed-status-direct, .detailed-status__wrapper-direct) .status__content {
-    padding: .7em 1.2em .7em 1em;
-    margin-top: 4px;
-    background: var(--color-content-secondary-bg);
-    border: 1px solid var(--color-lines);
-    border-radius: 4px 12px 12px 12px;
-    display: inline-block;
-}
-.app-body .status-direct.muted .status__content {
-    background: rgba(155, 174, 200, 0.1);
-    border-color: var(--color-lines);
-}
 .app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend {
-    display: none;
+    border-radius: 30px;
+    padding: 2px 10px 2px 8px;
+    background-color: var(--color-accent);
+    margin-inline-start: 10px;
+    margin-block-end: 4px;
+    gap: 5px;
+    align-items: center;
+    transform: scale(.9);
+    transform-origin: left center;
+    z-index: 3;
+    position: relative;
+    outline: 5px solid var(--color-post-bg);
+}
+.app-body :is(.detailed-status__wrapper-direct) .status__prepend {
+    margin-inline-start: 0;
+    margin-block-end: 0;
+    transform: scale(1);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    border-radius: 8px;
+    outline: 0;
+    font-size: 13px;
+}
+.app-body :is(.detailed-status__wrapper-direct):has(.status__prepend) {
+    padding-top: 40px;
+}
+.app-body :is(.status__wrapper-direct):not(:has(.status__line)) .status__prepend {
+    margin-inline-start: 62px;
+} 
+.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend-icon-wrapper {
+    width: 20px;
+    height: 20px;
+}
+.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend-icon-wrapper svg {
+    transform: scale(.85);
+    background-image: var(--icon-at-inv);
+}
+.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend > span {
+    color: var(--color-accent-fg);
+    margin-top: -1px;
 }
 
 
@@ -4702,12 +4754,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         color: #f3637b;
     }
 }
-.app-body .app-body 
-:is(.block-modal__cancel-button,
-    .confirmation-modal__cancel-button,
-    .confirmation-modal__secondary-button,
-    .mute-modal__cancel-button) {
-    background-color: transparent;
+.app-body 
+    :is(
+        .block-modal__cancel-button,
+        .confirmation-modal__cancel-button,
+        .confirmation-modal__secondary-button,
+        .mute-modal__cancel-button
+    ):not(:hover) {
+        background-color: transparent;
+        color: var(--color-accent);
 }
 .app-body .status__content a.hashtag {
     color: var(--color-accent);
