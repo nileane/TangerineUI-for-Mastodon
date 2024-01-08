@@ -1778,6 +1778,20 @@ body.app-body  {
     width: 40px;
     height: 40px;
     right: 60px;
+    bottom: 20px;
+}
+@media screen and (max-width:889px) {
+    .app-body .status__content__translate-button,
+    .app-body .translate-button .link-button {
+        bottom: 10px;
+    }
+}
+.app-body .scrollable > div:is(:last-child, :only-child) .detailed-status__wrapper:last-child
+    :is(
+        .translate-button .link-button,
+        .status__content__translate-button
+    ) {
+        bottom: 13px;
 }
 .app-body .status__content__translate-button:hover,
 .app-body .translate-button .link-button:hover {
@@ -1790,16 +1804,6 @@ body.app-body  {
     background-image: var(--icon-translate-active);
     background-color: var(--color-accent);
     transform: scale(.8);
-}
-@media screen and (max-width:889px) {
-    .app-body .status__content__translate-button,
-    .app-body .translate-button .link-button {
-        bottom: 10px;
-    }
-    .app-body .detailed-status .status__content__translate-button,
-    .app-body .detailed-status .translate-button .link-button {
-        bottom: 13px;
-    }
 }
 .app-body .status__content__translate-button > span,
 .app-body .translate-button .link-button > span,
@@ -2069,6 +2073,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .scrollable > div:last-child .detailed-status__wrapper:last-child { /* Detailed post is last in column */
     border-bottom: 1px solid var(--color-lines);
+    padding-bottom: 12px;
+    box-shadow: none;
 }
 .app-body .scrollable > div:only-child .detailed-status__wrapper:last-child { /* Detailed post is the only post in column */
     padding-bottom: 12px;
@@ -2083,11 +2089,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 @media screen and (max-width:889px) {
-    .app-body .scrollable > div:last-child .detailed-status__wrapper:last-child {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-
     .app-body .detailed-status {
         padding: 8px 8px 14px;
     }
