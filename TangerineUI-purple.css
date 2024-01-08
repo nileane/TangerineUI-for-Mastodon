@@ -2168,14 +2168,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-lines);
 }
 .app-body .dropdown-menu__text-button:has(.icon-caret-down) span {
-    width: 15px;
     height: 17px;
     overflow: hidden;
-    color: transparent;
     background-image: var(--icon-edited);
-    background-position: center;
+    background-position: left center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 15px;
+    padding-left: 20px;
+    font-size: 12px;
 }
 .app-body .dropdown-menu__text-button .icon-caret-down {
     align-self: baseline;
