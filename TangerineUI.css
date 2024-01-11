@@ -2458,8 +2458,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link {
     background-color: transparent;
     width: 100%;
-    margin: -22px 0 0;
-    padding: 27px 0 5px;
+    margin: 0;
+    padding: 5px 0;
     text-align: start;
     position: relative;
 }
