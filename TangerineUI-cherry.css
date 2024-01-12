@@ -523,8 +523,8 @@ body.app-body  {
     gap: 10px;
 }
 @media screen and (max-width:889px) {
-    .app-body .scrollable,
-    .app-body .column > .scrollable {
+    .app-body:not(.layout-multiple-columns) .scrollable,
+    .app-body:not(.layout-multiple-columns) .column > .scrollable {
         border-right: 0;
         border-left: 0;
     }
@@ -1304,7 +1304,7 @@ body.app-body  {
     background-color: rgba(0, 0, 0, .4);
 }
 @media screen and (max-width:1174px) {
-    .app-body .compose-form {
+    .app-body:not(.layout-multiple-columns) .compose-form {
         padding: 15px;
     }
 }
@@ -2648,20 +2648,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: 0;
 }
 
-@media screen and (max-width:889px) {
-    .app-body .empty-column-indicator {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        border-left: 0;
-        border-right: 0;
-    }
-}
-@media screen and (min-width:890px) {
-    .app-body .account-timeline__header + .empty-column-indicator {
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-}
 
 /* Timeline hint */
 .app-body .timeline-hint {
@@ -2827,7 +2813,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transform: scale(.8);
 }
 @media screen and (max-width:885px) {
-    .app-body .column-header__button.active {
+    .app-body:not(.layout-multiple-columns) .column-header__button.active {
         animation: bounce-sml .3s 1;
     }
 }
@@ -2844,13 +2830,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-accent-bg);
 }
 @media screen and (max-width:1174px) {
-    .app-body .column-header__wrapper::after,
-    .app-body .column-back-button::after {
+    .app-body:not(.layout-multiple-columns) .column-header__wrapper::after,
+    .app-body:not(.layout-multiple-columns) .column-back-button::after {
         display: none;
     }
-    .app-body .column-header__button:is(.active, .active:hover, :hover),
-    .app-body .column-header,
-    .app-body .column-back-button {
+    .app-body:not(.layout-multiple-columns) .column-header__button:is(.active, .active:hover, :hover),
+    .app-body:not(.layout-multiple-columns) .column-header,
+    .app-body:not(.layout-multiple-columns) .column-back-button {
         background-color: transparent;
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
@@ -2864,12 +2850,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     top: -50px
 }
 @media screen and (max-width:1174px) {
-    .app-body .column-back-button--slim-button {
+    .app-body:not(.layout-multiple-columns) .column-back-button--slim-button {
         height: 50px;
     }
 }
 @media screen and (min-width:1175px) {
-    .app-body .column-back-button--slim-button {
+    .app-body:not(.layout-multiple-columns) .column-back-button--slim-button {
         display: none;
     }
 }
@@ -2926,7 +2912,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: transparent;
 }
 @media screen and (max-width:1174px) {
-    .app-body .column-header__collapsible {
+    .app-body:not(.layout-multiple-columns) .column-header__collapsible {
         box-shadow: none;
         border-radius: 0;
     }
@@ -2946,22 +2932,22 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-weight: bold;
 }
 @media screen and (max-width:1174px) {
-    .app-body .ui__header {
+    .app-body:not(.layout-multiple-columns) .ui__header {
         background-color: transparent;
         border-bottom: 0;
     }
-    .app-body .ui__header__logo {
+    .app-body:not(.layout-multiple-columns) .ui__header__logo {
         margin: 0;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
     }
-    .app-body .ui__header:has(.ui__header__links > a[href="/auth/sign_in"]) .ui__header__logo {
+    .app-body:not(.layout-multiple-columns) .ui__header:has(.ui__header__links > a[href="/auth/sign_in"]) .ui__header__logo {
         position: static;
         transform: none;
         margin-left: 3px;
     }
-    .app-body .tabs-bar__wrapper {
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
         box-shadow: none;
         display: block;
         margin-bottom: -2px;
@@ -2969,23 +2955,26 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         height: 45px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
-    .app-body .tabs-bar__wrapper:has(> #tabs-bar__portal) {
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper:has(> #tabs-bar__portal) {
         display: none;
     }
-    .app-body .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-back-button),
-    .app-body .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) { /* Column header (2nd top bar) is displayed only if there's something inside */
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-back-button),
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) { /* Column header (2nd top bar) is displayed only if there's something inside */
         display: block;
     }
-    .app-body .column-header,
-    .app-body .column-back-button,
-    .app-body .column-header__button,
-    .app-body .column-header__back-button {
-        background-color: transparent;
-        height: 50px;
-        border: 0;
-        margin: 0;
+    .app-body:not(.layout-multiple-columns)
+        :is(
+            .column-header,
+            .column-back-button,
+            .column-header__button,
+            .column-header__back-button
+        ) {
+            background-color: transparent;
+            height: 50px;
+            border: 0;
+            margin: 0;
     }
-    .app-body .ui::after { /* Set a backdrop blur background to both top bars */
+    .app-body:not(.layout-multiple-columns) .ui::after { /* Set a backdrop blur background to both top bars */
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         background-color: rgba(255, 255, 255, 0.75);
@@ -2997,40 +2986,40 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         width: 100%;
         z-index: 1;
     }
-    .app-body .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal)::after {
+    .app-body:not(.layout-multiple-columns) .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal)::after {
         height: 55px;
     }
-    .app-body .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-back-button)::after,
-    .app-body .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-header__wrapper)::after { /* Backdrop blur has double the height only in cases where there's 2 top bars present */
+    .app-body:not(.layout-multiple-columns) .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-back-button)::after,
+    .app-body:not(.layout-multiple-columns) .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-header__wrapper)::after { /* Backdrop blur has double the height only in cases where there's 2 top bars present */
         height: 100px;
     }
-    .app-body .column-header__collapsible { /* Remove margin between column settings and column header */
+    .app-body:not(.layout-multiple-columns) .column-header__collapsible { /* Remove margin between column settings and column header */
         margin-top: -4px;
     }
-    .app-body .column-header__collapsible:not(.collapsed) {
+    .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
         border-bottom: 1px solid var(--color-lines);
     }
 }
 @media screen and (max-width:885px) {
-    .app-body .column-header__collapsible:not(.collapsed) {
+    .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
         border-left-color: var(--color-content-secondary-bg);
         border-right-color: var(--color-content-secondary-bg);
     }
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
-    .app-body .tabs-bar__wrapper {
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
         border-color: transparent;
     }
-    .app-body .ui::after {
+    .app-body:not(.layout-multiple-columns) .ui::after {
         border-bottom: 1px solid var(--color-lines);
     }
 }
 @media (prefers-color-scheme: dark) {
     @media screen and (max-width:1174px) {
-        .app-body .ui::after {
+        .app-body:not(.layout-multiple-columns) .ui::after {
             background-color: rgba(3, 3, 3, .65);
         }
-        .app-body .tabs-bar__wrapper {
+        .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
             border-color: var(--color-lines);
         }
     }
@@ -3050,18 +3039,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-right: 0;
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
-    .app-body .explore__search-header + .account__section-headline {
+    .app-body:not(.layout-multiple-columns) .explore__search-header + .account__section-headline {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
-    .app-body .notification__filter-bar {
+    .app-body:not(.layout-multiple-columns) .notification__filter-bar {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         margin-top: 10px;
     }
 }
 @media screen and (max-width:889px) {
-    .app-body :is(.account__section-headline, .notification__filter-bar) {
+    .app-body:not(.layout-multiple-columns) :is(.account__section-headline, .notification__filter-bar) {
         border-left: 0;
         border-right: 0;
     }
@@ -3683,13 +3672,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account__header__bio .account__header__fields .verified:last-child {
     border-bottom: 0;
 }
-@media screen and (max-width:889px) {
-    .app-body .account-timeline__header + article :is(.status__wrapper, .account) {
-        border-left: 0;
-        border-right: 0;
-        border-radius: 0;
-    }
-}
 
 .app-body .account__header__tabs__buttons .icon-button.copied,
 .app-body .account__header__tabs__buttons .icon-button.copied:is(:active, :focus, :hover) {
@@ -3843,14 +3825,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .filter-form__column {
     padding: 10px 15px;
 }
-@media screen and (max-width:884px) {
-    .app-body .filter-form {
-        border-left: 0;
-        border-right: 0;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-}
+
 
 /* 📰 Trending stories */
 .app-body .story {
@@ -3975,7 +3950,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-bottom: 1px solid var(--color-lines);
 }
 .app-body .search-results__section {
-    background-color: var(--color-bg);
+    background-color: var(--color-content-bg);
     border-bottom: 0;
 }
 .app-body .search-results__section__header {
@@ -4038,24 +4013,24 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 @media screen and (max-width:1174px) {
-    .app-body .search {
+    .app-body:not(.layout-multiple-columns) .search {
         margin-bottom: 0;
     }
-    .app-body .explore__search-header {
+    .app-body:not(.layout-multiple-columns) .explore__search-header {
         padding-top: 2px;
     }
-    .app-body .search__input {
+    .app-body:not(.layout-multiple-columns) .search__input {
         padding: 13px;
     }
-    .app-body .explore__search-header {
+    .app-body:not(.layout-multiple-columns) .explore__search-header {
         padding: 10px 0;
     }
-    .app-body .search__icon .icon {
+    .app-body:not(.layout-multiple-columns) .search__icon .icon {
         top: 6px;
     }
 }
 @media screen and (max-width:889px) {
-    .app-body .explore__search-header {
+    .app-body:not(.layout-multiple-columns) .explore__search-header {
         padding: 10px;
     }
 }
@@ -4091,21 +4066,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-radius: 8px;
     border: 0;
     margin: 10px 10px 5px;
-}
-.app-body .explore__links .dismissable-banner {
-    border: 0;
-}
-@media screen and (max-width:889px) {
-    .app-body .dismissable-banner,
-    .app-body .explore__links .dismissable-banner {
-        border-left: 0;
-        border-right: 0;
-    }
-}
-@media screen and (min-width:890px) and (max-width:1174px) {
-    .app-body .explore__links .dismissable-banner {
-        margin-top: 0;
-    }
 }
 .app-body .dismissable-banner__message h1 {
     color: var(--color-content-fg);
@@ -5271,10 +5231,10 @@ a:is(.active,
         input[type=url],
         textarea
     ) {
-    background-color: var(--color-content-secondary-bg);
-    border-color: var(--color-lines);
-    border-radius: 8px;
-    color: var(--color-content-fg);
+        background-color: var(--color-content-secondary-bg);
+        border-color: var(--color-lines);
+        border-radius: 8px;
+        color: var(--color-content-fg);
 }
 .app-body .simple_form
     :is(
@@ -5286,7 +5246,7 @@ a:is(.active,
         input[type=url],
         textarea
     ):is(:active, :focus) {
-    border-color: var(--color-accent);
+        border-color: var(--color-accent);
 }
 .app-body .column-title {
     margin: -20px -20px 30px;
@@ -5411,23 +5371,11 @@ a:is(.active,
 .app-body .error-column__image {
     margin-top: 0;
 }
-@media screen and (max-width:889px) {
-    .app-body .error-column {
-        border-radius: 0 !important;
-        border-left: 0;
-        border-right: 0;
-    }
-}
 .app-body .regeneration-indicator {
     background-color: var(--color-content-bg);
 }
 @media screen and (min-width:890px) {
     .app-body .regeneration-indicator {
-        border-left: 1px solid var(--color-lines);
-        border-right: 1px solid var(--color-lines);
-        border-bottom: 1px solid var(--color-lines);
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
         padding-top: 50px;
         padding-bottom: 40px;
     }
@@ -5677,7 +5625,6 @@ a:is(.active,
 }
 :root:has(.layout-multiple-columns) *::-webkit-scrollbar-track {
     background-color: var(--color-accent-bg);
-    border-right: 1px solid var(--color-lines);
 }
 :root:has(.layout-multiple-columns) *::-webkit-scrollbar-thumb {
     opacity: .8;
@@ -5805,7 +5752,8 @@ a:is(.active,
     margin-bottom: 10px;
 }
 
-.layout-multiple-columns .search-results__header {
+.layout-multiple-columns .search-results__header,
+.layout-multiple-columns .explore__search-header {
     display: none;
 }
 
@@ -5869,41 +5817,11 @@ a:is(.active,
             .column-header,
             .column-back-button
         ) {
-        border-top: 1px solid var(--color-lines);
-        border-right: 1px solid var(--color-lines);
-        border-left: 1px solid var(--color-lines);
-        border-top-left-radius: 8px !important;
-        border-top-right-radius: 8px !important;
-    }
-    .layout-multiple-columns .ui::after {
-        display: none;
-    }
-    .layout-multiple-columns
-        :is(
-            .status__wrapper,
-            .detailed-status__wrapper,
-            .notification__message
-        ) {
-        border-left: 1px solid var(--color-lines);
-        border-right: 1px solid var(--color-lines);
-    }
-    .layout-multiple-columns .compose-form {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .layout-multiple-columns .navigation-bar {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .layout-multiple-columns .column-header__button {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .layout-multiple-columns .notification__filter-bar {
-        margin-top: 0;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+            border-top: 1px solid var(--color-lines);
+            border-right: 1px solid var(--color-lines);
+            border-left: 1px solid var(--color-lines);
+            border-top-left-radius: 8px !important;
+            border-top-right-radius: 8px !important;
     }
 }
 
