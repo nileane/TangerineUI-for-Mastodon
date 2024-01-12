@@ -3906,9 +3906,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: 1px solid var(--color-accent-lines);
     font-weight: 500;
     padding-right: 45px;
+    outline-offset: 0;
+    outline: 0 solid var(--color-accent-bg);
     transition:
         border-color .2s,
-        background-color .2s;
+        background-color .2s,
+        outline .2s;
 }
 .app-body .search__input::placeholder,
 .app-body .compose-form .spoiler-input__input::placeholder {
@@ -3918,6 +3921,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .search__input:focus {
     border-color: var(--color-accent);
     background-color: var(--color-content-bg);
+    outline: 3px solid var(--color-accent-bg);
 }
 .app-body .search__input:focus::placeholder,
 .app-body .compose-form .spoiler-input__input:focus::placeholder {
@@ -3981,18 +3985,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .search-results__section__header button {
     color: var(--color-accent);
-}
-@media screen and (min-width:890px) {
-    .app-body
-    .explore__search-results
-    :is(
-        article:last-child > .account,
-        article:last-child > .trends__item,
-        .load-more:last-child
-    ),
-    .app-body .search-results__section:last-child > :is(.trends__item, .account):last-child {
-        border-radius: 0 0 8px 8px;
-    }
 }
 .app-body .account .account__details > span {
     color: var(--color-content-fg);
@@ -4827,6 +4819,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
     border-radius: 8px;
+    outline: 0 solid var(--color-accent-bg);
+    transition: all .2s;
 }
 .app-body .interaction-modal__login.expanded .interaction-modal__login__input {
     border-top-left-radius: 8px;
@@ -4840,6 +4834,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .interaction-modal__login.focused .interaction-modal__login__input {
     background-color: var(--color-content-bg);
     border-color: var(--color-accent);
+    outline: 3px solid var(--color-accent-bg);
 }
 .app-body .interaction-modal__login .search__popout {
     border-color: var(--color-lines);
@@ -5822,6 +5817,11 @@ a:is(.active,
     .drawer:has(> .drawer__pager > .drawer__inner > .search-results > .search-results__section) {
         width: 400px;
 }
+.layout-multiple-columns .drawer__inner:has(> .search-results > .search-results__section) {
+    background-color: var(--color-content-bg);
+    border-left: 1px solid var(--color-lines);
+    border-right: 1px solid var(--color-lines);
+}
 
 .layout-multiple-columns
     .drawer
@@ -5850,7 +5850,7 @@ a:is(.active,
     padding: 0;
 }
 
-.layout-multiple-columns .drawer__inner::after {
+.layout-multiple-columns .drawer__inner:not(:has(> .search-results))::after {
     --version-f: 'Tangerine UI for Mastodon: ' var(--version) ' · ' var(--variant) ' variant';
     content: var(--version-f);
     color: var(--color-fg-muted);
