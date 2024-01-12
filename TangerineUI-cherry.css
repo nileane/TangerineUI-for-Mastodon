@@ -1953,7 +1953,8 @@ body.app-body  {
 .app-body .scrollable > div:first-child > .status::before, /* no divider above first post in a column thread */
 .app-body .scrollable > div:first-child > div:first-child .status::before, /* no divider above first post in a column thread (backwards compatibility with 4.1.*) */
 .app-body .hashtag-header + article .status::before,
-.app-body .search-results__section .search-results__section__header + div .status::before {
+.app-body .search-results__section .search-results__section__header + div .status::before,
+.app-body .dismissable-banner + article .status::before {
     display: none;
 }
 @media screen and (min-width:890px) and (max-width:1174px) { /* no divider above first post in a column thread on medium-size devices */
@@ -2637,7 +2638,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .empty-column-indicator {
     background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
-    border: 1px solid var(--color-lines);
     border-radius: 0 0 8px 8px;
     contain: content;
 }
@@ -3886,8 +3886,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin: 0 0 -25px;
 }
 .app-body .story.expanded .story__thumbnail img {
-    margin: 0 0 30px;
+    margin: -5px -5px 30px;
     border-radius: 8px;
+    width: calc(100% + 10px);
 }
 
 /* 🔍 Search field and search results */
@@ -4095,10 +4096,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .dismissable-banner {
     background-color: var(--color-accent);
     box-shadow: 0 5px var(--color-content-bg);
-    border-radius: 0;
+    border-radius: 8px;
     border: 0;
-    border-bottom: 1px solid var(--color-lines);
-    margin: 0;
+    margin: 10px 10px 5px;
 }
 .app-body .explore__links .dismissable-banner {
     border: 0;
@@ -4117,7 +4117,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .dismissable-banner__message h1 {
     color: var(--color-content-fg);
-    margin-top: 10px;
     margin-bottom: 8px;
 }
 .app-body .dismissable-banner__message,
@@ -4133,9 +4132,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) {
     background: var(--color-content-bg);
+    margin: 0;
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+    border-radius: 0;
+    border-top: 1px solid var(--color-lines);
+    border-bottom: 1px solid var(--color-lines);
 }
 .app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) .dismissable-banner__action .icon-button {
     color: var(--color-accent);
@@ -5404,11 +5408,6 @@ a:is(.active,
 .app-body .error-column {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
-    margin-top: -1px;
-}
-.app-body .error-column {
-    border: 1px solid var(--color-lines);
-    border-radius: 8px !important;
 }
 .app-body .error-column__message h1,
 .app-body .error-column__message {
