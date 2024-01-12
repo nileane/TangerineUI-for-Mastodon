@@ -543,6 +543,29 @@ body.app-body  {
 
 /* *️⃣ Icons
    -------- */
+.app-body .icon {
+    height: 20px;
+    width: 20px;
+}
+.app-body .verified-badge .icon {
+    width: 18px;
+    height: 18px;
+}
+.app-body .account__header__tabs__buttons .icon-button .icon {
+    height: 24px;
+    width: 24px;
+}
+.app-body .status__visibility-icon .icon {
+    height: 1em;
+    width: 1em;
+}
+.app-body .detailed-status__meta .icon {
+    height: 15px;
+    width: 15px;
+}
+.app-body .icon-button {
+    padding: 2px;
+}
 .app-body
     :is(
         .icon-bookmark,
@@ -3905,9 +3928,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .search__icon .icon {
     padding: 5px;
-    transform: scale(1);
+    transform: scale(1) translateY(-50%);
     background-size: 24px !important;
-    top: 8px;
+    top: 50%;
 }
 .app-body .search__input:not(:placeholder-shown) + .search__icon:hover .icon {
     background-image: var(--icon-erase-active);
@@ -3989,13 +4012,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-content-fg);
 }
 .app-body .search__popout__menu__item {
-    align-items: initial;
+    align-items: center;
+    border-radius: 6px;
 }
 .app-body .search__popout__menu__item mark {
     color: var(--color-content-fg-bold);
 }
 .app-body .search__popout__menu__item :is(.icon-button, .icon-button .icon) {
-    border-radius: 4px;
+    border-radius: 6px;
     transition: none;
 }
 .app-body .search__popout__menu__item:is(.selected, :active, :focus, :hover) :is(.icon-button, .icon-button .icon) {
