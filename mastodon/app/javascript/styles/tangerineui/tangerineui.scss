@@ -523,8 +523,8 @@ body.app-body  {
     gap: 10px;
 }
 @media screen and (max-width:889px) {
-    .app-body .scrollable,
-    .app-body .column > .scrollable {
+    .app-body:not(.layout-multiple-columns) .scrollable,
+    .app-body:not(.layout-multiple-columns) .column > .scrollable {
         border-right: 0;
         border-left: 0;
     }
@@ -543,6 +543,29 @@ body.app-body  {
 
 /* *️⃣ Icons
    -------- */
+.app-body .icon {
+    height: 20px;
+    width: 20px;
+}
+.app-body .verified-badge .icon {
+    width: 18px;
+    height: 18px;
+}
+.app-body .account__header__tabs__buttons .icon-button .icon {
+    height: 24px;
+    width: 24px;
+}
+.app-body .status__visibility-icon .icon {
+    height: 1em;
+    width: 1em;
+}
+.app-body .detailed-status__meta .icon {
+    height: 15px;
+    width: 15px;
+}
+.app-body .icon-button {
+    padding: 2px;
+}
 .app-body
     :is(
         .icon-bookmark,
@@ -1304,7 +1327,7 @@ body.app-body  {
     background-color: rgba(0, 0, 0, .4);
 }
 @media screen and (max-width:1174px) {
-    .app-body .compose-form {
+    .app-body:not(.layout-multiple-columns) .compose-form {
         padding: 15px;
     }
 }
@@ -1953,7 +1976,8 @@ body.app-body  {
 .app-body .scrollable > div:first-child > .status::before, /* no divider above first post in a column thread */
 .app-body .scrollable > div:first-child > div:first-child .status::before, /* no divider above first post in a column thread (backwards compatibility with 4.1.*) */
 .app-body .hashtag-header + article .status::before,
-.app-body .search-results__section .search-results__section__header + div .status::before {
+.app-body .search-results__section .search-results__section__header + div .status::before,
+.app-body .dismissable-banner + article .status::before {
     display: none;
 }
 @media screen and (min-width:890px) and (max-width:1174px) { /* no divider above first post in a column thread on medium-size devices */
@@ -2637,7 +2661,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .empty-column-indicator {
     background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
-    border: 1px solid var(--color-lines);
     border-radius: 0 0 8px 8px;
     contain: content;
 }
@@ -2648,20 +2671,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: 0;
 }
 
-@media screen and (max-width:889px) {
-    .app-body .empty-column-indicator {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        border-left: 0;
-        border-right: 0;
-    }
-}
-@media screen and (min-width:890px) {
-    .app-body .account-timeline__header + .empty-column-indicator {
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-    }
-}
 
 /* Timeline hint */
 .app-body .timeline-hint {
@@ -2827,7 +2836,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transform: scale(.8);
 }
 @media screen and (max-width:885px) {
-    .app-body .column-header__button.active {
+    .app-body:not(.layout-multiple-columns) .column-header__button.active {
         animation: bounce-sml .3s 1;
     }
 }
@@ -2844,13 +2853,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-accent-bg);
 }
 @media screen and (max-width:1174px) {
-    .app-body .column-header__wrapper::after,
-    .app-body .column-back-button::after {
+    .app-body:not(.layout-multiple-columns) .column-header__wrapper::after,
+    .app-body:not(.layout-multiple-columns) .column-back-button::after {
         display: none;
     }
-    .app-body .column-header__button:is(.active, .active:hover, :hover),
-    .app-body .column-header,
-    .app-body .column-back-button {
+    .app-body:not(.layout-multiple-columns) .column-header__button:is(.active, .active:hover, :hover),
+    .app-body:not(.layout-multiple-columns) .column-header,
+    .app-body:not(.layout-multiple-columns) .column-back-button {
         background-color: transparent;
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
@@ -2864,12 +2873,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     top: -50px
 }
 @media screen and (max-width:1174px) {
-    .app-body .column-back-button--slim-button {
+    .app-body:not(.layout-multiple-columns) .column-back-button--slim-button {
         height: 50px;
     }
 }
 @media screen and (min-width:1175px) {
-    .app-body .column-back-button--slim-button {
+    .app-body:not(.layout-multiple-columns) .column-back-button--slim-button {
         display: none;
     }
 }
@@ -2926,7 +2935,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: transparent;
 }
 @media screen and (max-width:1174px) {
-    .app-body .column-header__collapsible {
+    .app-body:not(.layout-multiple-columns) .column-header__collapsible {
         box-shadow: none;
         border-radius: 0;
     }
@@ -2946,22 +2955,22 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-weight: bold;
 }
 @media screen and (max-width:1174px) {
-    .app-body .ui__header {
+    .app-body:not(.layout-multiple-columns) .ui__header {
         background-color: transparent;
         border-bottom: 0;
     }
-    .app-body .ui__header__logo {
+    .app-body:not(.layout-multiple-columns) .ui__header__logo {
         margin: 0;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
     }
-    .app-body .ui__header:has(.ui__header__links > a[href="/auth/sign_in"]) .ui__header__logo {
+    .app-body:not(.layout-multiple-columns) .ui__header:has(.ui__header__links > a[href="/auth/sign_in"]) .ui__header__logo {
         position: static;
         transform: none;
         margin-left: 3px;
     }
-    .app-body .tabs-bar__wrapper {
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
         box-shadow: none;
         display: block;
         margin-bottom: -2px;
@@ -2969,23 +2978,26 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         height: 45px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
-    .app-body .tabs-bar__wrapper:has(> #tabs-bar__portal) {
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper:has(> #tabs-bar__portal) {
         display: none;
     }
-    .app-body .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-back-button),
-    .app-body .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) { /* Column header (2nd top bar) is displayed only if there's something inside */
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-back-button),
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) { /* Column header (2nd top bar) is displayed only if there's something inside */
         display: block;
     }
-    .app-body .column-header,
-    .app-body .column-back-button,
-    .app-body .column-header__button,
-    .app-body .column-header__back-button {
-        background-color: transparent;
-        height: 50px;
-        border: 0;
-        margin: 0;
+    .app-body:not(.layout-multiple-columns)
+        :is(
+            .column-header,
+            .column-back-button,
+            .column-header__button,
+            .column-header__back-button
+        ) {
+            background-color: transparent;
+            height: 50px;
+            border: 0;
+            margin: 0;
     }
-    .app-body .ui::after { /* Set a backdrop blur background to both top bars */
+    .app-body:not(.layout-multiple-columns) .ui::after { /* Set a backdrop blur background to both top bars */
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         background-color: rgba(255, 255, 255, 0.75);
@@ -2997,40 +3009,40 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         width: 100%;
         z-index: 1;
     }
-    .app-body .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal)::after {
+    .app-body:not(.layout-multiple-columns) .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal)::after {
         height: 55px;
     }
-    .app-body .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-back-button)::after,
-    .app-body .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-header__wrapper)::after { /* Backdrop blur has double the height only in cases where there's 2 top bars present */
+    .app-body:not(.layout-multiple-columns) .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-back-button)::after,
+    .app-body:not(.layout-multiple-columns) .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-header__wrapper)::after { /* Backdrop blur has double the height only in cases where there's 2 top bars present */
         height: 100px;
     }
-    .app-body .column-header__collapsible { /* Remove margin between column settings and column header */
+    .app-body:not(.layout-multiple-columns) .column-header__collapsible { /* Remove margin between column settings and column header */
         margin-top: -4px;
     }
-    .app-body .column-header__collapsible:not(.collapsed) {
+    .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
         border-bottom: 1px solid var(--color-lines);
     }
 }
 @media screen and (max-width:885px) {
-    .app-body .column-header__collapsible:not(.collapsed) {
+    .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
         border-left-color: var(--color-content-secondary-bg);
         border-right-color: var(--color-content-secondary-bg);
     }
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
-    .app-body .tabs-bar__wrapper {
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
         border-color: transparent;
     }
-    .app-body .ui::after {
+    .app-body:not(.layout-multiple-columns) .ui::after {
         border-bottom: 1px solid var(--color-lines);
     }
 }
 @media (prefers-color-scheme: dark) {
     @media screen and (max-width:1174px) {
-        .app-body .ui::after {
+        .app-body:not(.layout-multiple-columns) .ui::after {
             background-color: rgba(3, 3, 3, .65);
         }
-        .app-body .tabs-bar__wrapper {
+        .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
             border-color: var(--color-lines);
         }
     }
@@ -3050,18 +3062,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-right: 0;
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
-    .app-body .explore__search-header + .account__section-headline {
+    .app-body:not(.layout-multiple-columns) .explore__search-header + .account__section-headline {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
     }
-    .app-body .notification__filter-bar {
+    .app-body:not(.layout-multiple-columns) .notification__filter-bar {
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         margin-top: 10px;
     }
 }
 @media screen and (max-width:889px) {
-    .app-body :is(.account__section-headline, .notification__filter-bar) {
+    .app-body:not(.layout-multiple-columns) :is(.account__section-headline, .notification__filter-bar) {
         border-left: 0;
         border-right: 0;
     }
@@ -3683,13 +3695,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account__header__bio .account__header__fields .verified:last-child {
     border-bottom: 0;
 }
-@media screen and (max-width:889px) {
-    .app-body .account-timeline__header + article :is(.status__wrapper, .account) {
-        border-left: 0;
-        border-right: 0;
-        border-radius: 0;
-    }
-}
 
 .app-body .account__header__tabs__buttons .icon-button.copied,
 .app-body .account__header__tabs__buttons .icon-button.copied:is(:active, :focus, :hover) {
@@ -3843,14 +3848,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .filter-form__column {
     padding: 10px 15px;
 }
-@media screen and (max-width:884px) {
-    .app-body .filter-form {
-        border-left: 0;
-        border-right: 0;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-}
+
 
 /* 📰 Trending stories */
 .app-body .story {
@@ -3886,8 +3884,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin: 0 0 -25px;
 }
 .app-body .story.expanded .story__thumbnail img {
-    margin: 0 0 30px;
+    margin: -5px -5px 30px;
     border-radius: 8px;
+    width: calc(100% + 10px);
 }
 
 /* 🔍 Search field and search results */
@@ -3905,9 +3904,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: 1px solid var(--color-accent-lines);
     font-weight: 500;
     padding-right: 45px;
+    outline-offset: 0;
+    outline: 0 solid var(--color-accent-bg);
     transition:
         border-color .2s,
-        background-color .2s;
+        background-color .2s,
+        outline .2s;
 }
 .app-body .search__input::placeholder,
 .app-body .compose-form .spoiler-input__input::placeholder {
@@ -3917,6 +3919,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .search__input:focus {
     border-color: var(--color-accent);
     background-color: var(--color-content-bg);
+    outline: 3px solid var(--color-accent-bg);
 }
 .app-body .search__input:focus::placeholder,
 .app-body .compose-form .spoiler-input__input:focus::placeholder {
@@ -3925,9 +3928,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .search__icon .icon {
     padding: 5px;
-    transform: scale(1);
+    transform: scale(1) translateY(-50%);
     background-size: 24px !important;
-    top: 8px;
+    top: 50%;
 }
 .app-body .search__input:not(:placeholder-shown) + .search__icon:hover .icon {
     background-image: var(--icon-erase-active);
@@ -3970,7 +3973,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-bottom: 1px solid var(--color-lines);
 }
 .app-body .search-results__section {
-    background-color: var(--color-bg);
+    background-color: var(--color-content-bg);
     border-bottom: 0;
 }
 .app-body .search-results__section__header {
@@ -3980,18 +3983,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .search-results__section__header button {
     color: var(--color-accent);
-}
-@media screen and (min-width:890px) {
-    .app-body
-    .explore__search-results
-    :is(
-        article:last-child > .account,
-        article:last-child > .trends__item,
-        .load-more:last-child
-    ),
-    .app-body .search-results__section:last-child > :is(.trends__item, .account):last-child {
-        border-radius: 0 0 8px 8px;
-    }
 }
 .app-body .account .account__details > span {
     color: var(--color-content-fg);
@@ -4021,13 +4012,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-content-fg);
 }
 .app-body .search__popout__menu__item {
-    align-items: initial;
+    align-items: center;
+    border-radius: 6px;
 }
 .app-body .search__popout__menu__item mark {
     color: var(--color-content-fg-bold);
 }
 .app-body .search__popout__menu__item :is(.icon-button, .icon-button .icon) {
-    border-radius: 4px;
+    border-radius: 6px;
     transition: none;
 }
 .app-body .search__popout__menu__item:is(.selected, :active, :focus, :hover) :is(.icon-button, .icon-button .icon) {
@@ -4045,24 +4037,24 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 @media screen and (max-width:1174px) {
-    .app-body .search {
+    .app-body:not(.layout-multiple-columns) .search {
         margin-bottom: 0;
     }
-    .app-body .explore__search-header {
+    .app-body:not(.layout-multiple-columns) .explore__search-header {
         padding-top: 2px;
     }
-    .app-body .search__input {
+    .app-body:not(.layout-multiple-columns) .search__input {
         padding: 13px;
     }
-    .app-body .explore__search-header {
+    .app-body:not(.layout-multiple-columns) .explore__search-header {
         padding: 10px 0;
     }
-    .app-body .search__icon .icon {
+    .app-body:not(.layout-multiple-columns) .search__icon .icon {
         top: 6px;
     }
 }
 @media screen and (max-width:889px) {
-    .app-body .explore__search-header {
+    .app-body:not(.layout-multiple-columns) .explore__search-header {
         padding: 10px;
     }
 }
@@ -4095,29 +4087,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .dismissable-banner {
     background-color: var(--color-accent);
     box-shadow: 0 5px var(--color-content-bg);
-    border-radius: 0;
+    border-radius: 8px;
     border: 0;
-    border-bottom: 1px solid var(--color-lines);
-    margin: 0;
-}
-.app-body .explore__links .dismissable-banner {
-    border: 0;
-}
-@media screen and (max-width:889px) {
-    .app-body .dismissable-banner,
-    .app-body .explore__links .dismissable-banner {
-        border-left: 0;
-        border-right: 0;
-    }
-}
-@media screen and (min-width:890px) and (max-width:1174px) {
-    .app-body .explore__links .dismissable-banner {
-        margin-top: 0;
-    }
+    margin: 10px 10px 5px;
 }
 .app-body .dismissable-banner__message h1 {
     color: var(--color-content-fg);
-    margin-top: 10px;
     margin-bottom: 8px;
 }
 .app-body .dismissable-banner__message,
@@ -4133,9 +4108,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) {
     background: var(--color-content-bg);
+    margin: 0;
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+    border-radius: 0;
+    border-top: 1px solid var(--color-lines);
+    border-bottom: 1px solid var(--color-lines);
 }
 .app-body .dismissable-banner:has(.dismissable-banner__message > img:first-child) .dismissable-banner__action .icon-button {
     color: var(--color-accent);
@@ -4823,6 +4803,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
     border-radius: 8px;
+    outline: 0 solid var(--color-accent-bg);
+    transition: all .2s;
 }
 .app-body .interaction-modal__login.expanded .interaction-modal__login__input {
     border-top-left-radius: 8px;
@@ -4836,6 +4818,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .interaction-modal__login.focused .interaction-modal__login__input {
     background-color: var(--color-content-bg);
     border-color: var(--color-accent);
+    outline: 3px solid var(--color-accent-bg);
 }
 .app-body .interaction-modal__login .search__popout {
     border-color: var(--color-lines);
@@ -5272,10 +5255,10 @@ a:is(.active,
         input[type=url],
         textarea
     ) {
-    background-color: var(--color-content-secondary-bg);
-    border-color: var(--color-lines);
-    border-radius: 8px;
-    color: var(--color-content-fg);
+        background-color: var(--color-content-secondary-bg);
+        border-color: var(--color-lines);
+        border-radius: 8px;
+        color: var(--color-content-fg);
 }
 .app-body .simple_form
     :is(
@@ -5287,7 +5270,7 @@ a:is(.active,
         input[type=url],
         textarea
     ):is(:active, :focus) {
-    border-color: var(--color-accent);
+        border-color: var(--color-accent);
 }
 .app-body .column-title {
     margin: -20px -20px 30px;
@@ -5404,11 +5387,6 @@ a:is(.active,
 .app-body .error-column {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
-    margin-top: -1px;
-}
-.app-body .error-column {
-    border: 1px solid var(--color-lines);
-    border-radius: 8px !important;
 }
 .app-body .error-column__message h1,
 .app-body .error-column__message {
@@ -5417,23 +5395,11 @@ a:is(.active,
 .app-body .error-column__image {
     margin-top: 0;
 }
-@media screen and (max-width:889px) {
-    .app-body .error-column {
-        border-radius: 0 !important;
-        border-left: 0;
-        border-right: 0;
-    }
-}
 .app-body .regeneration-indicator {
     background-color: var(--color-content-bg);
 }
 @media screen and (min-width:890px) {
     .app-body .regeneration-indicator {
-        border-left: 1px solid var(--color-lines);
-        border-right: 1px solid var(--color-lines);
-        border-bottom: 1px solid var(--color-lines);
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
         padding-top: 50px;
         padding-bottom: 40px;
     }
@@ -5683,7 +5649,6 @@ a:is(.active,
 }
 :root:has(.layout-multiple-columns) *::-webkit-scrollbar-track {
     background-color: var(--color-accent-bg);
-    border-right: 1px solid var(--color-lines);
 }
 :root:has(.layout-multiple-columns) *::-webkit-scrollbar-thumb {
     opacity: .8;
@@ -5811,7 +5776,8 @@ a:is(.active,
     margin-bottom: 10px;
 }
 
-.layout-multiple-columns .search-results__header {
+.layout-multiple-columns .search-results__header,
+.layout-multiple-columns .explore__search-header {
     display: none;
 }
 
@@ -5822,6 +5788,11 @@ a:is(.active,
 .layout-multiple-columns
     .drawer:has(> .drawer__pager > .drawer__inner > .search-results > .search-results__section) {
         width: 400px;
+}
+.layout-multiple-columns .drawer__inner:has(> .search-results > .search-results__section) {
+    background-color: var(--color-content-bg);
+    border-left: 1px solid var(--color-lines);
+    border-right: 1px solid var(--color-lines);
 }
 
 .layout-multiple-columns
@@ -5851,7 +5822,7 @@ a:is(.active,
     padding: 0;
 }
 
-.layout-multiple-columns .drawer__inner::after {
+.layout-multiple-columns .drawer__inner:not(:has(> .search-results))::after {
     --version-f: 'Tangerine UI for Mastodon: ' var(--version) ' · ' var(--variant) ' variant';
     content: var(--version-f);
     color: var(--color-fg-muted);
@@ -5870,41 +5841,11 @@ a:is(.active,
             .column-header,
             .column-back-button
         ) {
-        border-top: 1px solid var(--color-lines);
-        border-right: 1px solid var(--color-lines);
-        border-left: 1px solid var(--color-lines);
-        border-top-left-radius: 8px !important;
-        border-top-right-radius: 8px !important;
-    }
-    .layout-multiple-columns .ui::after {
-        display: none;
-    }
-    .layout-multiple-columns
-        :is(
-            .status__wrapper,
-            .detailed-status__wrapper,
-            .notification__message
-        ) {
-        border-left: 1px solid var(--color-lines);
-        border-right: 1px solid var(--color-lines);
-    }
-    .layout-multiple-columns .compose-form {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .layout-multiple-columns .navigation-bar {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .layout-multiple-columns .column-header__button {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .layout-multiple-columns .notification__filter-bar {
-        margin-top: 0;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+            border-top: 1px solid var(--color-lines);
+            border-right: 1px solid var(--color-lines);
+            border-left: 1px solid var(--color-lines);
+            border-top-left-radius: 8px !important;
+            border-top-right-radius: 8px !important;
     }
 }
 
