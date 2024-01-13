@@ -301,6 +301,11 @@ body.app-body  {
     z-index: 1;
 }
 
+::selection {
+    color: var(--color-accent-fg);
+    background-color: var(--color-accent);
+}
+
 /* 🖱️ Scrollbars */
 :root:has(.app-body) *::-webkit-scrollbar-track {
     background-color: var(--color-bg);
