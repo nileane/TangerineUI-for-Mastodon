@@ -559,7 +559,8 @@ body.app-body  {
     height: 1em;
     width: 1em;
 }
-.app-body .detailed-status__meta .icon {
+.app-body .detailed-status__meta .icon,
+.app-body .dropdown-button .icon {
     height: 15px;
     width: 15px;
 }
@@ -1116,9 +1117,9 @@ body.app-body  {
 }
 .app-body .navigation-bar {
     border-radius: 8px 8px 0 0;
-    padding: 23px 15px 22px 18px;
+    padding: 23px 15px 15px 18px;
     position: relative;
-    background-color: var(--color-content-secondary-bg);
+    background-color: var(--color-content-bg);
     border-top: 1px solid var(--color-lines);
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
@@ -1155,8 +1156,9 @@ body.app-body  {
     border-color: var(--color-accent);
 }
 .app-body .compose-form .reply-indicator + .navigation-bar,
-.app-body .compose-form .navigation-bar:has(~ .compose-form__highlightable:focus-within) {
-    background-color: var(--color-content-secondary-bg);
+.app-body .compose-form .navigation-bar:has(~ .compose-form__highlightable:focus-within),
+.app-body .reply-indicator {
+    background-color: var(--color-content-bg);
 }
 .app-body .compose-form__highlightable.active {
     box-shadow: none;
@@ -1176,7 +1178,6 @@ body.app-body  {
 }
 .app-body .compose-form .autosuggest-textarea__textarea {
     padding-left: 20px;
-    padding-top: 20px;
 }
 .app-body .compose-form .autosuggest-textarea__textarea::placeholder {
     font-size: 130%;
@@ -1209,9 +1210,6 @@ body.app-body  {
 .app-body .autosuggest-account .account__avatar {
     border: 0;
 }
-.app-body .compose-form__dropdowns {
-    gap: 6px;
-}
 .app-body .dropdown-button {
     border-radius: 8px;
     border-color: var(--color-accent-bg);
@@ -1228,7 +1226,6 @@ body.app-body  {
     color: var(--color-accent-fg);
 }
 .app-body .reply-indicator {
-    background-color: var(--color-content-secondary-bg);
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
     border-top: 1px solid var(--color-lines);
@@ -1238,6 +1235,9 @@ body.app-body  {
     margin: 0;
     padding: 18px 15px 0 18px;
     transition: all .2s;
+}
+.app-body .reply-indicator p {
+    overflow: hidden;
 }
 .app-body .reply-indicator__line:before {
     background-color: var(--color-accent);
@@ -1258,6 +1258,17 @@ body.app-body  {
 .app-body .reply-indicator__attachments {
     margin-top: 8px;
 }
+
+.app-body .navigation-bar .icon-button:not(:has(.icon-bars),.active) {
+    border: 1px solid var(--color-accent-bg);
+    color: var(--color-accent);
+    border-radius: 8px;
+    transition: all .2s;
+}
+.app-body .navigation-bar .icon-button:not(:has(.icon-bars),.active):hover {
+    border-color: var(--color-accent);
+}
+
 .app-body .compose-form .compose-form__warning {
     background-color: var(--color-accent-bg);
     border-left: 1px solid var(--color-lines);
@@ -1360,7 +1371,17 @@ body.app-body  {
 }
 
 .compose-form__footer {
+    gap: 10px;
+    padding: 0;
+}
+.app-body .compose-form__dropdowns {
     gap: 6px;
+    padding: 0 12px;
+}
+.app-body .compose-form__actions {
+    border-radius: 0 0 8px 8px;
+    padding: 10px 12px;
+    background-color: var(--color-content-secondary-bg);
 }
 .app-body .compose-form__buttons {
     gap: 1px;
@@ -1392,17 +1413,44 @@ body.app-body  {
     background-color: var(--color-accent);
     transition:
         transform .2s,
-        background-color .2s;
+        background-color .2s,
+        border-color .2s;
 }
 .app-body .compose-form__submit .button:active {
     transform: scale(.95);
 }
 .app-body .compose-form:has(.autosuggest-textarea__textarea:placeholder-shown) .compose-form__submit .button {
     background-image: var(--icon-send);
-    background-color: var(--color-content-secondary-bg);
+    background-color: var(--color-accent-bg);
 }
 .app-body .compose-form:not(:has(.autosuggest-textarea__textarea:placeholder-shown)) .compose-form__submit {
     animation: bounce-sml .3s ease-out 1;
+}
+
+.app-body .upload-progress__tracker {
+    background-color: var(--color-accent);
+}
+.app-body .upload-progress__backdrop {
+    background-color: var(--color-accent-bg);
+}
+.app-body .upload-progress .icon {
+    color: var(--color-accent)
+}
+.app-body .upload-progress__message,
+.app-body .upload-progress__message span {
+    color: var(--color-content-fg);
+}
+.app-body .compose-form__upload .icon-button {
+    background-color: rgba(0, 0, 0, .75);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: var(--color-accent-fg);
+    border-radius: 8px;
+    padding: 6px;
+}
+.app-body .compose-form__upload .icon-button:hover {
+    background-color: #444;
+    color: var(--color-accent-fg);
 }
 
 /* Poll composer */
@@ -4766,6 +4814,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .compare-history-modal .report-modal__target {
     border-color: var(--color-lines);
 }
+.app-body .report-modal {
+    background-color: var(--color-content-bg);
+}
 .app-body .interaction-modal {
     background-color: var(--color-content-bg);
     box-shadow:
@@ -5015,6 +5066,22 @@ a:is(.active,
 .app-body .report-modal__container,
 .app-body .report-dialog-modal__container {
     border-color: var(--color-lines);
+}
+.app-body .report-modal__comment {
+    color: var(--color-content-fg-muted);
+}
+.app-body #upload-modal__description {
+    background-color: var(--color-content-bg);
+    border: 1px solid var(--color-lines);
+    border-radius: 8px;
+    color: var(--color-content-fg);
+}
+.app-body #upload-modal__description:focus {
+    border-color: var(--color-accent);
+}
+.app-body .setting-text__wrapper {
+    background-color: var(--color-content-bg);
+    border: 0;
 }
 .app-body .report-dialog-modal__textarea {
     background-color: var(--color-secondary-bg);
