@@ -3589,6 +3589,65 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 
+/* "Trending Now" block at the bottom of the navigation panel */
+.app-body .getting-started__trends {
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column;
+}
+.app-body .getting-started__trends h4:not(:has(> a)) {
+    display: none;
+}
+.app-body .getting-started__trends h4 {
+    border-bottom: 0;
+    text-transform: none;
+    order: 9;
+    text-align: end;
+    position: relative;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.app-body .getting-started__trends h4::before {
+    content: " ";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    right: 10px;
+    height: 1px;
+    background-color: var(--color-lines);
+    display: block;
+}
+.app-body .getting-started__trends h4 a {
+    padding: 5px 8px;
+    color: var(--color-accent);
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-accent-bg);
+    outline: 8px solid var(--color-bg);
+    border-radius: 8px;
+    transition: 
+        border-color .2s,
+        background-color .2s,
+        transform .2s;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+.app-body:has(.explore__links .trends__item) .getting-started__trends h4 a {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
+    border-color: var(--color-accent);
+}
+.app-body .getting-started__trends h4 a:hover {
+    border-color: var(--color-accent);
+}
+.app-body .getting-started__trends h4 a:active {
+    transform: scale(.95);
+}
+.app-body .getting-started__trends h4 a::after {
+    content: " →";
+}
+
 
 /* 👤 Account view
    --------------- */
@@ -5709,7 +5768,6 @@ a:is(.active,
 .app-body .about__footer, /* Hide meta footer */
 .app-body .server-banner__introduction, /* Hide generic mastodon server introduction in sidebar */
 .app-body .search-banner ~ .search, /* Hide search field for logged out users */
-.app-body .getting-started__trends h4, /* Hide Trending header in sidebar */
 .app-body .account__header__bio .account__header__fields > dl:first-child /* Hide "Joined" field on profiles */ {
     display: none;
 }
