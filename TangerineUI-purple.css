@@ -2701,11 +2701,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-weight: bold;
 }
 
-.app-body .media-gallery__gifv__label {
+.app-body :is(.media-gallery__alt__label, .media-gallery__gifv__label) {
     background-color: rgba(0, 0, 0, .1);
     border-radius: 6px;
 }
-.app-body .spoiler-button:not(.spoiler-button--minified) ~ .media-gallery__item .media-gallery__gifv__label {
+.app-body .spoiler-button:not(.spoiler-button--minified) ~ .media-gallery__item :is(.media-gallery__alt__label, .media-gallery__gifv__label) {
     display: none;
 }
 
