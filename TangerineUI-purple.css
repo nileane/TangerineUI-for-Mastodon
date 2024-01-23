@@ -4612,7 +4612,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-radius: 8px;
     border: 1px solid var(--color-lines);
     box-shadow: var(--dropdown-shadow);
-    padding: 10px 10px 0;
+    padding: 0;
 }
 .app-body .language-dropdown__dropdown__results__item {
     border-radius: 8px;
