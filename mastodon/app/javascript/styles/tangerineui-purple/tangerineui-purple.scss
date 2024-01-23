@@ -1142,6 +1142,9 @@ body.app-body  {
     border-left: 0;
     border-right: 0;
 }
+.app-body .navigation-bar .account__display-name {
+    line-height: 20px;
+}
 .app-body .compose-form__highlightable {
     border-top: 0;
     border-left: 1px solid var(--color-lines);
@@ -1313,6 +1316,7 @@ body.app-body  {
 }
 .app-body .compose-form .spoiler-input .autosuggest-input {
     background-color: var(--color-content-bg);
+    border-bottom: 0;
     padding: 5px;
 }
 .app-body .compose-form .spoiler-input__input {
@@ -1744,9 +1748,9 @@ body.app-body  {
     border-radius: 8px;
     background-color: var(--color-content-bg);
     border: 1px solid var(--color-lines);
+    box-shadow: var(--dropdown-shadow);
 }
 .app-body .emoji-mart {
-    width: 100% !important;
     display: block;
 }
 .app-body .emoji-mart-bar:first-child {
@@ -3926,6 +3930,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .story__details__title {
     color: var(--color-content-fg);
 }
+.app-body .story__details__title {
+    font-weight: bold;
+}
 .app-body .story:hover {
     background-color: var(--color-content-bg-focus);
 }
@@ -3967,7 +3974,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-content-fg);
     border: 1px solid var(--color-accent-lines);
     font-weight: 500;
-    padding-right: 45px;
+    padding-inline-end: 45px;
+    padding-inline-start: 16px;
     outline-offset: 0;
     outline: 0 solid var(--color-accent-bg);
     transition:
@@ -3984,6 +3992,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-color: var(--color-accent);
     background-color: var(--color-content-bg);
     outline: 3px solid var(--color-accent-bg);
+    border-radius: 8px;
 }
 .app-body .search__input:focus::placeholder,
 .app-body .compose-form .spoiler-input__input:focus::placeholder {
@@ -3995,6 +4004,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transform: scale(1) translateY(-50%);
     background-size: 24px !important;
     top: 50%;
+    inset-inline-start: unset;
+    inset-inline-end: 12px;
 }
 .app-body .search__input:not(:placeholder-shown) + .search__icon:hover .icon {
     background-image: var(--icon-erase-active);
@@ -4605,7 +4616,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-radius: 8px;
     border: 1px solid var(--color-lines);
     box-shadow: var(--dropdown-shadow);
-    padding: 10px 10px 0;
+    padding: 0;
 }
 .app-body .language-dropdown__dropdown__results__item {
     border-radius: 8px;
