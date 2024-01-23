@@ -705,7 +705,7 @@ body.app-body  {
 }
 .app-body .detailed-status__link .icon-star {
     background-image: var(--icon-star);
-    margin: 0 4px -2px 0;
+    margin: 0;
 }
 .app-body .media-modal__overlay .icon-star {
     background-image: var(--icon-star-accent);
@@ -724,7 +724,7 @@ body.app-body  {
 }
 .app-body .detailed-status__link .icon-retweet {
     background-image: var(--icon-boost);
-    margin: 0 4px -2px 0;
+    margin: 0;
 }
 .app-body
     button.icon-button:is(
@@ -1144,6 +1144,16 @@ body.app-body  {
 }
 .app-body .navigation-bar .account__display-name {
     line-height: 20px;
+    overflow: visible;
+}
+.app-body :is(.navigation-bar, .reply-indicator) .account__avatar {
+    outline: 6px solid var(--color-content-bg);
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+.app-body .reply-indicator__line {
+    z-index: 1;
 }
 .app-body .compose-form__highlightable {
     border-top: 0;
@@ -2162,14 +2172,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding-bottom: 12px;
     box-shadow: none;
 }
-@media screen and (min-width:890px) and (max-width:1174px) {
-    .app-body .scrollable > div:first-child > .detailed-status__wrapper {
-        margin-top: 15px;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        border-top: 1px solid var(--color-lines);
-    }
-}
 @media screen and (max-width:889px) {
     .app-body .detailed-status {
         padding: 8px 8px 14px;
@@ -2204,6 +2206,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .detailed-status__meta {
     color: var(--color-content-fg);
     opacity: .8;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 4px;
 }
 .app-body .detailed-status__action-bar {
     padding: 0 16px;
@@ -2236,9 +2242,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .icon-star + .icon-button__counter
     > .animated-number {
         color: #EBBB59;
-}
-.app-body .detailed-status__meta .animated-number {
-    transform: translate(0, -1px);
 }
 .app-body .dropdown-menu__text-button:has(.icon-caret-down) {
     padding: 2px 4px;
@@ -2274,8 +2277,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-top: 1px solid var(--color-lines);
 }
 .app-body .detailed-status__link {
-    display: inline-block;
+    display: inline-flex;
     position: static;
+    gap: 4px;
+}
+.app-body :is(.detailed-status__favorites, .detailed-status__reblogs) {
+    height: 15px;
+    line-height: 15px;
 }
 
 /* Hashtag bar */
