@@ -1747,9 +1747,9 @@ body.app-body  {
     border-radius: 8px;
     background-color: var(--color-content-bg);
     border: 1px solid var(--color-lines);
+    box-shadow: var(--dropdown-shadow);
 }
 .app-body .emoji-mart {
-    width: 100% !important;
     display: block;
 }
 .app-body .emoji-mart-bar:first-child {
