@@ -1142,6 +1142,9 @@ body.app-body  {
     border-left: 0;
     border-right: 0;
 }
+.app-body .navigation-bar .account__display-name {
+    line-height: 20px;
+}
 .app-body .compose-form__highlightable {
     border-top: 0;
     border-left: 1px solid var(--color-lines);
