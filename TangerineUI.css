@@ -1316,6 +1316,7 @@ body.app-body  {
 }
 .app-body .compose-form .spoiler-input .autosuggest-input {
     background-color: var(--color-content-bg);
+    border-bottom: 0;
     padding: 5px;
 }
 .app-body .compose-form .spoiler-input__input {
