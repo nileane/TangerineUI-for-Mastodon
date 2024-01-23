@@ -3967,7 +3967,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-content-fg);
     border: 1px solid var(--color-accent-lines);
     font-weight: 500;
-    padding-right: 45px;
+    padding-inline-end: 45px;
+    padding-inline-start: 16px;
     outline-offset: 0;
     outline: 0 solid var(--color-accent-bg);
     transition:
@@ -3984,6 +3985,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-color: var(--color-accent);
     background-color: var(--color-content-bg);
     outline: 3px solid var(--color-accent-bg);
+    border-radius: 8px;
 }
 .app-body .search__input:focus::placeholder,
 .app-body .compose-form .spoiler-input__input:focus::placeholder {
@@ -3995,6 +3997,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transform: scale(1) translateY(-50%);
     background-size: 24px !important;
     top: 50%;
+    inset-inline-start: unset;
+    inset-inline-end: 12px;
 }
 .app-body .search__input:not(:placeholder-shown) + .search__icon:hover .icon {
     background-image: var(--icon-erase-active);
