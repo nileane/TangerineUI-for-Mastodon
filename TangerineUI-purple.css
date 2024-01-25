@@ -1941,16 +1941,18 @@ body.app-body  {
 }
 .app-body .status__info {
     height: 22px;
-    margin-left: -56px;
+    width: calc(100% + 56px);
+    gap: 2px;
+    margin-inline-start: -56px;
     padding: 0;
     margin-bottom: 0;
     line-height: 10px;
     align-items: start;
 }
 .app-body .status__info .status__display-name {
-    overflow: visible;
+    overflow: hidden;
     align-items: start;
-    max-width: calc(100% - 5em);
+    height: 50px;
 }
 .app-body .status__info .status__display-name .display-name bdi,
 .app-body .status__info .status__display-name .display-name__account {
@@ -1962,8 +1964,6 @@ body.app-body  {
 }
 .app-body .status__relative-time {
     height: 22px;
-    position: absolute;
-    right: 22px;
     color: var(--color-content-fg);
     opacity: .6;
     display: flex;
