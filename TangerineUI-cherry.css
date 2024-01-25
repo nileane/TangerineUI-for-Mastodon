@@ -3664,6 +3664,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .getting-started__trends h4 {
     display: none;
 }
+@media screen and (max-width:1174px) {
+    .app-body .getting-started__trends {
+        display: none;
+    }
+}
 
 
 /* 👤 Account view
