@@ -1622,7 +1622,6 @@ body.app-body  {
 }
 .app-body .poll li {
     margin-bottom: 4px;
-    padding-bottom: 1px;
     position: relative;
     border-radius: 8px;
     overflow: hidden;
