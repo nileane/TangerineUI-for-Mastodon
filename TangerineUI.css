@@ -1981,9 +1981,8 @@ body.app-body  {
     align-items: start;
 }
 .app-body .status__info .status__display-name {
-    overflow: hidden;
+    overflow: visible;
     align-items: start;
-    height: 46px;
 }
 .app-body .status__info .status__display-name .display-name bdi,
 .app-body .status__info .status__display-name .display-name__account {
@@ -1996,8 +1995,31 @@ body.app-body  {
 .app-body .status__relative-time {
     height: 22px;
     color: var(--color-content-fg);
-    opacity: .6;
     display: flex;
+    position: absolute;
+    inset-inline-end: 20px;
+    z-index: 1;
+}
+.app-body .status__relative-time > * {
+    opacity: .6;
+}
+.app-body .status__relative-time::before,
+.app-body .status__relative-time::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    height: 100%;
+    z-index: -1;
+}
+.app-body .status__relative-time::before {
+    width: 20px;
+    inset-inline-start: -20px;
+    background: linear-gradient(90deg, transparent, var(--color-post-bg));
+}
+.app-body .status__relative-time::after {
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    background-color: var(--color-post-bg);
 }
 .app-body .status__relative-time time + abbr {
     display: inline-block;
