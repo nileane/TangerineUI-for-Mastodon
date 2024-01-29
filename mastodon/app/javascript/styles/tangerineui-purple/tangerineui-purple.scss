@@ -2010,6 +2010,7 @@ body.app-body  {
     display: block;
     height: 100%;
     z-index: -1;
+    transition: all .3s;
 }
 .app-body .status__relative-time::before {
     width: 20px;
@@ -3716,6 +3717,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     opacity: .7;
 }
 .app-body .account__header__tabs__name .icon-lock {
+    height: 20px;
+    width: 16px;
+    top: unset;
     vertical-align: bottom;
 }
 .app-body .account__header__content a {
@@ -4189,9 +4193,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     .app-body:not(.layout-multiple-columns) .explore__search-header {
         padding: 10px 0;
-    }
-    .app-body:not(.layout-multiple-columns) .search__icon .icon {
-        top: 6px;
     }
 }
 @media screen and (max-width:889px) {
