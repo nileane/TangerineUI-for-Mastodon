@@ -1968,7 +1968,6 @@ body.app-body  {
     border-top: 1px solid var(--color-lines);
 }
 .app-body .scrollable > div:last-child > div:last-child > .status__wrapper,
-.app-body .scrollable > div:last-child > .status__wrapper,
 .app-body .scrollable > div > article:last-child > div > .status__wrapper,
 .app-body .search-results__section > div:last-child >.status__wrapper {
     border-bottom: 1px solid var(--color-lines);
