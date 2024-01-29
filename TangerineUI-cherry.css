@@ -4848,6 +4848,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .privacy-dropdown__option:is(:hover, .active, .active:hover) .icon-at {
     background-image: var(--icon-at-inv);
 }
+.app-body .privacy-dropdown__option .icon-info-circle path {
+    fill: var(--color-content-fg);
+}
+.app-body .privacy-dropdown__option:is(:hover, .active, .active:hover) .icon-info-circle path {
+    fill: var(--color-accent-fg);
+}
 
 .app-body .dropdown-animation {
     animation: fadein-short .2s 1;
