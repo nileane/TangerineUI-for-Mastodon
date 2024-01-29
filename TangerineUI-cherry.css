@@ -36,6 +36,7 @@
     --color-accent-fg: #ffffff;
 
     --color-lines: #e1dde4;
+    --color-lines-translucent: rgba(0, 0, 0, .15);
 
     --color-confirm: #79bd9a;
     --color-confirm-bg: rgba(121, 189, 154, 0.3);
@@ -68,6 +69,7 @@
         --color-accent-fg: #ffffff;
 
         --color-lines: #343434;
+        --color-lines-translucent: rgba(255, 255, 255, .15);
     }
 }
 :root {
@@ -1381,6 +1383,10 @@ body.app-body  {
 }
 .app-body .display-name {
     color: var(--color-content-fg);
+}
+.app-body .compose-form__upload__thumbnail {
+    outline-offset: -1px;
+    outline: 1px solid var(--color-lines-translucent);
 }
 .app-body .compose-form .compose-form__modifiers .compose-form__upload .icon-button {
     color: #ffffff;
@@ -2704,7 +2710,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .media-gallery__item-thumbnail img {
     border-radius: 8px;
-    outline: 1px solid rgba(0, 0, 0, .15);
+    outline: 1px solid var(--color-lines-translucent);
     outline-offset: -1px;
 }
 .app-body .media-gallery__gifv::after,
@@ -2717,7 +2723,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     left: 0;
     bottom: 0;
     right: 0;
-    border: 1px solid rgba(0, 0, 0, .15);
+    border: 1px solid var(--color-lines-translucent);
     z-index: 1;
 }
 .app-body .media-gallery__gifv:is(:active, :hover)::after {
@@ -2738,20 +2744,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transition: all .2s;
 }
 .app-body .spoiler-button:hover ~ .media-gallery__item > .media-gallery__preview {
-    outline: 1px solid rgba(0, 0, 0, 0.15);
-}
-@media (prefers-color-scheme: dark) {
-    .app-body .media-gallery__preview {
-        outline-color: rgba(255, 255, 255, .05);
-    }
-    .app-body .spoiler-button:hover ~ .media-gallery__item > .media-gallery__preview,
-    .app-body .media-gallery__item-thumbnail img {
-        outline-color: rgba(255, 255, 255, .15);
-    }
-    .app-body .media-gallery__gifv::after,
-    .app-body .video-player::after {
-        border-color: rgba(255, 255, 255, .1);
-    }
+    outline: 1px solid var(--color-lines-translucent);
 }
 .app-body .spoiler-button__overlay__label,
 .app-body .spoiler-button__overlay__label:is(:focus, :hover),
