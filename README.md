@@ -132,7 +132,8 @@ These are known instances that have enabled Tangerine UI for their users, either
 ## Installation for Mastodon admins
 
 ### Install Tangerine UI as the only theme on your instance:
-* Copy & paste the contents of 🍊 [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the '***Custom CSS***' field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
+1. **Check your Mastodon version**. For Tangerine UI to work properly, you need to make sure you're installing the right version for your Mastodon instance. Please check the [Compatibility](#compatibility) section in this document before you proceed.
+2. Copy & paste the contents of 🍊 [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the '***Custom CSS***' field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
    * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
    * 🍒 For the cherry variant, copy the contents of [`TangerineUI-cherry.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-cherry.css) instead.
 
