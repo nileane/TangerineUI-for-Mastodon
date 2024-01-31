@@ -5570,6 +5570,7 @@ a:is(.active,
 .app-body .scrollable.about {
     background-color: var(--color-content-bg);
     border: 1px solid var(--color-lines);
+    border-bottom: 0;
     display: flex;
     flex-flow: column;
     padding-bottom: 20px;
@@ -5637,7 +5638,7 @@ a:is(.active,
 }
 @media screen and (min-width:890px) {
     .app-body .scrollable.about {
-        border-radius: 8px !important;
+        border-radius: 8px 8px 0 0 !important;
     }
     .app-body .about__header__hero {
         border-radius: 8px 8px 0 0;
