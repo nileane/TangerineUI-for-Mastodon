@@ -4624,12 +4624,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .inline-follow-suggestions__body__scroll-button__icon {
     background-color: var(--color-accent);
-    transition: background-color .2s;
-}
-.app-body .inline-follow-suggestions__body__scroll-button {
+    border-radius: 8px;
+    padding: 6px;
     transition: all .3s;
 }
-.app-body .inline-follow-suggestions__body__scroll-button:is(:active)  {
+.app-body .inline-follow-suggestions__body__scroll-button:is(:active) .inline-follow-suggestions__body__scroll-button__icon {
     transform: scale(.9);
 }
 .app-body .inline-follow-suggestions__body__scroll-button:is(:active, :focus, :hover) .inline-follow-suggestions__body__scroll-button__icon {
