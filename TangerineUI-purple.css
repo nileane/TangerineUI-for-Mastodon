@@ -4589,6 +4589,57 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 
+/* Inline Follow Suggesitons */
+.app-body .inline-follow-suggestions {
+    background-color: var(--color-content-secondary-bg);
+    border-top: 1px solid var(--color-lines);
+    border-bottom: 1px solid var(--color-lines);
+    position: relative;
+}
+.app-body .inline-follow-suggestions__header h3 {
+    font-weight: bold;
+    color: var(--color-content-fg);
+}
+.app-body .inline-follow-suggestions__body__scrollable__card {
+    border-radius: 8px;
+    background-color: var(--color-content-bg);
+    border: 0;
+}
+.app-body .inline-follow-suggestions__body__scrollable__card :is(.display-name__html, .display-name__account),
+.app-body .inline-follow-suggestions__body__scrollable__card__text-stack__source {
+    color: var(--color-content-fg);
+}
+.app-body .inline-follow-suggestions__body__scrollable__card .display-name__account {
+    opacity: .6;
+}
+.app-body .inline-follow-suggestions__body__scrollable__card .verified-badge {
+    color: var(--color-accent);
+}
+.app-body .inline-follow-suggestions__body__scrollable__card button:active {
+    transform: scale(.95);
+}
+.app-body .inline-follow-suggestions__body__scroll-button__icon {
+    background-color: var(--color-accent);
+    transition: background-color .2s;
+}
+.app-body .inline-follow-suggestions__body__scroll-button {
+    transition: all .3s;
+}
+.app-body .inline-follow-suggestions__body__scroll-button:is(:active)  {
+    transform: scale(.9);
+}
+.app-body .inline-follow-suggestions__body__scroll-button:is(:active, :focus, :hover) .inline-follow-suggestions__body__scroll-button__icon {
+    background-color: var(--color-accent-focus);
+}
+
+.app-body .inline-follow-suggestions__body__scrollable__card .account__avatar {
+    border-radius: 50px;
+    background-color: var(--color-content-bg);
+    border: 0;
+    outline: 3px solid var(--color-content-bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+}
+
 
 .app-body .button,
 .app-body .account__header__tabs__buttons .icon-button {
