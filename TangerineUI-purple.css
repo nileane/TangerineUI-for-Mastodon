@@ -3843,6 +3843,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-weight: bold;
 }
 
+.app-body .account__header__tabs__buttons > button:first-child:active {
+    transform: scale(.95);
+}
+
 
 /* ✨ Explore tab
    -------------- */
@@ -4758,9 +4762,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .language-dropdown__dropdown__results__item__common-name) {
     color: var(--color-accent);
 }
-.app-body .button:not(.button-secondary):is(:active, :focus, :hover),
-.app-body .button.button-tertiary:is(:active, :focus, :hover),
-.app-body .button.logo-button:is(:active, :focus, :hover) {
+.app-body .button:not(.button-secondary):is(:active, :hover),
+.app-body .button.button-tertiary:is(:active, :hover),
+.app-body .button.logo-button:is(:active, :hover) {
     background-color: var(--color-accent-focus);
 }
 
@@ -4934,6 +4938,22 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     ):not(:hover) {
         background-color: transparent;
         color: var(--color-accent);
+}
+.app-body 
+    :is(
+        .block-modal__cancel-button,
+        .confirmation-modal__cancel-button,
+        .confirmation-modal__secondary-button,
+        .mute-modal__cancel-button
+    ):active,
+    :is(
+        .block-modal__cancel-button,
+        .confirmation-modal__cancel-button,
+        .confirmation-modal__secondary-button,
+        .mute-modal__cancel-button
+    )
+    + button:active {
+        transform: scale(.95);
 }
 .app-body .status__content a.hashtag {
     color: var(--color-accent);
