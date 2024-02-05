@@ -5309,7 +5309,7 @@ a:is(.active,
     color: var(--color-fg-muted);
 }
 .app-body .link-footer::after {
-    --version-f: 'Tangerine UI for Mastodon: ' var(--version) ' · ' var(--variant) ' variant';
+    --version-f: 'Tangerine UI for Mastodon: ' var(--version) ' · ' var(--variant);
     content: var(--version-f);
     color: var(--color-fg-muted);
     order: 10;
@@ -6051,7 +6051,7 @@ a:is(.active,
 }
 
 .layout-multiple-columns .drawer__inner:not(:has(> .search-results))::after {
-    --version-f: 'Tangerine UI for Mastodon: ' var(--version) ' · ' var(--variant) ' variant';
+    --version-f: 'Tangerine UI for Mastodon: ' var(--version) ' · ' var(--variant);
     content: var(--version-f);
     color: var(--color-fg-muted);
     padding: 12px;
