@@ -6102,10 +6102,3 @@ a:is(.active,
 .app-body .switch-to-advanced .switch-to-advanced__toggle {
     color: var(--color-accent);
 }
-
-.layout-multiple-columns .link-footer {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
