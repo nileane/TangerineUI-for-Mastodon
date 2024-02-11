@@ -5929,6 +5929,9 @@ a:is(.active,
 .layout-multiple-columns .drawer__tab .icon {
     transform: scale(1.2);
 } 
+.layout-multiple-columns .drawer__tab:active {
+    transform: scale(.9);
+}
 .layout-multiple-columns .drawer__tab:is(:active, :focus, :hover) {
     background-color: var(--color-accent-bg);
 }
