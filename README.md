@@ -6,7 +6,7 @@
  </picture>
 </h1>
 
-Tangerine UI is a vibrant and fully-featured custom theme for Mastodon's Web UI that comes in three variants: 🍊 Tangerine, 🪻 Purple, and 🍒 Cherry.
+Tangerine UI is a vibrant, fully-featured custom theme for Mastodon's Web UI that comes in three variants: 🍊 Tangerine, 🪻 Purple, and 🍒 Cherry.
 
 [🕹️ **Live demo** @ nileane.fr](https://nileane.fr) • [👋 **Follow Tangerine UI** on Mastodon](https://nileane.fr/@TangerineUI) • [📝 **Release notes**](https://github.com/nileane/TangerineUI-for-Mastodon/releases)
 
