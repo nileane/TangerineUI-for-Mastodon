@@ -1248,7 +1248,10 @@ body.app-body  {
     box-shadow: 
         0 20px 25px -5px rgba(0, 0, 0, .25),
         0 8px 10px -6px rgba(0, 0, 0, .25);
-}  
+}
+.app-body .autosuggest-textarea__suggestions__item {
+    color: var(--color-content-fg);
+}
 .app-body .autosuggest-textarea__suggestions__item:is(.selected, :active, :focus, :hover),
 .app-body .autosuggest-textarea__suggestions__item:is(.selected, :active, :focus, :hover) .autosuggest-account :is(.display-name__account, .display-name__html) {
     background-color: var(--color-accent);
@@ -2256,7 +2259,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-size: 18px;
     font-weight: bold;
 }
-.app-body .compose-panel .detailed-status__display-name strong {
+.app-body :is(.compose-panel, .compose-form) .detailed-status__display-name strong {
     font-size: 14px;
 }
 .app-body .detailed-status__display-name .display-name__account {
@@ -4100,17 +4103,17 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .explore__search-results article:last-child > .account {
     border-bottom: 1px solid var(--color-lines);
 }
-.app-body .explore__search-results .trends__item {
+.app-body :is(.explore__search-results, .search-results__section) .trends__item {
     border-bottom: 2px solid var(--color-content-secondary-bg);
 }
-.app-body .explore__search-results article:first-child > .trends__item,
-.app-body .search-results__section > .trends__item:first-child,
-.app-body .search-results__section > .account:first-child {
+.app-body :is(.explore__search-results, .search-results__section) article:first-child > .trends__item,
+.app-body :is(.explore__search-results, .search-results__section) > .trends__item:first-child,
+.app-body :is(.explore__search-results, .search-results__section) > .account:first-child {
     border-top: 1px solid var(--color-lines);
 }
-.app-body .explore__search-results article:last-child > .trends__item,
-.app-body .search-results__section > .trends__item:last-child,
-.app-body .search-results__section > .account:last-child {
+.app-body :is(.explore__search-results, .search-results__section) article:last-child > .trends__item,
+.app-body :is(.explore__search-results, .search-results__section) > .trends__item:last-child,
+.app-body :is(.explore__search-results, .search-results__section) > .account:last-child {
     border-bottom: 1px solid var(--color-lines);
 }
 .app-body .search-results__section {
@@ -6018,6 +6021,7 @@ a:is(.active,
         width: 400px;
 }
 .layout-multiple-columns .drawer__inner:has(> .search-results > .search-results__section) {
+    z-index: 2;
     background-color: var(--color-content-bg);
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
