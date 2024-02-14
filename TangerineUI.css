@@ -809,9 +809,9 @@ body.app-body  {
 
 /* Navigation panel icons */
 .app-body .column-link__icon {
-    transform: scale(1.3);
+    transform: scale(1.45);
     margin-right: 7px;
-    margin-left: 2px;
+    margin-left: 3px;
 }
 /* Home icon */
 .app-body .icon-home {
@@ -3436,7 +3436,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin-bottom: 10px;
 }
 .app-body .column-link:not(.column-link--logo) {
-    padding: 13px 20px 14px 13px;
+    padding: 15px 20px 16px 13px;
+    gap: 7px;
     margin-left: 3px;
     font-weight: 500;
     font-size: 18px;
@@ -3463,15 +3464,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     .app-body .column-link--transparent span::before {
         content: " ";
-        left: -44px;
+        left: -48px;
         background-color: transparent;
         transition: .3s background-color;
-        top: -12px;
+        top: -13px;
         right: -16px;
         position: absolute;
         border-radius: 8px;
         z-index: -1;
-        bottom: -12px;
+        bottom: -13px;
     }
     .app-body .column-link--transparent:hover span::before {
         background-color: var(--color-accent-bg);
