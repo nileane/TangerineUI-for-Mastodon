@@ -2987,12 +2987,21 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body:not(.layout-multiple-columns) .column-back-button::after {
         display: none;
     }
-    .app-body:not(.layout-multiple-columns) .column-header__button:is(.active, .active:hover, :hover),
+    .app-body .column-header__buttons {
+        height: 55px;
+    }
     .app-body:not(.layout-multiple-columns) .column-header,
     .app-body:not(.layout-multiple-columns) .column-back-button {
         background-color: transparent;
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
+    }
+    .app-body:not(.layout-multiple-columns) .column-header__button,
+    .app-body:not(.layout-multiple-columns) .column-header__button:is(.active, .active:hover, :hover) {
+        padding: 0 12px;
+        height: 35px !important;
+        align-self: center;
+        transform-origin: center right;
     }
 }
 
