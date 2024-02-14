@@ -5427,7 +5427,7 @@ a:is(.active,
 .app-body .sign-in-banner p {
     color: var(--color-fg);
     opacity: .5;
-    padding: 0 10px;
+    padding: 0 10px 5px;
 }
 
 
