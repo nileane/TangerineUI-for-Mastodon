@@ -348,6 +348,22 @@ body.app-body  {
 .app-body .loading-bar {
     background-color: var(--color-accent);
 }
+.app-body .circular-progress {
+    color: var(--color-accent);
+}
+
+.app-body .redirect__logo {
+    background-image: var(--logo);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.app-body .redirect__logo img {
+    opacity: 0;
+}
+.app-body .redirect__message a {
+    color: var(--color-accent);
+}
 
 .app-body .getting-started,
 .app-body .regeneration-indicator,
@@ -1922,7 +1938,7 @@ body.app-body  {
         .translate-button .link-button,
         .status__content__translate-button
     ) {
-        bottom: 13px;
+        bottom: 12px;
 }
 .app-body .status__content__translate-button:hover,
 .app-body .translate-button .link-button:hover {
@@ -3695,14 +3711,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .account__header__bar .avatar .account__avatar {
     border-radius: 50%;
-    margin: 2px 2px 6px;
-    outline: 1px solid var(--color-lines-translucent);
+    margin: 0x;
     border-width: 4px;
     border-color: var(--color-content-bg);
     width: 100px !important;
     height: 100px !important;
     background-color: var(--color-content-bg);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
 }
 .app-body .account__header__tabs__name h1,
 .app-body .account__header__tabs__name h1 small {
@@ -4613,7 +4627,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .inline-follow-suggestions__body__scrollable__card {
     border-radius: 8px;
     background-color: var(--color-content-secondary-bg);
-    border: 1px solid var(--color-lines);
+    border: 0;
 }
 .app-body .inline-follow-suggestions__body__scrollable__card :is(.display-name__html, .display-name__account),
 .app-body .inline-follow-suggestions__body__scrollable__card__text-stack__source {
@@ -4650,7 +4664,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .inline-follow-suggestions__body__scrollable__card .account__avatar {
     border-radius: 50px;
     background-color: var(--color-content-bg);
-    outline: 1px solid var(--color-lines-translucent);
     border: 3px solid var(--color-content-bg);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
     transform: translateY(3px);
@@ -5413,6 +5426,7 @@ a:is(.active,
 .app-body .sign-in-banner p {
     color: var(--color-fg);
     opacity: .5;
+    padding: 0 10px;
 }
 
 
@@ -6101,11 +6115,4 @@ a:is(.active,
 }
 .app-body .switch-to-advanced .switch-to-advanced__toggle {
     color: var(--color-accent);
-}
-
-.layout-multiple-columns .link-footer {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
