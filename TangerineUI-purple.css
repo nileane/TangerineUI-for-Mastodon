@@ -3100,11 +3100,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         height: 45px;
         border-bottom: 0;
     }
-    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper:has(> #tabs-bar__portal) {
+    .app-body:not(.layout-multiple-columns):has(.ui .ui__header__links > .button[href="/auth/sign_in"]) .tabs-bar__wrapper {
         display: none;
     }
-    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-back-button),
-    .app-body:not(.layout-multiple-columns):has(.ui__header .ui__header__links .button.button-secondary[href="/publish"]) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) { /* Column header (2nd top bar) is displayed only if there's something inside */
+    .app-body:not(.layout-multiple-columns):has(.ui__header .ui__header__links .button[href="/publish"]) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper, > #tabs-bar__portal > .column-back-button) { /* Column header (2nd top bar) is displayed only if there's something inside */
         display: block;
         top: 0;
         left: 40px;
@@ -3951,11 +3950,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-content-bg);
     border-radius: 0;
     border-bottom: 1px solid var(--color-lines);
-}
-@media screen and (max-width:889px) {
-    .app-body .scrollable .account-card {
-        margin: 0 10px 10px;
-    }
 }
 .app-body .account-card__header {
     padding: 0;
