@@ -2987,12 +2987,21 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body:not(.layout-multiple-columns) .column-back-button::after {
         display: none;
     }
-    .app-body:not(.layout-multiple-columns) .column-header__button:is(.active, .active:hover, :hover),
+    .app-body .column-header__buttons {
+        height: 55px;
+    }
     .app-body:not(.layout-multiple-columns) .column-header,
     .app-body:not(.layout-multiple-columns) .column-back-button {
         background-color: transparent;
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
+    }
+    .app-body:not(.layout-multiple-columns) .column-header__button,
+    .app-body:not(.layout-multiple-columns) .column-header__button:is(.active, .active:hover, :hover) {
+        padding: 0 12px;
+        height: 35px !important;
+        align-self: center;
+        transform-origin: center right;
     }
 }
 
@@ -3100,17 +3109,19 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         height: 45px;
         border-bottom: 0;
     }
-    .app-body:not(.layout-multiple-columns):has(.ui .ui__header__links > .button[href="/auth/sign_in"]) .tabs-bar__wrapper {
-        display: none;
-    }
-    .app-body:not(.layout-multiple-columns):has(.ui__header .ui__header__links .button[href="/publish"]) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper, > #tabs-bar__portal > .column-back-button) { /* Column header (2nd top bar) is displayed only if there's something inside */
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
         display: block;
         top: 0;
-        left: 40px;
+        left: 45px;
         right: 105px;
         height: 55px;
         position: fixed;
+    }
+    .app-body:not(.layout-multiple-columns):not(:has(.ui .ui__header__links > .button[href="/auth/sign_in"])) .tabs-bar__wrapper {
         z-index: 3;
+    }
+    .app-body:not(.layout-multiple-columns):has(.ui .ui__header__links > .button[href="/auth/sign_in"]) .tabs-bar__wrapper :is(.column-back-button, .column-header > *) {
+        display: none;
     }
     .app-body:not(.layout-multiple-columns)
         :is(
@@ -3626,6 +3637,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     .app-body .column-link__icon {
         margin: 0;
+        transform: scale(1.3);
     }
     .app-body .column-link span {
         padding-left: .5em;
