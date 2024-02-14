@@ -3459,9 +3459,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .column-link:not(.column-link--logo) {
         transition: all .3s;
     }
-    .app-body .column-link:not(.column-link--logo)[href="/settings/preferences"] {
-        padding-bottom: 13px;
-    }
     .app-body .column-link--transparent span::before {
         content: " ";
         left: -48px;
