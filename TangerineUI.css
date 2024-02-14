@@ -4627,7 +4627,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .inline-follow-suggestions__body__scrollable__card {
     border-radius: 8px;
     background-color: var(--color-content-secondary-bg);
-    border: 1px solid var(--color-lines);
+    border: 0;
 }
 .app-body .inline-follow-suggestions__body__scrollable__card :is(.display-name__html, .display-name__account),
 .app-body .inline-follow-suggestions__body__scrollable__card__text-stack__source {
