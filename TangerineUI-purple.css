@@ -3100,17 +3100,19 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         height: 45px;
         border-bottom: 0;
     }
-    .app-body:not(.layout-multiple-columns):has(.ui .ui__header__links > .button[href="/auth/sign_in"]) .tabs-bar__wrapper {
-        display: none;
-    }
-    .app-body:not(.layout-multiple-columns):has(.ui__header .ui__header__links .button[href="/publish"]) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper, > #tabs-bar__portal > .column-back-button) { /* Column header (2nd top bar) is displayed only if there's something inside */
+    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
         display: block;
         top: 0;
-        left: 40px;
+        left: 45px;
         right: 105px;
         height: 55px;
         position: fixed;
+    }
+    .app-body:not(.layout-multiple-columns):not(:has(.ui .ui__header__links > .button[href="/auth/sign_in"])) .tabs-bar__wrapper {
         z-index: 3;
+    }
+    .app-body:not(.layout-multiple-columns):has(.ui .ui__header__links > .button[href="/auth/sign_in"]) .tabs-bar__wrapper :is(.column-back-button, .column-header > *) {
+        display: none;
     }
     .app-body:not(.layout-multiple-columns)
         :is(
