@@ -3089,15 +3089,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         background-color: transparent;
         border-bottom: 0;
     }
-    .app-body:not(.layout-multiple-columns) .ui__header__logo {
-        margin: 0;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .app-body:not(.layout-multiple-columns) .ui__header:has(.ui__header__links > a[href="/auth/sign_in"]) .ui__header__logo {
-        position: static;
-        transform: none;
+    .app-body:not(.layout-multiple-columns) .ui__header .ui__header__logo {
         margin-left: 3px;
     }
     .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
@@ -3106,14 +3098,20 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         margin-bottom: -2px;
         border-radius: 0;
         height: 45px;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        border-bottom: 0;
     }
     .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper:has(> #tabs-bar__portal) {
         display: none;
     }
     .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-back-button),
-    .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) { /* Column header (2nd top bar) is displayed only if there's something inside */
+    .app-body:not(.layout-multiple-columns):has(.ui__header .ui__header__links .button.button-secondary[href="/publish"]) .tabs-bar__wrapper:has(> #tabs-bar__portal > .column-header__wrapper) { /* Column header (2nd top bar) is displayed only if there's something inside */
         display: block;
+        top: 0;
+        left: 40px;
+        right: 105px;
+        height: 55px;
+        position: fixed;
+        z-index: 3;
     }
     .app-body:not(.layout-multiple-columns)
         :is(
@@ -3123,31 +3121,31 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
             .column-header__back-button
         ) {
             background-color: transparent;
-            height: 50px;
+            height: 55px;
             border: 0;
             margin: 0;
+    }
+    .app-body .column-header__icon {
+        display: none;
     }
     .app-body:not(.layout-multiple-columns) .ui::after { /* Set a backdrop blur background to both top bars */
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         background-color: rgba(255, 255, 255, 0.75);
+        border-bottom: 1px solid var(--color-lines-translucent);
         content: "";
-        height: 100px;
+        height: 55px;
         left: 0;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 1;
     }
-    .app-body:not(.layout-multiple-columns) .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal)::after {
-        height: 55px;
-    }
-    .app-body:not(.layout-multiple-columns) .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-back-button)::after,
-    .app-body:not(.layout-multiple-columns) .ui:has(.columns-area__panels > .columns-area__panels__main > .tabs-bar__wrapper > #tabs-bar__portal > .column-header__wrapper)::after { /* Backdrop blur has double the height only in cases where there's 2 top bars present */
-        height: 100px;
-    }
     .app-body:not(.layout-multiple-columns) .column-header__collapsible { /* Remove margin between column settings and column header */
-        margin-top: -4px;
+        margin-top: 1px;
+        position: fixed;
+        left: 0;
+        right: 0;
     }
     .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
         border-bottom: 1px solid var(--color-lines);
@@ -3403,10 +3401,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 @media screen and (max-width:1174px) {
-    .layout-single-column .ui__header__links .button.button-secondary[href="/publish"] {
-        position: absolute;
-        right: 12px;
-    }
     .layout-single-column .ui__header__links {
         padding-left: 12px;
     }
