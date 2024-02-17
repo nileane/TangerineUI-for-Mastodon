@@ -4028,7 +4028,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     opacity: .7;
     transition: all .3s;
 }
-.app-body .story:is(:active, :focus, :hover) :is(.story__details__publisher, .story__details__shared) {
+.app-body .story:hover :is(.story__details__publisher, .story__details__shared) {
     color: var(--color-accent);
     opacity: 1;
 }
