@@ -4024,12 +4024,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .story__details__shared {
     color: var(--color-fg);
 }
-.app-body .story .story__details__publisher,
-.app-body .story .story__details__shared {
+.app-body .story :is(.story__details__publisher, .story__details__shared) {
+    opacity: .7;
     transition: all .3s;
 }
 .app-body .story:is(:active, :focus, :hover) :is(.story__details__publisher, .story__details__shared) {
     color: var(--color-accent);
+    opacity: 1;
 }
 .app-body .story.expanded {
     gap: 10px;
