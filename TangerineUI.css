@@ -3112,8 +3112,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
         display: block;
         top: 0;
-        left: 45px;
-        right: 105px;
+        inset-inline-start: 45px;
+        inset-inline-end: 105px;
         height: 55px;
         position: fixed;
     }
