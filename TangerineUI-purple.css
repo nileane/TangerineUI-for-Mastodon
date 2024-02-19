@@ -3648,9 +3648,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         padding-bottom: env(safe-area-inset-bottom);
         flex-direction: row;
         overflow-x: auto;
-        background-color: var(--color-content-bg);
-        border-top: 1px solid var(--color-lines);
+        background-color: rgba(255, 255, 255, 0.75);
+        border-top: 1px solid var(--color-lines-translucent);
         border-left: 0;
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
     }
     .app-body .columns-area__panels__pane--navigational .navigation-panel::before {
         content: " ";
@@ -3763,7 +3765,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         margin-left: -55px;
     }
 }
-
+@media screen and (max-width:1174px) {
+    @media (prefers-color-scheme: dark) {
+        .app-body .columns-area__panels__pane--navigational .navigation-panel {
+            background-color: rgba(3, 3, 3, .65);
+        }
+    }
+}
 /* "Trending Now" block at the bottom of the navigation panel */
 .app-body .getting-started__trends {
     padding: 0;
