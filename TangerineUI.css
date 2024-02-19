@@ -3620,9 +3620,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     right: -15px;
     bottom: -10px;
 }
-.app-body .column-link[href="/lists"].active:has(+ .list-panel .column-link.active) span::before {
-    background-color: var(--color-accent-bg);
-}
 @media screen and (min-width:1175px) {
     .app-body .column-link[href="/lists"]:is(.active, :hover) + .list-panel,
     .app-body .list-panel:hover {
