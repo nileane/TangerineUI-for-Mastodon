@@ -888,6 +888,9 @@ body.app-body  {
 .app-body .column-link.active .icon-home {
     background-image: var(--icon-home-active);
 }
+.layout-multiple-columns .column-link .icon-home {
+    background-image: var(--icon-home-accent);
+}
 .app-body .notification__message .icon-home {
     background-image: var(--icon-post-notification-accent);
 }
@@ -899,6 +902,9 @@ body.app-body  {
 .app-body .column-link.active .icon-globe {
     background-image: var(--icon-globe-active);
 }
+.layout-multiple-columns .column-link .icon-globe {
+    background-image: var(--icon-globe-accent);
+}
 /* Explore + Hashtag icon */
 .app-body .icon-hashtag,
 .app-body .column-link .icon-hashtag {
@@ -906,6 +912,9 @@ body.app-body  {
 }
 .app-body .column-link.active .icon-hashtag {
     background-image: var(--icon-explore-active);
+}
+.layout-multiple-columns .column-link .icon-hashtag {
+    background-image: var(--icon-explore-accent);
 }
 /* Search icon */
 .app-body .icon-search {
@@ -943,6 +952,9 @@ body.app-body  {
 .app-body .column-link.active .icon-at {
     background-image: var(--icon-direct-messages-active);
 }
+.layout-multiple-columns .column-link .icon-at {
+    background-image: var(--icon-direct-messages-accent);
+}
 /* Bookmarks icon */
 .app-body .icon-bookmarks,
 .app-body .column-header__icon.icon-bookmarks {
@@ -950,7 +962,10 @@ body.app-body  {
 }
 .app-body .column-link.active .icon-bookmarks {
     background-image: var(--icon-bookmark-column-link-active);
-} 
+}
+.layout-multiple-columns .column-link .icon-bookmarks {
+    background-image: var(--icon-bookmark-column-link-accent);
+}
 /* Favorites icon */
 .app-body .column-link .icon-star,
 .app-body .column-header__icon.icon-star {
@@ -958,6 +973,9 @@ body.app-body  {
 }
 .app-body .column-link.active .icon-star {
     background-image: var(--icon-star-column-link-active);
+}
+.layout-multiple-columns .column-link .icon-star {
+    background-image: var(--icon-star-column-link-accent);
 }
 /* Lists icon */
 .app-body .icon-list-ul,
@@ -967,9 +985,15 @@ body.app-body  {
 .app-body .column-link.active .icon-list-ul {
     background-image: var(--icon-list-active);
 }
+.layout-multiple-columns .column-link .icon-list-ul {
+    background-image: var(--icon-list-accent);
+}
 /* Settings icon */
 .app-body .column-link .icon-cog {
     background-image: var(--icon-settings);
+}
+.layout-multiple-columns .column-link .icon-cog {
+    background-image: var(--icon-settings-accent);
 }
 /* About page icon */
 .app-body .navigation-panel .column-link .icon-ellipsis-h {
@@ -1006,6 +1030,9 @@ body.app-body  {
 }
 .app-body .column-link.active .icon-user-plus {
     background-image: var(--icon-user-plus-column-link-active);
+}
+.layout-multiple-columns .column-link .icon-user-plus {
+    background-image: var(--icon-user-plus-column-link-accent);
 }
 /* Users icon */
 .app-body .icon-users {
@@ -6015,7 +6042,7 @@ a:is(.active,
     background-image: var(--icon-gear);
 }
 .layout-multiple-columns .drawer__tab .icon-globe {
-    background-image: var(--icon-globe-active);
+    background-image: var(--icon-globe);
 }
 .layout-multiple-columns .drawer__tab .icon-users {
     background-image: var(--icon-users);
