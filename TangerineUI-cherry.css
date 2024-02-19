@@ -484,10 +484,7 @@ body.app-body  {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.2);
-    }
-    75% {
-        transform: scale(.9);
+        transform: scale(1.25);
     }
     100% {
         transform: scale(1);
