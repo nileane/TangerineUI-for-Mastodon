@@ -3561,15 +3561,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     .app-body .column-link--transparent span::before {
         content: " ";
-        left: -48px;
+        left: -52px;
         background-color: transparent;
         transition: .3s background-color;
-        top: -13px;
+        top: -14px;
         right: -16px;
         position: absolute;
-        border-radius: 8px;
+        border-radius: 50px;
         z-index: -1;
-        bottom: -13px;
+        bottom: -14px;
     }
     .app-body .column-link--transparent:hover span::before {
         background-color: var(--color-accent-bg);
