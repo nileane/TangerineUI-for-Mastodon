@@ -3064,11 +3064,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .column-header__button:active {
     transform: scale(.8);
 }
-@media screen and (max-width:885px) {
-    .app-body:not(.layout-multiple-columns) .column-header__button.active {
-        animation: bounce-sml .3s 1;
-    }
-}
 .app-body .column-header__icon {
     transform: scale(1.1);
     margin-right: 4px;
@@ -3100,7 +3095,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         padding: 0 12px;
         height: 35px !important;
         align-self: center;
-        transform-origin: center right;
     }
 }
 
