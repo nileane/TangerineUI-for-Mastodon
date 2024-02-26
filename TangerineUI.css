@@ -22,6 +22,7 @@
     --color-secondary-separator: #ede3db;
 
     --color-content-bg: #ffffff;
+    --color-content-bg-translucent: rgba(255, 255, 255, 0.75);
     --color-content-fg: #444a5a;
     --color-content-fg-bold: #000000;
     --color-content-fg-muted: #8b92a7;
@@ -55,6 +56,7 @@
         --color-secondary-separator: #25201c;
 
         --color-content-bg: var(--color-bg);
+        --color-content-bg-translucent: rgba(3, 3, 3, .65);
         --color-content-fg: var(--color-fg);
         --color-content-fg-bold: #ffffff;
         --color-content-fg-muted: #737373;
@@ -3240,7 +3242,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body:not(.layout-multiple-columns) .ui::after { /* Set a backdrop blur background to both top bars */
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: var(--color-content-bg-translucent);
         border-bottom: 1px solid var(--color-lines-translucent);
         content: "";
         height: 55px;
@@ -3276,9 +3278,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 @media (prefers-color-scheme: dark) {
     @media screen and (max-width:1174px) {
-        .app-body:not(.layout-multiple-columns) .ui::after {
-            background-color: rgba(3, 3, 3, .65);
-        }
         .app-body:not(.layout-multiple-columns) .tabs-bar__wrapper {
             border-color: var(--color-lines);
         }
@@ -4522,6 +4521,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-image: var(--icon-reject-inv);
 }
 
+.app-body .notification-bar {
+    background-color: var(--color-content-bg-translucent);
+    color: var(--color-content-fg);
+    border: 1px solid var(--color-lines-translucent);
+    box-shadow: var(--dropdown-shadow);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
 
 
 /* 📋 Lists tab */
