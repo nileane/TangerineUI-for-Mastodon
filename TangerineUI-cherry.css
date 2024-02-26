@@ -3569,7 +3569,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         top: -14px;
         right: -16px;
         position: absolute;
-        border-radius: 50px;
+        border-radius: 10px;
         z-index: -1;
         bottom: -14px;
     }
