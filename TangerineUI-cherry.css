@@ -3780,7 +3780,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 /* "Trending Now" block at the bottom of the navigation panel */
 .app-body .getting-started__trends {
-    padding: 0;
+    padding: 0 0 0 10px;
     border-radius: 8px;
     display: flex;
     flex-flow: column;
