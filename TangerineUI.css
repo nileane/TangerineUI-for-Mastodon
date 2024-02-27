@@ -3215,6 +3215,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .column-header > button {
     padding: 0 0 0 15px;
+}
+.app-body .column-header .column-header__back-button {
+    padding-right: 16px;
+}
+.app-body .column-header :is(> button, .column-header__back-button) {
     font-weight: bold;
 }
 @media screen and (max-width:1174px) {
@@ -3803,9 +3808,21 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 .app-body .account__header__image {
-    height: 156px;
-    background-color: var(--color-secondary-bg);
+    height: 200px;
+    background-color: var(--color-content-bg);
+    border-radius: 8px;
     border-bottom: 0;
+    margin: 7px 10px 10px;
+}
+.app-body .account__header__image img {
+    object-position: top center;
+    background-color: var(--color-content-secondary-bg);
+}
+.app-body .account__header__image:has(img[src*="/missing.png"]) {
+    height: 90px;
+}
+.app-body .account__header__image img[src*="/missing.png"] {
+    background-color: transparent;
 }
 .app-body .account__header__bar {
     border: 0;
@@ -4115,10 +4132,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .hashtag-header {
     font-size: 15px;
     padding: 24px 20px;
+    margin: 10px;
+    border-radius: 8px;
     color: var(--color-content-fg);
     background-color: var(--color-content-secondary-bg);
-    border-top: 1px solid var(--color-lines);
-    border-bottom: 0;
+    border: 0;
 }
 .app-body .hashtag-header__header {
     margin-bottom: 0;
@@ -5615,6 +5633,9 @@ a:is(.active,
     padding: 0;
     border-left: 0;
     border-right: 0;
+}
+.app-body .server-banner .account .display-name__account {
+    opacity: .7;
 }
 .app-body .server-banner__meta__column:first-child {
     width: calc(60% - 5px);
