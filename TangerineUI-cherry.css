@@ -14,6 +14,8 @@
 
 /* 🎨 Colors */
 :root {
+    color-scheme: light dark;
+
     --color-bg: #f5eff2;
     --gradient-bg: linear-gradient(90deg, var(--color-bg), var(--color-bg));
     --color-fg: #2a2d37;
@@ -365,7 +367,6 @@
         --color-bg: #111111;
     }
 }
-
 
 body.app-body  {
     background-color: var(--color-bg);
