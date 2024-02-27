@@ -4014,7 +4014,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding: 0;
 }
 .app-body .getting-started__trends h4 > :is(a, span) {
-    padding: 15px 20px 6px 49px;
+    padding: 15px 20px 6px 51px;
     margin-left: 3px;
     font-weight: 500;
     color: var(--color-fg-muted);
