@@ -1275,7 +1275,8 @@ body.app-body  {
         .status__display-name,
         a.account__display-name
     ):is(:active, :focus, :hover)
-    .display-name strong {
+    .display-name strong,
+.app-body .status__prepend .status__display-name:is(:active, :focus, :hover) strong {
         text-decoration-line: underline;
         text-decoration-color: currentColor;
         text-decoration-thickness: 2px;
@@ -2638,9 +2639,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .status__prepend .muted .emojione {
     opacity: 1;
-}
-.app-body :is(.status__prepend, .notification__message):has(.icon-retweet) {
-    color: #D3487F;
 }
 .app-body .status-card,
 .app-body .status-card.compact {
