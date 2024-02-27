@@ -4524,6 +4524,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-image: var(--icon-reject-inv);
 }
 
+@media screen and (max-width:1174px) {
+    .app-body .notification-list {
+        bottom: calc(5rem + env(safe-area-inset-bottom));
+    }
+}
 .app-body .notification-bar {
     background-color: var(--color-content-bg-translucent);
     color: var(--color-content-fg);
@@ -4532,7 +4537,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
-
+.app-body .notification-bar-action {
+    transition: all .2s;
+}
+.app-body .notification-bar-action:is(:active, :focus, :hover) {
+    background-color: var(--color-accent-bg);
+    color: var(--color-accent);
+}
 
 /* 📋 Lists tab */
 .app-body .column-inline-form {
