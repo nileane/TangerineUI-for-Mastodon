@@ -4869,6 +4869,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-weight: bold;
     color: var(--color-content-fg);
 }
+.app-body .inline-follow-suggestions__body__scrollable {
+    scroll-padding: 60px;
+}
 .app-body .inline-follow-suggestions__body__scrollable__card {
     border-radius: 8px;
     background-color: var(--color-content-secondary-bg);
@@ -4902,7 +4905,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .inline-follow-suggestions__body__scroll-button:is(:active, :focus, :hover) .inline-follow-suggestions__body__scroll-button__icon {
     background-color: var(--color-accent-focus);
 }
-
+.app-body .inline-follow-suggestions__body__scroll-button.left {
+    background: linear-gradient(to right, var(--color-content-bg), transparent);
+    margin-left: -15px;
+    padding-left: 21px;
+}
 .app-body .inline-follow-suggestions__body__scroll-button.right {
     background: linear-gradient(to left, var(--color-content-bg), transparent);
     margin-right: -15px;
@@ -5637,6 +5644,7 @@ a:is(.active,
     padding: 0;
     border-left: 0;
     border-right: 0;
+    border-bottom: 0;
 }
 .app-body .server-banner .account .display-name__account {
     opacity: .7;
