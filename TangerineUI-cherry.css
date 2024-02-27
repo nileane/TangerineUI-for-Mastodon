@@ -14,7 +14,7 @@
 
 /* 🎨 Colors */
 :root {
-    --color-bg: #ffffff;
+    --color-bg: #f5eff2;
     --gradient-bg: linear-gradient(90deg, var(--color-bg), var(--color-bg));
     --color-fg: #2a2d37;
     --color-fg-muted: #888494;
@@ -5511,8 +5511,8 @@ a:is(.active,
     color: var(--color-accent);
 }
 .app-body .button:is(.button-secondary, .button-tertiary):hover {
-    background-color: var(--color-content-secondary-bg);
-    color: var(--color-content-fg);
+    background-color: var(--color-accent-focus);
+    color: var(--color-accent-fg);
 }
 .app-body .sign-in-banner .button,
 .app-body .button:is(.button-secondary, .button-tertiary) {
