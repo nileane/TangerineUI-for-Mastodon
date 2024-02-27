@@ -1163,6 +1163,9 @@ body.app-body  {
 .app-body .icon-button.overlayed .icon-eye-slash {
     background-image: var(--icon-eye-shut-inv);
 }
+.app-body .player-button .icon-eye-slash {
+    filter: brightness(100);
+}
 .app-body .icon-eye {
     background-image: var(--icon-eye-open);
 }
