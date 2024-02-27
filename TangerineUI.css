@@ -1449,6 +1449,10 @@ body.app-body  {
 .app-body .navigation-bar .icon-button:not(:has(.icon-bars),.active):hover {
     border-color: var(--color-accent);
 }
+.app-body .navigation-bar .icon-button:not(:has(.icon-bars),.active):active {
+    background-color: var(--color-accent-bg);
+}
+
 
 .app-body .compose-form .compose-form__warning {
     background-color: var(--color-accent-bg);
