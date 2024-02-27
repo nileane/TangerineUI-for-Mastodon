@@ -1319,6 +1319,7 @@ body.app-body  {
     padding-top: 0;
     border-left: 0;
     border-right: 0;
+    border-bottom: 0;
 }
 .app-body .navigation-bar .account__display-name {
     line-height: 20px;
@@ -4587,9 +4588,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .account {
     background-color: var(--color-content-bg);
-    border-bottom: 0;
+    border-bottom: 2px solid var(--color-content-secondary-bg);
     padding-left: 22px;
     padding-top: 4px;
+}
+.app-body .notification .account {
+    border-bottom: 0;
 }
 .app-body .explore__search-results .account {
     padding-top: 16px;
