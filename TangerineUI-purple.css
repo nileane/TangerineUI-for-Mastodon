@@ -401,7 +401,7 @@ body.app-body  {
 }
 :root:has(.app-body) *::-webkit-scrollbar-thumb {
     background-color: var(--color-accent);
-    border-radius: 50px;
+    border-radius: 8px;
     opacity: .4;
 }
 :root:has(.app-body) *::-webkit-scrollbar-track:hover {
@@ -415,6 +415,11 @@ body.app-body  {
     :root:has(.app-body) *::-webkit-scrollbar {
         display: none;
     }
+}
+:root,
+* {
+    scrollbar-color: var(--color-accent) var(--color-bg);
+    scrollbar-width: thin;
 }
 
 .app-body {
@@ -4769,6 +4774,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-radius: 8px;
     padding: 6px;
     transition: all .3s;
+}
+.app-body .inline-follow-suggestions__body__scroll-button {
+    opacity: 1;
 }
 .app-body .inline-follow-suggestions__body__scroll-button:is(:active) .inline-follow-suggestions__body__scroll-button__icon {
     transform: scale(.9);
