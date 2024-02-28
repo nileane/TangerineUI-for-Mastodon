@@ -6577,7 +6577,9 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
+        [href$="/cat" i],
         [href*="cats" i],
+        [href*="catloaf" i],
         [href*="Caturday" i],
         [href*="catsofmastodon" i],
         [href*="WhiskersWednesday" i]
@@ -6590,9 +6592,13 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="dog" i],
+        [href$="dog" i],
+        [href$="dogs" i],
+        [href*="/dog" i],
         [href*="DogLovers" i],
-        [href*="dogsofmastodon" i]
+        [href*="dogsofmastodon" i],
+        [href*="DogsOfFedi" i],
+        [href*="dogstadon" i]
     )
 )::before {
     background-image: var(--icon-dog);
@@ -6670,8 +6676,9 @@ a:is(.active,
 .trends__item:has(
     .trends__item__name a:is(
         [href*="minecraft" i],
-        [href*="hermitcraft" i],
-        [href*="cube" i]
+        [href*="hermitcraft" i]
+    ):not(
+        [href*="tagged" i]
     )
 )::before {
     background-image: var(--icon-cube);
@@ -6690,8 +6697,9 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="lgbt" i],
-        [href*="queer" i],
+        [href$="lgbt" i],
+        [href*="/lgbt" i],
+        [href*="/queer" i],
         [href$="trans" i],
         [href$="pride" i],
         [href$="pridemonth" i],
@@ -6712,7 +6720,7 @@ a:is(.active,
     .trends__item__name a:is(
         [href*="electionday" i],
         [href$="election" i],
-        [href^="/tags/election" i],
+        [href$="/election" i],
         [href*="presidentielle" i],
         [href*="presidential" i],
         [href*="legislativ" i]
@@ -6736,7 +6744,8 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="mutualaid" i]
+        [href*="mutualaid" i],
+        [href*="crowdfund" i]
     )
 )::before {
     background-image: var(--icon-handshake);
