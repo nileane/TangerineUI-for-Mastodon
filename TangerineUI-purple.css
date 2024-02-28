@@ -6337,6 +6337,13 @@ a:is(.active,
     padding-right: 8px;
 }
 
+.layout-multiple-columns .getting-started__trends .trends__item {
+    padding-left: 16px;
+}
+.layout-multiple-columns .getting-started__trends h4 > :is(a, span) {
+    padding-left: 47px;
+}
+
 .layout-multiple-columns :is(.column-header, .column-back-button) {
     background-color: var(--color-content-bg);
 }
