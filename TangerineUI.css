@@ -4464,6 +4464,31 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent-fg);
 }
 
+.app-body .search__popout__menu:nth-child(2):not(:has(.search__popout__menu__message)) {
+    margin-bottom: 10px;
+}
+.app-body .search__popout h4:has(+ .search__popout__menu:last-child) {
+    background-color: var(--color-content-secondary-bg);
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    border-radius: 6px 6px 0 0;
+    color: var(--color-fg-muted);
+}
+.app-body .search__popout__menu:last-child {
+    margin: 0 0 -10px;
+    background-color: var(--color-content-secondary-bg);
+    border-radius: 0 0 6px 6px;
+    padding: 5px;
+}
+.app-body .search__popout__menu:last-child .search__popout__menu__item:not(.selected, :active, :hover, :focus) {
+    color: var(--color-fg-muted);
+}
+.app-body .search__popout__menu:last-child .search__popout__menu__item:not(.selected, :active, :hover, :focus) mark {
+    color: var(--color-content-fg);
+} 
+
 @media screen and (max-width:1174px) {
     .app-body:not(.layout-multiple-columns) .search {
         margin-bottom: 0;
