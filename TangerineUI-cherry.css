@@ -6488,6 +6488,7 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
+        [href$="day" i],
         [href*="monday" i],
         [href*="tuesday" i],
         [href*="wednesday" i],
