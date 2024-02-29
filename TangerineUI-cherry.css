@@ -6674,7 +6674,7 @@ a:is(.active,
         [href*="poem" i],
         [href*="writing" i],
         [href*="write" i],
-        [href*="article" i],
+        [href*="article" i]
     )
 )::before {
     background-image: var(--icon-pencil);
