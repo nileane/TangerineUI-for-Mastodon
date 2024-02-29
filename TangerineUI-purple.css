@@ -3598,6 +3598,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .ui__header__logo {
     display: inline-flex;
     padding: 0;
+    border: 0;
     width: 50px;
     height: 50px;
     background-image: var(--logo);
@@ -3611,12 +3612,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .navigation-panel__logo {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .app-body .column-link:not(.column-link--logo) {
     padding: 15px 20px 16px 13px;
     gap: 7px;
     margin-left: 3px;
+    border: 0;
     font-weight: 500;
     font-size: 18px;
     overflow: visible;
@@ -4075,7 +4077,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding: 0;
 }
 .app-body .getting-started__trends h4 > :is(a, span) {
-    padding: 15px 20px 6px 51px;
+    padding: 15px 20px 6px 47px;
     margin-left: 3px;
     font-weight: 500;
     color: var(--color-fg-muted);
@@ -4101,7 +4103,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .getting-started__trends .trends__item {
-    padding-left: 20px;
+    padding-left: 19px;
 }
 @media screen and (max-width:1174px) {
     .app-body .getting-started__trends {
@@ -4116,7 +4118,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
-    margin-left: 3px;
     transform: scale(1.45);
     content: " ";
     display: block;
@@ -6341,7 +6342,7 @@ a:is(.active,
     padding-left: 16px;
 }
 .layout-multiple-columns .getting-started__trends h4 > :is(a, span) {
-    padding-left: 47px;
+    padding-left: 45px;
 }
 
 .layout-multiple-columns :is(.column-header, .column-back-button) {
