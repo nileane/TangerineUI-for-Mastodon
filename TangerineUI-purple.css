@@ -748,6 +748,7 @@ body.app-body  {
         .icon-quote-right,
         .icon-home,
         .icon-hashtag,
+        .icon-explore,
         .icon-search,
         .icon-times-circle,
         .icon-bell,
@@ -805,6 +806,7 @@ body.app-body  {
         .icon-quote-right,
         .icon-home,
         .icon-hashtag,
+        .icon-explore,
         .icon-search,
         .icon-times-circle,
         .icon-bell,
@@ -978,15 +980,19 @@ body.app-body  {
 .layout-multiple-columns .column-link .icon-globe {
     background-image: var(--icon-globe-accent);
 }
-/* Explore + Hashtag icon */
-.app-body .icon-hashtag,
-.app-body .column-link .icon-hashtag {
+/* Hashtag icon */
+.app-body .icon-hashtag {
+    background-image: var(--icon-hashtag);
+}
+/* Explore icon */
+.app-body .icon-explore,
+.app-body .column-link .icon-explore {
     background-image: var(--icon-explore);
 }
-.app-body .column-link.active .icon-hashtag {
+.app-body .column-link.active .icon-explore {
     background-image: var(--icon-explore-active);
 }
-.layout-multiple-columns .column-link .icon-hashtag {
+.layout-multiple-columns .column-link .icon-explore {
     background-image: var(--icon-explore-accent);
 }
 /* Search icon */
@@ -1250,10 +1256,10 @@ body.app-body  {
     .app-body .navigation-panel .column-link.active .icon-bell {
         background-image: var(--icon-bell-accent-active);
     }
-    .app-body .navigation-panel .column-link .icon-hashtag {
+    .app-body .navigation-panel .column-link .icon-explore {
         background-image: var(--icon-explore-accent);
     }
-    .app-body .navigation-panel .column-link.active .icon-hashtag {
+    .app-body .navigation-panel .column-link.active .icon-explore {
         background-image: var(--icon-explore-accent-active);
     }
     .app-body .navigation-panel .column-link .icon-search {
