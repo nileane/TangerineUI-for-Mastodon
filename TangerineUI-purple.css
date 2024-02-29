@@ -6069,7 +6069,7 @@ a:is(.active,
         border-radius: 8px 8px 0 0 !important;
     }
     .app-body .about__header__hero {
-        border-radius: 8px 8px 0 0;
+        border-radius: 6px 6px 0 0;
     }
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
