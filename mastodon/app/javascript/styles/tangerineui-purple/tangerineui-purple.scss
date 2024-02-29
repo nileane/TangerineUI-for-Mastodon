@@ -3598,6 +3598,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .ui__header__logo {
     display: inline-flex;
     padding: 0;
+    border: 0;
     width: 50px;
     height: 50px;
     background-image: var(--logo);
@@ -3611,12 +3612,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .navigation-panel__logo {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .app-body .column-link:not(.column-link--logo) {
     padding: 15px 20px 16px 13px;
     gap: 7px;
     margin-left: 3px;
+    border: 0;
     font-weight: 500;
     font-size: 18px;
     overflow: visible;
@@ -4075,7 +4077,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding: 0;
 }
 .app-body .getting-started__trends h4 > :is(a, span) {
-    padding: 15px 20px 6px 51px;
+    padding: 15px 20px 6px 47px;
     margin-left: 3px;
     font-weight: 500;
     color: var(--color-fg-muted);
@@ -4101,7 +4103,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .getting-started__trends .trends__item {
-    padding-left: 20px;
+    padding-left: 19px;
 }
 @media screen and (max-width:1174px) {
     .app-body .getting-started__trends {
@@ -4116,7 +4118,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
-    margin-left: 3px;
     transform: scale(1.45);
     content: " ";
     display: block;
@@ -4462,6 +4463,36 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
 }
+
+.app-body .search__popout__menu:nth-child(2):not(:has(.search__popout__menu__message)) {
+    margin-bottom: 10px;
+}
+.app-body .search__popout h4:has(+ .search__popout__menu:last-child, + .search__popout__menu__message) {
+    background-color: var(--color-content-secondary-bg);
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    border-radius: 6px 6px 0 0;
+    color: var(--color-fg-muted);
+}
+.app-body .search__popout__menu:last-child,
+.app-body .search__popout > .search__popout__menu__message:last-child {
+    margin: 0 0 -10px;
+    background-color: var(--color-content-secondary-bg);
+    border-radius: 0 0 6px 6px;
+    padding: 5px;
+}
+.app-body .search__popout > .search__popout__menu__message:last-child {
+    padding: 5px 15px 15px;
+    color: var(--color-fg-muted);
+}
+.app-body .search__popout__menu:last-child .search__popout__menu__item:not(.selected, :active, :hover, :focus) {
+    color: var(--color-fg-muted);
+}
+.app-body .search__popout__menu:last-child .search__popout__menu__item:not(.selected, :active, :hover, :focus) mark {
+    color: var(--color-content-fg);
+} 
 
 @media screen and (max-width:1174px) {
     .app-body:not(.layout-multiple-columns) .search {
@@ -5739,7 +5770,7 @@ a:is(.active,
 }
 .app-body .sign-in-banner p {
     color: var(--color-fg-muted);
-    padding: 0 10px 5px;
+    padding: 0 5px 5px;
 }
 
 
@@ -6051,7 +6082,7 @@ a:is(.active,
         border-radius: 8px 8px 0 0 !important;
     }
     .app-body .about__header__hero {
-        border-radius: 8px 8px 0 0;
+        border-radius: 6px 6px 0 0;
     }
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
@@ -6341,7 +6372,7 @@ a:is(.active,
     padding-left: 16px;
 }
 .layout-multiple-columns .getting-started__trends h4 > :is(a, span) {
-    padding-left: 47px;
+    padding-left: 45px;
 }
 
 .layout-multiple-columns :is(.column-header, .column-back-button) {
@@ -6462,6 +6493,7 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
+        [href$="day" i],
         [href*="monday" i],
         [href*="tuesday" i],
         [href*="wednesday" i],
@@ -6577,7 +6609,9 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
+        [href$="/cat" i],
         [href*="cats" i],
+        [href*="catloaf" i],
         [href*="Caturday" i],
         [href*="catsofmastodon" i],
         [href*="WhiskersWednesday" i]
@@ -6590,9 +6624,13 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="dog" i],
+        [href$="dog" i],
+        [href$="dogs" i],
+        [href*="/dog" i],
         [href*="DogLovers" i],
-        [href*="dogsofmastodon" i]
+        [href*="dogsofmastodon" i],
+        [href*="DogsOfFedi" i],
+        [href*="dogstadon" i]
     )
 )::before {
     background-image: var(--icon-dog);
@@ -6670,8 +6708,9 @@ a:is(.active,
 .trends__item:has(
     .trends__item__name a:is(
         [href*="minecraft" i],
-        [href*="hermitcraft" i],
-        [href*="cube" i]
+        [href*="hermitcraft" i]
+    ):not(
+        [href*="tagged" i]
     )
 )::before {
     background-image: var(--icon-cube);
@@ -6690,8 +6729,9 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="lgbt" i],
-        [href*="queer" i],
+        [href$="lgbt" i],
+        [href*="/lgbt" i],
+        [href*="/queer" i],
         [href$="trans" i],
         [href$="pride" i],
         [href$="pridemonth" i],
@@ -6712,7 +6752,7 @@ a:is(.active,
     .trends__item__name a:is(
         [href*="electionday" i],
         [href$="election" i],
-        [href^="/tags/election" i],
+        [href$="/election" i],
         [href*="presidentielle" i],
         [href*="presidential" i],
         [href*="legislativ" i]
@@ -6736,7 +6776,8 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="mutualaid" i]
+        [href*="mutualaid" i],
+        [href*="crowdfund" i]
     )
 )::before {
     background-image: var(--icon-handshake);
