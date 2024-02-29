@@ -5765,7 +5765,7 @@ a:is(.active,
 }
 .app-body .sign-in-banner p {
     color: var(--color-fg-muted);
-    padding: 0 10px 5px;
+    padding: 0 5px 5px;
 }
 
 
