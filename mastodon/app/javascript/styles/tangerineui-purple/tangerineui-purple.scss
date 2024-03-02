@@ -6534,7 +6534,8 @@ a:is(.active,
         [href*="music" i],
         [href*="eurovision" i],
         [href*="song" i],
-        [href$="synth" i]
+        [href$="synth" i],
+        [href$="BandcampFriday" i]
     )
 )::before {
     background-image: var(--icon-music);
@@ -6713,10 +6714,8 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="minecraft" i],
-        [href*="hermitcraft" i]
-    ):not(
-        [href*="tagged" i]
+        [href*="/minecraft" i],
+        [href*="/hermitcraft" i]
     )
 )::before {
     background-image: var(--icon-cube);
