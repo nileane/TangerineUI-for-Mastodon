@@ -14,7 +14,7 @@
     --variant-emoji: "\1FABB\00A0";
     --variant: var(--variant-emoji) var(--variant-name);
 
-    --meta: 'Tangerine UI for Mastodon:\00A0' var(--version) '\00A0\00B7\00A0' var(--variant);
+    --meta: 'Tangerine UI for Mastodon: ' var(--version) ' \00B7 ' var(--variant);
 }
 
 /* 🎨 Colors */
