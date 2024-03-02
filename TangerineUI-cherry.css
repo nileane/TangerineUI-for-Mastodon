@@ -6550,6 +6550,14 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
+        [href*="eurovision" i]
+    )
+)::before {
+    background-image: var(--icon-microphone);
+}
+.app-body
+.trends__item:has(
+    .trends__item__name a:is(
         [href*="patisserie" i],
         [href*="cake" i],
         [href*="food" i],
@@ -6579,7 +6587,9 @@ a:is(.active,
         [href*="foto" i],
         [href*="pics" i],
         [href*="selfie" i],
-        [href*="WindowFriday" i]
+        [href*="/ShotWith" i],
+        [href*="WindowFriday" i],
+        [href*="FensterFreitag" i]
     )
 )::before {
     background-image: var(--icon-camera);
@@ -6625,7 +6635,7 @@ a:is(.active,
 .trends__item:has(
     .trends__item__name a:is(
         [href$="/cat" i],
-        [href*="cats" i],
+        [href*="/cats" i],
         [href*="catloaf" i],
         [href*="Caturday" i],
         [href*="catsofmastodon" i],
