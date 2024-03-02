@@ -4122,6 +4122,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    min-width: 20px;
     width: 20px;
     height: 20px;
     transform: scale(1.45);
