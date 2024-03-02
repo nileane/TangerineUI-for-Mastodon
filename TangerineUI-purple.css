@@ -6536,7 +6536,11 @@ a:is(.active,
         [href*="eurovision" i],
         [href*="song" i],
         [href$="synth" i],
-        [href$="BandcampFriday" i]
+        [href$="jazz" i],
+        [href$="rock" i],
+        [href$="rap" i],
+        [href$="BandcampFriday" i],
+        [href*="Jukebox" i]
     )
 )::before {
     background-image: var(--icon-music);
@@ -6572,7 +6576,8 @@ a:is(.active,
         [href*="photo" i],
         [href*="foto" i],
         [href*="pics" i],
-        [href*="selfie" i]
+        [href*="selfie" i],
+        [href*="WindowFriday" i]
     )
 )::before {
     background-image: var(--icon-camera);
