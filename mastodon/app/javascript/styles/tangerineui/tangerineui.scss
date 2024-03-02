@@ -236,6 +236,7 @@
 
     /* Popular hashtag icons */
     --icon-music: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2Y3NjkwMiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xMjgsMTg0YTQwLDQwLDAsMSwxLTQwLTQwQTQwLDQwLDAsMCwxLDEyOCwxODRaIiBvcGFjaXR5PSIwLjIiPjwvcGF0aD48cGF0aCBkPSJNMjEwLjMsNTYuMzRsLTgwLTI0QTgsOCwwLDAsMCwxMjAsNDBWMTQ4LjI2QTQ4LDQ4LDAsMSwwLDEzNiwxODRWNTAuNzVsNjkuNywyMC45MWE4LDgsMCwxLDAsNC42LTE1LjMyWk04OCwyMTZhMzIsMzIsMCwxLDEsMzItMzJBMzIsMzIsMCwwLDEsODgsMjE2WiI+PC9wYXRoPjwvc3ZnPg==");
+    --icon-microphone: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2Y3NjkwMiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xNTYuNSwxNTEsNTksMjIyLjQ1YTgsOCwwLDAsMS0xMC4zOC0uNzlsLTE0LjMtMTQuM0E4LDgsMCwwLDEsMzMuNTUsMTk3TDEwNSw5OS41bDAsMEE2NCw2NCwwLDAsMCwxNTYuNDgsMTUxWiIgb3BhY2l0eT0iMC4yIj48L3BhdGg+PHBhdGggZD0iTTE2OCwxNkE3Mi4wNyw3Mi4wNywwLDAsMCw5Niw4OGE3My4yOSw3My4yOSwwLDAsMCwuNjMsOS40MkwyNy4xMiwxOTIuMjJBMTUuOTMsMTUuOTMsMCwwLDAsMjguNzEsMjEzTDQzLDIyNy4yOWExNS45MywxNS45MywwLDAsMCwyMC43OCwxLjU5bDk0LjgxLTY5LjUzQTczLjI5LDczLjI5LDAsMCwwLDE2OCwxNjBhNzIsNzIsMCwxLDAsMC0xNDRabTU2LDcyYTU1LjcyLDU1LjcyLDAsMCwxLTExLjE2LDMzLjUyTDEzNC40OSw0My4xNkE1Niw1NiwwLDAsMSwyMjQsODhaTTU0LjMyLDIxNiw0MCwyMDEuNjgsMTAyLjE0LDExN0E3Mi4zNyw3Mi4zNywwLDAsMCwxMzksMTUzLjg2Wk0xMTIsODhhNTUuNjcsNTUuNjcsMCwwLDEsMTEuMTYtMzMuNTFsNzguMzQsNzguMzRBNTYsNTYsMCwwLDEsMTEyLDg4Wm0tMi4zNSw1OC4zNGE4LDgsMCwwLDEsMCwxMS4zMWwtOCw4YTgsOCwwLDEsMS0xMS4zMS0xMS4zMWw4LThBOCw4LDAsMCwxLDEwOS42NywxNDYuMzNaIj48L3BhdGg+PC9zdmc+");
     --icon-cake: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2Y3NjkwMiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xMDQsNDhjMC0yNCwyNC00MCwyNC00MHMyNCwxNiwyNCw0MGEyNCwyNCwwLDAsMS00OCwwWk0yMDgsOTZINDhhMTYsMTYsMCwwLDAtMTYsMTZ2MjMuMzNjMCwxNy40NCwxMy42NywzMi4xOCwzMS4xLDMyLjY2QTMyLDMyLDAsMCwwLDk2LDEzNmEzMiwzMiwwLDAsMCw2NCwwLDMyLDMyLDAsMCwwLDMyLjksMzJjMTcuNDMtLjQ4LDMxLjEtMTUuMjIsMzEuMS0zMi42NlYxMTJBMTYsMTYsMCwwLDAsMjA4LDk2WiIgb3BhY2l0eT0iMC4yIj48L3BhdGg+PHBhdGggZD0iTTIzMiwxMTJhMjQsMjQsMCwwLDAtMjQtMjRIMTM2Vjc5YTMyLjA2LDMyLjA2LDAsMCwwLDI0LTMxYzAtMjgtMjYuNDQtNDUuOTEtMjcuNTYtNDYuNjZhOCw4LDAsMCwwLTguODgsMEMxMjIuNDQsMi4wOSw5NiwyMCw5Niw0OGEzMi4wNiwzMi4wNiwwLDAsMCwyNCwzMXY5SDQ4YTI0LDI0LDAsMCwwLTI0LDI0djIzLjMzYTQwLjg0LDQwLjg0LDAsMCwwLDgsMjQuMjRWMjAwYTI0LDI0LDAsMCwwLDI0LDI0SDIwMGEyNCwyNCwwLDAsMCwyNC0yNFYxNTkuNTdhNDAuODQsNDAuODQsMCwwLDAsOC0yNC4yNFpNMTEyLDQ4YzAtMTMuNTcsMTAtMjQuNDYsMTYtMjkuNzksNiw1LjMzLDE2LDE2LjIyLDE2LDI5Ljc5YTE2LDE2LDAsMCwxLTMyLDBaTTQwLDExMmE4LDgsMCwwLDEsOC04SDIwOGE4LDgsMCwwLDEsOCw4djIzLjMzYzAsMTMuMjUtMTAuNDYsMjQuMzEtMjMuMzIsMjQuNjZBMjQsMjQsMCwwLDEsMTY4LDEzNmE4LDgsMCwwLDAtMTYsMCwyNCwyNCwwLDAsMS00OCwwLDgsOCwwLDAsMC0xNiwwLDI0LDI0LDAsMCwxLTI0LjY4LDI0QzUwLjQ2LDE1OS42NCw0MCwxNDguNTgsNDAsMTM1LjMzWm0xNjAsOTZINTZhOCw4LDAsMCwxLTgtOFYxNzIuNTZBMzguNzcsMzguNzcsMCwwLDAsNjIuODgsMTc2YTM5LjY5LDM5LjY5LDAsMCwwLDI5LTExLjMxQTQwLjM2LDQwLjM2LDAsMCwwLDk2LDE2MGE0MCw0MCwwLDAsMCw2NCwwLDQwLjM2LDQwLjM2LDAsMCwwLDQuMTMsNC42N0EzOS42NywzOS42NywwLDAsMCwxOTIsMTc2Yy4zOCwwLC43NiwwLDEuMTQsMEEzOC43NywzOC43NywwLDAsMCwyMDgsMTcyLjU2VjIwMEE4LDgsMCwwLDEsMjAwLDIwOFoiPjwvcGF0aD48L3N2Zz4=");
     --icon-calendar: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2Y3NjkwMiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMTYsNDhWODhINDBWNDhhOCw4LDAsMCwxLDgtOEgyMDhBOCw4LDAsMCwxLDIxNiw0OFoiIG9wYWNpdHk9IjAuMiI+PC9wYXRoPjxwYXRoIGQ9Ik0yMDgsMzJIMTg0VjI0YTgsOCwwLDAsMC0xNiwwdjhIODhWMjRhOCw4LDAsMCwwLTE2LDB2OEg0OEExNiwxNiwwLDAsMCwzMiw0OFYyMDhhMTYsMTYsMCwwLDAsMTYsMTZIMjA4YTE2LDE2LDAsMCwwLDE2LTE2VjQ4QTE2LDE2LDAsMCwwLDIwOCwzMlpNNzIsNDh2OGE4LDgsMCwwLDAsMTYsMFY0OGg4MHY4YTgsOCwwLDAsMCwxNiwwVjQ4aDI0VjgwSDQ4VjQ4Wk0yMDgsMjA4SDQ4Vjk2SDIwOFYyMDhaIj48L3BhdGg+PC9zdmc+");
     --icon-popcorn: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2Y3NjkwMiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik04OCw5NmwxNiwxMjBINzAuMzRhOCw4LDAsMCwxLTcuNzktNi4xN0wzMiw4MFptODAsMEwxNTIsMjE2aDMzLjY2YTgsOCwwLDAsMCw3Ljc5LTYuMTdMMjI0LDgwWiIgb3BhY2l0eT0iMC4yIj48L3BhdGg+PHBhdGggZD0iTTIyOS41Miw3NC4yMWE4LDgsMCwwLDAtNy4xMy0yQTQ0LDQ0LDAsMCwwLDE2OCw0MS42N2E0NCw0NCwwLDAsMC04MCwwLDQ0LDQ0LDAsMCwwLTU0LjQsMzAuNTEsOCw4LDAsMCwwLTkuNCw5LjY1TDU0Ljc2LDIxMS42N0ExNiwxNiwwLDAsMCw3MC4zNCwyMjRIMTg1LjY2YTE2LDE2LDAsMCwwLDE1LjU4LTEyLjMzTDIzMS43OSw4MS44M0E4LDgsMCwwLDAsMjI5LjUyLDc0LjIxWk03Niw1NmEyNy42OCwyNy42OCwwLDAsMSwxMy4xMSwzLjI2LDgsOCwwLDAsMCwxMS41Ni01LjM0LDI4LDI4LDAsMCwxLDU0LjY2LDAsOCw4LDAsMCwwLDExLjU2LDUuMzRBMjgsMjgsMCwwLDEsMjA3LDc2LjU0bC0zOC41NiwxMS0zNC40OS0xMy44YTE2LDE2LDAsMCwwLTExLjg4LDBMODcuNTcsODcuNTYsNDksNzYuNTRBMjgsMjgsMCwwLDEsNzYsNTZabTgzLjI1LDQ1LjExTDE0NSwyMDhIMTExTDk2Ljc1LDEwMS4xMSwxMjgsODguNjJaTTQyLjkxLDkxLjQ0bDM3Ljg1LDEwLjgxTDk0Ljg2LDIwOEg3MC4zNFpNMTg1LjY2LDIwOEgxNjEuMTRsMTQuMS0xMDUuNzUsMzcuODUtMTAuODFaIj48L3BhdGg+PC9zdmc+");
@@ -396,6 +397,7 @@
 
         /* Popular hashtag icons */
         --icon-music: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2U2ODkzMyIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xMjgsMTg0YTQwLDQwLDAsMSwxLTQwLTQwQTQwLDQwLDAsMCwxLDEyOCwxODRaIiBvcGFjaXR5PSIwLjIiPjwvcGF0aD48cGF0aCBkPSJNMjEwLjMsNTYuMzRsLTgwLTI0QTgsOCwwLDAsMCwxMjAsNDBWMTQ4LjI2QTQ4LDQ4LDAsMSwwLDEzNiwxODRWNTAuNzVsNjkuNywyMC45MWE4LDgsMCwxLDAsNC42LTE1LjMyWk04OCwyMTZhMzIsMzIsMCwxLDEsMzItMzJBMzIsMzIsMCwwLDEsODgsMjE2WiI+PC9wYXRoPjwvc3ZnPg==");
+        --icon-microphone: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2U2ODkzMyIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xNTYuNSwxNTEsNTksMjIyLjQ1YTgsOCwwLDAsMS0xMC4zOC0uNzlsLTE0LjMtMTQuM0E4LDgsMCwwLDEsMzMuNTUsMTk3TDEwNSw5OS41bDAsMEE2NCw2NCwwLDAsMCwxNTYuNDgsMTUxWiIgb3BhY2l0eT0iMC4yIj48L3BhdGg+PHBhdGggZD0iTTE2OCwxNkE3Mi4wNyw3Mi4wNywwLDAsMCw5Niw4OGE3My4yOSw3My4yOSwwLDAsMCwuNjMsOS40MkwyNy4xMiwxOTIuMjJBMTUuOTMsMTUuOTMsMCwwLDAsMjguNzEsMjEzTDQzLDIyNy4yOWExNS45MywxNS45MywwLDAsMCwyMC43OCwxLjU5bDk0LjgxLTY5LjUzQTczLjI5LDczLjI5LDAsMCwwLDE2OCwxNjBhNzIsNzIsMCwxLDAsMC0xNDRabTU2LDcyYTU1LjcyLDU1LjcyLDAsMCwxLTExLjE2LDMzLjUyTDEzNC40OSw0My4xNkE1Niw1NiwwLDAsMSwyMjQsODhaTTU0LjMyLDIxNiw0MCwyMDEuNjgsMTAyLjE0LDExN0E3Mi4zNyw3Mi4zNywwLDAsMCwxMzksMTUzLjg2Wk0xMTIsODhhNTUuNjcsNTUuNjcsMCwwLDEsMTEuMTYtMzMuNTFsNzguMzQsNzguMzRBNTYsNTYsMCwwLDEsMTEyLDg4Wm0tMi4zNSw1OC4zNGE4LDgsMCwwLDEsMCwxMS4zMWwtOCw4YTgsOCwwLDEsMS0xMS4zMS0xMS4zMWw4LThBOCw4LDAsMCwxLDEwOS42NywxNDYuMzNaIj48L3BhdGg+PC9zdmc+");
         --icon-cake: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2U2ODkzMyIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xMDQsNDhjMC0yNCwyNC00MCwyNC00MHMyNCwxNiwyNCw0MGEyNCwyNCwwLDAsMS00OCwwWk0yMDgsOTZINDhhMTYsMTYsMCwwLDAtMTYsMTZ2MjMuMzNjMCwxNy40NCwxMy42NywzMi4xOCwzMS4xLDMyLjY2QTMyLDMyLDAsMCwwLDk2LDEzNmEzMiwzMiwwLDAsMCw2NCwwLDMyLDMyLDAsMCwwLDMyLjksMzJjMTcuNDMtLjQ4LDMxLjEtMTUuMjIsMzEuMS0zMi42NlYxMTJBMTYsMTYsMCwwLDAsMjA4LDk2WiIgb3BhY2l0eT0iMC4yIj48L3BhdGg+PHBhdGggZD0iTTIzMiwxMTJhMjQsMjQsMCwwLDAtMjQtMjRIMTM2Vjc5YTMyLjA2LDMyLjA2LDAsMCwwLDI0LTMxYzAtMjgtMjYuNDQtNDUuOTEtMjcuNTYtNDYuNjZhOCw4LDAsMCwwLTguODgsMEMxMjIuNDQsMi4wOSw5NiwyMCw5Niw0OGEzMi4wNiwzMi4wNiwwLDAsMCwyNCwzMXY5SDQ4YTI0LDI0LDAsMCwwLTI0LDI0djIzLjMzYTQwLjg0LDQwLjg0LDAsMCwwLDgsMjQuMjRWMjAwYTI0LDI0LDAsMCwwLDI0LDI0SDIwMGEyNCwyNCwwLDAsMCwyNC0yNFYxNTkuNTdhNDAuODQsNDAuODQsMCwwLDAsOC0yNC4yNFpNMTEyLDQ4YzAtMTMuNTcsMTAtMjQuNDYsMTYtMjkuNzksNiw1LjMzLDE2LDE2LjIyLDE2LDI5Ljc5YTE2LDE2LDAsMCwxLTMyLDBaTTQwLDExMmE4LDgsMCwwLDEsOC04SDIwOGE4LDgsMCwwLDEsOCw4djIzLjMzYzAsMTMuMjUtMTAuNDYsMjQuMzEtMjMuMzIsMjQuNjZBMjQsMjQsMCwwLDEsMTY4LDEzNmE4LDgsMCwwLDAtMTYsMCwyNCwyNCwwLDAsMS00OCwwLDgsOCwwLDAsMC0xNiwwLDI0LDI0LDAsMCwxLTI0LjY4LDI0QzUwLjQ2LDE1OS42NCw0MCwxNDguNTgsNDAsMTM1LjMzWm0xNjAsOTZINTZhOCw4LDAsMCwxLTgtOFYxNzIuNTZBMzguNzcsMzguNzcsMCwwLDAsNjIuODgsMTc2YTM5LjY5LDM5LjY5LDAsMCwwLDI5LTExLjMxQTQwLjM2LDQwLjM2LDAsMCwwLDk2LDE2MGE0MCw0MCwwLDAsMCw2NCwwLDQwLjM2LDQwLjM2LDAsMCwwLDQuMTMsNC42N0EzOS42NywzOS42NywwLDAsMCwxOTIsMTc2Yy4zOCwwLC43NiwwLDEuMTQsMEEzOC43NywzOC43NywwLDAsMCwyMDgsMTcyLjU2VjIwMEE4LDgsMCwwLDEsMjAwLDIwOFoiPjwvcGF0aD48L3N2Zz4=");
         --icon-calendar: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2U2ODkzMyIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMTYsNDhWODhINDBWNDhhOCw4LDAsMCwxLDgtOEgyMDhBOCw4LDAsMCwxLDIxNiw0OFoiIG9wYWNpdHk9IjAuMiI+PC9wYXRoPjxwYXRoIGQ9Ik0yMDgsMzJIMTg0VjI0YTgsOCwwLDAsMC0xNiwwdjhIODhWMjRhOCw4LDAsMCwwLTE2LDB2OEg0OEExNiwxNiwwLDAsMCwzMiw0OFYyMDhhMTYsMTYsMCwwLDAsMTYsMTZIMjA4YTE2LDE2LDAsMCwwLDE2LTE2VjQ4QTE2LDE2LDAsMCwwLDIwOCwzMlpNNzIsNDh2OGE4LDgsMCwwLDAsMTYsMFY0OGg4MHY4YTgsOCwwLDAsMCwxNiwwVjQ4aDI0VjgwSDQ4VjQ4Wk0yMDgsMjA4SDQ4Vjk2SDIwOFYyMDhaIj48L3BhdGg+PC9zdmc+");
         --icon-popcorn: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2U2ODkzMyIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik04OCw5NmwxNiwxMjBINzAuMzRhOCw4LDAsMCwxLTcuNzktNi4xN0wzMiw4MFptODAsMEwxNTIsMjE2aDMzLjY2YTgsOCwwLDAsMCw3Ljc5LTYuMTdMMjI0LDgwWiIgb3BhY2l0eT0iMC4yIj48L3BhdGg+PHBhdGggZD0iTTIyOS41Miw3NC4yMWE4LDgsMCwwLDAtNy4xMy0yQTQ0LDQ0LDAsMCwwLDE2OCw0MS42N2E0NCw0NCwwLDAsMC04MCwwLDQ0LDQ0LDAsMCwwLTU0LjQsMzAuNTEsOCw4LDAsMCwwLTkuNCw5LjY1TDU0Ljc2LDIxMS42N0ExNiwxNiwwLDAsMCw3MC4zNCwyMjRIMTg1LjY2YTE2LDE2LDAsMCwwLDE1LjU4LTEyLjMzTDIzMS43OSw4MS44M0E4LDgsMCwwLDAsMjI5LjUyLDc0LjIxWk03Niw1NmEyNy42OCwyNy42OCwwLDAsMSwxMy4xMSwzLjI2LDgsOCwwLDAsMCwxMS41Ni01LjM0LDI4LDI4LDAsMCwxLDU0LjY2LDAsOCw4LDAsMCwwLDExLjU2LDUuMzRBMjgsMjgsMCwwLDEsMjA3LDc2LjU0bC0zOC41NiwxMS0zNC40OS0xMy44YTE2LDE2LDAsMCwwLTExLjg4LDBMODcuNTcsODcuNTYsNDksNzYuNTRBMjgsMjgsMCwwLDEsNzYsNTZabTgzLjI1LDQ1LjExTDE0NSwyMDhIMTExTDk2Ljc1LDEwMS4xMSwxMjgsODguNjJaTTQyLjkxLDkxLjQ0bDM3Ljg1LDEwLjgxTDk0Ljg2LDIwOEg3MC4zNFpNMTg1LjY2LDIwOEgxNjEuMTRsMTQuMS0xMDUuNzUsMzcuODUtMTAuODFaIj48L3BhdGg+PC9zdmc+");
@@ -3936,12 +3938,28 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-content-fg);
     border-radius: 8px;
     font-style: italic;
+    margin: 0;
+    width: 100%;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    transition: all .2s;
+}
+.app-body .account__header__account-note textarea:placeholder-shown {
+    padding-left: 0;
+    padding-right: 0;
 }
 .app-body .account__header__account-note textarea:focus {
     background-color: var(--color-accent-bg);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .app-body .account__header__account-note textarea:not(:placeholder-shown):not(:focus) {
-    box-shadow: inset 0 0 0 1px var(--color-lines);
+    outline-color: var(--color-lines);
+    box-shadow: 2px 3px var(--color-content-secondary-bg);
+}
+.app-body .account__header__account-note textarea:not(:placeholder-shown):focus {
+    outline-color: var(--color-accent);
+    box-shadow: 2px 3px var(--color-accent-bg);
 }
 .app-body .account__header__badges .account-role {
     border-radius: 8px;
@@ -4122,6 +4140,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    min-width: 20px;
     width: 20px;
     height: 20px;
     transform: scale(1.45);
@@ -6535,10 +6554,22 @@ a:is(.active,
         [href*="eurovision" i],
         [href*="song" i],
         [href$="synth" i],
-        [href$="BandcampFriday" i]
+        [href$="jazz" i],
+        [href$="rock" i],
+        [href$="rap" i],
+        [href$="BandcampFriday" i],
+        [href*="Jukebox" i]
     )
 )::before {
     background-image: var(--icon-music);
+}
+.app-body
+.trends__item:has(
+    .trends__item__name a:is(
+        [href*="eurovision" i]
+    )
+)::before {
+    background-image: var(--icon-microphone);
 }
 .app-body
 .trends__item:has(
@@ -6571,7 +6602,10 @@ a:is(.active,
         [href*="photo" i],
         [href*="foto" i],
         [href*="pics" i],
-        [href*="selfie" i]
+        [href*="selfie" i],
+        [href*="/ShotWith" i],
+        [href*="WindowFriday" i],
+        [href*="FensterFreitag" i]
     )
 )::before {
     background-image: var(--icon-camera);
@@ -6617,7 +6651,7 @@ a:is(.active,
 .trends__item:has(
     .trends__item__name a:is(
         [href$="/cat" i],
-        [href*="cats" i],
+        [href*="/cats" i],
         [href*="catloaf" i],
         [href*="Caturday" i],
         [href*="catsofmastodon" i],
