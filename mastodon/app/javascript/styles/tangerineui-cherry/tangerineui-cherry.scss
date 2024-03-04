@@ -14,7 +14,7 @@
     --variant-emoji: "\1F352\00A0";
     --variant: var(--variant-emoji) var(--variant-name);
 
-    --meta: 'Tangerine UI for Mastodon:\00A0' var(--version) '\00A0\00B7\00A0' var(--variant);
+    --meta: 'Tangerine UI for Mastodon: ' var(--version) ' \00B7 ' var(--variant);
 }
 
 /* 🎨 Colors */
@@ -6533,7 +6533,14 @@ a:is(.active,
         [href*="jeudi" i],
         [href*="vendredi" i],
         [href*="samedi" i],
-        [href*="dimanche" i]
+        [href*="dimanche" i],
+        [href*="lunes" i],
+        [href*="martes" i],
+        [href*="miercoles" i],
+        [href*="jueves" i],
+        [href*="viernes" i],
+        [href*="sabado" i],
+        [href*="domingo" i]
     )
 )::before {
     background-image: var(--icon-calendar);
@@ -6552,7 +6559,10 @@ a:is(.active,
         [href$="rock" i],
         [href$="rap" i],
         [href$="BandcampFriday" i],
-        [href*="Jukebox" i]
+        [href*="Jukebox" i],
+        [href*="/kpop" i],
+        [href*="/rock" i],
+        [href$="/pop" i]
     )
 )::before {
     background-image: var(--icon-music);
@@ -6636,7 +6646,9 @@ a:is(.active,
         [href*="ecology" i],
         [href*="klima" i],
         [href*="climat" i],
-        [href*="environment" i]
+        [href*="environment" i],
+        [href*="/garden" i],
+        [href*="mosstodon" i]
     )
 )::before {
     background-image: var(--icon-tree);
@@ -6718,7 +6730,10 @@ a:is(.active,
 .trends__item:has(
     .trends__item__name a:is(
         [href*="book" i],
-        [href*="literature" i]
+        [href*="literature" i],
+        [href*="reading" i],
+        [href$="/history" i],
+        [href$="/histoire" i]
     )
 )::before {
     background-image: var(--icon-book);
@@ -6751,10 +6766,11 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="fifa" i],
-        [href*="fifaworldcup" i],
-        [href*="soccer" i],
-        [href$="mls" i]
+        [href$="/fifa" i],
+        [href$="/fifaworldcup" i],
+        [href$="/soccer" i],
+        [href$="/mls" i],
+        [href*="/sport" i]
     )
 )::before {
     background-image: var(--icon-football);
@@ -6767,6 +6783,12 @@ a:is(.active,
         [href*="/queer" i],
         [href$="trans" i],
         [href$="pride" i],
+        [href$="womensday" i],
+        [href$="transdayofvisibility" i],
+        [href$="/IWD" i],
+        [href$="TDOV" i],
+        [href$="transdayofremembrance" i],
+        [href$="TDOR" i],
         [href$="pridemonth" i],
         [href$="blm" i],
         [href$="blacklivesmatter" i],
