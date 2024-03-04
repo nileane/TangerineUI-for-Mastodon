@@ -3279,9 +3279,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-weight: bold;
 }
 @media screen and (max-width:1174px) {
+    .app-body:not(.layout-multiple-columns) .ui {
+        padding-top: 55px;
+    }
     .app-body:not(.layout-multiple-columns) .ui__header {
         background-color: transparent;
         border-bottom: 0;
+        position: fixed;
+        inset-inline-start: 0;
+        inset-inline-end: 0;
     }
     .app-body:not(.layout-multiple-columns) .ui__header .ui__header__logo {
         margin-left: 3px;
@@ -3298,7 +3304,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         display: block;
         top: 0;
         inset-inline-start: 45px;
-        inset-inline-end: 105px;
+        inset-inline-end: 55px;
         height: 55px;
         position: fixed;
     }
@@ -3576,13 +3582,20 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .ui__header__links .button.button-secondary[href="/publish"] {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
-    width: 45px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     box-sizing: border-box;
     background-image: var(--icon-compose);
     background-position: center;
     background-repeat: no-repeat;
+    position: fixed;
+    bottom: calc(4.8em + env(safe-area-inset-bottom));
+    inset-inline-end: 1em;
     background-size: 22px;
+    border-radius: 50%;
+    box-shadow: 
+        0 1px 1px rgba(0, 0, 0, .2),
+        0 2px 10px rgba(0, 0, 0, .2);
 }
 .app-body .ui__header__links .button.button-secondary[href="/publish"]:is(:hover, :focus, :active) {
     background-color: var(--color-accent-focus);
@@ -3733,20 +3746,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
     }
-    .app-body .columns-area__panels__pane--navigational .navigation-panel::before {
+    .app-body .columns-area__panels__pane--navigational .columns-area__panels__pane__inner::before {
         content: " ";
         position: fixed;
         right: 0;
-        background-image: linear-gradient(to right, transparent, var(--color-bg) 75.63%);
-        height: 4.2em;
+        bottom: 0;
         width: 17vw;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        justify-content: center;
-        display: inline-flex;
-        align-items: center;
-        box-sizing: border-box;
+        height: calc(4.2em + env(safe-area-inset-bottom) - 1px);
+        background-image: linear-gradient(to right, transparent, var(--color-bg) 75.63%);
         background-color: transparent;
         z-index: 2;
     }
