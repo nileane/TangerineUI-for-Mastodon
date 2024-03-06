@@ -6616,7 +6616,8 @@ a:is(.active,
         [href*="selfie" i],
         [href*="/ShotWith" i],
         [href*="WindowFriday" i],
-        [href*="FensterFreitag" i]
+        [href*="FensterFreitag" i],
+        [href$="/instagram" i]
     )
 )::before {
     background-image: var(--icon-camera);
@@ -6655,7 +6656,9 @@ a:is(.active,
         [href*="climat" i],
         [href*="environment" i],
         [href*="/garden" i],
-        [href*="mosstodon" i]
+        [href*="mosstodon" i],
+        [href*="/vegan" i],
+        [href*="/plants" i]
     )
 )::before {
     background-image: var(--icon-tree);
@@ -6736,7 +6739,7 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="book" i],
+        [href*="/book" i],
         [href*="literature" i],
         [href*="reading" i],
         [href$="/history" i],
