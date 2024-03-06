@@ -6720,7 +6720,9 @@ a:is(.active,
         [href$="macos" i],
         [href$="ios" i],
         [href*="ipad" i],
-        [href*="iphone" i]
+        [href*="iphone" i],
+        [href*="/wwdc" i],
+        [href*="/appleevent" i]
     )
 )::before {
     background-image: var(--icon-apple);
