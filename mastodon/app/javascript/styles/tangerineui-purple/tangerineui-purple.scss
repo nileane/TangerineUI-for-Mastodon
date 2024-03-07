@@ -6558,7 +6558,8 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="tune" i], 
+        [href*="tune" i],
+        [href$="/np" i],
         [href*="nowplaying" i],
         [href*="singit" i],
         [href*="music" i],
