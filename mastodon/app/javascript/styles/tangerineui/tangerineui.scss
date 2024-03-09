@@ -3279,7 +3279,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .column-header .column-header__back-button {
     padding-right: 16px;
 }
-.app-body .column-header :is(> button, .column-header__back-button) {
+.app-body .column-header > button,
+.app-body .column-header .column-header__back-button {
     font-weight: bold;
 }
 @media screen and (max-width:1174px) {
