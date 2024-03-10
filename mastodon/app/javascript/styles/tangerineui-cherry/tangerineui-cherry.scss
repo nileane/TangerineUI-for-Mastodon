@@ -6610,7 +6610,9 @@ a:is(.active,
         [href$="TV" i],
         [href*="nowwatching" i],
         [href*="WatchingNow" i],
-        [href*="movie" i]
+        [href*="movie" i],
+        [href*="/cinema" i],
+        [href*="/oscars" i]
     )
 )::before {
     background-image: var(--icon-popcorn);
