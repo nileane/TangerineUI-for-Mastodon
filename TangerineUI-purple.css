@@ -171,7 +171,7 @@
 
     --icon-settings: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzJhMmQzNyIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMzAuMSwxMDguNzYsMTk4LjI1LDkwLjYyYy0uNjQtMS4xNi0xLjMxLTIuMjktMi0zLjQxbC0uMTItMzZBMTA0LjYxLDEwNC42MSwwLDAsMCwxNjIsMzJMMTMwLDQ5Ljg5Yy0xLjM0LDAtMi42OSwwLTQsMEw5NCwzMkExMDQuNTgsMTA0LjU4LDAsMCwwLDU5Ljg5LDUxLjI1bC0uMTYsMzZjLS43LDEuMTItMS4zNywyLjI2LTIsMy40MWwtMzEuODQsMTguMWE5OS4xNSw5OS4xNSwwLDAsMCwwLDM4LjQ2bDMxLjg1LDE4LjE0Yy42NCwxLjE2LDEuMzEsMi4yOSwyLDMuNDFsLjEyLDM2QTEwNC42MSwxMDQuNjEsMCwwLDAsOTQsMjI0bDMyLTE3Ljg3YzEuMzQsMCwyLjY5LDAsNCwwTDE2MiwyMjRhMTA0LjU4LDEwNC41OCwwLDAsMCwzNC4wOC0xOS4yNWwuMTYtMzZjLjctMS4xMiwxLjM3LTIuMjYsMi0zLjQxbDMxLjg0LTE4LjFBOTkuMTUsOTkuMTUsMCwwLDAsMjMwLjEsMTA4Ljc2Wk0xMjgsMTY4YTQwLDQwLDAsMSwxLDQwLTQwQTQwLDQwLDAsMCwxLDEyOCwxNjhaIiBvcGFjaXR5PSIwLjIiPjwvcGF0aD48cGF0aCBkPSJNMTI4LDgwYTQ4LDQ4LDAsMSwwLDQ4LDQ4QTQ4LjA1LDQ4LjA1LDAsMCwwLDEyOCw4MFptMCw4MGEzMiwzMiwwLDEsMSwzMi0zMkEzMiwzMiwwLDAsMSwxMjgsMTYwWm0xMDkuOTQtNTIuNzlhOCw4LDAsMCwwLTMuODktNS40bC0yOS44My0xNy0uMTItMzMuNjJhOCw4LDAsMCwwLTIuODMtNi4wOCwxMTEuOTEsMTExLjkxLDAsMCwwLTM2LjcyLTIwLjY3LDgsOCwwLDAsMC02LjQ2LjU5TDEyOCw0MS44NSw5Ny44OCwyNWE4LDgsMCwwLDAtNi40Ny0uNkExMTEuOTIsMTExLjkyLDAsMCwwLDU0LjczLDQ1LjE1YTgsOCwwLDAsMC0yLjgzLDYuMDdsLS4xNSwzMy42NS0yOS44MywxN2E4LDgsMCwwLDAtMy44OSw1LjQsMTA2LjQ3LDEwNi40NywwLDAsMCwwLDQxLjU2LDgsOCwwLDAsMCwzLjg5LDUuNGwyOS44MywxNywuMTIsMzMuNjNhOCw4LDAsMCwwLDIuODMsNi4wOCwxMTEuOTEsMTExLjkxLDAsMCwwLDM2LjcyLDIwLjY3LDgsOCwwLDAsMCw2LjQ2LS41OUwxMjgsMjE0LjE1LDE1OC4xMiwyMzFhNy45MSw3LjkxLDAsMCwwLDMuOSwxLDguMDksOC4wOSwwLDAsMCwyLjU3LS40MiwxMTIuMSwxMTIuMSwwLDAsMCwzNi42OC0yMC43Myw4LDgsMCwwLDAsMi44My02LjA3bC4xNS0zMy42NSwyOS44My0xN2E4LDgsMCwwLDAsMy44OS01LjRBMTA2LjQ3LDEwNi40NywwLDAsMCwyMzcuOTQsMTA3LjIxWm0tMTUsMzQuOTEtMjguNTcsMTYuMjVhOCw4LDAsMCwwLTMsM2MtLjU4LDEtMS4xOSwyLjA2LTEuODEsMy4wNmE3Ljk0LDcuOTQsMCwwLDAtMS4yMiw0LjIxbC0uMTUsMzIuMjVhOTUuODksOTUuODksMCwwLDEtMjUuMzcsMTQuM0wxMzQsMTk5LjEzYTgsOCwwLDAsMC0zLjkxLTFoLS4xOWMtMS4yMSwwLTIuNDMsMC0zLjY0LDBhOC4xLDguMSwwLDAsMC00LjEsMWwtMjguODQsMTYuMUE5Niw5NiwwLDAsMSw2Ny44OCwyMDFsLS4xMS0zMi4yYTgsOCwwLDAsMC0xLjIyLTQuMjJjLS42Mi0xLTEuMjMtMi0xLjgtMy4wNmE4LjA5LDguMDksMCwwLDAtMy0zLjA2bC0yOC42LTE2LjI5YTkwLjQ5LDkwLjQ5LDAsMCwxLDAtMjguMjZMNjEuNjcsOTcuNjNhOCw4LDAsMCwwLDMtM2MuNTgtMSwxLjE5LTIuMDYsMS44MS0zLjA2YTcuOTQsNy45NCwwLDAsMCwxLjIyLTQuMjFsLjE1LTMyLjI1YTk1Ljg5LDk1Ljg5LDAsMCwxLDI1LjM3LTE0LjNMMTIyLDU2Ljg3YTgsOCwwLDAsMCw0LjEsMWMxLjIxLDAsMi40MywwLDMuNjQsMGE4LDgsMCwwLDAsNC4xLTFsMjguODQtMTYuMUE5Niw5NiwwLDAsMSwxODguMTIsNTVsLjExLDMyLjJhOCw4LDAsMCwwLDEuMjIsNC4yMmMuNjIsMSwxLjIzLDIsMS44LDMuMDZhOC4wOSw4LjA5LDAsMCwwLDMsMy4wNmwyOC42LDE2LjI5QTkwLjQ5LDkwLjQ5LDAsMCwxLDIyMi45LDE0Mi4xMloiPjwvcGF0aD48L3N2Zz4=");
     --icon-settings-accent: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzYzNjRmZiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMzAuMSwxMDguNzYsMTk4LjI1LDkwLjYyYy0uNjQtMS4xNi0xLjMxLTIuMjktMi0zLjQxbC0uMTItMzZBMTA0LjYxLDEwNC42MSwwLDAsMCwxNjIsMzJMMTMwLDQ5Ljg5Yy0xLjM0LDAtMi42OSwwLTQsMEw5NCwzMkExMDQuNTgsMTA0LjU4LDAsMCwwLDU5Ljg5LDUxLjI1bC0uMTYsMzZjLS43LDEuMTItMS4zNywyLjI2LTIsMy40MWwtMzEuODQsMTguMWE5OS4xNSw5OS4xNSwwLDAsMCwwLDM4LjQ2bDMxLjg1LDE4LjE0Yy42NCwxLjE2LDEuMzEsMi4yOSwyLDMuNDFsLjEyLDM2QTEwNC42MSwxMDQuNjEsMCwwLDAsOTQsMjI0bDMyLTE3Ljg3YzEuMzQsMCwyLjY5LDAsNCwwTDE2MiwyMjRhMTA0LjU4LDEwNC41OCwwLDAsMCwzNC4wOC0xOS4yNWwuMTYtMzZjLjctMS4xMiwxLjM3LTIuMjYsMi0zLjQxbDMxLjg0LTE4LjFBOTkuMTUsOTkuMTUsMCwwLDAsMjMwLjEsMTA4Ljc2Wk0xMjgsMTY4YTQwLDQwLDAsMSwxLDQwLTQwQTQwLDQwLDAsMCwxLDEyOCwxNjhaIiBvcGFjaXR5PSIwLjIiPjwvcGF0aD48cGF0aCBkPSJNMTI4LDgwYTQ4LDQ4LDAsMSwwLDQ4LDQ4QTQ4LjA1LDQ4LjA1LDAsMCwwLDEyOCw4MFptMCw4MGEzMiwzMiwwLDEsMSwzMi0zMkEzMiwzMiwwLDAsMSwxMjgsMTYwWm0xMDkuOTQtNTIuNzlhOCw4LDAsMCwwLTMuODktNS40bC0yOS44My0xNy0uMTItMzMuNjJhOCw4LDAsMCwwLTIuODMtNi4wOCwxMTEuOTEsMTExLjkxLDAsMCwwLTM2LjcyLTIwLjY3LDgsOCwwLDAsMC02LjQ2LjU5TDEyOCw0MS44NSw5Ny44OCwyNWE4LDgsMCwwLDAtNi40Ny0uNkExMTEuOTIsMTExLjkyLDAsMCwwLDU0LjczLDQ1LjE1YTgsOCwwLDAsMC0yLjgzLDYuMDdsLS4xNSwzMy42NS0yOS44MywxN2E4LDgsMCwwLDAtMy44OSw1LjQsMTA2LjQ3LDEwNi40NywwLDAsMCwwLDQxLjU2LDgsOCwwLDAsMCwzLjg5LDUuNGwyOS44MywxNywuMTIsMzMuNjNhOCw4LDAsMCwwLDIuODMsNi4wOCwxMTEuOTEsMTExLjkxLDAsMCwwLDM2LjcyLDIwLjY3LDgsOCwwLDAsMCw2LjQ2LS41OUwxMjgsMjE0LjE1LDE1OC4xMiwyMzFhNy45MSw3LjkxLDAsMCwwLDMuOSwxLDguMDksOC4wOSwwLDAsMCwyLjU3LS40MiwxMTIuMSwxMTIuMSwwLDAsMCwzNi42OC0yMC43Myw4LDgsMCwwLDAsMi44My02LjA3bC4xNS0zMy42NSwyOS44My0xN2E4LDgsMCwwLDAsMy44OS01LjRBMTA2LjQ3LDEwNi40NywwLDAsMCwyMzcuOTQsMTA3LjIxWm0tMTUsMzQuOTEtMjguNTcsMTYuMjVhOCw4LDAsMCwwLTMsM2MtLjU4LDEtMS4xOSwyLjA2LTEuODEsMy4wNmE3Ljk0LDcuOTQsMCwwLDAtMS4yMiw0LjIxbC0uMTUsMzIuMjVhOTUuODksOTUuODksMCwwLDEtMjUuMzcsMTQuM0wxMzQsMTk5LjEzYTgsOCwwLDAsMC0zLjkxLTFoLS4xOWMtMS4yMSwwLTIuNDMsMC0zLjY0LDBhOC4xLDguMSwwLDAsMC00LjEsMWwtMjguODQsMTYuMUE5Niw5NiwwLDAsMSw2Ny44OCwyMDFsLS4xMS0zMi4yYTgsOCwwLDAsMC0xLjIyLTQuMjJjLS42Mi0xLTEuMjMtMi0xLjgtMy4wNmE4LjA5LDguMDksMCwwLDAtMy0zLjA2bC0yOC42LTE2LjI5YTkwLjQ5LDkwLjQ5LDAsMCwxLDAtMjguMjZMNjEuNjcsOTcuNjNhOCw4LDAsMCwwLDMtM2MuNTgtMSwxLjE5LTIuMDYsMS44MS0zLjA2YTcuOTQsNy45NCwwLDAsMCwxLjIyLTQuMjFsLjE1LTMyLjI1YTk1Ljg5LDk1Ljg5LDAsMCwxLDI1LjM3LTE0LjNMMTIyLDU2Ljg3YTgsOCwwLDAsMCw0LjEsMWMxLjIxLDAsMi40MywwLDMuNjQsMGE4LDgsMCwwLDAsNC4xLTFsMjguODQtMTYuMUE5Niw5NiwwLDAsMSwxODguMTIsNTVsLjExLDMyLjJhOCw4LDAsMCwwLDEuMjIsNC4yMmMuNjIsMSwxLjIzLDIsMS44LDMuMDZhOC4wOSw4LjA5LDAsMCwwLDMsMy4wNmwyOC42LDE2LjI5QTkwLjQ5LDkwLjQ5LDAsMCwxLDIyMi45LDE0Mi4xMloiPjwvcGF0aD48L3N2Zz4=");
-    
+
     --icon-logout: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzJhMmQzNyIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMTYsMTI4bC00MCw0MFY4OFoiIG9wYWNpdHk9IjAuMiI+PC9wYXRoPjxwYXRoIGQ9Ik0xMTIsMjE2YTgsOCwwLDAsMS04LDhINDhhMTYsMTYsMCwwLDEtMTYtMTZWNDhBMTYsMTYsMCwwLDEsNDgsMzJoNTZhOCw4LDAsMCwxLDAsMTZINDhWMjA4aDU2QTgsOCwwLDAsMSwxMTIsMjE2Wm0xMDkuNjYtODIuMzQtNDAsNDBBOCw4LDAsMCwxLDE2OCwxNjhWMTM2SDEwNGE4LDgsMCwwLDEsMC0xNmg2NFY4OGE4LDgsMCwwLDEsMTMuNjYtNS42Nmw0MCw0MEE4LDgsMCwwLDEsMjIxLjY2LDEzMy42NlptLTE3LTUuNjZMMTg0LDEwNy4zMXY0MS4zOFoiPjwvcGF0aD48L3N2Zz4=");
         
     --icon-ellipsis-column-link-active: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzJhMmQzNyIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xNTYsMTI4YTI4LDI4LDAsMSwxLTI4LTI4QTI4LDI4LDAsMCwxLDE1NiwxMjhaTTQ4LDEwMGEyOCwyOCwwLDEsMCwyOCwyOEEyOCwyOCwwLDAsMCw0OCwxMDBabTE2MCwwYTI4LDI4LDAsMSwwLDI4LDI4QTI4LDI4LDAsMCwwLDIwOCwxMDBaIj48L3BhdGg+PC9zdmc+");
@@ -931,6 +931,9 @@ body.app-body  {
 .app-body .media-modal__overlay :is(.icon-reply, .icon-reply-all) {
     background-image: var(--icon-reply-accent);
 }
+.app-body .status__prepend-icon.icon-reply {
+    background-image: var(--icon-reply-accent);
+}
 /* Ellipsis */
 .app-body :is(.icon-ellipsis-h, .icon-ellipsis-v) {
     background-image: var(--icon-ellipsis-accent);
@@ -1621,7 +1624,7 @@ body.app-body  {
     color: var(--color-content-fg);
     opacity: 0;
     font-size: 15px;
-    font-weight: normal;
+    font-weight: 500;
     transition:
         opacity .3s,
         margin-right .3s;
@@ -1692,7 +1695,7 @@ body.app-body  {
     background-color: var(--color-accent-bg);
 }
 .app-body .compose-form:not(:has(.autosuggest-textarea__textarea:placeholder-shown)) .compose-form__submit {
-    animation: bounce-sml .3s ease-out 1;
+    animation: bounce-sml .2s ease-out 1;
 }
 
 .app-body .upload-progress__tracker {
@@ -2267,6 +2270,20 @@ body.app-body  {
     background-color: var(--color-post-bg);
     transition: outline .3s;
 }
+.app-body .status__prepend + .status .status__avatar .account__avatar-overlay-base .account__avatar {
+    width: 46px !important;
+    height: 46px !important;
+}
+.app-body .status__prepend + .status .status__avatar .account__avatar-overlay-overlay {
+    position: absolute;
+    top: -34px;
+    right: -38px;
+    pointer-events: none;
+}
+.app-body .status__prepend + .status .status__avatar .account__avatar-overlay-overlay .account__avatar {
+    width: 29px !important;
+    height: 29px !important;
+}
 .app-body .reply-indicator__content,
 .app-body .status__content {
     line-height: 19px;
@@ -2289,7 +2306,7 @@ body.app-body  {
     position: absolute;
     background-color: var(--color-lines);
     height: 1px;
-    width: calc(100% - 77px);
+    width: calc(100% - 78px);
     right: 0;
     top: -1px;
     content: "";
@@ -2560,16 +2577,24 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 /* Hashtag bar */
 .app-body .hashtag-bar a,
 .app-body .hashtag-bar .link-button {
-    color: var(--color-fg-muted);
+    color: var(--color-accent);
     font-size: 90%;
     transition: all .1s;
+}
+.app-body .hashtag-bar a {
+    font-weight: 500;
 }
 .app-body .hashtag-bar .link-button {
     font-size: 80%;
     margin-left: 3px;
 }
 .app-body .hashtag-bar a {
-    background-color: var(--color-content-secondary-bg);
+    background-color:
+        color-mix(
+            in srgb,
+            var(--color-accent),
+            transparent 92%
+        );
     transition: all .3s;
     padding: 3px 8px;
     border-radius: 8px;
@@ -2679,23 +2704,40 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: #ffb609;
 }
 .app-body .status__prepend {
-    padding-top: 2px;
-    padding-right: 0;
-    padding-bottom: 1px;
-    padding-left: 0;
-    margin-bottom: 0;
-    height: 25px;
+    padding: 0 10px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: 66px;
+    height: 29px;
+    gap: 5px;
+    border-radius: 50px;
+    align-items: center;
+    background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
+    font-size: 13px;
+}
+.app-body .status__prepend:has(.status__prepend-icon-wrapper .icon-retweet) {
+    padding-left: 35px;
 }
 .app-body .status__prepend-icon-wrapper {
-    width: 56px;
+    height: 20px;
     text-align: right;
 }
+.app-body .status__prepend .status__prepend-icon-wrapper:has(.icon-retweet) {
+    order: 2;
+}
 .app-body .status__prepend-icon-wrapper .icon {
-    transform: translateY(1px) scale(1.1);
+    transform: scale(.9);
 }
 .app-body .detailed-status__wrapper .status__prepend-icon-wrapper {
     width: 46px;
+}
+.app-body .status__prepend > span {
+    color: var(--color-fg-muted);
+}
+.app-body .status__prepend:has(.status__prepend-icon-wrapper > .icon-thumb-tack) > span {
+    color: var(--color-content-fg);
+    font-weight: 600;
 }
 .app-body .status__prepend .muted .emojione {
     opacity: 1;
@@ -3057,23 +3099,17 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend {
-    border-radius: 30px;
-    padding: 2px 10px 2px 8px;
     background-color: var(--color-accent);
     margin-inline-start: 10px;
-    margin-block-end: 4px;
-    gap: 5px;
-    align-items: center;
-    transform: scale(.9);
-    transform-origin: left center;
     z-index: 3;
     position: relative;
     outline: 5px solid var(--color-post-bg);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .app-body :is(.detailed-status__wrapper-direct) .status__prepend {
     margin-inline-start: 0;
     margin-block-end: 0;
-    transform: scale(1);
     position: absolute;
     top: 4px;
     left: 4px;
@@ -3086,7 +3122,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding-top: 40px;
 }
 .app-body :is(.status__wrapper-direct):not(:has(.status__line)) .status__prepend {
-    margin-inline-start: 62px;
+    margin-inline-start: 66px;
 } 
 .app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend-icon-wrapper {
     width: 20px;
@@ -3678,7 +3714,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         bottom: -14px;
     }
     .app-body .column-link--transparent:hover span::before {
-        background-color: var(--color-accent-bg);
+        background-color: color-mix(in srgb, var(--color-accent), transparent 85%);
     }
     .app-body .column-link--transparent:is(.active, .active:hover) span::before {
         background-color: transparent;
@@ -5741,7 +5777,8 @@ a:is(.active,
     font-size: 80%;
 }
 .app-body .server-banner__number {
-    color: var(--color-content-fg-bold);
+    color: var(--color-content-fg);
+    font-size: 15px;
 }
 .app-body .server-banner__number-label {
     color: var(--color-content-fg);
@@ -5770,21 +5807,13 @@ a:is(.active,
 .app-body .button.button-secondary,
 .app-body .button.button-tertiary {
     border: 0;
-    background-color: var(--color-accent-bg);
+    background-color: color-mix(in srgb, var(--color-accent), transparent 82%);
     color: var(--color-accent);
-    outline: 1px solid var(--color-accent-lines);
-    outline-offset: -1px;
 }
 .app-body .button:is(.button-secondary, .button-tertiary):hover {
     background-color: var(--color-accent-focus);
     color: var(--color-accent-fg);
     outline-color: var(--color-lines-translucent);
-}
-@media (prefers-color-scheme: dark) {
-    .app-body .button.button-secondary,
-    .app-body .button.button-tertiary {
-        outline: 0;
-    }
 }
 .app-body .sign-in-banner .button,
 .app-body .button:is(.button-secondary, .button-tertiary) {
