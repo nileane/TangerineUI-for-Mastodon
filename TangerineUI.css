@@ -875,7 +875,7 @@ body.app-body  {
     background-image: var(--icon-star-accent);
 }
 .app-body button.icon-button.active .icon-star,
-.app-body .notification .icon-star {
+.app-body .notification__message .icon-star {
     background-image: var(--icon-star-active);
 }
 .app-body .detailed-status__link .icon-star {
@@ -896,7 +896,7 @@ body.app-body  {
 .app-body .status__prepend-icon.icon-retweet {
     background-image: var(--icon-boost-accent-active);
 }
-.app-body .notification .icon-retweet {
+.app-body .notification__message .icon-retweet {
     background-image: var(--icon-boost-active);
 }
 .app-body .detailed-status__link .icon-retweet {
