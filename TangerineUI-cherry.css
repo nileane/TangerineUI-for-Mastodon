@@ -29,7 +29,6 @@
     --color-secondary-separator: #eddbe3;
 
     --color-content-bg: #ffffff;
-    --color-content-bg-translucent: rgba(255, 255, 255, 0.75);
     --color-content-fg: #444a5a;
     --color-content-fg-bold: #000000;
     --color-content-fg-muted: #8b92a7;
@@ -63,7 +62,6 @@
         --color-secondary-separator: #2e2328;
 
         --color-content-bg: var(--color-bg);
-        --color-content-bg-translucent: rgba(3, 3, 3, .65);
         --color-content-fg: var(--color-fg);
         --color-content-fg-bold: #ffffff;
         --color-content-fg-muted: #737373;
@@ -3375,7 +3373,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body:not(.layout-multiple-columns) .ui::after { /* Set a backdrop blur background to both top bars */
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
-        background-color: var(--color-content-bg-translucent);
+        background-color: color-mix(in srgb, var(--color-content-bg), transparent 25%);
         border-bottom: 1px solid var(--color-lines-translucent);
         content: "";
         height: 55px;
@@ -3740,13 +3738,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .column-link span {
     vertical-align: middle;
 }
-.app-body .column-link .fa::before {
-    position: relative;
-    top: 1px;
-}
-.app-body .column-link .fa.fa-cog {
-    transform: scale(1) translate(1px, -1px);
-}
 .app-body .list-panel {
     padding: 5px 9px 50px 27px;
     margin: 0 0 5px;
@@ -3783,7 +3774,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         padding-bottom: env(safe-area-inset-bottom);
         flex-direction: row;
         overflow-x: auto;
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: color-mix(in srgb, var(--color-content-bg), transparent 25%);
         border-top: 1px solid var(--color-lines-translucent);
         border-left: 0;
         -webkit-backdrop-filter: blur(20px);
@@ -3796,7 +3787,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         bottom: 0;
         width: 17vw;
         height: calc(4.2em + env(safe-area-inset-bottom) - 1px);
-        background-image: linear-gradient(to right, transparent, var(--color-bg) 75.63%);
+        background-image: linear-gradient(to right, transparent, var(--color-content-bg) 75.63%);
         background-color: transparent;
         z-index: 2;
     }
@@ -3892,13 +3883,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .columns-area__panels__main {
         width: 100%;
         margin-left: -55px;
-    }
-}
-@media screen and (max-width:1174px) {
-    @media (prefers-color-scheme: dark) {
-        .app-body .columns-area__panels__pane--navigational .navigation-panel {
-            background-color: rgba(3, 3, 3, .65);
-        }
     }
 }
 
@@ -4804,7 +4788,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 .app-body .notification-bar {
-    background-color: var(--color-content-bg-translucent);
+    background-color: color-mix(in srgb, var(--color-content-bg), transparent 25%);
     color: var(--color-content-fg);
     border: 1px solid var(--color-lines-translucent);
     box-shadow: var(--dropdown-shadow);
