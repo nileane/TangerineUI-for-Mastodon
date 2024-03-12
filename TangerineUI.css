@@ -6555,6 +6555,7 @@ a:is(.active,
 .trends__item:has(
     .trends__item__name a:is(
         [href$="day" i],
+        [href$="tag" i],
         [href*="monday" i],
         [href*="tuesday" i],
         [href*="wednesday" i],
@@ -6621,9 +6622,6 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="patisserie" i],
-        [href*="cake" i],
-        [href*="food" i],
         [href*="birthday" i]
     )
 )::before {
