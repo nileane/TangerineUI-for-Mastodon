@@ -2246,6 +2246,7 @@ body.app-body  {
     width: 20px;
     inset-inline-start: -20px;
     background: linear-gradient(90deg, transparent, var(--color-post-bg));
+    transition: all .2s;
 }
 .app-body .status__relative-time::after {
     inset-inline-start: 0;
@@ -3109,12 +3110,21 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: none;
 }
 
+.app-body .status__wrapper.status__wrapper-direct {
+    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 92%);
+}
+.app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover),
+.app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover) .status__avatar {
+    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 88%);
+}
+
 .app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend {
     background-color: var(--color-accent);
     margin-inline-start: 10px;
     z-index: 3;
     position: relative;
     outline: 5px solid var(--color-post-bg);
+    transition: all .2s;
 }
 .app-body :is(.detailed-status__wrapper-direct) .status__prepend {
     margin-inline-start: 0;
