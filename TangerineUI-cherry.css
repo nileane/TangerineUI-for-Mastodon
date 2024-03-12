@@ -3156,7 +3156,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .column-header,
 .app-body .column-back-button {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: color-mix(in srgb, var(--color-content-bg), transparent 15%);
     color: var(--color-content-fg);
     border-right: 1px solid var(--color-lines);
     border-left: 1px solid var(--color-lines);
@@ -3169,12 +3169,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     box-sizing: border-box;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-}
-@media (prefers-color-scheme: dark) {
-    .app-body .column-header,
-    .app-body .column-back-button {
-        background-color: rgba(3, 3, 3, .65);
-    }
 }
 .app-body .column-header__button,
 .app-body .column-header__back-button {
