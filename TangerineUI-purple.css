@@ -3111,11 +3111,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .status__wrapper.status__wrapper-direct {
-    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 92%);
+    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 95%);
 }
 .app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover),
 .app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover) .status__avatar {
-    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 88%);
+    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 90%);
 }
 
 .app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend {
