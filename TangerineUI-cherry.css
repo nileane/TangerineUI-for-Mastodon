@@ -5360,7 +5360,17 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         .confirmation-modal__secondary-button,
         .mute-modal__cancel-button
     ):not(:hover) {
-        background-color: transparent;
+        background-color: color-mix(in srgb, var(--color-accent), transparent 90%);
+        color: var(--color-accent);
+}
+.app-body 
+    :is(
+        .block-modal__cancel-button,
+        .confirmation-modal__cancel-button,
+        .confirmation-modal__secondary-button,
+        .mute-modal__cancel-button
+    ):is(:active, :hover) {
+        background-color: color-mix(in srgb, var(--color-accent), transparent 70%) !important;
         color: var(--color-accent);
 }
 .app-body 
@@ -5811,9 +5821,7 @@ a:is(.active,
     color: var(--color-accent);
 }
 .app-body .button:is(.button-secondary, .button-tertiary):hover {
-    background-color: var(--color-accent-focus);
-    color: var(--color-accent-fg);
-    outline-color: var(--color-lines-translucent);
+    background-color: color-mix(in srgb, var(--color-accent), transparent 70%);
 }
 .app-body .sign-in-banner .button,
 .app-body .button:is(.button-secondary, .button-tertiary) {
