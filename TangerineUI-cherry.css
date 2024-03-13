@@ -1447,7 +1447,7 @@ body.app-body  {
         border-radius: 0;
 }
 .app-body .compose-form .autosuggest-textarea__textarea {
-    padding-left: 20px;
+    padding-inline-start: 20px;
 }
 .app-body .compose-form .autosuggest-textarea__textarea::placeholder {
     font-size: 130%;
@@ -1530,6 +1530,26 @@ body.app-body  {
 }
 .app-body .reply-indicator__attachments {
     margin-top: 8px;
+}
+
+.app-body .edit-indicator {
+    background-color: var(--color-content-secondary-bg);
+    border-bottom: 0;
+    gap: 2px;
+    padding-inline-start: 20px;
+    padding-bottom: 17px;
+}
+.app-body .edit-indicator__header {
+    color: var(--color-content-fg);
+}
+.app-body .edit-indicator__header > *:not(.edit-indicator__cancel) {
+    opacity: .7;
+}
+.app-body .edit-indicator__content {
+    color: var(--color-content-fg);
+}
+.app-body .edit-indicator__content a {
+    color: var(--color-accent);
 }
 
 .app-body .navigation-bar .icon-button:not(:has(.icon-bars),.active) {
