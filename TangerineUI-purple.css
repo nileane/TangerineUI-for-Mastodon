@@ -2554,14 +2554,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     .active
     .icon-retweet + .icon-button__counter > .animated-number {
-        color: #D3487F;
+        color: #2594FF;
 }
 .app-body
     :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     .active
     .icon-star + .icon-button__counter
     > .animated-number {
-        color: #EBBB59;
+        color: #FFBF00;
 }
 .app-body .dropdown-menu__text-button:has(.icon-caret-down) {
     padding: 2px 4px;
