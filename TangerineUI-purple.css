@@ -2529,6 +2529,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: flex;
     align-items: start;
     flex-flow: column;
+    font-size: 13px;
     gap: 5px;
 }
 .app-body .detailed-status__meta__line {
@@ -2583,6 +2584,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     gap: 8px;
     width: auto;
 }
+@media screen and (max-width:889px) {
+    .app-body .detailed-status__action-bar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 .app-body .detailed-status__button {
     width: 40px;
     height: 40px;
@@ -2629,10 +2636,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: inline-flex;
     position: static;
     gap: 4px;
-}
-.app-body :is(.detailed-status__favorites, .detailed-status__reblogs) {
-    height: 15px;
-    line-height: 15px;
 }
 
 /* Hashtag bar */
