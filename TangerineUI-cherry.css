@@ -2527,20 +2527,75 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-content-fg);
     opacity: .8;
     display: flex;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 4px;
+    align-items: start;
+    flex-flow: column;
+    gap: 5px;
+}
+.app-body .detailed-status__meta__line {
+    border-top: 0;
+    border-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    gap: 6px;
+    position: relative;
+}
+.app-body .detailed-status__meta__line:first-child {
+    padding-left: 20px;
+}
+.app-body .detailed-status__meta__line:first-child svg {
+    position: absolute;
+    left: 0;
+}
+.app-body .detailed-status__meta__line:first-child {
+    color: transparent
+}
+.app-body .detailed-status__meta__line:first-child > * {
+    color: var(--color-content-fg);
+}
+.app-body .detailed-status__link:is([href$="/reblogs"], [href$="/favourites"]) {
+    padding-left: 20px;
+    border-radius: 8px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    transition: all .2s;
+}
+.app-body .detailed-status__link[href$="/reblogs"] {
+    background-image: var(--icon-boost);
+}
+.app-body .detailed-status__link[href$="/favourites"] {
+    background-image: var(--icon-star);
+}
+.app-body .detailed-status__meta__line .dropdown-menu__text-button {
+    overflow: hidden;
+    padding-left: 20px;
+    background-image: var(--icon-edited);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+.app-body .detailed-status__meta__line .dropdown-menu__text-button:is(:hover) {
+    text-decoration: none;
 }
 .app-body .detailed-status__action-bar {
-    padding: 0 16px;
+    padding: 0 12px;
     justify-content: left;
     gap: 8px;
-    width: 32px;
+    width: auto;
+}
+.app-body .detailed-status__button {
+    width: 40px;
+    height: 40px;
+    flex: unset;
 }
 .app-body .detailed-status__action-bar-dropdown {
     position: absolute;
     right: 18px;
-} 
+}
+.app-body .detailed-status__meta .animated-number {
+    color: var(--color-content-fg);
+    font-weight: 600;
+}
 .app-body .status__action-bar .animated-number {
     color: var(--color-accent);
     font-weight: 600;
@@ -2562,32 +2617,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .icon-star + .icon-button__counter
     > .animated-number {
         color: #FFBF00;
-}
-.app-body .dropdown-menu__text-button:has(.icon-caret-down) {
-    padding: 2px 4px;
-    border: 1px solid var(--color-lines);
-    border-radius: 8px;
-    transition: all .2s;
-}
-.app-body .dropdown-menu__text-button:has(.icon-caret-down):hover {
-    border-color: var(--color-content-fg);
-}
-.app-body .dropdown-menu__text-button:has(.icon-caret-down):is(:active, :focus) {
-    border-color: var(--color-content-fg);
-    background-color: var(--color-lines);
-}
-.app-body .dropdown-menu__text-button:has(.icon-caret-down) span {
-    height: 17px;
-    overflow: hidden;
-    background-image: var(--icon-edited);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 15px;
-    padding-left: 20px;
-    font-size: 12px;
-}
-.app-body .dropdown-menu__text-button .icon-caret-down {
-    align-self: baseline;
 }
 
 .app-body article > .account {
@@ -4467,6 +4496,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .explore__search-results {
     border-radius: 0;
+    border: 0;
     background-color: transparent;
     overflow: hidden;
 }
