@@ -6636,6 +6636,7 @@ a:is(.active,
 
 .layout-multiple-columns .drawer__pager {
     border-radius: 0;
+    border: 0;
 }
 .layout-multiple-columns
     .drawer
