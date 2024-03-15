@@ -799,7 +799,8 @@ body.app-body  {
         .icon-eye,
         .icon-eraser,
         .icon-pencil,
-        .app-form__header-input .icon
+        .app-form__header-input .icon,
+        .account__domain-pill__popout__parts__icon .icon
     )
     path {
         display: none;
@@ -859,7 +860,8 @@ body.app-body  {
         .icon-eye,
         .icon-eraser,
         .icon-pencil,
-        .app-form__header-input .icon
+        .app-form__header-input .icon,
+        .account__domain-pill__popout__parts__icon .icon
     ) {
         background-repeat: no-repeat;
         background-size: 100%;
@@ -4000,7 +4002,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account__header__tabs__name h1 > span {
     font-size: 18px;
 }
-.app-body .account__header__tabs__name h1 small {
+.app-body .account__header__tabs__name h1 small > span:first-child {
     opacity: .7;
 }
 .app-body .account__header__tabs__name .icon-lock {
@@ -4056,12 +4058,20 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     box-shadow: 2px 3px var(--color-accent-bg);
 }
 .app-body .account__header__badges .account-role {
-    border-radius: 8px;
-    border-color: var(--color-accent);
-    color: var(--color-accent);
+    color: var(--color-content-fg);
+    border: 0;
+    border-radius: 50px;
+    padding: 0 10px;
+    height: 29px;
+    background-color: var(--color-content-secondary-bg);
+    gap: 5px;
+}
+.app-body .account__header__badges .account-role span:not(.account-role__domain) {
+    font-weight: 500;
 }
 .app-body .account-role svg {
     opacity: 1;
+    color: var(--color-accent);
 }
 .app-body .account__header__extra__links a,
 .app-body .account__header__bio .account__header__content,
@@ -4159,6 +4169,57 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account__header__tabs__buttons > button:first-child:active {
     transform: scale(.95);
 }
+
+.app-body .account__domain-pill,
+.app-body .account__domain-pill__popout__handle {
+    background-color: color-mix(in srgb, var(--color-accent), transparent 88%);
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all .2s;
+}
+.app-body .account__domain-pill:hover {
+    background-color: var(--color-accent-bg);
+}
+.app-body .account__domain-pill.active {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
+}
+.app-body .dropdown-animation.account__domain-pill__popout {
+    animation: none;
+}
+.app-body .account__domain-pill__popout {
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
+    border: 1px solid var(--color-lines);
+    border-radius: 8px;
+} 
+.app-body .account__domain-pill__popout__header__icon {
+    background-color: var(--color-accent);
+}
+.app-body .account__domain-pill__popout__handle {
+    padding: 12px;
+}
+.app-body :where(.account__domain-pill__popout__header, .account__domain-pill__popout__parts) :is(h3, h6) {
+    color: var(--color-content-fg);
+    font-weight: 600;
+}
+.app-body .account__domain-pill__popout__parts > div .account__domain-pill__popout__parts__icon {
+    align-items: start;
+    padding-top: 2px;
+}
+.app-body .account__domain-pill__popout__parts > div .account__domain-pill__popout__parts__icon .icon {
+    width: 28px;
+    height: 28px;
+}
+.app-body .account__domain-pill__popout__parts > div:first-child .account__domain-pill__popout__parts__icon .icon {
+    background-image: var(--icon-direct-messages-accent);
+}
+.app-body .account__domain-pill__popout__parts > div:last-child .account__domain-pill__popout__parts__icon .icon {
+    background-image: var(--icon-globe-accent);
+}
+
 
 
 /* ✨ Explore tab
