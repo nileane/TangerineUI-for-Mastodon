@@ -3165,11 +3165,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .status__wrapper.status__wrapper-direct {
-    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 95%);
+    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 90%);
 }
 .app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover),
 .app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover) .status__avatar {
-    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 90%);
+    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 85%);
 }
 
 .app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend {
@@ -4932,6 +4932,28 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent);
 }
 
+.app-body .column-settings h3,
+.app-body .app-form__toggle,
+.app-body .app-form__toggle__label .hint {
+    color: var(--color-content-fg-bold);
+}
+.app-body .column-header__setting-btn {
+    font-weight: 600;
+}
+.app-body .column-settings h3 {
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+.app-body .column-settings section {
+    border-color: var(--color-lines);
+}
+.app-body .column-settings section:not(:first-child) {
+    padding-bottom: 25px;
+}
+.app-body .app-form__toggle__label .hint {
+    opacity: .5;
+}
+
 /* 📋 Lists tab */
 .app-body .column-inline-form {
     background-color: var(--color-content-secondary-bg);
@@ -5314,7 +5336,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .react-toggle:active {
     transform: scale(.9);
 }
-.app-body .react-toggle-track {
+.app-body .react-toggle-track,
+.app-body .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
     background-color: var(--color-fg-muted);
     transition: all .2s;
 }
