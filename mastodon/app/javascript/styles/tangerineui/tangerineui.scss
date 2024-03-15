@@ -3217,6 +3217,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
    ----------------- */
 .app-body .tabs-bar__wrapper {
     background-color: transparent;
+    box-shadow: inset 0 10px var(--color-bg);
 }
 .app-body .column-header__wrapper.active:before {
     background: none;
@@ -3379,6 +3380,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .column-header > button {
     padding: 0 0 0 15px;
+}
+.app-body .column-header > button:nth-child(2) {
+    padding-left: 0;
 }
 .app-body .column-header .column-header__back-button {
     padding-right: 16px;
