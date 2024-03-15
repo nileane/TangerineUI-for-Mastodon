@@ -6636,6 +6636,7 @@ a:is(.active,
 
 .layout-multiple-columns .drawer__pager {
     border-radius: 0;
+    border: 0;
 }
 .layout-multiple-columns
     .drawer
@@ -6655,6 +6656,7 @@ a:is(.active,
     padding: 12px;
     position: absolute;
     bottom: 0;
+    z-index: -1;
 }
 .layout-multiple-columns .link-footer::before,
 .layout-multiple-columns .link-footer::after {
