@@ -6656,6 +6656,7 @@ a:is(.active,
     padding: 12px;
     position: absolute;
     bottom: 0;
+    z-index: -1;
 }
 .layout-multiple-columns .link-footer::before,
 .layout-multiple-columns .link-footer::after {
