@@ -77,6 +77,8 @@
 
         --color-lines: #343434;
         --color-lines-translucent: rgba(255, 255, 255, .15);
+
+        --color-confirm-fg: var(--color-confirm);
     }
 }
 :root {
@@ -1353,7 +1355,8 @@ body.app-body  {
         a.account__display-name
     ):is(:active, :focus, :hover)
     .display-name strong,
-.app-body .status__prepend .status__display-name:is(:active, :focus, :hover) strong {
+.app-body .status__prepend .status__display-name:is(:active, :focus, :hover) strong,
+.app-body a.notification-request__link:is(:active, :focus, :hover) .notification-request__name__display-name strong {
         text-decoration-line: underline;
         text-decoration-color: currentColor;
         text-decoration-thickness: 2px;
@@ -2188,7 +2191,8 @@ body.app-body  {
     display: none;
 }
 .app-body .account__display-name strong,
-.app-body .status__display-name strong {
+.app-body .status__display-name strong,
+.app-body .notification-request__name__display-name strong {
     font-weight: bold;
 }
 .app-body .status {
@@ -2486,6 +2490,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .scrollable > div:first-child > .detailed-status__wrapper { /* Detailed post is first in column */
     border-top: 0;
+    padding-top: 0;
 }
 .app-body .scrollable > div:last-child .detailed-status__wrapper:last-child { /* Detailed post is last in column */
     border-bottom: 1px solid var(--color-lines);
@@ -3247,6 +3252,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
 }
+.app-body .column-back-button {
+    padding-left: 15px;
+}
 .app-body .column-header__button,
 .app-body .column-header__back-button {
     background-color: transparent;
@@ -3265,6 +3273,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .column-header__icon {
     transform: scale(1.1);
     margin-right: 4px;
+}
+.app-body .column-header__buttons .column-header__button:has(> .icon:only-child) {
+    width: 42px;
 }
 .app-body .column-header.active .column-header__icon {
     color: var(--color-accent);
@@ -3318,29 +3329,38 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .column-back-button__icon {
     margin-inline-end: 0;
 }
-.app-body :is(.column-header__back-button, .column-back-button) span {
+.app-body :is(.column-header__back-button, .column-back-button) span,
+.app-body .column-header__back-button {
     position: relative;
-    display: block;
 }
 .app-body :is(.column-header__back-button, .column-back-button):hover {
     text-decoration: none;
 }
-.app-body :is(.column-header__back-button, .column-back-button) span::before {
+.app-body :is(.column-header__back-button, .column-back-button) span::before,
+.app-body .column-header__back-button:has(> svg:last-child)::before {
     content: " ";
     position: absolute;
-    left: -35px;
-    right: -12px;
-    bottom: -11px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    top: 4px;
     z-index: -1;
-    top: -10px;
     border-radius: 8px;
     background-color: transparent;
     transition: all .3s;
 }
-.app-body :is(.column-header__back-button, .column-back-button):hover span::before {
+.app-body :is(.column-header__back-button, .column-back-button) span::before {
+    left: -35px;
+    right: -12px;
+    bottom: -11px;
+    top: -10px;
+}
+.app-body :is(.column-header__back-button, .column-back-button):hover span::before,
+.app-body .column-header__back-button:has(> svg:last-child):hover::before {
     background-color: var(--color-accent-bg);
 }
-.app-body :is(.column-header__back-button, .column-back-button):active span::before {
+.app-body :is(.column-header__back-button, .column-back-button):active span::before,
+.app-body .column-header__back-button:has(> svg:last-child):active::before {
     transform: scale(.9);
 }
 
@@ -3387,7 +3407,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding-left: 0;
 }
 .app-body .column-header .column-header__back-button {
-    padding-right: 16px;
+    padding-right: 15px;
 }
 .app-body .column-header > button,
 .app-body .column-header .column-header__back-button {
@@ -4852,7 +4872,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .status__action-bar {
         display: none;
 }
-.app-body .account {
+.app-body .account,
+.app-body .notification-request {
     background-color: var(--color-content-bg);
     border-bottom: 2px solid var(--color-content-secondary-bg);
     padding-left: 22px;
@@ -4959,6 +4980,65 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .app-form__toggle__label .hint {
     opacity: .5;
 }
+
+.app-body .filtered-notifications-banner {
+    background-color: var(--color-content-bg);
+    color: var(--color-accent);
+    border: 0;
+    position: relative;
+    padding: 25px;
+    border-left: 1px solid var(--color-lines);
+    border-right: 1px solid var(--color-lines);
+}
+.app-body .filtered-notifications-banner::before {
+    position: absolute;
+    display: block;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    content: " ";
+    background-color: var(--color-content-secondary-bg);
+    border-radius: 8px;
+    transition: all .2s;
+}
+.app-body .filtered-notifications-banner:is(:active, :hover, :focus)::before {
+    background-color: color-mix(in srgb, var(--color-accent), transparent 88%);
+}
+.app-body .filtered-notifications-banner:hover::before {
+    left: 6px;
+    right: 6px;
+    top: 8px;
+    bottom: 8px;
+}
+.app-body .filtered-notifications-banner:active::before {
+    transform: scale(.98);
+}
+.app-body .filtered-notifications-banner > * {
+    z-index: 1;
+}
+.app-body .filtered-notifications-banner .filtered-notifications-banner__badge,
+.app-body .filtered-notifications-banner:is(:active, :focus, :hover) .filtered-notifications-banner__badge,
+.app-body .notification-request__name .filtered-notifications-banner__badge {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
+    border-radius: 50px;
+}
+.app-body .filtered-notifications-banner__text {
+    color: var(--color-content-fg);
+}
+.app-body .filtered-notifications-banner__text strong {
+    font-weight: 600;
+}
+.app-body .notification-request__name__display-name,
+.app-body .notification-request__name {
+    color: var(--color-content-fg);
+    letter-spacing: unset;
+}
+.app-body .notification-request {
+    padding-top: 15px;
+}
+
 
 /* 📋 Lists tab */
 .app-body .column-inline-form {
@@ -5106,11 +5186,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding: 0 5px 12px 5px;
 }
 .app-body .account--panel__button .icon-button {
+    width: 100%;
+}
+.app-body .account--panel__button .icon-button,
+.app-body .notification-request__actions .icon-button {
     padding: 10px;
     box-sizing: border-box;
-    width: 100%;
     border-radius: 8px;
     transition: all .3s;
+    border: 0;
 }
 .app-body .account--panel button .icon-check {
     background-image: var(--icon-check);
@@ -5118,11 +5202,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account--panel button:is(:active, :focus, :hover) .icon-check {
     background-image: var(--icon-check-inv);
 }
-.app-body .account--panel__button:first-child .icon-button {
+.app-body .account--panel__button:first-child .icon-button,
+.app-body .notification-request__actions .icon-button:last-child {
     background-color: var(--color-confirm-bg);
+    color: var(--color-confirm-fg);
 }
-.app-body .account--panel__button:first-child .icon-button:is(:hover, :active) {
+.app-body .account--panel__button:first-child .icon-button:is(:hover, :active),
+.app-body .notification-request__actions .icon-button:last-child:is(:hover, :active) {
     background-color: var(--color-confirm);
+    color: var(--color-accent-fg);
 }
 .app-body .account--panel button .icon-times {
     background-image: var(--icon-reject);
@@ -5130,11 +5218,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account--panel button:is(:active, :focus, :hover) .icon-times {
     background-image: var(--icon-reject-inv);
 }
-.app-body .account--panel__button:nth-child(2) .icon-button {
+.app-body .account--panel__button:nth-child(2) .icon-button,
+.app-body .notification-request__actions .icon-button:first-child {
     background-color: var(--color-reject-bg);
+    color: var(--color-reject);
 }
-.app-body .account--panel__button:nth-child(2) .icon-button:is(:hover, :active) {
+.app-body .account--panel__button:nth-child(2) .icon-button:is(:hover, :active),
+.app-body .notification-request__actions .icon-button:first-child:is(:hover, :active) {
     background-color: var(--color-reject);
+    color: var(--color-accent-fg);
 }
 @media screen and (max-width:1174px) {
     .app-body #Follow-requests + .column-back-button--slim .column-back-button {
