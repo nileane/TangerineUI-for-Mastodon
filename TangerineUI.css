@@ -182,6 +182,15 @@ body.layout-single-column  {
     font-family: ui-rounded, "mastodon-font-sans-serif", sans-serif;
 }
 
+.app-body {
+    --safe-area-bottom: env(safe-area-inset-bottom);
+}
+@media (display-mode: standalone) {
+    .app-body {
+        --safe-area-bottom: max(env(safe-area-inset-bottom), 30px);
+    }
+}
+
 /* 🖱️ Scrollbars */
 :root:has(.layout-single-column) *::-webkit-scrollbar-track {
     background-color: var(--color-bg);
@@ -2153,7 +2162,7 @@ body.layout-single-column  {
 @media screen and (max-width:1174px) {
     .layout-single-column .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
         width: 100vw;
-        height: calc(4.2em + env(safe-area-inset-bottom));
+        height: calc(4.2em + var(--safe-area-bottom));
         bottom: 0;
         left: 0;
         z-index: 3;
@@ -2161,7 +2170,7 @@ body.layout-single-column  {
     .layout-single-column .columns-area__panels__pane--navigational .navigation-panel {
         width: 100vw;
         height: 4.2em;
-        padding-bottom: env(safe-area-inset-bottom);
+        padding-bottom: var(--safe-area-bottom);
         flex-direction: row;
         overflow-x: auto;
         backdrop-filter: blur(20px);
