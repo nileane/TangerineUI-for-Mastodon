@@ -491,6 +491,12 @@ body.app-body  {
     --dropdown-shadow:
         0 20px 25px -5px rgba(0, 0, 0, .15),
         0 8px 10px -6px rgba(0, 0, 0, .15);
+    --safe-area-bottom: env(safe-area-inset-bottom);
+}
+@media (display-mode: standalone) {
+    .app-body {
+        --safe-area-bottom: max(env(safe-area-inset-bottom), 30px);
+    }
 }
 
 .app-body .loading-bar {
@@ -2490,7 +2496,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .scrollable > div:first-child > .detailed-status__wrapper { /* Detailed post is first in column */
     border-top: 0;
-    padding-top: 0;
 }
 .app-body .scrollable > div:last-child .detailed-status__wrapper:last-child { /* Detailed post is last in column */
     border-bottom: 1px solid var(--color-lines);
@@ -3477,6 +3482,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         width: 100%;
         z-index: 1;
     }
+    @media (display-mode: standalone) {
+        .app-body:not(.layout-multiple-columns) .ui::after {
+            box-shadow: 0 -10px 0 10px #191b22;
+            border-radius: 15px 15px 0 0;
+        }
+    }
     .app-body:not(.layout-multiple-columns) .column-header__collapsible { /* Remove margin between column settings and column header */
         margin-top: 1px;
         position: fixed;
@@ -3724,7 +3735,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-position: center;
     background-repeat: no-repeat;
     position: fixed;
-    bottom: calc(4.8em + env(safe-area-inset-bottom));
+    bottom: calc(4.8em + var(--safe-area-bottom));
     inset-inline-end: 1em;
     background-size: 22px;
     border-radius: 50%;
@@ -3856,7 +3867,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 @media screen and (max-width:1174px) {
     .app-body .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
         width: 100vw;
-        height: calc(4.2em + env(safe-area-inset-bottom));
+        height: calc(4.2em + var(--safe-area-bottom));
         bottom: 0;
         left: 0;
         z-index: 3;
@@ -3865,7 +3876,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         width: 100vw;
         height: 4.2em;
         padding-right: 20vw;
-        padding-bottom: env(safe-area-inset-bottom);
+        padding-bottom: var(--safe-area-bottom);
         flex-direction: row;
         overflow-x: auto;
         background-color: color-mix(in srgb, var(--color-content-bg), transparent 25%);
@@ -3880,7 +3891,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         right: 0;
         bottom: 0;
         width: 17vw;
-        height: calc(4.2em + env(safe-area-inset-bottom) - 1px);
+        height: calc(4.2em + var(--safe-area-bottom) - 1px);
         background-image: linear-gradient(to right, transparent, var(--color-content-bg) 75.63%);
         background-color: transparent;
         z-index: 2;
@@ -4464,10 +4475,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account-card__title .display-name bdi,
 .app-body .account-card__counters__item,
 .app-body .account-card__counters__item small {
-    color: var(--color-content-fg-bold);
+    color: var(--color-content-fg);
 }
 .app-body .account-card__counters__item small {
     opacity: .7;
+}
+.account-card__title .display-name bdi .display-name__html {
+    font-weight: bold;
 }
 .app-body .account-card__bio a {
     color: var(--color-accent);
@@ -4940,7 +4954,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 @media screen and (max-width:1174px) {
     .app-body .notification-list {
-        bottom: calc(5rem + env(safe-area-inset-bottom));
+        bottom: calc(5rem + var(--safe-area-bottom));
     }
 }
 .app-body .notification-bar {
@@ -5652,6 +5666,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .modal-root__modal:not(.media-modal) {
     border: 0;
     outline: 1px solid var(--color-lines-translucent);
+}
+@media screen and (max-width:1174px) {
+    .app-body .modal-root__modal:not(.media-modal) {
+        margin-top: unset;
+    }
 }
 .app-body .compare-history-modal {
     background-color: var(--color-content-bg);
