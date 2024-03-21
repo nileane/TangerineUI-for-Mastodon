@@ -2555,17 +2555,20 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     position: relative;
 }
 .app-body .detailed-status__meta__line:first-child {
+    color: transparent;
     padding-left: 20px;
+    gap: 0;
 }
 .app-body .detailed-status__meta__line:first-child svg {
     position: absolute;
     left: 0;
 }
-.app-body .detailed-status__meta__line:first-child {
-    color: transparent
-}
 .app-body .detailed-status__meta__line:first-child > * {
     color: var(--color-content-fg);
+}
+.app-body .detailed-status__application::before {
+    content: "\00B7\00A0";
+    margin-left: -3px;
 }
 .app-body .detailed-status__link:is([href$="/reblogs"], [href$="/favourites"]) {
     padding-left: 20px;
