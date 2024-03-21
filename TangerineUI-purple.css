@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.0.0-pre4";
+    --version: "v2.0.0-pre5~";
 
     --variant-name: "Purple";
     --variant-emoji: "\1FABB\00A0";
@@ -2481,7 +2481,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 .app-body :is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus .status__avatar {
-    outline: 6px solid var(--color-content-bg-focus);
+    outline: 6px solid var(--color-post-bg);
 }
 
 /* 👁️ Post detailed view */
@@ -3176,11 +3176,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: none;
 }
 
-.app-body .status__wrapper.status__wrapper-direct {
+.app-body .status__wrapper.status__wrapper-direct,
+.app-body .notification__message:has(+ div > .status__wrapper.status__wrapper-direct) {
     --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 90%);
 }
 .app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover),
-.app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover) .status__avatar {
+.app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover) .status__avatar,
+.app-body .status__wrapper.status__wrapper-direct.focusable:focus,
+.app-body .notification__message:has(+ div > .status__wrapper.status__wrapper-direct .status__content:hover) {
     --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 85%);
 }
 
@@ -4844,7 +4847,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .notification__message {
     padding: 12px 12px 5px;
-    background-color: var(--color-content-bg);
+    background-color: var(--color-post-bg);
     color: var(--color-content-fg-bold);
     transition: all .3s;
 }
