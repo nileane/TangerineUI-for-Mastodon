@@ -5044,6 +5044,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent-fg);
     border-radius: 50px;
 }
+.app-body .filtered-notifications-banner__badge__badge {
+    background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
+    font-weight: 600;
+} 
 .app-body .filtered-notifications-banner__text {
     color: var(--color-content-fg);
 }
@@ -5739,9 +5744,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .interaction-modal {
     background-color: var(--color-content-bg);
-    box-shadow:
-        0 20px 25px -5px rgba(0, 0, 0, .25),
-        0 8px 10px -6px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    box-shadow: var(--dropdown-shadow);
 }
 .app-body .interaction-modal,
 .app-body .interaction-modal__lead h3 {
