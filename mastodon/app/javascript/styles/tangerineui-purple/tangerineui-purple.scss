@@ -3770,6 +3770,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .column-link.column-link--logo,
 .app-body .ui__header__logo {
     display: inline-flex;
+    flex-grow: unset;
     padding: 0;
     border: 0;
     width: 50px;
