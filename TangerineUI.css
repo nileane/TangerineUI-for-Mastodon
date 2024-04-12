@@ -2542,7 +2542,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     opacity: .8;
     display: flex;
     align-items: start;
-    flex-flow: column;
+    flex-flow: row wrap;
     font-size: 13px;
     gap: 5px;
     border-top: 1px solid var(--color-lines);
@@ -2568,6 +2568,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .detailed-status__meta__line:first-child > * {
     color: var(--color-content-fg);
+}
+.app-body .detailed-status__meta__line:last-child {
+    flex: 100%;
 }
 .app-body .detailed-status__application::before {
     content: "\00B7\00A0";
@@ -2622,6 +2625,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .detailed-status__meta .animated-number {
     color: var(--color-content-fg);
     font-weight: 600;
+}
+.app-body .detailed-status__meta .dropdown-menu__text-button .animated-number {
+    font-weight: 500;
 }
 .app-body .status__action-bar .animated-number {
     color: var(--color-accent);
@@ -5546,6 +5552,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .dropdown-menu__separator {
     border-color: var(--color-content-secondary-separator);
+}
+
+.app-body .dropdown-menu__container__list--scrollable {
+    overflow-y: auto;
 }
 
 .app-body .privacy-dropdown__dropdown {
