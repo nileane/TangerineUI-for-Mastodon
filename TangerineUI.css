@@ -2668,14 +2668,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .hashtag-bar a,
 .app-body .hashtag-bar .link-button {
     color: var(--color-accent);
-    font-size: 90%;
     transition: all .1s;
 }
 .app-body .hashtag-bar a {
     font-weight: 500;
 }
 .app-body .hashtag-bar .link-button {
-    font-size: 80%;
     margin-left: 3px;
 }
 .app-body .hashtag-bar a {
