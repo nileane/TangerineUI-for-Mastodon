@@ -2545,6 +2545,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     flex-flow: column;
     font-size: 13px;
     gap: 5px;
+    border-top: 1px solid var(--color-lines);
+    margin-top: 15px;
+    padding-top: 15px;
 }
 .app-body .detailed-status__meta__line {
     border-top: 0;
