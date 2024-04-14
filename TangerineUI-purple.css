@@ -2539,7 +2539,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .detailed-status__meta {
     color: var(--color-content-fg);
-    opacity: .8;
     display: flex;
     align-items: start;
     flex-flow: row wrap;
@@ -2556,6 +2555,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding-bottom: 0;
     gap: 6px;
     position: relative;
+    opacity: .6;
 }
 .app-body .detailed-status__meta__line:first-child {
     color: transparent;
@@ -2571,6 +2571,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .detailed-status__meta__line:last-child {
     flex: 100%;
+    opacity: 1;
 }
 .app-body .detailed-status__application::before {
     content: "\00B7\00A0";
@@ -2624,7 +2625,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .detailed-status__meta .animated-number {
     color: var(--color-content-fg);
-    font-weight: 600;
+    font-weight: 700;
 }
 .app-body .detailed-status__meta .dropdown-menu__text-button .animated-number {
     font-weight: 500;
