@@ -2518,6 +2518,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .detailed-status .status__content {
     line-height: 24px;
 }
+.app-body .detailed-status {
+    padding-bottom: 8px;
+}
 .app-body .detailed-status,
 .app-body .detailed-status__action-bar {
     background-color: var(--color-content-bg);
@@ -2544,8 +2547,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     flex-flow: row wrap;
     font-size: 13px;
     gap: 5px;
-    border-top: 1px solid var(--color-lines);
-    margin-top: 15px;
+    border-top: 1px solid color-mix(in srgb, var(--color-lines), transparent 40%);
+    margin-top: 25px;
     padding-top: 15px;
 }
 .app-body .detailed-status__meta__line {
@@ -2571,7 +2574,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .detailed-status__meta__line:last-child {
     flex: 100%;
-    opacity: 1;
+    opacity: .9;
 }
 .app-body .detailed-status__application::before {
     content: "\00B7\00A0";
