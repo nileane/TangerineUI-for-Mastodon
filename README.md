@@ -113,6 +113,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [esoteric.party](https://esoteric.party)                   | 5+             | the only theme      | Yes (Tangerine variant) |
 | [asso.lgbt](https://asso.lgbt)                             | 5+             | the only theme      | Yes (Purple variant)    |
 | [Buddyverse.xyz](https://buddyverse.xyz)                   | 5+             | an optional theme   | No                      |
+| [libremercs.dev](https://libremercs.dev)                   | 1+             | an optional theme   | No                      |
 | [isfeeling.social](https://isfeeling.social)               | 1+             | the only theme      | Yes (Purple variant)    |
 | [ucn.social](https://ucn.social)                           | 1+             | an optional theme   | Yes (Tangerine variant) |
 | [fedi.cyberwitches.club](https://fedi.cyberwitches.club)   | 1+             | the only theme      | Yes (Purple variant)    |
