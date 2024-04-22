@@ -2551,6 +2551,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin-top: 25px;
     padding-top: 12px;
     overflow: hidden;
+    position: relative;
 }
 .app-body .detailed-status__meta::before {
     position: absolute;
@@ -2561,7 +2562,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     width: 30px;
     inset-inline-end: 0;
     background: linear-gradient(90deg, transparent, var(--color-post-bg));
-    }
+}
 .app-body .detailed-status__meta__line {
     border-top: 0;
     border-bottom: 0;
