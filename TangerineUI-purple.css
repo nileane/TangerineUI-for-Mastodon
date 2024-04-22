@@ -2575,6 +2575,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .detailed-status__meta__line:first-child {
     color: transparent;
     padding-left: 20px;
+    padding-right: 5px;
     gap: 0;
 }
 .app-body .detailed-status__meta__line:first-child svg {
