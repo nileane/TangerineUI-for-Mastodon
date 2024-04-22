@@ -2550,7 +2550,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-top: 1px solid color-mix(in srgb, var(--color-lines), transparent 40%);
     margin-top: 25px;
     padding-top: 12px;
+    overflow: hidden;
 }
+.app-body .detailed-status__meta::before {
+    position: absolute;
+    content: " ";
+    display: block;
+    height: 100%;
+    z-index: 1;
+    width: 30px;
+    inset-inline-end: 0;
+    background: linear-gradient(90deg, transparent, var(--color-post-bg));
+    }
 .app-body .detailed-status__meta__line {
     border-top: 0;
     border-bottom: 0;
@@ -2571,6 +2582,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .detailed-status__meta__line:first-child > * {
     color: var(--color-content-fg);
+    white-space: nowrap;
 }
 .app-body .detailed-status__meta__line:last-child {
     flex: 100%;
@@ -2601,6 +2613,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 15px;
+    text-align: start;
 }
 .app-body .detailed-status__meta__line .dropdown-menu__text-button:is(:hover) {
     text-decoration: none;
