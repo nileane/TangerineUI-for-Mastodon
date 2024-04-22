@@ -5304,6 +5304,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .inline-follow-suggestions__body__scrollable {
     scroll-padding: 60px;
 }
+.app-body .inline-follow-suggestions__body__scrollable::-webkit-scrollbar {
+    height: 5px;
+}
+.app-body .inline-follow-suggestions__body__scrollable::-webkit-scrollbar-thumb {
+    opacity: 1;
+    border-radius: 0;
+}
 .app-body .inline-follow-suggestions__body__scrollable__card {
     border-radius: 8px;
     background-color: var(--color-content-secondary-bg);
