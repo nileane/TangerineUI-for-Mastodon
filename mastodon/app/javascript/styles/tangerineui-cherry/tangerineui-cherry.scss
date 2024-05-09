@@ -4527,6 +4527,44 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding: 10px 15px;
 }
 
+.app-body .explore__suggestions__card {
+    border-bottom: 2px solid var(--color-content-secondary-bg);
+    gap: 2px;
+    padding-bottom: 14px;
+}
+.app-body .explore__suggestions__card__source span {
+    background-color: var(--color-content-secondary-bg);
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 50px;
+    color: var(--color-fg-muted);
+    font-weight: 500;
+}
+.app-body .explore__suggestions__card__body__main__name-button .display-name__account {
+    color: var(--color-content-fg);
+    opacity: .75;
+}
+.app-body .explore__suggestions__card .icon-button {
+    background-color: var(--color-content-secondary-bg);
+    color: var(--color-fg-muted);
+    padding: 6px;
+    border: 0;
+}
+.app-body .explore__suggestions__card .icon-button:is(:active, :hover) {
+    background-color: var(--color-accent-bg);
+}
+@media screen and (min-width:1173px) {
+    .app-body .explore__suggestions__card .icon-button {
+        opacity: 0;
+        transform: translateX(50%);
+        transition: all .3s;
+    }
+    .app-body .explore__suggestions__card:hover .icon-button {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 /* 📰 Trending stories */
 .app-body .story {
