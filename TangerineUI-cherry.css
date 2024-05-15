@@ -3519,6 +3519,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
             box-shadow: 0 -10px 0 10px #191b22;
             border-radius: 15px 15px 0 0;
         }
+        @media (prefers-color-scheme: light) {
+            .app-body.theme-system .ui::after {
+                box-shadow: 0 -10px 0 10px #f3f5f7;
+                border-radius: 15px 15px 0 0;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            .app-body.theme-system .ui::after {
+                box-shadow: 0 -10px 0 10px #191b22;
+                border-radius: 15px 15px 0 0;
+            }
+        }
     }
     .app-body:not(.layout-multiple-columns) .column-header__collapsible { /* Remove margin between column settings and column header */
         margin-top: 1px;
