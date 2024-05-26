@@ -3322,6 +3322,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent);
     background-color: var(--color-accent-bg);
 }
+.app-body .column-header__button.active .icon {
+    transform: none;
+}
 @media screen and (max-width:1174px) {
     .app-body:not(.layout-multiple-columns) .column-header__wrapper::after,
     .app-body:not(.layout-multiple-columns) .column-back-button::after {
