@@ -4834,8 +4834,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         transform: scale(200%) translate(100vw, 100vh) rotate(600deg);
     }
 }
-.app-body:has(.search__input[value="Tangerine UI"])::after {
-    content: "🍊";
+.app-body:has(.search__input[value="Tangerine UI"])::after,
+.app-body:has(.search__input[value="tangerine ui"])::after {
+    content: "\1F34A";
     position: fixed;
     display: block;
     text-align: center;
