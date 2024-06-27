@@ -1470,7 +1470,9 @@ body.app-body  {
 .app-body .autosuggest-account .display-name__html {
     color: var(--color-content-fg);
 }
-.app-body .autosuggest-account .display-name__account {
+.app-body .autosuggest-account .display-name__account,
+.app-body .hover-card .display-name__account,
+.app-body .hover-card .account-fields dl dt {
     color: var(--color-content-fg-muted);
 }
 .app-body .autosuggest-textarea__suggestions {
@@ -4227,7 +4229,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin-top: 0;
     border-top-width: 0;
 }
-.app-body .account__header__bio .account__header__fields .verified :is(a, dd) {
+.app-body .account__header__bio .account__header__fields .verified :is(a, dd),
+.app-body .hover-card .account-fields dl.verified dd a {
     color: var(--color-accent);
     gap: 5px;
 }
@@ -4322,7 +4325,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account__domain-pill__popout__parts > div:last-child .account__domain-pill__popout__parts__icon .icon {
     background-image: var(--icon-globe-accent);
 }
-
+.app-body .hover-card {
+    background-color: var(--color-content-bg);
+    border-color: var(--color-lines);
+}
 
 
 /* ✨ Explore tab
@@ -6284,6 +6290,15 @@ a:is(.active,
     color: var(--color-fg-muted);
     padding: 0 5px 5px;
 }
+.app-body .sign-in-banner p strong {
+    font-weight: 600;
+}
+.app-body .sign-in-banner p {
+    margin-bottom: 25px;
+}
+.app-body .sign-in-banner p:first-child {
+    margin-bottom: 5px;
+}
 
 
 
@@ -6691,16 +6706,22 @@ a:is(.active,
     margin-bottom: 2em;
     border-width: 3px;
 }
+.app-body .hover-card__bio a {
+    text-decoration: none;
+    color: var(--color-accent);
+}
 .app-body .about__section__body .prose a,
 .app-body .about__section__body .prose a:hover,
-.app-body .prose a strong {
+.app-body .prose a strong,
+.app-body .hover-card__bio a span {
     color: var(--color-accent);
     text-decoration-line: underline;
     text-decoration-color: var(--color-accent-bg);
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
 }
-.app-body .about__section__body .prose a:hover {
+.app-body .about__section__body .prose a:hover span,
+.app-body .hover-card__bio a:hover {
     text-decoration-color: var(--color-accent);
 }
 .app-body .about__section__body .prose small.lang_label {
