@@ -90,7 +90,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 | **Instance**                                               | **User count** | **Installed as...** | **Default theme?**      |
 | ---------------------------------------------------------- | -------------- | ------------------- | ----------------------- |
 | [piaille.fr](https://piaille.fr)                           | 10K+           | an optional theme   | No                      |
-| [social.vivaldi.net](https://social.vivaldi.net)                   | 7K+            | an optional theme   | No                      |
+| [social.vivaldi.net](https://social.vivaldi.net)           | 7K+            | an optional theme   | No                      |
 | [norden.social](https://norden.social)                     | 5K+            | an optional theme   | No                      |
 | [convo.casa](https://convo.casa)                           | 5K+            | an optional theme   | No                      |
 | [vmst.io](https://vmst.io)                                 | 2K+            | an optional theme   | No                      |
@@ -118,6 +118,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [ucn.social](https://ucn.social)                           | 1+             | an optional theme   | Yes (Tangerine variant) |
 | [fedi.cyberwitches.club](https://fedi.cyberwitches.club)   | 1+             | the only theme      | Yes (Purple variant)    |
 | [mastodon.projetretro.io](https://mastodon.projetretro.io) | 1+             | an optional theme   | No                      |
+| [everythingbagel.social](https://everythingbagel.social)   | 1+             | an optional theme   | No                      |
 
 
 ## Compatibility
