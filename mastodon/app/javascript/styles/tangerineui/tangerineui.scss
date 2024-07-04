@@ -4608,7 +4608,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 /* 📰 Trending stories */
 .app-body .story {
     background-color: var(--color-content-bg);
-    transition: background-color .2s;
+    transition: all .3s;
 }
 .app-body .story:not(:last-child) {
     border-bottom: 2px solid var(--color-content-secondary-separator);
@@ -4619,21 +4619,39 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .story__details__title {
     font-weight: bold;
+    transition: all .3s;
 }
-.app-body .story:hover {
+.app-body .story:has(:is(.story__thumbnail, .story__details__title):hover) {
     background-color: var(--color-content-bg-focus);
 }
-.app-body .story__details__publisher,
-.app-body .story__details__shared {
+.app-body .story__details__publisher {
     color: var(--color-fg);
 }
-.app-body .story :is(.story__details__publisher, .story__details__shared) {
+.app-body .story .story__details__publisher {
     opacity: .7;
     transition: all .3s;
 }
-.app-body .story:hover :is(.story__details__publisher, .story__details__shared) {
+.app-body .story:has(:is(.story__thumbnail, .story__details__title):hover) :is(.story__details__publisher, .story__details__title) {
     color: var(--color-accent);
     opacity: 1;
+}
+.app-body .story__details__shared__pill {
+    background-color:
+        color-mix(
+            in srgb,
+            var(--color-accent),
+            transparent 92%
+        );
+    color: var(--color-accent);
+    border-radius: 8px;
+    transition: all .3s;
+}
+.app-body .story__details__shared__pill:hover {
+    background-color: var(--color-accent-bg);
+}
+.app-body .story__details__shared__pill:active {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
 }
 .app-body .story.expanded {
     gap: 10px;
