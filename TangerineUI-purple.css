@@ -533,6 +533,11 @@ body.app-body  {
 .app-body .about__section__body {
     border: 0;
 }
+
+.app-body .compose-form .compose-form__buttons-wrapper {
+    background: var(--color-secondary-bg);
+}
+
 .app-body .column-inline-form,
 .app-body .column>.scrollable,
 .app-body .getting-started,
