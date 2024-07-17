@@ -6424,8 +6424,18 @@ a:is(.active,
     background-color: color-mix(in srgb, var(--color-accent), transparent 82%);
     color: var(--color-accent);
 }
+.app-body .hover-card .button {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
+    line-height: 22px;
+    padding: 10px 18px;
+}
 .app-body .button:is(.button-secondary, .button-tertiary):hover {
     background-color: color-mix(in srgb, var(--color-accent), transparent 70%);
+}
+.app-body .button.button--destructive:is(:active, :hover, :focus) {
+    background-color: var(--color-reject);
+    color: var(--color-accent-fg);
 }
 .app-body .sign-in-banner .button,
 .app-body .button:is(.button-secondary, .button-tertiary) {
