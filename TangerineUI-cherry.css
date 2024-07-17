@@ -3094,6 +3094,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .media-gallery__item-gifv-thumbnail {
     cursor: pointer;
     transition: .2s transform;
+    overflow: visible;
 }
 .app-body .media-gallery__item:active {
     transform: scale(.98);
