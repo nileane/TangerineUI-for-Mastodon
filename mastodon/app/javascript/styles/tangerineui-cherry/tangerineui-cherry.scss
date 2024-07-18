@@ -4354,10 +4354,50 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-image: var(--icon-globe-accent);
 }
 .app-body .hover-card {
-    background-color: color-mix(in srgb, var(--color-content-bg), transparent 20%);
+    background-color: color-mix(in srgb, var(--color-content-bg), transparent 10%);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-color: var(--color-lines);
+}
+.app-body .account-fields {
+    color: var(--color-content-fg);
+    font-size: 95%;
+}
+.app-body .hover-card .account-fields {
+    background-color: var(--color-content-secondary-bg);
+    border-radius: 8px;
+    padding: 8px;
+}
+.app-body .hover-card .account-fields dl:not(:first-child:last-child) {
+    gap: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid color-mix(in srgb, var(--color-lines) 70%, transparent);
+}
+@media (prefers-color-scheme: dark) {
+    .app-body .hover-card .account-fields {
+        background-color: var(--color-secondary-bg);
+    }
+    .app-body .hover-card .account-fields dl {
+        border-color: var(--color-accent-bg);
+    }
+}
+.app-body .hover-card .account-fields dl:last-child:not(:first-child) {
+    padding-top: 6px;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.app-body .hover-card .account-fields dl dt {
+    width: 30%;
+    min-width: 30%;
+    max-width: 30%;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 80%;
+}
+.app-body .hover-card .account-fields dl dd {
+    text-align: left;
+    justify-content: flex-start;
 }
 
 
@@ -5592,6 +5632,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transform: translateY(3px);
 }
 
+.app-body .inline-follow-suggestions .button:is(.button-secondary, .button-tertiary) {
+    padding: 7px 18px;
+}
+.app-body .inline-follow-suggestions__body__scrollable__card__text-stack__source .icon {
+    width: 17px;
+    height: 17px;
+}
+
 
 .app-body .button,
 .app-body .account__header__tabs__buttons .icon-button {
@@ -6426,7 +6474,7 @@ a:is(.active,
     background-color: color-mix(in srgb, var(--color-accent), transparent 82%);
     color: var(--color-accent);
 }
-.app-body .hover-card .button {
+.app-body .hover-card .button:not(.button--destructive) {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
     line-height: 22px;
@@ -6875,7 +6923,8 @@ a:is(.active,
     margin-bottom: 2em;
     border-width: 3px;
 }
-.app-body .hover-card__bio a {
+.app-body .hover-card__bio a,
+.app-body .hover-card .account-fields a {
     text-decoration: none;
     color: var(--color-accent);
 }
