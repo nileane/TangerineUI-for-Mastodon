@@ -4354,7 +4354,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-image: var(--icon-globe-accent);
 }
 .app-body .hover-card {
-    background-color: color-mix(in srgb, var(--color-content-bg), transparent 30%);
+    background-color: color-mix(in srgb, var(--color-content-bg), transparent 20%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     border-color: var(--color-lines);
 }
 
