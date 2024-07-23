@@ -2485,6 +2485,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body
     :is(.focusable, .status__wrapper.focusable):focus
     :is(.detailed-status, .detailed-status__action-bar),
+.app-body .focusable:focus .notification-ungrouped__header,
+.app-body .focusable:focus .status__wrapper,
 .app-body .focusable:focus {
         outline: 0;
         --color-post-bg: var(--color-content-bg-focus);
@@ -2493,7 +2495,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 @media screen and (min-width:1175px) { /* Subtle hover effect when you hover over a post content in the timeline. Only on bigger screens. */
     .app-body .status__wrapper:has(.status__content:hover),
     .app-body .notification__message:has(+ div > .status__wrapper .status__content:hover),
-    .app-body .status__wrapper:has(.status__content:hover) .status__avatar {
+    .app-body .status__wrapper:has(.status__content:hover) .status__avatar,
+    .app-body .notification-ungrouped:has(.status__wrapper .status__content:hover) .notification-ungrouped__header {
         --color-post-bg: var(--color-content-bg-focus);
     }
 }
@@ -5032,7 +5035,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-content-fg-muted);
 }
 .app-body .notification.unread::before,
-.app-body .status__wrapper.unread::before {
+.app-body .status__wrapper.unread::before,
+.app-body .notification-group--unread:before,
+.app-body .notification-ungrouped--unread:before {
     background-color: var(--color-accent);
     width: 8px;
     border: 0;
@@ -5310,6 +5315,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     position: relative;
     font-weight: 500;
     color: var(--color-content-fg);
+    background-color: var(--color-post-bg);
+    transition: background .3s;
 }
 .app-body .notification-ungrouped__header bdi {
     font-weight: bold;
