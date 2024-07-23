@@ -31,7 +31,7 @@
     --color-content-bg: #ffffff;
     --color-content-fg: #444a5a;
     --color-content-fg-bold: #000000;
-    --color-content-fg-muted: color-mix(in srgb, var(--color-content-fg), var(--color-content-bg) 40%);;
+    --color-content-fg-muted: color-mix(in srgb, var(--color-content-fg), var(--color-content-bg) 40%);
     --color-content-secondary-bg: #f5f4f9;
     --color-content-secondary-separator: rgba(223, 219, 237, 0.4);
     --color-content-bg-focus: #fffcfa;
