@@ -2564,7 +2564,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     flex-flow: row wrap;
     font-size: 13px;
     gap: 5px;
-    border-top: 1px solid color-mix(in srgb, var(--color-lines), transparent 40%);
+    border-top: 1px solid color-mix(in srgb, var(--color-lines), transparent 20%);
     margin-top: 25px;
     padding-top: 12px;
     overflow: hidden;
