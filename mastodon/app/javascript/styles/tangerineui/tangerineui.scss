@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.0.0-pre6";
+    --version: "v2.0.0-pre7~";
 
     --variant-name: "Tangerine";
     --variant-emoji: "\1F34A\00A0";
@@ -31,7 +31,7 @@
     --color-content-bg: #ffffff;
     --color-content-fg: #444a5a;
     --color-content-fg-bold: #000000;
-    --color-content-fg-muted: color-mix(in srgb, var(--color-content-fg), var(--color-content-bg) 40%);;
+    --color-content-fg-muted: color-mix(in srgb, var(--color-content-fg), var(--color-content-bg) 40%);
     --color-content-secondary-bg: #f9f6f4;
     --color-content-secondary-separator: rgba(237, 227, 219, 0.4);
     --color-content-bg-focus: #fffcfa;
