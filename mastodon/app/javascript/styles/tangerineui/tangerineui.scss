@@ -7632,4 +7632,5 @@ a:is(.active,
     )
 )::before {
     background-image: var(--icon-olympics);
+    transform: scale(1.85);
 }
