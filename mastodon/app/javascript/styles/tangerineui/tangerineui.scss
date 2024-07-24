@@ -4354,6 +4354,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     backdrop-filter: blur(10px);
     border-color: var(--color-lines);
 }
+.app-body .hover-card .display-name__html {
+    font-weight: 600;
+}
 .app-body .account-fields {
     color: var(--color-content-fg);
     font-size: 95%;
@@ -6478,6 +6481,9 @@ a:is(.active,
     color: var(--color-accent-fg);
     line-height: 22px;
     padding: 10px 18px;
+}
+.app-body .hover-card .button:not(.button--destructive):hover {
+    background-color: var(--color-accent-focus);
 }
 .app-body .button:is(.button-secondary, .button-tertiary):hover {
     background-color: color-mix(in srgb, var(--color-accent), transparent 70%);
