@@ -4354,6 +4354,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     backdrop-filter: blur(10px);
     border-color: var(--color-lines);
 }
+.app-body .hover-card .display-name__html {
+    font-weight: 600;
+}
 .app-body .account-fields {
     color: var(--color-content-fg);
     font-size: 95%;
