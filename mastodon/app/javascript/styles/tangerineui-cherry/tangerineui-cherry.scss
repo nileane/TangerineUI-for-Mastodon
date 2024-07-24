@@ -2706,7 +2706,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 /* Hashtag bar */
 .app-body .hashtag-bar a,
 .app-body .hashtag-bar .link-button {
-    color: var(--color-accent);
+    color: var(--color-content-fg-muted);
     transition: all .1s;
 }
 .app-body .hashtag-bar a {
@@ -2719,7 +2719,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color:
         color-mix(
             in srgb,
-            var(--color-accent),
+            var(--color-content-fg),
             transparent 92%
         );
     transition: all .3s;
@@ -2740,16 +2740,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .hashtag-bar a:hover span {
     text-decoration: none;
-}
-@media (prefers-color-scheme: dark) {
-    .app-body .hashtag-bar a,
-    .app-body .hashtag-bar .link-button {
-        color: var(--color-accent);
-    }
-    .app-body .hashtag-bar a:hover,
-    .app-body .hashtag-bar .link-button:hover {
-        color: var(--color-content-fg);
-    }
 }
 
 /* ⭐ Action bar */
