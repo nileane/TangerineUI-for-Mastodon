@@ -6467,6 +6467,7 @@ a:is(.active,
     background-color: var(--color-content-bg);
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
+    color: var(--color-content-fg);
 }
 .app-body .server-banner__meta {
     padding: 0 15px 20px;
