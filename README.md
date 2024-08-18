@@ -102,7 +102,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [dmv.community](https://dmv.community)                     | 200+           | an optional theme   | No                      |
 | [pipou.academy](https://pipou.academy)                     | 100+           | an optional theme   | No                      |
 | [indiepocalypse.social](https://indiepocalypse.social)     | 100+           | an optional theme   | No                      |
-| [town.voyager.blue](https://town.voyager.blue)             | 100+           | an optional theme   | Yes (Purple variant)    |
+| [town.voyager.blue](https://town.voyager.blue)             | 100+           | an optional theme   | Yes (Blueberry variant) |
 | [bolha.one](https://bolha.one)                             | 20+            | an optional theme   | Yes (Tangerine variant) |
 | [i1.no](https://i1.no)                                     | 15+            | the only theme      | Yes (Purple variant)    |
 | [zeppelin.flights](https://zeppelin.flights)               | 15+            | the only theme      | Yes (Tangerine variant) |
