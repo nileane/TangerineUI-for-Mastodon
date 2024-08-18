@@ -3010,6 +3010,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .more-from-author .logo {
     color: var(--color-content-fg);
 }
+.app-body .notification-ungrouped  .more-from-author :is(.account__avatar) {
+    width: 16px !important;
+    height: 16px !important;
+}
 .app-body .more-from-author a:is(:active, :hover, :focus) {
     color: var(--color-accent);
 }
@@ -3124,6 +3128,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status > *:not(.status__info, .status__content, .status__action-bar, .status__line, .status-card) {
     max-height: 450px;
     width: auto;
+}
+.app-body .status--in-thread .more-from-author {
+    margin-inline-start: 0;
 }
 .app-body .media-gallery__item,
 .app-body .media-gallery__item-thumbnail,
