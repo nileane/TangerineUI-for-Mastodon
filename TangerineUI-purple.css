@@ -1373,7 +1373,8 @@ body.app-body  {
     ):is(:active, :focus, :hover)
     .display-name strong,
 .app-body .status__prepend .status__display-name:is(:active, :focus, :hover) strong,
-.app-body a.notification-request__link:is(:active, :focus, :hover) .notification-request__name__display-name strong {
+.app-body a.notification-request__link:is(:active, :focus, :hover) .notification-request__name__display-name strong,
+.app-body .more-from-author a:is(:active, :focus, :hover) bdi {
         text-decoration-line: underline;
         text-decoration-color: currentColor;
         text-decoration-thickness: 2px;
@@ -3016,6 +3017,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .more-from-author a:is(:active, :hover, :focus) {
     color: var(--color-accent);
+}
+.app-body .more-from-author a {
+    color: var(--color-content-fg);
+    font-weight: 700;
 }
 .app-body .status__content p {
     margin-bottom: 12px;
