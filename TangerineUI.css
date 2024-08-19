@@ -3511,7 +3511,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-content-secondary-bg);
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
-    border-bottom: 0;
+    border-bottom: 1px solid var(--color-lines);
 }
 .app-body .column-header__collapsible::-webkit-scrollbar-track {
     background-color: transparent;
