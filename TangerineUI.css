@@ -3508,7 +3508,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .column-header__collapsible {
-    background-color: var(--color-content-secondary-bg);
+    background-color: color-mix(in srgb, var(--color-content-secondary-bg), transparent 15%);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
     border-bottom: 0;
@@ -3541,7 +3543,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 .app-body .column-header__collapsible-inner {
-    background: var(--color-content-secondary-bg);
     border: 0;
 }
 .app-body .column-settings__section {
