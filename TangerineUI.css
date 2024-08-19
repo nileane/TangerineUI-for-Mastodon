@@ -3653,9 +3653,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 @media screen and (max-width:885px) {
-    .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
+    .app-body:not(.layout-multiple-columns) .column-header__collapsible:is(:not(.collapsed), .animating) {
         border-left-color: var(--color-content-secondary-bg);
         border-right-color: var(--color-content-secondary-bg);
+        margin-inline-start: -45px;
+        margin-inline-end: -55px;
     }
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
