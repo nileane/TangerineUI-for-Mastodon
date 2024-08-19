@@ -1520,10 +1520,14 @@ body.app-body  {
 .app-body .dropdown-button:hover {
     border-color: var(--color-accent);
 }
-.app-body .dropdown-button.active {
+.app-body .dropdown-button.active,
+.app-body .column-settings .dropdown-button.active {
     border-color: var(--color-accent);
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
+}
+.app-body .column-settings .dropdown-button {
+    background-color: var(--color-accent-bg);
 }
 .app-body .reply-indicator {
     border-left: 1px solid var(--color-lines);
@@ -3227,6 +3231,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .timeline-hint {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
+    border-color: var(--color-lines);
 }
 .app-body .timeline-hint a {
     color: var(--color-accent);
@@ -3519,6 +3524,21 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .column-header__collapsible::-webkit-scrollbar-track {
     background-color: transparent;
+}
+.app-body .column-header__select-row {
+    border-color: var(--color-lines);
+}
+.app-body .column-header__select-row__actions button {
+    background-color: var(--color-accent-bg);
+    color: var(--color-accent);
+    border-color: var(--color-accent-bg);
+}
+.app-body .column-header__select-row__actions button:hover {
+    border-color: var(--color-accent);
+}
+.app-body .column-header__select-row__actions button.active {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
 }
 @media screen and (max-width:1174px) {
     .app-body:not(.layout-multiple-columns) .column-header__collapsible {
@@ -5283,10 +5303,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .filtered-notifications-banner .filtered-notifications-banner__badge,
 .app-body .filtered-notifications-banner:is(:active, :focus, :hover) .filtered-notifications-banner__badge,
-.app-body .notification-request__name .filtered-notifications-banner__badge {
+.app-body .notification-request__name .filtered-notifications-banner__badge,
+.app-body .notification-request .account__avatar__counter {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
     border-radius: 50px;
+}
+.app-body .notification-request .account__avatar__counter {
+    width: 19px;
+    height: 19px;
+    box-sizing: border-box;
 }
 .app-body .filtered-notifications-banner__badge__badge {
     background-color: var(--color-content-bg);
