@@ -3037,8 +3037,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-content-fg);
     margin-inline-start: 0;
     margin-top: 2px;
+    margin-bottom: 5px;
     border: 0;
-    padding: 0 0 30px;
+    padding: 0 0 25px;
     font-weight: 700;
     font-size: 15px;
     line-height: 19px;
@@ -4443,11 +4444,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     backdrop-filter: blur(10px);
     border-color: var(--color-lines);
 }
+.app-body .hover-card__bio,
+.app-body .hover-card .display-name bdi,
+.app-body .account-fields,
+.app-body .hover-card__number {
+    color: var(--color-content-fg);
+}
 .app-body .hover-card .display-name__html {
     font-weight: 600;
 }
 .app-body .account-fields {
-    color: var(--color-content-fg);
     font-size: 95%;
 }
 .app-body .hover-card .account-fields {
