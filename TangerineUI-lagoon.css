@@ -3088,16 +3088,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 .app-body .icon-button.overlayed {
-    background-color: #ffffff;
-    color: #444b5d;
-    opacity: .6;
-    transition: opacity .3s;
+    background-color: rgba(0, 0, 0, .1);
     border-radius: 7px;
 }
 .app-body .icon-button.overlayed:hover {
-    background-color: #ffffff;
-    color: #444b5d;
-    opacity: 1;
+    background-color: rgba(0, 0, 0, .4);
 }
 .app-body .status__wrapper--filtered__button {
     color: var(--color-accent);
