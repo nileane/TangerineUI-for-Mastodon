@@ -6619,14 +6619,25 @@ a:is(.active,
     }
 }
 .app-body .sign-in-banner {
-    padding: 10px 0 10px 10px;
+    padding: 10px;
+}
+.app-body .navigation-panel__sign-in-banner hr {
+    display: block;
+    border-color: var(--color-lines-translucent);
+    margin: 12px 15px;
+    opacity: .5;
 }
 .app-body .sign-in-banner p {
     color: var(--color-fg-muted);
     padding: 0 5px 5px;
 }
 .app-body .sign-in-banner p strong {
+    color: var(--color-fg);
     font-weight: 600;
+}
+.app-body .sign-in-banner p:nth-child(2) {
+    font-size: 85%;
+    line-height: 18px;
 }
 .app-body .sign-in-banner p {
     margin-bottom: 25px;
