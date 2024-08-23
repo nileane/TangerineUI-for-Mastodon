@@ -167,7 +167,7 @@ cp -r $REPO/mastodon/app/javascript/styles/* $INSTALLDIR/app/javascript/styles
 ```
 
 
-3. **Add Tangerine UI to `themes.yml`**. To make Tangerine UI available in your users's settings, you need to add a new line to [`config/themes.yml`](https://github.com/mastodon/mastodon/blob/main/config/themes.yml). Here we're adding 3 new lines, one for Tangerine UI, a 2nd one for the purple variant, and a 3rd one for the Cherry variant:
+3. **Add Tangerine UI to `themes.yml`**. To make Tangerine UI available in your users' settings, you need to add a new line to [`config/themes.yml`](https://github.com/mastodon/mastodon/blob/main/config/themes.yml). Here, we're adding 4 new lines, one for each variant:
 
 ```yml
 default: styles/application.scss
@@ -194,7 +194,7 @@ themes:
 
 5. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Mastodon instance for the changes to take effect.
 
-Your users should now be able to choose '*Tangerine UI*', '*Tangerine UI (Purple)*', or '*Tangerine UI (Cherry)*' as their site theme:
+Your users should now be able to choose '*Tangerine UI*', '*Tangerine UI (Purple)*', '*Tangerine UI (Cherry)*', or '*Tangerine UI (Lagoon)*' as their site theme:
 
 ![Screenshot : select Tangerine UI as a theme in appearance settings on Mastodon.](https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/8cce803c-099b-4f25-8e39-e1c0da3aa6dc)
 
