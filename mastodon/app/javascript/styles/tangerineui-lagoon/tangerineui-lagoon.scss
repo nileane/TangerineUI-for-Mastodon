@@ -5412,7 +5412,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .notification-ungrouped--mention:not(.notification-ungrouped--direct) .notification-ungrouped__header {
     display: none;
 }
-.app-body .notification-group__icon {
+.app-body :is(.notification-group__icon, .notification-ungrouped__header__icon) {
     width: 46px;
     height: 28px;
     justify-content: end;
