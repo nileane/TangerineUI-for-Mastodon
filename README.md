@@ -45,11 +45,14 @@ For those of you who like Tangerine UI but want to stick to Mastodon's purple hu
 I won't be held responsible if you end up licking your screen because of this one.
   
 <img width="1784" alt="TangerineUI-cherry" src="./art/Screenshots/TangerineUI-cherry.png">  
+&nbsp;
 
-**🐠 Lagoon**
-Embrace turquoise.
+
+**🐠 Lagoon**  
+Soft turquoise palette that gives neon vibes at night.
 
 <img width="1784" alt="TangerineUI-lagoon" src="./art/Screenshots/TangerineUI-lagoon.png">  
+&nbsp;
 
 
 ## Features
@@ -232,8 +235,9 @@ Even if you are not an admin on your instance, you can still use Tangerine UI wi
 1. **Check your Mastodon version**. For Tangerine UI to work properly, you need to make sure you're using the right version for your Mastodon instance. Please check the [Compatibility](#compatibility) section in this document before you proceed.
 2. **Install a browser extension** that allows you to inject CSS on a webpage, such as [Stylus](https://add0n.com/stylus.html), or [Live CSS Editor](https://github.com/webextensions/live-css-editor)
 3. Copy & paste the contents of 🍊 [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the extension's editor
-   * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
-   * 🍒 For the cherry variant, copy the contents of [`TangerineUI-cherry.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-cherry.css) instead.
+   * 🪻 For the Purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
+   * 🍒 For the Cherry variant, copy the contents of [`TangerineUI-cherry.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-cherry.css) instead.
+   * 🐠 For the Lagoon variant, copy the contents of [`TangerineUI-lagoon.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-lagoon.css) instead.
 
 > [!IMPORTANT]
 > If you are a user on a Glitch-soc instance, you must switch to the Vanilla Mastodon flavour for Tangerine UI to work properly: in your instance settings, navigate to *Flavours* → *Vanilla Mastodon* → select the '*Default*' skin.
