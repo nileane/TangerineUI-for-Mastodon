@@ -2259,6 +2259,7 @@ body.app-body  {
 .app-body .status__info .status__display-name {
     overflow: visible;
     align-items: start;
+    max-height: 22px;
 }
 .app-body .status__info .status__display-name .display-name bdi,
 .app-body .status__info .status__display-name .display-name__account {
