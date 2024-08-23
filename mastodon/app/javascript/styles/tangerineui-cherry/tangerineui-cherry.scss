@@ -2259,6 +2259,7 @@ body.app-body  {
 .app-body .status__info .status__display-name {
     overflow: visible;
     align-items: start;
+    max-height: 22px;
 }
 .app-body .status__info .status__display-name .display-name bdi,
 .app-body .status__info .status__display-name .display-name__account {
@@ -3024,27 +3025,38 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status__content p:last-child {
     margin-bottom: 0;
 }
-.app-body .status__content > p:first-child:has(.status__content__spoiler-link) {
-    margin-bottom: 1px;
-}
-.app-body .status__content > p:first-child:has(.status__content__spoiler-link) > span {
-    font-weight: bold;
-}
-.app-body :is(.reply-indicator__content, .status__content):not(:has(> .status__content__text--visible)) > p:first-child:has(.status__content__spoiler-link) + div {
-    display: none;
-}
-.app-body :is(.reply-indicator__content, .status__content):not(:has(> .status__content__text--visible)):has(> p:first-child .status__content__spoiler-link) + .media-gallery {
-    margin-top: 5px;
-}
-.app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link {
-    background-color: transparent;
-    width: 100%;
-    margin: -22px 0 0;
-    padding: 27px 0 5px;
-    text-align: start;
+.app-body .content-warning {
+    background: none;
+    color: var(--color-content-fg);
+    margin-inline-start: 0;
+    margin-top: 2px;
+    border: 0;
+    padding: 0 0 30px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
     position: relative;
 }
-.app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link span {
+.app-body .detailed-status .content-warning {
+    font-size: 19px;
+    line-height: 24px;
+}
+.app-body .content-warning::before,
+.app-body .content-warning::after {
+    display: none;
+}
+.app-body .content-warning .link-button {
+    background-color: transparent;
+    width: 100%;
+    text-align: start;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+}    
+.app-body .content-warning .link-button span {
     background-color: transparent;
     background-image: var(--icon-eye-shut);
     background-repeat: no-repeat;
@@ -3070,34 +3082,32 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     position: relative;
     z-index: 1;
 }
-.app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link:hover span {
+.app-body .content-warning .link-button:hover span {
     border-color: rgba(68, 74, 90, .6);
 }
-.app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link:active span {
+@media (prefers-color-scheme: dark) {
+    .app-body .content-warning .link-button:hover span {
+        border-color: rgba(255, 255, 255, .3);
+    }
+}
+.app-body .content-warning .link-button:active span {
     transform: scale(.95);
 }
-.app-body :is(.reply-indicator__content, .status__content):has(> .status__content__text--visible) .status__content__spoiler-link span {
+.app-body .content-warning:has(+ .status__content > .status__content__text--visible) .link-button span {
     background-image: var(--icon-eye-open);
-}
-.app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link span {
-    color: var(--color-content-fg);
 }
 @media (prefers-color-scheme: dark) {
     .app-body :is(.reply-indicator__content, .status__content) .status__content__spoiler-link:hover span {
         border-color: rgba(255, 255, 255, .3);
     }
 }
+
 .app-body .icon-button.overlayed {
-    background-color: #ffffff;
-    color: #444b5d;
-    opacity: .6;
-    transition: opacity .3s;
+    background-color: rgba(0, 0, 0, .1);
     border-radius: 7px;
 }
 .app-body .icon-button.overlayed:hover {
-    background-color: #ffffff;
-    color: #444b5d;
-    opacity: 1;
+    background-color: rgba(0, 0, 0, .4);
 }
 .app-body .status__wrapper--filtered__button {
     color: var(--color-accent);
