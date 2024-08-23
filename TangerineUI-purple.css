@@ -3037,8 +3037,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-content-fg);
     margin-inline-start: 0;
     margin-top: 2px;
+    margin-bottom: 5px;
     border: 0;
-    padding: 0 0 30px;
+    padding: 0 0 25px;
     font-weight: 700;
     font-size: 15px;
     line-height: 19px;
