@@ -3585,6 +3585,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         position: fixed;
         inset-inline-start: 0;
         inset-inline-end: 0;
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
     }
     .app-body:not(.layout-multiple-columns) .ui__header .ui__header__logo {
         margin-left: 3px;
