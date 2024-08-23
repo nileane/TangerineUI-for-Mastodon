@@ -2847,6 +2847,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .status__prepend > span {
     color: var(--color-fg-muted);
+    white-space: nowrap;
 }
 .app-body .status__prepend:has(.status__prepend-icon-wrapper > .icon-thumb-tack) > span {
     color: var(--color-content-fg);

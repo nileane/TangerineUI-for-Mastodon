@@ -2847,6 +2847,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .status__prepend > span {
     color: var(--color-fg-muted);
+    white-space: nowrap;
 }
 .app-body .status__prepend:has(.status__prepend-icon-wrapper > .icon-thumb-tack) > span {
     color: var(--color-content-fg);
@@ -3543,7 +3544,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 .app-body .column-header__collapsible-inner {
-    background: var(--color-content-secondary-bg);
     border: 0;
 }
 .app-body .column-settings__section {
