@@ -6,7 +6,7 @@
  </picture>
 </h1>
 
-Tangerine UI is a vibrant, fully-featured custom theme for Mastodon's Web UI that comes in three variants: 🍊 Tangerine, 🪻 Purple, and 🍒 Cherry.
+Tangerine UI is a vibrant, fully-featured custom theme for Mastodon's Web UI that comes in four variants: 🍊 Tangerine, 🪻 Purple, 🍒 Cherry, and 🐠 Lagoon.
 
 [🕹️ **Live demo** @ nileane.fr](https://nileane.fr) • [👋 **Follow Tangerine UI** on Mastodon](https://nileane.fr/@TangerineUI) • [📝 **Release notes**](https://github.com/nileane/TangerineUI-for-Mastodon/releases)
 
@@ -35,7 +35,7 @@ Default variant for Tangerine UI, featuring a soft orange palette.
 
 
 **🪻 Purple**  
-For those of you who like Tangerine UI but want to stick to Mastodon's purple.
+For those of you who like Tangerine UI but want to stick to Mastodon's purple hue.
 
 <img width="1784" alt="TangerineUI-purple" src="./art/Screenshots/TangerineUI-purple.png">  
 &nbsp;
@@ -45,6 +45,11 @@ For those of you who like Tangerine UI but want to stick to Mastodon's purple.
 I won't be held responsible if you end up licking your screen because of this one.
   
 <img width="1784" alt="TangerineUI-cherry" src="./art/Screenshots/TangerineUI-cherry.png">  
+
+**🐠 Lagoon**
+Embrace turquoise.
+
+<img width="1784" alt="TangerineUI-lagoon" src="./art/Screenshots/TangerineUI-lagoon.png">  
 
 
 ## Features
@@ -67,8 +72,6 @@ I won't be held responsible if you end up licking your screen because of this on
   
 * 💬 **Distinct look for DMs**  
   It can be easy to mistake a DM for a regular post on Mastodon. Tangerine UI gives DMs a specific look, so they stand out in your timeline, and you don't make any embarrassing mistakes.
-  
-  <img width="600" alt="with Tangerine UI, DMs have a distinct speech bubble look." src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/bfb650a9-d21a-4621-8a92-5de0276797cb">
 
 * 👁️ **Compact timeline**  
   Avatars are aligned on the side, margins are properly reduced, and threads are easier to read.
@@ -139,8 +142,9 @@ These are known instances that have enabled Tangerine UI for their users, either
 1. **Check your Mastodon version**. For Tangerine UI to work properly, you need to make sure you're installing the right version for your Mastodon instance. Please check the [Compatibility](#compatibility) section in this document before you proceed.
 
 2. Copy & paste the contents of 🍊 [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the '***Custom CSS***' field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
-   * 🪻 For the purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
-   * 🍒 For the cherry variant, copy the contents of [`TangerineUI-cherry.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-cherry.css) instead.
+   * 🪻 For the Purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
+   * 🍒 For the Cherry variant, copy the contents of [`TangerineUI-cherry.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-cherry.css) instead.
+   * 🐠 For the Lagoon variant, copy the contents of [`TangerineUI-lagoon.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-lagoon.css) instead.
 
 > [!WARNING]
 > **Using the '*Custom CSS*' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their Appearance settings** ([see *Accessibility*](#accessibility)).  
@@ -169,6 +173,7 @@ mastodon-light: styles/mastodon-light.scss
 tangerineui: styles/tangerineui.scss
 tangerineui-purple: styles/tangerineui-purple.scss
 tangerineui-cherry: styles/tangerineui-cherry.scss
+tangerineui-lagoon: styles/tangerineui-lagoon.scss
 ```
 
 4. **Add a localized name (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized theme name ("*tangerineui-purple*"), instead of a readable theme name ("*Tangerine UI (Purple)*").
@@ -181,6 +186,7 @@ themes:
   tangerineui: Tangerine UI
   tangerineui-purple: Tangerine UI (Purple)
   tangerineui-cherry: Tangerine UI (Cherry)
+  tangerineui-lagoon: Tangerine UI (Lagoon)
 ```
 
 5. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Mastodon instance for the changes to take effect.
