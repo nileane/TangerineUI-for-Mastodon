@@ -7066,7 +7066,7 @@ a:is(.active,
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
 }
-.app-body .about__section__body .prose a:hover span,
+.app-body .about__section__body .prose a:hover :is(span, strong),
 .app-body .hover-card__bio a:hover {
     text-decoration-color: var(--color-accent);
 }
