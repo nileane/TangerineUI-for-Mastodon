@@ -461,6 +461,7 @@ body.app-body  {
     background-color: var(--color-accent);
     border-radius: 8px;
     opacity: .4;
+    box-shadow: none;
 }
 :root:has(.app-body) *::-webkit-scrollbar-track:hover {
     background-color: var(--color-bg);
