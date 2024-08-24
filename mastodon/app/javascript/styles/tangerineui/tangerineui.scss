@@ -3681,8 +3681,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body:not(.layout-multiple-columns) .column-header__collapsible:is(:not(.collapsed), .animating) {
         border-left-color: var(--color-content-secondary-bg);
         border-right-color: var(--color-content-secondary-bg);
-        margin-inline-start: -45px;
-        margin-inline-end: -55px;
     }
 }
 @media screen and (min-width:890px) and (max-width:1174px) {
@@ -6619,14 +6617,25 @@ a:is(.active,
     }
 }
 .app-body .sign-in-banner {
-    padding: 10px 0 10px 10px;
+    padding: 10px;
+}
+.app-body .navigation-panel__sign-in-banner hr {
+    display: block;
+    border-color: var(--color-lines-translucent);
+    margin: 12px 15px;
+    opacity: .5;
 }
 .app-body .sign-in-banner p {
     color: var(--color-fg-muted);
     padding: 0 5px 5px;
 }
 .app-body .sign-in-banner p strong {
+    color: var(--color-fg);
     font-weight: 600;
+}
+.app-body .sign-in-banner p:nth-child(2) {
+    font-size: 85%;
+    line-height: 18px;
 }
 .app-body .sign-in-banner p {
     margin-bottom: 25px;
