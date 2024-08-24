@@ -1355,6 +1355,7 @@ body.app-body  {
 
 
 /* Links */
+.app-body a.status-link:not(.mention, .hashtag),
 .app-body a:is(.status-link, .mention, .navigation-bar__profile-edit) span,
 .app-body :is(.account__header__fields, .account__header__content) a span {
     text-decoration-line: underline;
@@ -1362,6 +1363,7 @@ body.app-body  {
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
 }
+.app-body a.status-link:is(:active, :focus, :hover),
 .app-body a:is(.status-link, .mention, .navigation-bar__profile-edit):is(:active, :focus, :hover) span,
 .app-body :is(.account__header__fields, .account__header__content, .trends__item__name) a:is(:active, :focus, :hover) span,
 .app-body
@@ -1380,7 +1382,7 @@ body.app-body  {
         text-decoration-thickness: 2px;
         text-underline-offset: 2px;
 }
-.app-body a:is(.status-link, .mention):is(:active, :focus, :hover),
+.app-body a.mention:is(:active, :focus, :hover),
 .app-body :is(.account__header__fields, .account__header__content) a:is(:active, :focus, :hover),
 .app-body :is(.detailed-status__datetime, .status__relative-time):is(:active, :focus, :hover) {
     text-decoration: none !important;
