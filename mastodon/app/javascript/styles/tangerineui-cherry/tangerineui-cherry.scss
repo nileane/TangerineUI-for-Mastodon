@@ -1363,7 +1363,7 @@ body.app-body  {
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
 }
-.app-body a.status-link:is(:active, :focus, :hover),
+.app-body a.status-link:not(.mention, .hashtag):is(:active, :focus, :hover),
 .app-body a:is(.status-link, .mention, .navigation-bar__profile-edit):is(:active, :focus, :hover) span,
 .app-body :is(.account__header__fields, .account__header__content, .trends__item__name) a:is(:active, :focus, :hover) span,
 .app-body
