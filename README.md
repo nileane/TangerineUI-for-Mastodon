@@ -250,7 +250,7 @@ Even if you are not an admin on your instance, you can still use Tangerine UI wi
 Please consider that some of your users may depend on Mastodon's High Contrast theme before [setting Tangerine UI as the only theme](#install-tangerine-ui-as-the-only-theme-on-your-instance) on your instance. For this reason, unless you're running a single-user instance, I strongly recommend [installing Tangerine UI as an optional/revertable theme](#install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended) instead.
 
 ## Credits
-The logo for Tangerine UI was designed by [Younis @younishd](https://younishd.fr). 🍊
+The logo for Tangerine UI was originally designed by [Younis @younishd](https://younishd.fr). 🍊
 
 ## Support me <3
 If you enjoy Tangerine UI, I would really appreciate a [tip 💛](https://ko-fi.com/nileane)!
