@@ -3518,15 +3518,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transform: scale(.9);
 }
 
-.app-body .load-gap,
-.app-body .load-more {
-    background-color: var(--color-accent-bg);
+.app-body :is(.load-gap, .load-more) {
+    background-color: var(--color-content-secondary-bg);
     color: var(--color-accent);
     border-bottom: 0;
 }
-.app-body .load-gap:hover,
-.app-body .load-more:hover {
+.app-body :is(.load-gap, .load-more):is(:active, :hover) {
     background-color: var(--color-accent-lines);
+}
+.app-body :is(.load-gap, .load-more) .icon-ellipsis-h {
+    background-image: var(--icon-ellipsis-column-link-active-accent);
 }
 
 .app-body .column-header__collapsible {
