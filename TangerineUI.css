@@ -6175,6 +6175,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .report-modal {
     background-color: var(--color-content-bg);
 }
+.app-body .actions-modal {
+    background-color: var(--color-content-bg);
+}
 .app-body .interaction-modal {
     background-color: var(--color-content-bg);
     border-radius: 10px;
