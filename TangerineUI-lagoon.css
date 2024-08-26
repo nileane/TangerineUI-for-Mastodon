@@ -4799,6 +4799,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent);
     opacity: 1;
 }
+.app-body .story__details__shared {
+    color: var(--color-fg-muted);
+}
 .app-body .story__details__shared__pill {
     background-color:
         color-mix(
