@@ -6844,10 +6844,14 @@ a:is(.active,
     border-radius: 8px;
     padding: 2px 8px;
 }
+.app-body .reactions-bar .emoji-picker-dropdown .icon-button {
+    padding: 3px;
+}
 .app-body .reactions-bar__item:is(:active, :hover, :focus) {
     background-color: var(--color-content-bg);
 }
-.app-body .reactions-bar__item.active {
+.app-body .reactions-bar__item.active,
+.app-body .reactions-bar .emoji-picker-dropdown .icon-button.active.inverted {
     background-color: var(--color-accent);
 }
 .app-body .reactions-bar__item__count,
