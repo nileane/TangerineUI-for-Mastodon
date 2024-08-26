@@ -6822,6 +6822,7 @@ a:is(.active,
     box-shadow: 0 -20px var(--color-bg);
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
+    border-bottom: 1px solid var(--color-lines);
 }
 .app-body .announcements__item strong {
     font-weight: 800;
@@ -6870,8 +6871,11 @@ a:is(.active,
 @media screen and (max-width:1174px) {
     .app-body .announcements {
         box-shadow: none;
-        margin-top: -4px;
-        border-radius: 0;
+        margin-top: 1px;
+        border-left: 0;
+        border-right: 0;
+        margin-inline-start: -45px;
+        margin-inline-end: -55px;
     }
     .app-body .announcements__mastodon {
         border-radius: 0;
