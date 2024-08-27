@@ -6169,6 +6169,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-content-bg);
     border-radius: 8px;
 }
+.app-body .safety-action-modal__confirmation,
+.app-body .safety-action-modal__confirmation strong,
+.app-body .safety-action-modal__confirmation h1 {
+    color: var(--color-content-fg);
+}
 .app-body .safety-action-modal__header__icon {
     background-color: var(--color-accent);
 }
@@ -6178,8 +6183,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .safety-action-modal__bullet-points {
     color: var(--color-content-fg);
 }
-.app-body .safety-action-modal__header h1 {
+.app-body :is(.safety-action-modal__header, .safety-action-modal__confirmation) h1 {
     font-weight: 600;
+}
+.app-body .safety-action-modal__confirmation h1 {
+    font-size: 150%;
+    padding-top: 20px;
 }
 .app-body .safety-action-modal__header h1 + div {
     opacity: .6;
