@@ -808,6 +808,7 @@ body.app-body  {
         .icon-eye,
         .icon-eraser,
         .icon-pencil,
+        .icon-edit,
         .app-form__header-input .icon,
         .account__domain-pill__popout__parts__icon .icon,
         .safety-action-modal__bullet-points__icon .icon
@@ -875,6 +876,7 @@ body.app-body  {
         .icon-eye,
         .icon-eraser,
         .icon-pencil,
+        .icon-edit,
         .app-form__header-input .icon,
         .account__domain-pill__popout__parts__icon .icon,
         .safety-action-modal__bullet-points__icon .icon
@@ -1285,6 +1287,9 @@ body.app-body  {
     background-image: var(--icon-broom);
 }
 .app-body .icon-pencil {
+    background-image: var(--icon-edited-accent);
+}
+.app-body .icon-edit {
     background-image: var(--icon-edited-accent);
 }
 
