@@ -4871,17 +4871,22 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent-fg);
 }
 .app-body .story.expanded {
-    gap: 10px;
+    gap: 20px;
     padding-bottom: 20px;
 }
 .app-body .story.expanded .story__thumbnail {
-    margin: 0 0 -25px;
+    margin: 0;
 }
 .app-body .story.expanded .story__thumbnail img {
-    margin: -5px -5px 30px;
     border-radius: 8px;
-    width: calc(100% + 10px);
 }
+.app-body .story__details__shared__author-link {
+    color: var(--color-content-fg);
+}
+.app-body .story__details__shared__author-link:hover {
+    color: var(--color-accent);
+}
+
 
 /* 🔍 Search field and search results */
 .app-body .search {
