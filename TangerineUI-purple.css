@@ -3435,11 +3435,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body :is(.status__wrapper-direct):not(:has(.status__line)) .status__prepend {
     margin-inline-start: 66px;
 }
-.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend-icon-wrapper {
+.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend__icon {
     width: 20px;
     height: 20px;
 }
-.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend-icon-wrapper svg {
+.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend__icon svg {
     transform: scale(.85);
     background-image: var(--icon-at-inv);
 }
