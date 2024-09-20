@@ -1462,7 +1462,6 @@ body.app-body  {
 }
 .app-body .navigation-bar .account__display-name {
     line-height: 20px;
-    overflow: visible;
 }
 .app-body :is(.navigation-bar, .reply-indicator) .account__avatar {
     outline: 6px solid var(--color-content-bg);
