@@ -979,7 +979,7 @@ body.app-body  {
 .app-body .media-modal__overlay :is(.icon-reply, .icon-reply-all) {
     background-image: var(--icon-reply-accent);
 }
-.app-body .status__prepend-icon.icon-reply,
+.app-body .status__prepend__icon .icon-reply,
 .app-body .notification-ungrouped__header__icon .icon-reply {
     background-image: var(--icon-reply-accent-active);
 }
@@ -1413,7 +1413,7 @@ body.app-body  {
         a.account__display-name
     ):is(:active, :focus, :hover)
     .display-name strong,
-.app-body .status__prepend .status__display-name:is(:active, :focus, :hover) strong,
+.app-body .status__prepend a:is(:active, :focus, :hover) bdi,
 .app-body a.notification-request__link:is(:active, :focus, :hover) .notification-request__name__display-name strong,
 .app-body .more-from-author a:is(:active, :focus, :hover) bdi {
         text-decoration-line: underline;
@@ -2191,7 +2191,8 @@ body.app-body  {
 }
 .app-body .account__display-name strong,
 .app-body .status__display-name strong,
-.app-body .status__info .status__display-name .display-name__account {
+.app-body .status__info .status__display-name .display-name__account,
+.app-body .status__prepend a bdi {
     color: var(--color-content-fg);
 }
 .app-body .translate-button {
@@ -2259,7 +2260,8 @@ body.app-body  {
 }
 .app-body .account__display-name strong,
 .app-body .status__display-name strong,
-.app-body .notification-request__name__display-name strong {
+.app-body .notification-request__name__display-name strong,
+.app-body .status__prepend a bdi {
     font-weight: bold;
 }
 .app-body .status {
