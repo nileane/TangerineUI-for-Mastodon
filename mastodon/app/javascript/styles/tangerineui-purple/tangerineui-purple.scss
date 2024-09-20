@@ -7845,7 +7845,8 @@ a:is(.active,
         [href*="protest" i],
         [href*="greve" i],
         [href*="manif" i],
-        [href$="riot" i]
+        [href$="riot" i],
+        [href$="freepalestine" i]
     )
 )::before {
     background-image: var(--icon-pride);
