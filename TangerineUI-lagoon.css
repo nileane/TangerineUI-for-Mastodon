@@ -4093,27 +4093,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .column-link span {
     vertical-align: middle;
 }
-.app-body .list-panel {
-    padding: 5px 9px 50px 27px;
-    margin: 0 0 5px;
-    display: none;
-}
-.app-body .list-panel .icon {
-    display: none;
-}
-.app-body .list-panel .column-link span::before {
-    left: -15px;
-    top: -10px;
-    right: -15px;
-    bottom: -10px;
-}
-@media screen and (min-width:1175px) {
-    .app-body .column-link[href="/lists"]:is(.active, :hover) + .list-panel,
-    .app-body .list-panel:hover {
-        display: block;
-        animation: fadein .5s 1;
-    }
-}
 @media screen and (max-width:1174px) {
     .app-body .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
         width: 100vw;
