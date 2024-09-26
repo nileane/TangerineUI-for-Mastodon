@@ -552,6 +552,10 @@ body.app-body  {
     --background-filter: none;
 }
 
+.app-body .account__avatar {
+    background-color: var(--color-content-secondary-bg);
+    border-radius: 50%;
+}
 .app-body .account__avatar img {
     border-radius: 50%;
 }
@@ -2790,14 +2794,17 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status__action-bar {
     justify-content: left;
     margin-top: 8px;
-    gap: 8px;
+    gap: 10px;
+}
+.app-body .status__action-bar .status__action-bar__button-wrapper {
+    flex-grow: 0;
 }
 .app-body
     :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     :is(button, .status__action-bar__dropdown) {
         transition: all .3s;
 }
-.app-body .status__action-bar .icon-button:last-child {
+.app-body .status__action-bar__button-wrapper:last-child {
     position: absolute;
     right: 18px;
 }
@@ -2816,7 +2823,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         background-color: transparent;
 }
 
-.app-body .status__action-bar .icon-button:last-child:is(.active, .active:active, .active:focus),
+.app-body .status__action-bar__button-wrapper:last-child .icon-button:is(.active, .active:active, .active:focus),
 .app-body .detailed-status__action-bar-dropdown .icon-button:is(.active, .active:active, .active:focus) {
     background-color: var(--color-accent);
     transform: scale(.9);
@@ -3243,10 +3250,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .spoiler-button:hover ~ .media-gallery__item > .media-gallery__preview {
     outline: 1px solid var(--color-lines-translucent);
-}
-.app-body .media-gallery__actions {
-    bottom: 10px;
-    inset-inline-end: 8px;
 }
 .app-body .media-gallery__actions__pill {
     border-radius: 6px;
@@ -3940,62 +3943,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* 📍 Navigation panel
    ------------------- */
-@media screen and (min-width:1175px) {
-    /* Order of the side nav items */
-    .app-body .navigation-panel__logo {
-        order: 1;
-    }
-    .app-body .column-link[href="/home"] {
-        order: 2;
-    }
-    .app-body .column-link[href="/notifications"] {
-        order: 3;
-    }
-    .app-body .column-link:is([href="/explore"],[href="/search"]) {
-        order: 4;
-    }
-    .app-body .column-link[href="/public/local"] {
-        order: 5;
-    }
-    .app-body .column-link[href="/public"] {
-        order: 6;
-    }
-    .app-body .column-link[href="/conversations"] {
-        order: 7;
-    }
-    .app-body .column-link[href="/follow_requests"] {
-        order: 8;
-    }
-    .app-body .column-link[href="/bookmarks"] {
-        order: 9;
-    }
-    .app-body .column-link[href="/favourites"] {
-        order: 10;
-    }
-    .app-body .column-link[href="/admin/reports"] {
-        order: 12;
-    }
-    .app-body .column-link[href="/admin/dashboard"] {
-        order: 13;
-    }
-    .app-body .column-link[href="/lists"] {
-        order: 14;
-    }
-    .app-body .list-panel {
-        order: 15;
-    }
-    .app-body .column-link[href="/settings/preferences"] {
-        order: 11;
-    }
-    .app-body .navigation-panel__sign-in-banner,
-    .app-body .navigation-panel__legal {
-        order: 14;
-    }
-    .app-body *:not(.compose-panel) > .flex-spacer {
-        order: 15;
-    }
-    .app-body .getting-started__trends {
-        order: 16;
+.app-body .navigation-panel__menu {
+    display: flex;
+    flex-flow: column;
+}
+@media screen and (max-width:1174px) {
+    .app-body .navigation-panel__menu {
+        flex-flow: row;
     }
 }
 .app-body .column-link--transparent {
@@ -4161,7 +4115,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .columns-area__panels__pane--navigational .navigation-panel {
         width: 100vw;
         height: 4.2em;
-        padding-right: 20vw;
         padding-bottom: var(--safe-area-bottom);
         flex-direction: row;
         overflow-x: auto;
@@ -4170,6 +4123,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         border-left: 0;
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
+    }
+    .app-body .navigation-panel__menu {
+        padding-right: 20vw;
     }
     .app-body .columns-area__panels__pane--navigational .columns-area__panels__pane__inner::before {
         content: " ";
@@ -4210,23 +4166,23 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         transition: .2s transform;
     }
     .app-body
-        .navigation-panel:has(> *:nth-child(4):last-child)
+        .navigation-panel__menu:has(> *:nth-child(4):last-child)
         :is(.column-link, .navigation-panel__legal) {
         flex: 50vw;
     }
-    .app-body .navigation-panel :is(.column-link, .navigation-panel__legal):active {
+    .app-body .navigation-panel__menu :is(.column-link, .navigation-panel__legal):active {
         transform: scale(.8);
     }
     .app-body
-        .navigation-panel:has(> *:nth-child(5):last-child)
+        .navigation-panel__menu:has(> *:nth-child(5):last-child)
         :is(.column-link, .navigation-panel__legal),
     .app-body
-        .navigation-panel:has(> *:nth-child(7):last-child):has(.getting-started__trends)
+        .navigation-panel__menu:has(> *:nth-child(7):last-child):has(.getting-started__trends)
         :is(.column-link, .navigation-panel__legal)  {
         flex: calc(100vw / 3);
     }
     .app-body
-        .navigation-panel:has(> *:nth-child(6):last-child)
+        .navigation-panel__menu:has(> *:nth-child(6):last-child)
         :is(.column-link, .navigation-panel__legal) {
         flex: 25vw;
     }
