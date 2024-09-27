@@ -3082,6 +3082,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .more-from-author .logo {
     color: var(--color-content-fg);
+    width: 16px;
 }
 .app-body .notification-ungrouped  .more-from-author :is(.account__avatar) {
     width: 16px !important;
@@ -3441,13 +3442,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body :is(.status__wrapper-direct):not(:has(.status__line)) .status__prepend {
     margin-inline-start: 66px;
 }
-.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend__icon {
-    width: 20px;
+.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend-icon-wrapper {
     height: 20px;
 }
-.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend__icon svg {
+.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend-icon {
+    width: 20px;
+    height: 20px;
     transform: scale(.85);
-    background-image: var(--icon-at-inv);
 }
 .app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend > span {
     color: var(--color-accent-fg);
