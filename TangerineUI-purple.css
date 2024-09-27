@@ -3382,15 +3382,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-content-bg);
     border-bottom: 1px solid var(--color-lines);
 }
+.app-body .conversation.unread:before {
+    border-color: var(--color-accent);
+}
 .app-body .conversation__content__relative-time {
     opacity: .7;
 }
 .app-body .conversation__content {
     position: relative;
-}
-.app-body .conversation__content .status__action-bar button:last-child {
-    bottom: 10px;
-    right: 10px;
 }
 .app-body .account__avatar-composite {
     border-radius: 0;
