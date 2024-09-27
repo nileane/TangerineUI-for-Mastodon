@@ -2840,7 +2840,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .status__action-bar__button-wrapper:last-child .icon-button:is(.active, .active:active, .active:focus),
-.app-body .detailed-status__action-bar-dropdown .icon-button:is(.active, .active:active, .active:focus) {
+.app-body :is(.detailed-status__action-bar-dropdown, .status__action-bar-dropdown) .icon-button:is(.active, .active:active, .active:focus) {
     background-color: var(--color-accent);
     transform: scale(.9);
 }
