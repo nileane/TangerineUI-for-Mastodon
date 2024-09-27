@@ -3445,6 +3445,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend-icon-wrapper {
     height: 20px;
 }
+.app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .icon-at {
+    background-image: var(--icon-at-inv);
+}
 .app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend .status__prepend-icon {
     width: 20px;
     height: 20px;
