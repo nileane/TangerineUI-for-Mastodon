@@ -1319,7 +1319,8 @@ body.app-body  {
 .app-body .icon-eye-slash {
     background-image: var(--icon-eye-shut);
 }
-.app-body .icon-button.overlayed .icon-eye-slash {
+.app-body .icon-button.overlayed .icon-eye-slash,
+.app-body .media-gallery__item__overlay .icon-eye-slash {
     background-image: var(--icon-eye-shut-inv);
 }
 .app-body .player-button .icon-eye-slash {
@@ -1724,9 +1725,9 @@ body.app-body  {
 .app-body .display-name {
     color: var(--color-content-fg);
 }
-.app-body .compose-form__upload__thumbnail {
-    outline-offset: -1px;
-    outline: 1px solid var(--color-lines-translucent);
+.app-body .compose-form__upload .icon-button.compose-form__upload__delete .icon {
+    width: 15px;
+    height: 15px;
 }
 .app-body .compose-form .compose-form__modifiers .compose-form__upload .icon-button {
     color: #ffffff;
@@ -1823,6 +1824,14 @@ body.app-body  {
     animation: bounce-sml .2s ease-out 1;
 }
 
+.app-body .upload-area__background {
+    background-color: var(--color-secondary-bg);
+    border-radius: 8px;
+}
+.app-body .upload-area__content {
+    border-color: var(--color-accent-focus);
+    border-radius: 8px;
+}
 .app-body .upload-progress__tracker {
     background-color: var(--color-accent);
 }
@@ -3222,17 +3231,21 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status--in-thread .more-from-author {
     margin-inline-start: 0;
 }
+.app-body .account-gallery__container {
+    gap: 4px;
+    padding: 4px;
+}
 .app-body .media-gallery__item,
 .app-body .media-gallery__item-thumbnail,
 .app-body .media-gallery__item-gifv-thumbnail {
     cursor: pointer;
     transition: .2s transform;
-    overflow: visible;
 }
 .app-body .media-gallery__item:active {
     transform: scale(.98);
 }
-.app-body .media-gallery__item-thumbnail img {
+.app-body .media-gallery__item-thumbnail img,
+.app-body .media-gallery__alt__popover {
     border-radius: 8px;
 }
 .app-body .media-gallery__gifv:is(:active, :hover)::after {
