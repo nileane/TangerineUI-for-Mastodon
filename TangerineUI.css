@@ -2357,7 +2357,7 @@ body.app-body  {
     color: var(--color-content-fg);
     display: flex;
     position: absolute;
-    inset-inline-end: 23px;
+    inset-inline-end: 20px;
     z-index: 1;
 }
 .app-body .status__relative-time > * {
