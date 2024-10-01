@@ -3977,6 +3977,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 @media screen and (max-width:1174px) {
     .app-body .navigation-panel__menu {
         flex-flow: row;
+        overflow-x: auto;
     }
 }
 .app-body .column-link--transparent {
@@ -4130,34 +4131,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
     }
-    .app-body .navigation-panel__menu {
-        padding-right: 20vw;
-    }
-    .app-body .columns-area__panels__pane--navigational .columns-area__panels__pane__inner::before {
-        content: " ";
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        width: 17vw;
-        height: calc(4.2em + var(--safe-area-bottom) - 1px);
-        background-image: linear-gradient(to right, transparent, var(--color-content-bg) 75.63%);
-        background-color: transparent;
-        z-index: 2;
-    }
-    .app-body .columns-area__panels__pane--navigational .navigation-panel::after {
-        content: " ";
-    }
-    .app-body .navigation-panel:has(> *:nth-child(4):last-child)::after,
-    .app-body .navigation-panel:has(> *:nth-child(5):last-child)::after,
-    .app-body .navigation-panel:has(> *:nth-child(6):last-child)::after,
-    .app-body .navigation-panel:has(> *:nth-child(4):last-child)::before,
-    .app-body .navigation-panel:has(> *:nth-child(5):last-child)::before,
-    .app-body .navigation-panel:has(> *:nth-child(6):last-child)::before {
-        display: none;
-    }
     .app-body .navigation-panel :is(.column-link, .navigation-panel__legal),
-    .app-body .column-link--transparent:is(.active, .active:hover, :active),
-    .app-body .columns-area__panels__pane--navigational .navigation-panel::after {
+    .app-body .navigation-panel .column-link:is(.active, .active:hover, :active),
+    .app-body .navigation-panel .navigation-panel__menu::after {
         flex: 0 0 17vw;
         margin: 6px 0 8px;
         padding: 4px 0 3px;
@@ -4169,41 +4145,44 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         box-sizing: border-box;
         background-color: transparent;
         transform-origin: center;
-        transition: .2s transform;
+        transition: .3s transform;
     }
-    .app-body
-        .navigation-panel__menu:has(> *:nth-child(4):last-child)
-        :is(.column-link, .navigation-panel__legal) {
+    .app-body .navigation-panel .navigation-panel__menu::after {
+        content: " ";
+    }
+    .app-body .navigation-panel  .navigation-panel__menu::before {
+        content: " ";
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        width: 17vw;
+        height: calc(4.2em + var(--safe-area-bottom) - 1px);
+        background-image: linear-gradient(to right, transparent, var(--color-content-bg) 75.63%);
+        background-color: transparent;
+        z-index: 2;
+    }
+    .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(3),
+    .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(3) ~ *,
+    .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(4),
+    .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(4) ~ *,
+    .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(5),
+    .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(5) ~ *,
+    .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(6),
+    .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(6) ~ * {
         flex: 50vw;
     }
-    .app-body .navigation-panel__menu :is(.column-link, .navigation-panel__legal):active {
-        transform: scale(.8);
-    }
-    .app-body
-        .navigation-panel__menu:has(> *:nth-child(5):last-child)
-        :is(.column-link, .navigation-panel__legal),
-    .app-body
-        .navigation-panel__menu:has(> *:nth-child(7):last-child):has(.getting-started__trends)
-        :is(.column-link, .navigation-panel__legal)  {
-        flex: calc(100vw / 3);
-    }
-    .app-body
-        .navigation-panel__menu:has(> *:nth-child(6):last-child)
-        :is(.column-link, .navigation-panel__legal) {
-        flex: 25vw;
-    }
-    .app-body
-        .navigation-panel:has(> *:nth-child(7):last-child):has(.getting-started__trends)::after {
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(3))::before,
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(4))::before,
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(5))::before,
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(6))::before,
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(3))::after,
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(4))::after,
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(5))::after,
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(6))::after {
         display: none;
     }
-    .app-body .column-link--transparent:is(.active, .active:hover, :active) {
-        margin: 6px 0 8px;
-        padding: 4px 0 3px;
-        border-radius: 8px;
-        border: 0;
-    }
-    .app-body .column-link--transparent.active {
-        animation: bounce-sml .3s 1;
+    .app-body .navigation-panel__menu :is(.column-link, .navigation-panel__legal):active {
+        transform: scale(.85);
     }
     .app-body .column-link__icon {
         margin: 0;
