@@ -3280,11 +3280,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-weight: 500;
     background-color: rgba(0, 0, 0, .1);
     transition: all .2s;
-    outline: 1px solid var(--color-lines-translucent);
-    outline-offset: -1px;
-}
-.app-body .media-gallery__actions__pill:hover {
-    background-color: #000;
 }
 .app-body .spoiler-button__overlay__label,
 .app-body .spoiler-button__overlay__label:is(:focus, :hover),
