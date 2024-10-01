@@ -3797,7 +3797,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     .app-body:not(.layout-multiple-columns) .column-header__collapsible {
         margin-top: 1px;
-        position: fixed;
+        position: absolute;
         left: -45px;
         right: -55px;
     }
