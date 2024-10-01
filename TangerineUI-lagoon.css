@@ -4108,7 +4108,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 @media screen and (max-width:1174px) {
     .app-body .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
         width: 100vw;
-        height: calc(3.6em + var(--safe-area-bottom));
+        height: calc(4.2em + var(--safe-area-bottom));
         bottom: 0;
         left: 0;
         z-index: 3;
