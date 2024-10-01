@@ -3974,12 +3974,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: flex;
     flex-flow: column;
 }
-@media screen and (max-width:1174px) {
-    .app-body .navigation-panel__menu {
-        flex-flow: row;
-        overflow-x: auto;
-    }
-}
 .app-body .column-link--transparent {
     color: var(--color-fg);
 }
@@ -4131,6 +4125,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
     }
+    .app-body .navigation-panel__menu {
+        flex-flow: row;
+        overflow-x: auto;
+        mask-image: linear-gradient(90deg, black 80%, transparent 96%);
+    }
     .app-body .navigation-panel :is(.column-link, .navigation-panel__legal),
     .app-body .navigation-panel .column-link:is(.active, .active:hover, :active),
     .app-body .navigation-panel .navigation-panel__menu::after {
@@ -4150,16 +4149,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .navigation-panel .navigation-panel__menu::after {
         content: " ";
     }
-    .app-body .navigation-panel  .navigation-panel__menu::before {
-        content: " ";
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        width: 17vw;
-        height: calc(4.2em + var(--safe-area-bottom) - 1px);
-        background-image: linear-gradient(to right, transparent, var(--color-content-bg) 75.63%);
-        background-color: transparent;
-        z-index: 2;
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(3)),
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(4)),
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(5)),
+    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(6)) {
+        mask-image: none;
     }
     .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(3),
     .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(3) ~ *,
@@ -4171,10 +4165,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .navigation-panel__menu .column-link:first-child:nth-last-child(6) ~ * {
         flex: 50vw;
     }
-    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(3))::before,
-    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(4))::before,
-    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(5))::before,
-    .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(6))::before,
     .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(3))::after,
     .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(4))::after,
     .app-body .navigation-panel__menu:has(.column-link:first-child:nth-last-child(5))::after,
