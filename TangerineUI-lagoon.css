@@ -4528,9 +4528,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 /* Custom pinned posts divider */
-.app-body .status__wrapper:has(.icon-thumb-tack) {
-    padding-bottom: 20px;
-}
 .app-body .status__wrapper:has(.icon-thumb-tack)::after {
     position: absolute;
     left: 0;
@@ -4552,6 +4549,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     width: 100%;
     content: "";
     background-color: var(--color-content-bg);
+}
+.app-body .status__wrapper:has(.icon-thumb-tack) {
+    padding-bottom: 20px;
+    margin-top: -8px;
+}
+.app-body .status__wrapper:has(.icon-thumb-tack) :is(.status__content__translate-button, .translate-button .link-button) {
+    bottom: 20px;
+}
+.app-body .account-timeline__header + article .status__wrapper:has(.icon-thumb-tack) {
+    margin-top: 0;
 }
 .app-body .account-timeline__header + article .status__wrapper:has(.icon-thumb-tack)::before {
     display: none;
