@@ -4098,8 +4098,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: 0;
     z-index: 1;
 }
-.app-body .compose-panel hr, .navigation-panel hr {
+.app-body .compose-panel hr,
+.app-body .navigation-panel .list-panel hr {
     display: none;
+}
+.app-body .navigation-panel hr:has(+ .column-link[href="/settings/preferences"]) {
+    margin-right: 25px;
+    margin-left: 10px;
+    margin-bottom: 12px;
 }
 .app-body .column-link span {
     vertical-align: middle;
