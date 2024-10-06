@@ -4102,11 +4102,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .navigation-panel .list-panel hr {
     display: none;
 }
-.app-body .navigation-panel hr:has(+ .column-link[href="/settings/preferences"]) {
-    margin-right: 25px;
-    margin-left: 10px;
-    margin-bottom: 12px;
-    border-color: var(--color-lines);
+
+@media screen and (min-width:1175px) {
+    .app-body .navigation-panel hr:has(+ .column-link[href="/settings/preferences"]) {
+        margin-right: 25px;
+        margin-left: 10px;
+        margin-bottom: 12px;
+        border-color: var(--color-lines);
+    }
 }
 .app-body .column-link span {
     vertical-align: middle;
