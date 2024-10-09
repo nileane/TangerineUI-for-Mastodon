@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.0";
+    --version: "v2.1";
 
     --variant-name: "Cherry";
     --variant-emoji: "\1F352\00A0";
@@ -3493,11 +3493,25 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     box-shadow: inset 0 10px var(--color-bg);
 }
 .app-body .column-header__wrapper.active:before {
-    background: none;
-    opacity: 40%;
+    top: -17px;
+    bottom: unset;
+    opacity: 30%;
+    height: 35px;
+    width: 100%;
+    background: radial-gradient(ellipse, var(--color-accent) 0, transparent 60%);
 }
 .app-body .column-header__wrapper.active {
-    box-shadow: 0 0;
+    box-shadow: none;
+}
+@media screen and (min-width:1175px) {
+    .app-body .column-header__wrapper.active:before {
+        top: unset;
+        bottom: -15px;
+        border-top: 1px solid var(--color-lines-translucent);
+    }
+    .app-body .column-header__wrapper.active {
+        box-shadow: 0 1px 0 var(--color-lines-translucent);
+    }
 }
 .app-body .column-header {
     border-radius: 8px;
