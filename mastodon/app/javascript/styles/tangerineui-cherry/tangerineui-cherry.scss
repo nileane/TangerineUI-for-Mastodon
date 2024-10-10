@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.0";
+    --version: "v2.1";
 
     --variant-name: "Cherry";
     --variant-emoji: "\1F352\00A0";
@@ -948,7 +948,7 @@ body.app-body  {
 }
 .app-body button.icon-button.active .icon-retweet,
 .app-body .detailed-status__button button.icon-button.active:hover .icon-retweet {
-    background-image: var(--icon-boost-active);
+    background-image: var(--icon-boost-accent-active);
 }
 .app-body .status__prepend__icon .icon-retweet,
 .app-body .notification-group--reblog .icon-repeat {
@@ -2754,7 +2754,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
     .active
     .icon-retweet + .icon-button__counter > .animated-number {
-        color: #FF4014;
+        color: var(--color-accent);
 }
 .app-body
     :is(.status__action-bar, .detailed-status__action-bar, .picture-in-picture__footer)
@@ -2819,12 +2819,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status__action-bar {
     justify-content: left;
     margin-top: 8px;
-    gap: 22px;
-}
-@media screen and (max-width:550px) {
-    .app-body .status__action-bar {
-        gap: 10px;
-    }
+    gap: 9px;
 }
 .app-body .status__action-bar .status__action-bar__button-wrapper {
     flex-grow: 0;
@@ -2913,6 +2908,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     align-items: center;
     background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
+    outline: 1px solid color-mix(in srgb, var(--color-fg), transparent 95%);
+    outline-offset: -1px;
     font-size: 13px;
 }
 .app-body .status__prepend:has(.status__prepend__icon .icon-retweet) {
@@ -3085,6 +3082,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status-card:has(+ .more-from-author) {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-bottom: 0;
 }
 .app-body .status-card + .more-from-author {
     background-color: var(--color-content-secondary-bg);
@@ -3093,10 +3091,19 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .more-from-author {
     color: var(--color-content-fg);
+    overflow: hidden;
 }
 .app-body .more-from-author .logo {
     color: var(--color-content-fg);
-    width: 16px;
+    min-width: 16px;
+    height: 16px;
+}
+.app-body .more-from-author > span {
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    mask-image: linear-gradient(90deg, black 80%, transparent 96%);
 }
 .app-body .notification-ungrouped  .more-from-author :is(.account__avatar) {
     width: 16px !important;
@@ -3493,11 +3500,25 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     box-shadow: inset 0 10px var(--color-bg);
 }
 .app-body .column-header__wrapper.active:before {
-    background: none;
-    opacity: 40%;
+    top: -17px;
+    bottom: unset;
+    opacity: 30%;
+    height: 35px;
+    width: 100%;
+    background: radial-gradient(ellipse, var(--color-accent) 0, transparent 60%);
 }
 .app-body .column-header__wrapper.active {
-    box-shadow: 0 0;
+    box-shadow: none;
+}
+@media screen and (min-width:1175px) {
+    .app-body .column-header__wrapper.active:before {
+        top: unset;
+        bottom: -15px;
+        border-top: 1px solid var(--color-lines-translucent);
+    }
+    .app-body .column-header__wrapper.active {
+        box-shadow: 0 1px 0 var(--color-lines-translucent);
+    }
 }
 .app-body .column-header {
     border-radius: 8px;
@@ -6292,11 +6313,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-fg);
 }
 .app-body .interaction-modal__icon {
-    vertical-align: middle;
-    display: inline-block;
     transform: scale(1.4) translateX(-2px);
 }
-.app-body .interaction-modal p {
+.app-body .interaction-modal :is(p, strong) {
     color: var(--color-content-fg);
 }
 .app-body .interaction-modal p.hint {
