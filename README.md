@@ -102,13 +102,15 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [vmst.io](https://vmst.io)                                 | 2K+            | an optional theme   | No                      |
 | [eldritch.cafe](https://eldritch.cafe)                     | 1.5K+          | an optional theme   | No                      |
 | [octodon.social](https://octodon.social)                   | 1K+            | an optional theme   | No                      |
-| [social.lol](https://social.lol)                           | 750+           | an optional theme   | No                      |
+| [social.lol](https://social.lol)                           | 1K+            | an optional theme   | No                      |
+| [mountains.social](https://mountains.social)               | 550+           | an optional theme   | No                      |
 | [shelter.moe](https://shelter.moe)                         | 350+           | an optional theme   | No                      |
 | [toki.social](https://toki.social)                         | 200+           | an optional theme   | No                      |
 | [dmv.community](https://dmv.community)                     | 200+           | an optional theme   | No                      |
 | [pipou.academy](https://pipou.academy)                     | 100+           | an optional theme   | No                      |
 | [indiepocalypse.social](https://indiepocalypse.social)     | 100+           | an optional theme   | No                      |
 | [town.voyager.blue](https://town.voyager.blue)             | 100+           | an optional theme   | Yes (Purple variant)    |
+| [tooter.social](https://tooter.social)                     | 90+            | an optional theme   | No                      |
 | [bolha.one](https://bolha.one)                             | 20+            | an optional theme   | Yes (Tangerine variant) |
 | [i1.no](https://i1.no)                                     | 15+            | the only theme      | Yes (Purple variant)    |
 | [zeppelin.flights](https://zeppelin.flights)               | 15+            | the only theme      | Yes (Tangerine variant) |
@@ -125,6 +127,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [fedi.cyberwitches.club](https://fedi.cyberwitches.club)   | 1+             | the only theme      | Yes (Purple variant)    |
 | [mastodon.projetretro.io](https://mastodon.projetretro.io) | 1+             | an optional theme   | No                      |
 | [everythingbagel.social](https://everythingbagel.social)   | 1+             | an optional theme   | No                      |
+| [social.spicyweb.dev](https://social.spicyweb.dev)         | 1+             | the only theme      | Yes                     |
 
 
 ## Compatibility
