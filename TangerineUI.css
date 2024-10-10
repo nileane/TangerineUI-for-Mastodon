@@ -2819,12 +2819,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status__action-bar {
     justify-content: left;
     margin-top: 8px;
-    gap: 22px;
-}
-@media screen and (max-width:550px) {
-    .app-body .status__action-bar {
-        gap: 10px;
-    }
+    gap: 9px;
 }
 .app-body .status__action-bar .status__action-bar__button-wrapper {
     flex-grow: 0;
