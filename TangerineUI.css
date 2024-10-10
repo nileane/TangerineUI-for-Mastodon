@@ -6311,11 +6311,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-fg);
 }
 .app-body .interaction-modal__icon {
-    vertical-align: middle;
-    display: inline-block;
     transform: scale(1.4) translateX(-2px);
 }
-.app-body .interaction-modal p {
+.app-body .interaction-modal :is(p, strong) {
     color: var(--color-content-fg);
 }
 .app-body .interaction-modal p.hint {
