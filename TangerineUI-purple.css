@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.1";
+    --version: "v2.2";
 
     --variant-name: "Purple";
     --variant-emoji: "\1FABB\00A0";
@@ -3080,6 +3080,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-size: 12px;
 }
 .app-body .status-card:has(+ .more-from-author) {
+    box-sizing: border-box;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom: 0;
