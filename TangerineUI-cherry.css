@@ -3080,6 +3080,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status-card:has(+ .more-from-author) {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-bottom: 0;
 }
 .app-body .status-card + .more-from-author {
     background-color: var(--color-content-secondary-bg);
@@ -3088,10 +3089,19 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .more-from-author {
     color: var(--color-content-fg);
+    overflow: hidden;
 }
 .app-body .more-from-author .logo {
     color: var(--color-content-fg);
-    width: 16px;
+    min-width: 16px;
+    height: 16px;
+}
+.app-body .more-from-author > span {
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    mask-image: linear-gradient(90deg, black 80%, transparent 96%);
 }
 .app-body .notification-ungrouped  .more-from-author :is(.account__avatar) {
     width: 16px !important;
