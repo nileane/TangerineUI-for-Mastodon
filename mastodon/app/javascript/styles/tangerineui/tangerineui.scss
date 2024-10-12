@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.1";
+    --version: "v2.2";
 
     --variant-name: "Tangerine";
     --variant-emoji: "\1F34A\00A0";
@@ -3080,6 +3080,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-size: 12px;
 }
 .app-body .status-card:has(+ .more-from-author) {
+    box-sizing: border-box;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom: 0;
@@ -3805,13 +3806,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
             border-radius: 15px 15px 0 0;
         }
         @media (prefers-color-scheme: light) {
-            .app-body.theme-system .ui::after {
+            .app-body:is(.theme-system, .theme-mastodon-light) .ui::after {
                 box-shadow: 0 -10px 0 10px #f3f5f7;
                 border-radius: 15px 15px 0 0;
             }
         }
         @media (prefers-color-scheme: dark) {
-            .app-body.theme-system .ui::after {
+            .app-body:is(.theme-system, .theme-default) .ui::after {
                 box-shadow: 0 -10px 0 10px #191b22;
                 border-radius: 15px 15px 0 0;
             }
