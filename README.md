@@ -99,6 +99,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [social.vivaldi.net](https://social.vivaldi.net)           | 7K+            | an optional theme   | No                      |
 | [norden.social](https://norden.social)                     | 5K+            | an optional theme   | No                      |
 | [convo.casa](https://convo.casa)                           | 5K+            | an optional theme   | No                      |
+| [masto.es](https://masto.es)                               | 2K+            | an optional theme   | No                      |
 | [vmst.io](https://vmst.io)                                 | 2K+            | an optional theme   | No                      |
 | [eldritch.cafe](https://eldritch.cafe)                     | 1.5K+          | an optional theme   | No                      |
 | [octodon.social](https://octodon.social)                   | 1K+            | an optional theme   | No                      |
@@ -112,12 +113,14 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [indiepocalypse.social](https://indiepocalypse.social)     | 100+           | an optional theme   | No                      |
 | [town.voyager.blue](https://town.voyager.blue)             | 100+           | an optional theme   | Yes (Purple variant)    |
 | [tooter.social](https://tooter.social)                     | 90+            | an optional theme   | No                      |
+| [yttrx.com](https://yttrx.com)                             | 40+            | an optional theme   | No                      |
 | [bolha.one](https://bolha.one)                             | 20+            | an optional theme   | Yes (Tangerine variant) |
 | [i1.no](https://i1.no)                                     | 15+            | the only theme      | Yes (Purple variant)    |
 | [zeppelin.flights](https://zeppelin.flights)               | 15+            | the only theme      | Yes (Tangerine variant) |
 | [catharsis.cafe](https://catharsis.cafe)                   | 10+            | an optional theme   | Yes (Tangerine variant) |
 | [toulouse.social](https://toulouse.social)                 | 10+            | an optional theme   | Yes (Tangerine variant) |
 | [fedinerds.social](https://fedinerds.social)               | 10+            | an optional theme   | No                      |
+| [ngmx.com](https://ngmx.com)                               | 10+            | an optional theme   | No                      |
 | [nileane.fr](https://nileane.fr)                           | 5+             | the only theme      | Yes (Tangerine variant) |
 | [social.nah.re](https://social.nah.re)                     | 5+             | an optional theme   | No                      |
 | [esoteric.party](https://esoteric.party)                   | 5+             | the only theme      | Yes (Tangerine variant) |
