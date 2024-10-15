@@ -107,6 +107,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [shelter.moe](https://shelter.moe)                         | 350+           | an optional theme   | No                      |
 | [toki.social](https://toki.social)                         | 200+           | an optional theme   | No                      |
 | [dmv.community](https://dmv.community)                     | 200+           | an optional theme   | No                      |
+| [c7.io](https://c7.io)                                     | 200+           | an optional theme   | Yes (Tangerine variant) |
 | [pipou.academy](https://pipou.academy)                     | 100+           | an optional theme   | No                      |
 | [indiepocalypse.social](https://indiepocalypse.social)     | 100+           | an optional theme   | No                      |
 | [town.voyager.blue](https://town.voyager.blue)             | 100+           | an optional theme   | Yes (Purple variant)    |
