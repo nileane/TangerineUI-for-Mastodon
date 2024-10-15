@@ -90,7 +90,7 @@ Soft turquoise palette that gives neon vibes at night.
 
 
 ## List of instances that use Tangerine UI
-These are known instances that have enabled Tangerine UI for their users, either as the only theme, or as an optional theme.[^2]
+These are known Mastodon instances that have enabled Tangerine UI for their users, either as the only theme or as an optional theme.[^2]
 [^2]: If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours to this list**. (Make a Pull Request, or just [DM me](https://nileane.fr/@tangerineui))
 
 | **Instance**                                               | **User count** | **Installed as...** | **Default theme?**      |
@@ -101,6 +101,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [convo.casa](https://convo.casa)                           | 5K+            | an optional theme   | No                      |
 | [masto.es](https://masto.es)                               | 2K+            | an optional theme   | No                      |
 | [vmst.io](https://vmst.io)                                 | 2K+            | an optional theme   | No                      |
+| [framapiaf.org](https://framapiaf.org)                     | 1.5K+          | an optional theme   | No                      |
 | [eldritch.cafe](https://eldritch.cafe)                     | 1.5K+          | an optional theme   | No                      |
 | [octodon.social](https://octodon.social)                   | 1K+            | an optional theme   | No                      |
 | [social.lol](https://social.lol)                           | 1K+            | an optional theme   | No                      |
