@@ -113,6 +113,7 @@ These are known instances that have enabled Tangerine UI for their users, either
 | [indiepocalypse.social](https://indiepocalypse.social)     | 100+           | an optional theme   | No                      |
 | [town.voyager.blue](https://town.voyager.blue)             | 100+           | an optional theme   | Yes (Purple variant)    |
 | [tooter.social](https://tooter.social)                     | 90+            | an optional theme   | No                      |
+| [pointless.chat](https://pointless.chat)                   | 50+            | an optional theme   | No                      |
 | [yttrx.com](https://yttrx.com)                             | 40+            | an optional theme   | No                      |
 | [bolha.one](https://bolha.one)                             | 20+            | an optional theme   | Yes (Tangerine variant) |
 | [i1.no](https://i1.no)                                     | 15+            | the only theme      | Yes (Purple variant)    |
