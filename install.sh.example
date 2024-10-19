@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Ensure the script exits if any command fails
 set -e
 
 # Set the repository and Mastodon paths
@@ -47,7 +46,7 @@ if [ "$all_present" = false ]; then
         exit 1
     fi
 else
-    echo "Tangerine UI are already present in $THEME_FILE. Skipping this step."
+    echo "Tangerine UI is already present in $THEME_FILE. Skipping this step."
 fi
 
 # Navigate to the Mastodon directory
