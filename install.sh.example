@@ -16,13 +16,39 @@ git pull || { echo "Failed to pull latest changes from the Tangerine UI reposito
 # Copy styles from the Mastodon repository to the target directory
 cp -r "./mastodon/app/javascript/styles/"* "$MASTODON/app/javascript/styles"
 
-# Add Tangerine UI to themes.yml
-{
-    echo "tangerineui: styles/tangerineui.scss"
-    echo "tangerineui-purple: styles/tangerineui-purple.scss"
-    echo "tangerineui-cherry: styles/tangerineui-cherry.scss"
-    echo "tangerineui-lagoon: styles/tangerineui-lagoon.scss"
-} >> "$MASTODON/config/themes.yml"
+# Add Tangerine UI to themes.yml if not already present
+THEME_FILE="$MASTODON/config/themes.yml"
+THEME_LINES=(
+    "tangerineui: styles/tangerineui.scss"
+    "tangerineui-purple: styles/tangerineui-purple.scss"
+    "tangerineui-cherry: styles/tangerineui-cherry.scss"
+    "tangerineui-lagoon: styles/tangerineui-lagoon.scss"
+)
+
+# Check if the themes are already present
+all_present=true
+for line in "${THEME_LINES[@]}"; do
+    if ! grep -Fxq "$line" "$THEME_FILE"; then
+        all_present=false
+        break
+    fi
+done
+
+if [ "$all_present" = false ]; then
+    if [ -f "$THEME_FILE" ]; then
+        {
+            for line in "${THEME_LINES[@]}"; do
+                echo "$line"
+            done
+        } >> "$THEME_FILE"
+        echo "Added Tangerine UI themes to $THEME_FILE."
+    else
+        echo "Themes file not found: $THEME_FILE"
+        exit 1
+    fi
+else
+    echo "Tangerine UI are already present in $THEME_FILE. Skipping this step."
+fi
 
 # Navigate to the Mastodon directory
 cd "$MASTODON" || { echo "Mastodon directory not found: $MASTODON"; exit 1; }
