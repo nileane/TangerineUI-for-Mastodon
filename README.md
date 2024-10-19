@@ -90,7 +90,7 @@ Soft turquoise palette that gives neon vibes at night.
 
 
 ## List of instances that use Tangerine UI
-These are known Mastodon instances that have enabled Tangerine UI for their users, either as the only theme or as an optional theme.[^2]
+This is a list of known Mastodon instances on which Tangerine UI has been installed, either as the only theme or as an optional theme.[^2]
 [^2]: If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours to this list**. (Make a Pull Request, or just [DM me](https://nileane.fr/@tangerineui))
 
 | **Instance**                                               | **User count** | **Installed as...** | **Default theme?**      |
