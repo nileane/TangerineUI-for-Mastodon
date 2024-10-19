@@ -165,6 +165,55 @@ These are known Mastodon instances that have enabled Tangerine UI for their user
 Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance.  
 This will also allow you to set Tangerine UI as the default theme for your instance, while still letting your users change back to any of Mastodon's default themes in their Appearance settings.
 
+#### Install using the included script
+Run the following commands as the `mastodon` user to install Tangerine UI using the [included script](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/install.sh.sample):
+
+1. **Clone** the Tangerine UI repository
+```sh
+git clone https://github.com/nileane/TangerineUI-for-Mastodon.git ./TangerineUI
+cd TangerineUI
+```
+
+2. **Copy the sample install script**.
+```sh
+cp install.sh.sample install.sh
+```
+
+Make sure the Mastodon and Tangerine UI directory paths at the top of `install.sh` are correct:
+  * Edit the line beginning with `TANGERINEUI=` to adjust the path to the Tangerine UI directory.
+  * Edit the line beginning with `MASTODON=` to adjust the path to your Mastodon installation directory.
+
+4. **Run the install script**.
+```sh
+./install.sh
+```
+
+> [!NOTE]
+> To bypass all confirmation prompts, use `--skip-confirm`:
+> ```sh
+> ./install.sh --skip-confirm
+> ```
+
+5. **\[Optional\] Add a localized name.** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized theme name ("*tangerineui-purple*"), instead of a readable theme name ("*Tangerine UI (Purple)*").
+
+```yml
+themes:
+  contrast: Mastodon (High contrast)
+  default: Mastodon (Dark)
+  mastodon-light: Mastodon (Light)
+  tangerineui: Tangerine UI
+  tangerineui-purple: Tangerine UI (Purple)
+  tangerineui-cherry: Tangerine UI (Cherry)
+  tangerineui-lagoon: Tangerine UI (Lagoon)
+```
+
+6. Restart your Mastodon instance for the changes to take effect.
+
+> [!NOTE]
+> `./install.sh` can be run again to update Tangerine UI on your Mastodon instance.
+
+#### Install manually (without the included script)
+
 1. **Check your Mastodon version**. For Tangerine UI to work properly, you need to make sure you're installing the right version for your Mastodon instance. Please check the [Compatibility](#compatibility) section in this document before you proceed.
 
 2. **Copy the files** from `mastodon/app/javascript/styles/` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
@@ -187,7 +236,7 @@ tangerineui-cherry: styles/tangerineui-cherry.scss
 tangerineui-lagoon: styles/tangerineui-lagoon.scss
 ```
 
-4. **Add a localized name (optional).** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized theme name ("*tangerineui-purple*"), instead of a readable theme name ("*Tangerine UI (Purple)*").
+4. **\[Optional\] Add a localized name.** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized theme name ("*tangerineui-purple*"), instead of a readable theme name ("*Tangerine UI (Purple)*").
 
 ```yml
 themes:
@@ -200,7 +249,12 @@ themes:
   tangerineui-lagoon: Tangerine UI (Lagoon)
 ```
 
-5. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Mastodon instance for the changes to take effect.
+5. **Compile**:
+```sh
+RAILS_ENV=production bundle exec rails assets:precompile
+```
+
+6. **Restart** your Mastodon instance for the changes to take effect.
 
 Your users should now be able to choose '*Tangerine UI*', '*Tangerine UI (Purple)*', '*Tangerine UI (Cherry)*', or '*Tangerine UI (Lagoon)*' as their site theme:
 
@@ -230,7 +284,12 @@ cp -r $REPO/mastodon/app/javascript/styles/* $INSTALLDIR/app/javascript/styles
 cp -r $REPO/mastodon/app/javascript/skins/vanilla/* $INSTALLDIR/app/javascript/skins/vanilla
 ```
 
-4. **Compile theme assets and restart.** Run `RAILS_ENV=production bundle exec rails assets:precompile` and restart your Glitch-soc instance for the changes to take effect.
+4. **Compile**:
+```sh
+RAILS_ENV=production bundle exec rails assets:precompile
+```
+
+5. **Restart** your Mastodon instance for the changes to take effect.
 
 Your users should now be able to select Tangerine UI as a theme in their settings, under Flavours → Vanilla Mastodon → Skin
 
