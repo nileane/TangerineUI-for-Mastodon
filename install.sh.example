@@ -79,9 +79,9 @@ if [ -f "$THEME_FILE" ]; then
     for line in "${THEME_LINES[@]}"; do
         if ! grep -Fxq "$line" "$THEME_FILE"; then
             echo "$line" >> "$THEME_FILE"
-            echo "Added to $THEME_FILE: $line"
+            echo "Added to themes.yml: $line"
         else
-            echo "Already present in $THEME_FILE: $line"
+            echo "Already present in themes.yml: $line"
         fi
     done
 else
