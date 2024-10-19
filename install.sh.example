@@ -12,7 +12,8 @@ confirm_path() {
     local prompt_message="$2"
 
     echo "$prompt_message: $path"
-    read -p "Is this path correct? (y/n): " response
+    read -p "Is this path correct? (Y/n): " response
+    response=${response:-y}
     case "$response" in
         [Yy]* ) echo "Path confirmed.";;
         [Nn]* ) echo "Please update the path in the script."; exit 1;;
