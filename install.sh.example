@@ -6,8 +6,24 @@ set -e
 TANGERINEUI="/home/mastodon/TangerineUI"
 MASTODON="/home/mastodon/live"
 
+# Confirm paths
+confirm_path() {
+    local path="$1"
+    local prompt_message="$2"
+
+    echo "$prompt_message: $path"
+    read -p "Is this path correct? (y/n): " response
+    case "$response" in
+        [Yy]* ) echo "Path confirmed.";;
+        [Nn]* ) echo "Please update the path in the script."; exit 1;;
+        * ) echo "Invalid response. Exiting."; exit 1;;
+    esac
+}
+confirm_path "$TANGERINEUI" "Tangerine UI repository directory"
+confirm_path "$MASTODON" "Mastodon directory"
+
 # Navigate to the repository
-cd "$TANGERINEUI" || { echo "Tangerine UI repository directory not found: $REPO"; exit 1; }
+cd "$TANGERINEUI" || { echo "Tangerine UI repository directory not found: $TANGERINEUI"; exit 1; }
 
 # Pull the latest changes from the repository
 git pull || { echo "Failed to pull latest changes from the Tangerine UI repository"; exit 1; }

@@ -7,7 +7,7 @@ TANGERINEUI="/home/mastodon/TangerineUI"
 MASTODON="/home/mastodon/live"
 
 # Navigate to the repository
-cd "$TANGERINEUI" || { echo "Tangerine UI repository directory not found: $REPO"; exit 1; }
+cd "$TANGERINEUI" || { echo "Tangerine UI repository directory not found: $TANGERINEUI"; exit 1; }
 
 # Pull the latest changes from the repository
 git pull || { echo "Failed to pull latest changes from the Tangerine UI repository"; exit 1; }
