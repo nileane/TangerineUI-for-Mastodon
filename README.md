@@ -170,7 +170,7 @@ Your users will be able to select Tangerine UI in their settings on the web, and
 <details>
 <summary><strong>Install (using the included script)</strong></summary>
 
-A basic installation script is included in this repository. This script pulls the latest release from the Tangerine UI repository, copies the CSS files to the Mastodon installation directory, adds Tangerine UI to Mastodon's themes.yml, and recompiles Mastodon's assets. It can also be used to update Tangerine UI on your Mastodon instance.
+A basic installation script is included in this repository. This script pulls the latest changes from the Tangerine UI repository, copies the CSS files to the Mastodon installation directory, adds Tangerine UI to Mastodon's themes.yml, and recompiles Mastodon's assets. It can also be used to update Tangerine UI on your Mastodon instance.
 
 Run the following commands as the `mastodon` user to install Tangerine UI using the [included script](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/install.sh.sample):
 
