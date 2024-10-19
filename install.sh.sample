@@ -16,12 +16,10 @@
 #
 # /!\ This script is not suitable for Glitch-soc instances.
 
-
-set -e
-
-# Set the Tangerine UI and Mastodon paths
 TANGERINEUI="/home/mastodon/TangerineUI"
 MASTODON="/home/mastodon/live"
+
+set -e
 
 # Confirm paths
 confirm_path() {
