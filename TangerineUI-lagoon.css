@@ -7653,7 +7653,6 @@ a:is(.active,
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
-        [href*="gift" i],
         [href*="christmas" i],
         [href*="weihnachten" i],
         [href*="noel" i]
