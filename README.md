@@ -12,20 +12,24 @@ Tangerine UI is a vibrant, fully-featured custom theme for Mastodon's Web UI tha
 
 ## Table of contents
 
-* [**Variants**](#variants)
-* [**Features**](#features)
-* [**List of instances that use Tangerine UI**](#list-of-instances-that-use-tangerine-ui)
-* [**Compatibility**](#compatibility)
-* [**Installation**](#installation-for-mastodon-admins)
-  * [Install on a **Mastodon** instance](#installation-for-mastodon-admins)
-  * [Install on a **Glitch-soc** instance](#installation-for-glitch-soc-admins)
-  * [Install as a regular user](#installation-for-regular-users)
-* [**Accessibility**](#accessibility)
-* [**Credits**](#credits)
-* [**Support me**](#support-me-3)
+1. [**Overview**](#overview)
+    * [**Variants**](#variants)
+    * [**Features**](#features)
+    * [**List of instances that use Tangerine UI**](#list-of-instances-that-use-tangerine-ui)
+2. [**Compatibility**](#compatibility)
+6. [**Installation** for Mastodon instance admins](#installation-for-mastodon-admins)
+    * [Install on a **Mastodon** instance](#installation-for-mastodon-admins)
+        * [using the included script](#install-using-the-included-script)
+        * [... or manually](#install-manually-without-the-included-script)
+    * [Install on a **Glitch-soc** instance](#installation-for-glitch-soc-admins)
+7. [**Installation** for regular users](#installation-for-regular-users)
+8. [**Accessibility**](#accessibility)
+9. [**Credits**](#credits)
+10. [**Support me**](#support-me-3)
   
+## Overview
 
-## Variants
+### Variants
 
 **🍊 Tangerine**  
 Default variant for Tangerine UI, featuring a soft orange palette.
@@ -55,41 +59,41 @@ Soft turquoise palette that gives neon vibes at night.
 &nbsp;
 
 
-## Features
+### Features
 
-* 🧑‍🔬 **Support for the advanced web interface**  
-  All variants of Tangerine UI support Mastodon's multi-column layout.
+🧑‍🔬 **Support for the advanced web interface**  
+All variants of Tangerine UI support Mastodon's multi-column layout.
   
 <img width="1840" alt="Mastodon's advanced web interface featuring Tangerine UI" src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/bfa74219-bfef-46ec-9742-78165593e2a6">  
 
 
-* 🚀 **Playful animations**  
-  The rocket flies!
+🚀 **Playful animations**  
+The rocket flies!
   
-  <img width="600" alt="Clicking the Boost buttons makes the rocket icon seeming like it's taking off. Clicking the favorite button makes it bounce. Cliking the bookmark button makes it shake vertically." src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/31d41d04-6ef1-4ef0-80c3-b4b445ee98a1">
+<img width="600" alt="Clicking the Boost buttons makes the rocket icon seeming like it's taking off. Clicking the favorite button makes it bounce. Cliking the bookmark button makes it shake vertically." src="https://github.com/nileane/TangerineUI-for-Mastodon/assets/914451/31d41d04-6ef1-4ef0-80c3-b4b445ee98a1">  
 
 
-* 🌚 **Dark mode**  
-  Tangerine UI automatically switches from light to dark mode based on your system or browser preference.[^1]
-  [^1]: Tangerine UI uses the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS media feature to detect if you have requested a light or dark theme through an operating system setting or a user agent setting.
+<br>🌚 **Dark mode**  
+Tangerine UI automatically switches from light to dark mode based on your system or browser preference.[^1]
+[^1]: Tangerine UI uses the [`prefers-color-scheme`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) CSS media feature to detect if you have requested a light or dark theme through an operating system setting or a user agent setting.
   
-* 💬 **Distinct look for DMs**  
-  It can be easy to mistake a DM for a regular post on Mastodon. Tangerine UI gives DMs a specific look, so they stand out in your timeline, and you don't make any embarrassing mistakes.
+💬 **Distinct look for DMs**  
+It can be easy to mistake a DM for a regular post on Mastodon. Tangerine UI gives DMs a specific look, so they stand out in your timeline, and you don't make any embarrassing mistakes.
 
-* 👁️ **Compact timeline**  
-  Avatars are aligned on the side, margins are properly reduced, and threads are easier to read.
+👁️ **Compact timeline**  
+Avatars are aligned on the side, margins are properly reduced, and threads are easier to read.
   
-* ✴️ **Phosphor icons**  
-  Tangerine UI uses a selection of icons from the beautiful [Phosphor](https://phosphoricons.com) icon family
+✴️ **Phosphor icons**  
+Tangerine UI uses a selection of icons from the beautiful [Phosphor](https://phosphoricons.com) icon family
 
-* 🔍 **Zoom on emojis**  
+🔍 **Zoom on emojis**  
   Custom emojis are great, but they may be difficult to distinguish when they are overly detailed. Tangerine UI allows you to hover and pause over an emoji to enlarge it.
 
-* ✳️ **and more**  
-  Tangerine UI was designed with care and great attention to detail. Feel free to explore all the changes it brings to Mastodon's UI, and feel free to [message me](https://nileane.fr/@TangerineUI) if you ever have any feedback to share or [bugs to report](https://github.com/nileane/TangerineUI-for-Mastodon/issues). :)
+✳️ **and more**  
+Tangerine UI was designed with care and great attention to detail. Feel free to explore all the changes it brings to Mastodon's UI, and feel free to [message me](https://nileane.fr/@TangerineUI) if you ever have any feedback to share or [bugs to report](https://github.com/nileane/TangerineUI-for-Mastodon/issues). :)
 
 
-## List of instances that use Tangerine UI
+### List of instances that use Tangerine UI
 This is a list of known Mastodon instances on which Tangerine UI has been installed, either as the only theme or as an optional theme.[^2]
 [^2]: If you're an admin and have installed Tangerine UI on your instance, **feel free to add yours to this list**. (Make a Pull Request, or just [DM me](https://nileane.fr/@tangerineui))
 
@@ -165,7 +169,9 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 Follow these instructions if you wish to add Tangerine UI as an available theme for your users on your instance.  
 This will also allow you to set Tangerine UI as the default theme for your instance, while still letting your users change back to any of Mastodon's default themes in their Appearance settings.
 
-#### Install using the included script
+<details>
+<summary><strong>Install using the included script</strong></summary>
+
 Run the following commands as the `mastodon` user to install Tangerine UI using the [included script](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/install.sh.sample):
 
 1. **Clone** the Tangerine UI repository
@@ -211,6 +217,8 @@ themes:
 
 > [!NOTE]
 > `./install.sh` can be run again to update Tangerine UI on your Mastodon instance.
+
+</details>
 
 #### Install manually (without the included script)
 
