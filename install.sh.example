@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Ensure the script exits if any command fails
+set -e
+
+# Set the repository and Mastodon paths
+TANGERINEUI="/home/mastodon/TangerineUI"
+MASTODON="/home/mastodon/live"
+
+# Navigate to the repository
+cd "$TANGERINEUI" || { echo "Tangerine UI repository directory not found: $REPO"; exit 1; }
+
+# Pull the latest changes from the repository
+git pull || { echo "Failed to pull latest changes from the Tangerine UI repository"; exit 1; }
+
+# Copy styles from the Mastodon repository to the target directory
+cp -r "./mastodon/app/javascript/styles/"* "$MASTODON/app/javascript/styles"
+
+# Add Tangerine UI to themes.yml
+{
+    echo "tangerineui: styles/tangerineui.scss"
+    echo "tangerineui-purple: styles/tangerineui-purple.scss"
+    echo "tangerineui-cherry: styles/tangerineui-cherry.scss"
+    echo "tangerineui-lagoon: styles/tangerineui-lagoon.scss"
+} >> "$MASTODON/config/themes.yml"
+
+# Navigate to the Mastodon directory
+cd "$MASTODON" || { echo "Mastodon directory not found: $MASTODON"; exit 1; }
+
+# Precompile assets in production mode
+RAILS_ENV=production bundle exec rails assets:precompile
+
+echo ""
+echo "Tangerine UI was successfully installed."
+echo "Restart all Mastodon services for the changes to take effect."
