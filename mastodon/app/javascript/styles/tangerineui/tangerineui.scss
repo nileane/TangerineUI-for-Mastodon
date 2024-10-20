@@ -5678,6 +5678,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     width: 100%;
     border-bottom: 2px solid var(--color-content-secondary-separator);
     background-color: var(--color-content-bg);
+    color: var(--color-content-fg);
     box-sizing: border-box;
 }
 .app-body .item-list .column-link:hover {
@@ -5708,10 +5709,25 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .list-adder .column-inline-form {
     border-radius: 0;
 }
-.list-adder .list {
+.app-body .list-adder .list {
     border-bottom: 2px solid var(--color-content-secondary-separator);
 }
-
+.app-body .list-editor .drawer__pager {
+    border: none;
+    border-radius: 0;
+}
+.app-body .list-editor .account__relationship .icon-button {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+.app-body .list-editor .search .search__input {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--color-accent-lines);
+}
+.app-body .list-editor .search .search__input:focus {
+    border-color: var(--color-accent);
+}
 
 /* ➕ Follow requests */
 .app-body #Follow-requests {
@@ -7482,7 +7498,7 @@ a:is(.active,
     padding: 0;
 }
 
-.layout-multiple-columns .drawer__inner:not(:has(> .search-results))::after {
+.layout-multiple-columns .search + .drawer__pager .drawer__inner:has(.compose-form):not(:has(> .search-results))::after {
     content: var(--meta);
     color: var(--color-fg-muted);
     padding: 12px;
@@ -7493,6 +7509,10 @@ a:is(.active,
 .layout-multiple-columns .link-footer::before,
 .layout-multiple-columns .link-footer::after {
     display: none;
+}
+
+.layout-multiple-columns .list-editor__accounts + .drawer__inner.backdrop {
+    background-color: var(--color-content-bg);
 }
 
 @media screen and (min-width:630px) and (max-width:1174px) {
