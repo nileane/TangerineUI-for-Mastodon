@@ -152,7 +152,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 ## Installation for Mastodon admins
 
 ### Install Tangerine UI as the only theme on your instance:
-1. **Check your Mastodon version**. For Tangerine UI to work properly, you need to make sure you're installing the right version for your Mastodon instance. Please check the [Compatibility](#compatibility) section in this document before you proceed.
+1. **Check your Mastodon version**. For Tangerine UI to work properly, you need to make sure you're installing the right version for your Mastodon instance. Please refer to the [Compatibility](#compatibility) section in this document before you proceed.
 
 2. Copy & paste the contents of 🍊 [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the '***Custom CSS***' field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
    * 🪻 For the Purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
@@ -169,7 +169,7 @@ Your users will be able to select Tangerine UI in their settings on the web, and
 
 <details>
 <summary><strong>Install (using the included script)</strong></summary>
-
+<br>
 
 A basic installation script is included in this repository.  
 It can also be used again to update Tangerine UI on your Mastodon instance.
@@ -182,7 +182,7 @@ git clone https://github.com/nileane/TangerineUI-for-Mastodon.git ./TangerineUI
 cd TangerineUI
 ```
 
-2. **Copy the sample install script**.
+2. **Copy** the sample install script.
 ```sh
 cp install.sh.sample install.sh
 ```
@@ -191,12 +191,17 @@ Make sure the Mastodon and Tangerine UI directory paths at the top of `install.s
   * Edit the line beginning with `TANGERINEUI=` to adjust the path to the Tangerine UI directory.
   * Edit the line beginning with `MASTODON=` to adjust the path to your Mastodon installation directory.
 
-4. **Run the install script**.
+3. **Run** the install script.
 ```sh
 ./install.sh
 ```
 
-5. **\[Optional\] Add a localized name.** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized theme name ("*tangerineui-purple*"), instead of a readable theme name ("*Tangerine UI (Purple)*").
+Optionally, run with `--skip-confirm` to bypass all confirmation prompts:
+```sh
+./install.sh --skip-confirm
+```
+
+4. **\[Optional\] Add a localized name.** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized theme name ("*tangerineui-purple*"), instead of a readable theme name ("*Tangerine UI (Purple)*").
 
 ```yml
 themes:
@@ -209,7 +214,7 @@ themes:
   tangerineui-lagoon: Tangerine UI (Lagoon)
 ```
 
-6. **Restart** your Mastodon instance for the changes to take effect.
+5. **Restart** your Mastodon instance for the changes to take effect.
 
 Your users should now be able to choose '*Tangerine UI*', '*Tangerine UI (Purple)*', '*Tangerine UI (Cherry)*', or '*Tangerine UI (Lagoon)*' as their site theme:
 
@@ -223,11 +228,11 @@ As an admin, you should also now be able to set Tangerine UI as the default them
 
 
 <details>
-<summary><strong>Install manually (without the script)</strong></summary>
+<summary><strong>Install manually</strong></summary>
 
 1. **Check your Mastodon version**. For Tangerine UI to work properly, you need to make sure you're installing the correct version for your Mastodon instance. Please refer to the [Compatibility](#compatibility) section in this document before you proceed.
 
-2. **Copy the files** from `mastodon/app/javascript/styles/` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
+2. **Copy** the files from `mastodon/app/javascript/styles/` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
 
 ```sh
 # Where $REPO is this repository, and $INSTALLDIR is your Mastodon installation.
