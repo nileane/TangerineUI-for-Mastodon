@@ -174,7 +174,7 @@ Your users will be able to select Tangerine UI in their settings on the web, and
 <br>
 
 A basic installation script is included in this repository.  
-It can also be used again to update Tangerine UI on your Mastodon instance.
+It can be used to install Tangerine UI on your Mastodon instance for the first time, and to automate the process of updating Tangerine UI.
 
 Run the following commands as the `mastodon` user to install Tangerine UI using the [included script](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/install.sh.sample):
 
