@@ -1,0 +1,98 @@
+#!/bin/bash
+
+# TANGERINE UI
+# Install/Update script
+# ---------------------
+#  
+# This script pulls the latest changes from the Tangerine UI repository,
+#    copies the CSS files to the Mastodon installation directory, and adds Tangerine UI to Mastodon's themes.yml.
+#    It can also be used to update Tangerine UI on your Mastodon instance. 
+#
+#
+# • Set the TANGERINEUI and MASTODON paths below before running the script for the first time.
+# • Only run this script as the mastodon user.
+# • Use --skip-confirm to bypass all confirmation steps.
+# 
+#
+# /!\ This script is not suitable for Glitch-soc instances.
+
+TANGERINEUI="/home/mastodon/TangerineUI"
+MASTODON="/home/mastodon/live"
+
+set -e
+
+# Confirm paths
+confirm_path() {
+    local path="$1"
+    local prompt_message="$2"
+
+    echo "$prompt_message: $path"
+    read -p "Is this path correct? (Y/n): " response
+    response=${response:-y}
+    case "$response" in
+        [Yy]* ) echo "Path confirmed.";;
+        [Nn]* ) echo "Please update the path in the script."; exit 1;;
+        * ) echo "Invalid response. Exiting." >&2; exit 1;;
+    esac
+}
+
+# Check for command-line arguments
+SKIP_CONFIRM=false
+while [[ "$#" -gt 0 ]]; do
+    case $1 in
+        --skip-confirm) SKIP_CONFIRM=true ;;
+        *) echo "Unknown parameter passed: $1" >&2; exit 1 ;;
+    esac
+    shift
+done
+
+# Confirm the paths with the user unless --skip-confirm is provided
+if [ "$SKIP_CONFIRM" = false ]; then
+    confirm_path "$TANGERINEUI" "Tangerine UI repository directory"
+    confirm_path "$MASTODON" "Mastodon directory"
+else
+    echo "Skipping path confirmation."
+fi
+
+# Navigate to the repository
+cd "$TANGERINEUI" || { echo "Tangerine UI repository directory not found: $TANGERINEUI" >&2; exit 1; }
+
+# Pull the latest changes from the repository
+git pull || { echo "Failed to pull latest changes from the Tangerine UI repository" >&2; exit 1; }
+
+# Copy files from the Tangerine UI repository to the Mastodon directory
+cp -r "./mastodon/app/javascript/styles/"* "$MASTODON/app/javascript/styles"
+
+# Add Tangerine UI to themes.yml if not already present
+THEME_FILE="$MASTODON/config/themes.yml"
+THEME_LINES=(
+    "tangerineui: styles/tangerineui.scss"
+    "tangerineui-purple: styles/tangerineui-purple.scss"
+    "tangerineui-cherry: styles/tangerineui-cherry.scss"
+    "tangerineui-lagoon: styles/tangerineui-lagoon.scss"
+)
+
+# Check if the themes are already present and add missing ones
+if [ -f "$THEME_FILE" ]; then
+    for line in "${THEME_LINES[@]}"; do
+        if ! grep -Fxq "$line" "$THEME_FILE"; then
+            echo "$line" >> "$THEME_FILE"
+            echo "Added to themes.yml: $line"
+        else
+            echo "Already present in themes.yml: $line"
+        fi
+    done
+else
+    echo "themes.yml not found: $THEME_FILE" >&2
+    exit 1
+fi
+
+# Navigate to the Mastodon directory
+cd "$MASTODON"
+
+# Precompile assets in production mode
+RAILS_ENV=production bundle exec rails assets:precompile
+
+echo ""
+echo "Tangerine UI was successfully installed."
+echo "Restart all Mastodon services for the changes to take effect."

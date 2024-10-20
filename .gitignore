@@ -1,2 +1,4 @@
 .DS_Store
 .nova
+update.sh
+install.sh
