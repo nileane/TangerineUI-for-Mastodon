@@ -18,8 +18,6 @@ Tangerine UI is a vibrant, fully-featured custom theme for Mastodon's Web UI tha
     * [**List of instances that use Tangerine UI**](#list-of-instances-that-use-tangerine-ui)
 2. [**Compatibility**](#compatibility)
 6. [**Installation** for Mastodon instance admins](#installation-for-mastodon-admins)
-    * [Install on a **Mastodon** instance](#installation-for-mastodon-admins)
-    * [Install on a **Glitch-soc** instance](#installation-for-glitch-soc-admins)
 7. [**Installation** for regular users](#installation-for-regular-users)
 8. [**Accessibility**](#accessibility)
 9. [**Credits**](#credits)
