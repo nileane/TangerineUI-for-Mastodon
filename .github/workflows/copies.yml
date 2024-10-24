@@ -14,6 +14,7 @@ jobs:
       - run: cp TangerineUI-purple.css mastodon/app/javascript/styles/tangerineui-purple/tangerineui-purple.scss
       - run: cp TangerineUI-cherry.css mastodon/app/javascript/styles/tangerineui-cherry/tangerineui-cherry.scss
       - run: cp TangerineUI-lagoon.css mastodon/app/javascript/styles/tangerineui-lagoon/tangerineui-lagoon.scss
+      - run: cp TangerineUI-blueberry.css mastodon/app/javascript/styles/tangerineui-blueberry/tangerineui-blueberry.scss
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Copy CSS files to installation folder
