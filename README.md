@@ -112,7 +112,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [c7.io](https://c7.io)                                     | 200+           | an optional theme   | Yes (Tangerine variant) |
 | [pipou.academy](https://pipou.academy)                     | 100+           | an optional theme   | No                      |
 | [indiepocalypse.social](https://indiepocalypse.social)     | 100+           | an optional theme   | No                      |
-| [town.voyager.blue](https://town.voyager.blue)             | 100+           | an optional theme   | Yes (Purple variant)    |
+| [town.voyager.blue](https://town.voyager.blue)             | 100+           | an optional theme   | Yes (Custom variant)    |
 | [tooter.social](https://tooter.social)                     | 90+            | an optional theme   | No                      |
 | [pointless.chat](https://pointless.chat)                   | 50+            | an optional theme   | No                      |
 | [yttrx.com](https://yttrx.com)                             | 40+            | an optional theme   | No                      |
