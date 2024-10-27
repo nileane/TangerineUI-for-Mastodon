@@ -95,10 +95,12 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 
 | **Instance**                                               | **User count** | **Installed as...** | **Default theme?**      |
 | ---------------------------------------------------------- | -------------- | ------------------- | ----------------------- |
+| [c.im](https://c.im)                                       | 67k+           | an optional theme   | No                      |
 | [piaille.fr](https://piaille.fr)                           | 10K+           | an optional theme   | No                      |
 | [social.vivaldi.net](https://social.vivaldi.net)           | 7K+            | an optional theme   | No                      |
 | [norden.social](https://norden.social)                     | 5K+            | an optional theme   | No                      |
 | [convo.casa](https://convo.casa)                           | 5K+            | an optional theme   | No                      |
+| [acg.mn](https://acg.mn)                                   | 2.6k+          | an optional theme   | No                      |
 | [masto.es](https://masto.es)                               | 2K+            | an optional theme   | No                      |
 | [vmst.io](https://vmst.io)                                 | 2K+            | an optional theme   | No                      |
 | [framapiaf.org](https://framapiaf.org)                     | 1.5K+          | an optional theme   | No                      |
@@ -135,8 +137,6 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [everythingbagel.social](https://everythingbagel.social)   | 1+             | an optional theme   | No                      |
 | [social.spicyweb.dev](https://social.spicyweb.dev)         | 1+             | the only theme      | Yes                     |
 | [e5n.cc](https://e5n.cc)                                   | 1+             | the only theme      | Yes (Lagoon)  |
-| [c.im](https://c.im)                                       | 67k+           | an optional theme   | No                      |
-| [acg.mn](https://acg.mn)                                   | 2.6k+          | an optional theme   | No                      |
 
 ## Compatibility
 ✅ [**Tangerine UI** (v2._x_)](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) **is compatible with instances running Mastodon 4.3 and newer.**[^3]
