@@ -95,12 +95,11 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 
 | **Instance**                                               | **User count** | **Installed as...** | **Default theme?**      |
 | ---------------------------------------------------------- | -------------- | ------------------- | ----------------------- |
-| [c.im](https://c.im)                                       | 67k+           | an optional theme   | No                      |
 | [piaille.fr](https://piaille.fr)                           | 10K+           | an optional theme   | No                      |
 | [social.vivaldi.net](https://social.vivaldi.net)           | 7K+            | an optional theme   | No                      |
 | [norden.social](https://norden.social)                     | 5K+            | an optional theme   | No                      |
 | [convo.casa](https://convo.casa)                           | 5K+            | an optional theme   | No                      |
-| [acg.mn](https://acg.mn)                                   | 2.6k+          | an optional theme   | No                      |
+| [c.im](https://c.im)                                       | 3.2k+          | an optional theme   | No                      |
 | [masto.es](https://masto.es)                               | 2K+            | an optional theme   | No                      |
 | [vmst.io](https://vmst.io)                                 | 2K+            | an optional theme   | No                      |
 | [framapiaf.org](https://framapiaf.org)                     | 1.5K+          | an optional theme   | No                      |
@@ -117,6 +116,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [town.voyager.blue](https://town.voyager.blue)             | 100+           | an optional theme   | Yes (Purple variant)    |
 | [tooter.social](https://tooter.social)                     | 90+            | an optional theme   | No                      |
 | [pointless.chat](https://pointless.chat)                   | 50+            | an optional theme   | No                      |
+| [acg.mn](https://acg.mn)                                   | 50+            | an optional theme   | No                      |
 | [yttrx.com](https://yttrx.com)                             | 40+            | an optional theme   | No                      |
 | [bolha.one](https://bolha.one)                             | 20+            | an optional theme   | Yes (Tangerine variant) |
 | [i1.no](https://i1.no)                                     | 15+            | the only theme      | Yes (Purple variant)    |
