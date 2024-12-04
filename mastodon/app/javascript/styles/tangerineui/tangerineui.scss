@@ -3065,7 +3065,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-multiple-columns .status-card:not(.expanded) .status-card__image {
     width: 80px;
 }
-.layout-multiple-columns .status-card:not(.expanded,:has(.icon-file-text)) .status-card__content {
+.layout-multiple-columns .status-card:not(.expanded,:has(.icon-file-text),[href*="/@" i]) .status-card__content {
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -3310,6 +3310,17 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .spoiler-button:not(.spoiler-button--minified) ~ .media-gallery__item :is(.media-gallery__alt__label, .media-gallery__gifv__label) {
     display: none;
+}
+
+.app-body .media-gallery__alt__popover {
+    background-color: color-mix(in srgb, var(--color-content-bg), transparent 15%);
+    border: 1px solid var(--color-lines-translucent);
+}
+.app-body .media-gallery__alt__popover :is(p, h4) {
+    color: var(--color-content-fg);
+}
+.app-body .media-gallery__alt__popover h4 {
+    font-weight: bold;
 }
 
 
