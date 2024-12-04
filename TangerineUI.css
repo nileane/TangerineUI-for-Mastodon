@@ -3065,7 +3065,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .layout-multiple-columns .status-card:not(.expanded) .status-card__image {
     width: 80px;
 }
-.layout-multiple-columns .status-card:not(.expanded,:has(.icon-file-text)) .status-card__content {
+.layout-multiple-columns .status-card:not(.expanded,:has(.icon-file-text),[href*="/@" i]) .status-card__content {
     padding-top: 0;
     padding-bottom: 0;
 }
