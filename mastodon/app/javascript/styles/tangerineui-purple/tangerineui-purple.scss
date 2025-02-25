@@ -1483,7 +1483,7 @@ body.app-body  {
     border-bottom: 0;
 }
 .app-body .navigation-bar .account__display-name {
-    line-height: 20px;
+    line-height: 1.25;
 }
 .app-body :is(.navigation-bar, .reply-indicator) .account__avatar {
     outline: 6px solid var(--color-content-bg);
@@ -1895,7 +1895,7 @@ body.app-body  {
     border-radius: 8px;
     border: 1px solid var(--color-accent-bg);
     font-size: 12px;
-    line-height: 16px;
+    line-height: 1.33;
     transition:
         background-color .2s,
         border-color .2s;
@@ -2337,7 +2337,7 @@ body.app-body  {
     margin-inline-start: -56px;
     padding: 0;
     margin-bottom: 0;
-    line-height: 10px;
+    line-height: 0.625;
     align-items: start;
 }
 .app-body .status__info .status__display-name {
@@ -2429,7 +2429,7 @@ body.app-body  {
 }
 .app-body .reply-indicator__content,
 .app-body .status__content {
-    line-height: 19px;
+    line-height: 1.2;
     position: static;
 }
 
@@ -2610,7 +2610,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     height: 60px !important;
 }
 .app-body .detailed-status .status__content {
-    line-height: 24px;
+    line-height: 1.26;
 }
 .app-body .detailed-status {
     padding-bottom: 8px;
@@ -3134,12 +3134,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding: 0 0 25px;
     font-weight: 700;
     font-size: 15px;
-    line-height: 19px;
+    line-height: 1.26;
     position: relative;
 }
 .app-body .detailed-status .content-warning {
     font-size: 19px;
-    line-height: 24px;
+    line-height: 1.26;
 }
 .app-body .content-warning::before,
 .app-body .content-warning::after {
@@ -3166,7 +3166,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-radius: 8px;
     text-transform: initial;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 1.33;
     font-weight: 500;
     color: var(--color-content-fg);
     padding: 5px 8px 5px 30px;
@@ -3349,7 +3349,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding-left: 75px;
     text-align: left;
     font-size: 95%;
-    line-height: 18px;
+    line-height: 1.184;
 }
 .app-body .timeline-hint a {
     color: var(--color-accent);
@@ -5171,7 +5171,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     width: 30px;
     height: 30px;
     font-size: 27px;
-    line-height: 30px;
+    line-height: 1.11;
     top: -40px;
     left: -40px;
     animation: 10s linear 0s makeawish;
@@ -5224,7 +5224,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .dismissable-banner__message__actions .button,
 .app-body .dismissable-banner__message__actions .button.button-tertiary {
-    line-height: 28px;
+    line-height: 1.75;
     padding: 6px 17px;
 }
 .app-body .dismissable-banner__message__actions {
@@ -6732,7 +6732,7 @@ a:is(.active,
 .app-body .hover-card .button:not(.button--destructive) {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
-    line-height: 22px;
+    line-height: 1.375;
     padding: 10px 18px;
 }
 .app-body .hover-card .button:not(.button--destructive):hover {
@@ -6777,7 +6777,7 @@ a:is(.active,
 }
 .app-body .sign-in-banner p:nth-child(2) {
     font-size: 85%;
-    line-height: 18px;
+    line-height: 1.325;
 }
 .app-body .sign-in-banner p {
     margin-bottom: 25px;
@@ -7419,7 +7419,7 @@ a:is(.active,
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
     border-radius: 8px;
-    line-height: 15px;
+    line-height: 0.94;
     font-weight: bold;
     padding-left: 8px;
     padding-right: 8px;
