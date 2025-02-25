@@ -2429,7 +2429,7 @@ body.app-body  {
 }
 .app-body .reply-indicator__content,
 .app-body .status__content {
-    line-height: 1.2;
+    line-height: 1.4;
     position: static;
 }
 
@@ -2610,7 +2610,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     height: 60px !important;
 }
 .app-body .detailed-status .status__content {
-    line-height: 1.26;
+    line-height: 1.27;
 }
 .app-body .detailed-status {
     padding-bottom: 8px;
@@ -3349,7 +3349,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     padding-left: 75px;
     text-align: left;
     font-size: 95%;
-    line-height: 1.18;
+    line-height: 1.5;
 }
 .app-body .timeline-hint a {
     color: var(--color-accent);
