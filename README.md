@@ -108,6 +108,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [eldritch.cafe](https://eldritch.cafe)                     | 1.5K+          | an optional theme   | No                      |
 | [octodon.social](https://octodon.social)                   | 1K+            | an optional theme   | No                      |
 | [social.lol](https://social.lol)                           | 1K+            | an optional theme   | No                      |
+| [tool.wales](https://toot.wales)                           | 700            | an optional theme   | No                      |
 | [mountains.social](https://mountains.social)               | 550+           | an optional theme   | No                      |
 | [shelter.moe](https://shelter.moe)                         | 350+           | an optional theme   | No                      |
 | [toki.social](https://toki.social)                         | 200+           | an optional theme   | No                      |
@@ -127,19 +128,21 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [toulouse.social](https://toulouse.social)                 | 10+            | an optional theme   | Yes (Tangerine variant) |
 | [fedinerds.social](https://fedinerds.social)               | 10+            | an optional theme   | No                      |
 | [ngmx.com](https://ngmx.com)                               | 10+            | an optional theme   | No                      |
+| [varese.social](https://varese.social)                     | 10+            | an optional theme   | No                      |
 | [nileane.fr](https://nileane.fr)                           | 5+             | the only theme      | Yes (Tangerine variant) |
 | [social.nah.re](https://social.nah.re)                     | 5+             | an optional theme   | No                      |
 | [esoteric.party](https://esoteric.party)                   | 5+             | the only theme      | Yes (Tangerine variant) |
 | [asso.lgbt](https://asso.lgbt)                             | 5+             | the only theme      | Yes (Purple variant)    |
 | [Buddyverse.xyz](https://buddyverse.xyz)                   | 5+             | an optional theme   | No                      |
 | [isfeeling.social](https://isfeeling.social)               | 1+             | the only theme      | Yes (Purple variant)    |
+| [ucn.social](https://ucn.social)                           | 1+             | an optional theme   | Yes (Tangerine variant) |
 | [fedi.cyberwitches.club](https://fedi.cyberwitches.club)   | 1+             | the only theme      | Yes (Purple variant)    |
 | [mastodon.projetretro.io](https://mastodon.projetretro.io) | 1+             | an optional theme   | No                      |
 | [everythingbagel.social](https://everythingbagel.social)   | 1+             | an optional theme   | No                      |
 | [social.spicyweb.dev](https://social.spicyweb.dev)         | 1+             | the only theme      | Yes                     |
 | [e5n.cc](https://e5n.cc)                                   | 1+             | the only theme      | Yes (Lagoon)            |
 | [erica.moe](https://erica.moe)                             | 5+             | an optional theme   | Yes (Purple variant)    |
-| [henshaw.social](https://henshaw.social)                   | 1+             | the only theme      | Yes (Tangerine variant) |
+| [zinnia.social](https://zinnia.social)                     | 1+             | an optional theme   | Yes (Tangerine variant) |
 
 ## Compatibility
 ✅ [**Tangerine UI** (v2._x_)](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) **is compatible with instances running Mastodon 4.3 and newer.**[^3]
