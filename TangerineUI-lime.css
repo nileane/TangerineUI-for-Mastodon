@@ -10,10 +10,10 @@
         --version: "v2.4~";
 
         --variant-name: "Lime";
-        --variant-emoji: "\1FABB\00A0";
+        --variant-emoji: "\1F34B\200D\1F7E9\00A0";
         --variant: var(--variant-emoji) var(--variant-name);
 
-        --meta: 'Lime UI for Mastodon: ' var(--version) ' \00B7 ' var(--variant);
+        --meta: 'Tangerine UI for Mastodon: ' var(--version) ' \00B7 ' var(--variant);
     }
 
     /* 🎨 Colors */
