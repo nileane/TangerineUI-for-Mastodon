@@ -476,7 +476,7 @@
     }
 
     ::selection {
-        color: var(--color-accent-fg);
+        color: #000;
         background-color: var(--color-accent);
     }
 
@@ -774,6 +774,14 @@
     .app-body .dismissable-banner+.scrollable {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+    }
+
+    .app-body .dismissable-banner .dismissable-banner__message span {
+        color: #000;
+    }
+
+    .app-body .dismissable-banner .dismissable-banner__action .icon-button {
+        color: #000;
     }
 
     .app-body .columns-area--mobile {
@@ -6188,7 +6196,7 @@
 
     .app-body .dismissable-banner__message,
     .app-body .dismissable-banner .dismissable-banner__action .icon-button {
-        color: var(--color-accent-fg);
+        color: #000;
         font-weight: normal;
     }
 
@@ -8418,6 +8426,10 @@
 
     .app-body .regeneration-indicator {
         background-color: var(--color-content-bg);
+    }
+
+    .app-body .regeneration-indicator__label {
+        color: var(--color-accent);
     }
 
     @media screen and (min-width:890px) {
