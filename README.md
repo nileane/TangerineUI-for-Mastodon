@@ -114,6 +114,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [toki.social](https://toki.social)                         | 200+           | an optional theme   | No                      |
 | [dmv.community](https://dmv.community)                     | 200+           | an optional theme   | No                      |
 | [c7.io](https://c7.io)                                     | 200+           | an optional theme   | Yes (Tangerine variant) |
+| [mastodon.com.pl](https://mastodon.com.pl)                 | 100+           | an optional theme   | No                      |
 | [pipou.academy](https://pipou.academy)                     | 100+           | an optional theme   | No                      |
 | [indiepocalypse.social](https://indiepocalypse.social)     | 100+           | an optional theme   | No                      |
 | [town.voyager.blue](https://town.voyager.blue)             | 100+           | an optional theme   | Yes (Custom variant)    |
