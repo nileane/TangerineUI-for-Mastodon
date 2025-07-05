@@ -133,7 +133,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [nileane.fr](https://nileane.fr)                           | 5+             | the only theme      | Yes (Tangerine variant) |
 | [social.nah.re](https://social.nah.re)                     | 5+             | an optional theme   | No                      |
 | [fedi.cyberwitches.club](https://fedi.cyberwitches.club)   | 1+             | the only theme      | Yes (Cherry variant)    |
-| [e5n.cc](https://e5n.cc)                                   | 1+             | the only theme      | Yes (Lagoon)            |
+| [e5n.cc](https://e5n.cc)                                   | 1+             | the only theme      | Yes (Lagoon variant)    |
 | [isfeeling.social](https://isfeeling.social)               | 1+             | the only theme      | Yes (Purple variant)    |
 | [mastodon.projetretro.io](https://mastodon.projetretro.io) | 1+             | an optional theme   | No                      |
 
