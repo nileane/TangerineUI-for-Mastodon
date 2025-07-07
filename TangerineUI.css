@@ -4554,8 +4554,77 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     justify-content: flex-start;
 }
 
-/* Custom pinned posts divider */
-.app-body .status__wrapper:has(.icon-thumb-tack)::after {
+/* Pinned posts carousel */
+.app-body .column-subheading {
+    background-color: var(--color-content-secondary-bg);
+    color: var(--color-fg-muted);
+}
+.app-body .featured-carousel {
+    position: relative;
+    padding-bottom: 7px;
+}
+.app-body .featured-carousel__header {
+    margin: 16px 20px 0 0;
+    gap: 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+}
+.app-body .featured-carousel__title {
+    background-color: var(--color-content-secondary-bg);
+    color: var(--color-fg-muted);
+    border-radius: 50px;
+    margin-left: 75px;
+    margin-right: auto;
+    padding: 5px 12px;
+    outline: 1px solid color-mix(in srgb, var(--color-fg), transparent 95%);
+    outline-offset: -1px;
+    gap: 5px;
+    flex-grow: 0;
+}
+.app-body .featured-carousel__header .icon-button:has(.icon-chevron-left, .icon-chevron-right) {
+    background-color: var(--color-content-secondary-bg);
+    color: var(--color-fg-muted);
+    outline: 1px solid color-mix(in srgb, var(--color-fg), transparent 95%);
+    outline-offset: -1px;
+    padding: 5px 12px;
+    border-radius: 50px;
+    color: var(--color-accent);
+}
+.app-body .featured-carousel__header .icon-button:has(.icon-chevron-left, .icon-chevron-right):hover {
+    background-color: var(--color-accent-bg);
+    color: var(--color-accent);
+}
+.app-body .featured-carousel__header .icon-button:has(.icon-chevron-left) {
+    border-radius: 50px 0 0 50px;
+}
+.app-body .featured-carousel__header .icon-button:has(.icon-chevron-right) {
+    border-radius: 0 50px 50px 0;
+}
+.app-body .featured-carousel__header .icon-button + span:has(+ .icon-button) {
+    background-color: var(--color-content-secondary-bg);
+    color: var(--color-fg-muted);
+    padding: 6px 10px;
+    margin: 0 -1px;
+    outline: 1px solid color-mix(in srgb, var(--color-fg), transparent 95%);
+    outline-offset: -1px;
+    width: 55px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.app-body .featured-carousel::before {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 50px;
+    bottom: 7px;
+    width: 20%;
+    z-index: 2;
+    content: "";
+    background-image: linear-gradient(to left, color-mix(in srgb, var(--color-content-bg), transparent 30%), transparent);
+}
+.app-body .featured-carousel::after {
     position: absolute;
     left: 0;
     right: 0;
@@ -4564,31 +4633,32 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     width: 100%;
     content: "";
     border-top: 1px solid var(--color-lines);
-    border-bottom: 1px solid var(--color-lines);
     background-color: var(--color-content-secondary-bg);
 }
-.app-body .status__wrapper:has(.icon-thumb-tack)::before {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -8px;
-    height: 8px;
-    width: 100%;
-    content: "";
-    background-color: var(--color-content-bg);
+.app-body .featured-carousel__slide {
+    transition: transform .3s;
 }
-.app-body .status__wrapper:has(.icon-thumb-tack) {
-    padding-bottom: 20px;
-    margin-top: -8px;
+.app-body .featured-carousel__slide:not([inert]) {
+    flex-basis: 75%;
 }
-.app-body .status__wrapper:has(.icon-thumb-tack) :is(.status__content__translate-button, .translate-button .link-button) {
-    bottom: 20px;
+.app-body .featured-carousel__slide[inert] {
+    transform: scale(0.9);
+    transform-origin: left center;
 }
-.app-body .account-timeline__header + article .status__wrapper:has(.icon-thumb-tack) {
-    margin-top: 0;
-}
-.app-body .account-timeline__header + article .status__wrapper:has(.icon-thumb-tack)::before {
-    display: none;
+
+@media screen and (max-width:770px) {
+    .app-body .featured-carousel__header {
+        margin-right: 17px;
+    }
+    .app-body .featured-carousel__title {
+        margin-left: 17px;
+    }
+    .app-body .featured-carousel__slide:not([inert]) {
+        flex-basis: 100%;
+    }
+    .app-body .featured-carousel::before {
+        display: none;
+    }
 }
 
 
@@ -4654,8 +4724,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .getting-started__trends .trends__item {
-    padding-left: 19px;
-    gap: 13px;
+    padding-left: 17px;
+    gap: 15px;
 }
 @media screen and (max-width:1175px) {
     .app-body .getting-started__trends {
@@ -5302,6 +5372,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .explore__search-results .account {
     padding-top: 16px;
 }
+.app-body .account__relationship .icon-button {
+    background-color: var(--color-content-secondary-bg);
+    border: 0;
+}
 .app-body
 .notification
 .account:has(.account__wrapper > .account__relationship > button:nth-child(2))
@@ -5624,10 +5698,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .column-inline-form label input:focus {
     border-color: var(--color-accent);
-}
-.app-body :is(.column-subheading, .columns-area__panels__main .column-link) {
-    background-color: var(--color-content-bg);
-    color: var(--color-fg);
 }
 .app-body .item-list .column-subheading {
     color: var(--color-fg-muted);
@@ -7563,6 +7633,9 @@ a:is(.active,
 
 /* Popular hashtag icons
    --------------------- */
+.app-body .trends__item {
+    gap: 15px;
+}
 .app-body
 .trends__item:has(
     .trends__item__name a:is(
