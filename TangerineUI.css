@@ -3526,6 +3526,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* ⏺️ Column headers
    ----------------- */
+.app-body .tabs-bar__wrapper {
+    background-color: var(--color-content-bg);
+}
 @media screen and (min-width:1186px) {
     .app-body .tabs-bar__wrapper {
         box-shadow: inset 0 10px var(--color-bg), 0 -10px var(--color-bg);
@@ -3755,6 +3758,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .column-header > button {
     padding: 0 0 0 15px;
+    gap: 13px;
 }
 .app-body .column-header > button:nth-child(2) {
     padding-left: 0;
@@ -3790,9 +3794,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
             height: 55px;
             border: 0;
             margin: 0;
-    }
-    .app-body .column-header__icon {
-        display: none;
     }
     .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
         border-bottom: 1px solid var(--color-lines);
@@ -4034,7 +4035,22 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .ui__header__logo svg {
     display: none;
 }
-
+.app-body .column-header__title .logo {
+    opacity: 0;
+    visibility: hidden;
+}
+.app-body .column-header__title:has(> .logo)::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    inset-inline-start: 14px;
+    inset-block-start: 14px;
+    background-image: var(--logo);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .app-body .navigation-panel__logo {
     margin-bottom: 5px;
 }
