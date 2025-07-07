@@ -845,7 +845,13 @@ html.has-modal, html.has-modal body {
         .app-form__header-input .icon,
         .account__domain-pill__popout__parts__icon .icon,
         .safety-action-modal__bullet-points__icon .icon,
-        .app-body .column-link .icon.icon-
+        .column-link .icon.icon-,
+        .ui__navigation-bar__item[href="/home"] .icon,
+        .ui__navigation-bar__item[href="/explore"] .icon,
+        .ui__navigation-bar__item[href="/publish"] .icon,
+        .ui__navigation-bar__item[href="/notifications"] .icon,
+        .ui__navigation-bar__item[href="/menu"] .icon,
+        button.ui__navigation-bar__item .icon
     )
     path {
         display: none;
@@ -917,7 +923,13 @@ html.has-modal, html.has-modal body {
         .app-form__header-input .icon,
         .account__domain-pill__popout__parts__icon .icon,
         .safety-action-modal__bullet-points__icon .icon,
-        .app-body .column-link .icon.icon-
+        .column-link .icon.icon-,
+        .ui__navigation-bar__item[href="/home"] .icon,
+        .ui__navigation-bar__item[href="/explore"] .icon,
+        .ui__navigation-bar__item[href="/publish"] .icon,
+        .ui__navigation-bar__item[href="/notifications"] .icon,
+        .ui__navigation-bar__item[href="/menu"] .icon,
+        button.ui__navigation-bar__item .icon
     ) {
         background-repeat: no-repeat;
         background-size: 100%;
@@ -1043,10 +1055,12 @@ html.has-modal, html.has-modal body {
 .app-body .icon-home {
     background-image: var(--icon-home);
 }
-.app-body .navigation-panel .column-link .icon-home {
+.app-body .navigation-panel .column-link .icon-home,
+.app-body .ui__navigation-bar__item[href="/home"] .icon {
     background-image: var(--icon-home-accent);
 }
-.app-body .navigation-panel .column-link.active .icon-home {
+.app-body .navigation-panel .column-link.active .icon-home,
+.app-body .ui__navigation-bar__item[href="/home"].active .icon {
     background-image: var(--icon-home-accent-active);
 }
 .app-body .column-link.active .icon-home {
@@ -1097,10 +1111,12 @@ html.has-modal, html.has-modal body {
 .layout-multiple-columns .column-link .icon-explore {
     background-image: var(--icon-explore-accent);
 }
-.app-body .navigation-panel .column-link .icon-explore {
+.app-body .navigation-panel .column-link .icon-explore,
+.app-body .ui__navigation-bar__item[href="/explore"] .icon {
     background-image: var(--icon-explore-accent);
 }
-.app-body .navigation-panel .column-link.active .icon-explore {
+.app-body .navigation-panel .column-link.active .icon-explore,
+.app-body .ui__navigation-bar__item[href="/explore"].active .icon {
     background-image: var(--icon-explore-accent-active);
 }
 /* Search icon */
@@ -1120,10 +1136,12 @@ html.has-modal, html.has-modal body {
 .app-body .column-header__icon.icon-search {
     background-image: var(--icon-search-column-link);
 }
-.app-body .navigation-panel .column-link .icon-search {
+.app-body .navigation-panel .column-link .icon-search,
+.app-body .ui__navigation-bar__item[href="/search"] .icon {
     background-image: var(--icon-search-column-link-accent);
 }
-.app-body .navigation-panel .column-link.active .icon-search {
+.app-body .navigation-panel .column-link.active .icon-search,
+.app-body .ui__navigation-bar__item[href="/search"].active .icon {
     background-image: var(--icon-search-column-link-accent-active);
 }
 .app-body .icon-times-circle {
@@ -1137,10 +1155,12 @@ html.has-modal, html.has-modal body {
 .app-body .column-link.active .icon-bell {
     background-image: var(--icon-bell-active);
 }
-.app-body .navigation-panel .column-link .icon-bell {
+.app-body .navigation-panel .column-link .icon-bell,
+.app-body .ui__navigation-bar__item[href="/notifications"] .icon {
     background-image: var(--icon-bell-accent);
 }
-.app-body .navigation-panel .column-link.active .icon-bell {
+.app-body .navigation-panel .column-link.active .icon-bell,
+.app-body .ui__navigation-bar__item[href="/notifications"].active .icon {
     background-image: var(--icon-bell-accent-active);
 }
 /* Direct messages icon */
@@ -1236,6 +1256,14 @@ html.has-modal, html.has-modal body {
 .app-body .navigation-panel .column-link.active .icon-ellipsis-h {
     background-image: var(--icon-ellipsis-column-link-active);
 }
+/* Hamburger menu */
+.app-body button.ui__navigation-bar__item .icon {
+    background-image: var(--icon-list-accent);
+}
+.app-body button.ui__navigation-bar__item.active .icon {
+    background-image: var(--icon-list-accent-active);
+}
+
 /* Moderation icon */
 .app-body .icon-flag {
     background-image: var(--icon-moderation);
@@ -3970,39 +3998,28 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .ui__header__links .button.button-secondary {
     padding: 8px 15px;
 }
-.app-body .ui__header__links .button.button-secondary[href="/search"] {
-    display: none;
-}
-.app-body .ui__header__links .button.button-secondary[href="/publish"] {
+.app-body .ui__navigation-bar__item[href="/publish"] {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
     width: 50px;
     height: 50px;
     box-sizing: border-box;
     background-image: var(--icon-compose);
-    background-position: center;
+    background-position: center 9px;
+    margin: -8px auto;
     background-repeat: no-repeat;
-    position: fixed;
-    bottom: calc(4.8em + var(--safe-area-bottom));
-    inset-inline-end: 1em;
-    background-size: 22px;
+    background-size: 24px;
     border-radius: 50%;
     box-shadow:
         0 1px 1px rgba(0, 0, 0, .2),
         0 2px 10px rgba(0, 0, 0, .2);
 }
-.app-body .ui__header__links .button.button-secondary[href="/publish"]:is(:hover, :focus, :active) {
-    background-color: var(--color-accent-focus);
-    color: var(--color-accent-fg);
+.app-body .ui__navigation-bar {
+    background-color: color-mix(in srgb, var(--color-content-bg), transparent 15%);
+    backdrop-filter: blur(20px);
 }
-.app-body .ui__header__links .button.button-secondary[href="/publish"] span {
-    color: transparent;
-}
-
-@media screen and (max-width:1174px) {
-    .layout-single-column .ui__header__links {
-        padding-left: 12px;
-    }
+.app-body .ui__navigation-bar .icon {
+    transform: scale(1.24);
 }
 
 .app-body .column-link--logo {
