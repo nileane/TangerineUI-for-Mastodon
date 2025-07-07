@@ -4841,7 +4841,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     transform: scale(.95);
 }
 .app-body .search__icon-wrapper {
-    top: 13px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .app-body .search__input:where(:not(.active), .active) {
     border-radius: 8px;
@@ -4855,6 +4856,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         border-color .2s,
         background-color .2s,
         outline .2s;
+}
+.app-body .search.active .search__input {
+    border-radius: 8px;
 }
 .app-body .search__input::placeholder,
 .app-body .compose-form .spoiler-input__input::placeholder {
@@ -4880,7 +4884,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .compose-panel .icon-search,
 .app-body .compose-panel .icon-search.active,
-.app-body .explore__search-header .icon-search {
+.app-body .explore__search-header .icon-search,
+.app-body .navigation-panel .icon-search {
     background-image: var(--icon-search-active);
 }
 .app-body .compose-panel .icon-search.active,
@@ -5016,9 +5021,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     .app-body:not(.layout-multiple-columns) .explore__search-header {
         padding-top: 2px;
-    }
-    .app-body:not(.layout-multiple-columns) .search__input {
-        padding: 13px;
     }
     .app-body:not(.layout-multiple-columns) .explore__search-header {
         padding: 10px 0;
