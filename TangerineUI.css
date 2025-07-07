@@ -54,6 +54,7 @@
 
     --background-color: var(--color-bg);
     --background-border-color: var(--color-lines);
+    --modal-background-color: var(--color-content-bg)
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -568,6 +569,7 @@ html.has-modal, html.has-modal body {
 .app-body .account__avatar {
     background-color: var(--color-content-secondary-bg);
     border-radius: 50%;
+    aspect-ratio: 1 / 1;
 }
 .app-body .account__avatar img {
     border-radius: 50%;
@@ -4199,6 +4201,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-bottom: 0;
     margin: 0;
 }
+.app-body .account__header__tabs__buttons .button {
+    padding: 7px 18px;
+}
 .app-body .account__header__image img {
     background-color: var(--color-content-secondary-bg);
 }
@@ -4294,6 +4299,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account__header__badges .account-role span:not(.account-role__domain) {
     font-weight: 500;
 }
+
+.app-body .account__header__familiar-followers {
+    color: var(--color-content-fg-muted);
+}
+.app-body .account__header__familiar-followers a:any-link {
+    color: var(--color-content-fg);
+    font-weight: bold;
+}
+.app-body .avatar-group--compact .account__avatar {
+    box-shadow: 0 0 0 2px var(--color-content-bg);
+}
+
 .app-body .account-role svg {
     opacity: 1;
     color: var(--color-accent);
@@ -4454,8 +4471,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .hover-card__bio,
 .app-body .hover-card .display-name bdi,
 .app-body .account-fields,
-.app-body .hover-card__number {
+.app-body .hover-card__numbers {
     color: var(--color-content-fg);
+}
+.app-body .hover-card__numbers {
+    gap: 5px;
 }
 .app-body .hover-card .display-name__html {
     font-weight: 600;
@@ -5903,7 +5923,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent);
 }
 .app-body .icon-button:has(.icon-ellipsis-v) {
-    background-color: var(--color-accent-bg);
+    background-color: var(--color-content-secondary-bg);
     border: none;
 }
 .app-body .icon-button:has(.icon-ellipsis-v, .icon-close):is(.active, :active) {
@@ -6190,6 +6210,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 /* 🖱️ Interaction modals
    --------------------- */
+.app-body .safety-action-modal__top, .safety-action-modal__bottom {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
 .app-body .modal-root__modal:not(.media-modal) {
     border: 0;
     outline: 1px solid var(--color-lines-translucent);
@@ -6686,10 +6710,6 @@ a:is(.active,
 .app-body .button.button--destructive:is(:active, :hover, :focus) {
     background-color: var(--color-reject);
     color: var(--color-accent-fg);
-}
-.app-body .sign-in-banner .button,
-.app-body .button:is(.button-secondary, .button-tertiary) {
-    padding: 10px 18px;
 }
 .app-body .sign-in-banner .button:active,
 .app-body .button:is(.button-secondary, .button-tertiary):active {
