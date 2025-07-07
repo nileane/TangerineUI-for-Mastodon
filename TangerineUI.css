@@ -5501,7 +5501,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body :is(.notification-group__icon, .notification-ungrouped__header__icon) {
     width: 46px;
-    height: 28px;
+    height: 40px;
     justify-content: end;
 }
 .app-body :is(.notification-group__icon, .notification-ungrouped__header__icon) svg {
@@ -5553,6 +5553,17 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .notification-group__embedded-status .account__avatar {
     opacity: 1;
+}
+
+.app-body .avatar-group {
+    gap: 0;
+    --avatar-height: 40px !important;
+}
+.app-body .avatar-group .account__avatar {
+    margin-inline-end: -3px;
+    width: 40px !important;
+    height: 40px !important;
+    outline: 2px solid var(--color-content-bg);
 }
 
 
