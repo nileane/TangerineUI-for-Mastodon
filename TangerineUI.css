@@ -838,7 +838,7 @@ html.has-modal, html.has-modal body {
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
         .icon-sign-out,
-        .account__header__tabs__buttons .icon-undefined,
+        .account__header__tabs__buttons .icon.icon-,
         .icon-eye-slash,
         .icon-eye,
         .icon-eraser,
@@ -916,7 +916,7 @@ html.has-modal, html.has-modal body {
         .detailed-status__action-bar .icon-close,
         .account__header__tabs__buttons .icon-close,
         .icon-sign-out,
-        .account__header__tabs__buttons .icon-undefined,
+        .account__header__tabs__buttons .icon.icon-,
         .icon-eye-slash,
         .icon-eye,
         .icon-eraser,
@@ -1427,7 +1427,7 @@ html.has-modal, html.has-modal body {
 .app-body .follow-request-banner .button .icon-times {
     background-image: var(--icon-reject);
 }
-.app-body .account__header__tabs__buttons .icon-undefined {
+.app-body .account__header__tabs__buttons .icon.icon- {
     background-image: var(--icon-share);
 }
 .app-body .account__header__tabs__buttons .copyable .icon-undefined {
@@ -4204,6 +4204,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .account__header__tabs__buttons .button {
     padding: 7px 18px;
 }
+.app-body .account__header__tabs__buttons .button[href="/settings/profile"] {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg)
+}
+.app-body .account__header__tabs__buttons .button[href="/settings/profile"]:is(:hover, :active) {
+    background-color: var(--color-accent-focus);
+}
 .app-body .account__header__image img {
     background-color: var(--color-content-secondary-bg);
 }
@@ -5505,8 +5512,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     justify-content: end;
 }
 .app-body :is(.notification-group__icon, .notification-ungrouped__header__icon) svg {
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
 }
 .app-body .notification-ungrouped .status::before {
     display: none;
