@@ -469,9 +469,6 @@ body.app-body  {
     background-color: var(--color-bg);
     background-image: var(--gradient-bg);
 }
-.app-body .columns-area__panels__pane {
-    z-index: 1;
-}
 
 ::selection {
     color: var(--color-accent-fg);
@@ -506,6 +503,10 @@ body.app-body  {
     scrollbar-color: var(--color-accent) var(--color-bg);
     scrollbar-width: thin;
 }
+html.has-modal, html.has-modal body {
+    scrollbar-gutter: unset;
+}
+
 
 .app-body {
     --dropdown-shadow:
@@ -1042,6 +1043,12 @@ body.app-body  {
 .app-body .icon-home {
     background-image: var(--icon-home);
 }
+.app-body .navigation-panel .column-link .icon-home {
+    background-image: var(--icon-home-accent);
+}
+.app-body .navigation-panel .column-link.active .icon-home {
+    background-image: var(--icon-home-accent-active);
+}
 .app-body .column-link.active .icon-home {
     background-image: var(--icon-home-active);
 }
@@ -1062,6 +1069,12 @@ body.app-body  {
 }
 .layout-multiple-columns .column-link .icon-globe {
     background-image: var(--icon-globe-accent);
+}
+.app-body .navigation-panel .column-link .icon-globe {
+    background-image: var(--icon-globe-accent);
+}
+.app-body .navigation-panel .column-link.active .icon-globe {
+    background-image: var(--icon-globe-accent-active);
 }
 /* Hashtag icon */
 .app-body .icon-hashtag {
@@ -1084,6 +1097,12 @@ body.app-body  {
 .layout-multiple-columns .column-link .icon-explore {
     background-image: var(--icon-explore-accent);
 }
+.app-body .navigation-panel .column-link .icon-explore {
+    background-image: var(--icon-explore-accent);
+}
+.app-body .navigation-panel .column-link.active .icon-explore {
+    background-image: var(--icon-explore-accent-active);
+}
 /* Search icon */
 .app-body .icon-search {
     background-image: var(--icon-search);
@@ -1101,6 +1120,12 @@ body.app-body  {
 .app-body .column-header__icon.icon-search {
     background-image: var(--icon-search-column-link);
 }
+.app-body .navigation-panel .column-link .icon-search {
+    background-image: var(--icon-search-column-link-accent);
+}
+.app-body .navigation-panel .column-link.active .icon-search {
+    background-image: var(--icon-search-column-link-accent-active);
+}
 .app-body .icon-times-circle {
     background-image: var(--icon-erase);
 }
@@ -1111,6 +1136,12 @@ body.app-body  {
 }
 .app-body .column-link.active .icon-bell {
     background-image: var(--icon-bell-active);
+}
+.app-body .navigation-panel .column-link .icon-bell {
+    background-image: var(--icon-bell-accent);
+}
+.app-body .navigation-panel .column-link.active .icon-bell {
+    background-image: var(--icon-bell-accent-active);
 }
 /* Direct messages icon */
 .app-body .column-link .icon-at,
@@ -1123,6 +1154,12 @@ body.app-body  {
 .layout-multiple-columns .column-link .icon-at {
     background-image: var(--icon-direct-messages-accent);
 }
+.app-body .navigation-panel .column-link .icon-at {
+    background-image: var(--icon-direct-messages-accent);
+}
+.app-body .navigation-panel .column-link.active .icon-at {
+    background-image: var(--icon-direct-messages-accent-active);
+}
 /* Bookmarks icon */
 .app-body .icon-bookmarks,
 .app-body .column-header__icon.icon-bookmarks {
@@ -1134,6 +1171,12 @@ body.app-body  {
 .layout-multiple-columns .column-link .icon-bookmarks {
     background-image: var(--icon-bookmark-column-link-accent);
 }
+.app-body .navigation-panel .column-link .icon-bookmarks {
+    background-image: var(--icon-bookmark-column-link-accent);
+}
+.app-body .navigation-panel .column-link.active .icon-bookmarks {
+    background-image: var(--icon-bookmark-column-link-accent-active);
+}
 /* Favorites icon */
 .app-body .column-link .icon-star,
 .app-body .column-header__icon.icon-star {
@@ -1144,6 +1187,12 @@ body.app-body  {
 }
 .layout-multiple-columns .column-link .icon-star {
     background-image: var(--icon-star-column-link-accent);
+}
+.app-body .navigation-panel .column-link .icon-star {
+    background-image: var(--icon-star-column-link-accent);
+}
+.app-body .navigation-panel .column-link.active .icon-star {
+    background-image: var(--icon-star-column-link-accent-active);
 }
 /* Lists icon */
 .app-body .icon-list-ul,
@@ -1163,12 +1212,22 @@ body.app-body  {
 .app-body .navigation-panel .list-panel .column-link.active .icon-list-ul {
     background-image: var(--icon-dot-accent-active);
 }
+.app-body .navigation-panel .column-link .icon-list-ul {
+    background-image: var(--icon-list-accent);
+}
+.app-body .navigation-panel .column-link.active .icon-list-ul,
+.app-body .navigation-panel .column-link:has(+ .list-panel > .column-link.active) .icon-list-ul {
+    background-image: var(--icon-list-accent-active);
+}
 /* Settings icon */
 .app-body .column-link .icon-cog {
     background-image: var(--icon-settings);
 }
 .layout-multiple-columns .column-link .icon-cog {
     background-image: var(--icon-settings-accent);
+}
+.app-body .navigation-panel .column-link .icon-cog {
+        background-image: var(--icon-settings-accent);
 }
 /* About page icon */
 .app-body .navigation-panel .column-link .icon-ellipsis-h {
@@ -1217,6 +1276,12 @@ body.app-body  {
 .layout-multiple-columns .column-link .icon-user-plus {
     background-image: var(--icon-user-plus-column-link-accent);
 }
+.app-body .navigation-panel .column-link .icon-user-plus {
+    background-image: var(--icon-user-plus-column-link-accent);
+}
+.app-body .navigation-panel .column-link.active .icon-user-plus {
+    background-image: var(--icon-user-plus-column-link-accent-active);
+}
 /* Users icon */
 .app-body .icon-users {
     background-image: var(--icon-users);
@@ -1231,6 +1296,15 @@ body.app-body  {
 /* Column settings icon */
 .app-body .icon-sliders {
     background-image: var(--icon-sliders);
+}
+.app-body .icon-flag {
+    background-image: var(--icon-moderation-accent);
+}
+.app-body .icon-tachometer {
+    background-image: var(--icon-administration-accent);
+}
+.app-body .column-link .icon.icon- {
+    background-image: var(--icon-ellipsis-accent);
 }
 /* Post visibility icons */
 .app-body .icon-globe {
@@ -1354,83 +1428,6 @@ body.app-body  {
 .app-body .icon-edit {
     background-image: var(--icon-edited-accent);
 }
-
-@media screen and (min-width:1173px) {
-    .app-body .navigation-panel .column-link .icon-home {
-        background-image: var(--icon-home-accent);
-    }
-    .app-body .navigation-panel .column-link.active .icon-home {
-        background-image: var(--icon-home-accent-active);
-    }
-    .app-body .navigation-panel .column-link .icon-bell {
-        background-image: var(--icon-bell-accent);
-    }
-    .app-body .navigation-panel .column-link.active .icon-bell {
-        background-image: var(--icon-bell-accent-active);
-    }
-    .app-body .navigation-panel .column-link .icon-explore {
-        background-image: var(--icon-explore-accent);
-    }
-    .app-body .navigation-panel .column-link.active .icon-explore {
-        background-image: var(--icon-explore-accent-active);
-    }
-    .app-body .navigation-panel .column-link .icon-search {
-        background-image: var(--icon-search-column-link-accent);
-    }
-    .app-body .navigation-panel .column-link.active .icon-search {
-        background-image: var(--icon-search-column-link-accent-active);
-    }
-    .app-body .navigation-panel .column-link .icon-globe {
-        background-image: var(--icon-globe-accent);
-    }
-    .app-body .navigation-panel .column-link.active .icon-globe {
-        background-image: var(--icon-globe-accent-active);
-    }
-    .app-body .navigation-panel .column-link .icon-at {
-        background-image: var(--icon-direct-messages-accent);
-    }
-    .app-body .navigation-panel .column-link.active .icon-at {
-        background-image: var(--icon-direct-messages-accent-active);
-    }
-    .app-body .navigation-panel .column-link .icon-bookmarks {
-        background-image: var(--icon-bookmark-column-link-accent);
-    }
-    .app-body .navigation-panel .column-link.active .icon-bookmarks {
-        background-image: var(--icon-bookmark-column-link-accent-active);
-    }
-    .app-body .navigation-panel .column-link .icon-star {
-        background-image: var(--icon-star-column-link-accent);
-    }
-    .app-body .navigation-panel .column-link.active .icon-star {
-        background-image: var(--icon-star-column-link-accent-active);
-    }
-    .app-body .navigation-panel .column-link .icon-list-ul {
-        background-image: var(--icon-list-accent);
-    }
-    .app-body .navigation-panel .column-link.active .icon-list-ul,
-    .app-body .navigation-panel .column-link:has(+ .list-panel > .column-link.active) .icon-list-ul {
-        background-image: var(--icon-list-accent-active);
-    }
-    .app-body .navigation-panel .column-link .icon-cog {
-        background-image: var(--icon-settings-accent);
-    }
-    .app-body .navigation-panel .column-link .icon-user-plus {
-        background-image: var(--icon-user-plus-column-link-accent);
-    }
-    .app-body .navigation-panel .column-link.active .icon-user-plus {
-        background-image: var(--icon-user-plus-column-link-accent-active);
-    }
-    .app-body .icon-flag {
-        background-image: var(--icon-moderation-accent);
-    }
-    .app-body .icon-tachometer {
-        background-image: var(--icon-administration-accent);
-    }
-    .app-body .column-link .icon.icon- {
-        background-image: var(--icon-ellipsis-accent);
-    }
-}
-
 
 
 /* Links */
