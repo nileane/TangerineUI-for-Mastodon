@@ -3527,7 +3527,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 /* ⏺️ Column headers
    ----------------- */
 .app-body .tabs-bar__wrapper {
-    background-color: var(--color-content-bg);
+    background-color: transparent;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
 }
 @media screen and (min-width:1186px) {
     .app-body .tabs-bar__wrapper {
@@ -3618,12 +3620,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     .app-body .column-header__buttons {
         height: 55px;
-    }
-    .app-body:not(.layout-multiple-columns) .column-header,
-    .app-body:not(.layout-multiple-columns) .column-back-button {
-        background-color: transparent;
-        -webkit-backdrop-filter: none;
-        backdrop-filter: none;
     }
     .app-body:not(.layout-multiple-columns) .column-header__button,
     .app-body:not(.layout-multiple-columns) .column-header__button:is(.active, .active:hover, :hover) {
@@ -3790,10 +3786,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
             .column-header__button,
             .column-header__back-button
         ) {
-            background-color: transparent;
             height: 55px;
             border: 0;
-            margin: 0;
     }
     .app-body:not(.layout-multiple-columns) .column-header__collapsible:not(.collapsed) {
         border-bottom: 1px solid var(--color-lines);
