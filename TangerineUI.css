@@ -1504,7 +1504,7 @@ html.has-modal, html.has-modal body {
 .app-body .compose-form {
     gap: 0;
 }
-.app-body .navigation-bar {
+.app-body .compose-form .navigation-bar {
     border-radius: 8px 8px 0 0;
     padding: 23px 15px 15px 18px;
     position: relative;
@@ -1530,7 +1530,7 @@ html.has-modal, html.has-modal body {
 .app-body .navigation-bar .account__display-name {
     line-height: 1.25;
 }
-.app-body :is(.navigation-bar, .reply-indicator) .account__avatar {
+.app-body :is(.compose-form .navigation-bar, .reply-indicator) .account__avatar {
     outline: 6px solid var(--color-content-bg);
     border-radius: 8px;
     position: relative;
@@ -4179,6 +4179,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 @media screen and (max-width:889px) {
     .app-body .columns-area__panels__main {
         width: 100%;
+    }
+}
+
+.app-body .columns-area__panels__pane--overlay {
+    background: color-mix(in srgb, var(--color-bg), transparent 15%);
+}
+@media screen and (max-width: 759px) {
+    .app-body .columns-area__panels__pane--navigational .columns-area__panels__pane__inner {
+        background-color: color-mix(in srgb, var(--color-content-bg), transparent 45%);
+        backdrop-filter: blur(10px);
     }
 }
 
