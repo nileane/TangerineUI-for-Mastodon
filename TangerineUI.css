@@ -510,9 +510,6 @@ body.app-body  {
     scrollbar-color: var(--color-accent) var(--color-bg);
     scrollbar-width: thin;
 }
-html.has-modal, html.has-modal body {
-    scrollbar-gutter: unset;
-}
 
 
 .app-body {
@@ -1071,9 +1068,11 @@ html.has-modal, html.has-modal body {
 .app-body .ui__navigation-bar__item[href="/home"] .icon {
     background-image: var(--icon-home);
 }
-.app-body .navigation-panel .column-link.active .icon-home,
-.app-body .ui__navigation-bar__item[href="/home"].active .icon {
+.app-body .navigation-panel .column-link.active .icon-home {
     background-image: var(--icon-home-accent-active);
+}
+.app-body .ui__navigation-bar__item[href="/home"].active .icon {
+    background-image: var(--icon-home-active);
 }
 .app-body .column-link.active .icon-home {
     background-image: var(--icon-home-active);
@@ -1129,9 +1128,11 @@ html.has-modal, html.has-modal body {
 .app-body .ui__navigation-bar__item[href="/explore"] .icon {
     background-image: var(--icon-explore);    
 }
-.app-body .navigation-panel .column-link.active .icon-explore,
-.app-body .ui__navigation-bar__item[href="/explore"].active .icon {
+.app-body .navigation-panel .column-link.active .icon-explore {
     background-image: var(--icon-explore-accent-active);
+}
+.app-body .ui__navigation-bar__item[href="/explore"].active .icon {
+    background-image: var(--icon-explore-active);
 }
 /* Search icon */
 .app-body .icon-search {
@@ -1154,9 +1155,11 @@ html.has-modal, html.has-modal body {
 .app-body .ui__navigation-bar__item[href="/search"] .icon {
     background-image: var(--icon-search-column-link-accent);
 }
-.app-body .navigation-panel .column-link.active .icon-search,
-.app-body .ui__navigation-bar__item[href="/search"].active .icon {
+.app-body .navigation-panel .column-link.active .icon-search {
     background-image: var(--icon-search-column-link-accent-active);
+}
+.app-body .ui__navigation-bar__item[href="/search"].active .icon {
+    background-image: var(--icon-search-column-link-active);
 }
 .app-body .icon-times-circle {
     background-image: var(--icon-erase);
@@ -1178,6 +1181,9 @@ html.has-modal, html.has-modal body {
 .app-body .navigation-panel .column-link.active .icon-bell,
 .app-body .ui__navigation-bar__item[href="/notifications"].active .icon {
     background-image: var(--icon-bell-accent-active);
+}
+.app-body .ui__navigation-bar__item[href="/notifications"].active .icon {
+    background-image: var(--icon-bell-active);
 }
 /* Direct messages icon */
 .app-body .column-link .icon-at,
@@ -1277,7 +1283,7 @@ html.has-modal, html.has-modal body {
     background-image: var(--icon-list);
 }
 .app-body button.ui__navigation-bar__item.active .icon {
-    background-image: var(--icon-list-accent-active);
+    background-image: var(--icon-list-active);
 }
 
 /* Moderation icon */
@@ -1517,6 +1523,9 @@ html.has-modal, html.has-modal body {
    ---------------- */
 .app-body .compose-form {
     gap: 0;
+}
+.app-body .scrollable:has(> .compose-form) {
+    background-color: var(--color-bg);
 }
 .app-body .compose-form .navigation-bar {
     border-radius: 8px 8px 0 0;
@@ -4055,17 +4064,36 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
     width: 50px;
-    height: 50px;
+    height: 42px;
     box-sizing: border-box;
     background-image: var(--icon-compose);
-    background-position: center 9px;
-    margin: -8px auto;
+    background-position: center 6px;
+    margin: auto;
     background-repeat: no-repeat;
     background-size: 24px;
-    border-radius: 50%;
-    box-shadow:
-        0 1px 1px rgba(0, 0, 0, .2),
-        0 2px 10px rgba(0, 0, 0, .2);
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2), 0 2px 10px rgba(0,0,0,.2);
+}
+.app-body .ui__navigation-bar__item {
+    transition: all .2s;
+}
+.app-body .ui__navigation-bar__item:active {
+    transform: scale(.9);
+}
+.app-body .ui__navigation-bar__item[href="/publish"] {
+    order: 5;
+}
+.app-body .ui__navigation-bar__item[href="/home"] {
+    order: 1;
+}
+.app-body .ui__navigation-bar__item[href="/explore"] {
+    order: 3;
+}
+.app-body .ui__navigation-bar__item[href="/notifications"] {
+    order: 2;
+}
+.app-body button.ui__navigation-bar__item {
+    order: 4;
 }
 .app-body .button.navigation-panel__compose-button {
     min-height: 46px;
@@ -4086,12 +4114,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-size: 17px !important;
 }
 .app-body .ui__navigation-bar {
-    background-color: color-mix(in srgb, var(--color-content-secondary-bg), transparent 15%);
+    background-color: color-mix(in srgb, var(--color-content-bg), transparent 15%);
     backdrop-filter: blur(20px);
     border-color: var(--color-lines);
 }
 .app-body .ui__navigation-bar .icon {
-    transform: scale(1.24);
+    transform: scale(1.3);
 }
 
 .app-body .navigation-panel .navigation-bar {
