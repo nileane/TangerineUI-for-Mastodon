@@ -3027,6 +3027,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status-card[href*="/@" i] .status-card__description {
     margin-top: 2px;
     white-space: normal;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    display: -webkit-box;
 }
 .app-body .status-card[href*="/@" i] .status-card__image {
     order: 2;
