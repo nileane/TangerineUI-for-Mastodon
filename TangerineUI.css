@@ -5667,11 +5667,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .notification-group__main__header__label-separator {
     display: none;
 }
-.app-body .avatar-group {
+.app-body .notification-group .avatar-group {
     gap: 2px;
     --avatar-height: 40px !important;
 }
-.app-body .avatar-group .account__avatar {
+.app-body .notification-group .avatar-group .account__avatar {
     margin-inline-end: -4px;
     width: 40px !important;
     height: 40px !important;
