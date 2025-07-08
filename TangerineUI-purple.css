@@ -4679,6 +4679,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     content: "";
     background-image: linear-gradient(to left, color-mix(in srgb, var(--color-content-bg), transparent 30%), transparent);
 }
+.app-body .featured-carousel:has(.featured-carousel__slides > .featured-carousel__slide:only-child)::before {
+    display: none;
+}
 .app-body .featured-carousel::after {
     position: absolute;
     left: 0;
@@ -4695,6 +4698,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .featured-carousel__slide:not([inert]) {
     flex-basis: 75%;
+}
+.app-body .featured-carousel__slide:only-child {
+    flex-basis: 100%;
 }
 .app-body .featured-carousel__slide[inert] {
     transform: scale(0.9);
