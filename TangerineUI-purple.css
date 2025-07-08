@@ -464,19 +464,6 @@ body.app-body  {
     font-family: ui-rounded, "mastodon-font-sans-serif", sans-serif;
 }
 
-.layout-single-column .ui::before {
-    content: " ";
-    display: block;
-    height: 16px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
-    background-color: var(--color-bg);
-    background-image: var(--gradient-bg);
-}
-
 ::selection {
     color: var(--color-accent-fg);
     background-color: var(--color-accent);
@@ -4165,7 +4152,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     opacity: 0;
     visibility: hidden;
 }
-.app-body .column-header__title:has(> .logo)::before {
+@media screen and (max-width: 1174px) {
+    .app-body .column-header__title {
+        justify-content: center;
+    }
+    .app-body .column-header__title > :is(img, svg) {
+        display: none;
+    }
+    .app-body .column-header__title::before {
     content: " ";
     display: block;
     position: absolute;
@@ -4176,6 +4170,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-image: var(--logo);
     background-repeat: no-repeat;
     background-size: cover;
+    }
+    .app-body .column-header > button {
+        padding: 0 0 0 48px;
+    }
+    .app-body .column-header > button:not(:has(+ .column-header__buttons > button)) {
+        padding-inline-end: 48px;
+    }
 }
 .app-body .navigation-panel__logo {
     margin-bottom: 5px;
