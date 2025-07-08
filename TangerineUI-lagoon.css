@@ -3575,6 +3575,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .notification-ungrouped--direct:has(.status__wrapper.status__wrapper-direct .status__content:hover) .notification-ungrouped__header {
     --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 88%);
 }
+.app-body .status__wrapper-direct, 
+.app-body .notification-ungrouped--direct,
+.app-body .notification-group--direct,
+.app-body .notification-group--annual-report {
+    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 92%);
+    background-color: var(--color-post-bg);
+
+}
 
 .app-body :is(.status__wrapper-direct, .detailed-status__wrapper-direct) .status__prepend {
     background-color: var(--color-accent);
