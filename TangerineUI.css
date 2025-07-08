@@ -4081,6 +4081,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .ui__navigation-bar__item:active {
     transform: scale(.9);
 }
+.app-body .ui__navigation-bar__item.active {
+    animation: bounce-sml .3s;
+}
 .app-body .ui__navigation-bar__item[href="/publish"] {
     order: 5;
 }
