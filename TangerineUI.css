@@ -3213,6 +3213,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-size: 19px;
     line-height: 1.26;
 }
+.app-body .content-warning > p {
+    font-weight: bold;
+}
 .app-body .content-warning::before,
 .app-body .content-warning::after {
     display: none;
