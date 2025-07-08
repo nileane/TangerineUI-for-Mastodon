@@ -3299,7 +3299,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin-inline-start: 0;
     border-radius: 10px;
     border: 1px solid var(--color-lines);
+    transition: all .3s;
 }
+.app-body .status__quote:has(.status__content:hover) {
+    border-color: var(--color-accent);
+} 
+.app-body .status__quote:has(.status__content:active) {
+    transform: scale(.98);
+} 
 .app-body .status__quote-icon {
     color: var(--color-accent);
 }
@@ -3307,7 +3314,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: none;
 }
 .app-body .status__quote .status__wrapper {
-    border-radius: 8px;
+    border-radius: 10px;
     --color-post-bg: var(--color-content-secondary-bg);
 }
 .app-body .status--is-quote {
