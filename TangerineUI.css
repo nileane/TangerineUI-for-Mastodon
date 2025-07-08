@@ -52,10 +52,12 @@
     --color-reject: #df405a;
     --color-reject-bg: rgba(223, 64, 90, 0.3);
 
+}
+.app-body {
     --background-color: var(--color-bg);
     --background-border-color: var(--color-lines);
-    --modal-background-color: var(--color-content-bg)
-}
+    --modal-background-color: var(--color-content-bg);
+} 
 @media (prefers-color-scheme: dark) {
     :root {
         --color-bg: #111111;
@@ -3029,6 +3031,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     white-space: normal;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 6;
+    line-clamp: 6;
     display: -webkit-box;
 }
 .app-body .status-card[href*="/@" i] .status-card__image {
@@ -4207,7 +4210,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .navigation-panel hr {
     margin-right: 25px;
     margin-left: 10px;
-    margin-bottom: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-color: var(--color-lines);
 }
 .app-body .column-link span {
@@ -5035,6 +5039,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin-bottom: 10px;
     transition: transform .3s;
 }
+.app-body:not(.layout-multiple-columns) .navigation-panel .search {
+    margin-bottom: 10px;
+}
 .app-body .search:has(.search__icon:active) {
     transform: scale(.95);
 }
@@ -5221,12 +5228,15 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         padding-top: 2px;
     }
     .app-body:not(.layout-multiple-columns) .explore__search-header {
-        padding: 10px 0;
+        padding: 10px;
+        background-color: var(--color-content-secondary-bg);
+        border-left: 1px solid var(--color-lines);
     }
 }
 @media screen and (max-width:770px) {
     .app-body:not(.layout-multiple-columns) .explore__search-header {
         padding: 10px;
+        border-left: 0;
     }
 }
 
@@ -6414,6 +6424,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .safety-action-modal__header__icon {
     background-color: var(--color-accent);
+    transform: scale(1.1);
+}
+.app-body .safety-action-modal__header__icon .icon {
+    filter: brightness(1000%) saturate(0) contrast(1000%);
 }
 .app-body .safety-action-modal__header,
 .app-body .safety-action-modal__header h1,
@@ -6428,8 +6442,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-size: 150%;
     padding-top: 20px;
 }
+.app-body .safety-action-modal__status {
+    border-color: var(--color-lines);
+}
 .app-body .safety-action-modal__header h1 + div {
-    opacity: .6;
+    color: var(--color-fg-muted);
 }
 .app-body .safety-action-modal__top {
     background-color: transparent;
@@ -6919,6 +6936,15 @@ a:is(.active,
 .app-body .sign-in-banner p:first-child {
     margin-bottom: 5px;
 }
+.app-body .sign-in-banner .button {
+    padding: 10px 18px;
+}
+@media screen and (max-width:1175px) {
+    .app-body .sign-in-banner {
+        padding: 0;
+        margin: 15px;
+    }
+}
 
 
 
@@ -7196,6 +7222,11 @@ a:is(.active,
         border-right: 0;
     }
 }
+@media screen and (max-width:1175px) {
+    .app-body .scrollable.about {
+        border-top: 0;
+    }
+}
 .app-body .about__header {
     order: 1;
     margin-bottom: 10px;
@@ -7218,7 +7249,7 @@ a:is(.active,
 .app-body .about__footer {
     order: 7;
 }
-.app-body #mastodon > div > div > div.columns-area__panels > div.columns-area__panels__main > div.columns-area.columns-area--mobile > div > div > div.about__section.active:nth-of-type(3) > div.about__section__title {
+.app-body .scrollable.about .about__meta + .about__section > .about__section__title {
     display: none;
 }
 .app-body .about__header p,
@@ -7250,17 +7281,12 @@ a:is(.active,
     margin-bottom: 15px;
     font-size: 14px;
 }
-@media screen and (min-width:890px) {
+@media screen and (min-width:1175px) {
     .app-body .scrollable.about {
         border-radius: 8px 8px 0 0 !important;
     }
     .app-body .about__header__hero {
         border-radius: 6px 6px 0 0;
-    }
-}
-@media screen and (min-width:890px) and (max-width:1175px) {
-    .app-body .scrollable.about {
-        margin-top: 10px;
     }
 }
 .app-body .about__mail {
