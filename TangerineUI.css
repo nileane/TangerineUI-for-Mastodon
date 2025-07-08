@@ -5620,15 +5620,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: none;
 }
 .app-body .notification-group__main__status {
-    border: 0;
+    border: 1px solid var(--color-content-secondary-bg);
     background-color: var(--color-content-secondary-bg);
     padding: 10px 12px 12px;
     transition:
+        border-color .3s,
         background .3s,
         transform .3s;
 }
 .app-body .notification-group__main__status:hover {
-    background-color: color-mix(in srgb, var(--color-accent), transparent 88%);
+    border-color: var(--color-accent);
 }
 .app-body .notification-group__main__status:active {
     transform: scale(.98);
@@ -5676,7 +5677,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     height: 40px !important;
     outline: 2px solid var(--color-content-bg);
 }
-
 
 /* 📋 Lists tab */
 .app-body .column-inline-form {
