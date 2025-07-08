@@ -3784,7 +3784,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body :is(.column-header__back-button, .column-back-button):hover span::before,
 .app-body .column-header__back-button:has(> svg:last-child):hover::before {
-    background-color: var(--color-accent-bg);
+    background-color: color-mix(in srgb, var(--color-accent), transparent 82%);
 }
 .app-body :is(.column-header__back-button, .column-back-button):active span::before,
 .app-body .column-header__back-button:has(> svg:last-child):active::before {
@@ -3859,7 +3859,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .column-header > button {
     padding: 0 0 0 15px;
-    gap: 13px;
+    gap: 15px;
 }
 .app-body .column-header > button:nth-child(2) {
     padding-left: 0;
@@ -4158,14 +4158,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     opacity: 0;
     visibility: hidden;
 }
-@media screen and (max-width: 1174px) {
-    .app-body .column-header__title {
-        justify-content: center;
-    }
-    .app-body .column-header__title > :is(img, svg) {
-        display: none;
-    }
-    .app-body .column-header__title::before {
+.app-body .column-header__title:has(> .logo)::before {
     content: " ";
     display: block;
     position: absolute;
@@ -4176,13 +4169,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-image: var(--logo);
     background-repeat: no-repeat;
     background-size: cover;
-    }
-    .app-body .column-header > button {
-        padding: 0 0 0 48px;
-    }
-    .app-body .column-header > button:not(:has(+ .column-header__buttons > button)) {
-        padding-inline-end: 48px;
-    }
 }
 .app-body .navigation-panel__logo {
     margin-bottom: 5px;
