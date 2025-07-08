@@ -3784,7 +3784,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body :is(.column-header__back-button, .column-back-button):hover span::before,
 .app-body .column-header__back-button:has(> svg:last-child):hover::before {
-    background-color: var(--color-accent-bg);
+    background-color: color-mix(in srgb, var(--color-accent), transparent 82%);
 }
 .app-body :is(.column-header__back-button, .column-back-button):active span::before,
 .app-body .column-header__back-button:has(> svg:last-child):active::before {
@@ -3859,7 +3859,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .column-header > button {
     padding: 0 0 0 15px;
-    gap: 13px;
+    gap: 15px;
 }
 .app-body .column-header > button:nth-child(2) {
     padding-left: 0;
@@ -4065,17 +4065,20 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     height: 50px;
     box-sizing: border-box;
     background-image: var(--icon-compose);
-    background-position: center 10px;
+    background-position: center;
     margin: auto;
     background-repeat: no-repeat;
     background-size: 24px;
     position: fixed;
     border-radius: 50px;
     box-shadow: 0 1px 1px rgba(0,0,0,.2),0 2px 10px rgba(0,0,0,.2);
-    bottom: calc(60px + env(safe-area-inset-bottom));
+    bottom: calc(65px + env(safe-area-inset-bottom));
     right: 10px;
 }
 .app-body .ui__navigation-bar__item {
+    border-top: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
     transition: all .2s;
 }
 .app-body .ui__navigation-bar__item:active {
@@ -4155,14 +4158,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     opacity: 0;
     visibility: hidden;
 }
-@media screen and (max-width: 1174px) {
-    .app-body .column-header__title {
-        justify-content: center;
-    }
-    .app-body .column-header__title > :is(img, svg) {
-        display: none;
-    }
-    .app-body .column-header__title::before {
+.app-body .column-header__title:has(> .logo)::before {
     content: " ";
     display: block;
     position: absolute;
@@ -4173,13 +4169,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-image: var(--logo);
     background-repeat: no-repeat;
     background-size: cover;
-    }
-    .app-body .column-header > button {
-        padding: 0 0 0 48px;
-    }
-    .app-body .column-header > button:not(:has(+ .column-header__buttons > button)) {
-        padding-inline-end: 48px;
-    }
 }
 .app-body .navigation-panel__logo {
     margin-bottom: 5px;
