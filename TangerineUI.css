@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.4~";
+    --version: "v2.4";
 
     --variant-name: "Tangerine";
     --variant-emoji: "\1F34A\00A0";
@@ -7715,6 +7715,7 @@ a:is(.active,
    --------------------- */
 .app-body .trends__item {
     gap: 15px;
+    border-color: var(--color-content-secondary-bg);
 }
 .app-body
 .trends__item:has(
