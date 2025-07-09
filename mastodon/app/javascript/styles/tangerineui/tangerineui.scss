@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.4";
+    --version: "v2.4.1";
 
     --variant-name: "Tangerine";
     --variant-emoji: "\1F34A\00A0";
@@ -3203,6 +3203,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .content-warning > p {
     font-weight: bold;
 }
+.app-body .content-warning--filter .filter-name {
+    color: var(--color-content-fg);
+    font-weight: bold;
+}
 .app-body .content-warning::before,
 .app-body .content-warning::after {
     display: none;
@@ -4724,6 +4728,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     .app-body .featured-carousel::before {
         display: none;
     }
+}
+.layout-multiple-columns .featured-carousel__header {
+    margin-right: 17px;
+}
+.layout-multiple-columns .featured-carousel__title {
+    margin-left: 17px;
+}
+.layout-multiple-columns .featured-carousel__slide:not([inert]) {
+    flex-basis: 100%;
+}
+.layout-multiple-columns .featured-carousel::before {
+    display: none;
 }
 
 
