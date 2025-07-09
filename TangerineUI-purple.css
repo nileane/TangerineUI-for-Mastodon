@@ -4725,6 +4725,18 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: none;
     }
 }
+.layout-multiple-columns .featured-carousel__header {
+    margin-right: 17px;
+}
+.layout-multiple-columns .featured-carousel__title {
+    margin-left: 17px;
+}
+.layout-multiple-columns .featured-carousel__slide:not([inert]) {
+    flex-basis: 100%;
+}
+.layout-multiple-columns .featured-carousel::before {
+    display: none;
+}
 
 
 /* ✨ Explore tab
