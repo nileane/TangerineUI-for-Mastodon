@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.4";
+    --version: "v2.4.1";
 
     --variant-name: "Purple";
     --variant-emoji: "\1FABB\00A0";
@@ -3201,6 +3201,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     line-height: 1.26;
 }
 .app-body .content-warning > p {
+    font-weight: bold;
+}
+.app-body .content-warning--filter .filter-name {
+    color: var(--color-content-fg);
     font-weight: bold;
 }
 .app-body .content-warning::before,
