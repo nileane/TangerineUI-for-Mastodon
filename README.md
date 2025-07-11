@@ -116,6 +116,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [mastodon.com.pl](https://mastodon.com.pl)                 | 100+           | an optional theme   | No                      |
 | [town.voyager.blue](https://town.voyager.blue)             | 100+           | an optional theme   | Yes (Custom variant)    |
 | [pipou.academy](https://pipou.academy)                     | 80+            | an optional theme   | No                      |
+| [duk.space](https://duk.space)                             | 80+            | an optional theme   | No                      |
 | [pointless.chat](https://pointless.chat)                   | 70+            | an optional theme   | Yes (Tangerine variant) |
 | [toki.social](https://toki.social)                         | 70+            | an optional theme   | No                      |
 | [bolha.one](https://bolha.one)                             | 60+            | an optional theme   | Yes (Tangerine variant) |
