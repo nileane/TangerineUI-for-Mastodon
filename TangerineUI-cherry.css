@@ -4376,26 +4376,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-style: italic;
     margin: 0;
     width: 100%;
-    outline: 1px solid transparent;
+    outline: 1px solid var(--color-lines);
     outline-offset: -1px;
+    box-shadow: 2px 3px var(--color-content-secondary-bg);
     transition: all .2s;
-}
-.app-body .account__header__account-note textarea:placeholder-shown {
-    padding-left: 0;
-    padding-right: 0;
 }
 .app-body .account__header__account-note textarea:focus {
     background-color: var(--color-accent-bg);
+    outline-color: var(--color-accent);
     padding-left: 10px;
     padding-right: 10px;
-}
-.app-body .account__header__account-note textarea:not(:placeholder-shown):not(:focus) {
-    outline-color: var(--color-lines);
-    box-shadow: 2px 3px var(--color-content-secondary-bg);
-}
-.app-body .account__header__account-note textarea:not(:placeholder-shown):focus {
-    outline-color: var(--color-accent);
-    box-shadow: 2px 3px var(--color-accent-bg);
 }
 .app-body .account__header__badges .account-role {
     color: var(--color-content-fg);
