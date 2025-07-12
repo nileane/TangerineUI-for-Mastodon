@@ -4215,7 +4215,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
     .app-body .column-link--transparent span::before {
         content: " ";
-        left: -52px;
+        left: -50px;
         background-color: transparent;
         transition: .3s background-color;
         top: -14px;
