@@ -6463,11 +6463,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: 0;
     outline: 1px solid var(--color-lines-translucent);
 }
-@media screen and (max-width:1175px) {
-    .app-body .modal-root__modal:not(.media-modal) {
-        margin-top: unset;
-    }
-}
 .app-body .compare-history-modal {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
@@ -6545,6 +6540,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .actions-modal {
     background-color: var(--color-content-bg);
+}
+.app-body .actions-modal :is(a, button) {
+    color: var(--color-content-fg);
+}
+.app-body .actions-modal a:is(:hover, :active, :focus),
+.app-body .actions-modal button:is(:hover, button:active, button:focus) {
+    background-color: var(--color-accent);
+    color: var(--color-accent-fg);
 }
 .app-body .interaction-modal {
     background-color: var(--color-content-bg);
