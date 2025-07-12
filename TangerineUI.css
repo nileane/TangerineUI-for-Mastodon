@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.4.1";
+    --version: "v2.4.2";
 
     --variant-name: "Tangerine";
     --variant-emoji: "\1F34A\00A0";
@@ -1237,18 +1237,20 @@ body.app-body  {
 .layout-multiple-columns .column-link .icon-list-ul {
     background-image: var(--icon-list-accent);
 }
-.app-body .navigation-panel .list-panel .column-link .icon-list-ul {
+.app-body .navigation-panel__list-panel__items .icon {
+    display: block;
+}
+.app-body .navigation-panel .navigation-panel__list-panel__items .column-link .icon {
     background-image: var(--icon-dot-accent);
     transform: scale(1.8);
 }
-.app-body .navigation-panel .list-panel .column-link.active .icon-list-ul {
+.app-body .navigation-panel .navigation-panel__list-panel__items .column-link.active .icon {
     background-image: var(--icon-dot-accent-active);
 }
 .app-body .navigation-panel .column-link .icon-list-ul {
     background-image: var(--icon-list-accent);
 }
-.app-body .navigation-panel .column-link.active .icon-list-ul,
-.app-body .navigation-panel .column-link:has(+ .list-panel > .column-link.active) .icon-list-ul {
+.app-body .navigation-panel .column-link.active .icon-list-ul {
     background-image: var(--icon-list-accent-active);
 }
 /* Settings icon */
@@ -4057,6 +4059,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .navigation-panel__list-panel__header .icon-button {
     padding: 8px;
+}
+.app-body .navigation-panel__list-panel__items {
+    padding-inline-start: 0;
 }
 .app-body .ui__header__logo .logo--icon,
 .navigation-panel__list-panel__header__sep {
