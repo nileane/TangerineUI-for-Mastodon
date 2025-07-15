@@ -101,6 +101,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [norden.social](https://norden.social)                     | 3K+            | an optional theme   | No                      |
 | [wxw.moe](https://wxw.moe)                                 | 3K+            | an optional theme   | No                      |
 | [c.im](https://c.im)                                       | 2K+            | an optional theme   | No                      |
+| [ani.work](https://ani.work)                               | 2K+            | an optional theme   | Yes (Cherry variant)    |
 | [masto.es](https://masto.es)                               | 1.5K+          | an optional theme   | No                      |
 | [eldritch.cafe](https://eldritch.cafe)                     | 1K+            | an optional theme   | No                      |
 | [framapiaf.org](https://framapiaf.org)                     | 1K+            | an optional theme   | No                      |
