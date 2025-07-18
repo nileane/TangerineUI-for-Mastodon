@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.4.2";
+    --version: "v2.4.3";
 
     --variant-name: "Tangerine";
     --variant-emoji: "\1F34A\00A0";
@@ -7232,12 +7232,8 @@ a:is(.active,
 }
 @media screen and (max-width:1175px) {
     .app-body .announcements {
-        box-shadow: none;
-        margin-top: 1px;
         border-left: 0;
         border-right: 0;
-        margin-inline-start: -45px;
-        margin-inline-end: -55px;
     }
     .app-body .announcements__mastodon {
         border-radius: 0;
