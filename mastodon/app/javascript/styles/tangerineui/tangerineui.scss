@@ -1651,6 +1651,10 @@ body.app-body  {
 .app-body .column-settings .dropdown-button {
     background-color: var(--color-accent-bg);
 }
+.app-body .dropdown-button.warning:not(.active) {
+    border-color: var(--color-reject);
+    color: var(--color-reject)
+}
 .app-body .reply-indicator {
     border-left: 1px solid var(--color-lines);
     border-right: 1px solid var(--color-lines);
