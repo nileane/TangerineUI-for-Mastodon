@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.4.4";
+    --version: "v2.4.5~";
 
     --variant-name: "Lagoon";
     --variant-emoji: "\1F420\00A0";
@@ -2372,6 +2372,10 @@ body.app-body  {
     background-color: var(--color-post-bg);
     padding: 13px 12px;
     position: relative;
+}
+.app-body .notification-ungrouped .status__wrapper {
+    padding-left: 23px;
+    padding-right: 23px;
 }
 @media screen and (max-width:770px) {
     .app-body .status__wrapper:not(:has(.status--is-quote)) {
