@@ -1954,6 +1954,7 @@ body.app-body  {
     background-position: 8px center;
     background-size: 15px;
     background-repeat: no-repeat;
+    background-color: var(--color-content-bg);
     color: var(--color-accent);
     padding: 4px 8px 4px 27px;
     border-radius: 8px;
