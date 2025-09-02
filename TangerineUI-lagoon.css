@@ -2373,6 +2373,10 @@ body.app-body  {
     padding: 13px 12px;
     position: relative;
 }
+.app-body .notification-ungrouped .status__wrapper {
+    padding-left: 23px;
+    padding-right: 23px;
+}
 @media screen and (max-width:770px) {
     .app-body .status__wrapper:not(:has(.status--is-quote)) {
         padding: 10px 8px;
