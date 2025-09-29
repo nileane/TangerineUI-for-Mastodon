@@ -3661,6 +3661,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         box-shadow: inset 0 10px var(--color-bg), 0 -10px var(--color-bg);
         border-radius: 8px 8px 0 0;
     }
+    .app-body .tabs-bar__wrapper:has(#tabs-bar__portal:empty) {
+       border-radius: 0;
+    }
 }
 .app-body .column-header__wrapper.active:before {
     top: -17px;
