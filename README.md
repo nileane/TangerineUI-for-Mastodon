@@ -108,6 +108,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [social.lol](https://social.lol)                           | 850+           | an optional theme   | Yes (Tangerine variant) |
 | [tool.wales](https://toot.wales)                           | 650+           | an optional theme   | Yes (Tangerine variant) |
 | [shelter.moe](https://shelter.moe)                         | 300+           | an optional theme   | Yes (Tangerine variant) |
+| [thecanadian.social](https://thecanadian.social)           | 250+           | an optional theme   | No                      |
 | [vmst.io](https://vmst.io)                                 | 250+           | an optional theme   | No                      |
 | [mountains.social](https://mountains.social)               | 150+           | an optional theme   | No                      |
 | [tooter.social](https://tooter.social)                     | 150+           | an optional theme   | No                      |

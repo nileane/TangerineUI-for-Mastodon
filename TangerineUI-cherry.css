@@ -1791,6 +1791,9 @@ body.app-body  {
 .app-body .display-name {
     color: var(--color-content-fg);
 }
+.app-body .compose-form__uploads {
+    margin-bottom: 12px;
+}
 .app-body .compose-form__upload .icon-button.compose-form__upload__delete .icon {
     width: 15px;
     height: 15px;
@@ -1907,6 +1910,9 @@ body.app-body  {
 .app-body .upload-progress .icon {
     color: var(--color-accent)
 }
+.app-body .upload-progress__message {
+    margin-bottom: 20px;
+}
 .app-body .upload-progress__message,
 .app-body .upload-progress__message span {
     color: var(--color-content-fg);
@@ -1946,7 +1952,7 @@ body.app-body  {
     margin-top: 5px;
     padding-inline-start: 12px;
     gap: 6px;
-    margin-bottom: -10px;
+    margin-bottom: 12px;
 }
 .app-body .compose-form__poll__select__label {
     display: none;
@@ -2360,7 +2366,7 @@ body.app-body  {
 .app-body .status__prepend a bdi {
     font-weight: bold;
 }
-.app-body .status {
+.app-body .status:not(.compose-form .status) {
     margin-left: 56px;
     padding: 0 10px;
     border-bottom: 0;
@@ -2400,7 +2406,7 @@ body.app-body  {
 .app-body .dismissable-banner + .scrollable > div > article:first-child > div > .status__wrapper {
     border-top: 0;
 }
-.app-body .status__info {
+.app-body .status__info:not(.compose-form .status__info) {
     height: 22px;
     width: calc(100% + 56px);
     gap: 2px;
@@ -2410,20 +2416,20 @@ body.app-body  {
     line-height: 0.625;
     align-items: start;
 }
-.app-body .status__info .status__display-name {
+.app-body .status__info:not(.compose-form .status__info) .status__display-name {
     overflow: visible;
     align-items: start;
     max-height: 22px;
 }
-.app-body .status__info .status__display-name .display-name bdi,
-.app-body .status__info .status__display-name .display-name__account {
+.app-body .status__info:not(.compose-form .status__info) .status__display-name .display-name bdi,
+.app-body .status__info:not(.compose-form .status__info) .status__display-name .display-name__account {
     vertical-align: top;
 }
-.app-body .status__info .status__display-name .display-name__account {
+.app-body .status__info:not(.compose-form .status__info) .status__display-name .display-name__account {
     display: inline;
     opacity: .6;
 }
-.app-body .status__relative-time {
+.app-body .status__relative-time:not(.compose-form .status__relative-time) {
     height: 22px;
     color: var(--color-content-fg);
     display: flex;
@@ -2475,7 +2481,7 @@ body.app-body  {
 .app-body .status__relative-time time + abbr {
     order: 2;
 }
-.app-body .status__avatar {
+.app-body .status__avatar:not(.compose-form .status__avatar) {
     margin-bottom: -10px;
     z-index: 2;
     border-radius: 50%;
@@ -3319,7 +3325,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 /* Quote posts */
-.app-body .status__quote {
+.app-body .status__quote:not(.compose-form .status__quote) {
     margin-inline-start: 0;
     border-radius: 10px;
     border: 1px solid var(--color-lines);
@@ -3341,23 +3347,23 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-radius: 10px;
     --color-post-bg: var(--color-content-secondary-bg);
 }
-.app-body .status--is-quote {
+.app-body .status--is-quote:not(.compose-form .status--is-quote) {
     margin-inline-start: 0;
     padding: 0;
     overflow: hidden;
 }
-.app-body .status--is-quote .status__info {
+.app-body .status--is-quote:not(.compose-form .status--is-quote) .status__info {
     margin-inline-start: 0;
     margin-block-end: 5px;
 }
-.app-body .status--is-quote .status__info .status__display-name {
+.app-body .status--is-quote:not(.compose-form .status--is-quote) .status__info .status__display-name {
     gap: 6px;
 }
 .app-body .status--is-quote .account__avatar {
     width: 22px !important;
     height: 22px !important;
 }
-.app-body .status--is-quote .status__relative-time {
+.app-body .status--is-quote:not(.compose-form .status--is-quote) .status__relative-time {
     inset-inline-end: 10px;
 }
 
@@ -5649,7 +5655,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     }
 }
 .app-body .notification-group {
-    padding: 16px 23px;
+    padding: 16px 12px 16px 23px;
+    gap: 0;
 }
 .app-body .notification-group,
 .app-body .notification-ungrouped {
@@ -5723,6 +5730,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .notification-group__main {
     overflow: unset;
+    padding: 0 10px;
+}
+@media screen and (max-width:770px) {
+    .app-body .notification-group__main {
+        overflow: unset;
+        padding: 0;
+    }
 }
 .app-body .notification-group__main__status {
     border: 1px solid var(--color-content-secondary-bg);
@@ -7483,6 +7497,15 @@ a:is(.active,
 .app-body .rules-list li:last-child {
     border-bottom: 0;
 }
+.app-body .about__section__body .rules-languages label {
+    color: var(--color-content-fg);
+}
+.app-body .about__section__body .rules-languages > select {
+    background: var(--color-accent-bg);
+    color: var(--color-content-fg);
+    border-color: var(--color-accent-lines);
+}
+
 .about__domain-blocks {
     background-color: var(--color-content-bg);
     border: 0;
@@ -8151,4 +8174,88 @@ a:is(.active,
 )::before {
     background-image: var(--icon-olympics);
     transform: scale(1.85);
+}
+
+/* Mastodon 4.5.0 fixes */
+.app-body .status--has-quote .status__content {
+  display: block;
+}
+.app-body .status__quote-author-button {
+  background: var(--color-accent-bg);
+  color: var(--color-accent);
+}
+.app-body .notification-ungrouped--quote .status--is-quote .status__avatar,
+.app-body .notification-ungrouped--quote .status--is-quote .account__avatar {
+  width: 16px !important;
+  height: 16px !important;
+}
+.app-body .notification-bar__action {
+  color: var(--color-accent);
+}
+.app-body .notification-bar__action:hover,
+.app-body .notification-bar__action:focus,
+.app-body .notification-bar__action:active
+{
+  background: var(--color-accent-bg);
+}
+.app-body .dialog-modal__header {
+  border-bottom-color: var(--color-lines);
+}
+.app-body .dialog-modal__content__description {
+  color: var(--color-content-fg);
+}
+.app-body .visibility-dropdown__button {
+  background: var(--color-accent-bg);
+  color: var(--color-content-fg);
+  border-color: var(--color-accent-lines);
+}
+.app-body .privacy-dropdown__dropdown,
+.app-body .language-dropdown__dropdown,
+.app-body .visibility-dropdown__dropdown {
+  background: var(--color-content-secondary-bg);
+  border-color: var(--color-content-secondary-separator);
+}
+.app-body .privacy-dropdown__option__content strong,
+.app-body .visibility-dropdown__option__content strong {
+  color: var(--color-content-fg-bold);
+}
+.app-body .privacy-dropdown__option__content,
+.app-body .visibility-dropdown__option__content {
+  color: var(--color-content-fg);
+}
+.app-body .privacy-dropdown__option:focus,
+.app-body .privacy-dropdown__option.active,
+.app-body .visibility-dropdown__option:focus,
+.app-body .visibility-dropdown__option.active {
+  background: var(--color-accent);
+  color: var(--color-accent-fg);
+}
+.app-body .privacy-dropdown__option:hover,
+.app-body .privacy-dropdown__option:active,
+.app-body .visibility-dropdown__option:hover,
+.app-body .visibility-dropdown__option:active {
+  background: var(--color-accent-focus);
+}
+.app-body .visibility-dropdown__option:is(:active, .active) .icon-globe {
+  background-image: var(--icon-globe-visibility-inv);
+}
+.app-body .visibility-dropdown__option:is(:active, .active) .icon-unlock {
+  background-image: var(--icon-unlock-inv);
+}
+.app-body .visibility-dropdown__option:is(:active, .active) .icon-lock {
+  background-image: var(--icon-lock-inv);
+}
+.app-body .visibility-dropdown__option:is(:active, .active) .icon-at {
+  background-image: var(--icon-at-inv);
+}
+.app-body .compose-form .status__quote {
+  margin-bottom: 8px;
+  border-color: var(--color-accent-lines);
+}
+.app-body .compose-form .status__wrapper {
+  padding: 0;
+}
+.app-body .notification-ungrouped .status:not(.status--is-quote) {
+  border: 0;
+  padding: 0;
 }
