@@ -765,7 +765,7 @@ body.app-body  {
     width: 18px;
     height: 18px;
 }
-.app-body .account__header__tabs__buttons .icon-button .icon {
+.app-body .account__header__buttons .icon-button .icon {
     height: 24px;
     width: 24px;
 }
@@ -838,9 +838,9 @@ body.app-body  {
         .account__relationship .icon-check,
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
-        .account__header__tabs__buttons .icon-close,
+        .account__header__buttons .icon-close,
         .icon-sign-out,
-        .account__header__tabs__buttons .icon.icon-,
+        .account__header__buttons .icon.icon-,
         .icon-eye-slash,
         .icon-eye,
         .icon-eraser,
@@ -919,9 +919,9 @@ body.app-body  {
         .account__relationship .icon-check,
         .status__action-bar .icon-close,
         .detailed-status__action-bar .icon-close,
-        .account__header__tabs__buttons .icon-close,
+        .account__header__buttons .icon-close,
         .icon-sign-out,
-        .account__header__tabs__buttons .icon.icon-,
+        .account__header__buttons .icon.icon-,
         .icon-eye-slash,
         .icon-eye,
         .icon-eraser,
@@ -1035,7 +1035,7 @@ body.app-body  {
 .app-body .detailed-status__action-bar .icon-ellipsis-h {
     background-image: var(--icon-ellipsis-accent);
 }
-.app-body :is(.status__action-bar, .detailed-status__action-bar, .account__header__tabs__buttons) .icon-close {
+.app-body :is(.status__action-bar, .detailed-status__action-bar, .account__header__buttons) .icon-close {
     background-image: var(--icon-ellipsis-active);
 }
 .app-body .column-link .icon.icon- {
@@ -1456,13 +1456,13 @@ body.app-body  {
 .app-body .follow-request-banner .button .icon-times {
     background-image: var(--icon-reject);
 }
-.app-body .account__header__tabs__buttons .icon.icon- {
+.app-body .account__header__buttons .icon.icon- {
     background-image: var(--icon-share);
 }
-.app-body .account__header__tabs__buttons .copyable .icon-undefined {
+.app-body .account__header__buttons .copyable .icon-undefined {
     background-image: var(--icon-copy);
 }
-.app-body .account__header__tabs__buttons .copied .icon-undefined {
+.app-body .account__header__buttons .copied .icon-undefined {
     background-image: var(--icon-copied);
 }
 .app-body .icon-eye-slash {
@@ -4374,14 +4374,14 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-bottom: 0;
     margin: 0;
 }
-.app-body .account__header__tabs__buttons .button {
+.app-body .account__header__buttons .button {
     padding: 7px 18px;
 }
-.app-body .account__header__tabs__buttons .button[href="/settings/profile"] {
+.app-body .account__header__buttons .button[href="/settings/profile"] {
     background-color: var(--color-accent);
     color: var(--color-accent-fg)
 }
-.app-body .account__header__tabs__buttons .button[href="/settings/profile"]:is(:hover, :active) {
+.app-body .account__header__buttons .button[href="/settings/profile"]:is(:hover, :active) {
     background-color: var(--color-accent-focus);
 }
 .app-body .account__header__image img {
@@ -4561,8 +4561,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-bottom: 0;
 }
 
-.app-body .account__header__tabs__buttons .icon-button.copied,
-.app-body .account__header__tabs__buttons .icon-button.copied:is(:active, :focus, :hover) {
+.app-body .account__header__buttons .icon-button.copied,
+.app-body .account__header__buttons .icon-button.copied:is(:active, :focus, :hover) {
     background-color: rgba(121, 189, 154, 0.3);
 }
 
@@ -4579,7 +4579,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-weight: bold;
 }
 
-.app-body .account__header__tabs__buttons > button:first-child:active {
+.app-body .account__header__buttons > button:first-child:active {
     transform: scale(.95);
 }
 
@@ -6195,9 +6195,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     height: 17px;
 }
 
-
+.app-body .button {
+    padding: 6px 17px;
+}
 .app-body .button,
-.app-body .account__header__tabs__buttons .icon-button {
+.app-body .account__header__buttons .icon-button {
     border-radius: 8px;
 }
 .app-body .button,
@@ -6234,7 +6236,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status__content__translate-button,
 .app-body .status__action-bar__dropdown .icon-button.active,
 .app-body .account__relationship .icon-button.active,
-.app-body .account__header__tabs__buttons .icon-button.active,
+.app-body .account__header__buttons .icon-button.active,
 .app-body .text-btn,
 .app-body .detailed-status__action-bar-dropdown .icon-button,
 .app-body .notification-bar-action {
@@ -6244,17 +6246,17 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .icon-button.inverted {
     color: var(--color-content-fg);
 }
-.app-body .account__header__tabs__buttons .icon-button {
+.app-body .account__header__buttons .icon-button {
     padding: 6px;
     border: 0;
     color: var(--color-content-fg);
     background-color: var(--color-content-secondary-bg);
 }
-.app-body .account__header__tabs__buttons .icon-button:hover {
+.app-body .account__header__buttons .icon-button:hover {
     background-color: var(--color-accent-bg);
     color: var(--color-accent);
 }
-.app-body .account__header__tabs__buttons .icon-button:has(.icon-ellipsis-v, .icon-close).active {
+.app-body .account__header__buttons .icon-button:has(.icon-ellipsis-v, .icon-close).active {
     background-color: var(--color-accent);
 }
 .app-body .icon-button {
@@ -6275,11 +6277,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent-fg);
     border: none !important;
 }
-.app-body .account__header__tabs__buttons .icon-button.active .icon-bell {
+.app-body .account__header__buttons .icon-button.active .icon-bell {
     animation: bell-ring .4s ease-in 1;
     transform-origin: top center;
 }
-.app-body .account__header__tabs__buttons .icon-button.active:has(.icon-bell):is(:active, :focus) {
+.app-body .account__header__buttons .icon-button.active:has(.icon-bell):is(:active, :focus) {
     background-color: var(--color-content-secondary-bg);
 }
 .app-body .language-dropdown__dropdown {
