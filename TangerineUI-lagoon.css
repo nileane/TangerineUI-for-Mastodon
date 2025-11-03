@@ -1727,6 +1727,22 @@ body.app-body  {
     background-color: var(--color-accent-bg);
 }
 
+.app-body .compose-form .compose-form__highlightable .spoiler-input {
+    order: 1;
+}
+.app-body .compose-form .compose-form__highlightable .compose-form__input {
+    order: 2;
+}
+.app-body .compose-form .compose-form__highlightable :is(.status__quote, .compose-form__poll, .upload-progress, .compose-form__upload, .compose-form__uploads) {
+    order: 3;
+}
+.app-body .compose-form .compose-form__highlightable .compose-form__dropdowns {
+    order: 4;
+}
+.app-body .compose-form .compose-form__highlightable .compose-form__footer {
+    order: 5;
+}
+
 
 .app-body .compose-form .compose-form__warning {
     background-color: var(--color-accent-bg);
@@ -1767,8 +1783,9 @@ body.app-body  {
 }
 .app-body .compose-form .spoiler-input .autosuggest-input {
     background-color: var(--color-content-bg);
+    border-top: 0;
     border-bottom: 0;
-    padding: 5px;
+    padding: 10px;
 }
 .app-body .compose-form .spoiler-input__input {
     background-image: var(--icon-warning);
@@ -1812,6 +1829,19 @@ body.app-body  {
     vertical-align: bottom;
 }
 
+.app-body .compose-form .status__quote {
+    margin: 10px;
+}
+.app-body .compose-form .status--is-quote .status__relative-time {
+    padding-inline-end: 25px;
+}
+.app-body .compose-form .status__quote-cancel {
+    position: absolute;
+    inset-inline-end: 6px;
+    inset-block-start: 8px;
+    z-index: 2;
+}
+
 
 .app-body .character-counter {
     color: var(--color-content-fg);
@@ -1840,7 +1870,8 @@ body.app-body  {
 }
 .app-body .compose-form__dropdowns {
     gap: 6px;
-    padding: 0 12px;
+    margin: 8px;
+    padding: 2px;
 }
 .app-body .compose-form__actions {
     border-radius: 0 0 8px 8px;
@@ -1930,6 +1961,7 @@ body.app-body  {
 }
 .app-body .compose-form__poll .poll__option {
     margin-bottom: 2px;
+    padding: 0 10px;
 }
 .app-body .poll__option input[type=text] {
     border-radius: 8px;
@@ -1944,9 +1976,9 @@ body.app-body  {
 }
 .app-body .compose-form__poll__footer {
     margin-top: 5px;
-    padding-inline-start: 12px;
+    padding-inline-start: 10px;
     gap: 6px;
-    margin-bottom: -10px;
+    margin-bottom: -3px;
 }
 .app-body .compose-form__poll__select__label {
     display: none;
@@ -2375,15 +2407,11 @@ body.app-body  {
     padding: 13px 12px;
     position: relative;
 }
-.app-body .notification-ungrouped .status__wrapper {
-    padding-left: 23px;
-    padding-right: 23px;
-}
 @media screen and (max-width:770px) {
     .app-body .status__wrapper:not(:has(.status--is-quote)) {
         padding: 10px 8px;
     }
-    .app-body .notification-ungrouped .status__wrapper {
+    .app-body .notification-ungrouped .status__wrapper:not(:has(.status--is-quote)) {
         padding: 13px 12px;
     }
 }
@@ -2402,7 +2430,6 @@ body.app-body  {
 }
 .app-body .status__info {
     height: 22px;
-    width: calc(100% + 56px);
     gap: 2px;
     margin-inline-start: -56px;
     padding: 0;
@@ -2415,10 +2442,6 @@ body.app-body  {
     align-items: start;
     max-height: 22px;
 }
-.app-body .status__info .status__display-name .display-name bdi,
-.app-body .status__info .status__display-name .display-name__account {
-    vertical-align: top;
-}
 .app-body .status__info .status__display-name .display-name__account {
     display: inline;
     opacity: .6;
@@ -2430,6 +2453,11 @@ body.app-body  {
     position: absolute;
     inset-inline-end: 20px;
     z-index: 1;
+}
+@media screen and (max-width: 770px) {
+    .app-body .status__relative-time {
+        inset-inline-end: 12px;
+    }
 }
 .app-body .status__relative-time > * {
     opacity: .6;
@@ -2902,7 +2930,10 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .status__action-bar__button-wrapper:last-child {
     position: absolute;
-    right: 18px;
+    inset-inline-end: 18px;
+}
+.app-body .notification-ungrouped .status__action-bar__button-wrapper:last-child {
+    inset-inline-end: 23px;
 }
 
 .app-body .status__action-bar .icon-button.disabled {
@@ -3354,11 +3385,21 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     gap: 6px;
 }
 .app-body .status--is-quote .account__avatar {
-    width: 22px !important;
-    height: 22px !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+.app-body .status__quote-author-button {
+    background-color: var(--color-accent-bg);
+    color: var(--color-content-fg);
+}
+.app-body .status--is-quote .display-name__account {
+    font-size: unset;
 }
 .app-body .status--is-quote .status__relative-time {
-    inset-inline-end: 10px;
+    inset-inline-end: 15px;
+}
+.app-body .status--is-quote .status__relative-time time + abbr {
+    height: 18px;    
 }
 
 
@@ -3397,10 +3438,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .media-gallery__preview,
 .app-body .video-player {
     background-color: var(--color-content-secondary-bg);
-}
-.app-body .video-player {
-    outline: 1px solid rgba(0, 0, 0, 0.05);
-    outline-offset: -1px;
 }
 .app-body .video-player__controls {
     background: rgba(0, 0, 0, .2);
@@ -5656,6 +5693,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border: none;
     position: relative;
 }
+@media screen and (max-width: 770px) {
+    .app-body .notification-group {
+        padding: 16px 12px;
+    }
+}
 
 .app-body :is(.notification-group, .notification-ungrouped)::after,
 .app-body .filtered-notifications-banner::after {
@@ -5669,10 +5711,16 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     content: " ";
     opacity: .7;
 }
+@media screen and (max-width: 770px) {
+    .app-body :is(.notification-group, .notification-ungrouped)::after,
+    .app-body .filtered-notifications-banner::after {
+        width: calc(100% - 66px);
+    }
+}
 .app-body .notification-ungrouped {
     padding: 0;
 }
-.app-body .notification-ungrouped :is(.status__avatar, .account__avatar) {
+.app-body .notification-ungrouped .status__wrapper > .status:not(.status--is-quote) > .status__info :is(.status__avatar, .account__avatar) {
     height: 46px !important;
     width: 46px !important;
 }
@@ -5702,10 +5750,26 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-post-bg);
     transition: background .3s;
 }
+@media screen and (max-width: 770px) {
+    .app-body .notification-ungrouped__header {
+        padding-inline-start: 12px;
+    }
+}
 .app-body .notification-ungrouped--direct .notification-ungrouped__header {
     background-color: var(--color-post-bg);
     transition: background .3s;
 }
+.app-body .notification-ungrouped > * > .status__wrapper {
+    padding-inline-start: 23px;
+    padding-inline-end: 23px;
+}
+@media screen and (max-width: 770px) {
+    .app-body .notification-ungrouped > * > .status__wrapper {
+        padding-inline-start: 12px;
+        padding-inline-end: 12px;
+    }
+}
+
 .app-body .notification-ungrouped--mention:not(.notification-ungrouped--direct) .notification-ungrouped__header {
     display: none;
 }
