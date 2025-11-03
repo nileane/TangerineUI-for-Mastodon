@@ -2314,9 +2314,6 @@ body.app-body  {
 
 
 /* Zoom on emojis on hover (in post content only */
-.app-body .status__content:not(.status__content--collapsed) { /* So the emoji doesn't clip out when zoomed on. */
-    overflow: visible;
-}
 .app-body .status__content .emojione {
     transition: transform .8s .8s;
 }
