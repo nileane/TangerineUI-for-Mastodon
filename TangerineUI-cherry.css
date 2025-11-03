@@ -7548,6 +7548,20 @@ a:is(.active,
 .app-body .rules-list li:last-child {
     border-bottom: 0;
 }
+.app-body .rules-languages > select {
+    background-color: var(--color-accent-bg);
+    border: 1px solid var(--color-accent-lines);
+    border-radius: 8px;
+    color: var(--color-content-fg);
+    transition: all .2s;
+}
+.app-body .rules-languages > select:is(:hover) {
+    border-color: var(--color-accent);
+    cursor: pointer;
+}
+.app-body .rules-languages > select:is(:focus, :active) {
+    border-color: var(--color-accent);
+}
 .about__domain-blocks {
     background-color: var(--color-content-bg);
     border: 0;
