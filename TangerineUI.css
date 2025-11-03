@@ -1130,7 +1130,8 @@ body.app-body  {
     background-image: var(--icon-search);
 }
 .app-body .ui__header__links .icon-search,
-.app-body .search__icon .icon-search {
+.app-body .search__icon .icon-search,
+.app-body .search__icon-wrapper .icon-search {
     background-image: var(--icon-search-active);
 }
 .app-body .column-link .icon-search {
