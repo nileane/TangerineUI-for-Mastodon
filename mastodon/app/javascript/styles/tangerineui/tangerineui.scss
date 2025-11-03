@@ -180,6 +180,10 @@
     --icon-list-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23f76902' viewBox='0 0 256 256'%3E%3Cpath d='M216,64V192H40V64Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z'%3E%3C/path%3E%3C/svg%3E");
     --icon-list-accent-active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23f76902' viewBox='0 0 256 256'%3E%3Cpath d='M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM192,184H64a8,8,0,0,1,0-16H192a8,8,0,0,1,0,16Zm0-48H64a8,8,0,0,1,0-16H192a8,8,0,0,1,0,16Zm0-48H64a8,8,0,0,1,0-16H192a8,8,0,0,1,0,16Z'%3E%3C/path%3E%3C/svg%3E");
 
+    --icon-down: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%232a2d37' viewBox='0 0 256 256'%3E%3Cpath d='M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-109.66a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32,0l-40-40a8,8,0,0,1,11.32-11.32L128,140.69l34.34-34.35A8,8,0,0,1,173.66,106.34Z'%3E%3C/path%3E%3C/svg%3E");
+    --icon-down-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23f76902' viewBox='0 0 256 256'%3E%3Cpath d='M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-109.66a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32,0l-40-40a8,8,0,0,1,11.32-11.32L128,140.69l34.34-34.35A8,8,0,0,1,173.66,106.34Z'%3E%3C/path%3E%3C/svg%3E");
+    --icon-down-accent-active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23f76902' viewBox='0 0 256 256'%3E%3Cpath d='M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,93.66-40,40a8,8,0,0,1-11.32,0l-40-40a8,8,0,0,1,11.32-11.32L128,140.69l34.34-34.35a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E");
+
     --icon-dot-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23f76902' viewBox='0 0 256 256'%3E%3Cpath d='M176,128a48,48,0,1,1-48-48A48,48,0,0,1,176,128Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z'%3E%3C/path%3E%3C/svg%3E");
     --icon-dot-accent-active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23f76902' viewBox='0 0 256 256'%3E%3Cpath d='M128,80a48,48,0,1,0,48,48A48,48,0,0,0,128,80Zm0,60a12,12,0,1,1,12-12A12,12,0,0,1,128,140Z'%3E%3C/path%3E%3C/svg%3E");
 
@@ -372,6 +376,10 @@
         --icon-list-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23e68933' viewBox='0 0 256 256'%3E%3Cpath d='M216,64V192H40V64Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z'%3E%3C/path%3E%3C/svg%3E");
         --icon-list-accent-active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23e68933' viewBox='0 0 256 256'%3E%3Cpath d='M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM192,184H64a8,8,0,0,1,0-16H192a8,8,0,0,1,0,16Zm0-48H64a8,8,0,0,1,0-16H192a8,8,0,0,1,0,16Zm0-48H64a8,8,0,0,1,0-16H192a8,8,0,0,1,0,16Z'%3E%3C/path%3E%3C/svg%3E");
 
+        --icon-down: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23ffffff' viewBox='0 0 256 256'%3E%3Cpath d='M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-109.66a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32,0l-40-40a8,8,0,0,1,11.32-11.32L128,140.69l34.34-34.35A8,8,0,0,1,173.66,106.34Z'%3E%3C/path%3E%3C/svg%3E");
+        --icon-down-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23e68933' viewBox='0 0 256 256'%3E%3Cpath d='M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm45.66-109.66a8,8,0,0,1,0,11.32l-40,40a8,8,0,0,1-11.32,0l-40-40a8,8,0,0,1,11.32-11.32L128,140.69l34.34-34.35A8,8,0,0,1,173.66,106.34Z'%3E%3C/path%3E%3C/svg%3E");
+        --icon-down-accent-active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23e68933' viewBox='0 0 256 256'%3E%3Cpath d='M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,93.66-40,40a8,8,0,0,1-11.32,0l-40-40a8,8,0,0,1,11.32-11.32L128,140.69l34.34-34.35a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E");
+
         --icon-dot-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23e68933' viewBox='0 0 256 256'%3E%3Cpath d='M176,128a48,48,0,1,1-48-48A48,48,0,0,1,176,128Z' opacity='0.2'%3E%3C/path%3E%3Cpath d='M140,128a12,12,0,1,1-12-12A12,12,0,0,1,140,128Z'%3E%3C/path%3E%3C/svg%3E");
         --icon-dot-accent-active: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23e68933' viewBox='0 0 256 256'%3E%3Cpath d='M128,80a48,48,0,1,0,48,48A48,48,0,0,0,128,80Zm0,60a12,12,0,1,1,12-12A12,12,0,0,1,128,140Z'%3E%3C/path%3E%3C/svg%3E");
 
@@ -521,7 +529,8 @@ body.app-body  {
 .app-body .loading-bar {
     background-color: var(--color-accent);
 }
-.app-body .circular-progress {
+.app-body .circular-progress,
+.app-body .load-more .loading-indicator .circular-progress {
     color: var(--color-accent);
 }
 
@@ -803,6 +812,7 @@ body.app-body  {
         .icon-at,
         .icon-bookmarks,
         .icon-list-ul,
+        .navigation-panel .icon-down,
         .column-link .icon-cog,
         .drawer__tab .icon-cog,
         .icon-flag,
@@ -884,6 +894,7 @@ body.app-body  {
         .icon-at,
         .icon-bookmarks,
         .icon-list-ul,
+        .navigation-panel .icon-down,
         .column-link .icon-cog,
         .drawer__tab .icon-cog,
         .icon-flag,
@@ -1270,6 +1281,7 @@ body.app-body  {
 .app-body .navigation-panel .column-link.active .icon-list-ul {
     background-image: var(--icon-list-accent-active);
 }
+
 /* Settings icon */
 .app-body .column-link .icon-cog {
     background-image: var(--icon-settings);
@@ -2314,9 +2326,6 @@ body.app-body  {
 
 
 /* Zoom on emojis on hover (in post content only */
-.app-body .status__content:not(.status__content--collapsed) { /* So the emoji doesn't clip out when zoomed on. */
-    overflow: visible;
-}
 .app-body .status__content .emojione {
     transition: transform .8s .8s;
 }
@@ -4128,14 +4137,42 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .column-link--transparent {
     color: var(--color-fg);
 }
+.app-body .column-link--transparent:has(+ .navigation-panel__list-panel__header__sep) {
+    max-width: 80%;
+    overflow: hidden !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.app-body .navigation-panel__list-panel__header__sep {
+    position: relative;
+    margin: 0 4px 0 0;
+}
+.app-body .navigation-panel__list-panel__header__sep::before {
+    position: absolute;
+    content: " ";
+    top: -15px;
+    display: block;
+    height: 51px;
+    width: 20px;
+    inset-inline-start: -21px;
+    background: linear-gradient(90deg, transparent, var(--color-bg));
+    transition: all .2s;
+}
+.app-body .navigation-panel button[aria-expanded="false"] .icon-down {
+    background-image: var(--icon-down-accent);
+    transform: rotate(90deg);
+}
+.app-body .navigation-panel button[aria-expanded="true"] .icon-down {
+    transform: rotate(0);
+    background-image: var(--icon-down-accent-active);
+}
 .app-body .navigation-panel__list-panel__header .icon-button {
     padding: 8px;
 }
 .app-body .navigation-panel__list-panel__items {
     padding-inline-start: 0;
 }
-.app-body .ui__header__logo .logo--icon,
-.navigation-panel__list-panel__header__sep {
+.app-body .ui__header__logo .logo--icon {
     display: none;
 }
 .app-body .ui__header__links .button.button-secondary {
