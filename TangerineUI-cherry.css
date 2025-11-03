@@ -1831,7 +1831,7 @@ body.app-body  {
 }
 
 .app-body .compose-form .status__quote {
-    margin: 10px;
+    margin: 10px 10px 0;
 }
 .app-body .compose-form .status--is-quote .status__relative-time {
     padding-inline-end: 25px;
