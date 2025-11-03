@@ -6931,6 +6931,13 @@ a:is(.active,
     opacity: .5;
 }
 
+.app-body .help-button {
+    background-color: var(--color-accent);
+    &:is(:active, :focus, :hover) {
+        background-color: var(--color-accent-focus);
+    }
+}
+
 
 
 /* 🖼️ Picture in Picture */
