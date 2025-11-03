@@ -1459,10 +1459,10 @@ body.app-body  {
 .app-body .account__header__buttons .icon.icon- {
     background-image: var(--icon-share);
 }
-.app-body .account__header__buttons .copyable .icon-undefined {
+.app-body .account__header__buttons .copyable .icon {
     background-image: var(--icon-copy);
 }
-.app-body .account__header__buttons .copied .icon-undefined {
+.app-body .account__header__buttons .copied .icon {
     background-image: var(--icon-copied);
 }
 .app-body .icon-eye-slash {
