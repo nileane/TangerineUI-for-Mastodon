@@ -2563,6 +2563,9 @@ body.app-body  {
     border-color: var(--color-lines);
     font-style: italic;
 }
+.app-body :is(.status__content__text, .e-content, .edit-indicator__content, .reply-indicator__content) blockquote:before {
+    background-color: var(--color-content-fg);
+}
 
 
 /* 📏 Post dividers */
