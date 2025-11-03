@@ -6461,7 +6461,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .dropdown-menu__item :is(a, button):is(:active, :focus, :hover):not(:disabled):not([aria-disabled=true]) :is(.icon-Boost-icon, .icon-Quote-icon) {
     filter: brightness(0) invert(1);
 }
-.app-body .dropdown-menu__item :is(a, button)[aria-disabled=true] {
+.app-body .dropdown-menu__item :is(a, button):is([aria-disabled=true], :disabled) {
     filter: brightness(.95) grayscale(1);
     opacity: .6;
     &:is(:focus) {
