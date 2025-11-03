@@ -521,7 +521,8 @@ body.app-body  {
 .app-body .loading-bar {
     background-color: var(--color-accent);
 }
-.app-body .circular-progress {
+.app-body .circular-progress,
+.app-body .load-more .loading-indicator .circular-progress {
     color: var(--color-accent);
 }
 
