@@ -2598,10 +2598,12 @@ body.app-body  {
     background-color: var(--color-lines);
     height: 1px;
     width: calc(100% - 78px);
-    right: 0;
     top: -1px;
+    inset-inline-start: unset;
+    inset-inline-end: 0;
     content: "";
     opacity: .7;
+    animation: none !important;
 }
 @media screen and (max-width:770px) {
     .app-body .status::before,
