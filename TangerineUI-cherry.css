@@ -4206,6 +4206,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background: linear-gradient(90deg, transparent, var(--color-bg));
     transition: all .2s;
 }
+@media screen and (max-width:760px) {
+    .app-body .navigation-panel__list-panel__header__sep::before {
+        display: none;
+        background: linear-gradient(90deg, transparent, var(--color-content-secondary-bg));
+    }
+}
 .app-body .navigation-panel button[aria-expanded="false"] .icon-down {
     background-image: var(--icon-down-accent);
     transform: rotate(90deg);
