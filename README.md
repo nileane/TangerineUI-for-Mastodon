@@ -140,15 +140,17 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [mastodon.projetretro.io](https://mastodon.projetretro.io) | 1+             | an optional theme   | No                      |
 
 ## Compatibility
-✅ [**Tangerine UI** (v2._x_)](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) **is compatible with instances running the latest stable release of Mastodon (currently Mastodon 4.4.x)**[^3][^4]
+✅ [**Tangerine UI** (v2._x_)](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) **is compatible with instances running the [latest stable release of Mastodon](https://github.com/mastodon/mastodon/releases/tag/v4.4.8) (currently Mastodon 4.4.x)**[^3][^4]
 [^3]: Tangerine UI (v2._x_) is also compatible with instances running a version of **Glitch-soc** based on the current stable release of Mastodon, as long as it is [installed as a vanilla theme](#installation-for-glitch-soc-admins) on these instances.
 [^4]: As a result, instances running on nightly/alpha/beta builds of Mastodon are not supported. If you do use Tangerine UI with an unstable version of Mastodon, feel free to [report](https://github.com/nileane/TangerineUI-for-Mastodon/issues) UI issues as they appear.
 
 ⚠️ Instances running Mastodon 4.1._x_ or 4.2._x_ are only compatible with [**Tangerine UI Legacy** (v1.9)](https://github.com/nileane/TangerineUI-for-Mastodon/tree/legacy).[^5][^6]
 [^5]: The advanced web interface (multi-column layout) is not supported by Tangerine UI Legacy (v1.9) and will fall back to Mastodon's default appearance if enabled.
 [^6]: The Cherry variant is not available with Tangerine UI Legacy (v1.9).
-    
-🚫 Tangerine UI and Tangerine UI Legacy are not compatible with instances running Mastodon 4.0._x_ and older.
+        
+🚫 The following versions of Mastodon are **not supported**:
+* 4.3._x_
+* 4.0._x_ and older.
 
 
 ## Installation for Mastodon admins
