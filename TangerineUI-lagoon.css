@@ -5846,7 +5846,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     z-index: 1;
     position: relative;
     font-weight: 500;
-    color: var(--color-content-fg-muted);
+    color: var(--color-accent);
     background-color: var(--color-post-bg);
     transition: background .3s;
 }
