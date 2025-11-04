@@ -3402,6 +3402,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-radius: 10px;
     border: 1px solid var(--color-lines);
     transition: all .3s;
+    width: auto;
 }
 .app-body .status__quote:has(:is(.status__content,.status__info):hover) {
     border-color: var(--color-accent);
