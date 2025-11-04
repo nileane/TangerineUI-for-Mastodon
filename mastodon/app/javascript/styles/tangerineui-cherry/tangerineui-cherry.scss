@@ -2383,6 +2383,10 @@ body.app-body  {
     transition: all .3s;
     background-color: transparent;
 }
+.app-body .compose-form .status__content__translate-button,
+.app-body .compose-form .translate-button .link-button {
+    display: none;
+}
 .app-body .detailed-status .status__content__translate-button,
 .app-body .detailed-status .translate-button .link-button {
     background-image: var(--icon-translate-accent);
