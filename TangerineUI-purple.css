@@ -1584,7 +1584,7 @@ body.app-body  {
 }
 .app-body :is(.compose-form .navigation-bar, .reply-indicator) .account__avatar {
     outline: 6px solid var(--color-content-bg);
-    border-radius: 8px;
+    border-radius: 50%;
     position: relative;
     z-index: 2;
 }
