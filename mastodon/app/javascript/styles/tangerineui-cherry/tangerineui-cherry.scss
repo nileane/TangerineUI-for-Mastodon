@@ -759,6 +759,19 @@ body.app-body  {
         max-width: 580px;
         padding: 0;
     }
+    .app-body .columns-area__panels__main::before {
+        display: block;
+        content: "";
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 580px;
+        height: 100%;
+        box-shadow: 0 20px 30px #0000000f;
+        background-color: var(--color-content-bg);
+        border-radius: 10px 10px 0 0;
+    }
 }
 @media screen and (max-width:1174px) {
     .app-body .columns-area__panels {
@@ -1548,6 +1561,9 @@ body.app-body  {
 }
 .app-body .account__header__fields .verified a span {
     display: inline;
+}
+.app-body a.mention:not(.hashtag) > span {
+    font-weight: 500;
 }
 .app-body a:is(.mention, .hashtag) > span {
     color: var(--color-content-fg);
@@ -2602,7 +2618,7 @@ body.app-body  {
     position: absolute;
     background-color: var(--color-lines);
     height: 1px;
-    width: calc(100% - 78px);
+    width: 100%;
     top: -1px;
     inset-inline-start: unset;
     inset-inline-end: 0;
@@ -2610,9 +2626,11 @@ body.app-body  {
     opacity: .7;
     animation: none !important;
 }
+.app-body .status.status--in-thread:not(.status--first-in-thread)::before {
+    width: calc(100% - 78px);
+}
 @media screen and (max-width:770px) {
-    .app-body .status::before,
-    .app-body .notification__message::before {
+    .app-body .status.status--in-thread:not(.status--first-in-thread)::before {
         width: calc(100% - 73px);
     }
 }
@@ -3068,10 +3086,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     gap: 5px;
     border-radius: 50px;
     align-items: center;
-    background-color: var(--color-content-secondary-bg);
+    background-color: var(--color-bg);
     color: var(--color-content-fg);
-    outline: 1px solid color-mix(in srgb, var(--color-fg), transparent 95%);
-    outline-offset: -1px;
     font-size: 13px;
 }
 .app-body .status__prepend:has(.status__prepend__icon .icon-retweet) {
@@ -3675,20 +3691,19 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status__wrapper.status__wrapper-direct,
 .app-body .notification__message:has(+ div > .status__wrapper.status__wrapper-direct),
 .app-body .notification-ungrouped--direct .notification-ungrouped__header {
-    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 92%);
+    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 96%);
 }
 .app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover),
 .app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover) .status__avatar,
 .app-body .status__wrapper.status__wrapper-direct.focusable:focus,
 .app-body .notification__message:has(+ div > .status__wrapper.status__wrapper-direct .status__content:hover),
 .app-body .notification-ungrouped--direct:has(.status__wrapper.status__wrapper-direct .status__content:hover) .notification-ungrouped__header {
-    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 88%);
+    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 98%);
 }
-.app-body .status__wrapper-direct,
 .app-body .notification-ungrouped--direct,
 .app-body .notification-group--direct,
 .app-body .notification-group--annual-report {
-    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 92%);
+    --color-post-bg: var(--color-content-bg);
     background-color: var(--color-post-bg);
 
 }
@@ -4777,14 +4792,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     position: relative;
 }
 .app-body .featured-carousel__title {
-    background-color: var(--color-content-secondary-bg);
+    background-color: var(--color-bg);
     color: var(--color-fg-muted);
     border-radius: 50px;
     margin-left: 75px;
     margin-right: auto;
     padding: 5px 12px;
-    outline: 1px solid color-mix(in srgb, var(--color-fg), transparent 95%);
-    outline-offset: -1px;
     gap: 5px;
     flex-grow: 0;
 }
@@ -5798,17 +5811,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: block;
     background-color: var(--color-lines);
     height: 1px;
-    width: calc(100% - 78px);
+    width: 100%;
     right: 0;
     bottom: 0;
     content: " ";
     opacity: .7;
-}
-@media screen and (max-width: 770px) {
-    .app-body :is(.notification-group, .notification-ungrouped)::after,
-    .app-body .filtered-notifications-banner::after {
-        width: calc(100% - 66px);
-    }
 }
 .app-body .notification-ungrouped {
     padding: 0;
@@ -5839,7 +5846,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     z-index: 1;
     position: relative;
     font-weight: 500;
-    color: var(--color-content-fg-muted);
+    color: var(--color-accent);
     background-color: var(--color-post-bg);
     transition: background .3s;
 }
