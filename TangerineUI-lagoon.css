@@ -6494,8 +6494,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .visibility-dropdown > button {
-    background-color: var(--color-accent-bg);
-    border: 1px solid var(--color-accent-lines);
+    background-color: var(--color-content-secondary-bg);
+    border: 1px solid var(--color-lines);
     border-radius: 8px;
     color: var(--color-content-fg);
     transition: all .2s;
@@ -6504,8 +6504,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-color: var(--color-accent);
     cursor: pointer;
 }
-.app-body .visibility-dropdown > button:is(:focus, :active) {
+.app-body .visibility-dropdown > button:is(:focus, :active, .active) {
     border-color: var(--color-accent);
+}
+
+.app-body .visibility-dropdown__label {
+    font-weight: 800;
 }
 
 .app-body :is(.privacy-dropdown__dropdown, .visibility-dropdown__dropdown) {
@@ -6522,8 +6526,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     border-radius: 6px;
     margin-bottom: 2px;
 }
-.app-body .privacy-dropdown.active :is(.privacy-dropdown__value, .privacy-dropdown__value.active),
-.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):is(.active, .active:hover, :hover) {
+.app-body .privacy-dropdown.active :is(.privacy-dropdown__value, .privacy-dropdown__value.active) {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
 }
@@ -6535,25 +6538,30 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
 }
+.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):hover,
+.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):hover :is(.privacy-dropdown__option__content, .visibility-dropdown__option__content),
+.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):hover :is(.privacy-dropdown__option__content, .visibility-dropdown__option__content) strong {
+    background-color: var(--color-accent-bg);
+    color: var(--color-content-fg);
+}
+.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):is(.active, .active:hover),
 .app-body :is(.privacy-dropdown__option, .visibility-dropdown__option).active :is(.privacy-dropdown__option__content, .visibility-dropdown__option__content),
 .app-body :is(.privacy-dropdown__option, .visibility-dropdown__option).active :is(.privacy-dropdown__option__content, .visibility-dropdown__option__content) strong,
-.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):hover :is(.privacy-dropdown__option__content, .visibility-dropdown__option__content),
-.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):hover :is(.privacy-dropdown__option__content, .visibility-dropdown__option__content) strong,
 .app-body .privacy-dropdown.active .privacy-dropdown__value.active .icon-button,
 .app-body .privacy-dropdown .icon-button.inverted.active {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
 }
-.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):is(:hover, .active, .active:hover) .icon-globe {
+.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):is(.active, .active:hover) .icon-globe {
     background-image: var(--icon-globe-visibility-inv);
 }
-.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):is(:hover, .active, .active:hover) .icon-unlock {
+.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):is(.active, .active:hover) .icon-unlock {
     background-image: var(--icon-unlock-inv);
 }
-.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):is(:hover, .active, .active:hover) .icon-lock {
+.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):is(.active, .active:hover) .icon-lock {
     background-image: var(--icon-lock-inv);
 }
-.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):is(:hover, .active, .active:hover) .icon-at {
+.app-body :is(.privacy-dropdown__option, .visibility-dropdown__option):is(.active, .active:hover) .icon-at {
     background-image: var(--icon-at-inv);
 }
 .app-body :is(.privacy-dropdown__option, .visibility-dropdown__option) .icon-info-circle path {
@@ -6660,6 +6668,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .dialog-modal {
     border-radius: 8px;
+}
+@media screen and (max-width: 630px) {
+    .app-body .dialog-modal {
+        border-radius: 8px 8px 0 0;
+    }
 }
 .app-body .dialog-modal__header {
     border-color: var(--color-lines);
