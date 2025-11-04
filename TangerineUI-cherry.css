@@ -759,6 +759,19 @@ body.app-body  {
         max-width: 580px;
         padding: 0;
     }
+    .app-body .columns-area__panels__main::before {
+        display: block;
+        content: "";
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 580px;
+        height: 100%;
+        box-shadow: 0 20px 30px #0000000f;
+        background-color: var(--color-content-bg);
+        border-radius: 10px 10px 0 0;
+    }
 }
 @media screen and (max-width:1174px) {
     .app-body .columns-area__panels {
@@ -3071,10 +3084,8 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     gap: 5px;
     border-radius: 50px;
     align-items: center;
-    background-color: var(--color-content-secondary-bg);
+    background-color: var(--color-bg);
     color: var(--color-content-fg);
-    outline: 1px solid color-mix(in srgb, var(--color-fg), transparent 95%);
-    outline-offset: -1px;
     font-size: 13px;
 }
 .app-body .status__prepend:has(.status__prepend__icon .icon-retweet) {
@@ -4780,14 +4791,12 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     position: relative;
 }
 .app-body .featured-carousel__title {
-    background-color: var(--color-content-secondary-bg);
+    background-color: var(--color-bg);
     color: var(--color-fg-muted);
     border-radius: 50px;
     margin-left: 75px;
     margin-right: auto;
     padding: 5px 12px;
-    outline: 1px solid color-mix(in srgb, var(--color-fg), transparent 95%);
-    outline-offset: -1px;
     gap: 5px;
     flex-grow: 0;
 }
