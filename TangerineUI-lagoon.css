@@ -2492,7 +2492,7 @@ body.app-body  {
 }
 @media screen and (max-width: 770px) {
     .app-body .status__relative-time {
-        inset-inline-end: 12px;
+        inset-inline-end: 20px;
     }
 }
 .app-body .status__relative-time > * {
