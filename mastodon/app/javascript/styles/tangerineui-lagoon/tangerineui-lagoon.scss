@@ -1513,6 +1513,7 @@ body.app-body  {
 
 /* Links */
 .app-body a.status-link:not(.mention, .hashtag),
+.app-body .status__content a.unhandled-link,
 .app-body a:is(.status-link, .mention, .navigation-bar__profile-edit) span,
 .app-body :is(.account__header__fields, .account__header__content) a span {
     text-decoration-line: underline;
@@ -1521,6 +1522,7 @@ body.app-body  {
     text-underline-offset: 2px;
 }
 .app-body a.status-link:not(.mention, .hashtag):is(:active, :focus, :hover),
+.app-body .status__content a.unhandled-link:hover,
 .app-body a:is(.status-link, .mention, .navigation-bar__profile-edit):is(:active, :focus, :hover) span,
 .app-body :is(.account__header__fields, .account__header__content, .trends__item__name) a:is(:active, :focus, :hover) span,
 .app-body
@@ -1546,6 +1548,9 @@ body.app-body  {
 }
 .app-body .account__header__fields .verified a span {
     display: inline;
+}
+.app-body a:is(.mention, .hashtag) > span {
+    color: var(--color-content-fg);
 }
 
 
