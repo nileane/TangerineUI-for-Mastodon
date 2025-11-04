@@ -6656,6 +6656,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .dialog-modal {
     border-radius: 8px;
 }
+.app-body .dialog-modal__header {
+    border-color: var(--color-lines);
+}
 .app-body .dialog-modal__content__description {
     color: var(--color-content-fg-muted);
 }
