@@ -2397,6 +2397,11 @@ body.app-body  {
     .app-body .translate-button .link-button {
         bottom: 10px;
     }
+    .app-body .notification-ungrouped .status__content__translate-button,
+    .app-body .notification-ungrouped .translate-button .link-button {
+        bottom: 13px;
+        right: 55px;
+    }
 }
 .app-body .scrollable > div:is(:last-child, :only-child) .detailed-status__wrapper:last-child
     :is(
