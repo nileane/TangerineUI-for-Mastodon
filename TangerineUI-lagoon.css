@@ -2822,7 +2822,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     content: "\00B7\00A0";
     margin-left: -3px;
 }
-.app-body .detailed-status__link:is([href$="/reblogs"], [href$="/quotes"], [href$="/favourites"]) {
+.app-body .detailed-status__link:is([href$="/reblogs"], :has(.detailed-status__quotes), [href$="/quotes"], [href$="/favourites"]) {
     padding-left: 20px;
     border-radius: 8px;
     background-position: left center;
@@ -2833,7 +2833,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .detailed-status__link[href$="/reblogs"] {
     background-image: var(--icon-boost);
 }
-.app-body .detailed-status__link[href$="/quotes"] {
+.app-body .detailed-status__link:is(:has(.detailed-status__quotes), [href$="/quotes"]) {
     background-image: var(--icon-quote);
 }
 .app-body .detailed-status__link[href$="/favourites"] {
