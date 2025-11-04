@@ -6925,9 +6925,6 @@ a:is(.active,
 .app-body .media-modal__overlay .picture-in-picture__footer > button:last-child a {
     filter: grayscale(1);
 }
-.app-body .media-modal__overlay .picture-in-picture__footer > button:last-child a:is(:active, :focus, :hover) {
-    filter: grayscale(1) brightness(100);
-}
 .app-body .media-modal__overlay .picture-in-picture__footer .icon-button > svg {
     width: 25px;
     height: 25px;
