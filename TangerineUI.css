@@ -6847,6 +6847,7 @@ a:is(.active,
 /* Media modals */
 .app-body .modal-root__overlay:has(+ div > .media-modal) {
     background-color: #030303 !important;
+    opacity: 1;
 }
 .app-body .modal-root__overlay {
     background-color: rgb(0, 0, 0, .4);
@@ -6882,11 +6883,11 @@ a:is(.active,
     top: 24px;
     right: 24px;
 }
-.app-body .media-modal__nav--left {
-    left: 24px;
+.app-body .media-modal__nav--prev {
+    left: 8px;
 }
-.app-body .media-modal__nav--right {
-    right: 24px;
+.app-body .media-modal__nav--next {
+    right: 8px;
 }
 @media screen and (max-width:770px) {
     .app-body .media-modal__nav {
@@ -6894,15 +6895,42 @@ a:is(.active,
     }
 }
 
+.app-body .media-modal__overlay {
+    max-width: none;
+}
 .app-body .media-modal__overlay .picture-in-picture__footer {
+    background: transparent;
+    justify-content: center;
+}
+.app-body .media-modal__overlay .picture-in-picture__footer > *:not(:last-child) {
     display: none;
+}
+.app-body .media-modal__overlay .picture-in-picture__footer > button:last-child {
+    position: absolute;
+    bottom: 8px;
+    inset-inline-end: 8px;
+    background-color: #1e1e1e;
+    color: #777777;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: .2s all;
+}
+.app-body .media-modal__overlay .picture-in-picture__footer > button:last-child:is(:active, :focus, :hover) {
+    background-color: #343434;
+}
+.app-body .media-modal__overlay .picture-in-picture__footer > button:last-child a {
+    filter: grayscale(1);
+}
+.app-body .media-modal__overlay .picture-in-picture__footer > button:last-child a:is(:active, :focus, :hover) {
+    filter: grayscale(1) brightness(100);
 }
 .app-body .media-modal__overlay .picture-in-picture__footer .icon-button > svg {
     width: 25px;
     height: 25px;
-}
-.app-body .media-modal__overlay .picture-in-picture__footer .icon-button:is(:active, :hover, :focus) {
-    background-color: transparent !important;
 }
 .app-body .picture-in-picture__footer .animated-number {
     color: var(--color-accent);
@@ -7022,10 +7050,12 @@ a:is(.active,
 .app-body .picture-in-picture__header {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    border: none;
 }
 .app-body .picture-in-picture__footer {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    border: none;
 }
 .app-body .picture-in-picture .video-player {
     border: 0;
