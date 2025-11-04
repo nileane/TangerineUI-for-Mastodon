@@ -2634,10 +2634,10 @@ body.app-body  {
 }
 
 /* 👥 Threaded replies */
-.app-body .status--first-in-thread {
+.app-body .status--first-in-thread:not(.status--is-quote) {
     border-top: 0;
 }
-.app-body .status--first-in-thread::before {
+.app-body .status--first-in-thread:not(.status--is-quote)::before {
     width: 100%;
     right: 0;
 }
