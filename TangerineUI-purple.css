@@ -2618,7 +2618,7 @@ body.app-body  {
     position: absolute;
     background-color: var(--color-lines);
     height: 1px;
-    width: calc(100% - 78px);
+    width: 100%;
     top: -1px;
     inset-inline-start: unset;
     inset-inline-end: 0;
@@ -2626,9 +2626,11 @@ body.app-body  {
     opacity: .7;
     animation: none !important;
 }
+.app-body .status.status--in-thread:not(.status--first-in-thread)::before {
+    width: calc(100% - 78px);
+}
 @media screen and (max-width:770px) {
-    .app-body .status::before,
-    .app-body .notification__message::before {
+    .app-body .status.status--in-thread:not(.status--first-in-thread)::before {
         width: calc(100% - 73px);
     }
 }
@@ -3689,20 +3691,19 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .status__wrapper.status__wrapper-direct,
 .app-body .notification__message:has(+ div > .status__wrapper.status__wrapper-direct),
 .app-body .notification-ungrouped--direct .notification-ungrouped__header {
-    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 92%);
+    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 96%);
 }
 .app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover),
 .app-body .status__wrapper.status__wrapper-direct:has(.status__content:hover) .status__avatar,
 .app-body .status__wrapper.status__wrapper-direct.focusable:focus,
 .app-body .notification__message:has(+ div > .status__wrapper.status__wrapper-direct .status__content:hover),
 .app-body .notification-ungrouped--direct:has(.status__wrapper.status__wrapper-direct .status__content:hover) .notification-ungrouped__header {
-    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 88%);
+    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 98%);
 }
-.app-body .status__wrapper-direct,
 .app-body .notification-ungrouped--direct,
 .app-body .notification-group--direct,
 .app-body .notification-group--annual-report {
-    --color-post-bg: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 92%);
+    --color-post-bg: var(--color-content-bg);
     background-color: var(--color-post-bg);
 
 }
@@ -5810,17 +5811,11 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     display: block;
     background-color: var(--color-lines);
     height: 1px;
-    width: calc(100% - 78px);
+    width: 100%;
     right: 0;
     bottom: 0;
     content: " ";
     opacity: .7;
-}
-@media screen and (max-width: 770px) {
-    .app-body :is(.notification-group, .notification-ungrouped)::after,
-    .app-body .filtered-notifications-banner::after {
-        width: calc(100% - 66px);
-    }
 }
 .app-body .notification-ungrouped {
     padding: 0;
