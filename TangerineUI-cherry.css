@@ -6466,7 +6466,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent-fg);
     outline: 0;
 }
-.app-body .dropdown-menu__item :is(a, button):is(:active, :focus, :hover):not(:disabled):not([aria-disabled=true]) :is(.icon-Boost-icon, .icon-Quote-icon) {
+.app-body .dropdown-menu__item :is(a, button):is(:active, :focus, :hover):not(:disabled):not([aria-disabled=true]) :is(.icon-Boost-icon, .icon-Unboost-icon, .icon-Quote-icon) {
     filter: brightness(0) invert(1);
 }
 .app-body .dropdown-menu__item :is(a, button):is([aria-disabled=true], :disabled) {

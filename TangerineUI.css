@@ -796,6 +796,7 @@ body.app-body  {
         .icon-star,
         .icon-retweet,
         .icon-Boost-icon,
+        .icon-Unboost-icon,
         .icon-Quote-icon,
         .icon-quote,
         .icon-repeat,
@@ -879,6 +880,7 @@ body.app-body  {
         .icon-star,
         .icon-retweet,
         .icon-Boost-icon,
+        .icon-Unboost-icon,
         .icon-Quote-icon,
         .icon-quote,
         .icon-repeat,
@@ -989,7 +991,8 @@ body.app-body  {
     background-image: var(--icon-boost-accent);
 }
 .app-body button.icon-button.active .icon-retweet,
-.app-body .detailed-status__button button.icon-button.active:hover .icon-retweet {
+.app-body .detailed-status__button button.icon-button.active:hover .icon-retweet,
+.app-body .icon-Unboost-icon {
     background-image: var(--icon-boost-accent-active);
 }
 .app-body .status__prepend__icon .icon-retweet,
@@ -6466,7 +6469,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent-fg);
     outline: 0;
 }
-.app-body .dropdown-menu__item :is(a, button):is(:active, :focus, :hover):not(:disabled):not([aria-disabled=true]) :is(.icon-Boost-icon, .icon-Quote-icon) {
+.app-body .dropdown-menu__item :is(a, button):is(:active, :focus, :hover):not(:disabled):not([aria-disabled=true]) :is(.icon-Boost-icon, .icon-Unboost-icon, .icon-Quote-icon) {
     filter: brightness(0) invert(1);
 }
 .app-body .dropdown-menu__item :is(a, button):is([aria-disabled=true], :disabled) {
