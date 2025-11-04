@@ -1549,6 +1549,9 @@ body.app-body  {
 .app-body .account__header__fields .verified a span {
     display: inline;
 }
+.app-body a.mention:not(.hashtag) > span {
+    font-weight: 500;
+}
 .app-body a:is(.mention, .hashtag) > span {
     color: var(--color-content-fg);
 }
