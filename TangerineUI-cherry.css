@@ -3490,7 +3490,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
-.app-body .status__quote .status__avatar {
+.app-body .status__quote:has(.skeleton) .status__avatar {
     display: none;
 }
 .app-body .status__quote:has(.skeleton) .status {
