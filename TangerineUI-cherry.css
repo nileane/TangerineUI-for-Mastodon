@@ -1530,7 +1530,7 @@ body.app-body  {
 .app-body a:is(.status-link, .mention, .navigation-bar__profile-edit) span,
 .app-body :is(.account__header__fields, .account__header__content) a span {
     text-decoration-line: underline;
-    text-decoration-color: var(--color-accent-bg);
+    text-decoration-color: color-mix(in srgb, var(--color-accent), transparent 55%);
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
 }
@@ -2418,6 +2418,9 @@ body.app-body  {
     height: 40px;
     right: 60px;
     bottom: 20px;
+}
+.app-body .status--is-quote :is(.status__content__translate-button, .translate-button .link-button) {
+    display: none;
 }
 @media screen and (max-width:770px) {
     .app-body .status__content__translate-button,
@@ -3466,7 +3469,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     height: 20px !important;
 }
 .app-body .status__quote-author-button {
-    background-color: var(--color-accent-bg);
+    background-color: var(--color-content-secondary-bg);
     color: var(--color-content-fg);
 }
 .app-body .status--is-quote .display-name__account {
@@ -6537,6 +6540,13 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 
 .app-body .visibility-dropdown__label {
     font-weight: 800;
+}
+
+.app-body .visibility-modal__quote-warning {
+    background: var(--color-accent-bg);
+    border: 1px solid var(--color-accent-lines);
+    border-radius: 6px;
+    color: var(--color-content-fg);
 }
 
 .app-body :is(.privacy-dropdown__dropdown, .visibility-dropdown__dropdown) {
