@@ -3325,6 +3325,9 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     font-size: 19px;
     line-height: 1.26;
 }
+.app-body .status--is-quote .content-warning {
+    font-size: 16px;
+}
 .app-body .content-warning > p {
     font-weight: bold;
 }
