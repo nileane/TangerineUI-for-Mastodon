@@ -149,6 +149,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 [^6]: The Cherry variant is not available with Tangerine UI Legacy (v1.9).
         
 🚫 The following versions of Mastodon are **not supported**:
+* 4.4._x_
 * 4.3._x_
 * 4.0._x_ and older.
 
