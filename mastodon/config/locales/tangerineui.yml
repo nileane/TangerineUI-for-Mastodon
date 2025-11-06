@@ -65,6 +65,12 @@ ko:
     tangerineui-purple: Tangerine UI (보라색)
     tangerineui-cherry: Tangerine UI (체리색)
     tangerineui-lagoon: Tangerine UI (라군색)
+nl:
+  themes:
+    tangerineui: Tangerine UI
+    tangerineui-purple: Tangerine UI (Paars)
+    tangerineui-cherry: Tangerine UI (Kers)
+    tangerineui-lagoon: Tangerine UI (Lagune)
 pt:
   themes:
     tangerineui: Tangerine UI
@@ -83,9 +89,21 @@ tr:
     tangerineui-purple: Tangerine UI (Mor)
     tangerineui-cherry: Tangerine UI (Kiraz)
     tangerineui-lagoon: Tangerine UI (Lagün)
-zh:
+zh-CN:
   themes:
     tangerineui: Tangerine UI
     tangerineui-purple: Tangerine UI (紫色)
     tangerineui-cherry: Tangerine UI (樱桃色)
+    tangerineui-lagoon: Tangerine UI (潟湖色)
+zh-TW:
+  themes:
+    tangerineui: Tangerine UI
+    tangerineui-purple: Tangerine UI (紫色)
+    tangerineui-cherry: Tangerine UI (櫻桃色)
+    tangerineui-lagoon: Tangerine UI (潟湖色)
+zh-HK:
+  themes:
+    tangerineui: Tangerine UI
+    tangerineui-purple: Tangerine UI (紫色)
+    tangerineui-cherry: Tangerine UI (櫻桃色)
     tangerineui-lagoon: Tangerine UI (潟湖色)

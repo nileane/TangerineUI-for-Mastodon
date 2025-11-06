@@ -90,7 +90,7 @@ else
 fi
 
 # --- STEP 4: Generate Tangerine UI locale files
-echo "Adding Tangerine UI theme names to locale files..."
+echo "Adding localized Tangerine UI theme names..."
 cp -r "./mastodon/config/locales/tangerineui.yml" "$MASTODON/config/locales/"
 
 # --- STEP 5: Precompile assets
