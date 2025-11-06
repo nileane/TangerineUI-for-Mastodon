@@ -3552,8 +3552,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 .app-body .video-player__controls {
     background: rgba(0, 0, 0, .2);
     backdrop-filter: blur(20px);
-    margin: 10px;
-    border-radius: 8px;
 }
 .app-body .media-gallery__preview {
     outline: 1px solid rgba(0, 0, 0, 0.05);
