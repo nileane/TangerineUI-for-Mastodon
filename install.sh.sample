@@ -16,6 +16,8 @@
 #
 # /!\ This script is not suitable for Glitch-soc instances.
 
+# --- CONFIGURE PATHS BELOW ---
+# Use absolute paths
 TANGERINEUI="/home/mastodon/TangerineUI"
 MASTODON="/home/mastodon/live"
 
@@ -54,13 +56,13 @@ else
     echo "Skipping path confirmation."
 fi
 
-# Navigate to the repository
+# --- STEP 1: Update Tangerine UI repo
 cd "$TANGERINEUI" || { echo "Tangerine UI repository directory not found: $TANGERINEUI" >&2; exit 1; }
 
 # Pull the latest changes from the repository
 git pull || { echo "Failed to pull latest changes from the Tangerine UI repository" >&2; exit 1; }
 
-# Copy files from the Tangerine UI repository to the Mastodon directory
+# --- STEP 2: Copy styles
 cp -r "./mastodon/app/javascript/styles/"* "$MASTODON/app/javascript/styles"
 
 # Add Tangerine UI to themes.yml if not already present
@@ -72,7 +74,7 @@ THEME_LINES=(
     "tangerineui-lagoon: styles/tangerineui-lagoon.scss"
 )
 
-# Check if the themes are already present and add missing ones
+# --- STEP 3: Update themes.yml
 if [ -f "$THEME_FILE" ]; then
     for line in "${THEME_LINES[@]}"; do
         if ! grep -Fxq "$line" "$THEME_FILE"; then
@@ -87,6 +89,11 @@ else
     exit 1
 fi
 
+# --- STEP 4: Generate Tangerine UI locale files
+echo "Adding Tangerine UI theme names to locale files..."
+cp -r "./mastodon/config/locales/tangerineui.yml" "$MASTODON/config/locales/"
+
+# --- STEP 5: Precompile assets
 # Navigate to the Mastodon directory
 cd "$MASTODON"
 
