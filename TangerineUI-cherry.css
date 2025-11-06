@@ -3144,39 +3144,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     width: 32px;
     height: 32px;
 }
-.app-body .status-card[href*="/@" i] {
-    align-items: start;
-}
-.app-body .status-card[href*="/@" i] .status-card__description {
-    margin-top: 2px;
-    white-space: normal;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 6;
-    line-clamp: 6;
-    display: -webkit-box;
-}
-.app-body .status-card[href*="/@" i] .status-card__image {
-    order: 2;
-    background-color: transparent;
-    padding: 8px;
-    box-sizing: border-box;
-}
-.app-body .status-card[href*="/@" i]:not(.expanded) .status-card__image {
-    height: 120px;
-    width: 120px;
-}
-.app-body .status-card[href*="/@" i] .status-card__image-image {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    outline: 1px solid var(--color-lines-translucent);
-    outline-offset: -1px;
-}
-.app-body .status-card[href*="/@" i] .status-card__content {
-    display: flex;
-    flex-flow: column;
-}
 .app-body .status-card__title {
     order: 1;
     line-height: 1.3;
