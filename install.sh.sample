@@ -70,7 +70,7 @@ cd "$TANGERINEUI" || { echo "Tangerine UI repository directory not found: $TANGE
 
 # Use the latest release tag unless --main is provided, in which case use the main branch.
 if [ "$MAIN_BRANCH" = true ]; then
-    git fetch && git checkout main || { echo "Failed to pull latest changes from the Tangerine UI repository" >&2; exit 1; }
+    git fetch && git checkout main && git pull || { echo "Failed to pull latest changes from the Tangerine UI repository" >&2; exit 1; }
 else
     git fetch && git checkout $(git describe --tags $(git rev-list --tags --max-count=1)) || { echo "Failed to pull latest changes from the Tangerine UI repository" >&2; exit 1; }
 fi
