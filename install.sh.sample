@@ -12,6 +12,7 @@
 # • Set the TANGERINEUI and MASTODON paths below before running the script for the first time.
 # • Only run this script as the mastodon user.
 # • Use --skip-confirm to bypass all confirmation steps.
+# • Use --main to install from the latest commits on the main branch.
 # 
 #
 # /!\ This script is not suitable for Glitch-soc instances.
@@ -94,7 +95,7 @@ else
     exit 1
 fi
 
-# --- STEP 4: Generate Tangerine UI locale files
+# --- STEP 4: Add Tangerine UI locale file
 echo "Adding localized Tangerine UI theme names..."
 cp -r "./mastodon/config/locales/tangerineui.yml" "$MASTODON/config/locales/"
 
