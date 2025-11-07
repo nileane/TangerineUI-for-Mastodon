@@ -234,17 +234,29 @@ As an admin, you should also now be able to set Tangerine UI as the default them
 <details>
 <summary><strong>Install manually</strong></summary>
 
-1. **Check your Mastodon version**. For Tangerine UI to work properly, you need to make sure you're installing the correct version for your Mastodon instance. Please refer to the [Compatibility](#compatibility) section in this document before you proceed.
-
-2. **Copy** the files from `mastodon/app/javascript/styles/` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
-
+1. **Clone** the Tangerine UI repository, and fetch the [latest release](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) of Tangerine UI
 ```sh
-# Where $REPO is this repository, and $INSTALLDIR is your Mastodon installation.
-cp -r $REPO/mastodon/app/javascript/styles/* $INSTALLDIR/app/javascript/styles
+git clone https://github.com/nileane/TangerineUI-for-Mastodon.git ./TangerineUI
+cd TangerineUI
+git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
 ```
 
+2. **Copy** the files from `mastodon/app/javascript/styles/` in the Tangerine UI repository to your Mastodon themes directory `app/javascript/styles/`:
 
-3. **Add Tangerine UI to `themes.yml`**. To make Tangerine UI available in your users' settings, you need to add a new line to [`config/themes.yml`](https://github.com/mastodon/mastodon/blob/main/config/themes.yml). Here, we're adding 4 new lines, one for each variant:
+```sh
+# Replace $LIVE with the path to your Mastodon installation.
+cp -r ./mastodon/app/javascript/styles/* $LIVE/app/javascript/styles
+```
+
+3. **Add localized names.** Copy the provided localization file located under [`mastodon/config/locales/tangerineui.yml`](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/config/locales/tangerineui.yml)` in the Tangerine UI repository to add localized names for each variant in a selection of languages.[^7]
+[^7]: Mastodon will fallback to the English names for non-included locales.
+
+```sh
+# Replace $LIVE with the path to your Mastodon installation.
+cp -r ./mastodon/config/locales/tangerineui.yml $LIVE/config/locales
+```
+
+4. **Add Tangerine UI to `themes.yml`**. To add Tangerine UI as an available option in your users' settings, you need to edit the [`themes.yml`](https://github.com/mastodon/mastodon/blob/main/config/themes.yml) file located in your Mastodon installation under `config/themes.yml`. In this file, add 4 new lines, one for each variant of Tangerine UI, as follows:
 
 ```yml
 default: styles/application.scss
@@ -256,16 +268,10 @@ tangerineui-cherry: styles/tangerineui-cherry.scss
 tangerineui-lagoon: styles/tangerineui-lagoon.scss
 ```
 
-4. **Add localized names.** Copy the provided localization file located under `mastodon/config/locales/tangerineui.yml` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/config/locales/tangerineui.yml) to add localized names for Tangerine UI in a selection of languages.[^7]
-[^7]: Mastodon will fallback to the English names for non-included locales.
-
-```sh
-# Where $REPO is this repository, and $INSTALLDIR is your Mastodon installation.
-cp -r $REPO/mastodon/config/locales/tangerineui.yml $INSTALLDIR/config/locales
-```
-
 5. **Compile** assets:
 ```sh
+# Replace $LIVE with the path to your Mastodon installation.
+cd $LIVE
 RAILS_ENV=production bundle exec rails assets:precompile
 ```
 
