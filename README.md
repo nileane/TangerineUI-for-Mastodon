@@ -240,7 +240,7 @@ cd TangerineUI
 git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
 ```
 
-2. **Copy** the files from `mastodon/app/javascript/styles/ in the Tangerine UI repository to your Mastodon themes directory `app/javascript/styles/`:
+2. **Copy** the files from `mastodon/app/javascript/styles/` in the Tangerine UI repository to your Mastodon themes directory `app/javascript/styles/`:
 
 ```sh
 # Replace $LIVE with the path to your Mastodon installation.
