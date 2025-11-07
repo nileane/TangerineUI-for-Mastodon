@@ -248,17 +248,11 @@ tangerineui-cherry: styles/tangerineui-cherry.scss
 tangerineui-lagoon: styles/tangerineui-lagoon.scss
 ```
 
-4. **\[Optional\] Add a localized name.** You can edit each desired language's locale file in `config/locales/[lang].yml` to add a localized string name for Tangerine UI. You need to do this for every language you expect your users to use. Otherwise, in their themes list, they will see the unlocalized theme name ("*tangerineui-purple*"), instead of a readable theme name ("*Tangerine UI (Purple)*").
+4. **Add localized names.** Copy the provided localization file located under `mastodon/config/locales/tangerineui.yml` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/config/locales/tangerineui.yml) to add localized names for Tangerine UI in a selection of languages. Mastodon will fallback to the English names for non-included locales.
 
-```yml
-themes:
-  contrast: Mastodon (High contrast)
-  default: Mastodon (Dark)
-  mastodon-light: Mastodon (Light)
-  tangerineui: Tangerine UI
-  tangerineui-purple: Tangerine UI (Purple)
-  tangerineui-cherry: Tangerine UI (Cherry)
-  tangerineui-lagoon: Tangerine UI (Lagoon)
+```sh
+# Where $REPO is this repository, and $INSTALLDIR is your Mastodon installation.
+cp -r $REPO/mastodon/config/locales/tangerineui.yml $INSTALLDIR/config/locales
 ```
 
 5. **Compile** assets:
