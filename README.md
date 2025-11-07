@@ -218,7 +218,7 @@ Alternatively:
 ./install.sh --main
 ```
 
-5. **Restart** your Mastodon instance for the changes to take effect.
+4. **Restart** your Mastodon instance for the changes to take effect.
 
 Your users should now be able to choose '*Tangerine UI*', '*Tangerine UI (Purple)*', '*Tangerine UI (Cherry)*', or '*Tangerine UI (Lagoon)*' as their site theme:
 
