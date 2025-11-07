@@ -256,7 +256,8 @@ tangerineui-cherry: styles/tangerineui-cherry.scss
 tangerineui-lagoon: styles/tangerineui-lagoon.scss
 ```
 
-4. **Add localized names.** Copy the provided localization file located under `mastodon/config/locales/tangerineui.yml` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/config/locales/tangerineui.yml) to add localized names for Tangerine UI in a selection of languages. Mastodon will fallback to the English names for non-included locales.
+4. **Add localized names.** Copy the provided localization file located under `mastodon/config/locales/tangerineui.yml` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/config/locales/tangerineui.yml) to add localized names for Tangerine UI in a selection of languages.[^7]
+[^7]: Mastodon will fallback to the English names for non-included locales.
 
 ```sh
 # Where $REPO is this repository, and $INSTALLDIR is your Mastodon installation.
