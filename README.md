@@ -234,7 +234,7 @@ As an admin, you should also now be able to set Tangerine UI as the default them
 <details>
 <summary><strong>Install manually</strong></summary>
 
-1. **Clone** the Tangerine UI repository, and fetch the [latest release](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) of Tangerine UI
+1. **Clone** the Tangerine UI repository, and fetch the [latest release](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) of Tangerine UI:
 ```sh
 git clone https://github.com/nileane/TangerineUI-for-Mastodon.git ./TangerineUI
 cd TangerineUI
