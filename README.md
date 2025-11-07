@@ -178,7 +178,6 @@ Your users will be able to select Tangerine UI in their settings on the web, and
 
 <details>
 <summary><strong>Install (using the included script)</strong></summary>
-<br>
 
 A basic installation script is included in this repository.  
 It can be used to install Tangerine UI on your Mastodon instance for the first time, and to automate the process of updating Tangerine UI.
