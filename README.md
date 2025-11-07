@@ -205,7 +205,7 @@ Make sure the Mastodon and Tangerine UI directory paths at the top of `install.s
 ./install.sh
 ```
 
-Alternatively,
+Alternatively:
 
 * Run with `--skip-confirm` to bypass all confirmation prompts:
 ```sh
