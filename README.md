@@ -210,6 +210,11 @@ Alternatively, run with `--skip-confirm` to bypass all confirmation prompts:
 ./install.sh --skip-confirm
 ```
 
+By default, the installation script will install from the latest stable release of Tangerine UI. If you wish to install from the latest commits on the main branch, use the `--main`:
+```sh
+./install.sh --main
+```
+
 5. **Restart** your Mastodon instance for the changes to take effect.
 
 Your users should now be able to choose '*Tangerine UI*', '*Tangerine UI (Purple)*', '*Tangerine UI (Cherry)*', or '*Tangerine UI (Lagoon)*' as their site theme:

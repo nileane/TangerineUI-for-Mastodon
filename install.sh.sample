@@ -38,19 +38,11 @@ confirm_path() {
     esac
 }
 
-# Check for command-line arguments
 SKIP_CONFIRM=false
-while [[ "$#" -gt 0 ]]; do
-    case $1 in
-        --skip-confirm) SKIP_CONFIRM=true ;;
-        *) echo "Unknown parameter passed: $1" >&2; exit 1 ;;
-    esac
-    shift
-done
-
 MAIN_BRANCH=false
 while [[ "$#" -gt 0 ]]; do
-    case $1 in
+    case "$1" in
+        --skip-confirm) SKIP_CONFIRM=true ;;
         --main) MAIN_BRANCH=true ;;
         *) echo "Unknown parameter passed: $1" >&2; exit 1 ;;
     esac
