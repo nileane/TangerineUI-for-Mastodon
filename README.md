@@ -248,7 +248,7 @@ git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
 cp -r ./mastodon/app/javascript/styles/* $LIVE/app/javascript/styles
 ```
 
-3. **Add localized names.** Copy the provided localization file located under [`mastodon/config/locales/tangerineui.yml`](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/config/locales/tangerineui.yml)` in the Tangerine UI repository to add localized names for each variant in a selection of languages.[^7]
+3. **Add localized names.** Copy the provided localization file located under [`mastodon/config/locales/tangerineui.yml`](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/config/locales/tangerineui.yml) in the Tangerine UI repository to add localized names for each variant in a selection of languages.[^7]
 [^7]: Mastodon will fallback to the English names for non-included locales.
 
 ```sh
