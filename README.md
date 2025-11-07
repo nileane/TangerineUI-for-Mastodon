@@ -205,12 +205,15 @@ Make sure the Mastodon and Tangerine UI directory paths at the top of `install.s
 ./install.sh
 ```
 
-Alternatively, run with `--skip-confirm` to bypass all confirmation prompts:
+Alternatively,
+
+* Run with `--skip-confirm` to bypass all confirmation prompts:
 ```sh
 ./install.sh --skip-confirm
 ```
 
-By default, the installation script will install from the latest stable release of Tangerine UI. If you wish to install from the latest commits on the main branch, use the `--main`:
+* Run with `--main` if you wish to install by pulling from the latest commits on the main branch.  
+(By default, the script will install the [latest stable release](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) of Tangerine UI.)
 ```sh
 ./install.sh --main
 ```
