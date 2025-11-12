@@ -34,7 +34,7 @@
     --color-content-fg-muted: color-mix(in srgb, var(--color-content-fg), var(--color-content-bg) 40%);
     --color-content-secondary-bg: #f5f4f9;
     --color-content-secondary-separator: rgba(223, 219, 237, 0.4);
-    --color-content-bg-focus: #fffcfa;
+    --color-content-bg-focus: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 96%);
 
     --color-accent: #6364ff;
     --color-accent-focus: #563acc;
@@ -68,7 +68,7 @@
         --color-content-fg-muted: #737373;
         --color-content-secondary-bg: var(--color-secondary-bg);
         --color-content-secondary-separator: rgba(64, 62, 89, 0.4);
-        --color-content-bg-focus: #0e0e0e;
+        --color-content-bg-focus: color-mix(in srgb, var(--color-accent), var(--color-content-bg) 90%);
 
         --color-accent: #7a7af9;
         --color-accent-focus: #5a47ff;
@@ -2748,14 +2748,6 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
         outline: 0;
         --color-post-bg: var(--color-content-bg-focus);
         background-color: var(--color-post-bg);
-}
-@media screen and (min-width:1175px) { /* Subtle hover effect when you hover over a post content in the timeline. Only on bigger screens. */
-    .app-body .status__wrapper:has(.status__content:hover),
-    .app-body .notification__message:has(+ div > .status__wrapper .status__content:hover),
-    .app-body .status__wrapper:has(.status__content:hover) .status__avatar,
-    .app-body .notification-ungrouped:has(.status__wrapper .status__content:hover) .notification-ungrouped__header {
-        --color-post-bg: var(--color-content-bg-focus);
-    }
 }
 .app-body :is(.status__wrapper.focusable, .detailed-status__wrapper.focusable):focus .status__avatar {
     outline: 6px solid var(--color-post-bg);
