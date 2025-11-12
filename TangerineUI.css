@@ -3444,6 +3444,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .status--is-quote .display-name__account {
     font-size: unset;
+    letter-spacing: unset;
 }
 .app-body .status--is-quote .status__relative-time {
     inset-inline-end: 15px;
