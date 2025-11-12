@@ -331,7 +331,7 @@ Your users should now be able to select Tangerine UI as a theme in their setting
 
 > [!WARNING]
 > **Using the '*Custom CSS*' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their Appearance settings** ([see *Accessibility*](#accessibility)).  
-> Please make sure there is a consensus among your users for doing so. If not, scroll back to the previous section ((#4a-install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended)) on [how to install Tangerine UI as an optional theme](#4a-install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended) for your users.
+> Please make sure there is a consensus among your users for doing so. If not, scroll back to the previous section ([4.a](#4a-install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended)) on how to install Tangerine UI as an optional theme for your users.
 
 
 ## 5. Installation for regular users
