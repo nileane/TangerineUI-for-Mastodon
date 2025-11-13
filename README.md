@@ -163,7 +163,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 
 There are two ways to install Tangerine UI on your Mastodon instance:
 
-- an **optional** theme \[Recommended\]
+- as an **optional** theme \[Recommended\]
 - as the **only** theme
 
 ### 4.a Install Tangerine UI as an optional theme on your instance [Recommended]:
