@@ -1729,7 +1729,7 @@ body.app-body  {
 .app-body .reply-indicator p {
     overflow: hidden;
 }
-.app-body .reply-indicator__line:before {
+.app-body .reply-indicator__line::before {
     background-color: var(--color-accent);
     z-index: 1;
     opacity: .6;
@@ -2609,7 +2609,7 @@ body.app-body  {
     border-color: var(--color-lines);
     font-style: italic;
 }
-.app-body :is(.status__content__text, .e-content, .edit-indicator__content, .reply-indicator__content) blockquote:before {
+.app-body :is(.status__content__text, .e-content, .edit-indicator__content, .reply-indicator__content) blockquote::before {
     background-color: var(--color-content-fg);
 }
 
@@ -3774,7 +3774,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
        border-radius: 0;
     }
 }
-.app-body .column-header__wrapper.active:before {
+.app-body .column-header__wrapper.active::before {
     top: -17px;
     bottom: unset;
     opacity: 30%;
@@ -3786,7 +3786,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     box-shadow: none;
 }
 @media screen and (min-width:1175px) {
-    .app-body .column-header__wrapper.active:before {
+    .app-body .column-header__wrapper.active::before {
         top: unset;
         bottom: -15px;
         border-top: 1px solid var(--color-lines-translucent);
@@ -6281,7 +6281,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 .app-body .button,
 .app-body .button.logo-button,
-.app-body .rules-list li:before,
+.app-body .rules-list li::before,
 .app-body .icon-with-badge__badge {
     background-color: var(--color-accent);
     color: var(--color-accent-fg);
@@ -6485,7 +6485,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
 }
 
 .app-body .dropdown-menu__item a,
-.app-body .dropdown-menu__arrow:before {
+.app-body .dropdown-menu__arrow::before {
     background-color: var(--color-content-bg);
     color: var(--color-content-fg);
     border: 0;
@@ -7686,7 +7686,7 @@ a:is(.active,
 .app-body .about__domain-blocks__domain__type {
     color: var(--color-content-fg);
 }
-.app-body .prose ul > li:before {
+.app-body .prose ul > li::before {
     background-color: var(--color-content-fg);
     opacity: .3;
     top: .55em;
