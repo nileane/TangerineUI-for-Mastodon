@@ -144,7 +144,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [mastodon.projetretro.io](https://mastodon.projetretro.io) | 1+             | an optional theme   | No                      |
 
 ## 3. Compatibility
-✅ [**Tangerine UI**](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) **is compatible with instances running the [latest stable release of Mastodon](https://github.com/mastodon/mastodon/releases/tag/v4.4.8)** (currently Mastodon 4.5.2)[^3][^4]
+✅ [**Tangerine UI**](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) **is compatible with instances running the [latest stable release of Mastodon](https://github.com/mastodon/mastodon/releases/tag/v4.4.8)** (currently Mastodon 4.5.3)[^3][^4]
 [^3]: Tangerine UI (v2._x_) is also compatible with instances running a version of **Glitch-soc** based on the current stable release of Mastodon, as long as it is [installed as a vanilla theme](#installation-for-glitch-soc-admins) on these instances.
 [^4]: As a result, instances running on nightly/alpha/beta builds of Mastodon are not supported. If you do use Tangerine UI with an unstable version of Mastodon, feel free to [report](https://github.com/nileane/TangerineUI-for-Mastodon/issues) UI issues as they appear.
 
