@@ -812,8 +812,12 @@ body.app-body  {
         .icon-retweet,
         .icon-Boost-icon,
         .icon-Unboost-icon,
+        .reblog-menu-item .icon,
+        .reblog-menu-item.dropdown-menu__item--highlighted .icon,
         .icon-Quote-icon,
         .icon-quote,
+        .reblog-menu-item:last-child .icon,
+        .reblog-menu-item.dropdown-menu__item--highlighted:last-child .icon,
         .icon-repeat,
         .icon-reply,
         .icon-reply-all,
@@ -896,8 +900,12 @@ body.app-body  {
         .icon-retweet,
         .icon-Boost-icon,
         .icon-Unboost-icon,
+        .reblog-menu-item .icon,
+        .reblog-menu-item.dropdown-menu__item--highlighted .icon,
         .icon-Quote-icon,
         .icon-quote,
+        .reblog-menu-item:last-child .icon,
+        .reblog-menu-item.dropdown-menu__item--highlighted:last-child .icon,
         .icon-repeat,
         .icon-reply,
         .icon-reply-all,
@@ -1002,12 +1010,14 @@ body.app-body  {
 }
 /* Boost */
 .app-body .icon-retweet,
-.app-body .icon-Boost-icon {
+.app-body .icon-Boost-icon,
+.app-body .reblog-menu-item .icon {
     background-image: var(--icon-boost-accent);
 }
 .app-body button.icon-button.active .icon-retweet,
 .app-body .detailed-status__button button.icon-button.active:hover .icon-retweet,
-.app-body .icon-Unboost-icon {
+.app-body .icon-Unboost-icon,
+.app-body .reblog-menu-item.dropdown-menu__item--highlighted .icon {
     background-image: var(--icon-boost-accent-active);
 }
 .app-body .status__prepend__icon .icon-retweet,
@@ -1041,7 +1051,9 @@ body.app-body  {
     background-image: var(--icon-boost-accent);
 }
 /* Quote */
-.app-body .icon-Quote-icon {
+.app-body .icon-Quote-icon,
+.reblog-menu-item:last-child .icon,
+.reblog-menu-item.dropdown-menu__item--highlighted:last-child .icon {
     background-image: var(--icon-quote-accent);
 }
 .app-body .icon-quote {
@@ -6498,7 +6510,7 @@ div[tabindex="-1"] + div[tabindex="-1"] > .status__wrapper > .status-reply.statu
     color: var(--color-accent-fg);
     outline: 0;
 }
-.app-body .dropdown-menu__item :is(a, button):is(:active, :focus, :hover):not(:disabled):not([aria-disabled=true]) :is(.icon-Boost-icon, .icon-Unboost-icon, .icon-Quote-icon) {
+.app-body .dropdown-menu__item :is(a, button):is(:active, :focus, :hover):not(:disabled):not([aria-disabled=true]) :is(.icon, .icon-Boost-icon, .icon-Unboost-icon, .icon-Quote-icon) {
     filter: brightness(0) invert(1);
 }
 .app-body .dropdown-menu__item :is(a, button):is([aria-disabled=true], :disabled) {
