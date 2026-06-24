@@ -6,7 +6,7 @@
  </picture>
 </h1>
 
-Tangerine UI is a vibrant custom theme for Mastodon's Web UI, available in four variants: 🍊 Tangerine, 🪻 Purple, 🍒 Cherry, and 🐠 Lagoon.
+Tangerine UI is a vibrant custom theme for Mastodon's Web UI, available in five variants: 🍊 Tangerine, 🪻 Purple, 🍒 Cherry, 🐠 Lagoon, and 🪨 Granite.
 
 [🕹️ **Live demo** @ nileane.fr](https://nileane.fr) • [👋 **Follow Tangerine UI** on Mastodon](https://nileane.fr/@TangerineUI) • [📝 **Release notes**](https://github.com/nileane/TangerineUI-for-Mastodon/releases)
 
@@ -56,6 +56,13 @@ I won't be held responsible if you end up licking your screen because of this on
 Soft turquoise palette that gives neon vibes at night.
 
 <img width="1784" alt="TangerineUI-lagoon" src="./art/Screenshots/TangerineUI-lagoon.png">  
+&nbsp;
+
+
+**🪨 Granite**  
+A monochrome black-and-white palette: crisp graphite on light backgrounds, soft silver in the dark.
+
+<img width="1784" alt="TangerineUI-granite" src="./art/Screenshots/TangerineUI-granite.png">  
 &nbsp;
 
 

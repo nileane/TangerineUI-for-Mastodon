@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { variants } from './variants.mjs';
 
 const tpl = readFileSync('src/template.css', 'utf8');
@@ -10,6 +10,7 @@ for (const v of variants) {
   });
   if (out.includes('{{')) throw new Error(`unsubstituted placeholder remains for variant '${v.suffix}'`);
   writeFileSync(`TangerineUI${v.suffix}.css`, out);
+  mkdirSync(`mastodon/app/javascript/styles/${v.scssDir}`, { recursive: true });
   writeFileSync(`mastodon/app/javascript/styles/${v.scssDir}/${v.scssDir}.scss`, out);
   console.log(`built TangerineUI${v.suffix}.css (+ ${v.scssDir}.scss)`);
 }

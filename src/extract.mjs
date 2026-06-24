@@ -5,6 +5,7 @@ const VARIANTS = [
   { suffix: '-purple', scssDir: 'tangerineui-purple' },
   { suffix: '-cherry', scssDir: 'tangerineui-cherry' },
   { suffix: '-lagoon', scssDir: 'tangerineui-lagoon' },
+  { suffix: '-granite', scssDir: 'tangerineui-granite' },
 ];
 
 const cols = VARIANTS.map(v => readFileSync(`TangerineUI${v.suffix}.css`, 'utf8').split('\n'));
