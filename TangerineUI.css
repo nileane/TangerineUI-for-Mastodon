@@ -93,18 +93,18 @@
 :root:root {
     /* Text */
     --color-text-primary: var(--color-content-fg);
-    --color-text-secondary: var(--color-content-fg-muted);
-    --color-text-tertiary: var(--color-fg-muted);
+    --color-text-secondary: #5a534d;
+    --color-text-tertiary: #6b645e;
     --color-text-inverted: var(--color-content-bg);
     --color-text-brand: var(--color-accent);
     --color-text-brand-soft: color-mix(in oklab, var(--color-content-fg), var(--color-accent));
     --color-text-on-brand-base: var(--color-accent-fg);
     --color-text-brand-on-inverted: var(--color-accent-focus);
-    --color-text-error: var(--color-reject);
+    --color-text-error: #b3142f;
     --color-text-on-error-base: #ffffff;
-    --color-text-warning: var(--color-warning);
+    --color-text-warning: #7a5200;
     --color-text-on-warning-base: #ffffff;
-    --color-text-success: var(--color-confirm-fg);
+    --color-text-success: #2e7350;
     --color-text-on-success-base: #ffffff;
     --color-text-disabled: var(--color-fg-muted);
     --color-text-on-disabled: var(--color-content-bg);
@@ -128,14 +128,14 @@
     --color-bg-brand-base-hover: var(--color-accent-focus);
     --color-bg-brand-soft: var(--color-accent-bg);
     --color-bg-brand-softest: var(--color-content-bg-focus);
-    --color-bg-error-base: var(--color-reject);
+    --color-bg-error-base: #c0203c;
     --color-bg-error-base-hover: color-mix(in srgb, var(--color-reject), #000000 12%);
     --color-bg-error-soft: var(--color-reject-bg);
     --color-bg-error-softest: color-mix(in srgb, var(--color-reject), var(--color-content-bg) 88%);
-    --color-bg-warning-base: var(--color-warning);
+    --color-bg-warning-base: #7a4d00;
     --color-bg-warning-soft: var(--color-warning-bg);
     --color-bg-warning-softest: color-mix(in srgb, var(--color-warning), var(--color-content-bg) 88%);
-    --color-bg-success-base: var(--color-confirm);
+    --color-bg-success-base: #0f7a3f;
     --color-bg-success-soft: var(--color-confirm-bg);
     --color-bg-success-softest: color-mix(in srgb, var(--color-confirm), var(--color-content-bg) 88%);
 
@@ -148,6 +148,20 @@
     --color-border-warning-soft: color-mix(in srgb, var(--color-warning), transparent 50%);
     --color-border-error-soft: color-mix(in srgb, var(--color-reject), transparent 50%);
     --color-border-media: rgba(255, 255, 255, 0.15);
+}
+
+/* A11y: dark-mode default-theme contrast fixes */
+@media (prefers-color-scheme: dark) {
+    :root:root {
+        --color-text-secondary: #a0a0a0;
+        --color-text-tertiary: #909090;
+        --color-text-error: #ff8d99;
+        --color-text-warning: #e8b54f;
+        --color-text-success: #79bd9a;
+        --color-bg-error-base: #c0203c;
+        --color-bg-warning-base: #7a4d00;
+        --color-bg-success-base: #0a6e38;
+    }
 }
 
 /* Collections icon variables (added for Mastodon 4.6) */
