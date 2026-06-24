@@ -23,7 +23,8 @@ Tangerine UI is a vibrant custom theme for Mastodon's Web UI, available in four 
       4.b [Install as the only theme on your instance](#4b-install-tangerine-ui-as-the-only-theme-on-your-instance)
 6. [**Installation for regular users**](#5-installation-for-regular-users)
 7. [**Accessibility**](#6-accessibility)
-8. [**Credits**](#7-credits)
+8. [**Development**](#development)
+9. [**Credits**](#7-credits)
 9. [**Support this project <3**](#8-support-this-project-3)
   
 ## 2. Overview
@@ -356,6 +357,15 @@ Even if you are not an admin on your instance, you can still use Tangerine UI wi
 
 ## 6. Accessibility
 Please consider that some of your users may depend on Mastodon's High Contrast theme before [setting Tangerine UI as the only theme](#4b-install-tangerine-ui-as-the-only-theme-on-your-instance) on your instance. For this reason, unless you're running a single-user instance, I strongly recommend [installing Tangerine UI as an optional/revertable theme](#4a-install-tangerine-ui-as-an-optional-theme-on-your-instance-recommended) instead.
+
+## Development
+
+The four `TangerineUI*.css` files (and their `.scss` installation copies under `mastodon/`) are **generated** — don't edit them directly. The source lives in `src/`:
+
+- `src/template.css` — the shared theme; per-variant values appear as `{{placeholders}}`.
+- `src/variants.mjs` — each variant's palette, logo, high-contrast brand colors, and meta.
+
+After editing either, run `node src/build.mjs` (no dependencies — just Node) to regenerate all eight files, then commit them. CI runs the build and fails if the committed output is out of date.
 
 ## 7. Credits
 The logo for Tangerine UI was originally designed by [Younis @younishd](https://younishd.fr). 🍊
