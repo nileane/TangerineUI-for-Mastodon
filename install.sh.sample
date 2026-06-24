@@ -9,17 +9,23 @@
 #    It can also be used to update Tangerine UI on your Mastodon instance. 
 #
 #
-# • Set the TANGERINEUI and MASTODON paths below before running the script for the first time.
+# • Set the MASTODON path below to your Mastodon installation before running the script for the first time.
+#   (TANGERINEUI is detected automatically from this script's location.)
 # • Only run this script as the mastodon user.
 # • Use --skip-confirm to bypass all confirmation steps.
 # • Use --main to install from the latest commits on the main branch.
-# 
+#
 #
 # /!\ This script is not suitable for Glitch-soc instances.
 
 # --- CONFIGURE PATHS BELOW ---
 # Use absolute paths
-TANGERINEUI="/home/mastodon/TangerineUI"
+
+# Path to the Tangerine UI repository. Defaults to the directory this script
+# lives in, so it works out of the box for both server and local installs.
+TANGERINEUI="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Path to your Mastodon installation. Edit this to match your setup.
 MASTODON="/home/mastodon/live"
 
 set -e

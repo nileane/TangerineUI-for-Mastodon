@@ -203,7 +203,7 @@ Run the following commands as the `mastodon` user to install Tangerine UI using 
 
 1. **Clone** the Tangerine UI repository
 ```sh
-git clone https://github.com/nileane/TangerineUI-for-Mastodon.git ./TangerineUI
+git clone https://github.com/mattbirchler/TangerineUI-for-Mastodon.git ./TangerineUI
 cd TangerineUI
 ```
 
@@ -212,9 +212,9 @@ cd TangerineUI
 cp install.sh.sample install.sh
 ```
 
-Make sure the Mastodon and Tangerine UI directory paths at the top of `install.sh` are correct:
-  * Edit the line beginning with `TANGERINEUI=` to adjust the path to the Tangerine UI directory.
+Make sure the Mastodon directory path at the top of `install.sh` is correct:
   * Edit the line beginning with `MASTODON=` to adjust the path to your Mastodon installation directory.
+  * The `TANGERINEUI=` path is detected automatically from the location of the script, so you normally don't need to change it.
 
 3. **Run** the install script.
 ```sh
@@ -252,7 +252,7 @@ As an admin, you should also now be able to set Tangerine UI as the default them
 
 1. **Clone** the Tangerine UI repository, and fetch the [latest stable release](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) of Tangerine UI:
 ```sh
-git clone https://github.com/nileane/TangerineUI-for-Mastodon.git ./TangerineUI
+git clone https://github.com/mattbirchler/TangerineUI-for-Mastodon.git ./TangerineUI
 cd TangerineUI
 git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
 ```
@@ -311,7 +311,7 @@ Tangerine UI does not yet support Glitch-soc's features and layout, but it can s
 
 1. **Clone** the Tangerine UI repository, and fetch the [latest stable release](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) of Tangerine UI:
 ```sh
-git clone https://github.com/nileane/TangerineUI-for-Mastodon.git ./TangerineUI
+git clone https://github.com/mattbirchler/TangerineUI-for-Mastodon.git ./TangerineUI
 cd TangerineUI
 git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
 ```
