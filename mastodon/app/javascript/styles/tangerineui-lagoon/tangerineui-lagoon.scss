@@ -8,7 +8,7 @@
 
 /* 📄 Meta */
 :root {
-    --version: "v2.5.4-EOL";
+    --version: "v2.6.0";
 
     --variant-name: "Lagoon";
     --variant-emoji: "\1F420\00A0";
@@ -52,6 +52,9 @@
     --color-reject: #df405a;
     --color-reject-bg: rgba(223, 64, 90, 0.3);
 
+    --color-warning: #a06a00;
+    --color-warning-bg: rgba(160, 106, 0, 0.3);
+
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -80,7 +83,71 @@
         --color-lines-translucent: rgba(255, 255, 255, .15);
 
         --color-confirm-fg: var(--color-confirm);
+
+        --color-warning: #d9a441;
+        --color-warning-bg: rgba(217, 164, 65, 0.3);
     }
+}
+
+/* 🎯 Mastodon 4.6 design tokens */
+:root:root {
+    /* Text */
+    --color-text-primary: var(--color-content-fg);
+    --color-text-secondary: var(--color-content-fg-muted);
+    --color-text-tertiary: var(--color-fg-muted);
+    --color-text-inverted: var(--color-content-bg);
+    --color-text-brand: var(--color-accent);
+    --color-text-brand-soft: color-mix(in oklab, var(--color-content-fg), var(--color-accent));
+    --color-text-on-brand-base: var(--color-accent-fg);
+    --color-text-brand-on-inverted: var(--color-accent-focus);
+    --color-text-error: var(--color-reject);
+    --color-text-on-error-base: #ffffff;
+    --color-text-warning: var(--color-warning);
+    --color-text-on-warning-base: #ffffff;
+    --color-text-success: var(--color-confirm-fg);
+    --color-text-on-success-base: #ffffff;
+    --color-text-disabled: var(--color-fg-muted);
+    --color-text-on-disabled: var(--color-content-bg);
+    --color-text-bookmark-highlight: var(--color-reject);
+    --color-text-favourite-highlight: var(--color-warning);
+    --color-text-on-media: #ffffff;
+    --color-text-status-links: var(--color-accent);
+
+    /* Background */
+    --color-bg-primary: var(--color-content-bg);
+    --color-bg-secondary: var(--color-content-secondary-bg);
+    --color-bg-tertiary: var(--color-secondary-bg);
+    --color-bg-inverted: var(--color-fg);
+    --color-bg-overlay-base: color-mix(in srgb, var(--color-content-fg-bold), transparent 40%);
+    --color-bg-overlay-highlight: color-mix(in srgb, var(--color-content-fg-bold), transparent 95%);
+    --color-bg-overlay: var(--color-content-bg);
+    --color-bg-media-base: #000000;
+    --color-bg-media: color-mix(in srgb, #000000 65%, transparent);
+    --color-bg-disabled: var(--color-fg-muted);
+    --color-bg-brand-base: var(--color-accent);
+    --color-bg-brand-base-hover: var(--color-accent-focus);
+    --color-bg-brand-soft: var(--color-accent-bg);
+    --color-bg-brand-softest: var(--color-content-bg-focus);
+    --color-bg-error-base: var(--color-reject);
+    --color-bg-error-base-hover: color-mix(in srgb, var(--color-reject), #000000 12%);
+    --color-bg-error-soft: var(--color-reject-bg);
+    --color-bg-error-softest: color-mix(in srgb, var(--color-reject), var(--color-content-bg) 88%);
+    --color-bg-warning-base: var(--color-warning);
+    --color-bg-warning-soft: var(--color-warning-bg);
+    --color-bg-warning-softest: color-mix(in srgb, var(--color-warning), var(--color-content-bg) 88%);
+    --color-bg-success-base: var(--color-confirm);
+    --color-bg-success-soft: var(--color-confirm-bg);
+    --color-bg-success-softest: color-mix(in srgb, var(--color-confirm), var(--color-content-bg) 88%);
+
+    /* Border */
+    --color-border-primary: var(--color-lines);
+    --color-border-brand: var(--color-accent);
+    --color-border-brand-soft: var(--color-accent-lines);
+    --color-border-error: var(--color-reject);
+    --color-border-success-soft: color-mix(in srgb, var(--color-confirm), var(--color-content-bg) 70%);
+    --color-border-warning-soft: color-mix(in srgb, var(--color-warning), transparent 50%);
+    --color-border-error-soft: color-mix(in srgb, var(--color-reject), transparent 50%);
+    --color-border-media: rgba(255, 255, 255, 0.15);
 }
 .app-body {
     --background-color: var(--color-bg);
