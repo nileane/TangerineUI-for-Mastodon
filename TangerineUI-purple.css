@@ -164,6 +164,82 @@
     }
 }
 
+/* ♿ High-contrast mode (OS prefers-contrast + Mastodon data-contrast) */
+@media (prefers-contrast: more) {
+    :root:root {
+    --color-text-primary: #000000;
+    --color-text-secondary: #1f1f1f;
+    --color-text-tertiary: #2f2f2f;
+    --color-text-brand: #3d2bcc;
+    --color-text-status-links: #3d2bcc;
+    --color-text-on-brand-base: #ffffff;
+    --color-bg-brand-base: #3d2bcc;
+    --color-border-brand: #3d2bcc;
+    --color-border-primary: #000000;
+    --color-text-error: #8a0011;
+    --color-bg-error-base: #8a0011;
+    --color-text-warning: #5a3a00;
+    --color-bg-warning-base: #5a3a00;
+    --color-text-success: #0a5c2f;
+    --color-bg-success-base: #0a5c2f;
+    }
+}
+:root:root[data-contrast='high'] {
+    --color-text-primary: #000000;
+    --color-text-secondary: #1f1f1f;
+    --color-text-tertiary: #2f2f2f;
+    --color-text-brand: #3d2bcc;
+    --color-text-status-links: #3d2bcc;
+    --color-text-on-brand-base: #ffffff;
+    --color-bg-brand-base: #3d2bcc;
+    --color-border-brand: #3d2bcc;
+    --color-border-primary: #000000;
+    --color-text-error: #8a0011;
+    --color-bg-error-base: #8a0011;
+    --color-text-warning: #5a3a00;
+    --color-bg-warning-base: #5a3a00;
+    --color-text-success: #0a5c2f;
+    --color-bg-success-base: #0a5c2f;
+}
+@media (prefers-color-scheme: dark) {
+    @media (prefers-contrast: more) {
+        :root:root {
+        --color-text-primary: #ffffff;
+        --color-text-secondary: #e6e6e6;
+        --color-text-tertiary: #d4d4d4;
+        --color-text-brand: #b8b5ff;
+        --color-text-status-links: #b8b5ff;
+        --color-text-on-brand-base: #000000;
+        --color-bg-brand-base: #b8b5ff;
+        --color-border-brand: #b8b5ff;
+        --color-border-primary: #ffffff;
+        --color-text-error: #ffc2c8;
+        --color-bg-error-base: #8a0011;
+        --color-text-warning: #ffd591;
+        --color-bg-warning-base: #5a3a00;
+        --color-text-success: #b9f8cf;
+        --color-bg-success-base: #0a5c2f;
+        }
+    }
+    :root:root[data-contrast='high'] {
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e6e6e6;
+    --color-text-tertiary: #d4d4d4;
+    --color-text-brand: #b8b5ff;
+    --color-text-status-links: #b8b5ff;
+    --color-text-on-brand-base: #000000;
+    --color-bg-brand-base: #b8b5ff;
+    --color-border-brand: #b8b5ff;
+    --color-border-primary: #ffffff;
+    --color-text-error: #ffc2c8;
+    --color-bg-error-base: #8a0011;
+    --color-text-warning: #ffd591;
+    --color-bg-warning-base: #5a3a00;
+    --color-text-success: #b9f8cf;
+    --color-bg-success-base: #0a5c2f;
+    }
+}
+
 /* Collections icon variables (added for Mastodon 4.6) */
 :root {
     --icon-collections: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%232a2d37' viewBox='0 -960 960 960'%3E%3Cpath d='m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z'%3E%3C/path%3E%3C/svg%3E");
