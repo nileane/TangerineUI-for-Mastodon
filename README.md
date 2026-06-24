@@ -145,7 +145,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [m.heine.xyz](https://m.heine.xyz)                         | 1+             | an optional theme   | Yes (Tangerine variant) |
 
 ## 3. Compatibility
-✅ [**Tangerine UI**](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) **is currently compatible with instances running Mastodon 4.5.x**[^3][^4]
+✅ [**Tangerine UI**](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) **requires Mastodon 4.6 or later** (Mastodon 4.6 is the minimum supported version)[^3][^4]
 [^3]: Tangerine UI (v2._x_) is also compatible with instances running a version of **Glitch-soc** based on the current stable release of Mastodon, as long as it is [installed as a vanilla theme](#installation-for-glitch-soc-admins) on these instances.
 [^4]: As a result, instances running on nightly/alpha/beta builds of Mastodon are not supported. If you do use Tangerine UI with an unstable version of Mastodon, feel free to [report](https://github.com/nileane/TangerineUI-for-Mastodon/issues) UI issues as they appear.
 
@@ -156,6 +156,7 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 * 4.1._x_
         
 🚫 The following versions of Mastodon are **not supported**:
+* 4.5._x_
 * 4.4._x_
 * 4.3._x_
 * 4.0._x_ and older

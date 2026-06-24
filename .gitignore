@@ -2,3 +2,5 @@
 .nova
 update.sh
 install.sh
+docs/
+.claude/
