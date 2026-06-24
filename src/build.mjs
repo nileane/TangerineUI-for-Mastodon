@@ -12,5 +12,8 @@ for (const v of variants) {
   writeFileSync(`TangerineUI${v.suffix}.css`, out);
   mkdirSync(`mastodon/app/javascript/styles/${v.scssDir}`, { recursive: true });
   writeFileSync(`mastodon/app/javascript/styles/${v.scssDir}/${v.scssDir}.scss`, out);
-  console.log(`built TangerineUI${v.suffix}.css (+ ${v.scssDir}.scss)`);
+  // Top-level entry point referenced by config/themes.yml. Without this wrapper
+  // the theme is missing from styles/ and `rails assets:precompile` fails.
+  writeFileSync(`mastodon/app/javascript/styles/${v.scssDir}.scss`, `@use 'application';\n@use '${v.scssDir}/${v.scssDir}';\n`);
+  console.log(`built TangerineUI${v.suffix}.css (+ ${v.scssDir}.scss + ${v.scssDir}/${v.scssDir}.scss)`);
 }

@@ -8,7 +8,7 @@
 
 Tangerine UI is a vibrant custom theme for Mastodon's Web UI, available in five variants: 🍊 Tangerine, 🪻 Purple, 🍒 Cherry, 🐠 Lagoon, and 🪨 Granite.
 
-[🕹️ **Live demo** @ nileane.fr](https://nileane.fr) • [👋 **Follow Tangerine UI** on Mastodon](https://nileane.fr/@TangerineUI) • [📝 **Release notes**](https://github.com/nileane/TangerineUI-for-Mastodon/releases)
+[🕹️ **Live demo** @ nileane.fr](https://nileane.fr) • [👋 **Follow Tangerine UI** on Mastodon](https://nileane.fr/@TangerineUI) • [📝 **Release notes**](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/releases)
 
 ## 0. About this fork
 
@@ -108,7 +108,7 @@ Tangerine UI uses a selection of icons from the beautiful [Phosphor](https://pho
   Custom emojis are great, but they may be difficult to distinguish when they are overly detailed. Tangerine UI allows you to hover and pause over an emoji to enlarge it.
 
 ✳️ **and more**  
-Tangerine UI was designed with care and great attention to detail. Feel free to explore all the changes it brings to Mastodon's UI, and feel free to [message me](https://nileane.fr/@TangerineUI) if you ever have any feedback to share or [bugs to report](https://github.com/nileane/TangerineUI-for-Mastodon/issues). :)
+Tangerine UI was designed with care and great attention to detail. Feel free to explore all the changes it brings to Mastodon's UI, and feel free to [message me](https://nileane.fr/@TangerineUI) if you ever have any feedback to share or [bugs to report](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/issues). :)
 
 
 ### 2.c List of instances that use Tangerine UI
@@ -164,9 +164,9 @@ This is a list of known Mastodon instances on which Tangerine UI has been instal
 | [m.heine.xyz](https://m.heine.xyz)                         | 1+             | an optional theme   | Yes (Tangerine variant) |
 
 ## 3. Compatibility
-✅ [**Tangerine UI**](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) **requires Mastodon 4.6 or later** (Mastodon 4.6 is the minimum supported version)[^3][^4]
+✅ [**Tangerine UI**](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/releases/latest) **requires Mastodon 4.6 or later** (Mastodon 4.6 is the minimum supported version)[^3][^4]
 [^3]: Tangerine UI (v2._x_) is also compatible with instances running a version of **Glitch-soc** based on the current stable release of Mastodon, as long as it is [installed as a vanilla theme](#installation-for-glitch-soc-admins) on these instances.
-[^4]: As a result, instances running on nightly/alpha/beta builds of Mastodon are not supported. If you do use Tangerine UI with an unstable version of Mastodon, feel free to [report](https://github.com/nileane/TangerineUI-for-Mastodon/issues) UI issues as they appear.
+[^4]: As a result, instances running on nightly/alpha/beta builds of Mastodon are not supported. If you do use Tangerine UI with an unstable version of Mastodon, feel free to [report](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/issues) UI issues as they appear.
 
 ⚠️ The following versions of Mastodon are **not supported** and may only be compatible with [**Tangerine UI Legacy** (v1.9)](https://github.com/nileane/TangerineUI-for-Mastodon/tree/legacy)[^5][^6]:
 [^5]: The advanced web interface (multi-column layout) is not supported by Tangerine UI Legacy (v1.9) and will fall back to Mastodon's default appearance if enabled.
@@ -199,11 +199,11 @@ You will also be able to set Tangerine UI as the default theme for everyone on y
 A basic installation script is included in this repository.  
 It can be used to install Tangerine UI on your Mastodon instance for the first time, and to automate the process of updating Tangerine UI.
 
-Run the following commands as the `mastodon` user to install Tangerine UI using the [included script](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/install.sh.sample):
+Run the following commands as the `mastodon` user to install Tangerine UI using the [included script](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/blob/main/install.sh.sample):
 
 1. **Clone** the Tangerine UI repository
 ```sh
-git clone https://github.com/nileane/TangerineUI-for-Mastodon.git ./TangerineUI
+git clone https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon.git ./TangerineUI
 cd TangerineUI
 ```
 
@@ -212,9 +212,9 @@ cd TangerineUI
 cp install.sh.sample install.sh
 ```
 
-Make sure the Mastodon and Tangerine UI directory paths at the top of `install.sh` are correct:
-  * Edit the line beginning with `TANGERINEUI=` to adjust the path to the Tangerine UI directory.
+Make sure the Mastodon directory path at the top of `install.sh` is correct:
   * Edit the line beginning with `MASTODON=` to adjust the path to your Mastodon installation directory.
+  * The `TANGERINEUI=` path is detected automatically from the location of the script, so you normally don't need to change it.
 
 3. **Run** the install script.
 ```sh
@@ -229,7 +229,7 @@ Alternatively:
 ```
 
 * Run with `--main` if you wish to install by pulling from the latest commits on the main branch.  
-(By default, the script will install the [latest stable release](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) of Tangerine UI.)
+(By default, the script will install the [latest stable release](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/releases/latest) of Tangerine UI.)
 ```sh
 ./install.sh --main
 ```
@@ -250,9 +250,9 @@ As an admin, you should also now be able to set Tangerine UI as the default them
 <details>
 <summary><strong>⚙️ Install manually</strong></summary>
 
-1. **Clone** the Tangerine UI repository, and fetch the [latest stable release](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) of Tangerine UI:
+1. **Clone** the Tangerine UI repository, and fetch the [latest stable release](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/releases/latest) of Tangerine UI:
 ```sh
-git clone https://github.com/nileane/TangerineUI-for-Mastodon.git ./TangerineUI
+git clone https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon.git ./TangerineUI
 cd TangerineUI
 git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
 ```
@@ -309,21 +309,21 @@ As an admin, you should also now be able to set Tangerine UI as the default them
 
 Tangerine UI does not yet support Glitch-soc's features and layout, but it can still be installed as a vanilla skin on your Glitch-soc instance:
 
-1. **Clone** the Tangerine UI repository, and fetch the [latest stable release](https://github.com/nileane/TangerineUI-for-Mastodon/releases/latest) of Tangerine UI:
+1. **Clone** the Tangerine UI repository, and fetch the [latest stable release](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/releases/latest) of Tangerine UI:
 ```sh
-git clone https://github.com/nileane/TangerineUI-for-Mastodon.git ./TangerineUI
+git clone https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon.git ./TangerineUI
 cd TangerineUI
 git checkout $(git describe --tags $(git rev-list --tags --max-count=1))
 ```
 
-1. **Copy the files** from `mastodon/app/javascript/styles/` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
+1. **Copy the files** from `mastodon/app/javascript/styles/` [in this repository](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/tree/main/mastodon/app/javascript/styles/) to your Mastodon themes directory `app/javascript/styles/`:
 
 ```sh
 # Replace $LIVE with the path to your Mastodon Glitch-soc installation.
 cp -r ./mastodon/app/javascript/styles/* $LIVE/app/javascript/styles
 ```
 
-2. **Copy the files** from `mastodon/app/javascript/skins/vanilla/` [in this repository](https://github.com/nileane/TangerineUI-for-Mastodon/tree/main/mastodon/app/javascript/skins/vanilla/) to your Glitch-soc skins directory `app/javascript/skins/vanilla/`:
+2. **Copy the files** from `mastodon/app/javascript/skins/vanilla/` [in this repository](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/tree/main/mastodon/app/javascript/skins/vanilla/) to your Glitch-soc skins directory `app/javascript/skins/vanilla/`:
 
 ```sh
 # Replace $LIVE with the path to your Mastodon Glitch-soc installation.
@@ -346,10 +346,10 @@ Your users should now be able to select Tangerine UI as a theme in their setting
 ### 4.b Install Tangerine UI as the only theme on your instance:
 1. **Check your Mastodon version**. For Tangerine UI to work properly, you need to make sure Tangerine UI is compatible with your Mastodon instance. Please refer to the [Compatibility](#3-compatibility) section in this document before you proceed.
 
-2. Copy & paste the contents of 🍊 [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the '***Custom CSS***' field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
-   * 🪻 For the Purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
-   * 🍒 For the Cherry variant, copy the contents of [`TangerineUI-cherry.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-cherry.css) instead.
-   * 🐠 For the Lagoon variant, copy the contents of [`TangerineUI-lagoon.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-lagoon.css) instead.
+2. Copy & paste the contents of 🍊 [`TangerineUI.css`](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/blob/main/TangerineUI.css) to the '***Custom CSS***' field in the administration panel on your Mastodon instance (Navigate to https://*domain*/admin/settings/appearance).
+   * 🪻 For the Purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
+   * 🍒 For the Cherry variant, copy the contents of [`TangerineUI-cherry.css`](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/blob/main/TangerineUI-cherry.css) instead.
+   * 🐠 For the Lagoon variant, copy the contents of [`TangerineUI-lagoon.css`](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/blob/main/TangerineUI-lagoon.css) instead.
 
 > [!WARNING]
 > **Using the '*Custom CSS*' field to apply Tangerine UI will prevent all users on your instance from being able to choose another theme in their Appearance settings** ([see *Accessibility*](#6-accessibility)).  
@@ -361,10 +361,10 @@ Even if you are not an admin on your instance, you can still use Tangerine UI wi
 
 1. **Check your Mastodon version**. For Tangerine UI to work properly, you need to make sure Tangerine UI is compatible with your Mastodon instance. Please refer to the [Compatibility](#compatibility) section in this document before you proceed.
 2. **Install a browser extension** that allows you to inject CSS on a webpage, such as [Stylus](https://add0n.com/stylus.html), or [Live CSS Editor](https://github.com/webextensions/live-css-editor)
-3. Copy & paste the contents of 🍊 [`TangerineUI.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI.css) to the extension's editor
-   * 🪻 For the Purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
-   * 🍒 For the Cherry variant, copy the contents of [`TangerineUI-cherry.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-cherry.css) instead.
-   * 🐠 For the Lagoon variant, copy the contents of [`TangerineUI-lagoon.css`](https://github.com/nileane/TangerineUI-for-Mastodon/blob/main/TangerineUI-lagoon.css) instead.
+3. Copy & paste the contents of 🍊 [`TangerineUI.css`](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/blob/main/TangerineUI.css) to the extension's editor
+   * 🪻 For the Purple variant, copy the contents of [`TangerineUI-purple.css`](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/blob/main/TangerineUI-purple.css) instead.
+   * 🍒 For the Cherry variant, copy the contents of [`TangerineUI-cherry.css`](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/blob/main/TangerineUI-cherry.css) instead.
+   * 🐠 For the Lagoon variant, copy the contents of [`TangerineUI-lagoon.css`](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon/blob/main/TangerineUI-lagoon.css) instead.
 
 > [!IMPORTANT]
 > If you are a user on a Glitch-soc instance, you must switch to the Vanilla Mastodon flavour for Tangerine UI to work properly: in your instance settings, navigate to *Flavours* → *Vanilla Mastodon* → select the '*Default*' skin.
