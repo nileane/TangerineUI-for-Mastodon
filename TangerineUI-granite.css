@@ -2595,6 +2595,7 @@ body.app-body  {
     right: 52px;
     padding: 0px;
     position: absolute;
+    font-size: 0;
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
