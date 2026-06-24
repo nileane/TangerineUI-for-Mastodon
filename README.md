@@ -378,15 +378,15 @@ Please consider that some of your users may depend on Mastodon's High Contrast t
 
 ## Development
 
-The four `TangerineUI*.css` files (and their `.scss` installation copies under `mastodon/`) are **generated** — don't edit them directly. The source lives in `src/`:
+The four `TangerineUI*.css` files (and their `.scss` installation copies under `mastodon/`) are **generated**, don't edit them directly. The source lives in `src/`:
 
-- `src/template.css` — the shared theme; per-variant values appear as `{{placeholders}}`.
-- `src/variants.mjs` — each variant's palette, logo, high-contrast brand colors, and meta.
+- `src/template.css` - the shared theme; per-variant values appear as `{{placeholders}}`.
+- `src/variants.mjs` - each variant's palette, logo, high-contrast brand colors, and meta.
 
-After editing either, run `node src/build.mjs` (no dependencies — just Node) to regenerate all eight files, then commit them. CI runs the build and fails if the committed output is out of date.
+After editing either, run `node src/build.mjs` (no dependencies, just Node) to regenerate all eight files, then commit them. CI runs the build and fails if the committed output is out of date.
 
 ## 7. Credits
 The logo for Tangerine UI was originally designed by [Younis @younishd](https://younishd.fr). 🍊
 
 ## 8. Support this project <3
-If you enjoy Tangerine UI, I would really appreciate a [tip 💛](https://ko-fi.com/nileane)!
+If you enjoy Tangerine UI, Niléane would really appreciate a [tip 💛](https://ko-fi.com/nileane)!
