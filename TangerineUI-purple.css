@@ -93,18 +93,18 @@
 :root:root {
     /* Text */
     --color-text-primary: var(--color-content-fg);
-    --color-text-secondary: var(--color-content-fg-muted);
-    --color-text-tertiary: var(--color-fg-muted);
+    --color-text-secondary: #5a534d;
+    --color-text-tertiary: #6b645e;
     --color-text-inverted: var(--color-content-bg);
     --color-text-brand: var(--color-accent);
     --color-text-brand-soft: color-mix(in oklab, var(--color-content-fg), var(--color-accent));
     --color-text-on-brand-base: var(--color-accent-fg);
     --color-text-brand-on-inverted: var(--color-accent-focus);
-    --color-text-error: var(--color-reject);
+    --color-text-error: #b3142f;
     --color-text-on-error-base: #ffffff;
-    --color-text-warning: var(--color-warning);
+    --color-text-warning: #7a5200;
     --color-text-on-warning-base: #ffffff;
-    --color-text-success: var(--color-confirm-fg);
+    --color-text-success: #2e7350;
     --color-text-on-success-base: #ffffff;
     --color-text-disabled: var(--color-fg-muted);
     --color-text-on-disabled: var(--color-content-bg);
@@ -128,14 +128,14 @@
     --color-bg-brand-base-hover: var(--color-accent-focus);
     --color-bg-brand-soft: var(--color-accent-bg);
     --color-bg-brand-softest: var(--color-content-bg-focus);
-    --color-bg-error-base: var(--color-reject);
+    --color-bg-error-base: #c0203c;
     --color-bg-error-base-hover: color-mix(in srgb, var(--color-reject), #000000 12%);
     --color-bg-error-soft: var(--color-reject-bg);
     --color-bg-error-softest: color-mix(in srgb, var(--color-reject), var(--color-content-bg) 88%);
-    --color-bg-warning-base: var(--color-warning);
+    --color-bg-warning-base: #7a4d00;
     --color-bg-warning-soft: var(--color-warning-bg);
     --color-bg-warning-softest: color-mix(in srgb, var(--color-warning), var(--color-content-bg) 88%);
-    --color-bg-success-base: var(--color-confirm);
+    --color-bg-success-base: #0f7a3f;
     --color-bg-success-soft: var(--color-confirm-bg);
     --color-bg-success-softest: color-mix(in srgb, var(--color-confirm), var(--color-content-bg) 88%);
 
@@ -148,6 +148,96 @@
     --color-border-warning-soft: color-mix(in srgb, var(--color-warning), transparent 50%);
     --color-border-error-soft: color-mix(in srgb, var(--color-reject), transparent 50%);
     --color-border-media: rgba(255, 255, 255, 0.15);
+}
+
+/* A11y: dark-mode default-theme contrast fixes */
+@media (prefers-color-scheme: dark) {
+    :root:root {
+        --color-text-secondary: #a0a0a0;
+        --color-text-tertiary: #909090;
+        --color-text-error: #ff8d99;
+        --color-text-warning: #e8b54f;
+        --color-text-success: #79bd9a;
+        --color-bg-error-base: #c0203c;
+        --color-bg-warning-base: #7a4d00;
+        --color-bg-success-base: #0a6e38;
+    }
+}
+
+/* ♿ High-contrast mode (OS prefers-contrast + Mastodon data-contrast) */
+@media (prefers-contrast: more) {
+    :root:root {
+    --color-text-primary: #000000;
+    --color-text-secondary: #1f1f1f;
+    --color-text-tertiary: #2f2f2f;
+    --color-text-brand: #3d2bcc;
+    --color-text-status-links: #3d2bcc;
+    --color-text-on-brand-base: #ffffff;
+    --color-bg-brand-base: #3d2bcc;
+    --color-border-brand: #3d2bcc;
+    --color-border-primary: #000000;
+    --color-text-error: #8a0011;
+    --color-bg-error-base: #8a0011;
+    --color-text-warning: #5a3a00;
+    --color-bg-warning-base: #5a3a00;
+    --color-text-success: #0a5c2f;
+    --color-bg-success-base: #0a5c2f;
+    }
+}
+:root:root[data-contrast='high'] {
+    --color-text-primary: #000000;
+    --color-text-secondary: #1f1f1f;
+    --color-text-tertiary: #2f2f2f;
+    --color-text-brand: #3d2bcc;
+    --color-text-status-links: #3d2bcc;
+    --color-text-on-brand-base: #ffffff;
+    --color-bg-brand-base: #3d2bcc;
+    --color-border-brand: #3d2bcc;
+    --color-border-primary: #000000;
+    --color-text-error: #8a0011;
+    --color-bg-error-base: #8a0011;
+    --color-text-warning: #5a3a00;
+    --color-bg-warning-base: #5a3a00;
+    --color-text-success: #0a5c2f;
+    --color-bg-success-base: #0a5c2f;
+}
+@media (prefers-color-scheme: dark) {
+    @media (prefers-contrast: more) {
+        :root:root {
+        --color-text-primary: #ffffff;
+        --color-text-secondary: #e6e6e6;
+        --color-text-tertiary: #d4d4d4;
+        --color-text-brand: #b8b5ff;
+        --color-text-status-links: #b8b5ff;
+        --color-text-on-brand-base: #000000;
+        --color-bg-brand-base: #b8b5ff;
+        --color-border-brand: #b8b5ff;
+        --color-border-primary: #ffffff;
+        --color-text-error: #ffc2c8;
+        --color-bg-error-base: #8a0011;
+        --color-text-warning: #ffd591;
+        --color-bg-warning-base: #5a3a00;
+        --color-text-success: #b9f8cf;
+        --color-bg-success-base: #0a5c2f;
+        }
+    }
+    :root:root[data-contrast='high'] {
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #e6e6e6;
+    --color-text-tertiary: #d4d4d4;
+    --color-text-brand: #b8b5ff;
+    --color-text-status-links: #b8b5ff;
+    --color-text-on-brand-base: #000000;
+    --color-bg-brand-base: #b8b5ff;
+    --color-border-brand: #b8b5ff;
+    --color-border-primary: #ffffff;
+    --color-text-error: #ffc2c8;
+    --color-bg-error-base: #8a0011;
+    --color-text-warning: #ffd591;
+    --color-bg-warning-base: #5a3a00;
+    --color-text-success: #b9f8cf;
+    --color-bg-success-base: #0a5c2f;
+    }
 }
 
 /* Collections icon variables (added for Mastodon 4.6) */
