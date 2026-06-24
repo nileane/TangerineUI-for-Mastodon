@@ -149,6 +149,18 @@
     --color-border-error-soft: color-mix(in srgb, var(--color-reject), transparent 50%);
     --color-border-media: rgba(255, 255, 255, 0.15);
 }
+
+/* Collections icon variables (added for Mastodon 4.6) */
+:root {
+    --icon-collections: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%232a2d37' viewBox='0 -960 960 960'%3E%3Cpath d='m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z'%3E%3C/path%3E%3C/svg%3E");
+    --icon-collections-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23f76902' viewBox='0 -960 960 960'%3E%3Cpath d='m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z'%3E%3C/path%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --icon-collections: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23ffffff' viewBox='0 -960 960 960'%3E%3Cpath d='m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z'%3E%3C/path%3E%3C/svg%3E");
+        --icon-collections-accent: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23e68933' viewBox='0 -960 960 960'%3E%3Cpath d='m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Zm580-60q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Zm-500-20h160v-160H200v160Zm202-420h156l-78-126-78 126Zm78 0ZM360-340Zm340 80Z'%3E%3C/path%3E%3C/svg%3E");
+    }
+}
 .app-body {
     --background-color: var(--color-bg);
     --background-border-color: var(--color-lines);
@@ -891,6 +903,7 @@ body.app-body  {
         .icon-tasks,
         .icon-quote-right,
         .icon-home,
+        .icon-collections,
         .icon-notifications-active,
         .icon-hashtag,
         .icon-explore,
@@ -979,6 +992,7 @@ body.app-body  {
         .icon-tasks,
         .icon-quote-right,
         .icon-home,
+        .icon-collections,
         .icon-notifications-active,
         .icon-hashtag,
         .icon-explore,
@@ -1203,6 +1217,19 @@ body.app-body  {
 .app-body .notification-ungrouped .icon-notifications-active {
     background-image: var(--icon-post-notification-accent);
 }
+/* Collections icon (added for Mastodon 4.6) */
+.app-body .icon-collections {
+    background-image: var(--icon-collections);
+}
+.app-body .navigation-panel .column-link .icon-collections,
+.app-body .navigation-panel .column-link.active .icon-collections,
+.app-body .column-link.active .icon-collections {
+    background-image: var(--icon-collections-accent);
+}
+.layout-multiple-columns .column-link .icon-collections {
+    background-image: var(--icon-collections-accent);
+}
+
 /* Globe icon */
 .app-body .column-link .icon-globe,
 .app-body .column-header__icon.icon-globe {
