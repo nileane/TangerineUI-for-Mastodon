@@ -10,12 +10,14 @@ Tangerine UI is a vibrant custom theme for Mastodon's Web UI, available in five 
 
 [🕹️ **Live demo** @ nileane.fr](https://nileane.fr) • [👋 **Follow Tangerine UI** on Mastodon](https://nileane.fr/@TangerineUI) • [📝 **Release notes**](https://github.com/nileane/TangerineUI-for-Mastodon/releases)
 
-## 🍴 About this fork
+## 0. About this fork
 
 > [!IMPORTANT]
-> This is a community fork of [**Tangerine UI for Mastodon**](https://github.com/nileane/TangerineUI-for-Mastodon) by [@nileane](https://nileane.fr/@nileane), continued after the original project went dormant.
+> This is a community fork of [**Tangerine UI for Mastodon**](https://github.com/nileane/TangerineUI-for-Mastodon) by [@nileane](https://nileane.fr/@nileane), continued after the original project [stopped being maintened](https://nileane.fr/@TangerineUI/116776620945959421).
 >
-> Its aspirations are deliberately modest. This fork exists primarily to keep the theme working on **Mastodon 4.6 and 4.7** — it is not an attempt to take the project in an ambitious new direction. **Future support is not guaranteed**: updates beyond 4.7 will depend on available time and interest.
+> Its aspirations are modest. This fork exists primarily to keep the theme working on **Mastodon 4.6 and 4.7**. There has been some work on adopting [Mastodon's new design tokens](https://docs.joinmastodon.org/dev/frontend/design-tokens/), which should make future maintenance easier.
+>
+> **Future support is not guaranteed**: updates beyond 4.7 will depend on available time and interest.
 >
 > Maintained by [@matt_birchler@mastodon.social](https://mastodon.social/@matt_birchler). All credit for the original design and the vast majority of the work belongs to [@nileane](https://nileane.fr/@nileane).
 
