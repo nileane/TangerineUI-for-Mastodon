@@ -1,20 +1,18 @@
-name: copies
-on:
-  push:
-    branches:
-      - '**'
+name: Build & verify CSS
+on: [push, pull_request]
 jobs:
-  copies:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
-      - run: cp TangerineUI.css mastodon/app/javascript/styles/tangerineui/tangerineui.scss
-      - run: cp TangerineUI-purple.css mastodon/app/javascript/styles/tangerineui-purple/tangerineui-purple.scss
-      - run: cp TangerineUI-cherry.css mastodon/app/javascript/styles/tangerineui-cherry/tangerineui-cherry.scss
-      - run: cp TangerineUI-lagoon.css mastodon/app/javascript/styles/tangerineui-lagoon/tangerineui-lagoon.scss
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: actions/setup-node@v4
         with:
-          commit_message: Copy CSS files to installation folder
-          file_pattern: 'mastodon/'
+          node-version: '20'
+      - run: node src/build.mjs
+      - name: Fail if generated files are stale
+        run: |
+          if [ -n "$(git status --porcelain TangerineUI*.css mastodon/app/javascript/styles/)" ]; then
+            echo "Generated CSS is out of date. Run 'node src/build.mjs' and commit the result."
+            git --no-pager diff
+            exit 1
+          fi
