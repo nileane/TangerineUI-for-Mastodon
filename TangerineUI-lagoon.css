@@ -8337,7 +8337,19 @@ a:is(.active,
         [href*="/kpop" i],
         [href*="/rock" i],
         [href$="/pop" i],
-        [href$="/TuneTuesday" i]
+        [href$="/TuneTuesday" i],
+        [href$="metal" i],
+        [href*="punkrock" i],
+        [href*="classical" i],
+        [href*="vinyl" i],
+        [href$="concert" i],
+        [href*="hiphop" i],
+        [href*="guitar" i],
+        [href$="piano" i],
+        [href$="techno" i],
+        [href$="blues" i],
+        [href$="edm" i],
+        [href$="band" i]
     )
 )::before {
     background-image: var(--icon-music);
@@ -8369,7 +8381,16 @@ a:is(.active,
         [href*="WatchingNow" i],
         [href*="movie" i],
         [href*="/cinema" i],
-        [href*="/oscars" i]
+        [href*="/oscars" i],
+        [href*="film" i],
+        [href*="tvshow" i],
+        [href$="series" i],
+        [href*="netflix" i],
+        [href*="streaming" i],
+        [href*="documentary" i],
+        [href*="doctorwho" i],
+        [href*="startrek" i],
+        [href*="sitcom" i]
     )
 )::before {
     background-image: var(--icon-popcorn);
@@ -8386,7 +8407,9 @@ a:is(.active,
         [href*="WindowFriday" i],
         [href*="FensterFreitag" i],
         [href$="/instagram" i],
-        [href$="/MonochromeMonday" i]
+        [href$="/MonochromeMonday" i],
+        [href*="camera" i],
+        [href*="mastocam" i]
     )
 )::before {
     background-image: var(--icon-camera);
@@ -8399,7 +8422,14 @@ a:is(.active,
         [href*="sunrise" i],
         [href$="/sky" i],
         [href*="skyblue" i],
-        [href*="ocean" i]
+        [href*="ocean" i],
+        [href*="clouds" i],
+        [href*="goldenhour" i],
+        [href*="seascape" i],
+        [href$="beach" i],
+        [href$="dusk" i],
+        [href$="dawn" i],
+        [href*="horizon" i]
     )
 )::before {
     background-image: var(--icon-sunset);
@@ -8427,7 +8457,18 @@ a:is(.active,
         [href*="mosstodon" i],
         [href*="/vegan" i],
         [href*="/plants" i],
-        [href*="/autumn" i]
+        [href*="/autumn" i],
+        [href$="nature" i],
+        [href*="forest" i],
+        [href*="hiking" i],
+        [href*="flower" i],
+        [href*="botany" i],
+        [href*="wildlife" i],
+        [href*="fungi" i],
+        [href*="mushroom" i],
+        [href*="sustainab" i],
+        [href*="biodiversity" i],
+        [href*="rewilding" i]
     )
 )::before {
     background-image: var(--icon-tree);
@@ -8440,7 +8481,13 @@ a:is(.active,
         [href*="catloaf" i],
         [href*="Caturday" i],
         [href*="catsofmastodon" i],
-        [href*="WhiskersWednesday" i]
+        [href*="WhiskersWednesday" i],
+        [href*="kitten" i],
+        [href*="kitty" i],
+        [href$="gato" i],
+        [href$="gatos" i],
+        [href*="catsoffedi" i],
+        [href*="mastocats" i]
     ):not(
         [href*="cath" i]
     )
@@ -8456,7 +8503,11 @@ a:is(.active,
         [href*="DogLovers" i],
         [href*="dogsofmastodon" i],
         [href*="DogsOfFedi" i],
-        [href*="dogstadon" i]
+        [href*="dogstadon" i],
+        [href*="puppy" i],
+        [href*="puppies" i],
+        [href*="doggo" i],
+        [href$="perro" i]
     )
 )::before {
     background-image: var(--icon-dog);
@@ -8473,7 +8524,15 @@ a:is(.active,
         [href$="design" i],
         [href*="designer" i],
         [href*="watercolo" i],
-        [href*="painting" i]
+        [href*="painting" i],
+        [href*="drawing" i],
+        [href*="illustration" i],
+        [href*="sketch" i],
+        [href*="comic" i],
+        [href*="inktober" i],
+        [href*="sculpt" i],
+        [href*="ceramic" i],
+        [href*="printmaking" i]
     ):not(
         [href*="aiart" i],
         [href*="artificial" i],
@@ -8492,7 +8551,12 @@ a:is(.active,
         [href*="ipad" i],
         [href*="iphone" i],
         [href*="/wwdc" i],
-        [href*="/appleevent" i]
+        [href*="/appleevent" i],
+        [href*="applewatch" i],
+        [href*="macbook" i],
+        [href*="visionpro" i],
+        [href*="applesilicon" i],
+        [href*="airpods" i]
     )
 )::before {
     background-image: var(--icon-apple);
@@ -8504,7 +8568,12 @@ a:is(.active,
         [href*="writing" i],
         [href*="write" i],
         [href*="article" i],
-        [href*="journalism" i]
+        [href*="journalism" i],
+        [href$="author" i],
+        [href*="nanowrimo" i],
+        [href*="fiction" i],
+        [href*="poetry" i],
+        [href*="blog" i]
     )
 )::before {
     background-image: var(--icon-pencil);
@@ -8516,7 +8585,9 @@ a:is(.active,
         [href*="literature" i],
         [href*="reading" i],
         [href$="/history" i],
-        [href$="/histoire" i]
+        [href$="/histoire" i],
+        [href*="librar" i],
+        [href*="novel" i]
     )
 )::before {
     background-image: var(--icon-book);
@@ -8532,7 +8603,13 @@ a:is(.active,
         [href*="playstation" i],
         [href*="arcade" i],
         [href*="xbox" i],
-        [href*="nintendo" i]
+        [href*="nintendo" i],
+        [href$="/steam" i],
+        [href*="ttrpg" i],
+        [href$="/dnd" i],
+        [href$="/ps5" i],
+        [href*="esports" i],
+        [href*="twitch" i]
     )
 )::before {
     background-image: var(--icon-gaming);
@@ -8554,7 +8631,23 @@ a:is(.active,
         [href$="/soccer" i],
         [href*="/euro202" i],
         [href$="/mls" i],
-        [href*="/sport" i]
+        [href*="/sport" i],
+        [href*="football" i],
+        [href$="/nfl" i],
+        [href$="/nba" i],
+        [href*="baseball" i],
+        [href*="basketball" i],
+        [href*="tennis" i],
+        [href*="rugby" i],
+        [href*="cricket" i],
+        [href$="/f1" i],
+        [href*="formula1" i],
+        [href*="cycling" i],
+        [href*="marathon" i],
+        [href*="superbowl" i],
+        [href*="worldcup" i],
+        [href*="hockey" i],
+        [href$="/golf" i]
     )
 )::before {
     background-image: var(--icon-football);
@@ -8587,7 +8680,13 @@ a:is(.active,
         [href*="greve" i],
         [href*="manif" i],
         [href$="riot" i],
-        [href$="freepalestine" i]
+        [href$="freepalestine" i],
+        [href*="nonbinary" i],
+        [href$="enby" i],
+        [href*="bisexual" i],
+        [href*="transrights" i],
+        [href*="disabilityrights" i],
+        [href*="refugeeswelcome" i]
     )
 )::before {
     background-image: var(--icon-pride);
@@ -8600,7 +8699,14 @@ a:is(.active,
         [href$="/election" i],
         [href*="presidentielle" i],
         [href*="presidential" i],
-        [href*="legislativ" i]
+        [href*="legislativ" i],
+        [href*="politics" i],
+        [href$="uspol" i],
+        [href$="auspol" i],
+        [href*="midterms" i],
+        [href*="referendum" i],
+        [href$="wahl" i],
+        [href*="ballot" i]
     )
 )::before {
     background-image: var(--icon-vote);
@@ -8613,7 +8719,19 @@ a:is(.active,
         [href*="development" i],
         [href*="developer" i],
         [href*="devops" i],
-        [href*="opensource" i]
+        [href*="opensource" i],
+        [href*="programming" i],
+        [href*="coding" i],
+        [href*="javascript" i],
+        [href*="typescript" i],
+        [href*="python" i],
+        [href$="/rust" i],
+        [href*="github" i],
+        [href$="foss" i],
+        [href*="selfhost" i],
+        [href*="homelab" i],
+        [href*="raspberrypi" i],
+        [href*="docker" i]
     )
 )::before {
     background-image: var(--icon-code);
@@ -8624,7 +8742,15 @@ a:is(.active,
         [href$="tech" i],
         [href$="linux" i],
         [href*="ubuntu" i],
-        [href*="microsoft" i]
+        [href*="microsoft" i],
+        [href*="technology" i],
+        [href*="gadget" i],
+        [href*="hardware" i],
+        [href*="android" i],
+        [href$="windows" i],
+        [href*="fediverse" i],
+        [href*="mastoadmin" i],
+        [href*="smarthome" i]
     )
 )::before {
     background-image: var(--icon-laptop);
@@ -8633,10 +8759,45 @@ a:is(.active,
 .trends__item:has(
     .trends__item__name a:is(
         [href*="mutualaid" i],
-        [href*="crowdfund" i]
+        [href*="crowdfund" i],
+        [href*="donate" i],
+        [href*="donation" i],
+        [href*="fundraiser" i],
+        [href*="charity" i],
+        [href*="solidarity" i],
+        [href*="volunteer" i],
+        [href*="gofundme" i]
     )
 )::before {
     background-image: var(--icon-handshake);
+}
+.app-body
+.trends__item:has(
+    .trends__item__name a:is(
+        [href*="science" i],
+        [href*="scicomm" i],
+        [href*="physics" i],
+        [href*="chemistry" i],
+        [href*="biology" i],
+        [href*="astronomy" i],
+        [href*="astrophysics" i],
+        [href$="/space" i],
+        [href*="spaceflight" i],
+        [href$="/nasa" i],
+        [href$="/esa" i],
+        [href*="research" i],
+        [href*="academic" i],
+        [href$="/stem" i],
+        [href$="/math" i],
+        [href$="/maths" i],
+        [href*="mathematics" i],
+        [href*="neuroscience" i],
+        [href*="geology" i],
+        [href*="paleontology" i],
+        [href*="quantum" i]
+    )
+)::before {
+    background-image: var(--icon-science);
 }
 .app-body
 .trends__item:has(
