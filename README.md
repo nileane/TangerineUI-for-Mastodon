@@ -10,9 +10,9 @@ Tangerine Neue is a custom theme for Mastodon's Web UI, available in five varian
 
 ## 0. Before we get too far…
 
-> All credit for the original design and the vast majority of the work belongs to [@nileane](https://nileane.fr/@nileane). Give [her a tip](https://ko-fi.com/nileane) if you like it!
-> 
-> Currently maintained by [@matt_birchler@mastodon.social](https://mastodon.social/@matt_birchler).
+All credit for the original design and the vast majority of the work belongs to [@nileane](https://nileane.fr/@nileane). Give [her a tip](https://ko-fi.com/nileane) if you like it!
+
+Currently maintained by [@matt_birchler@mastodon.social](https://mastodon.social/@matt_birchler).
 
 ## 1. Table of contents
 
