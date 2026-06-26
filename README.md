@@ -6,6 +6,9 @@
  </picture>
 </h1>
 
+> [!IMPORTANT]
+> Tangerine UI was [discontinued](https://nileane.fr/@TangerineUI/116776620945959421) on June 30, 2026.
+
 Tangerine UI is a vibrant custom theme for Mastodon's Web UI, available in four variants: 🍊 Tangerine, 🪻 Purple, 🍒 Cherry, and 🐠 Lagoon.
 
 [🕹️ **Live demo** @ nileane.fr](https://nileane.fr) • [👋 **Follow Tangerine UI** on Mastodon](https://nileane.fr/@TangerineUI) • [📝 **Release notes**](https://github.com/nileane/TangerineUI-for-Mastodon/releases)
