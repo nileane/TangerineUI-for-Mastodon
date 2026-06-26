@@ -366,6 +366,11 @@ Even if you are not an admin on your instance, you can still use Tangerine Neue 
 > [!IMPORTANT]
 > If you are a user on a Glitch-soc instance, you must switch to the Vanilla Mastodon flavour for Tangerine Neue to work properly: in your instance settings, navigate to *Flavours* → *Vanilla Mastodon* → select the '*Default*' skin.
 
+### Using a UserScript browser extension
+If you prefer to use a UserScript browser extension, [@Write](https://github.com/Write) maintains a ready-to-use UserScript to load Tangerine Neue on any Mastodon instance.
+
+* Check out [the TangerineUI-Userscript repository](https://github.com/Write/TangerineUI-Userscript) for instructions.
+
 
 ## 6. Accessibility
 Please consider that some of your users may depend on Mastodon's High Contrast theme before [setting Tangerine Neue as the only theme](#4b-install-tangerine-neue-as-the-only-theme-on-your-instance) on your instance. For this reason, unless you're running a single-user instance, I strongly recommend [installing Tangerine Neue as an optional/revertable theme](#4a-install-tangerine-neue-as-an-optional-theme-on-your-instance-recommended) instead.
