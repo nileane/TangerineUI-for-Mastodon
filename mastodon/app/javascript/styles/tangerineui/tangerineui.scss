@@ -2152,10 +2152,13 @@ body.app-body  {
 .app-body .compose-form__buttons .icon-button:is(.active, .active:hover) {
     background-color: var(--color-accent);
 }
-.app-body .compose-form__submit {
+/* The paper-plane styling targets only the real submit button. On Glitch-soc,
+   .compose-form__submit also holds a sibling .secondary-post-button (type="button");
+   scoping to [type="submit"] leaves that button untouched instead of cloning it. */
+.app-body .compose-form__submit:not(:has(.secondary-post-button)) {
     max-width: 40px;
 }
-.app-body .compose-form__submit .button {
+.app-body .compose-form__submit .button[type="submit"] {
     height: 40px;
     max-width: 40px;
     color: transparent;
@@ -2169,10 +2172,10 @@ body.app-body  {
         background-color .2s,
         border-color .2s;
 }
-.app-body .compose-form__submit .button:active {
+.app-body .compose-form__submit .button[type="submit"]:active {
     transform: scale(.95);
 }
-.app-body .compose-form:has(.autosuggest-textarea__textarea:placeholder-shown) .compose-form__submit .button {
+.app-body .compose-form:has(.autosuggest-textarea__textarea:placeholder-shown) .compose-form__submit .button[type="submit"] {
     background-image: var(--icon-send);
     background-color: var(--color-accent-bg);
 }
