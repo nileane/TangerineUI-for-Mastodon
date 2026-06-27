@@ -7,7 +7,12 @@
 </h1>
 
 > [!IMPORTANT]
-> Tangerine UI was [discontinued](https://nileane.fr/@TangerineUI/116776620945959421) on June 30, 2026.
+> **Tangerine UI was discontinued on June 30, 2026.**  
+> → [Read the announcement](https://nileane.fr/@TangerineUI/116776620945959421)  
+>   
+> Here are two alternatives you can check out:
+> * [**Tangerine Neue**](https://github.com/mattbirchler/Tangerine-Neue-for-Mastodon), a fork maintained [by Matt Birchler](https://birchtree.me/blog/tangerine-neue-for-mastodon/), which preserves Tangerine UI's original design, adds a new color variant, and keeps it compatible with newer versions of Mastodon.
+> * [**Phanpy**](https://phanpy.social/), a fantastic web client for Mastodon, which has often been a great source of inspiration for the original design of Tangerine UI.
 
 Tangerine UI is a vibrant custom theme for Mastodon's Web UI, available in four variants: 🍊 Tangerine, 🪻 Purple, 🍒 Cherry, and 🐠 Lagoon.
 
